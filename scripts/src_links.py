@@ -106,23 +106,7 @@ def get_sentence_level_info(sentences_ids, doc_position):
         if doc_position in indexes:
             sentence_position = indexes.index(doc_position)
             sentence_id = int(key)
-    return (sentence_id, sentence_position)
-
-
-def make_sentences(whole_doc, sentences_ids):
-    '''converts whole_doc from a list of words to a list of sentences
-    according to sentences_ids which is a dictioary'''
-
-    new_doc = []
-    for key in sentences_ids:
-        span = sentences_ids[key]
-        sentence = []
-        indexes = list(range(span[0], span[1] + 1))
-        for i in indexes:
-            sentence.append(whole_doc[i-1])
-        text_sentence = " ".join(sentence)
-        new_doc.append(text_sentence)
-    return new_doc
+            return (sentence_id, sentence_position)
 
 
 def read_alignments(f):
@@ -139,25 +123,6 @@ def read_alignments(f):
     return all_aligns
 
 
-def get_tgt_positions(dict_of_align, sentence_num, src_position):
-    targets = []
-    if sentence_num in dict_of_align:
-        for s_t in dict_of_align[sentence_num]:
-            st = s_t.split('-')
-            s = int(st[0])
-            t = int(st[1])
-            if s == src_position:
-                targets.append(t)
-    return targets
-
-
-def get_tgt_words(tgt_positions, sentence_num, target_text):
-    targets = []
-    for position in tgt_positions:
-        if position < len(target_text):
-            targets.append(target_text[sentence_num][position])
-    return targets
-
 
 def read_rawfile(f):
     translations = open(f, "r", encoding="utf=8")
@@ -171,68 +136,116 @@ def read_rawfile(f):
     return all
 
 
-def format_line(sent_num, info_per_sentence_with_tgt, sentence):
-    #                                                                0                                      1       2
-    # info_per_sentence_with_tgt --> [(('000_1756', 'speaker reference', 249, 'my', 'no_antetype', 14, 5), [6], ['meine']),...] "
-    #         0         1         2           3       4         5             6
-    # 0 -> (docid, type_pron, doc_position, pron, antetype, sentence_id, sentence_position)
-    # trans_info --> ([4], [b'das'])
+def get_sent_position(chains_in_doc, sents_in_doc):
+    """
+    :param chains_in_doc: dict of list of positions
+    :param sents_in_doc: dic of tuples indicating start end spans
+    :return: {chain_34: {sent2:[[position4, position3], [position23]], ...}...}
+    """
 
-    temp_types = []
-    temp_src_positions = []
-    temp_prons = []
-    temp_antetypes = []
-    temp_agreements = []
-    temp_pro_positions = []
-    temp_antecedents = []
-    temp_heads = []
-    temp_tgt_words = []
-    temp_tgt_positions = []
-    temp_inter_intra = []
-    temp_ant_spans = []
-
-    # (pron_type, doc_position, antetype, agreement, pro_position, coref_class)
-
-    if sent_num in info_per_sentence_with_tgt:
-        for each in info_per_sentence_with_tgt[sent_num]:
-            src_info = each[0]
-            tgt_pos = each[1]
-            tgt_words = each[2]
-            temp_types.append(src_info[1])
-            temp_src_positions.append(src_info[6])
-            temp_prons.append(src_info[3])
-            temp_antetypes.append(src_info[4])
-            temp_agreements.append(src_info[7])
-            temp_pro_positions.append(src_info[8])
-            temp_antecedents.append(src_info[10])
-            temp_heads.append(src_info[11])
-            temp_inter_intra.append(src_info[14])
-            temp_tgt_words.append(" ".join(tgt_words))
-            temp_tgt_positions.append(" ".join([str(i) for i in tgt_pos]))
-            temp_ant_spans.append(src_info[15])
-        new = ["|||".join(temp_types), "|||".join([str(i) for i in temp_src_positions]), "|||".join(temp_prons),
-               "|||".join(temp_antetypes), "|||".join(temp_agreements), "|||".join(temp_pro_positions),
-               "|||".join(temp_antecedents), "|||".join(temp_heads), "|||".join(temp_inter_intra),
-               "|||".join(temp_tgt_words), "|||".join(temp_tgt_positions), "|||".join(temp_ant_spans), sentence]
-        new_string = "\t".join(new)
-        return new_string + "\n"
-    else:
-        new = ["--", "--", "--", "--", "--", "--", "--", "--", "--", "--", "--", "--", sentence]
-        new_string = "\t".join(new)
-        return new_string + "\n"
-
-
-def get_nearest_ant(pro_pos, chain):
-    for element in chain:
-        ant_found = []
-        for span in element:
-            if span[0] < pro_pos:
-                ant_found.append(True)
+    new_chains_info = {}
+    for chain in chains_in_doc:
+        sentence_info = {}
+        for mention in chains_in_doc[chain]:
+            temp = []
+            for word in mention:
+                n_sent, word_position = get_sentence_level_info(sents_in_doc, int(word))
+                temp.append(word_position)
+            if n_sent in sentence_info:
+                sentence_info[n_sent].append(temp)
             else:
-                ant_found.append(False)
-        if list(set(ant_found)) == [True]:
-            return element
-    return []
+                sentence_info[n_sent] = [temp]
+        new_chains_info[chain] = sentence_info
+    return new_chains_info
+
+
+def organize_align(alignments):
+    """
+    alignments -> ['0-0', '1-1', '2-2', '3-3', '4-4', '5-5', '6-5', '8-6', '12-7', '7-8', '9-9', '13-10', '14-11', '15-13']
+    out -> {source: [tgt, tgt2, tgt3, ...]...}
+    """
+
+    new = {}
+    for pair in alignments:
+        st = pair.split('-')
+        s = int(st[0])
+        t = int(st[1])
+        if s in new:
+            new[s].append(t)
+        else:
+            new[s] = [t]
+    return new
+
+
+def match_mentions_to_tgt(chains, giza):
+    """
+    # in {154: [[2, 3, 4], [7]], 155: [[2]]}
+
+    # chain 154: 3 mentions
+                mention 1: partial match
+                mention 2: complete match
+                mention 3: complete match
+    """
+
+    for chain in chains:
+        chain_partial_match = []
+        chain_complete_match = []
+        chain_no_match = []
+
+        align_info = organize_align(giza[chain])
+
+        for mention in chains[chain]:
+            mention_partial_match = []
+            mention_complete_match = []
+            mention_no_match = []
+            # src mention is one word
+            if len(mention) == 1:
+                src_word = mention[0]
+                if src_word in align_info:
+                    # one point alignment
+                    tgt_list = align_info[src_word]
+                    if len(tgt_list) == 1:
+                        mention_complete_match.append((src_word, tgt_list[0]))
+                    else:
+                        # multiple points: one to many
+                        mention_partial_match.append((src_word, tgt_list))
+                else:
+                    # no alignment
+                    mention_no_match.append((src_word))
+            # src mention is a span of many words
+            else:
+                temp_tgts = []
+                temp_pairs = []
+                for src_word in mention:
+                    if src_word in align_info:
+                        tgt_list = align_info[src_word]
+                        # one point alignment
+                        if len(tgt_list) == 1:
+                            temp_tgts.append(tgt_list[0])
+                        else:
+                            #len(tgt_list) > 1:
+                            # one to many
+                            temp_tgts += tgt_list
+
+
+
+                    else:
+                        mention_no_match.append((src_word))
+
+
+        info[chain] = [[],[],[]]
+
+    return (matches, donts)
+
+
+
+
+
+
+
+
+
+
 
 
 def main():
@@ -246,18 +259,9 @@ def main():
                                                            '''
         sys.exit(1)
 
-    endeDocs = ["000_1756_words.xml", "001_1819_words.xml", "002_1825_words.xml", "003_1894_words.xml", "005_1938_words.xml", "006_1950_words.xml", "007_1953_words.xml", "009_2043_words.xml", "010_205_words.xml", "011_2053_words.xml"]
-
-    incdocsentcounts = {'000_1756': 0,
-                        '001_1819': 186,
-                        '002_1825': 335,
-                        '003_1894': 457,
-                        '005_1938': 690,
-                        '006_1950': 792,
-                        '007_1953': 1034,
-                        '009_2043': 1268,
-                        '010_205': 1420,
-                        '011_2053': 1610}
+    endeDocs = ["000_1756_words.xml", "001_1819_words.xml", "002_1825_words.xml", "003_1894_words.xml",
+                "005_1938_words.xml", "006_1950_words.xml", "007_1953_words.xml", "009_2043_words.xml",
+                "010_205_words.xml", "011_2053_words.xml"]
 
     current_path = sys.argv[1]
     path_all = current_path + "/" + "DiscoMT" + "/" + "EN"
@@ -272,7 +276,6 @@ def main():
     for doc in endeDocs: #loop and keep order of protest
         print(doc, "===>")
         document = []  # document as single list of words
-        info_per_sentence = {}
         docid = re.findall(r'[0-9]+_[0-9]+', doc)[0]  # returns list therefore the index
         #shortdocid = int(re.findall(r'[0-9]+', doc)[1])
         with open(data_dir + "/" + doc, "r", encoding="utf-8") as xmldoc:
@@ -283,11 +286,33 @@ def main():
 
             sentences_ids = make_sentences_spans(docid, annotation_dir) # {0: (1, 16), 1: (17, 32), 2: (33, 62),...}
 
-            sentences_in_doc = make_sentences(document, sentences_ids)
-
             src_coref_chains = get_chain_info(docid, annotation_dir)
 
-            chains_pure_alignments = get_chain_align()
+            print("total of src chains ==>", len(src_coref_chains))
+
+            chains_wrt_sent = get_sent_position(src_coref_chains, sentences_ids) # 0 based both sentences and indexes
+
+            aligned_mentions, unaligned_mentions = match_mentions_to_tgt(chains_wrt_sent, giza_alignments)
+
+            print("aligned chains", len(aligned_mentions))
+            print("unalined chains", len(unaligned_mentions))
+
+            #print(giza_alignments)
+
+
+
+            """
+            print("sanity check")
+            print(src_coref_chains['set_268'])
+            print(chains_wrt_sent['set_268'])
+            for mention in src_coref_chains['set_268']:
+                for word in mention:
+                    print(document[word-1])
+            
+            print(src_coref_chains['set_268'])
+            """
+
+
 
 
 
