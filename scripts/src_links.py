@@ -1,9 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-# /usr/bin/env python3
-# -*- encoding: utf-8 -*-
-
 """
 Extracts links from parcor-full
 
@@ -37,7 +34,7 @@ def make_sentences_spans(doc_id, markables):
 def treat_span(span_value):
     '''
     :param span_value: m['span'] : span value
-    :return: list of positions of tokens to retrieve per markable
+    :return: list of positions (starting 1) of tokens to retrieve per markable
     '''
 
     final = []
@@ -76,34 +73,6 @@ def get_sent_position(sents_spans, list_of_positions):
                 temp.append(key)
     return list(set(temp))
 
-
-
-def get_pro_info(doc_id, markables, coref_chains):
-    '''
-    gets all pronouns of interest in the document.
-    Returns a dictionary with extracted prons with sent_id as key
-    '''
-
-    info = []
-    with open(markables + "/" + doc_id + "_" + "coref_level.xml", "r", encoding="utf-8") as key:
-        soup = BeautifulSoup(key, "xml")
-        for m in soup.find_all("markable"):
-            # pronouns
-            if ('mention' in m.attrs) and (m['mention'] == "pronoun"):
-                # then type
-                pron_type = m["type"]
-                doc_position = treat_span(m["span"])# position is now a list
-                antetype = m["antetype"] if "antetype" in m.attrs else "no_antetype"
-                agreement = m["agreement"] if "agreement" in m.attrs else "none"
-                pro_position = m["position"] if "position" in m.attrs else "none"
-                coref_class = m["coref_class"] if "coref_class" in m.attrs else "empty"
-                if coref_class in coref_chains:
-                    chain = coref_chains[coref_class]
-                    chain.sort(key=lambda x: x[0], reverse=True)
-                else:
-                    chain = []
-                info.append((pron_type, doc_position, antetype, agreement, pro_position, coref_class, chain))
-    return info
 
 
 def get_chain_info(doc_id, markables):
@@ -157,7 +126,7 @@ def make_sentences(whole_doc, sentences_ids):
 
 
 def read_alignments(f):
-    #import sys
+
     giza_alignments = open(f, "r", encoding="utf=8")
     all_aligns = {}
     # 0-0 1-1 2-2 3-3 4-4 5-5 6-5 8-6 12-7 7-8 9-9 13-10 14-11 15-13
@@ -205,10 +174,8 @@ def read_rawfile(f):
 def format_line(sent_num, info_per_sentence_with_tgt, sentence):
     #                                                                0                                      1       2
     # info_per_sentence_with_tgt --> [(('000_1756', 'speaker reference', 249, 'my', 'no_antetype', 14, 5), [6], ['meine']),...] "
-
     #         0         1         2           3       4         5             6
     # 0 -> (docid, type_pron, doc_position, pron, antetype, sentence_id, sentence_position)
-
     # trans_info --> ([4], [b'das'])
 
     temp_types = []
@@ -269,8 +236,8 @@ def get_nearest_ant(pro_pos, chain):
 
 
 def main():
-    if len(sys.argv) != 2:
-        sys.stderr.write('Usage: {} {} \n'.format(sys.argv[0], "path_to_parcor-full"))
+    if len(sys.argv) != 3:
+        sys.stderr.write('Usage: {} {} {} \n'.format(sys.argv[0], "path_to_parcor-full", "alignment_file"))
 
         '''
         sys.stderr.write('Usage: {} {} {} {} {} \n'.format(sys.argv[0], "path_to_parcor-full", "alignment_file",
@@ -295,120 +262,33 @@ def main():
     current_path = sys.argv[1]
     path_all = current_path + "/" + "DiscoMT" + "/" + "EN"
     data_dir = path_all + "/" + "Basedata"
-    annotationfiles_dir = path_all + "/" + "Markables"
+    annotation_dir = path_all + "/" + "Markables"
 
-    #giza_alignments = read_alignments(sys.argv[2])
+    giza_alignments = read_alignments(sys.argv[2])
+
     #target_text = read_rawfile(sys.argv[3])
     #out = open(sys.argv[4], "w", encoding = "utf-8")
-
-    temp_sentences = 0
 
     for doc in endeDocs: #loop and keep order of protest
         print(doc, "===>")
         document = []  # document as single list of words
         info_per_sentence = {}
         docid = re.findall(r'[0-9]+_[0-9]+', doc)[0]  # returns list therefore the index
-        shortdocid = int(re.findall(r'[0-9]+', doc)[1])
+        #shortdocid = int(re.findall(r'[0-9]+', doc)[1])
         with open(data_dir + "/" + doc, "r", encoding="utf-8") as xmldoc:
             soup = BeautifulSoup(xmldoc, "xml")
             # make doc out of _words.xml files
             for w in soup.find_all("word"):
                 document.append(w.string)
 
-            sentences_ids = make_sentences_spans(docid, annotationfiles_dir) # {0: (1, 16), 1: (17, 32), 2: (33, 62),...}
+            sentences_ids = make_sentences_spans(docid, annotation_dir) # {0: (1, 16), 1: (17, 32), 2: (33, 62),...}
 
             sentences_in_doc = make_sentences(document, sentences_ids)
 
-            coref_chains = get_chain_info(docid, annotationfiles_dir)
+            src_coref_chains = get_chain_info(docid, annotation_dir)
 
-            print(coref_chains)
-            print("\n", "\n")
+            chains_pure_alignments = get_chain_align()
 
-#             info = get_pro_info(docid, annotationfiles_dir, coref_chains)  # info in one document
-#
-#             for each in info:
-#                 type_pron = each[0]
-#                 doc_position = each[1][0]
-#                 pron = document[doc_position-1]
-#                 antetype = each[2]
-#                 agreement = each[3]
-#                 pro_position = each[4]
-#                 coref_class = each[5]
-#                 coref_chain = each[6]
-#                 ant_list = []
-#                 ant_span_list = []
-#                 head_list = []
-#                 head_pos_list = []
-#                 pro_sentence_id, pro_sentence_position = get_sentence_level_info(sentences_ids, doc_position)
-#                 # Antecedents
-#                 if coref_chain != []:
-#                     antecedent = get_nearest_ant(doc_position,coref_chain)
-#                 else:
-#                     antecedent = []
-#                 for ant in antecedent:
-#                     ant_start_sentence_id, ant_start_sentence_position = get_sentence_level_info(sentences_ids, ant[0])
-#                     ant_start_sentence_id += incdocsentcounts[docid]
-#                     ant_end_sentence_id, ant_end_sentence_position = get_sentence_level_info(sentences_ids, ant[-1])
-#                     ant_end_sentence_id += incdocsentcounts[docid]
-#                     ant_span = str(ant_start_sentence_id)+':'+str(ant_start_sentence_position)+'-'+str(ant_end_sentence_id)+':'+str(ant_end_sentence_position)
-#                     ant_span_list.append(ant_span)
-#                     ant_list.append(" ".join([document[a-1] for a in ant]))
-#                     head_list.append(document[ant[-1]-1])
-#                     head_pos_list.append(ant[-1])
-#                 ant_spans = ";".join(ant_span_list)
-#                 antecedent = ";".join(ant_list)
-#                 head = ";".join(head_list)
-#                 ant_sent_info = []
-#                 # Antecedent heads
-#                 for head_pos in head_pos_list:
-#                     ant_sentence_id, ant_sentence_position = get_sentence_level_info(sentences_ids, head_pos)
-#                     ant_sent_info.append((ant_sentence_id, ant_sentence_position))
-#                 # Determine if pronoun is inter/intra-sentential
-#                 if ant_sent_info == []:
-#                     inter_intra = "none"
-#                 else:
-#                     inter_intra = "intra"
-#                     ant_sent_ids = list(set(x[0] for x in ant_sent_info))
-#                     for aid in ant_sent_ids:
-#                         if aid < pro_sentence_id:
-#                             inter_intra = "inter"
-#                 # Combine information
-#                 if pro_sentence_id in info_per_sentence:
-#                     info_per_sentence[pro_sentence_id].append((docid, type_pron, doc_position, pron, antetype, pro_sentence_id, pro_sentence_position, agreement, pro_position, coref_class, antecedent, head, head_pos_list, ant_sent_info, inter_intra, ant_spans))
-#                 else:
-#                     info_per_sentence[pro_sentence_id] = [(docid, type_pron, doc_position, pron, antetype, pro_sentence_id, pro_sentence_position, agreement, pro_position, coref_class, antecedent, head, head_pos_list, ant_sent_info, inter_intra, ant_spans)]
-#             xmldoc.close()
-#
-#             # looping through the whole doc again  -- get translations
-#             info_per_sentence_with_tgt = {}
-#
-#             for i in range(len(sentences_in_doc)):
-#                 # print("============>", temp_sentences)
-#                 if i in info_per_sentence:
-#                     for element in info_per_sentence[i]:
-#                         pro_pos = element[6]
-#                         pron = element[3]
-#                         ant_pos_list = element[13]
-#                         if pron.lower() in ["it", "they"]:
-#
-# ''
-#
-#                             # get translations of pronoun
-#                             tgt_pro_positions = get_tgt_positions(giza_alignments, temp_sentences, pro_pos)
-#                             tgt_pro_words = get_tgt_words(tgt_pro_positions, temp_sentences, target_text)
-#                             # get translations of antecendent head
-#                             if i in info_per_sentence_with_tgt:
-#                                 info_per_sentence_with_tgt[i].append((element, tgt_pro_positions, tgt_pro_words))
-#                             else:
-#                                 info_per_sentence_with_tgt[i] = [(element, tgt_pro_positions, tgt_pro_words)]
-#                 temp_sentences += 1
-#
-#             # looping through the whole doc again  -- format
-#             for i in range(len(sentences_in_doc)):
-#                 new = format_line(i, info_per_sentence_with_tgt, sentences_in_doc[i])
-#                 out.write(new)
-#
-#     out.close()
 
 
 if __name__ == "__main__":
