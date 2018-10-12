@@ -178,64 +178,28 @@ def organize_align(alignments):
 
 
 def match_mentions_to_tgt(chains, giza):
+    """                       src positions
+    # in -> {set_238: {154: [[2, 3, 4], [7]], 155: [[2]]}, ...}
+                                tgt positions
+    # out -> {set_238: {154: [[2, 3, 4], [7]], 155: [[2]]}, ...}
     """
-    # in {154: [[2, 3, 4], [7]], 155: [[2]]}
-
-    # chain 154: 3 mentions
-                mention 1: partial match
-                mention 2: complete match
-                mention 3: complete match
-    """
+    out = {}
 
     for chain in chains:
-        chain_partial_match = []
-        chain_complete_match = []
-        chain_no_match = []
+        targets = {}
+        for sent in chains[chain]:
+            tgt_words = []
+            align_info = organize_align(giza[sent])
+            for mention in chains[chain][sent]:
+                positions = []
+                for word in mention:
+                    if word in align_info:# word may not be aligned
+                        positions += align_info[word]
+                tgt_words.append(positions)
+            targets[sent] = tgt_words
+        out[chain] = targets
 
-        align_info = organize_align(giza[chain])
-
-        for mention in chains[chain]:
-            mention_partial_match = []
-            mention_complete_match = []
-            mention_no_match = []
-            # src mention is one word
-            if len(mention) == 1:
-                src_word = mention[0]
-                if src_word in align_info:
-                    # one point alignment
-                    tgt_list = align_info[src_word]
-                    if len(tgt_list) == 1:
-                        mention_complete_match.append((src_word, tgt_list[0]))
-                    else:
-                        # multiple points: one to many
-                        mention_partial_match.append((src_word, tgt_list))
-                else:
-                    # no alignment
-                    mention_no_match.append((src_word))
-            # src mention is a span of many words
-            else:
-                temp_tgts = []
-                temp_pairs = []
-                for src_word in mention:
-                    if src_word in align_info:
-                        tgt_list = align_info[src_word]
-                        # one point alignment
-                        if len(tgt_list) == 1:
-                            temp_tgts.append(tgt_list[0])
-                        else:
-                            #len(tgt_list) > 1:
-                            # one to many
-                            temp_tgts += tgt_list
-
-
-
-                    else:
-                        mention_no_match.append((src_word))
-
-
-        info[chain] = [[],[],[]]
-
-    return (matches, donts)
+    return out
 
 
 
@@ -274,7 +238,7 @@ def main():
     #out = open(sys.argv[4], "w", encoding = "utf-8")
 
     for doc in endeDocs: #loop and keep order of protest
-        print(doc, "===>")
+        print("Document ==>", doc)
         document = []  # document as single list of words
         docid = re.findall(r'[0-9]+_[0-9]+', doc)[0]  # returns list therefore the index
         #shortdocid = int(re.findall(r'[0-9]+', doc)[1])
@@ -292,13 +256,14 @@ def main():
 
             chains_wrt_sent = get_sent_position(src_coref_chains, sentences_ids) # 0 based both sentences and indexes
 
-            aligned_mentions, unaligned_mentions = match_mentions_to_tgt(chains_wrt_sent, giza_alignments)
+            chains_w_target = match_mentions_to_tgt(chains_wrt_sent, giza_alignments)
 
-            print("aligned chains", len(aligned_mentions))
-            print("unalined chains", len(unaligned_mentions))
-
-            #print(giza_alignments)
-
+            """
+            for key in chains_wrt_sent:
+                print(key, chains_wrt_sent[key])
+                print(key, chains_w_target[key])
+            """
+            print("\n", "\n")
 
 
             """
