@@ -11,6 +11,31 @@ import sys, re
 from bs4 import BeautifulSoup
 
 
+def create_document(dir, doc):
+
+    document = []
+    with open(dir + "/" + doc, "r", encoding="utf-8") as en_xml:
+        soup = BeautifulSoup(en_xml, "xml")
+        # make doc out of _words.xml files
+        for w in soup.find_all("word"):
+            document.append(w.string)
+    return document
+
+
+def read_alignments(f):
+
+    giza_alignments = open(f, "r", encoding="utf=8")
+    all_aligns = {}
+    # 0-0 1-1 2-2 3-3 4-4 5-5 6-5 8-6 12-7 7-8 9-9 13-10 14-11 15-13
+    sent = 0
+    for line in giza_alignments:
+        aligns = line.strip('\n').split(" ")
+        all_aligns[sent] = aligns
+        sent += 1
+    giza_alignments.close()
+    return all_aligns
+
+
 def make_sentences_spans(doc_id, markables):
     """
     :param doc_id: id of current document
@@ -86,14 +111,11 @@ def get_chain_info(doc_id, markables):
         soup = BeautifulSoup(key, "xml")
         for m in soup.find_all("markable"):
             coref_class = m["coref_class"]
-
             #doc_position.sort(key=lambda x: x[0])
-
             if coref_class in info:
                 info[coref_class].append(treat_span(m["span"]))
             else:
                 info[coref_class] = [treat_span(m["span"])]
-
     return info
 
 
@@ -107,21 +129,6 @@ def get_sentence_level_info(sentences_ids, doc_position):
             sentence_position = indexes.index(doc_position)
             sentence_id = int(key)
             return (sentence_id, sentence_position)
-
-
-def read_alignments(f):
-
-    giza_alignments = open(f, "r", encoding="utf=8")
-    all_aligns = {}
-    # 0-0 1-1 2-2 3-3 4-4 5-5 6-5 8-6 12-7 7-8 9-9 13-10 14-11 15-13
-    sent = 0
-    for line in giza_alignments:
-        aligns = line.strip('\n').split(" ")
-        all_aligns[sent] = aligns
-        sent += 1
-    giza_alignments.close()
-    return all_aligns
-
 
 
 def read_rawfile(f):
@@ -179,7 +186,7 @@ def organize_align(alignments):
 
 def match_mentions_to_tgt(chains, giza):
     """                       src positions
-    # in -> {set_238: {154: [[2, 3, 4], [7]], 155: [[2]]}, ...}
+    # in -> {sent154: {set_268: [[2, 3, 4], [7]]}, sent155: {set_268: [[2]]}}
                                 tgt positions
     # out -> {set_238: {154: [[2, 3, 4], [7]], 155: [[2]]}, ...}
     """
@@ -206,6 +213,28 @@ def match_mentions_to_tgt(chains, giza):
 
 
 
+def get_chains_position(en_coref_chains):
+    """
+    :param {set_268 {154: [[2, 3, 4], [7]], 155: [[2]]}, ...}
+    :return {sent154: {set_268: [[2, 3, 4], [7]]}, sent155: {set_268: [[2]]}}
+
+    """
+    sentences = {}
+    chains = {}
+
+    for chain_key in en_coref_chains:
+        for sentence in en_coref_chains[chain_key]:
+            if sentence in sentences:
+                if chain_key in chains:
+                    chains[chain_key] += en_coref_chains[chain_key][sentence]
+                else:
+                    chains[chain_key] = en_coref_chains[chain_key][sentence]
+            else:
+                sentences[sentence] = chains
+                sentences[sentence][chain_key] = en_coref_chains[chain_key][sentence]
+                chains = {}
+    return sentences
+
 
 
 
@@ -227,10 +256,14 @@ def main():
                 "005_1938_words.xml", "006_1950_words.xml", "007_1953_words.xml", "009_2043_words.xml",
                 "010_205_words.xml", "011_2053_words.xml"]
 
-    current_path = sys.argv[1]
-    path_all = current_path + "/" + "DiscoMT" + "/" + "EN"
-    data_dir = path_all + "/" + "Basedata"
-    annotation_dir = path_all + "/" + "Markables"
+    base_path = sys.argv[1]
+    en_path_all = base_path + "/" + "DiscoMT" + "/" + "EN"
+    en_data_dir = en_path_all + "/" + "Basedata"
+    en_annotation_dir = en_path_all + "/" + "Markables"
+
+    de_path_all = base_path + "/" + "DiscoMT" + "/" + "DE"
+    de_data_dir = de_path_all + "/" + "Basedata"
+    de_annotation_dir = de_path_all + "/" + "Markables"
 
     giza_alignments = read_alignments(sys.argv[2])
 
@@ -238,45 +271,50 @@ def main():
     #out = open(sys.argv[4], "w", encoding = "utf-8")
 
     for doc in endeDocs: #loop and keep order of protest
-        print("Document ==>", doc)
-        document = []  # document as single list of words
         docid = re.findall(r'[0-9]+_[0-9]+', doc)[0]  # returns list therefore the index
-        #shortdocid = int(re.findall(r'[0-9]+', doc)[1])
-        with open(data_dir + "/" + doc, "r", encoding="utf-8") as xmldoc:
-            soup = BeautifulSoup(xmldoc, "xml")
-            # make doc out of _words.xml files
-            for w in soup.find_all("word"):
-                document.append(w.string)
+        print("Document ==>", docid)
 
-            sentences_ids = make_sentences_spans(docid, annotation_dir) # {0: (1, 16), 1: (17, 32), 2: (33, 62),...}
+        # document as single list of words
+        en_document = create_document(en_data_dir, doc)
 
-            src_coref_chains = get_chain_info(docid, annotation_dir)
+        # {0: (1, 16), 1: (17, 32), 2: (33, 62),...}
+        en_sentences_ids = make_sentences_spans(docid, en_annotation_dir)
+        de_sentences_ids = make_sentences_spans(docid, de_annotation_dir)
 
-            print("total of src chains ==>", len(src_coref_chains))
+        #coref chains
 
-            chains_wrt_sent = get_sent_position(src_coref_chains, sentences_ids) # 0 based both sentences and indexes
+        en_coref_chains = get_chain_info(docid, en_annotation_dir)
+        de_coref_chains = get_chain_info(docid, de_annotation_dir)
 
-            chains_w_target = match_mentions_to_tgt(chains_wrt_sent, giza_alignments)
+        print("total of SOURCE chains ==>", len(en_coref_chains))
+        print("total of TARGET chains ==>", len(de_coref_chains))
 
-            """
-            for key in chains_wrt_sent:
-                print(key, chains_wrt_sent[key])
-                print(key, chains_w_target[key])
-            """
-            print("\n", "\n")
+        en_chains_wrt_sent = get_sent_position(en_coref_chains, en_sentences_ids) # 0 based both sentences and indexes
+        de_chains_wrt_sent = get_sent_position(de_coref_chains, de_sentences_ids)
+
+        en_sents_wrt_en_chains = get_chains_position(en_chains_wrt_sent)
+        de_sents_wrt_de_chains = get_chains_position(de_chains_wrt_sent)
+
+        en_chains_w_target = match_mentions_to_tgt(en_sents_wrt_en_chains, giza_alignments)
+
+        # print("English chains as keys ----->")
+        # for key in en_chains_wrt_sent:
+        #     print(key, en_chains_wrt_sent[key])
+        # print("\n", "\n")
+
+        # print("English sentences as keys ----->")
+        # for key in en_sents_wrt_en_chains:
+        #     print(key, en_sents_wrt_en_chains[key])
+        #
+        # print("\n", "\n")
+        # print("German ----->")
+        # for key in de_sents_wrt_de_chains:
+        #     print(key, de_sents_wrt_de_chains[key])
 
 
-            """
-            print("sanity check")
-            print(src_coref_chains['set_268'])
-            print(chains_wrt_sent['set_268'])
-            for mention in src_coref_chains['set_268']:
-                for word in mention:
-                    print(document[word-1])
-            
-            print(src_coref_chains['set_268'])
-            """
 
+
+        break
 
 
 
