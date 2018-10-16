@@ -1,736 +1,1287 @@
-
-
-English sentences as keys ----->
-source ==> 154 {'set_268': [[2, 3, 4], [7]]}
-alignment ==> 154 {'set_268': [[2, 3, 4], [6, 7, 8]]}
-German ==> 154 {'set_213': [[8], [2, 3, 4]]}
-
-
-source ==> 155 {'set_268': [[2]]}
-alignment ==> 155 {'set_268': [[1]]}
-German ==> 155 {'set_213': [[1]]}
-
-
-source ==> 158 {'set_271': [[3], [18], [4]]}
-alignment ==> 158 {'set_271': [[3], [16, 17], [4, 5]]}
-German ==> 158 {'set_282': [[0, 1], [0, 1], [11]], 'set_84': [[10], [7, 8]], 'set_153': [[35, 36], [40]], 'set_217': [[3], [16], [5]]}
-
-
-source ==> 126 {'set_199': [[18], [26], [23], [7], [15]]}
-alignment ==> 126 {'set_199': [[23], [32], [24], [6], [18, 19]]}
-German ==> 126 {'empty': [[0]]}
-
-
-source ==> 127 {'set_199': [[7]]}
-alignment ==> 127 {'set_199': [[]]}
-German ==> 127 {'set_114': [[16], [4, 5]], 'set_173': [[5], [1, 2, 3], [7]]}
-
-
-source ==> 125 {'set_199': [[10, 11, 12, 13, 14]]}
-alignment ==> 125 {'set_199': [[13, 14, 15, 16, 17]]}
-German ==> 125 {'set_278': [[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]]}
-
-
-source ==> 143 {'set_139': [[12, 13], [19]]}
-alignment ==> 143 {'set_139': [[9, 10, 10], [20]]}
-German ==> 143 {'set_198': [[39], [37]]}
-
-
-source ==> 2 {'set_3': [[3], [8], [17]]}
-alignment ==> 2 {'set_3': [[2, 3], [], [15]]}
-German ==> 2 {'set_2': [[3], [23]]}
-
-
-source ==> 0 {'set_3': [[7]]}
-alignment ==> 0 {'set_3': [[8]]}
-German ==> 0 {'set_2': [[7, 8]]}
-
-
-source ==> 1 {'set_3': [[0]]}
-alignment ==> 1 {'set_3': [[0]]}
-German ==> 1 {'set_2': [[0]]}
-
-
-source ==> 55 {'set_119': [[23, 24], [31]], 'set_38': [[2, 3, 4, 5, 6, 7, 8], [20]]}
-alignment ==> 55 {'set_119': [[20], []], 'set_38': [[2, 3, 8, 7, 4, 5, 6], [13]]}
-German ==> 55 {'set_46': [[3, 4, 5], [2, 3]], 'set_118': [[10], [5, 6, 7]], 'set_48': [[0]]}
-
-
-source ==> 59 {'set_40': [[1, 6, 7, 12, 13]]}
-alignment ==> 59 {'set_40': [[3, 8, 6, 11, 12]]}
-not in German -->
-
-
-source ==> 60 {'set_40': [[1]]}
-alignment ==> 60 {'set_40': [[1]]}
-German ==> 60 {'set_55': [[1, 2]]}
-
-
-source ==> 34 {'set_218': [[9, 10], [11]]}
-alignment ==> 34 {'set_218': [[6, 7, 8], [7]]}
-German ==> 34 {'set_36': [[2, 3, 4, 5]]}
-
-
-source ==> 36 {'set_218': [[10, 11]]}
-alignment ==> 36 {'set_218': [[9, 10]]}
-German ==> 36 {'set_36': [[0]]}
-
-
-source ==> 61 {'set_183': [[7, 8, 9, 10, 11], [16], [39], [25], [20], [34]]}
-alignment ==> 61 {'set_183': [[7, 6, 7, 16, 8, 9], [13], [36], [21], [19], [34]]}
-German ==> 61 {'set_53': [[15], [13]], 'set_59': [[13], [6, 7], [36], [19], [34], [21]]}
-
-
-source ==> 82 {'set_87': [[4, 5]]}
-alignment ==> 82 {'set_87': [[4, 5]]}
-German ==> 82 {'set_161': [[8], [2, 3, 4, 5]], 'set_226': [[2, 3], [2]], 'set_162': [[21], [17, 18]], 'set_100': [[0]]}
-
-
-source ==> 83 {'set_87': [[14]]}
-alignment ==> 83 {'set_87': [[16]]}
-German ==> 83 {'set_100': [[1]]}
-
-
-source ==> 117 {'set_106': [[10]]}
-alignment ==> 117 {'set_106': [[7]]}
-German ==> 117 {'empty': [[4]]}
-
-
-source ==> 116 {'set_106': [[2, 3, 4, 19, 20, 21]]}
-alignment ==> 116 {'set_106': [[2, 3, 4, 16, 17, 18]]}
-not in German -->
-
-
-source ==> 118 {'set_106': [[6]]}
-alignment ==> 118 {'set_106': [[6]]}
-German ==> 118 {'set_270': [[6]]}
-
-
-source ==> 137 {'set_135': [[9, 10, 11, 12], [25]]}
-alignment ==> 137 {'set_135': [[9, 10, 13, 15], [26]]}
-German ==> 137 {'set_126': [[25, 26, 27], [8]], 'set_189': [[26], [12], [9, 10]]}
-
-
-source ==> 138 {'set_135': [[20], [4]]}
-alignment ==> 138 {'set_135': [[26], [7]]}
-German ==> 138 {'empty': [[15]]}
-
-
-source ==> 172 {'set_156': [[17, 18, 19, 20, 21, 22, 23, 24, 25], [28], [37], [41]]}
-alignment ==> 172 {'set_156': [[13, 14, 19, 23, 17, 16, 21, 21], [25], [35], [41]]}
-German ==> 172 {'set_255': [[28], [36], [20], [11]]}
-
-
-source ==> 178 {'set_275': [[30], [13, 14], [3, 4, 5, 6, 7, 8, 9]]}
-alignment ==> 178 {'set_275': [[35], [16, 17], [3, 4, 7, 7, 8, 9, 10]]}
-German ==> 178 {'set_75': [[15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25], [31]], 'set_143': [[13], [15, 16, 17, 18, 19, 20]], 'set_256': [[35], [6], [3, 4]]}
-
-
-source ==> 35 {'set_225': [[7], [2], [10]]}
-alignment ==> 35 {'set_225': [[8], [4], [9]]}
-German ==> 35 {'set_152': [[34], [26, 27]], 'set_36': [[8], [4]]}
-
-
-source ==> 37 {'set_225': [[1]]}
-alignment ==> 37 {'set_225': [[1]]}
-German ==> 37 {'set_36': [[1]]}
-
-
-source ==> 38 {'set_225': [[2]]}
-alignment ==> 38 {'set_225': [[2]]}
-German ==> 38 {'set_36': [[2]]}
-
-
-source ==> 39 {'set_225': [[1, 2, 3, 4, 5, 6, 7]], 'set_228': [[5, 6, 7]]}
-alignment ==> 39 {'set_225': [[1, 3, 4, 2, 6, 5, 7, 8, 9, 10]], 'set_228': [[7, 8, 9, 10]]}
-German ==> 39 {'set_223': [[3], [2, 3, 4, 5, 6]], 'set_26': [[11, 12]]}
-
-
-source ==> 40 {'set_228': [[8]]}
-alignment ==> 40 {'set_228': [[7]]}
-German ==> 40 {'set_26': [[7], [1]]}
-
-
-source ==> 41 {'set_228': [[0, 1, 2]]}
-alignment ==> 41 {'set_228': [[0, 1, 2]]}
-German ==> 41 {'set_28': [[11], [0, 1, 2]]}
-
-
-source ==> 43 {'set_230': [[5], [19, 20, 21]]}
-alignment ==> 43 {'set_230': [[], [18, 19, 20]]}
-German ==> 43 {'set_28': [[7, 8, 9, 10]], 'set_113': [[10, 11], [15]], 'set_33': [[18, 19, 20], [27]]}
-
-
-source ==> 42 {'set_230': [[0, 1, 2]]}
-alignment ==> 42 {'set_230': [[0, 1, 2, 3]]}
-German ==> 42 {'set_33': [[1, 2, 3]]}
-
-
-source ==> 183 {'set_229': [[0, 1, 2], [10], [6, 7]], 'set_166': [[24], [10, 11, 12, 13, 14, 15]]}
-alignment ==> 183 {'set_229': [[0, 1, 2], [8], [4]], 'set_166': [[20], [8, 11, 9, 12, 13]]}
-German ==> 183 {'set_277': [[10, 11, 12, 13], [9], [20]]}
-
-
-source ==> 109 {'set_255': [[14], [27], [11, 12]]}
-alignment ==> 109 {'set_255': [[16], [29], [14, 14]]}
-German ==> 109 {'set_99': [[2], [14], [2], [0], [0], [39], [0], [1], [0, 1], [8], [20], [6], [1, 2]], 'set_141': [[29], [16], [14]]}
-
-
-source ==> 110 {'set_256': [[0, 1], [2]]}
-alignment ==> 110 {'set_256': [[0, 1], [2, 3]]}
-German ==> 110 {'set_77': [[2, 3], [3, 4, 5]], 'set_145': [[10], [3], [0, 1]]}
-
-
-source ==> 173 {'set_212': [[2], [10], [18, 19, 20], [23]]}
-alignment ==> 173 {'set_212': [[2], [], [11, 10, 12, 13], []]}
-German ==> 173 {'set_255': [[2]]}
-
-
-source ==> 175 {'set_212': [[11], [23], [18]]}
-alignment ==> 175 {'set_212': [[12], [20], [19]]}
-German ==> 175 {'set_255': [[20], [19], [12]]}
-
-
-source ==> 176 {'set_212': [[19]]}
-alignment ==> 176 {'set_212': [[19]]}
-German ==> 176 {'set_255': [[19], [9]]}
-
-
-source ==> 170 {'set_212': [[14, 15]]}
-alignment ==> 170 {'set_212': [[12, 13]]}
-not in German -->
-
-
-source ==> 130 {'set_288': [[6], [23]]}
-alignment ==> 130 {'set_288': [[6], [18]]}
-German ==> 130 {'set_281': [[37]], 'set_183': [[18], [6]]}
-
-
-source ==> 134 {'set_288': [[19], [29], [13]]}
-alignment ==> 134 {'set_288': [[17], [33], [10]]}
-German ==> 134 {'set_281': [[2]]}
-
-
-source ==> 132 {'set_288': [[11], [9], [5]]}
-alignment ==> 132 {'set_288': [[14], [8], [2]]}
-German ==> 132 {'set_183': [[8], [2]]}
-
-
-source ==> 111 {'set_257': [[15, 16]]}
-alignment ==> 111 {'set_257': [[16, 13]]}
-German ==> 111 {'set_144': [[11], [9]]}
-
-
-source ==> 141 {'set_258': [[10], [11], [18]], 'set_202': [[18], [12, 13, 14, 15]]}
-alignment ==> 141 {'set_258': [[11], [20], [18]], 'set_202': [[18], [15, 14, 12]]}
-German ==> 141 {'set_195': [[18], [14, 15]]}
-
-
-source ==> 113 {'set_259': [[2, 3], [4]]}
-alignment ==> 113 {'set_259': [[2, 2], [11]]}
-German ==> 113 {'set_140': [[32], [2, 3], [5]], 'set_148': [[4], [30], [11], [2]]}
-
-
-source ==> 121 {'set_260': [[7], [8]], 'set_261': [[31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51], [56]]}
-alignment ==> 121 {'set_260': [[16], [6, 7]], 'set_261': [[28, 29, 30, 32, 33, 36, 37, 37, 40, 41, 42, 43, 44, 45, 46, 47, 48, 50, 49, 48, 51, 52], [59]]}
-German ==> 121 {'set_156': [[35], [32, 33]]}
-
-
-source ==> 122 {'set_261': [[0]]}
-alignment ==> 122 {'set_261': [[0]]}
-German ==> 122 {'set_17': [[28], [22, 23, 24, 25, 26]], 'set_157': [[59], [29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50]], 'set_25': [[9, 10], [13], [27], [9], [6, 7, 8]], 'set_160': [[5], [11]]}
-
-
-source ==> 151 {'set_205': [[2], [7]]}
-alignment ==> 151 {'set_205': [[2], [8]]}
-German ==> 151 {'set_209': [[26, 27], [8], [29], [2]]}
-
-
-source ==> 150 {'set_205': [[15, 16, 17, 18, 19, 20, 21, 22, 23]]}
-alignment ==> 150 {'set_205': [[16, 17, 18, 19, 20, 28, 25, 27, 24]]}
-German ==> 150 {'set_3': [[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31]], 'set_209': [[6, 7, 8], [16, 17, 18, 19], [11], [21]]}
-
-
-source ==> 123 {'set_158': [[59], [48, 49]], 'set_262': [[10], [0]]}
-alignment ==> 123 {'set_158': [[], []], 'set_262': [[8], [0]]}
-German ==> 123 {'empty': [[0]]}
-
-
-source ==> 136 {'set_263': [[21, 22, 23]]}
-alignment ==> 136 {'set_263': [[20, 21, 22]]}
-German ==> 136 {'set_183': [[15, 16]]}
-
-
-source ==> 135 {'set_263': [[29]]}
-alignment ==> 135 {'set_263': [[32]]}
-German ==> 135 {'set_281': [[9], [25]]}
-
-
-source ==> 140 {'set_264': [[11, 12, 13, 14, 15], [25, 26]], 'set_265': [[21], [22]]}
-alignment ==> 140 {'set_264': [[9, 10, 11, 12], [26, 26]], 'set_265': [[18], [19, 20]]}
-German ==> 140 {'set_278': [[7, 8], [35], [22]]}
-
-
-source ==> 144 {'set_266': [[43, 44, 45, 46, 47], [49]], 'set_267': [[62, 63], [20, 32, 41]]}
-alignment ==> 144 {'set_266': [[34, 39, 40], []], 'set_267': [[46, 47], [33, 36]]}
-German ==> 144 {'empty': [[0]]}
-
-
-source ==> 163 {'set_207': [[4], [0]]}
-alignment ==> 163 {'set_207': [[2], [0]]}
-German ==> 163 {'set_22': [[15], [12]], 'set_101': [[22, 23, 24, 25, 26, 27], [30], [26, 27], [29]], 'set_255': [[2], [0]]}
-
-
-source ==> 164 {'set_207': [[6]]}
-alignment ==> 164 {'set_207': [[8]]}
-German ==> 164 {'set_232': [[0]]}
-
-
-source ==> 162 {'set_207': [[3, 4]]}
-alignment ==> 162 {'set_207': [[4, 5]]}
-German ==> 162 {'set_232': [[10, 11], [19]]}
-
-
-source ==> 166 {'set_207': [[1]]}
-alignment ==> 166 {'set_207': [[1]]}
-German ==> 166 {'set_232': [[11]]}
-
-
-source ==> 165 {'set_207': [[4], [9]]}
-alignment ==> 165 {'set_207': [[1], [7]]}
-German ==> 165 {'set_276': [[4], [8]]}
-
-
-source ==> 168 {'set_208': [[38], [18]]}
-alignment ==> 168 {'set_208': [[30], [16]]}
-German ==> 168 {'set_51': [[4], [2], [10], [5]], 'set_52': [[11], [6, 7]], 'set_123': [[4], [1, 2]], 'set_234': [[18], [16]]}
-
-
-source ==> 156 {'set_270': [[6, 7], [8], [16]]}
-alignment ==> 156 {'set_270': [[5, 6], [8, 9], [16]]}
-German ==> 156 {'set_151': [[15], [12, 13]], 'set_215': [[5, 6], [9], [16]]}
-
-
-source ==> 124 {'empty': [[5]]}
-alignment ==> 124 {'empty': [[]]}
-German ==> 124 {'set_165': [[0]]}
-
-
-source ==> 67 {'empty': [[1]]}
-alignment ==> 67 {'empty': [[0]]}
-German ==> 67 {'set_111': [[11], [4, 5]]}
-
-
-source ==> 45 {'empty': [[5]]}
-alignment ==> 45 {'empty': [[5]]}
-German ==> 45 {'set_167': [[4], [1, 2]], 'set_31': [[0, 1], [12], [6], [5, 6]], 'set_166': [[2, 3], [8], [7]], 'set_171': [[18], [28], [24], [6], [32], [13, 14]], 'set_38': [[8, 9], [12], [11]]}
-
-
-source ==> 51 {'empty': [[4]]}
-alignment ==> 51 {'empty': [[5]]}
-not in German -->
-
-
-source ==> 58 {'empty': [[1]]}
-alignment ==> 58 {'empty': [[1]]}
-German ==> 58 {'set_55': [[6, 7, 8, 9], [12]]}
-
-
-source ==> 16 {'empty': [[8]]}
-alignment ==> 16 {'empty': [[4]]}
-German ==> 16 {'set_11': [[11], [13]]}
-
-
-source ==> 145 {'empty': [[7], [2]]}
-alignment ==> 145 {'empty': [[2], []]}
-German ==> 145 {'empty': [[2]]}
-
-
-source ==> 139 {'empty': [[6]]}
-alignment ==> 139 {'empty': [[8]]}
-German ==> 139 {'empty': [[8]]}
-
-
-source ==> 152 {'empty': [[3]]}
-alignment ==> 152 {'empty': [[4]]}
-German ==> 152 {'set_204': [[12], [10], [3, 4]], 'set_274': [[19], [9]]}
-
-
-source ==> 159 {'set_272': [[3], [4]]}
-alignment ==> 159 {'set_272': [[3], [4, 5]]}
-German ==> 159 {'set_154': [[2, 3], [5]], 'set_18': [[13], [3, 4]], 'set_218': [[5], [3]]}
-
-
-source ==> 184 {'set_277': [[22], [55], [53], [15], [6, 7, 8, 9, 10]]}
-alignment ==> 184 {'set_277': [[25], [], [60], [18, 19], [7, 8, 11, 12, 12]]}
-German ==> 184 {'set_235': [[21, 22, 23, 24], [30]], 'set_230': [[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10], [20]], 'set_245': [[35], [41], [18], [25], [13, 14], [16, 17, 15, 16]], 'set_179': [[17], [19]], 'set_253': [[3, 4], [16], [14]], 'set_249': [[14, 15], [7]], 'set_248': [[50, 51], [53]], 'set_187': [[6], [2, 3], [14]], 'set_260': [[7, 8], [18], [10], [60], [25]]}
-
-
-source ==> 13 {'set_164': [[4, 5], [12], [14]], 'set_6': [[21, 22, 23, 24], [26]]}
-alignment ==> 13 {'set_164': [[5, 6, 6, 7], [14, 15], [14]], 'set_6': [[22, 23, 21], [27]]}
-German ==> 13 {'set_8': [[27], [20, 21, 22, 23]]}
-
-
-source ==> 44 {'set_30': [[3, 4, 5, 6], [14]]}
-alignment ==> 44 {'set_30': [[4, 5, 6, 7], [12]]}
-German ==> 44 {'set_36': [[4, 5], [9], [12]]}
-
-
-source ==> 86 {'set_114': [[21], [24], [16], [8], [0]], 'set_194': [[13, 14, 15, 16], [20]]}
-alignment ==> 86 {'set_114': [[27], [33], [17], [8], [0]], 'set_194': [[16, 18, 19, 19, 17], [25]]}
-German ==> 86 {'empty': [[25]]}
-
-
-source ==> 66 {'set_58': [[33], [28], [41], [18], [23], [5], [1]]}
-alignment ==> 66 {'set_58': [[], [], [38], [21], [24], [9], [1]]}
-German ==> 66 {'set_65': [[21], [9], [24], [1]]}
-
-
-source ==> 68 {'set_58': [[1]]}
-alignment ==> 68 {'set_58': [[1]]}
-German ==> 68 {'set_111': [[1]]}
-
-
-source ==> 71 {'set_58': [[5], [8]]}
-alignment ==> 71 {'set_58': [[2], [5]]}
-German ==> 71 {'set_111': [[5], [2]]}
-
-
-source ==> 73 {'set_58': [[14], [12], [2]]}
-alignment ==> 73 {'set_58': [[12], [10], [1]]}
-German ==> 73 {'set_111': [[10], [1], [12]]}
-
-
-source ==> 75 {'set_58': [[18], [1]]}
-alignment ==> 75 {'set_58': [[13], [4]]}
-German ==> 75 {'set_111': [[13], [4]]}
-
-
-source ==> 76 {'set_58': [[6], [29], [0], [18]]}
-alignment ==> 76 {'set_58': [[6], [31], [0], [16]]}
-German ==> 76 {'set_111': [[16], [25], [2], [6], [31]]}
-
-
-source ==> 65 {'set_58': [[12, 13]]}
-alignment ==> 65 {'set_58': [[10, 11]]}
-German ==> 65 {'set_62': [[1, 2, 3], [5]]}
-
-
-source ==> 70 {'set_58': [[32]]}
-alignment ==> 70 {'set_58': [[]]}
-German ==> 70 {'set_111': [[29]]}
-
-
-source ==> 72 {'set_58': [[1], [11], [22]]}
-alignment ==> 72 {'set_58': [[1], [11], [19]]}
-German ==> 72 {'set_111': [[1], [19], [11], [12]]}
-
-
-source ==> 77 {'set_58': [[1], [14], [61]]}
-alignment ==> 77 {'set_58': [[0], [14], [53]]}
-German ==> 77 {'set_111': [[0], [14], [26], [53]]}
-
-
-source ==> 79 {'set_58': [[28], [14], [24]]}
-alignment ==> 79 {'set_58': [[29], [15], [25]]}
-German ==> 79 {'set_111': [[15], [25], [29]]}
-
-
-source ==> 80 {'set_58': [[33], [16], [53], [26]]}
-alignment ==> 80 {'set_58': [[31], [14], [50], [28]]}
-German ==> 80 {'set_111': [[14], [31], [28], [50]]}
-
-
-source ==> 74 {'set_58': [[1]]}
-alignment ==> 74 {'set_58': [[1]]}
-German ==> 74 {'set_111': [[1]]}
-
-
-source ==> 78 {'set_58': [[8]]}
-alignment ==> 78 {'set_58': [[9]]}
-German ==> 78 {'set_111': [[9]]}
-
-
-source ==> 81 {'set_58': [[12]]}
-alignment ==> 81 {'set_58': [[12]]}
-German ==> 81 {'set_111': [[12]]}
-
-
-source ==> 85 {'set_175': [[7], [5], [47], [18, 19], [6]], 'set_231': [[9, 10], [11], [13]], 'set_88': [[17, 18, 19]]}
-alignment ==> 85 {'set_175': [[7], [4], [], [19, 20], [7]], 'set_231': [[9, 11], [12], [14]], 'set_88': [[18, 19, 20]]}
-German ==> 85 {'empty': [[0]]}
-
-
-source ==> 106 {'set_88': [[0]], 'set_178': [[62], [32]]}
-alignment ==> 106 {'set_88': [[0]], 'set_178': [[56], [34]]}
-German ==> 106 {'set_135': [[15]]}
-
-
-source ==> 99 {'set_178': [[8]]}
-alignment ==> 99 {'set_178': [[7]]}
-German ==> 99 {'set_66': [[21, 22], [38], [2], [4]], 'set_199': [[47, 48, 49, 50, 51], [54]], 'set_269': [[50], [41, 42]], 'set_197': [[20], [9, 10]], 'set_132': [[3]]}
-
-
-source ==> 100 {'set_178': [[8, 9]]}
-alignment ==> 100 {'set_178': [[8, 7, 8, 9]]}
-German ==> 100 {'set_268': [[7, 8, 9]]}
-
-
-source ==> 102 {'set_178': [[23], [17]]}
-alignment ==> 102 {'set_178': [[19], [15]]}
-German ==> 102 {'set_135': [[32], [19], [8]]}
-
-
-source ==> 101 {'set_178': [[8]]}
-alignment ==> 101 {'set_178': [[6]]}
-not in German -->
-
-
-source ==> 105 {'set_178': [[6]]}
-alignment ==> 105 {'set_178': [[5]]}
-German ==> 105 {'set_129': [[32], [29, 30]], 'set_127': [[14], [5, 6]], 'set_188': [[25], [22, 23]], 'set_261': [[11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23], [4]], 'set_135': [[1], [11]]}
-
-
-source ==> 47 {'set_232': [[18, 19], [20]], 'set_233': [[5], [2, 3]]}
-alignment ==> 47 {'set_232': [[], []], 'set_233': [[5], [2, 3]]}
-German ==> 47 {'set_40': [[10], [8]]}
-
-
-source ==> 48 {'set_233': [[0]]}
-alignment ==> 48 {'set_233': [[0]]}
-German ==> 48 {'set_43': [[2]]}
-
-
-source ==> 87 {'set_227': [[11, 12], [0, 1, 2]], 'set_244': [[0], [9]]}
-alignment ==> 87 {'set_227': [[11, 12, 13], [0, 1, 2]], 'set_244': [[0], [10]]}
-German ==> 87 {'set_172': [[24, 25], [37]], 'set_39': [[21], [18, 19]], 'set_112': [[18], [10, 11, 12, 13, 14, 15, 16]], 'set_115': [[18, 19, 20], [0]], 'set_117': [[0], [10]]}
-
-
-source ==> 69 {'set_244': [[12, 13, 14, 15, 16, 17]], 'set_236': [[2], [3], [10]], 'set_102': [[0, 1, 2], [29]], 'set_184': [[1], [3]]}
-alignment ==> 69 {'set_244': [[]], 'set_236': [[1], [2], []], 'set_102': [[0, 0, 1], []], 'set_184': [[0], [2]]}
-German ==> 69 {'set_111': [[2, 3]]}
-
-
-source ==> 56 {'set_184': [[4], [1, 2], [1, 2], [21], [45], [0], [0], [42], [1]], 'set_237': [[1, 2]]}
-alignment ==> 56 {'set_184': [[4], [1, 2], [1, 2], [], [], [0], [0], [], [1]], 'set_237': [[1, 2]]}
-German ==> 56 {'set_48': [[1, 2], [4, 5, 6]]}
-
-
-source ==> 46 {'set_237': [[9, 10, 11, 12]]}
-alignment ==> 46 {'set_237': [[10, 11, 12, 13]]}
-not in German -->
-
-
-source ==> 54 {'set_39': [[4, 5]]}
-alignment ==> 54 {'set_39': [[4, 5]]}
-German ==> 54 {'set_117': [[29, 30, 31]], 'set_47': [[0]]}
-
-
-source ==> 57 {'set_39': [[23], [15, 16]]}
-alignment ==> 57 {'set_39': [[24], [16, 17]]}
-German ==> 57 {'set_54': [[16, 17], [24]]}
-
-
-source ==> 53 {'set_238': [[12], [13]], 'set_279': [[10], [8, 9, 10, 11, 12]], 'set_239': [[8], [7]], 'set_234': [[5], [2, 3, 4]]}
-alignment ==> 53 {'set_238': [[12, 13], [12]], 'set_279': [[11], [6, 11, 9, 12, 13]], 'set_239': [[6], []], 'set_234': [[7], [3, 4, 5]]}
-German ==> 53 {'set_47': [[7], [3, 4, 5]]}
-
-
-source ==> 84 {'set_234': [[3]], 'set_243': [[6, 7, 8, 9, 10]]}
-alignment ==> 84 {'set_234': [[1]], 'set_243': [[5, 6, 7, 8, 9, 10]]}
-not in German -->
-
-
-source ==> 89 {'set_243': [[0, 1]], 'set_245': [[9, 10, 11], [12]]}
-alignment ==> 89 {'set_243': [[0]], 'set_245': [[5, 6, 7], [9]]}
-German ==> 89 {'empty': [[16]]}
-
-
-source ==> 91 {'set_246': [[8], [9]]}
-alignment ==> 91 {'set_246': [[18], [9]]}
-German ==> 91 {'set_119': [[6], [30], [18, 19, 20, 21], [10]]}
-
-
-source ==> 49 {'set_278': [[0]]}
-alignment ==> 49 {'set_278': [[0]]}
-German ==> 49 {'set_43': [[0], [2]]}
-
-
-source ==> 50 {'set_278': [[15], [4]]}
-alignment ==> 50 {'set_278': [[15], [3]]}
-German ==> 50 {'set_43': [[2, 3], [15]]}
-
-
-source ==> 92 {'set_278': [[9], [11, 12], [2, 3, 4], [6, 7]], 'set_247': [[19], [20]], 'set_250': [[2], [3], [16], [17]]}
-alignment ==> 92 {'set_278': [[9], [12, 13], [1, 2, 6], [6, 7, 4, 5]], 'set_247': [[], [22]], 'set_250': [[1], [2], [18], [19, 20]]}
-German ==> 92 {'set_122': [[0, 1], [9], [3], [20], [18]]}
-
-
-source ==> 93 {'set_195': [[7, 8, 9, 10], [24]]}
-alignment ==> 93 {'set_195': [[8, 9, 10, 11, 13], [25]]}
-German ==> 93 {'set_280': [[8, 9], [10, 11], [25], [13, 14, 15, 16, 17, 18]]}
-
-
-source ==> 94 {'set_195': [[16], [0], [28], [18]]}
-alignment ==> 94 {'set_195': [[19], [0], [33], [21]]}
-German ==> 94 {'set_280': [[0], [33], [21]]}
-
-
-source ==> 95 {'set_174': [[35], [17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27]], 'set_196': [[2], [24, 25, 26], [6]], 'set_281': [[5, 6]]}
-alignment ==> 95 {'set_174': [[], [13, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22]], 'set_196': [[2], [19, 20, 21], [7]], 'set_281': [[6, 7]]}
-German ==> 95 {'set_181': [[22, 23], [32], [20, 21, 22]], 'set_130': [[6, 7]]}
-
-
-source ==> 25 {'set_12': [[4], [0, 1, 2]]}
-alignment ==> 25 {'set_12': [[4], [0, 1, 2]]}
-German ==> 25 {'set_15': [[4], [0, 1, 2]]}
-
-
-source ==> 26 {'set_12': [[0], [10]]}
-alignment ==> 26 {'set_12': [[0], [8]]}
-German ==> 26 {'set_15': [[8], [0]]}
-
-
-source ==> 97 {'set_252': [[17], [3, 4, 5], [7], [12]]}
-alignment ==> 97 {'set_252': [[13], [4, 4, 2], [1], []]}
-German ==> 97 {'set_266': [[15], [13], [2, 3, 4]]}
-
-
-source ==> 98 {'set_253': [[8]]}
-alignment ==> 98 {'set_253': [[5]]}
-German ==> 98 {'set_130': [[23, 24, 25]], 'set_264': [[48], [45]], 'set_192': [[29], [21], [18]], 'set_266': [[3]]}
-
-
-source ==> 103 {'set_253': [[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26]], 'set_291': [[1], [12], [10], [21], [40], [16]], 'set_91': [[10], [2, 3, 4]], 'set_282': [[3, 4, 5, 6, 7, 8, 9], [11]]}
-alignment ==> 103 {'set_253': [[0, 0, 2, 3, 4, 5, 6, 7, 7, 8, 9, 11, 10, 10, 12, 13, 14, 15, 16]], 'set_291': [[0], [10], [9], [], [], [14]], 'set_91': [[9], [2, 3]], 'set_282': [[2, 3, 4, 5, 6, 7, 7, 8], [11]]}
-German ==> 103 {'set_268': [[15]], 'set_134': [[11], [4, 5, 6, 7, 8]]}
-
-
-source ==> 181 {'set_276': [[5, 6], [14]]}
-alignment ==> 181 {'set_276': [[4, 5], [14]]}
-German ==> 181 {'set_258': [[4, 5], [14]]}
-
-
-source ==> 129 {'set_287': [[2, 3, 4, 5, 6, 7, 8], [6, 7, 8, 9], [34], [23]], 'set_289': [[7, 8]]}
-alignment ==> 129 {'set_287': [[1, 2, 3, 4, 5, 6, 7, 8], [5, 6, 7, 8, 7], [], []], 'set_289': [[6, 7, 8]]}
-German ==> 129 {'set_210': [[13, 14, 15, 16], [24]], 'set_281': [[6, 7]]}
-
-
-source ==> 133 {'set_289': [[8], [1]]}
-alignment ==> 133 {'set_289': [[7], [1]]}
-German ==> 133 {'set_281': [[1]]}
-
-
-source ==> 14 {'set_289': [[2], [5], [21], [29]], 'set_173': [[12, 13, 14, 15, 16, 17, 18], [22, 23]]}
-alignment ==> 14 {'set_289': [[3], [6], [], []], 'set_173': [[11, 12, 15, 16, 17, 18], []]}
-German ==> 14 {'set_11': [[6, 7]]}
-
-
-source ==> 15 {'set_173': [[11]]}
-alignment ==> 15 {'set_173': [[14]]}
-not in German -->
-
-
-source ==> 114 {'set_283': [[5, 6], [7, 8, 9]]}
-alignment ==> 114 {'set_283': [[5], [8, 9]]}
-German ==> 114 {'set_270': [[6, 7, 8, 9], [5]]}
-
-
-source ==> 115 {'set_283': [[6]]}
-alignment ==> 115 {'set_283': [[4]]}
-German ==> 115 {'set_270': [[4]]}
-
-
-source ==> 32 {'set_285': [[72, 73, 74, 75, 76, 77, 78, 79], [90]], 'set_286': [[14, 15, 16, 17, 18, 19], [25]], 'set_217': [[32], [30, 31]]}
-alignment ==> 32 {'set_285': [[], []], 'set_286': [[9, 15, 16, 17], [23]], 'set_217': [[31, 32], [29, 30]]}
-German ==> 32 {'set_19': [[29, 30], [32]]}
-
-
-source ==> 31 {'set_18': [[42, 43]]}
-alignment ==> 31 {'set_18': [[41, 42]]}
-German ==> 31 {'set_16': [[25, 26], [16, 17]]}
-
-
-source ==> 33 {'set_18': [[0]]}
-alignment ==> 33 {'set_18': [[0]]}
-not in German -->
-
-
-source ==> 3 {'set_219': [[0]]}
-alignment ==> 3 {'set_219': [[0]]}
-German ==> 3 {'set_279': [[9, 10], [9, 10], [12, 13]], 'set_3': [[0]]}
-
-
-source ==> 9 {'set_220': [[10, 11, 12]]}
-alignment ==> 9 {'set_220': [[9, 10, 10]]}
-German ==> 9 {'set_4': [[9, 10], [3, 4]]}
-
-
-source ==> 11 {'set_220': [[7, 8, 9]]}
-alignment ==> 11 {'set_220': [[9, 10, 10]]}
-German ==> 11 {'set_7': [[3]]}
-
-
-source ==> 17 {'set_280': [[55], [3]], 'set_223': [[10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22]]}
-alignment ==> 17 {'set_280': [[], [8]], 'set_223': [[6, 7, 7, 9, 10, 11, 15, 14, 12, 13]]}
-German ==> 17 {'set_263': [[5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]]}
-
-
-source ==> 21 {'set_223': [[7]]}
-alignment ==> 21 {'set_223': [[8]]}
-German ==> 21 {'set_263': [[8]]}
-
-
-source ==> 18 {'set_223': [[6], [4]]}
-alignment ==> 18 {'set_223': [[1], [7]]}
-German ==> 18 {'set_11': [[6]]}
-
-
-source ==> 19 {'set_223': [[16], [14]]}
-alignment ==> 19 {'set_223': [[16], [11]]}
-German ==> 19 {'set_11': [[8]]}
-
-
-source ==> 20 {'set_224': [[4, 5, 6], [8]]}
-alignment ==> 20 {'set_224': [[4, 5, 6], [8]]}
-German ==> 20 {'set_262': [[11, 12], [15]]}
-
-
-source ==> 167 {'set_226': [[12], [13]], 'set_222': [[12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26], [20]], 'set_147': [[4, 5], [7]], 'set_152': [[2]]}
-alignment ==> 167 {'set_226': [[], [12]], 'set_222': [[12, 19, 20, 20, 20, 20, 20, 21], [20]], 'set_147': [[3, 4], [5]], 'set_152': [[2]]}
-German ==> 167 {'set_232': [[2]]}
-
-
-source ==> 12 {'set_9': [[17], [5, 6], [10], [2]], 'set_103': [[39], [33, 34]], 'set_5': [[1]]}
-alignment ==> 12 {'set_9': [[], [7, 8], [11], [2, 4]], 'set_103': [[], []], 'set_5': [[1]]}
-German ==> 12 {'set_7': [[1]]}
-
-
-source ==> 10 {'set_5': [[4], [0, 1]]}
-alignment ==> 10 {'set_5': [[5], [0, 1]]}
-German ==> 10 {'set_7': [[0, 1]]}
-
-
-source ==> 120 {'set_107': [[34], [31, 32]], 'set_273': [[11, 12], [3, 4, 5]], 'set_108': [[36, 37], [43]], 'set_197': [[26], [12]], 'set_109': [[17, 18], [26]]}
-alignment ==> 120 {'set_107': [[], []], 'set_273': [[12, 13], [5]], 'set_108': [[], []], 'set_197': [[24], [13]], 'set_109': [[16, 17], [24]]}
-German ==> 120 {'set_232': [[13]], 'set_87': [[9], [3, 4, 5, 6, 7]], 'set_155': [[24], [16, 17]]}
-
-
-source ==> 63 {'set_44': [[1]]}
-alignment ==> 63 {'set_44': [[1]]}
-German ==> 63 {'set_60': [[1]]}
-
-
-source ==> 64 {'set_44': [[0]]}
-alignment ==> 64 {'set_44': [[0]]}
-German ==> 64 {'set_60': [[0]]}
-
-
-
-
 STATISTICS PER DOC
-Document ==>  000_1756
-total of SOURCE chains ==> 110
-total of TARGET chains ==> 148
-Total English chains not in German ==> 9
-Total German chains not in Englsh ==> 29
+Document ==>  ../../testsuitewmt18/parcor-full/corpus/DiscoMT/EN000_1756_words.xml
+SOURCE chains: 110 SOURCE mentions:  414
+TARGET chains: 148 TARGET mentions:  498
+complete match ===> 71
+partial match ===> 115
+target mentions missing in source ===> 312
+source mentions missing in source ===> 10
+total target mentions classified in doc==>  498
+
+
+`` Even in purely non-religious terms , homosexuality represents a misuse of the sexual faculty .
+" Selbst aus ganz unreligiöser Sicht stellt die Homosexualität eine sexuelle Verfehlung dar .
+ ==> GERMAN MENTIONS NOT IN ENGLISH 
+ ==> Als ich etwa sechs Jahre alt war , ging ich mit meiner Mutter und meinem Bruder Schuhe kaufen . Zum Ende unseres Einkaufs sagte der Schuhverkäufer , dass wir uns jeweils einen Luftballon aussuchen dürften .
+
+
+It is a pathetic little second-rate substitute for reality -- a pitiable flight from life .
+Sie ist ein armseliger , minderwertiger Ersatz für die Realität – ein kläglicher Versuch , dem Leben zu entfliehen .
+ ==> ALL MENTIONS MATCH 
+
+
+As such , it deserves no compassion , it deserves no treatment as minority martyrdom , and it deserves not to be deemed anything but a pernicious sickness . ''
+Als solches verdient sie kein Mitleid , keine Sonderbehandlung als Märtyrium einer Minderheit , und sollte nur als das betrachtet werden , was sie wirklich ist : eine schädliche Krankheit . "
+ ==> GERMAN MENTIONS NOT IN ENGLISH 
+ ==> Das schrieb Time Magazine 1966 , als ich drei Jahre alt war .
+ ==> Und ich war ziemlich verblüfft .
+
+
+That 's from Time magazine in 1966 , when I was three years old .
+Das schrieb Time Magazine 1966 , als ich drei Jahre alt war .
+ ==> ALL MENTIONS MATCH 
+
+
+And last year , the president of the United States came out in favor of gay marriage .
+Und letztes Jahr sprach sich der amerikanische Präsident für die geichgeschlechtliche Ehe aus .
+ ==> NOT ANNOTATED SENTENCE PAIR
+
+
+And my question is , how did we get from there to here ?
+Und meine Frage ist , wie haben wir es so weit gebracht ?
+ ==> NOT ANNOTATED SENTENCE PAIR
+
+
+How did an illness become an identity ?
+Wie wurde aus einer Krankheit eine Identität ?
+ ==> NOT ANNOTATED SENTENCE PAIR
+
+
+When I was perhaps six years old , I went to a shoe store with my mother and my brother .
+Als ich etwa sechs Jahre alt war , ging ich mit meiner Mutter und meinem Bruder Schuhe kaufen .
+ ==> NOT ANNOTATED SENTENCE PAIR
+
+
+And at the end of buying our shoes , the salesman said to us that we could each have a balloon to take home .
+Zum Ende unseres Einkaufs sagte der Schuhverkäufer , dass wir uns jeweils einen Luftballon aussuchen dürften .
+ ==> GERMAN MENTIONS NOT IN ENGLISH 
+ ==> Und sie erinnerte mich daran , dass meine Lieblingsfarbe blau sei . Die Tatsache , dass meine jetzige Lieblingsfarbe blau ist , aber ich immer noch schwul bin – – zeigt sowohl den Einfluss meiner Mutter , als auch dessen Grenzen .
+
+
+My brother wanted a red balloon , and I wanted a pink balloon .
+Mein Bruder wollte einen roten , und ich wollte einen rosafarbenen .
+ ==> GERMAN MENTIONS NOT IN ENGLISH 
+ ==> Mein Bruder wollte einen roten , und ich wollte einen rosafarbenen . Meine Mutter meinte , ich solte doch lieber einen blauen Luftballon haben .
+ ==> Das schrieb Time Magazine 1966 , als ich drei Jahre alt war . Und letztes Jahr sprach sich der amerikanische Präsident für die geichgeschlechtliche Ehe aus .
+
+
+My mother said that she thought I 'd really rather have a blue balloon .
+Meine Mutter meinte , ich solte doch lieber einen blauen Luftballon haben .
+ ==> ALL MENTIONS MATCH 
+
+
+But I said that I definitely wanted the pink one .
+Aber ich sagte ihr , dass ich ganz bestimmt den rosafarbenen wollte .
+ ==> GERMAN MENTIONS NOT IN ENGLISH 
+ ==> Das schrieb Time Magazine 1966 , als ich drei Jahre alt war .
+
+
+And she reminded me that my favorite color was blue .
+Und sie erinnerte mich daran , dass meine Lieblingsfarbe blau sei .
+ ==> ALL MENTIONS MATCH 
+
+
+The fact that my favorite color now is blue , but I 'm still gay -- -- is evidence of both my mother 's influence and its limits .
+Die Tatsache , dass meine jetzige Lieblingsfarbe blau ist , aber ich immer noch schwul bin – – zeigt sowohl den Einfluss meiner Mutter , als auch dessen Grenzen .
+ ==> GERMAN MENTIONS NOT IN ENGLISH 
+ ==> Und dann begab ich mich in die Gehörlosenwelt .
+ ==> Ich sagte : " Ich bin schwul . Das ist nicht der Weg , auf dem ich mich befinde . Und ich möchte , dass du aufhörst , das zu sagen . " Vor etwa 20 Jahren bat mich meine Redaktion bei der New York Times , einen Artikel über die Gehörlosenkultur zu schreiben . Und ich war ziemlich verblüfft .
+
+
+When I was little , my mother used to say , `` The love you have for your children is like no other feeling in the world .
+Als ich klein war , sagte meine Mutter immer : " Die Liebe , die du für deine Kinder empfindest , ist einzigartig .
+ ==> GERMAN MENTIONS NOT IN ENGLISH 
+ ==> Wie wurde aus einer Krankheit eine Identität ? Als ich etwa sechs Jahre alt war , ging ich mit meiner Mutter und meinem Bruder Schuhe kaufen .
+
+
+And until you have children , you do n't know what it 's like . ''
+Und bevor du nicht selbst Kinder hast , wirst du nicht verstehen , was ich meine . "
+ ==> ENGLISH MENTIONS NOT IN GERMAN
+ ==> When I was little , my mother used to say , `` The love you have for your children is like no other feeling in the world .
+
+
+And when I was little , I took it as the greatest compliment in the world that she would say that about parenting my brother and me .
+Als Kind nahm ich das als das größte Kompliment , dass sie so ihre Mutterrolle für mich und meinen Bruder beschreiben würde .
+ ==> GERMAN MENTIONS NOT IN ENGLISH 
+ ==> Aber ich sagte ihr , dass ich ganz bestimmt den rosafarbenen wollte .
+ ==> Die Tatsache , dass meine jetzige Lieblingsfarbe blau ist , aber ich immer noch schwul bin – – zeigt sowohl den Einfluss meiner Mutter , als auch dessen Grenzen .
+
+
+And when I was an adolescent , I thought that I 'm gay , and so I probably ca n't have a family .
+Als Teenager dachte ich , dass ich schwul sei und somit wahrscheinlich keine Familie haben würde .
+ ==> GERMAN MENTIONS NOT IN ENGLISH 
+ ==> Und meine Frage ist , wie haben wir es so weit gebracht ? Wie wurde aus einer Krankheit eine Identität ? Als ich etwa sechs Jahre alt war , ging ich mit meiner Mutter und meinem Bruder Schuhe kaufen . Zum Ende unseres Einkaufs sagte der Schuhverkäufer , dass wir uns jeweils einen Luftballon aussuchen dürften . Mein Bruder wollte einen roten , und ich wollte einen rosafarbenen . Meine Mutter meinte , ich solte doch lieber einen blauen Luftballon haben . Aber ich sagte ihr , dass ich ganz bestimmt den rosafarbenen wollte . Und sie erinnerte mich daran , dass meine Lieblingsfarbe blau sei . Die Tatsache , dass meine jetzige Lieblingsfarbe blau ist , aber ich immer noch schwul bin – – zeigt sowohl den Einfluss meiner Mutter , als auch dessen Grenzen . Als ich klein war , sagte meine Mutter immer : " Die Liebe , die du für deine Kinder empfindest , ist einzigartig . Und bevor du nicht selbst Kinder hast , wirst du nicht verstehen , was ich meine . "
+
+
+And when she said it , it made me anxious .
+Und es verunsicherte mich , wenn sie es sagte .
+ ==> GERMAN MENTIONS NOT IN ENGLISH 
+ ==> Wie wurde aus einer Krankheit eine Identität ?
+
+
+And after I came out of the closet , when she continued to say it , it made me furious .
+Und nachdem ich mein Coming-out hatte , und sie fortfuhr , es zu sagen , machte es mich wütend .
+ ==> GERMAN MENTIONS NOT IN ENGLISH 
+ ==> Zum Ende unseres Einkaufs sagte der Schuhverkäufer , dass wir uns jeweils einen Luftballon aussuchen dürften .
+
+
+I said , `` I 'm gay . That 's not the direction that I 'm headed in .
+Ich sagte : " Ich bin schwul . Das ist nicht der Weg , auf dem ich mich befinde .
+ ==> GERMAN MENTIONS NOT IN ENGLISH 
+ ==> Aber ich sagte ihr , dass ich ganz bestimmt den rosafarbenen wollte . Und sie erinnerte mich daran , dass meine Lieblingsfarbe blau sei .
+ ==> Und bevor du nicht selbst Kinder hast , wirst du nicht verstehen , was ich meine . "
+
+
+And I want you to stop saying that . ''
+Und ich möchte , dass du aufhörst , das zu sagen . "
+ ==> ALL MENTIONS MATCH 
+
+
+About 20 years ago , I was asked by my editors at The New York Times Magazine to write a piece about deaf culture .
+Vor etwa 20 Jahren bat mich meine Redaktion bei der New York Times , einen Artikel über die Gehörlosenkultur zu schreiben .
+ ==> NOT ANNOTATED SENTENCE PAIR
+
+
+And I was rather taken aback .
+Und ich war ziemlich verblüfft .
+ ==> NOT ANNOTATED SENTENCE PAIR
+
+
+I had thought of deafness entirely as an illness .
+Ich hatte Taubheit immer als eine Krankheit betrachtet .
+ ==> NOT ANNOTATED SENTENCE PAIR
+
+
+Those poor people , they could n't hear .
+Diese armen Menschen . Sie können nicht hören .
+ ==> ALL MENTIONS MATCH 
+
+
+They lacked hearing , and what could we do for them ?
+Sie sind gehörlos . Was können wir für sie tun ?
+ ==> ALL MENTIONS MATCH 
+
+
+And then I went out into the deaf world .
+Und dann begab ich mich in die Gehörlosenwelt .
+ ==> NOT ANNOTATED SENTENCE PAIR
+
+
+I went to deaf clubs .
+Ich besuchte Gehörlosenvereine .
+ ==> NOT ANNOTATED SENTENCE PAIR
+
+
+I saw performances of deaf theater and of deaf poetry .
+Ich ging zu Theateraufführungen und Gedichtvorträgen von Gehörlosen .
+ ==> NOT ANNOTATED SENTENCE PAIR
+
+
+I even went to the Miss Deaf America contest in Nashville , Tennessee where people complained about that slurry Southern signing .
+Und für die Wahl zur " Miss Deaf America " fuhr ich sogar bis nach Nashville , Tennessee , wo sich die Menschen über die undeutliche Zeichensprache der Südstaatler beschwerten .
+ ==> NOT ANNOTATED SENTENCE PAIR
+
+
+And as I plunged deeper and deeper into the deaf world , I become convinced that deafness was a culture and that the people in the deaf world who said , `` We do n't lack hearing , we have membership in a culture , '' were saying something that was viable .
+Und als ich immer mehr in die Gehörlosenwelt eintauchte , wurde mir bewusst , dass Gehörlosigkeit eine Kultur war , und dass die Menschen aus dieser Kultur , die sagten : " Wir sind nicht ' gehör-los ' , sondern Mitglieder einer Kultur " , etwas sagten , das mir etwas gab .
+ ==> GERMAN MENTIONS NOT IN ENGLISH 
+ ==> Diese armen Menschen . Sie können nicht hören . Sie sind gehörlos . Was können wir für sie tun ?
+ ==> Als Kind nahm ich das als das größte Kompliment , dass sie so ihre Mutterrolle für mich und meinen Bruder beschreiben würde . Als Teenager dachte ich , dass ich schwul sei und somit wahrscheinlich keine Familie haben würde .
+
+
+It was n't my culture , and I did n't particularly want to rush off and join it , but I appreciated that it was a culture and that for the people who were members of it , it felt as valuable as Latino culture or gay culture or Jewish culture .
+Es war nicht meine Kultur , und ich hatte auch nicht vor , ihr spontan beizutreten , aber ich schätzte , dass es eine Kultur war und es für die Menschen , die ihr angehörten , von so großer Bedeutung war wie die Latino- , Schwulen- oder jüdische Kultur .
+ ==> GERMAN MENTIONS NOT IN ENGLISH 
+ ==> Ich ging zu Theateraufführungen und Gedichtvorträgen von Gehörlosen . Und für die Wahl zur " Miss Deaf America " fuhr ich sogar bis nach Nashville , Tennessee , wo sich die Menschen über die undeutliche Zeichensprache der Südstaatler beschwerten .
+ ==> Es war nicht meine Kultur , und ich hatte auch nicht vor , ihr spontan beizutreten , aber ich schätzte , dass es eine Kultur war und es für die Menschen , die ihr angehörten , von so großer Bedeutung war wie die Latino- , Schwulen- oder jüdische Kultur .
+
+
+It felt as valid perhaps even as American culture .
+Es schien fast genauso wichtig wie die Amerikanische Kultur .
+ ==> ENGLISH MENTIONS NOT IN GERMAN
+ ==> `` Even in purely non-religious terms , homosexuality represents a misuse of the sexual faculty .
+
+
+Then a friend of a friend of mine had a daughter who was a dwarf .
+Dann bekam die Freundin einer Freundin eine kleinwüchsige Tochter .
+ ==> GERMAN MENTIONS NOT IN ENGLISH 
+ ==> Als solches verdient sie kein Mitleid , keine Sonderbehandlung als Märtyrium einer Minderheit , und sollte nur als das betrachtet werden , was sie wirklich ist : eine schädliche Krankheit . " Das schrieb Time Magazine 1966 , als ich drei Jahre alt war . Und letztes Jahr sprach sich der amerikanische Präsident für die geichgeschlechtliche Ehe aus . Und meine Frage ist , wie haben wir es so weit gebracht ?
+
+
+And when her daughter was born , she suddenly found herself confronting questions that now began to seem quite resonant to me .
+Und mit der Geburt ihrer Tochter , musste sie sich plötzlich mit Fragen auseinandersetzen , die nun auch für mich anfingen von großer Bedeutung zu sein .
+ ==> ALL MENTIONS MATCH 
+
+
+She was facing the question of what to do with this child .
+Sie stand vor der Entscheidung , was sie mit diesem Kind tun sollte .
+ ==> GERMAN MENTIONS NOT IN ENGLISH 
+ ==> " Selbst aus ganz unreligiöser Sicht stellt die Homosexualität eine sexuelle Verfehlung dar .
+
+
+Should she say , `` You 're just like everyone else but a little bit shorter ? ''
+Sollte sie sagen : " Du bist genauso wie alle anderen , nur ein bisschen kleiner ? "
+ ==> ALL MENTIONS MATCH 
+
+
+Or should she try to construct some kind of dwarf identity , get involved in the Little People of America , become aware of what was happening for dwarfs ?
+Oder sollte sie versuchen , eine Art Kleinwüchsigenidentität für sie zu schaffen , sich in der Organisation " Little People of America " zu engagieren , und sich zu informieren , was es Neues in der Welt der Kleinwüchsigen gab ?
+ ==> ALL MENTIONS MATCH 
+
+
+And I suddenly thought , most deaf children are born to hearing parents .
+Und da dachte ich plötzlich , dass die meisten tauben Kinder hörende Eltern haben ,
+ ==> GERMAN MENTIONS NOT IN ENGLISH 
+ ==> Das schrieb Time Magazine 1966 , als ich drei Jahre alt war .
+ ==> Als solches verdient sie kein Mitleid , keine Sonderbehandlung als Märtyrium einer Minderheit , und sollte nur als das betrachtet werden , was sie wirklich ist : eine schädliche Krankheit . " Das schrieb Time Magazine 1966 , als ich drei Jahre alt war . Und letztes Jahr sprach sich der amerikanische Präsident für die geichgeschlechtliche Ehe aus . Und meine Frage ist , wie haben wir es so weit gebracht ? Wie wurde aus einer Krankheit eine Identität ?
+ ==> Aber ich sagte ihr , dass ich ganz bestimmt den rosafarbenen wollte . Und sie erinnerte mich daran , dass meine Lieblingsfarbe blau sei .
+
+
+Those hearing parents tend to try to cure them .
+und diese in der Regel versuchen , ihre Kinder zu heilen .
+ ==> PARTIAL MATCHES: ONLY SOME MENTIONS MATCH
+ ==> Als ich etwa sechs Jahre alt war , ging ich mit meiner Mutter und meinem Bruder Schuhe kaufen .
+ ==> Sie ist ein armseliger , minderwertiger Ersatz für die Realität – ein kläglicher Versuch , dem Leben zu entfliehen .
+
+
+Those deaf people discover community somehow in adolescence .
+Diese tauben Menschen entdecken irgendwann im Erwachsenenalter " Gemeinschaft " für sich .
+ ==> PARTIAL MATCHES: ONLY SOME MENTIONS MATCH
+ ==> Aber ich sagte ihr , dass ich ganz bestimmt den rosafarbenen wollte .
+ ==> " Selbst aus ganz unreligiöser Sicht stellt die Homosexualität eine sexuelle Verfehlung dar . Sie ist ein armseliger , minderwertiger Ersatz für die Realität – ein kläglicher Versuch , dem Leben zu entfliehen . Als solches verdient sie kein Mitleid , keine Sonderbehandlung als Märtyrium einer Minderheit , und sollte nur als das betrachtet werden , was sie wirklich ist : eine schädliche Krankheit . "
+
+
+Most gay people are born to straight parents .
+Die meisten homosexuellen Menschen haben heterosexuelle Eltern .
+ ==> GERMAN MENTIONS NOT IN ENGLISH 
+ ==> Sie ist ein armseliger , minderwertiger Ersatz für die Realität – ein kläglicher Versuch , dem Leben zu entfliehen . Als solches verdient sie kein Mitleid , keine Sonderbehandlung als Märtyrium einer Minderheit , und sollte nur als das betrachtet werden , was sie wirklich ist : eine schädliche Krankheit . " Das schrieb Time Magazine 1966 , als ich drei Jahre alt war .
+
+
+Those straight parents often want them to function in what they think of as the mainstream world , and those gay people have to discover identity later on .
+Diese Eltern wollen oft , dass ihre Kinder funktonieren in der in ihrer Sicht normalen Welt , und diese homosexuellen Menschen müssen dann später eine Identität für sich finden .
+ ==> GERMAN MENTIONS NOT IN ENGLISH 
+ ==> Als ich etwa sechs Jahre alt war , ging ich mit meiner Mutter und meinem Bruder Schuhe kaufen . Zum Ende unseres Einkaufs sagte der Schuhverkäufer , dass wir uns jeweils einen Luftballon aussuchen dürften . Mein Bruder wollte einen roten , und ich wollte einen rosafarbenen . Meine Mutter meinte , ich solte doch lieber einen blauen Luftballon haben .
+ ==> Meine Mutter meinte , ich solte doch lieber einen blauen Luftballon haben . Aber ich sagte ihr , dass ich ganz bestimmt den rosafarbenen wollte .
+ ==> Und bevor du nicht selbst Kinder hast , wirst du nicht verstehen , was ich meine . "
+
+
+And here was this friend of mine looking at these questions of identity with her dwarf daughter .
+Und nun war da diese Freundin von mir , die sich mit ihrer kleinwüchsigen Tochter mit der Frage nach Identität auseinandersetzte .
+ ==> PARTIAL MATCHES: ONLY SOME MENTIONS MATCH
+ ==> Und letztes Jahr sprach sich der amerikanische Präsident für die geichgeschlechtliche Ehe aus . Und meine Frage ist , wie haben wir es so weit gebracht ?
+ ==> Mein Bruder wollte einen roten , und ich wollte einen rosafarbenen .
+ ==> Und sie erinnerte mich daran , dass meine Lieblingsfarbe blau sei .
+
+
+And I thought , there it is again : A family that perceives itself to be normal with a child who seems to be extraordinary .
+Ich dachte , da ist es wieder : Eine Familie , die sich selbst als normal wahrnimmt mit einem Kind , das außergewöhnlich erscheint .
+ ==> GERMAN MENTIONS NOT IN ENGLISH 
+ ==> Und letztes Jahr sprach sich der amerikanische Präsident für die geichgeschlechtliche Ehe aus .
+ ==> Sie ist ein armseliger , minderwertiger Ersatz für die Realität – ein kläglicher Versuch , dem Leben zu entfliehen . Als solches verdient sie kein Mitleid , keine Sonderbehandlung als Märtyrium einer Minderheit , und sollte nur als das betrachtet werden , was sie wirklich ist : eine schädliche Krankheit . "
+ ==> " Selbst aus ganz unreligiöser Sicht stellt die Homosexualität eine sexuelle Verfehlung dar . Sie ist ein armseliger , minderwertiger Ersatz für die Realität – ein kläglicher Versuch , dem Leben zu entfliehen .
+ ==> Und sie erinnerte mich daran , dass meine Lieblingsfarbe blau sei .
+ ==> Wie wurde aus einer Krankheit eine Identität ?
+ ==> Und meine Frage ist , wie haben wir es so weit gebracht ? Wie wurde aus einer Krankheit eine Identität ?
+ ==> Als solches verdient sie kein Mitleid , keine Sonderbehandlung als Märtyrium einer Minderheit , und sollte nur als das betrachtet werden , was sie wirklich ist : eine schädliche Krankheit . " Das schrieb Time Magazine 1966 , als ich drei Jahre alt war .
+ ==> Zum Ende unseres Einkaufs sagte der Schuhverkäufer , dass wir uns jeweils einen Luftballon aussuchen dürften .
+ ==> Als ich etwa sechs Jahre alt war , ging ich mit meiner Mutter und meinem Bruder Schuhe kaufen .
+ ==> Und es verunsicherte mich , wenn sie es sagte .
+ ==> Ich besuchte Gehörlosenvereine .
+ ==> Ich hatte Taubheit immer als eine Krankheit betrachtet .
+ ==> Wie wurde aus einer Krankheit eine Identität ?
+ ==> Es war nicht meine Kultur , und ich hatte auch nicht vor , ihr spontan beizutreten , aber ich schätzte , dass es eine Kultur war und es für die Menschen , die ihr angehörten , von so großer Bedeutung war wie die Latino- , Schwulen- oder jüdische Kultur .
+ ==> Die Tatsache , dass meine jetzige Lieblingsfarbe blau ist , aber ich immer noch schwul bin – – zeigt sowohl den Einfluss meiner Mutter , als auch dessen Grenzen . Als ich klein war , sagte meine Mutter immer : " Die Liebe , die du für deine Kinder empfindest , ist einzigartig .
+ ==> Zum Ende unseres Einkaufs sagte der Schuhverkäufer , dass wir uns jeweils einen Luftballon aussuchen dürften . Mein Bruder wollte einen roten , und ich wollte einen rosafarbenen .
+ ==> Und sie erinnerte mich daran , dass meine Lieblingsfarbe blau sei .
+ ==> Aber ich sagte ihr , dass ich ganz bestimmt den rosafarbenen wollte .
+
+
+And I hatched the idea that there are really two kinds of identity .
+Ich entwickelte also diesen Gedanken , dass es in Wirklichkeit zwei Arten von Identität gibt .
+ ==> ENGLISH MENTIONS NOT IN GERMAN
+ ==> My mother said that she thought I 'd really rather have a blue balloon . But I said that I definitely wanted the pink one . And she reminded me that my favorite color was blue . The fact that my favorite color now is blue , but I 'm still gay -- -- is evidence of both my mother 's influence and its limits .
+
+
+There are vertical identities , which are passed down generationally from parent to child .
+Es gibt vertikale Identitäten , die generationsbedingt von Eltern an ihre Kinder weitergegeben werden .
+ ==> GERMAN MENTIONS NOT IN ENGLISH 
+ ==> Meine Mutter meinte , ich solte doch lieber einen blauen Luftballon haben .
+ ==> Zum Ende unseres Einkaufs sagte der Schuhverkäufer , dass wir uns jeweils einen Luftballon aussuchen dürften .
+
+
+Those are things like ethnicity , frequently nationality , language , often religion .
+Das sind Dinge wie ethnische Zugehörigkeit , häufig Nationalität , Sprache und oftmals Religion .
+ ==> GERMAN MENTIONS NOT IN ENGLISH 
+ ==> Als solches verdient sie kein Mitleid , keine Sonderbehandlung als Märtyrium einer Minderheit , und sollte nur als das betrachtet werden , was sie wirklich ist : eine schädliche Krankheit . "
+
+
+Those are things you have in common with your parents and with your children .
+Dinge , die Sie mit Ihren Eltern und Kindern gemein haben .
+ ==> PARTIAL MATCHES: ONLY SOME MENTIONS MATCH
+ ==> " Selbst aus ganz unreligiöser Sicht stellt die Homosexualität eine sexuelle Verfehlung dar .
+ ==> Als solches verdient sie kein Mitleid , keine Sonderbehandlung als Märtyrium einer Minderheit , und sollte nur als das betrachtet werden , was sie wirklich ist : eine schädliche Krankheit . "
+
+
+And while some of them can be difficult , there 's no attempt to cure them .
+Und obwohl einige davon problematisch sein können , versucht man in der Regel nicht , sie zu heilen .
+ ==> PARTIAL MATCHES: ONLY SOME MENTIONS MATCH
+ ==> Als solches verdient sie kein Mitleid , keine Sonderbehandlung als Märtyrium einer Minderheit , und sollte nur als das betrachtet werden , was sie wirklich ist : eine schädliche Krankheit . " Das schrieb Time Magazine 1966 , als ich drei Jahre alt war .
+ ==> Und bevor du nicht selbst Kinder hast , wirst du nicht verstehen , was ich meine . "
+
+
+You can argue that it 's harder in the United States -- our current presidency notwithstanding -- to be a person of color .
+Man kann argumentieren , dass es in den Vereinigten Staaten schwieriger ist – und das ungeachtet unseres aktuellen Präsidenten – farbig zu sein .
+ ==> ENGLISH MENTIONS NOT IN GERMAN
+ ==> And my question is , how did we get from there to here ?
+
+
+And yet , we have nobody who is trying to ensure that the next generation of children born to African-Americans and Asians come out with creamy skin and yellow hair .
+Und trotzdem versucht niemand alles daran zu setzen , dass die nächste Generation von Kindern afro-amerikanischer oder asiatischer Eltern mit cremefarbener Haut und blondem Haar auf die Welt kommt .
+ ==> GERMAN MENTIONS NOT IN ENGLISH 
+ ==> Mein Bruder wollte einen roten , und ich wollte einen rosafarbenen . Meine Mutter meinte , ich solte doch lieber einen blauen Luftballon haben . Aber ich sagte ihr , dass ich ganz bestimmt den rosafarbenen wollte . Und sie erinnerte mich daran , dass meine Lieblingsfarbe blau sei . Die Tatsache , dass meine jetzige Lieblingsfarbe blau ist , aber ich immer noch schwul bin – – zeigt sowohl den Einfluss meiner Mutter , als auch dessen Grenzen . Als ich klein war , sagte meine Mutter immer : " Die Liebe , die du für deine Kinder empfindest , ist einzigartig . Und bevor du nicht selbst Kinder hast , wirst du nicht verstehen , was ich meine . " Als Kind nahm ich das als das größte Kompliment , dass sie so ihre Mutterrolle für mich und meinen Bruder beschreiben würde . Als Teenager dachte ich , dass ich schwul sei und somit wahrscheinlich keine Familie haben würde . Und es verunsicherte mich , wenn sie es sagte . Und nachdem ich mein Coming-out hatte , und sie fortfuhr , es zu sagen , machte es mich wütend . Ich sagte : " Ich bin schwul . Das ist nicht der Weg , auf dem ich mich befinde . Und ich möchte , dass du aufhörst , das zu sagen . " Vor etwa 20 Jahren bat mich meine Redaktion bei der New York Times , einen Artikel über die Gehörlosenkultur zu schreiben . Und ich war ziemlich verblüfft . Ich hatte Taubheit immer als eine Krankheit betrachtet . Diese armen Menschen . Sie können nicht hören . Sie sind gehörlos . Was können wir für sie tun ? Und dann begab ich mich in die Gehörlosenwelt . Ich besuchte Gehörlosenvereine .
+ ==> Und meine Frage ist , wie haben wir es so weit gebracht ?
+
+
+There are these other identities which you have to learn from a peer group .
+Dann gibt es die anderen Identitäten , die man im Umgang mit Gleichgesinnten erlernt .
+ ==> ALL MENTIONS MATCH 
+
+
+And I call them horizontal identities , because the peer group is the horizontal experience .
+Diese bezeichne ich als horizontale Identitäten , denn der Kontakt zu Gleichgesinnten stellt eine horizontale Erfahrung dar .
+ ==> GERMAN MENTIONS NOT IN ENGLISH 
+ ==> Ich ging zu Theateraufführungen und Gedichtvorträgen von Gehörlosen . Und für die Wahl zur " Miss Deaf America " fuhr ich sogar bis nach Nashville , Tennessee , wo sich die Menschen über die undeutliche Zeichensprache der Südstaatler beschwerten . Und als ich immer mehr in die Gehörlosenwelt eintauchte , wurde mir bewusst , dass Gehörlosigkeit eine Kultur war , und dass die Menschen aus dieser Kultur , die sagten : " Wir sind nicht ' gehör-los ' , sondern Mitglieder einer Kultur " , etwas sagten , das mir etwas gab .
+ ==> " Selbst aus ganz unreligiöser Sicht stellt die Homosexualität eine sexuelle Verfehlung dar .
+
+
+These are identities that are alien to your parents and that you have to discover when you get to see them in peers .
+Das sind Identitäten , die Ihren Eltern fremd sind und die man dann selbst im Umgang mit Gleichgesinnten entdecken muss .
+ ==> GERMAN MENTIONS NOT IN ENGLISH 
+ ==> Das schrieb Time Magazine 1966 , als ich drei Jahre alt war . Und letztes Jahr sprach sich der amerikanische Präsident für die geichgeschlechtliche Ehe aus . Und meine Frage ist , wie haben wir es so weit gebracht ?
+ ==> Als solches verdient sie kein Mitleid , keine Sonderbehandlung als Märtyrium einer Minderheit , und sollte nur als das betrachtet werden , was sie wirklich ist : eine schädliche Krankheit . " Das schrieb Time Magazine 1966 , als ich drei Jahre alt war .
+ ==> Meine Mutter meinte , ich solte doch lieber einen blauen Luftballon haben .
+ ==> Und meine Frage ist , wie haben wir es so weit gebracht ? Wie wurde aus einer Krankheit eine Identität ? Als ich etwa sechs Jahre alt war , ging ich mit meiner Mutter und meinem Bruder Schuhe kaufen .
+ ==> " Selbst aus ganz unreligiöser Sicht stellt die Homosexualität eine sexuelle Verfehlung dar .
+
+
+And those identities , those horizontal identities , people have almost always tried to cure .
+Und diese Identitäten , diese horizontalen Identitäten , haben Menschen seit jeher zu heilen versucht .
+ ==> PARTIAL MATCHES: ONLY SOME MENTIONS MATCH
+ ==> Sie ist ein armseliger , minderwertiger Ersatz für die Realität – ein kläglicher Versuch , dem Leben zu entfliehen . Als solches verdient sie kein Mitleid , keine Sonderbehandlung als Märtyrium einer Minderheit , und sollte nur als das betrachtet werden , was sie wirklich ist : eine schädliche Krankheit . "
+ ==> Und letztes Jahr sprach sich der amerikanische Präsident für die geichgeschlechtliche Ehe aus . Und meine Frage ist , wie haben wir es so weit gebracht ? Wie wurde aus einer Krankheit eine Identität ?
+
+
+And I wanted to look at what the process is through which people who have those identities come to a good relationship with them .
+Ich wollte also sehen , wie der Prozess aussieht , mit dem es Leuten , die solche Identitäten besitzen , gelingt , sich mit ihnen zu arrangieren .
+ ==> ALL MENTIONS MATCH 
+
+
+And it seemed to me that there were three levels of acceptance that needed to take place .
+Und es schien , dass es drei Stufen der Akzeptanz gibt , die alle zum Tragen kommen mussten .
+ ==> GERMAN MENTIONS NOT IN ENGLISH 
+ ==> Wie wurde aus einer Krankheit eine Identität ? Als ich etwa sechs Jahre alt war , ging ich mit meiner Mutter und meinem Bruder Schuhe kaufen . Zum Ende unseres Einkaufs sagte der Schuhverkäufer , dass wir uns jeweils einen Luftballon aussuchen dürften . Mein Bruder wollte einen roten , und ich wollte einen rosafarbenen .
+ ==> Und sie erinnerte mich daran , dass meine Lieblingsfarbe blau sei .
+
+
+There 's self-acceptance , there 's family acceptance , and there 's social acceptance .
+Da war die Eigenakzeptanz , die Akzeptanz der Familie und die gesellschaftliche Akzeptanz .
+ ==> ENGLISH MENTIONS NOT IN GERMAN
+ ==> That 's from Time magazine in 1966 , when I was three years old . And at the end of buying our shoes , the salesman said to us that we could each have a balloon to take home . How did an illness become an identity ? But I said that I definitely wanted the pink one . And she reminded me that my favorite color was blue .
+
+
+And they do n't always coincide .
+Und die drei überschneiden sich nicht immer .
+ ==> GERMAN MENTIONS NOT IN ENGLISH 
+ ==> Sie ist ein armseliger , minderwertiger Ersatz für die Realität – ein kläglicher Versuch , dem Leben zu entfliehen . Als solches verdient sie kein Mitleid , keine Sonderbehandlung als Märtyrium einer Minderheit , und sollte nur als das betrachtet werden , was sie wirklich ist : eine schädliche Krankheit . "
+
+
+And a lot of the time , people who have these conditions are very angry because they feel as though their parents do n't love them , when what actually has happened is that their parents do n't accept them .
+Oft ist es so , dass die Betroffenen voller Wut sind , weil sie das Gefühl haben , dass ihre Eltern sie nicht lieben , dabei ist es in Wahrheit nur so , dass ihre Eltern sie nicht akzeptieren .
+ ==> PARTIAL MATCHES: ONLY SOME MENTIONS MATCH
+ ==> Und bevor du nicht selbst Kinder hast , wirst du nicht verstehen , was ich meine . "
+ ==> Die Tatsache , dass meine jetzige Lieblingsfarbe blau ist , aber ich immer noch schwul bin – – zeigt sowohl den Einfluss meiner Mutter , als auch dessen Grenzen .
+ ==> Die Tatsache , dass meine jetzige Lieblingsfarbe blau ist , aber ich immer noch schwul bin – – zeigt sowohl den Einfluss meiner Mutter , als auch dessen Grenzen .
+ ==> Wie wurde aus einer Krankheit eine Identität ? Als ich etwa sechs Jahre alt war , ging ich mit meiner Mutter und meinem Bruder Schuhe kaufen .
+ ==> Sie stand vor der Entscheidung , was sie mit diesem Kind tun sollte .
+ ==> Und nachdem ich mein Coming-out hatte , und sie fortfuhr , es zu sagen , machte es mich wütend .
+ ==> Dann bekam die Freundin einer Freundin eine kleinwüchsige Tochter .
+ ==> Und ich möchte , dass du aufhörst , das zu sagen . "
+
+
+Love is something that ideally is there unconditionally throughout the relationship between a parent and a child .
+Liebe ist etwas , das im Idealfall bedingungslos in der Beziehung zwischen Eltern und Kind existiert .
+ ==> NOT ANNOTATED SENTENCE PAIR
+
+
+But acceptance is something that takes time .
+Aber Akzeptanz ist etwas , das seine Zeit braucht .
+ ==> ALL MENTIONS MATCH 
+
+
+It always takes time .
+Es braucht immer Zeit .
+ ==> ALL MENTIONS MATCH 
+
+
+One of the dwarfs I got to know was a guy named Clinton Brown .
+Einer der kleinwüchsigen Männer , die ich kennenlernte , war Clinton Brown .
+ ==> GERMAN MENTIONS NOT IN ENGLISH 
+ ==> Sie ist ein armseliger , minderwertiger Ersatz für die Realität – ein kläglicher Versuch , dem Leben zu entfliehen . Als solches verdient sie kein Mitleid , keine Sonderbehandlung als Märtyrium einer Minderheit , und sollte nur als das betrachtet werden , was sie wirklich ist : eine schädliche Krankheit . " Das schrieb Time Magazine 1966 , als ich drei Jahre alt war .
+ ==> Und meine Frage ist , wie haben wir es so weit gebracht ?
+
+
+When he was born , he was diagnosed with diastrophic dwarfism , a very disabling condition , and his parents were told that he would never walk , he would never talk , he would have no intellectual capacity , and he would probably not even recognize them .
+Als er geboren wurde , wurde diastrophischer Zwergwuchs bei ihm diagnostiziert , ein sehr behindernder Zustand , und die Ärzte sagten seinen Eltern , er würde niemals gehen oder sprechen lernen , keine intellektuellen Fähigkeiten entwickeln , und sie wahrscheinlich nicht einmal erkennen .
+ ==> ALL MENTIONS MATCH 
+
+
+And it was suggested to them that they leave him at the hospital so that he could die there quietly .
+Man empfahl ihnen , ihren Sohn im Krankenhaus zurückzulassen , sodass er dort in Ruhe sterben konnte .
+ ==> GERMAN MENTIONS NOT IN ENGLISH 
+ ==> Aber ich sagte ihr , dass ich ganz bestimmt den rosafarbenen wollte .
+ ==> Und letztes Jahr sprach sich der amerikanische Präsident für die geichgeschlechtliche Ehe aus . Und meine Frage ist , wie haben wir es so weit gebracht ?
+
+
+And his mother said she was n't going to do it .
+Und seine Mutter sagte , dass sie das nicht tun würde .
+ ==> ALL MENTIONS MATCH 
+
+
+And she took her son home .
+Sie nahm ihren Sohn mit nach Hause .
+ ==> GERMAN MENTIONS NOT IN ENGLISH 
+ ==> Als solches verdient sie kein Mitleid , keine Sonderbehandlung als Märtyrium einer Minderheit , und sollte nur als das betrachtet werden , was sie wirklich ist : eine schädliche Krankheit . " Das schrieb Time Magazine 1966 , als ich drei Jahre alt war .
+
+
+And even though she did n't have a lot of educational or financial advantages , she found the best doctor in the country for dealing with diastrophic dwarfism , and she got Clinton enrolled with him .
+Und obwohl sie aus erzieherischer oder finanzieller Sicht nicht sehr begünstigt war , fand sie den besten Arzt im Land für die Behandlung von diastrophischem Zwergwuchs , und übergab ihn in seine medizinische Obhut .
+ ==> GERMAN MENTIONS NOT IN ENGLISH 
+ ==> Ich ging zu Theateraufführungen und Gedichtvorträgen von Gehörlosen .
+
+
+And in the course of his childhood , he had 30 major surgical procedures .
+Im Laufe seiner Kindheit musste er sich 30 größeren chirurgischen Eingriffen unterziehen .
+ ==> ALL MENTIONS MATCH 
+
+
+And he spent all this time stuck in the hospital while he was having those procedures , as a result of which he now can walk .
+Und er verbrachte diese ganze Zeit ausschließlich im Krankenhaus , während er sich diesen Behandlungen unterzog , aufgrund derer er heute gehen kann .
+ ==> PARTIAL MATCHES: ONLY SOME MENTIONS MATCH
+ ==> Sie ist ein armseliger , minderwertiger Ersatz für die Realität – ein kläglicher Versuch , dem Leben zu entfliehen .
+ ==> Und nachdem ich mein Coming-out hatte , und sie fortfuhr , es zu sagen , machte es mich wütend .
+ ==> Aber ich sagte ihr , dass ich ganz bestimmt den rosafarbenen wollte .
+ ==> Und sie erinnerte mich daran , dass meine Lieblingsfarbe blau sei .
+
+
+And while he was there , they sent tutors around to help him with his school work .
+Während er dort war , schickten sie Nachhilfelehrer , um ihm bei seinen Hausaufgaben zu helfen .
+ ==> ALL MENTIONS MATCH 
+
+
+And he worked very hard because there was nothing else to do .
+Und er arbeitete sehr hart , weil es sonst nicht viel zu tun gab .
+ ==> ALL MENTIONS MATCH 
+
+
+And he ended up achieving at a level that had never before been contemplated by any member of his family .
+Und am Ende schaffte er es auf ein Bildungsniveau , das niemand in seiner Familie je zuvor in Erwägung gezogen hatte .
+ ==> ALL MENTIONS MATCH 
+
+
+He was the first one in his family , in fact , to go to college , where he lived on campus and drove a specially-fitted car that accommodated his unusual body .
+Tatsächlich war er der Erste in seiner Familie , der an einer Universität studierte , wo er auf dem Campus lebte und ein speziell für ihn ausgestattetes Auto fuhr , das seinem ungewöhnlichen Körper angepasst war .
+ ==> PARTIAL MATCHES: ONLY SOME MENTIONS MATCH
+ ==> Als Kind nahm ich das als das größte Kompliment , dass sie so ihre Mutterrolle für mich und meinen Bruder beschreiben würde .
+ ==> Diese armen Menschen . Sie können nicht hören .
+ ==> Als solches verdient sie kein Mitleid , keine Sonderbehandlung als Märtyrium einer Minderheit , und sollte nur als das betrachtet werden , was sie wirklich ist : eine schädliche Krankheit . "
+ ==> Wie wurde aus einer Krankheit eine Identität ?
+ ==> Und als ich immer mehr in die Gehörlosenwelt eintauchte , wurde mir bewusst , dass Gehörlosigkeit eine Kultur war , und dass die Menschen aus dieser Kultur , die sagten : " Wir sind nicht ' gehör-los ' , sondern Mitglieder einer Kultur " , etwas sagten , das mir etwas gab .
+
+
+And his mother told me this story of coming home one day -- and he went to college nearby -- and she said , `` I saw that car , which you can always recognize , in the parking lot of a bar , '' she said . `` And I thought to myself , they 're six feet tall , he 's three feet tall .
+Seine Mutter erzählte mir die Geschichte , als sie nach Hause kam – und er besuchte die örtliche Universität – Sie sagte : " Ich sah sein Auto , das man immer erkannte , auf dem Parkplatz vor einer Bar . " " Und ich dachte : Die sind 1,80 Meter groß und er misst nicht einmal einen Meter .
+ ==> PARTIAL MATCHES: ONLY SOME MENTIONS MATCH
+ ==> " Selbst aus ganz unreligiöser Sicht stellt die Homosexualität eine sexuelle Verfehlung dar .
+ ==> Als ich klein war , sagte meine Mutter immer : " Die Liebe , die du für deine Kinder empfindest , ist einzigartig .
+ ==> Sie sind gehörlos . Was können wir für sie tun ?
+ ==> Dann gibt es die anderen Identitäten , die man im Umgang mit Gleichgesinnten erlernt .
+
+
+Two beers for them is four beers for him . ''
+Zwei Bier für sie , sind vier Bier für ihn . "
+ ==> ALL MENTIONS MATCH 
+
+
+She said , `` I knew I could n't go in there and interrupt him , but I went home , and I left him eight messages on his cell phone . ''
+Sie sagte : " Ich wusste , dass ich dort nicht reingehen konnte , um ihn zu stoppen , aber ich fuhr heim und hinterließ ihm acht Nachrichten auf seinem Handy . "
+ ==> ALL MENTIONS MATCH 
+
+
+She said , `` And then I thought , if someone had said to me when he was born that my future worry would be that he 'd go drinking and driving with his college buddies -- `` And I said to her , `` What do you think you did that helped him to emerge as this charming , accomplished , wonderful person ? ''
+Sie sagte : " Und dann dachte ich , wenn mir jemand , als er geboren wurde , gesagt hätte , dass meine zukünftige Sorge wäre , dass er angeheitert mit seinen College-Freunden rumfährt – " Und ich fragte sie : " Was denkst du hast du gemacht , das ihn zu dieser charmanten , versierten und wunderbaren Person heranwachsen ließ ? "
+ ==> ALL MENTIONS MATCH 
+
+
+And she said , `` What did I do ? I loved him , that 's all .
+Und sie sagte : " Was ich gemacht habe ? Ich habe ihm all meine Liebe geschenkt , das ist alles .
+ ==> ALL MENTIONS MATCH 
+
+
+Clinton just always had that light in him .
+Clinton hatte einfach immer dieses Leuchten an sich .
+ ==> GERMAN MENTIONS NOT IN ENGLISH 
+ ==> Zum Ende unseres Einkaufs sagte der Schuhverkäufer , dass wir uns jeweils einen Luftballon aussuchen dürften .
+ ==> Als solches verdient sie kein Mitleid , keine Sonderbehandlung als Märtyrium einer Minderheit , und sollte nur als das betrachtet werden , was sie wirklich ist : eine schädliche Krankheit . " Das schrieb Time Magazine 1966 , als ich drei Jahre alt war . Und letztes Jahr sprach sich der amerikanische Präsident für die geichgeschlechtliche Ehe aus . Und meine Frage ist , wie haben wir es so weit gebracht ?
+ ==> Als solches verdient sie kein Mitleid , keine Sonderbehandlung als Märtyrium einer Minderheit , und sollte nur als das betrachtet werden , was sie wirklich ist : eine schädliche Krankheit . " Das schrieb Time Magazine 1966 , als ich drei Jahre alt war .
+ ==> Als solches verdient sie kein Mitleid , keine Sonderbehandlung als Märtyrium einer Minderheit , und sollte nur als das betrachtet werden , was sie wirklich ist : eine schädliche Krankheit . "
+ ==> Und ich möchte , dass du aufhörst , das zu sagen . "
+ ==> Als Teenager dachte ich , dass ich schwul sei und somit wahrscheinlich keine Familie haben würde . Und es verunsicherte mich , wenn sie es sagte .
+ ==> " Selbst aus ganz unreligiöser Sicht stellt die Homosexualität eine sexuelle Verfehlung dar .
+
+
+And his father and I were lucky enough to be the first to see it there . ''
+Und sein Vater und ich hatten das große Glück , die ersten zu sein , die es zu sehen bekamen . "
+ ==> GERMAN MENTIONS NOT IN ENGLISH 
+ ==> Sie ist ein armseliger , minderwertiger Ersatz für die Realität – ein kläglicher Versuch , dem Leben zu entfliehen .
+
+
+I 'm going to quote from another magazine of the '60s .
+Ich möchte nun etwas aus einem weiteren Magazin aus den 60ern zitieren .
+ ==> ENGLISH MENTIONS NOT IN GERMAN
+ ==> It is a pathetic little second-rate substitute for reality -- a pitiable flight from life .
+ ==> And my question is , how did we get from there to here ? How did an illness become an identity ? When I was perhaps six years old , I went to a shoe store with my mother and my brother . And at the end of buying our shoes , the salesman said to us that we could each have a balloon to take home . My brother wanted a red balloon , and I wanted a pink balloon . My mother said that she thought I 'd really rather have a blue balloon .
+
+
+This one is from 1968 -- The Atlantic Monthly , voice of liberal America -- written by an important bioethicist .
+Dieses stammt von 1968 – aus dem Atlantic Monthly , der Stimme des Liberalen Amerikas – geschrieben von einem bedeutenden Bioethiker .
+ ==> GERMAN MENTIONS NOT IN ENGLISH 
+ ==> " Selbst aus ganz unreligiöser Sicht stellt die Homosexualität eine sexuelle Verfehlung dar .
+
+
+He said , `` There is no reason to feel guilty about putting a Down syndrome child away , whether it is put away in the sense of hidden in a sanitarium or in a more responsible , lethal sense .
+Er sagte : " Es gibt keinen Grund , sich schuldig zu fühlen , wenn man ein Kind mit Down-Syndrom weggibt , egal , ob es sich dabei um ein " Weggeben " im Sinne von " in einem Heim verstecken " handelt , oder ein " Weggeben " in einem noch verantwortungsbewussteren , todbringenden Sinne .
+ ==> ALL MENTIONS MATCH 
+
+
+It is sad , yes -- dreadful . But it carries no guilt .
+Es ist traurig , ja – und schrecklich . Aber es entbehrt jeder Schuld .
+ ==> ALL MENTIONS MATCH 
+
+
+True guilt arises only from an offense against a person , and a Down 's is not a person . ''
+Wahre Schuld ergibt sich nur aus einer Straftat gegen eine Person , und jemand mit Down-Syndrom ist keine Person . "
+ ==> NOT ANNOTATED SENTENCE PAIR
+
+
+There 's been a lot of ink given to the enormous progress that we 've made in the treatment of gay people .
+Es wurde schon viel über den enormen Fortschritt geschrieben , den wir gemacht haben , wenn es um die Behandlung von homosexuellen Menschen geht .
+ ==> GERMAN MENTIONS NOT IN ENGLISH 
+ ==> Als Kind nahm ich das als das größte Kompliment , dass sie so ihre Mutterrolle für mich und meinen Bruder beschreiben würde .
+
+
+The fact that our attitude has changed is in the headlines every day .
+Den Beweis , dass sich unsere Einstellung geändert hat , sehen wir täglich in den Schlagzeilen .
+ ==> NOT ANNOTATED SENTENCE PAIR
+
+
+But we forget how we used to see people who had other differences , how we used to see people who were disabled , how inhuman we held people to be .
+Aber wir vergessen , wie wir Menschen betrachtet haben , die " anders " waren , wie wir Menschen mit einer Behinderung angesehen haben , und für wie unmenschlich wir sie gehalten haben .
+ ==> GERMAN MENTIONS NOT IN ENGLISH 
+ ==> Wie wurde aus einer Krankheit eine Identität ?
+ ==> Und für die Wahl zur " Miss Deaf America " fuhr ich sogar bis nach Nashville , Tennessee , wo sich die Menschen über die undeutliche Zeichensprache der Südstaatler beschwerten .
+ ==> Und es verunsicherte mich , wenn sie es sagte . Und nachdem ich mein Coming-out hatte , und sie fortfuhr , es zu sagen , machte es mich wütend . Ich sagte : " Ich bin schwul . Das ist nicht der Weg , auf dem ich mich befinde . Und ich möchte , dass du aufhörst , das zu sagen . "
+ ==> Meine Mutter meinte , ich solte doch lieber einen blauen Luftballon haben .
+
+
+And the change that 's been accomplished there , which is almost equally radical , is one that we pay not very much attention to .
+Der Wandel , den wir hier herbeigeführt haben , der in sich fast genauso radikal ist , ist einer , dem wir nicht sehr viel Aufmerksamkeit schenken .
+ ==> GERMAN MENTIONS NOT IN ENGLISH 
+ ==> " Selbst aus ganz unreligiöser Sicht stellt die Homosexualität eine sexuelle Verfehlung dar . Sie ist ein armseliger , minderwertiger Ersatz für die Realität – ein kläglicher Versuch , dem Leben zu entfliehen .
+ ==> Mein Bruder wollte einen roten , und ich wollte einen rosafarbenen .
+ ==> Das schrieb Time Magazine 1966 , als ich drei Jahre alt war .
+ ==> Ich sagte : " Ich bin schwul . Das ist nicht der Weg , auf dem ich mich befinde .
+ ==> Und es verunsicherte mich , wenn sie es sagte .
+
+
+One of the families I interviewed , Tom and Karen Robards , were taken aback when , as young and successful New Yorkers , their first child was diagnosed with Down syndrome .
+Eine der Familien , die ich interviewte , Tom und Karen Robards , zwei junge und erfolgreiche New Yorker , waren zutiefst erstaunt , als ihr erstes Kind mit Down-Syndrom diagnostiziert wurde .
+ ==> PARTIAL MATCHES: ONLY SOME MENTIONS MATCH
+ ==> Zum Ende unseres Einkaufs sagte der Schuhverkäufer , dass wir uns jeweils einen Luftballon aussuchen dürften . Mein Bruder wollte einen roten , und ich wollte einen rosafarbenen .
+ ==> Meine Mutter meinte , ich solte doch lieber einen blauen Luftballon haben . Aber ich sagte ihr , dass ich ganz bestimmt den rosafarbenen wollte .
+ ==> Diese armen Menschen . Sie können nicht hören .
+ ==> Die Tatsache , dass meine jetzige Lieblingsfarbe blau ist , aber ich immer noch schwul bin – – zeigt sowohl den Einfluss meiner Mutter , als auch dessen Grenzen . Als ich klein war , sagte meine Mutter immer : " Die Liebe , die du für deine Kinder empfindest , ist einzigartig . Und bevor du nicht selbst Kinder hast , wirst du nicht verstehen , was ich meine . " Als Kind nahm ich das als das größte Kompliment , dass sie so ihre Mutterrolle für mich und meinen Bruder beschreiben würde . Als Teenager dachte ich , dass ich schwul sei und somit wahrscheinlich keine Familie haben würde . Und es verunsicherte mich , wenn sie es sagte .
+
+
+They thought the educational opportunities for him were not what they should be , and so they decided they would build a little center -- two classrooms that they started with a few other parents -- to educate kids with D.S .
+Sie waren der Meinung , die Bildungschancen für ihn waren nicht so , wie sie sein sollten , und so beschlossen sie , ein kleines Zentrum zu bauen – zwei Klassenzimmer , die sie zusammen mit ein paar Eltern gründeten , um Kinder mit Down Syndrom zu unterrichten .
+ ==> ALL MENTIONS MATCH 
+
+
+And over the years , that center grew into something called the Cooke Center , where there are now thousands upon thousands of children with intellectual disabilities who are being taught .
+Und über die Jahre entwickelte sich dieses Zentrum zum sogenannten Cooke-Center , wo heute Tausende und Abertausende von Kindern mit geistiger Behinderung unterrichtet werden .
+ ==> ALL MENTIONS MATCH 
+
+
+In the time since that Atlantic Monthly story ran , the life expectancy for people with Down syndrome has tripled .
+In der Zeit , die seit jenem Atlantic Monthly Artikel vergangen ist , hat sich die Lebenserwartung für Menschen mit Down-Syndrom verdreifacht .
+ ==> GERMAN MENTIONS NOT IN ENGLISH 
+ ==> Sie ist ein armseliger , minderwertiger Ersatz für die Realität – ein kläglicher Versuch , dem Leben zu entfliehen . Als solches verdient sie kein Mitleid , keine Sonderbehandlung als Märtyrium einer Minderheit , und sollte nur als das betrachtet werden , was sie wirklich ist : eine schädliche Krankheit . "
+ ==> Und letztes Jahr sprach sich der amerikanische Präsident für die geichgeschlechtliche Ehe aus .
+
+
+The experience of Down syndrome people includes those who are actors , those who are writers , some who are able to live fully independently in adulthood .
+Unter den Menschen mit Down-Syndrom finden sich heute Schauspieler , Schriftsteller , und einige , die im Erwachsenenalter ganz selbständig leben können .
+ ==> PARTIAL MATCHES: ONLY SOME MENTIONS MATCH
+ ==> Und bevor du nicht selbst Kinder hast , wirst du nicht verstehen , was ich meine . "
+ ==> Die Tatsache , dass meine jetzige Lieblingsfarbe blau ist , aber ich immer noch schwul bin – – zeigt sowohl den Einfluss meiner Mutter , als auch dessen Grenzen .
+ ==> Als solches verdient sie kein Mitleid , keine Sonderbehandlung als Märtyrium einer Minderheit , und sollte nur als das betrachtet werden , was sie wirklich ist : eine schädliche Krankheit . " Das schrieb Time Magazine 1966 , als ich drei Jahre alt war . Und letztes Jahr sprach sich der amerikanische Präsident für die geichgeschlechtliche Ehe aus .
+
+
+The Robards had a lot to do with that .
+Vieles davon verdanken sie den Robards .
+ ==> GERMAN MENTIONS NOT IN ENGLISH 
+ ==> Und ich war ziemlich verblüfft . Ich hatte Taubheit immer als eine Krankheit betrachtet . Diese armen Menschen . Sie können nicht hören .
+ ==> Das sind Dinge wie ethnische Zugehörigkeit , häufig Nationalität , Sprache und oftmals Religion .
+ ==> Ich dachte , da ist es wieder : Eine Familie , die sich selbst als normal wahrnimmt mit einem Kind , das außergewöhnlich erscheint .
+ ==> Ich ging zu Theateraufführungen und Gedichtvorträgen von Gehörlosen .
+ ==> Und ich möchte , dass du aufhörst , das zu sagen . "
+ ==> Und es verunsicherte mich , wenn sie es sagte .
+ ==> Das schrieb Time Magazine 1966 , als ich drei Jahre alt war .
+
+
+And I said , `` Do you regret it ?
+Und ich fragte sie : " Bedauert ihr etwas ?
+ ==> GERMAN MENTIONS NOT IN ENGLISH 
+ ==> Und ich möchte , dass du aufhörst , das zu sagen . " Vor etwa 20 Jahren bat mich meine Redaktion bei der New York Times , einen Artikel über die Gehörlosenkultur zu schreiben .
+ ==> Oder sollte sie versuchen , eine Art Kleinwüchsigenidentität für sie zu schaffen , sich in der Organisation " Little People of America " zu engagieren , und sich zu informieren , was es Neues in der Welt der Kleinwüchsigen gab ?
+ ==> Als solches verdient sie kein Mitleid , keine Sonderbehandlung als Märtyrium einer Minderheit , und sollte nur als das betrachtet werden , was sie wirklich ist : eine schädliche Krankheit . "
+ ==> Und letztes Jahr sprach sich der amerikanische Präsident für die geichgeschlechtliche Ehe aus .
+ ==> Es gibt vertikale Identitäten , die generationsbedingt von Eltern an ihre Kinder weitergegeben werden . Das sind Dinge wie ethnische Zugehörigkeit , häufig Nationalität , Sprache und oftmals Religion . Dinge , die Sie mit Ihren Eltern und Kindern gemein haben . Und obwohl einige davon problematisch sein können , versucht man in der Regel nicht , sie zu heilen . Man kann argumentieren , dass es in den Vereinigten Staaten schwieriger ist – und das ungeachtet unseres aktuellen Präsidenten – farbig zu sein .
+ ==> Diese bezeichne ich als horizontale Identitäten , denn der Kontakt zu Gleichgesinnten stellt eine horizontale Erfahrung dar .
+ ==> Und obwohl einige davon problematisch sein können , versucht man in der Regel nicht , sie zu heilen .
+ ==> Diese tauben Menschen entdecken irgendwann im Erwachsenenalter " Gemeinschaft " für sich . Die meisten homosexuellen Menschen haben heterosexuelle Eltern .
+ ==> Ich sagte : " Ich bin schwul . Das ist nicht der Weg , auf dem ich mich befinde .
+ ==> Mein Bruder wollte einen roten , und ich wollte einen rosafarbenen . Meine Mutter meinte , ich solte doch lieber einen blauen Luftballon haben .
+ ==> Das schrieb Time Magazine 1966 , als ich drei Jahre alt war .
+
+
+Do you wish your child did n't have Down syndrome ?
+Wünschtet ihr , euer Sohn würde nicht an Down-Syndrom leiden ?
+ ==> GERMAN MENTIONS NOT IN ENGLISH 
+ ==> Als ich etwa sechs Jahre alt war , ging ich mit meiner Mutter und meinem Bruder Schuhe kaufen . Zum Ende unseres Einkaufs sagte der Schuhverkäufer , dass wir uns jeweils einen Luftballon aussuchen dürften . Mein Bruder wollte einen roten , und ich wollte einen rosafarbenen .
+
+
+Do you wish you 'd never heard of it ? ''
+Wünschtet ihr , ihr hättet nie davon gehört ? "
+ ==> ENGLISH MENTIONS NOT IN GERMAN
+ ==> How did an illness become an identity ?
+
+
+And interestingly his father said , `` Well , for David , our son , I regret it , because for David , it 's a difficult way to be in the world , and I 'd like to give David an easier life .
+Und interessanterweise sagte sein Vater : " Für David , unseren Sohn , bedauere ich es , denn für ihn ist es kein leichtes Dasein in dieser Welt , und ich würde ihm gerne ein leichteres Leben schenken .
+ ==> PARTIAL MATCHES: ONLY SOME MENTIONS MATCH
+ ==> Es war nicht meine Kultur , und ich hatte auch nicht vor , ihr spontan beizutreten , aber ich schätzte , dass es eine Kultur war und es für die Menschen , die ihr angehörten , von so großer Bedeutung war wie die Latino- , Schwulen- oder jüdische Kultur .
+ ==> Und nachdem ich mein Coming-out hatte , und sie fortfuhr , es zu sagen , machte es mich wütend .
+ ==> Zum Ende unseres Einkaufs sagte der Schuhverkäufer , dass wir uns jeweils einen Luftballon aussuchen dürften .
+
+
+But I think if we lost everyone with Down syndrome , it would be a catastrophic loss . ''
+Aber , wenn wir alle Menschen mit Down-Syndrom verlören , wäre das ein katastrophaler Verlust . "
+ ==> GERMAN MENTIONS NOT IN ENGLISH 
+ ==> Und bevor du nicht selbst Kinder hast , wirst du nicht verstehen , was ich meine . "
+ ==> Aber ich sagte ihr , dass ich ganz bestimmt den rosafarbenen wollte .
+ ==> Und letztes Jahr sprach sich der amerikanische Präsident für die geichgeschlechtliche Ehe aus . Und meine Frage ist , wie haben wir es so weit gebracht ? Wie wurde aus einer Krankheit eine Identität ? Als ich etwa sechs Jahre alt war , ging ich mit meiner Mutter und meinem Bruder Schuhe kaufen . Zum Ende unseres Einkaufs sagte der Schuhverkäufer , dass wir uns jeweils einen Luftballon aussuchen dürften .
+
+
+And Karen Robards said to me , `` I 'm with Tom .
+Und Karen Robards sagte zu mir : " Ich stimme Tom zu .
+ ==> NOT ANNOTATED SENTENCE PAIR
+
+
+For David , I would cure it in an instant to give him an easier life .
+Für David , würde ich diese Krankheit sofort heilen , um ihm ein leichteres Leben zu ermöglichen .
+ ==> GERMAN MENTIONS NOT IN ENGLISH 
+ ==> Es war nicht meine Kultur , und ich hatte auch nicht vor , ihr spontan beizutreten , aber ich schätzte , dass es eine Kultur war und es für die Menschen , die ihr angehörten , von so großer Bedeutung war wie die Latino- , Schwulen- oder jüdische Kultur .
+ ==> Ich ging zu Theateraufführungen und Gedichtvorträgen von Gehörlosen . Und für die Wahl zur " Miss Deaf America " fuhr ich sogar bis nach Nashville , Tennessee , wo sich die Menschen über die undeutliche Zeichensprache der Südstaatler beschwerten .
+ ==> Als ich klein war , sagte meine Mutter immer : " Die Liebe , die du für deine Kinder empfindest , ist einzigartig .
+ ==> Und meine Frage ist , wie haben wir es so weit gebracht ? Wie wurde aus einer Krankheit eine Identität ?
+ ==> Diese armen Menschen . Sie können nicht hören .
+ ==> Vor etwa 20 Jahren bat mich meine Redaktion bei der New York Times , einen Artikel über die Gehörlosenkultur zu schreiben . Und ich war ziemlich verblüfft .
+ ==> Aber ich sagte ihr , dass ich ganz bestimmt den rosafarbenen wollte . Und sie erinnerte mich daran , dass meine Lieblingsfarbe blau sei . Die Tatsache , dass meine jetzige Lieblingsfarbe blau ist , aber ich immer noch schwul bin – – zeigt sowohl den Einfluss meiner Mutter , als auch dessen Grenzen . Als ich klein war , sagte meine Mutter immer : " Die Liebe , die du für deine Kinder empfindest , ist einzigartig . Und bevor du nicht selbst Kinder hast , wirst du nicht verstehen , was ich meine . " Als Kind nahm ich das als das größte Kompliment , dass sie so ihre Mutterrolle für mich und meinen Bruder beschreiben würde . Als Teenager dachte ich , dass ich schwul sei und somit wahrscheinlich keine Familie haben würde . Und es verunsicherte mich , wenn sie es sagte . Und nachdem ich mein Coming-out hatte , und sie fortfuhr , es zu sagen , machte es mich wütend . Ich sagte : " Ich bin schwul . Das ist nicht der Weg , auf dem ich mich befinde . Und ich möchte , dass du aufhörst , das zu sagen . " Vor etwa 20 Jahren bat mich meine Redaktion bei der New York Times , einen Artikel über die Gehörlosenkultur zu schreiben . Und ich war ziemlich verblüfft .
+ ==> Und letztes Jahr sprach sich der amerikanische Präsident für die geichgeschlechtliche Ehe aus .
+ ==> Sie ist ein armseliger , minderwertiger Ersatz für die Realität – ein kläglicher Versuch , dem Leben zu entfliehen .
+ ==> Aber ich sagte ihr , dass ich ganz bestimmt den rosafarbenen wollte .
+
+
+But speaking for myself -- well , I would never have believed 23 years ago when he was born that I could come to such a point -- speaking for myself , it 's made me so much better and so much kinder and so much more purposeful in my whole life , that speaking for myself , I would n't give it up for anything in the world . ''
+Aber wenn ich für mich spreche , dann hätte ich vor 23 Jahren , als er geboren wurde , nicht geglaubt , dass ich je an so weit kommen könnte – Mich persönlich hat es zu einer soviel besseren und liebenswürdigeren Person gemacht und meinem Leben so viel mehr Sinn gegeben , dass ich persönlich , es um nichts in der Welt aufgeben würde . "
+ ==> GERMAN MENTIONS NOT IN ENGLISH 
+ ==> Und bevor du nicht selbst Kinder hast , wirst du nicht verstehen , was ich meine . "
+
+
+We live at a point when social acceptance for these and many other conditions is on the up and up .
+Wir leben in einer Zeit , in der die gesellschaftliche Akzeptanz für diese und viele andere Konditionen immer größer wird .
+ ==> GERMAN MENTIONS NOT IN ENGLISH 
+ ==> Als ich etwa sechs Jahre alt war , ging ich mit meiner Mutter und meinem Bruder Schuhe kaufen . Zum Ende unseres Einkaufs sagte der Schuhverkäufer , dass wir uns jeweils einen Luftballon aussuchen dürften . Mein Bruder wollte einen roten , und ich wollte einen rosafarbenen . Meine Mutter meinte , ich solte doch lieber einen blauen Luftballon haben . Aber ich sagte ihr , dass ich ganz bestimmt den rosafarbenen wollte . Und sie erinnerte mich daran , dass meine Lieblingsfarbe blau sei . Die Tatsache , dass meine jetzige Lieblingsfarbe blau ist , aber ich immer noch schwul bin – – zeigt sowohl den Einfluss meiner Mutter , als auch dessen Grenzen . Als ich klein war , sagte meine Mutter immer : " Die Liebe , die du für deine Kinder empfindest , ist einzigartig . Und bevor du nicht selbst Kinder hast , wirst du nicht verstehen , was ich meine . " Als Kind nahm ich das als das größte Kompliment , dass sie so ihre Mutterrolle für mich und meinen Bruder beschreiben würde . Als Teenager dachte ich , dass ich schwul sei und somit wahrscheinlich keine Familie haben würde . Und es verunsicherte mich , wenn sie es sagte . Und nachdem ich mein Coming-out hatte , und sie fortfuhr , es zu sagen , machte es mich wütend . Ich sagte : " Ich bin schwul . Das ist nicht der Weg , auf dem ich mich befinde . Und ich möchte , dass du aufhörst , das zu sagen . "
+ ==> Das schrieb Time Magazine 1966 , als ich drei Jahre alt war .
+ ==> Und meine Frage ist , wie haben wir es so weit gebracht ? Wie wurde aus einer Krankheit eine Identität ?
+ ==> Meine Mutter meinte , ich solte doch lieber einen blauen Luftballon haben .
+ ==> Ich besuchte Gehörlosenvereine .
+ ==> Diese armen Menschen . Sie können nicht hören . Sie sind gehörlos . Was können wir für sie tun ?
+ ==> Ich entwickelte also diesen Gedanken , dass es in Wirklichkeit zwei Arten von Identität gibt . Es gibt vertikale Identitäten , die generationsbedingt von Eltern an ihre Kinder weitergegeben werden .
+ ==> Und nachdem ich mein Coming-out hatte , und sie fortfuhr , es zu sagen , machte es mich wütend . Ich besuchte Gehörlosenvereine . Und als ich immer mehr in die Gehörlosenwelt eintauchte , wurde mir bewusst , dass Gehörlosigkeit eine Kultur war , und dass die Menschen aus dieser Kultur , die sagten : " Wir sind nicht ' gehör-los ' , sondern Mitglieder einer Kultur " , etwas sagten , das mir etwas gab .
+ ==> Als ich etwa sechs Jahre alt war , ging ich mit meiner Mutter und meinem Bruder Schuhe kaufen .
+ ==> Das schrieb Time Magazine 1966 , als ich drei Jahre alt war . Und letztes Jahr sprach sich der amerikanische Präsident für die geichgeschlechtliche Ehe aus .
+
+
+And yet we also live at the moment when our ability to eliminate those conditions has reached a height we never imagined before .
+Aber gleichzeitig sind wir an einem Punkt angelangt , an dem unsere Fähigkeit , diese Konditionen zu beseitigen ein Ausmaß erreicht hat , das einst unvorstellbar war .
+ ==> GERMAN MENTIONS NOT IN ENGLISH 
+ ==> Und dann begab ich mich in die Gehörlosenwelt . Ich besuchte Gehörlosenvereine .
+ ==> Und für die Wahl zur " Miss Deaf America " fuhr ich sogar bis nach Nashville , Tennessee , wo sich die Menschen über die undeutliche Zeichensprache der Südstaatler beschwerten .
+ ==> Als ich etwa sechs Jahre alt war , ging ich mit meiner Mutter und meinem Bruder Schuhe kaufen .
+ ==> Und letztes Jahr sprach sich der amerikanische Präsident für die geichgeschlechtliche Ehe aus . Und meine Frage ist , wie haben wir es so weit gebracht ? Wie wurde aus einer Krankheit eine Identität ? Als ich etwa sechs Jahre alt war , ging ich mit meiner Mutter und meinem Bruder Schuhe kaufen . Zum Ende unseres Einkaufs sagte der Schuhverkäufer , dass wir uns jeweils einen Luftballon aussuchen dürften .
+ ==> Als er geboren wurde , wurde diastrophischer Zwergwuchs bei ihm diagnostiziert , ein sehr behindernder Zustand , und die Ärzte sagten seinen Eltern , er würde niemals gehen oder sprechen lernen , keine intellektuellen Fähigkeiten entwickeln , und sie wahrscheinlich nicht einmal erkennen . Man empfahl ihnen , ihren Sohn im Krankenhaus zurückzulassen , sodass er dort in Ruhe sterben konnte . Und seine Mutter sagte , dass sie das nicht tun würde . Sie nahm ihren Sohn mit nach Hause . Und obwohl sie aus erzieherischer oder finanzieller Sicht nicht sehr begünstigt war , fand sie den besten Arzt im Land für die Behandlung von diastrophischem Zwergwuchs , und übergab ihn in seine medizinische Obhut . Im Laufe seiner Kindheit musste er sich 30 größeren chirurgischen Eingriffen unterziehen .
+ ==> Dieses stammt von 1968 – aus dem Atlantic Monthly , der Stimme des Liberalen Amerikas – geschrieben von einem bedeutenden Bioethiker .
+ ==> Und als ich immer mehr in die Gehörlosenwelt eintauchte , wurde mir bewusst , dass Gehörlosigkeit eine Kultur war , und dass die Menschen aus dieser Kultur , die sagten : " Wir sind nicht ' gehör-los ' , sondern Mitglieder einer Kultur " , etwas sagten , das mir etwas gab .
+ ==> Als Kind nahm ich das als das größte Kompliment , dass sie so ihre Mutterrolle für mich und meinen Bruder beschreiben würde . Als Teenager dachte ich , dass ich schwul sei und somit wahrscheinlich keine Familie haben würde . Und es verunsicherte mich , wenn sie es sagte . Und nachdem ich mein Coming-out hatte , und sie fortfuhr , es zu sagen , machte es mich wütend . Ich sagte : " Ich bin schwul . Das ist nicht der Weg , auf dem ich mich befinde . Und ich möchte , dass du aufhörst , das zu sagen . "
+ ==> Und ich war ziemlich verblüfft .
+ ==> Und es verunsicherte mich , wenn sie es sagte . Und nachdem ich mein Coming-out hatte , und sie fortfuhr , es zu sagen , machte es mich wütend .
+
+
+Most deaf infants born in the United States now will receive Cochlear implants , which are put into the brain and connected to a receiver , and which allow them to acquire a facsimile of hearing and to use oral speech .
+Die meisten gehörlosen Kinder , die heute in den USA geboren werden , erhalten Cochlear-Implantate , die in das Gehirn eingesetzt und an einen Receiver angeschlossen werden , und deren mit Hilfe ihnen eine Form des Hörens und des Sprechens ermöglicht wird .
+ ==> GERMAN MENTIONS NOT IN ENGLISH 
+ ==> Als solches verdient sie kein Mitleid , keine Sonderbehandlung als Märtyrium einer Minderheit , und sollte nur als das betrachtet werden , was sie wirklich ist : eine schädliche Krankheit . "
+ ==> Als ich klein war , sagte meine Mutter immer : " Die Liebe , die du für deine Kinder empfindest , ist einzigartig .
+ ==> Als solches verdient sie kein Mitleid , keine Sonderbehandlung als Märtyrium einer Minderheit , und sollte nur als das betrachtet werden , was sie wirklich ist : eine schädliche Krankheit . "
+ ==> " Selbst aus ganz unreligiöser Sicht stellt die Homosexualität eine sexuelle Verfehlung dar .
+ ==> " Selbst aus ganz unreligiöser Sicht stellt die Homosexualität eine sexuelle Verfehlung dar .
+ ==> Und da dachte ich plötzlich , dass die meisten tauben Kinder hörende Eltern haben ,
+ ==> " Selbst aus ganz unreligiöser Sicht stellt die Homosexualität eine sexuelle Verfehlung dar .
+ ==> Sie ist ein armseliger , minderwertiger Ersatz für die Realität – ein kläglicher Versuch , dem Leben zu entfliehen .
+ ==> " Selbst aus ganz unreligiöser Sicht stellt die Homosexualität eine sexuelle Verfehlung dar . Sie ist ein armseliger , minderwertiger Ersatz für die Realität – ein kläglicher Versuch , dem Leben zu entfliehen .
+ ==> Zum Ende unseres Einkaufs sagte der Schuhverkäufer , dass wir uns jeweils einen Luftballon aussuchen dürften .
+ ==> Ich sagte : " Ich bin schwul . Das ist nicht der Weg , auf dem ich mich befinde .
+ ==> Wie wurde aus einer Krankheit eine Identität ?
+ ==> Sie ist ein armseliger , minderwertiger Ersatz für die Realität – ein kläglicher Versuch , dem Leben zu entfliehen . Als solches verdient sie kein Mitleid , keine Sonderbehandlung als Märtyrium einer Minderheit , und sollte nur als das betrachtet werden , was sie wirklich ist : eine schädliche Krankheit . "
+
+
+A compound that has been tested in mice , BMN-111 , is useful in preventing the action of the achondroplasia gene .
+Ein Präparat , das an Mäusen getestet wurde , genannt BMN-111 , hilft dabei , die Wirkung des Achondroplasie-Gens zu hemmen .
+ ==> PARTIAL MATCHES: ONLY SOME MENTIONS MATCH
+ ==> Als solches verdient sie kein Mitleid , keine Sonderbehandlung als Märtyrium einer Minderheit , und sollte nur als das betrachtet werden , was sie wirklich ist : eine schädliche Krankheit . " Das schrieb Time Magazine 1966 , als ich drei Jahre alt war .
+ ==> Das schrieb Time Magazine 1966 , als ich drei Jahre alt war . Und letztes Jahr sprach sich der amerikanische Präsident für die geichgeschlechtliche Ehe aus . Und meine Frage ist , wie haben wir es so weit gebracht ?
+ ==> Meine Mutter meinte , ich solte doch lieber einen blauen Luftballon haben .
+ ==> Das schrieb Time Magazine 1966 , als ich drei Jahre alt war .
+ ==> " Selbst aus ganz unreligiöser Sicht stellt die Homosexualität eine sexuelle Verfehlung dar . Sie ist ein armseliger , minderwertiger Ersatz für die Realität – ein kläglicher Versuch , dem Leben zu entfliehen .
+
+
+Achondroplasia is the most common form of dwarfism , and mice who have been given that substance and who have the achondroplasia gene , grow to full size .
+Achondroplasie ist die häufigste Form des Zwergwuchses , und Mäuse , die diesen Wirkstoff erhalten haben , und das Achondroplasie-Gen aufweisen , wachsen zu voller Größe heran .
+ ==> GERMAN MENTIONS NOT IN ENGLISH 
+ ==> Aber ich sagte ihr , dass ich ganz bestimmt den rosafarbenen wollte .
+ ==> Mein Bruder wollte einen roten , und ich wollte einen rosafarbenen .
+
+
+Testing in humans is around the corner .
+Zu Testreihen am Menschen ist es nicht mehr weit .
+ ==> GERMAN MENTIONS NOT IN ENGLISH 
+ ==> Und meine Frage ist , wie haben wir es so weit gebracht ?
+
+
+There are blood tests which are making progress that would pick up Down syndrome more clearly and earlier in pregnancies than ever before , making it easier and easier for people to eliminate those pregnancies , or to terminate them .
+Es gibt Blut-Tests , die in der Entwicklung sind , mit denen das Down-Syndrom noch zuverlässiger und früher in der Schwangerschaft entdeckt werden kann , als je zuvor , und die es für die Menschen immer leichter machen , diese Schwangerschaften zu eliminieren , oder abzubrechen .
+ ==> GERMAN MENTIONS NOT IN ENGLISH 
+ ==> Es war nicht meine Kultur , und ich hatte auch nicht vor , ihr spontan beizutreten , aber ich schätzte , dass es eine Kultur war und es für die Menschen , die ihr angehörten , von so großer Bedeutung war wie die Latino- , Schwulen- oder jüdische Kultur .
+ ==> Als solches verdient sie kein Mitleid , keine Sonderbehandlung als Märtyrium einer Minderheit , und sollte nur als das betrachtet werden , was sie wirklich ist : eine schädliche Krankheit . " Das schrieb Time Magazine 1966 , als ich drei Jahre alt war .
+ ==> Und meine Frage ist , wie haben wir es so weit gebracht ?
+
+
+And so we have both social progress and medical progress .
+Und somit haben wir sowohl sozialen als auch medizinischen Fortschritt .
+ ==> PARTIAL MATCHES: ONLY SOME MENTIONS MATCH
+ ==> Wie wurde aus einer Krankheit eine Identität ? Als ich etwa sechs Jahre alt war , ging ich mit meiner Mutter und meinem Bruder Schuhe kaufen . Zum Ende unseres Einkaufs sagte der Schuhverkäufer , dass wir uns jeweils einen Luftballon aussuchen dürften . Mein Bruder wollte einen roten , und ich wollte einen rosafarbenen .
+ ==> Und meine Frage ist , wie haben wir es so weit gebracht ?
+
+
+And I believe in both of them .
+Und ich glaube an beide .
+ ==> ALL MENTIONS MATCH 
+
+
+I believe the social progress is fantastic and meaningful and wonderful , and I think the same thing about the medical progress .
+Ich empfinde den sozialen Fortschritt als fantastisch , bedeutungsvoll und wunderbar , und denke ebenso über den medizinischen Fortschritt .
+ ==> ENGLISH MENTIONS NOT IN GERMAN
+ ==> As such , it deserves no compassion , it deserves no treatment as minority martyrdom , and it deserves not to be deemed anything but a pernicious sickness . '' That 's from Time magazine in 1966 , when I was three years old . And last year , the president of the United States came out in favor of gay marriage . And when I was little , I took it as the greatest compliment in the world that she would say that about parenting my brother and me . And when I was an adolescent , I thought that I 'm gay , and so I probably ca n't have a family . And when she said it , it made me anxious .
+
+
+But I think it 's a tragedy when one of them does n't see the other .
+Aber ich denke , es ist von tragischem Ausmaß , wenn der eine den anderen ignoriert .
+ ==> GERMAN MENTIONS NOT IN ENGLISH 
+ ==> Und letztes Jahr sprach sich der amerikanische Präsident für die geichgeschlechtliche Ehe aus .
+
+
+And when I see the way they 're intersecting in conditions like the three I 've just described , I sometimes think it 's like those moments in grand opera when the hero realizes he loves the heroine at the exact moment that she lies expiring on a divan .
+Und wenn ich sehe , wie sie sich überschneiden unter Umständen wie den dreien , die ich gerade beschrieben habe , dann fühle ich mich an jene Momente in der Oper erinnert , In denen der Held erkennt , dass er die Heldin liebt exakt an dem Punkt , als sie sterbend auf dem Diwan liegt .
+ ==> ALL MENTIONS MATCH 
+
+
+We have to think about how we feel about cures altogether .
+Wir müssen uns darüber klar werden , was wir über Heilungsversuche generell denken .
+ ==> NOT ANNOTATED SENTENCE PAIR
+
+
+And a lot of the time the question of parenthood is , what do we validate in our children , and what do we cure in them ?
+Oft ist die Frage , die wir uns als Eltern stellen müssen , was wir an unseren Kindern anerkennen , und was wir an ihnen heilen .
+ ==> ALL MENTIONS MATCH 
+
+
+Jim Sinclair , a prominent autism activist , said , `` When parents say ' I wish my child did not have autism , ' what they 're really saying is ' I wish the child I have did not exist and I had a different , non-autistic child instead . ' Read that again . This is what we hear when you mourn over our existence .
+Jim Sinclair , ein berühmter Autismus-Aktivist sagte einmal : " Wenn Eltern sagen ' Ich wünschte , mein Kind würde nicht an Autismus leiden ' sagen eigentlich , ' Ich wünschte , das Kind , das ich habe , würde nicht existieren und ich hätte ein anderes , nicht-autistisches Kind dafür . ' Lesen Sie es noch einmal . Das hören wir , wenn Sie unsere Existenz beklagen .
+ ==> GERMAN MENTIONS NOT IN ENGLISH 
+ ==> Und mit der Geburt ihrer Tochter , musste sie sich plötzlich mit Fragen auseinandersetzen , die nun auch für mich anfingen von großer Bedeutung zu sein .
+ ==> Es war nicht meine Kultur , und ich hatte auch nicht vor , ihr spontan beizutreten , aber ich schätzte , dass es eine Kultur war und es für die Menschen , die ihr angehörten , von so großer Bedeutung war wie die Latino- , Schwulen- oder jüdische Kultur . Es schien fast genauso wichtig wie die Amerikanische Kultur .
+
+
+This is what we hear when you pray for a cure -- that your fondest wish for us is that someday we will cease to be and strangers you can love will move in behind our faces . ''
+Das hören wir , wenn Sie um Heilung flehen – dass Ihr sehnlichster Wunsch für uns ist , dass wir eines Tages aufhören zu sein , und ein Fremder , den ihr lieben könnt , den Platz hinter unserem Gesicht einnimmt . "
+ ==> GERMAN MENTIONS NOT IN ENGLISH 
+ ==> Ich besuchte Gehörlosenvereine .
+ ==> Vor etwa 20 Jahren bat mich meine Redaktion bei der New York Times , einen Artikel über die Gehörlosenkultur zu schreiben . Und ich war ziemlich verblüfft . Ich hatte Taubheit immer als eine Krankheit betrachtet . Diese armen Menschen . Sie können nicht hören . Sie sind gehörlos . Was können wir für sie tun ?
+ ==> Da war die Eigenakzeptanz , die Akzeptanz der Familie und die gesellschaftliche Akzeptanz .
+ ==> Ich ging zu Theateraufführungen und Gedichtvorträgen von Gehörlosen . Und für die Wahl zur " Miss Deaf America " fuhr ich sogar bis nach Nashville , Tennessee , wo sich die Menschen über die undeutliche Zeichensprache der Südstaatler beschwerten . Und als ich immer mehr in die Gehörlosenwelt eintauchte , wurde mir bewusst , dass Gehörlosigkeit eine Kultur war , und dass die Menschen aus dieser Kultur , die sagten : " Wir sind nicht ' gehör-los ' , sondern Mitglieder einer Kultur " , etwas sagten , das mir etwas gab . Es war nicht meine Kultur , und ich hatte auch nicht vor , ihr spontan beizutreten , aber ich schätzte , dass es eine Kultur war und es für die Menschen , die ihr angehörten , von so großer Bedeutung war wie die Latino- , Schwulen- oder jüdische Kultur . Es schien fast genauso wichtig wie die Amerikanische Kultur . Dann bekam die Freundin einer Freundin eine kleinwüchsige Tochter . Und mit der Geburt ihrer Tochter , musste sie sich plötzlich mit Fragen auseinandersetzen , die nun auch für mich anfingen von großer Bedeutung zu sein . Sie stand vor der Entscheidung , was sie mit diesem Kind tun sollte . Sollte sie sagen : " Du bist genauso wie alle anderen , nur ein bisschen kleiner ? " Oder sollte sie versuchen , eine Art Kleinwüchsigenidentität für sie zu schaffen , sich in der Organisation " Little People of America " zu engagieren , und sich zu informieren , was es Neues in der Welt der Kleinwüchsigen gab ? Und da dachte ich plötzlich , dass die meisten tauben Kinder hörende Eltern haben , und diese in der Regel versuchen , ihre Kinder zu heilen . Diese tauben Menschen entdecken irgendwann im Erwachsenenalter " Gemeinschaft " für sich . Die meisten homosexuellen Menschen haben heterosexuelle Eltern . Diese Eltern wollen oft , dass ihre Kinder funktonieren in der in ihrer Sicht normalen Welt , und diese homosexuellen Menschen müssen dann später eine Identität für sich finden . Und nun war da diese Freundin von mir , die sich mit ihrer kleinwüchsigen Tochter mit der Frage nach Identität auseinandersetzte . Ich dachte , da ist es wieder : Eine Familie , die sich selbst als normal wahrnimmt mit einem Kind , das außergewöhnlich erscheint . Ich entwickelte also diesen Gedanken , dass es in Wirklichkeit zwei Arten von Identität gibt . Es gibt vertikale Identitäten , die generationsbedingt von Eltern an ihre Kinder weitergegeben werden . Das sind Dinge wie ethnische Zugehörigkeit , häufig Nationalität , Sprache und oftmals Religion . Dinge , die Sie mit Ihren Eltern und Kindern gemein haben . Und obwohl einige davon problematisch sein können , versucht man in der Regel nicht , sie zu heilen .
+ ==> Mein Bruder wollte einen roten , und ich wollte einen rosafarbenen . Meine Mutter meinte , ich solte doch lieber einen blauen Luftballon haben .
+ ==> Die Tatsache , dass meine jetzige Lieblingsfarbe blau ist , aber ich immer noch schwul bin – – zeigt sowohl den Einfluss meiner Mutter , als auch dessen Grenzen .
+ ==> Und dann begab ich mich in die Gehörlosenwelt .
+ ==> Mein Bruder wollte einen roten , und ich wollte einen rosafarbenen .
+ ==> Wie wurde aus einer Krankheit eine Identität ? Als ich etwa sechs Jahre alt war , ging ich mit meiner Mutter und meinem Bruder Schuhe kaufen . Zum Ende unseres Einkaufs sagte der Schuhverkäufer , dass wir uns jeweils einen Luftballon aussuchen dürften .
+ ==> Und meine Frage ist , wie haben wir es so weit gebracht ?
+ ==> Aber ich sagte ihr , dass ich ganz bestimmt den rosafarbenen wollte .
+
+
+It 's a very extreme point of view , but it points to the reality that people engage with the life they have and they do n't want to be cured or changed or eliminated .
+Es ist eine sehr extreme Sicht , aber sie verweist auf die Wirklichkeit , dass Menschen sich dem Leben verpflichten , das sie haben , und dass sie nicht geheilt , verändert oder ausgelöscht werden wollen .
+ ==> ALL MENTIONS MATCH 
+
+
+They want to be whoever it is that they 've come to be .
+Sie wollen die Person sein , zu der sie geworden sind .
+ ==> GERMAN MENTIONS NOT IN ENGLISH 
+ ==> " Selbst aus ganz unreligiöser Sicht stellt die Homosexualität eine sexuelle Verfehlung dar .
+
+
+One of the families I interviewed for this project was the family of Dylan Klebold who was one of the perpetrators of the Columbine massacre .
+Eine der Familien , die ich für dieses Projekt interviewt habe , war die Familie von Dylan Klebold , einem der Täter des Columbine-Massakers .
+ ==> GERMAN MENTIONS NOT IN ENGLISH 
+ ==> Sie ist ein armseliger , minderwertiger Ersatz für die Realität – ein kläglicher Versuch , dem Leben zu entfliehen . Als solches verdient sie kein Mitleid , keine Sonderbehandlung als Märtyrium einer Minderheit , und sollte nur als das betrachtet werden , was sie wirklich ist : eine schädliche Krankheit . " Das schrieb Time Magazine 1966 , als ich drei Jahre alt war . Und letztes Jahr sprach sich der amerikanische Präsident für die geichgeschlechtliche Ehe aus . Und meine Frage ist , wie haben wir es so weit gebracht ? Wie wurde aus einer Krankheit eine Identität ? Als ich etwa sechs Jahre alt war , ging ich mit meiner Mutter und meinem Bruder Schuhe kaufen . Zum Ende unseres Einkaufs sagte der Schuhverkäufer , dass wir uns jeweils einen Luftballon aussuchen dürften . Mein Bruder wollte einen roten , und ich wollte einen rosafarbenen . Meine Mutter meinte , ich solte doch lieber einen blauen Luftballon haben .
+
+
+It took a long time to persuade them to talk to me , and once they agreed , they were so full of their story that they could n't stop telling it .
+Es dauerte lange , bis ich sie davon überzeugen konnte , mit mir zu sprechen , und als sie es taten , hatte sich ihre Geschichte so in ihnen angestaut , dass sie nicht aufhören konnten , sie zu erzählen .
+ ==> GERMAN MENTIONS NOT IN ENGLISH 
+ ==> " Selbst aus ganz unreligiöser Sicht stellt die Homosexualität eine sexuelle Verfehlung dar .
+
+
+And the first weekend I spent with them -- the first of many -- I recorded more than 20 hours of conversation .
+Am ersten gemeinsamen Wochenende – einem von vielen – zeichnete ich mehr als 20 Stunden an Gesprächsstoff auf .
+ ==> GERMAN MENTIONS NOT IN ENGLISH 
+ ==> Als Kind nahm ich das als das größte Kompliment , dass sie so ihre Mutterrolle für mich und meinen Bruder beschreiben würde .
+ ==> Und letztes Jahr sprach sich der amerikanische Präsident für die geichgeschlechtliche Ehe aus . Und meine Frage ist , wie haben wir es so weit gebracht ?
+ ==> Und meine Frage ist , wie haben wir es so weit gebracht ?
+ ==> Sie ist ein armseliger , minderwertiger Ersatz für die Realität – ein kläglicher Versuch , dem Leben zu entfliehen . Als solches verdient sie kein Mitleid , keine Sonderbehandlung als Märtyrium einer Minderheit , und sollte nur als das betrachtet werden , was sie wirklich ist : eine schädliche Krankheit . " Das schrieb Time Magazine 1966 , als ich drei Jahre alt war .
+ ==> Als ich etwa sechs Jahre alt war , ging ich mit meiner Mutter und meinem Bruder Schuhe kaufen .
+
+
+And on Sunday night , we were all exhausted .
+Und am Sonntagabend waren wir alle erschöpft .
+ ==> NOT ANNOTATED SENTENCE PAIR
+
+
+We were sitting in the kitchen . Sue Klebold was fixing dinner .
+Wir saßen in der Küche . Sue Klebold machte Abendessen ,
+ ==> GERMAN MENTIONS NOT IN ENGLISH 
+ ==> Die Tatsache , dass meine jetzige Lieblingsfarbe blau ist , aber ich immer noch schwul bin – – zeigt sowohl den Einfluss meiner Mutter , als auch dessen Grenzen . Als ich klein war , sagte meine Mutter immer : " Die Liebe , die du für deine Kinder empfindest , ist einzigartig . Und bevor du nicht selbst Kinder hast , wirst du nicht verstehen , was ich meine . " Als Kind nahm ich das als das größte Kompliment , dass sie so ihre Mutterrolle für mich und meinen Bruder beschreiben würde .
+ ==> Ich hatte Taubheit immer als eine Krankheit betrachtet .
+ ==> Wie wurde aus einer Krankheit eine Identität ? Als ich etwa sechs Jahre alt war , ging ich mit meiner Mutter und meinem Bruder Schuhe kaufen .
+
+
+And I said , `` If Dylan were here now , do you have a sense of what you 'd want to ask him ? ''
+und ich sagte : " Wenn Dylan jetzt hier wäre , haben Sie eine Ahnung , was Sie ihn dann fragen würden ? "
+ ==> ALL MENTIONS MATCH 
+
+
+And his father said , `` I sure do .
+Und sein Vater sagte : " Oh ja !
+ ==> NOT ANNOTATED SENTENCE PAIR
+
+
+I 'd want to ask him what the hell he thought he was doing . ''
+Ich würde ihn fragen , was zum Teufel er sich dabei gedacht hat , so etwas zu tun . "
+ ==> ALL MENTIONS MATCH 
+
+
+And Sue looked at the floor , and she thought for a minute .
+Und Sue schaute auf den Boden und dachte eine Minute nach .
+ ==> ALL MENTIONS MATCH 
+
+
+And then she looked back up and said , `` I would ask him to forgive me for being his mother and never knowing what was going on inside his head . ''
+Dann schaute sie auf und sagte : " Ich würde ihn bitten , mir zu verzeihen , seine Mutter gewesen zu sein , und keine Ahnung davon gehabt zu haben , was in seinem Kopf vor sich ging . "
+ ==> GERMAN MENTIONS NOT IN ENGLISH 
+ ==> Als solches verdient sie kein Mitleid , keine Sonderbehandlung als Märtyrium einer Minderheit , und sollte nur als das betrachtet werden , was sie wirklich ist : eine schädliche Krankheit . "
+
+
+When I had dinner with her a couple of years later -- one of many dinners that we had together -- she said , `` You know , when it first happened , I used to wish that I had never married , that I had never had children .
+Als ich mich ein paar Jahre später erneut mit ihr zum Abendessen traf – eines von vielen Abendessen , die wir gemeinsam verbrachten – sagte sie : " Weißt du , als es zuerst passiert ist , wünschte ich , dass ich nie geheiratet und nie Kinder gehabt hätte .
+ ==> GERMAN MENTIONS NOT IN ENGLISH 
+ ==> Mein Bruder wollte einen roten , und ich wollte einen rosafarbenen .
+ ==> Diese armen Menschen . Sie können nicht hören .
+
+
+If I had n't gone to Ohio State and crossed paths with Tom , this child would n't have existed and this terrible thing would n't have happened .
+Wenn ich nie die Ohio State Universität besucht und dort Tom kennengelernt hätte , hätte dieses Kind nicht existiert und diese schreckliche Sache wäre nie passiert .
+ ==> GERMAN MENTIONS NOT IN ENGLISH 
+ ==> Und bevor du nicht selbst Kinder hast , wirst du nicht verstehen , was ich meine . " Als Kind nahm ich das als das größte Kompliment , dass sie so ihre Mutterrolle für mich und meinen Bruder beschreiben würde .
+
+
+But I 've come to feel that I love the children I had so much that I do n't want to imagine a life without them .
+Aber ich habe für mich herausgefunden , dass ich die Kinder , die ich geboren habe , so liebe , dass ich mir ein Leben ohne sie nicht vorstellen möchte .
+ ==> GERMAN MENTIONS NOT IN ENGLISH 
+ ==> Diese armen Menschen . Sie können nicht hören . Sie sind gehörlos . Was können wir für sie tun ? Und dann begab ich mich in die Gehörlosenwelt .
+ ==> Zum Ende unseres Einkaufs sagte der Schuhverkäufer , dass wir uns jeweils einen Luftballon aussuchen dürften .
+
+
+I recognize the pain they caused to others , for which there can be no forgiveness , but the pain they caused to me , there is , '' she said .
+Ich erkenne den Schmerz an , den sie anderen zugefügt haben , und für den es keine Vergebung gibt , aber für den Schmerz , den sie mir verursacht haben , gibt es Vergebung " , sagte sie .
+ ==> GERMAN MENTIONS NOT IN ENGLISH 
+ ==> Und bevor du nicht selbst Kinder hast , wirst du nicht verstehen , was ich meine . "
+
+
+`` So while I recognize that it would have been better for the world if Dylan had never been born , I 've decided that it would not have been better for me . ''
+" Während ich es also anerkenne , dass es für die Welt besser gewesen wäre , wenn Dylan nie geboren worden wäre , bin ich zu dem Schluss gekommen , dass es für mich nicht besser gewesen wäre . "
+ ==> ALL MENTIONS MATCH 
+
+
+I thought it was surprising how all of these families had all of these children with all of these problems , problems that they mostly would have done anything to avoid , and that they had all found so much meaning in that experience of parenting .
+Ich war erstaunt darüber , wie all diese Familien all diese Kinder mit all diesen Problemen hatten , Probleme , für die sie meist alles getan hätten , um sie zu vermeiden , und wie sie dennoch so viel Sinn aus dieser Erfahrung als Eltern gezogen hatten .
+ ==> GERMAN MENTIONS NOT IN ENGLISH 
+ ==> Als ich etwa sechs Jahre alt war , ging ich mit meiner Mutter und meinem Bruder Schuhe kaufen . Zum Ende unseres Einkaufs sagte der Schuhverkäufer , dass wir uns jeweils einen Luftballon aussuchen dürften .
+ ==> Und mit der Geburt ihrer Tochter , musste sie sich plötzlich mit Fragen auseinandersetzen , die nun auch für mich anfingen von großer Bedeutung zu sein .
+ ==> Vor etwa 20 Jahren bat mich meine Redaktion bei der New York Times , einen Artikel über die Gehörlosenkultur zu schreiben .
+
+
+And then I thought , all of us who have children love the children we have , with their flaws .
+Und dann dachte ich , dass wir alle , die wir Kinder haben , unsere Kinder mit all ihren Schwächen lieben .
+ ==> PARTIAL MATCHES: ONLY SOME MENTIONS MATCH
+ ==> Und es verunsicherte mich , wenn sie es sagte .
+ ==> Als ich klein war , sagte meine Mutter immer : " Die Liebe , die du für deine Kinder empfindest , ist einzigartig . Und bevor du nicht selbst Kinder hast , wirst du nicht verstehen , was ich meine . "
+
+
+If some glorious angel suddenly descended through my living room ceiling and offered to take away the children I have and give me other , better children -- more polite , funnier , nicer , smarter -- I would cling to the children I have and pray away that atrocious spectacle .
+Wenn ein leuchtender Engel plötzlich durch die Wohnzimmerdecke geschwebt käme , und mir anböte , meine Kinder mitzunehmen , um sie gegen andere , bessere Kinder einzutauschen – höflicher , lustiger , schöner und intelligenter – ich würde mich an meine Kinder klammern und das grausame Spektakel wegzubeten versuchen .
+ ==> GERMAN MENTIONS NOT IN ENGLISH 
+ ==> Ich sagte : " Ich bin schwul . Das ist nicht der Weg , auf dem ich mich befinde .
+ ==> Und bevor du nicht selbst Kinder hast , wirst du nicht verstehen , was ich meine . " Als Kind nahm ich das als das größte Kompliment , dass sie so ihre Mutterrolle für mich und meinen Bruder beschreiben würde .
+
+
+And ultimately I feel that in the same way that we test flame-retardant pajamas in an inferno to ensure they wo n't catch fire when our child reaches across the stove , so these stories of families negotiating these extreme differences reflect on the universal experience of parenting , which is always that sometimes you look at your child and you think , where did you come from ?
+Und letztendlich denke ich , dass genauso wie wir flammfeste Schlafanzüge in einem Inferno testen , um sicherzustellen , dass sie nicht Feuer fangen , wenn unser Kind über den Herd langt , auch diese Geschichten von Familien , die diese extremen Unterschiede zu überwinden haben , die universelle Erfahrung des Elternseins widerspiegeln , welche immer darauf hinausläuft , dass man manchmal dein Kind ansiehst und sich fragt : " Von welchem Planeten kommst du ? "
+ ==> GERMAN MENTIONS NOT IN ENGLISH 
+ ==> Und da dachte ich plötzlich , dass die meisten tauben Kinder hörende Eltern haben ,
+ ==> Sollte sie sagen : " Du bist genauso wie alle anderen , nur ein bisschen kleiner ? "
+
+
+It turns out that while each of these individual differences is siloed -- there are only so many families dealing with schizophrenia , there are only so many families of children who are transgender , there are only so many families of prodigies -- who also face similar challenges in many ways -- there are only so many families in each of those categories -- but if you start to think that the experience of negotiating difference within your family is what people are addressing , then you discover that it 's a nearly universal phenomenon .
+Es stellt sich heraus , dass obwohl jeder dieser Unterschiede in sich isoliert ist – nicht jede Familie hat ein schizophrenes Familienmitglied , nicht jede ein Kind , das transgender , oder hochbegabt ist , was an die Eltern oft ähnliche Herausforderungen stellt – in jeder dieser Kategorien gibt es nur eine handvoll Familien – aber wenn Sie anfangen zu denken , dass die Erfahrung , Unterschiede in der Familie zu überwinden , das ist , was Menschen ansprechen , dann entdecken Sie , dass es ein nahezu universelles Phänomen ist .
+ ==> GERMAN MENTIONS NOT IN ENGLISH 
+ ==> " Selbst aus ganz unreligiöser Sicht stellt die Homosexualität eine sexuelle Verfehlung dar .
+
+
+Ironically , it turns out , that it 's our differences , and our negotiation of difference , that unite us .
+Ironischerweise sind es unsere Unterschiede , und unser Umgang mit ihnen , die uns zusammenbringen .
+ ==> ALL MENTIONS MATCH 
+
+
+I decided to have children while I was working on this project .
+Ich entschied mich selbst Vater zu werden , noch während ich an diesem Projekt arbeitete .
+ ==> NOT ANNOTATED SENTENCE PAIR
+
+
+And many people were astonished and said , `` But how can you decide to have children in the midst of studying everything that can go wrong ? ''
+Und viele Leute waren erstaunt und sagten : " Wie kannst du dich dazu entscheiden , Kinder zu haben , inmitten all deiner Studien über alles , was schiefgehen kann ? "
+ ==> NOT ANNOTATED SENTENCE PAIR
+
+
+And I said , `` I 'm not studying everything that can go wrong .
+Und ich sagte : " Ich untersuche nicht alles , was schiefgehen kann .
+ ==> NOT ANNOTATED SENTENCE PAIR
+
+
+What I 'm studying is how much love there can be , even when everything appears to be going wrong . ''
+Was ich herausfinden möchte ist , wieviel Liebe möglich ist , auch wenn alles schiefzugehen scheint . "
+ ==> NOT ANNOTATED SENTENCE PAIR
+
+
+I thought a lot about the mother of one disabled child I had seen , a severely disabled child who died through caregiver neglect .
+Ich dachte viel über die Mutter eines behinderten Kindes nach , das ich gesehen hatte , ein schwerst behindertes Kind , das infolge von Vernachlässigung durch die Betreuungsperson starb .
+ ==> GERMAN MENTIONS NOT IN ENGLISH 
+ ==> " Selbst aus ganz unreligiöser Sicht stellt die Homosexualität eine sexuelle Verfehlung dar . Sie ist ein armseliger , minderwertiger Ersatz für die Realität – ein kläglicher Versuch , dem Leben zu entfliehen . Als solches verdient sie kein Mitleid , keine Sonderbehandlung als Märtyrium einer Minderheit , und sollte nur als das betrachtet werden , was sie wirklich ist : eine schädliche Krankheit . " Das schrieb Time Magazine 1966 , als ich drei Jahre alt war . Und letztes Jahr sprach sich der amerikanische Präsident für die geichgeschlechtliche Ehe aus . Und meine Frage ist , wie haben wir es so weit gebracht ? Wie wurde aus einer Krankheit eine Identität ? Als ich etwa sechs Jahre alt war , ging ich mit meiner Mutter und meinem Bruder Schuhe kaufen . Zum Ende unseres Einkaufs sagte der Schuhverkäufer , dass wir uns jeweils einen Luftballon aussuchen dürften . Mein Bruder wollte einen roten , und ich wollte einen rosafarbenen . Meine Mutter meinte , ich solte doch lieber einen blauen Luftballon haben . Aber ich sagte ihr , dass ich ganz bestimmt den rosafarbenen wollte . Und sie erinnerte mich daran , dass meine Lieblingsfarbe blau sei . Die Tatsache , dass meine jetzige Lieblingsfarbe blau ist , aber ich immer noch schwul bin – – zeigt sowohl den Einfluss meiner Mutter , als auch dessen Grenzen . " Selbst aus ganz unreligiöser Sicht stellt die Homosexualität eine sexuelle Verfehlung dar . Sie ist ein armseliger , minderwertiger Ersatz für die Realität – ein kläglicher Versuch , dem Leben zu entfliehen . Als solches verdient sie kein Mitleid , keine Sonderbehandlung als Märtyrium einer Minderheit , und sollte nur als das betrachtet werden , was sie wirklich ist : eine schädliche Krankheit . " Das schrieb Time Magazine 1966 , als ich drei Jahre alt war . Und letztes Jahr sprach sich der amerikanische Präsident für die geichgeschlechtliche Ehe aus . Und meine Frage ist , wie haben wir es so weit gebracht ? Wie wurde aus einer Krankheit eine Identität ? Als ich etwa sechs Jahre alt war , ging ich mit meiner Mutter und meinem Bruder Schuhe kaufen . Zum Ende unseres Einkaufs sagte der Schuhverkäufer , dass wir uns jeweils einen Luftballon aussuchen dürften . Mein Bruder wollte einen roten , und ich wollte einen rosafarbenen . Meine Mutter meinte , ich solte doch lieber einen blauen Luftballon haben . Aber ich sagte ihr , dass ich ganz bestimmt den rosafarbenen wollte . Und sie erinnerte mich daran , dass meine Lieblingsfarbe blau sei . Die Tatsache , dass meine jetzige Lieblingsfarbe blau ist , aber ich immer noch schwul bin – – zeigt sowohl den Einfluss meiner Mutter , als auch dessen Grenzen . Als ich klein war , sagte meine Mutter immer : " Die Liebe , die du für deine Kinder empfindest , ist einzigartig . Und bevor du nicht selbst Kinder hast , wirst du nicht verstehen , was ich meine . " Als Kind nahm ich das als das größte Kompliment , dass sie so ihre Mutterrolle für mich und meinen Bruder beschreiben würde . Als Teenager dachte ich , dass ich schwul sei und somit wahrscheinlich keine Familie haben würde . Und es verunsicherte mich , wenn sie es sagte . Und nachdem ich mein Coming-out hatte , und sie fortfuhr , es zu sagen , machte es mich wütend . " Selbst aus ganz unreligiöser Sicht stellt die Homosexualität eine sexuelle Verfehlung dar . Sie ist ein armseliger , minderwertiger Ersatz für die Realität – ein kläglicher Versuch , dem Leben zu entfliehen . Als solches verdient sie kein Mitleid , keine Sonderbehandlung als Märtyrium einer Minderheit , und sollte nur als das betrachtet werden , was sie wirklich ist : eine schädliche Krankheit . " Das schrieb Time Magazine 1966 , als ich drei Jahre alt war . Und letztes Jahr sprach sich der amerikanische Präsident für die geichgeschlechtliche Ehe aus . Und meine Frage ist , wie haben wir es so weit gebracht ? Wie wurde aus einer Krankheit eine Identität ? Als ich etwa sechs Jahre alt war , ging ich mit meiner Mutter und meinem Bruder Schuhe kaufen . Zum Ende unseres Einkaufs sagte der Schuhverkäufer , dass wir uns jeweils einen Luftballon aussuchen dürften . Mein Bruder wollte einen roten , und ich wollte einen rosafarbenen . Meine Mutter meinte , ich solte doch lieber einen blauen Luftballon haben . Aber ich sagte ihr , dass ich ganz bestimmt den rosafarbenen wollte . Und sie erinnerte mich daran , dass meine Lieblingsfarbe blau sei . Die Tatsache , dass meine jetzige Lieblingsfarbe blau ist , aber ich immer noch schwul bin – – zeigt sowohl den Einfluss meiner Mutter , als auch dessen Grenzen . Als ich klein war , sagte meine Mutter immer : " Die Liebe , die du für deine Kinder empfindest , ist einzigartig . Und bevor du nicht selbst Kinder hast , wirst du nicht verstehen , was ich meine . " Als Kind nahm ich das als das größte Kompliment , dass sie so ihre Mutterrolle für mich und meinen Bruder beschreiben würde . Als Teenager dachte ich , dass ich schwul sei und somit wahrscheinlich keine Familie haben würde . Und es verunsicherte mich , wenn sie es sagte . Und nachdem ich mein Coming-out hatte , und sie fortfuhr , es zu sagen , machte es mich wütend . Ich sagte : " Ich bin schwul . Das ist nicht der Weg , auf dem ich mich befinde . Und ich möchte , dass du aufhörst , das zu sagen . " Vor etwa 20 Jahren bat mich meine Redaktion bei der New York Times , einen Artikel über die Gehörlosenkultur zu schreiben . Und ich war ziemlich verblüfft . Ich hatte Taubheit immer als eine Krankheit betrachtet . Diese armen Menschen . Sie können nicht hören . Sie sind gehörlos . Was können wir für sie tun ? Und dann begab ich mich in die Gehörlosenwelt . Ich besuchte Gehörlosenvereine . Ich ging zu Theateraufführungen und Gedichtvorträgen von Gehörlosen . Und für die Wahl zur " Miss Deaf America " fuhr ich sogar bis nach Nashville , Tennessee , wo sich die Menschen über die undeutliche Zeichensprache der Südstaatler beschwerten . Und als ich immer mehr in die Gehörlosenwelt eintauchte , wurde mir bewusst , dass Gehörlosigkeit eine Kultur war , und dass die Menschen aus dieser Kultur , die sagten : " Wir sind nicht ' gehör-los ' , sondern Mitglieder einer Kultur " , etwas sagten , das mir etwas gab .
+ ==> Wie wurde aus einer Krankheit eine Identität ? Als ich etwa sechs Jahre alt war , ging ich mit meiner Mutter und meinem Bruder Schuhe kaufen . Zum Ende unseres Einkaufs sagte der Schuhverkäufer , dass wir uns jeweils einen Luftballon aussuchen dürften .
+ ==> Als Kind nahm ich das als das größte Kompliment , dass sie so ihre Mutterrolle für mich und meinen Bruder beschreiben würde . Als Teenager dachte ich , dass ich schwul sei und somit wahrscheinlich keine Familie haben würde . Und es verunsicherte mich , wenn sie es sagte . Und nachdem ich mein Coming-out hatte , und sie fortfuhr , es zu sagen , machte es mich wütend .
+ ==> Aber ich sagte ihr , dass ich ganz bestimmt den rosafarbenen wollte .
+ ==> Und ich möchte , dass du aufhörst , das zu sagen . "
+
+
+And when his ashes were interred , his mother said , `` I pray here for forgiveness for having been twice robbed , once of the child I wanted and once of the son I loved . ''
+Und als seine Asche beigesetzt wurde , sagte seine Mutter : " Ich bitte hier um Vergebung darum , dass ich zweimal beraubt wurde , einmal des Kindes , das ich wollte , und einmal des geliebten Sohnes . "
+ ==> PARTIAL MATCHES: ONLY SOME MENTIONS MATCH
+ ==> Sie sind gehörlos . Was können wir für sie tun ? Und dann begab ich mich in die Gehörlosenwelt .
+ ==> Zum Ende unseres Einkaufs sagte der Schuhverkäufer , dass wir uns jeweils einen Luftballon aussuchen dürften .
+ ==> Ich ging zu Theateraufführungen und Gedichtvorträgen von Gehörlosen .
+ ==> Als solches verdient sie kein Mitleid , keine Sonderbehandlung als Märtyrium einer Minderheit , und sollte nur als das betrachtet werden , was sie wirklich ist : eine schädliche Krankheit . "
+
+
+And I figured it was possible then for anyone to love any child if they had the effective will to do so .
+Und da wurde mir klar , dass es für jeden möglich ist , jedes Kind zu lieben , solange er nur den festen Willen dazu hat .
+ ==> GERMAN MENTIONS NOT IN ENGLISH 
+ ==> Und sie erinnerte mich daran , dass meine Lieblingsfarbe blau sei .
+ ==> Meine Mutter meinte , ich solte doch lieber einen blauen Luftballon haben .
+ ==> Das schrieb Time Magazine 1966 , als ich drei Jahre alt war . Und letztes Jahr sprach sich der amerikanische Präsident für die geichgeschlechtliche Ehe aus .
+ ==> Und nachdem ich mein Coming-out hatte , und sie fortfuhr , es zu sagen , machte es mich wütend .
+ ==> Mein Bruder wollte einen roten , und ich wollte einen rosafarbenen .
+
+
+So my husband is the biological father of two children with some lesbian friends in Minneapolis .
+Mein Mann ist der biologische Vater von zwei Kindern , die er mit lesbischen Freunden in Minneapolis hat .
+ ==> GERMAN MENTIONS NOT IN ENGLISH 
+ ==> Die Tatsache , dass meine jetzige Lieblingsfarbe blau ist , aber ich immer noch schwul bin – – zeigt sowohl den Einfluss meiner Mutter , als auch dessen Grenzen . Als ich klein war , sagte meine Mutter immer : " Die Liebe , die du für deine Kinder empfindest , ist einzigartig .
+ ==> Und es verunsicherte mich , wenn sie es sagte .
+ ==> Als ich etwa sechs Jahre alt war , ging ich mit meiner Mutter und meinem Bruder Schuhe kaufen . Zum Ende unseres Einkaufs sagte der Schuhverkäufer , dass wir uns jeweils einen Luftballon aussuchen dürften . Mein Bruder wollte einen roten , und ich wollte einen rosafarbenen . Meine Mutter meinte , ich solte doch lieber einen blauen Luftballon haben .
+ ==> Meine Mutter meinte , ich solte doch lieber einen blauen Luftballon haben .
+ ==> Als ich etwa sechs Jahre alt war , ging ich mit meiner Mutter und meinem Bruder Schuhe kaufen . Zum Ende unseres Einkaufs sagte der Schuhverkäufer , dass wir uns jeweils einen Luftballon aussuchen dürften .
+
+
+I had a close friend from college who 'd gone through a divorce and wanted to have children .
+Ich hatte eine enge Freundin aus Uni-Tagen , die eine Scheidung hinter sich hatte und Kinder wollte .
+ ==> PARTIAL MATCHES: ONLY SOME MENTIONS MATCH
+ ==> Zum Ende unseres Einkaufs sagte der Schuhverkäufer , dass wir uns jeweils einen Luftballon aussuchen dürften .
+ ==> Als solches verdient sie kein Mitleid , keine Sonderbehandlung als Märtyrium einer Minderheit , und sollte nur als das betrachtet werden , was sie wirklich ist : eine schädliche Krankheit . " Das schrieb Time Magazine 1966 , als ich drei Jahre alt war . Und letztes Jahr sprach sich der amerikanische Präsident für die geichgeschlechtliche Ehe aus .
+
+
+And so she and I have a daughter , and mother and daughter live in Texas .
+Mit ihr habe ich also eine Tochter , und Mutter und Tochter leben in Texas .
+ ==> ALL MENTIONS MATCH 
+
+
+And my husband and I have a son who lives with us all the time of whom I am the biological father , and our surrogate for the pregnancy was Laura , the lesbian mother of Oliver and Lucy in Minneapolis .
+Mein Mann und ich haben einen Sohn zusammen , der durchgehend bei uns lebt , von dem ich der biologische Vater bin , und unsere Leihmutter für die Schwangerschaft Laura war , die lesbische Mutter von Oliver und Lucy in Minneapolis .
+ ==> GERMAN MENTIONS NOT IN ENGLISH 
+ ==> Und bevor du nicht selbst Kinder hast , wirst du nicht verstehen , was ich meine . "
+ ==> Und sie erinnerte mich daran , dass meine Lieblingsfarbe blau sei . Die Tatsache , dass meine jetzige Lieblingsfarbe blau ist , aber ich immer noch schwul bin – – zeigt sowohl den Einfluss meiner Mutter , als auch dessen Grenzen .
+
+
+So the shorthand is five parents of four children in three states .
+In Kurzform sind das fünf Eltern von vier Kindern in drei Staaten .
+ ==> NOT ANNOTATED SENTENCE PAIR
+
+
+And there are people who think that the existence of my family somehow undermines or weakens or damages their family .
+Und es gibt Menschen , die glauben , dass die Existenz meiner Familie in irgendeiner Weise ihre eigene Familie untergräbt , schwächt oder schädigt .
+ ==> GERMAN MENTIONS NOT IN ENGLISH 
+ ==> " Selbst aus ganz unreligiöser Sicht stellt die Homosexualität eine sexuelle Verfehlung dar . Sie ist ein armseliger , minderwertiger Ersatz für die Realität – ein kläglicher Versuch , dem Leben zu entfliehen .
+ ==> " Selbst aus ganz unreligiöser Sicht stellt die Homosexualität eine sexuelle Verfehlung dar . Sie ist ein armseliger , minderwertiger Ersatz für die Realität – ein kläglicher Versuch , dem Leben zu entfliehen .
+ ==> Aber ich sagte ihr , dass ich ganz bestimmt den rosafarbenen wollte .
+ ==> Meine Mutter meinte , ich solte doch lieber einen blauen Luftballon haben .
+ ==> Als ich etwa sechs Jahre alt war , ging ich mit meiner Mutter und meinem Bruder Schuhe kaufen . Zum Ende unseres Einkaufs sagte der Schuhverkäufer , dass wir uns jeweils einen Luftballon aussuchen dürften .
+ ==> Und mit der Geburt ihrer Tochter , musste sie sich plötzlich mit Fragen auseinandersetzen , die nun auch für mich anfingen von großer Bedeutung zu sein . Sie stand vor der Entscheidung , was sie mit diesem Kind tun sollte .
+ ==> und diese in der Regel versuchen , ihre Kinder zu heilen .
+
+
+And there are people who think that families like mine should n't be allowed to exist .
+Und es gibt Leute , die der Meinung sind , dass Familien wie die meine kein Recht haben sollten zu existieren .
+ ==> GERMAN MENTIONS NOT IN ENGLISH 
+ ==> Als solches verdient sie kein Mitleid , keine Sonderbehandlung als Märtyrium einer Minderheit , und sollte nur als das betrachtet werden , was sie wirklich ist : eine schädliche Krankheit . " Das schrieb Time Magazine 1966 , als ich drei Jahre alt war .
+ ==> Und meine Frage ist , wie haben wir es so weit gebracht ?
+ ==> Die Tatsache , dass meine jetzige Lieblingsfarbe blau ist , aber ich immer noch schwul bin – – zeigt sowohl den Einfluss meiner Mutter , als auch dessen Grenzen .
+ ==> Das schrieb Time Magazine 1966 , als ich drei Jahre alt war . Und letztes Jahr sprach sich der amerikanische Präsident für die geichgeschlechtliche Ehe aus .
+
+
+And I do n't accept subtractive models of love , only additive ones .
+Und ich akzeptiere keine subtraktiven Modelle der Liebe , nur solche , die hinzufügend sind .
+ ==> GERMAN MENTIONS NOT IN ENGLISH 
+ ==> Meine Mutter meinte , ich solte doch lieber einen blauen Luftballon haben .
+ ==> Und letztes Jahr sprach sich der amerikanische Präsident für die geichgeschlechtliche Ehe aus . Und meine Frage ist , wie haben wir es so weit gebracht ? Wie wurde aus einer Krankheit eine Identität ? Als ich etwa sechs Jahre alt war , ging ich mit meiner Mutter und meinem Bruder Schuhe kaufen .
+ ==> Und sie erinnerte mich daran , dass meine Lieblingsfarbe blau sei .
+
+
+And I believe that in the same way that we need species diversity to ensure that the planet can go on , so we need this diversity of affection and diversity of family in order to strengthen the ecosphere of kindness .
+Und ich glaube , dass genauso wie wir Artenvielfalt brauchen , um sicherzustellen , dass unser Planet weiter existieren kann , brauchen wir diese verschiedenen Formen von Zuneigung und Familie , um diese Ökosphäre von Güte zu stärken .
+ ==> NOT ANNOTATED SENTENCE PAIR
+
+
+The day after our son was born , the pediatrician came into the hospital room and said she was concerned .
+Ein Tag , nachdem unser Sohn geboren wurde , kam die Kinderärztin zu uns ins Krankenzimmer und sagte , sie wäre besorgt .
+ ==> GERMAN MENTIONS NOT IN ENGLISH 
+ ==> Meine Mutter meinte , ich solte doch lieber einen blauen Luftballon haben . Aber ich sagte ihr , dass ich ganz bestimmt den rosafarbenen wollte .
+ ==> Und nachdem ich mein Coming-out hatte , und sie fortfuhr , es zu sagen , machte es mich wütend .
+
+
+He was n't extending his legs appropriately .
+Er würde seine Beine nicht richtig ausstrecken .
+ ==> ALL MENTIONS MATCH 
+
+
+She said that might mean that he had brain damage .
+Sie sagte , das könne bedeuten , dass er Hirnschäden davongetragen hatte .
+ ==> GERMAN MENTIONS NOT IN ENGLISH 
+ ==> " Selbst aus ganz unreligiöser Sicht stellt die Homosexualität eine sexuelle Verfehlung dar .
+
+
+In so far as he was extending them , he was doing so asymmetrically , which she thought could mean that there was a tumor of some kind in action .
+Soweit er sie überhaupt ausstreckte , tat er das so ungleichmäßig , dass sie dachte , ein Tumor könnte möglicherweise dafür verantwortlich sein .
+ ==> GERMAN MENTIONS NOT IN ENGLISH 
+ ==> Und letztes Jahr sprach sich der amerikanische Präsident für die geichgeschlechtliche Ehe aus .
+ ==> Zum Ende unseres Einkaufs sagte der Schuhverkäufer , dass wir uns jeweils einen Luftballon aussuchen dürften .
+
+
+And he had a very large head , which she thought might indicate hydrocephalus .
+Und er hatte einen sehr großen Kopf , was , wie sie meinte , auf einen Wasserkopf hinweisen könnte .
+ ==> GERMAN MENTIONS NOT IN ENGLISH 
+ ==> Aber ich sagte ihr , dass ich ganz bestimmt den rosafarbenen wollte .
+
+
+And as she told me all of these things , I felt the very center of my being pouring out onto the floor .
+Und als sie mir all diese Dinge erzählte , fühlte ich für einen Moment , wie alles Leben aus mir wich .
+ ==> ALL MENTIONS MATCH 
+
+
+And I thought , here I had been working for years on a book about how much meaning people had found in the experience of parenting children who are disabled , and I did n't want to join their number .
+Ich dachte , da arbeitete ich nun seit Jahren an einem Buch darüber , wieviel Sinn Menschen aus ihrer Erfahrung als Eltern eines behinderten Kindes schöpften , und ich wollte ihrem Kreis nicht beitreten .
+ ==> GERMAN MENTIONS NOT IN ENGLISH 
+ ==> Und letztes Jahr sprach sich der amerikanische Präsident für die geichgeschlechtliche Ehe aus .
+ ==> Als solches verdient sie kein Mitleid , keine Sonderbehandlung als Märtyrium einer Minderheit , und sollte nur als das betrachtet werden , was sie wirklich ist : eine schädliche Krankheit . "
+ ==> Meine Mutter meinte , ich solte doch lieber einen blauen Luftballon haben .
+ ==> Und meine Frage ist , wie haben wir es so weit gebracht ?
+ ==> Aber ich sagte ihr , dass ich ganz bestimmt den rosafarbenen wollte .
+ ==> Wie wurde aus einer Krankheit eine Identität ? Als ich etwa sechs Jahre alt war , ging ich mit meiner Mutter und meinem Bruder Schuhe kaufen .
+ ==> Und letztes Jahr sprach sich der amerikanische Präsident für die geichgeschlechtliche Ehe aus .
+ ==> Sie ist ein armseliger , minderwertiger Ersatz für die Realität – ein kläglicher Versuch , dem Leben zu entfliehen . Als solches verdient sie kein Mitleid , keine Sonderbehandlung als Märtyrium einer Minderheit , und sollte nur als das betrachtet werden , was sie wirklich ist : eine schädliche Krankheit . "
+
+
+Because what I was encountering was an idea of illness .
+Denn , was mir entgegensprang war der Gedanke an Krankheit .
+ ==> NOT ANNOTATED SENTENCE PAIR
+
+
+And like all parents since the dawn of time , I wanted to protect my child from illness .
+Und wie alle Eltern seit Anbeginn der Zeit , wollte auch ich mein Kind vor Krankheit schützen .
+ ==> ENGLISH MENTIONS NOT IN GERMAN
+ ==> And she reminded me that my favorite color was blue . The fact that my favorite color now is blue , but I 'm still gay -- -- is evidence of both my mother 's influence and its limits .
+
+
+And I wanted also to protect myself from illness .
+Und ich wollte auch mich vor Krankheit schützen .
+ ==> NOT ANNOTATED SENTENCE PAIR
+
+
+And yet , I knew from the work I had done that if he had any of the things we were about to start testing for , that those would ultimately be his identity , and if they were his identity they would become my identity , that that illness was going to take a very different shape as it unfolded .
+Und doch wusste ich von meiner Arbeit her , dass wenn er eines dieser Dinge hätte , auf die wir ihn testen lassen wollten , diese letztendlich zu seiner Identität werden würden , und wenn sie seine Identität wären , würden sie auch zu meiner Identität werden , und dass die Krankheit während ihres Verlaufs unterschiedliche Formen annehmen würde .
+ ==> GERMAN MENTIONS NOT IN ENGLISH 
+ ==> Ich besuchte Gehörlosenvereine .
+ ==> Sie stand vor der Entscheidung , was sie mit diesem Kind tun sollte .
+ ==> Ich sagte : " Ich bin schwul . Das ist nicht der Weg , auf dem ich mich befinde .
+ ==> Aber ich sagte ihr , dass ich ganz bestimmt den rosafarbenen wollte .
+
+
+We took him to the MRI machine , we took him to the CAT scanner , we took this day-old child and gave him over for an arterial blood draw .
+Wir brachten ihn zur Kernspintomographie , zur Computertomographie , wir übergaben dieses 1-Tage-alte Kind den Ärzten für eine arterielle Blutentnahme .
+ ==> ALL MENTIONS MATCH 
+
+
+We felt helpless .
+Wir fühlten uns hilflos .
+ ==> NOT ANNOTATED SENTENCE PAIR
+
+
+And at the end of five hours , they said that his brain was completely clear and that he was by then extending his legs correctly .
+Und nach fünf langen Stunden , teilten sie uns mit , dass sein Gehirn völlig unauffällig sei , und er seine Beine mittlerweile richtig ausstrecken würde .
+ ==> ALL MENTIONS MATCH 
+
+
+And when I asked the pediatrician what had been going on , she said she thought in the morning he had probably had a cramp .
+Und als ich die Kinderärztin fragte , was mit ihm los war , sagte sie , sie glaube , er hätte am Morgen wahrscheinlich einen Krampf gehabt .
+ ==> PARTIAL MATCHES: ONLY SOME MENTIONS MATCH
+ ==> Und nachdem ich mein Coming-out hatte , und sie fortfuhr , es zu sagen , machte es mich wütend .
+ ==> Mein Bruder wollte einen roten , und ich wollte einen rosafarbenen .
+
+
+But I thought how my mother was right .
+Aber ich dachte , wie recht meine Mutter doch hatte .
+ ==> NOT ANNOTATED SENTENCE PAIR
+
+
+I thought , the love you have for your children is unlike any other feeling in the world , and until you have children , you do n't know what it feels like .
+Ich dachte , die Liebe , die man für seine Kinder empfindet , lässt sich mit keinem Gefühl der Welt vergleichen , und bevor du nicht selbst Kinder hast , weißt du nicht , wie es sich anfühlt .
+ ==> GERMAN MENTIONS NOT IN ENGLISH 
+ ==> Und bevor du nicht selbst Kinder hast , wirst du nicht verstehen , was ich meine . " Als Kind nahm ich das als das größte Kompliment , dass sie so ihre Mutterrolle für mich und meinen Bruder beschreiben würde . Als Teenager dachte ich , dass ich schwul sei und somit wahrscheinlich keine Familie haben würde . Und es verunsicherte mich , wenn sie es sagte . Und nachdem ich mein Coming-out hatte , und sie fortfuhr , es zu sagen , machte es mich wütend . Ich sagte : " Ich bin schwul . Das ist nicht der Weg , auf dem ich mich befinde . Und ich möchte , dass du aufhörst , das zu sagen . " Vor etwa 20 Jahren bat mich meine Redaktion bei der New York Times , einen Artikel über die Gehörlosenkultur zu schreiben . Und ich war ziemlich verblüfft . Ich hatte Taubheit immer als eine Krankheit betrachtet . Diese armen Menschen . Sie können nicht hören .
+ ==> Und als ich immer mehr in die Gehörlosenwelt eintauchte , wurde mir bewusst , dass Gehörlosigkeit eine Kultur war , und dass die Menschen aus dieser Kultur , die sagten : " Wir sind nicht ' gehör-los ' , sondern Mitglieder einer Kultur " , etwas sagten , das mir etwas gab .
+ ==> Die Tatsache , dass meine jetzige Lieblingsfarbe blau ist , aber ich immer noch schwul bin – – zeigt sowohl den Einfluss meiner Mutter , als auch dessen Grenzen .
+ ==> Und bevor du nicht selbst Kinder hast , wirst du nicht verstehen , was ich meine . " Als Kind nahm ich das als das größte Kompliment , dass sie so ihre Mutterrolle für mich und meinen Bruder beschreiben würde . Als Teenager dachte ich , dass ich schwul sei und somit wahrscheinlich keine Familie haben würde . Und es verunsicherte mich , wenn sie es sagte . Und nachdem ich mein Coming-out hatte , und sie fortfuhr , es zu sagen , machte es mich wütend . Ich sagte : " Ich bin schwul . Das ist nicht der Weg , auf dem ich mich befinde .
+
+
+I think children had ensnared me the moment I connected fatherhood with loss .
+Ich glaube , Kinder hatten mich um den Finger gewickelt , sobald ich Vaterschaft mit Verlust in Verbindung brachte .
+ ==> NOT ANNOTATED SENTENCE PAIR
+
+
+But I 'm not sure I would have noticed that if I had n't been so in the thick of this research project of mine .
+Aber ich bin mir nicht sicher , ob ich es bemerkt hätte , wäre ich nicht so tief in mein Forschungsprojekt verwickelt gewesen .
+ ==> NOT ANNOTATED SENTENCE PAIR
+
+
+I 'd encountered so much strange love , and I fell very naturally into its bewitching patterns .
+Ich war auf soviel seltsame Liebe getroffen , und ich fiel fast selbstverständlich in ihr verzauberndes Raster .
+ ==> ALL MENTIONS MATCH 
+
+
+And I saw how splendor can illuminate even the most abject vulnerabilities .
+Ich sah , wie ihre Pracht selbst größte Verletzbarkeit erleuchten kann .
+ ==> GERMAN MENTIONS NOT IN ENGLISH 
+ ==> Und letztes Jahr sprach sich der amerikanische Präsident für die geichgeschlechtliche Ehe aus .
+
+
+During these 10 years , I had witnessed and learned the terrifying joy of unbearable responsibility , and I had come to see how it conquers everything else .
+In diesen 10 Jahren hatte ich Gelegenheit , die Freuden und Schrecken unerträglicher Verantwortung kennenzulernen , und mitzuerleben , wie sie alles andere überwinden .
+ ==> GERMAN MENTIONS NOT IN ENGLISH 
+ ==> Meine Mutter meinte , ich solte doch lieber einen blauen Luftballon haben . Aber ich sagte ihr , dass ich ganz bestimmt den rosafarbenen wollte . Und sie erinnerte mich daran , dass meine Lieblingsfarbe blau sei . Die Tatsache , dass meine jetzige Lieblingsfarbe blau ist , aber ich immer noch schwul bin – – zeigt sowohl den Einfluss meiner Mutter , als auch dessen Grenzen .
+ ==> Mein Bruder wollte einen roten , und ich wollte einen rosafarbenen .
+ ==> Ich sagte : " Ich bin schwul . Das ist nicht der Weg , auf dem ich mich befinde .
+
+
+And while I had sometimes thought the parents I was interviewing were fools , enslaving themselves to a lifetime 's journey with their thankless children and trying to breed identity out of misery , I realized that day that my research had built me a plank and that I was ready to join them on their ship .
+Und obwohl ich manchmal dachte , dass die Eltern , die ich interviewte , Narren wären , weil sie sich zu einer lebenslangen Reise mit ihren undankbaren Kindern versklavten , und versuchten aus Elend eine Identität zu machen , erkannte ich an jenem Tag , dass mir meine Forschung einen Steg gebaut hatte , und ich bereit war , zu ihnen an Board zu gehen .
+ ==> GERMAN MENTIONS NOT IN ENGLISH 
+ ==> Und ich möchte , dass du aufhörst , das zu sagen . " Vor etwa 20 Jahren bat mich meine Redaktion bei der New York Times , einen Artikel über die Gehörlosenkultur zu schreiben . Und ich war ziemlich verblüfft . Ich hatte Taubheit immer als eine Krankheit betrachtet .
+ ==> Und für die Wahl zur " Miss Deaf America " fuhr ich sogar bis nach Nashville , Tennessee , wo sich die Menschen über die undeutliche Zeichensprache der Südstaatler beschwerten .
+ ==> " Selbst aus ganz unreligiöser Sicht stellt die Homosexualität eine sexuelle Verfehlung dar . Sie ist ein armseliger , minderwertiger Ersatz für die Realität – ein kläglicher Versuch , dem Leben zu entfliehen . Als solches verdient sie kein Mitleid , keine Sonderbehandlung als Märtyrium einer Minderheit , und sollte nur als das betrachtet werden , was sie wirklich ist : eine schädliche Krankheit . " Das schrieb Time Magazine 1966 , als ich drei Jahre alt war . Und letztes Jahr sprach sich der amerikanische Präsident für die geichgeschlechtliche Ehe aus . Und meine Frage ist , wie haben wir es so weit gebracht ? Wie wurde aus einer Krankheit eine Identität ? Als ich etwa sechs Jahre alt war , ging ich mit meiner Mutter und meinem Bruder Schuhe kaufen . Zum Ende unseres Einkaufs sagte der Schuhverkäufer , dass wir uns jeweils einen Luftballon aussuchen dürften . Mein Bruder wollte einen roten , und ich wollte einen rosafarbenen . Meine Mutter meinte , ich solte doch lieber einen blauen Luftballon haben .
+ ==> Ich sagte : " Ich bin schwul . Das ist nicht der Weg , auf dem ich mich befinde .
+ ==> Als Teenager dachte ich , dass ich schwul sei und somit wahrscheinlich keine Familie haben würde .
+ ==> Und nachdem ich mein Coming-out hatte , und sie fortfuhr , es zu sagen , machte es mich wütend .
+ ==> Das schrieb Time Magazine 1966 , als ich drei Jahre alt war . Und letztes Jahr sprach sich der amerikanische Präsident für die geichgeschlechtliche Ehe aus .
+ ==> Als Kind nahm ich das als das größte Kompliment , dass sie so ihre Mutterrolle für mich und meinen Bruder beschreiben würde .
+ ==> Als ich klein war , sagte meine Mutter immer : " Die Liebe , die du für deine Kinder empfindest , ist einzigartig .
+ ==> Als ich klein war , sagte meine Mutter immer : " Die Liebe , die du für deine Kinder empfindest , ist einzigartig . Und bevor du nicht selbst Kinder hast , wirst du nicht verstehen , was ich meine . "
+ ==> Als ich etwa sechs Jahre alt war , ging ich mit meiner Mutter und meinem Bruder Schuhe kaufen .
+ ==> Und obwohl einige davon problematisch sein können , versucht man in der Regel nicht , sie zu heilen . Man kann argumentieren , dass es in den Vereinigten Staaten schwieriger ist – und das ungeachtet unseres aktuellen Präsidenten – farbig zu sein .
+ ==> Dann gibt es die anderen Identitäten , die man im Umgang mit Gleichgesinnten erlernt .
+ ==> Wie wurde aus einer Krankheit eine Identität ?
+ ==> Als solches verdient sie kein Mitleid , keine Sonderbehandlung als Märtyrium einer Minderheit , und sollte nur als das betrachtet werden , was sie wirklich ist : eine schädliche Krankheit . " Das schrieb Time Magazine 1966 , als ich drei Jahre alt war .
+ ==> Als ich klein war , sagte meine Mutter immer : " Die Liebe , die du für deine Kinder empfindest , ist einzigartig .
+
+
+Thank you .
+Vielen Dank .
+ ==> NOT ANNOTATED SENTENCE PAIR
+
+
