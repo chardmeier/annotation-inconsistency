@@ -184,35 +184,6 @@ def organize_align(alignments):
     return new
 
 
-def match_mentions_to_tgt(chains, giza):
-    """                       src positions
-    # in -> {sent154: {set_268: [[2, 3, 4], [7]]}, sent155: {set_268: [[2]]}}
-                                tgt positions
-    # out -> {set_238: {154: [[2, 3, 4], [7]], 155: [[2]]}, ...}
-    """
-    out = {}
-
-    for chain in chains:
-        targets = {}
-        for sent in chains[chain]:
-            tgt_words = []
-            align_info = organize_align(giza[sent])
-            for mention in chains[chain][sent]:
-                positions = []
-                for word in mention:
-                    if word in align_info:# word may not be aligned
-                        positions += align_info[word]
-                tgt_words.append(positions)
-            targets[sent] = tgt_words
-        out[chain] = targets
-
-    return out
-
-
-
-
-
-
 def get_chains_position(en_coref_chains):
     """
     :param {set_268 {154: [[2, 3, 4], [7]], 155: [[2]]}, ...}
@@ -236,6 +207,101 @@ def get_chains_position(en_coref_chains):
     return sentences
 
 
+def match_mentions_to_tgt(sentences, giza):
+    """                          src positions
+    # in -> {sent154: {set_268: [[2, 3, 4], [7]]}, sent155: {set_268: [[2]]}}
+                                   tgt positions
+    # out -> {sent154: {set_268: [[2, 3, 4], [7]], sent155: {set_268: [[2]]}, ...}
+    """
+    out = {}
+
+    for sent in sentences:
+        targets = {}
+        align_info = organize_align(giza[sent])
+        for chain in sentences[sent]:
+            tgt_words = []
+            for mention in sentences[sent][chain]:
+                positions = []
+                for word in mention:
+                    if word in align_info:# word may not be aligned
+                        positions += align_info[word]
+                tgt_words.append(positions)
+            targets[chain] = tgt_words
+        out[sent] = targets
+    return out
+
+
+def check_all(tgt_links, src_aligns):
+    """
+
+    difficult case -->
+    :param src_aligns: 158 {'set_271': [[3], [16, 17], [4, 5]]} -->here there can be [] if word is not aligned
+    :param tgt_links: 158 {'set_282': [[0, 1], [0, 1], [11]], 'set_84': [[10], [7, 8]],
+    'set_153': [[35, 36], [40]], 'set_217': [[3], [16], [5]]}
+    :return:
+
+    different partial match -->
+    alignment ==> 154 {'set_268': [[2, 3, 4], [6, 7, 8]]} # here take src_aligns as they can be empty; src_aligns & src_links have all the same keys
+    German ==> 154 {'set_213': [[8], [2, 3, 4]]}
+
+    partial match -->
+    alignment ==> 60 {'set_40': [[1]]}
+    German ==> 60 {'set_55': [[1, 2]]}
+
+    easy case -->
+    source ==> 118 {'set_106': [[6]]}
+    alignment ==> 118 {'set_106': [[6]]}
+    German ==> 118 {'set_270': [[6]]}
+
+    """
+
+
+    all_matches = {}
+    all_partial = {}
+    all_missing = {}
+
+    en_chains_not_in_de = 0
+    de_chains_not_in_en = 0
+
+    #easy case
+    for key in tgt_links:
+
+        matches = {}
+        partial = {}
+        missing = {}
+
+        if key in src_aligns:
+            for chain_t in tgt_links[key]:
+                # loop throug all chains in src_aligned
+                for chain_a in src_aligns[key]:
+                    #easy case
+                    if src_aligns[key][chain_a] == tgt_links[key][chain_t]:
+                        matches[chain_t] = src_aligns[key][chain_a]
+                    else:
+                        # look through each tgt mention
+                        for mention_t in tgt_links[key][chain_t]:
+                            # check in all sources
+                            for word_t in mention_t:
+                                for word_a in src_aligns[key][chain_a]:
+                                    if word_t == word_a:#already partial match
+                                        if chain_t in matches:
+                                            partial[chain_t].append(mention_t)
+                                        else:
+                                            partial[chain_t] = [mention_t]
+        else:
+            de_chains_not_in_en += 1
+            "annotated de sentence not annotated in en"
+
+
+def check_mention(src_links, tgt_mention):
+
+    """
+    :param src_links: 'set_271': [[3], [18], [4]]}
+    :param tgt_chains: [[0, 1]]
+    :return: "match", "mismatch", "missing"
+    """
+
+    return None
 
 
 
@@ -272,7 +338,6 @@ def main():
 
     for doc in endeDocs: #loop and keep order of protest
         docid = re.findall(r'[0-9]+_[0-9]+', doc)[0]  # returns list therefore the index
-        print("Document ==>", docid)
 
         # document as single list of words
         en_document = create_document(en_data_dir, doc)
@@ -286,37 +351,43 @@ def main():
         en_coref_chains = get_chain_info(docid, en_annotation_dir)
         de_coref_chains = get_chain_info(docid, de_annotation_dir)
 
-        print("total of SOURCE chains ==>", len(en_coref_chains))
-        print("total of TARGET chains ==>", len(de_coref_chains))
-
         en_chains_wrt_sent = get_sent_position(en_coref_chains, en_sentences_ids) # 0 based both sentences and indexes
         de_chains_wrt_sent = get_sent_position(de_coref_chains, de_sentences_ids)
 
         en_sents_wrt_en_chains = get_chains_position(en_chains_wrt_sent)
         de_sents_wrt_de_chains = get_chains_position(de_chains_wrt_sent)
 
-        en_chains_w_target = match_mentions_to_tgt(en_sents_wrt_en_chains, giza_alignments)
+        align_of_en_chains = match_mentions_to_tgt(en_sents_wrt_en_chains, giza_alignments)
+
+        check_all(align_of_en_chains, src_aligns)
 
         # print("English chains as keys ----->")
         # for key in en_chains_wrt_sent:
         #     print(key, en_chains_wrt_sent[key])
         # print("\n", "\n")
-
+        # print("\n")
         # print("English sentences as keys ----->")
+        # en_chains_not_in_de = 0
+        # de_chains_not_in_en = 0
         # for key in en_sents_wrt_en_chains:
-        #     print(key, en_sents_wrt_en_chains[key])
+        #     print("source ==>", key, en_sents_wrt_en_chains[key])
+        #     print("alignment ==>",key, align_of_en_chains[key])
+        #     if key in de_sents_wrt_de_chains:
+        #         print("German ==>", key, de_sents_wrt_de_chains[key])
+        #         print("\n")
+        #     else:
+        #         en_chains_not_in_de += 1
+        #         print("not in German -->")
+        #         print("\n")
         #
-        # print("\n", "\n")
-        # print("German ----->")
-        # for key in de_sents_wrt_de_chains:
-        #     print(key, de_sents_wrt_de_chains[key])
-
-
-
-
+        # print("\n")
+        # print("STATISTICS PER DOC")
+        # print("Document ==> ", docid)
+        # print("total of SOURCE chains ==>", len(en_coref_chains))
+        # print("total of TARGET chains ==>", len(de_coref_chains))
+        # print("Total EN chains not in DE ==>", en_chains_not_in_de)
+        # print("Total DE chains not in EN ==>", (len(de_coref_chains) - len(en_coref_chains)) - en_chains_not_in_de)
         break
-
-
 
 
 if __name__ == "__main__":
