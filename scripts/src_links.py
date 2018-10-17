@@ -316,7 +316,7 @@ def match_all_mentions(tgt_links, src_aligns):
     for key in all_missing_source:
         for chain in all_missing_source[key]:
             source_not_in_target += len(all_missing_source[key][chain])
-    print("source mentions missing in source ===>", source_not_in_target)
+    print("source mentions missing in target ===>", source_not_in_target)
 
     total_mentions = total_matches + total_missing + total_partial
     print("total target mentions classified in doc==> ", total_mentions)
