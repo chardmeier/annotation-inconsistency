@@ -260,10 +260,6 @@ def find_partial(mentions, chains):
 
 
 
-
-
-
-
 def match_all_mentions(tgt_links, src_aligns):
     """
     :param src_aligns: 158 {'set_271': [[3], [16, 17], [4, 5]]} -->here there can be [] if word is not aligned
@@ -449,7 +445,6 @@ def main():
                     for n in new[each]:
                         print(" ==>", n)
                 print("\n")
-                print("\n")
             elif i in missing_tgt:
                 print(" ==> GERMAN MENTIONS NOT IN ENGLISH")
                 new = prettify_chains(missing_tgt[i], sentence_based_deDoc[i])
@@ -467,14 +462,23 @@ def main():
             elif i in partial:
                 print(" ==> PARTIAL MATCHES: ONLY SOME MENTIONS MATCH or SOME TOKENS IN MENTION MATCH")
                 new = prettify_chains(partial[i], sentence_based_deDoc[i])
-                for each in new:
-                    for n in new[each]:
-                        print(" ==>", n)
-                print("\n")
+                new2 = prettify_chains(align_of_en_chains[i], sentence_based_deDoc[i])
+
+                relevant = list(new.keys())
+                aligned = list(new2.keys())
+
+                n2 = "not aligned"
+
+                for j in range(len(relevant)):
+                    for n in new[relevant[j]]:
+                        if j < len(aligned):
+                            n2 = new2[aligned[j]]
+                        print(" ==>", n," alignments ==>", n2)
+                    print("\n")
+
             else:
                 print(" ==> NOT ANNOTATED SENTENCE PAIR")
                 print("\n")
-
         break
 
 
