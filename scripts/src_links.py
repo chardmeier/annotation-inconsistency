@@ -246,6 +246,24 @@ def match_mentions_to_tgt(sentences, giza):
     return out
 
 
+def find_partial(mentions, chains):
+    # [[0, 1], [0, 1], [11]]
+    # {'set_271': [[3], [16, 17], [4, 5]]}
+
+    for mention in mentions:
+        for word in mention:
+            for chain in chains:
+                for mention_b in chains[chain]:
+                    if word in mention_b:
+                        return True
+    return False
+
+
+
+
+
+
+
 def match_all_mentions(tgt_links, src_aligns):
     """
     :param src_aligns: 158 {'set_271': [[3], [16, 17], [4, 5]]} -->here there can be [] if word is not aligned
@@ -281,7 +299,10 @@ def match_all_mentions(tgt_links, src_aligns):
                         partial[chain_t] = tgt_links[key][chain_t]
                     # none mention matches
                     else:
-                        missing[chain_t] = tgt_links[key][chain_t]
+                        if find_partial(tgt_links[key][chain_t],src_aligns[key]):
+                            partial[chain_t] = tgt_links[key][chain_t]
+                        else:
+                            missing[chain_t] = tgt_links[key][chain_t]
             if matches != {}:
                 all_matches[key] = matches
             if partial != {}:
@@ -327,6 +348,7 @@ def match_all_mentions(tgt_links, src_aligns):
 
 def prettify_chains(chains, text):
 
+    sentence = text.split()
     prettified = {}
 
     for chain in chains:
@@ -334,7 +356,10 @@ def prettify_chains(chains, text):
         for mention in chains[chain]:
             pretty_mention = []
             for word in mention:
-                pretty_mention.append(text[word])
+                if word < len(sentence):
+                    pretty_mention.append(sentence[word])
+                #else:
+                #    print("indexing error") #"weird case", word, sentence, len(sentence))
             pretty_chain.append(" ".join(pretty_mention))
         prettified[chain] = pretty_chain
     return prettified
@@ -411,30 +436,37 @@ def main():
 
         matches, partial, missing_tgt, missing_src = match_all_mentions(de_sents_wrt_de_chains, align_of_en_chains)
 
+
         print("\n")
+
         for i in range(len(sentence_based_enDoc)):
             print(sentence_based_enDoc[i])
             print(sentence_based_deDoc[i])
             if i in matches:
                 print(" ==> ALL MENTIONS MATCH ")
+                new = prettify_chains(matches[i], sentence_based_deDoc[i])
+                for each in new:
+                    for n in new[each]:
+                        print(" ==>", n)
+                print("\n")
                 print("\n")
             elif i in missing_tgt:
-                print(" ==> GERMAN MENTIONS NOT IN ENGLISH ")
-                new = prettify_chains(missing_tgt[i], sentence_based_deDoc)
+                print(" ==> GERMAN MENTIONS NOT IN ENGLISH")
+                new = prettify_chains(missing_tgt[i], sentence_based_deDoc[i])
                 for each in new:
                     for n in new[each]:
                         print(" ==>", n)
                 print("\n")
             elif i in missing_src:
                 print(" ==> ENGLISH MENTIONS NOT IN GERMAN")
-                new = prettify_chains(missing_src[i], sentence_based_enDoc)
+                new = prettify_chains(missing_src[i], sentence_based_enDoc[i])
                 for each in new:
                     for n in new[each]:
                         print(" ==>", n)
                 print("\n")
             elif i in partial:
-                print(" ==> PARTIAL MATCHES: ONLY SOME MENTIONS MATCH")
-                new = prettify_chains(partial[i], sentence_based_deDoc)
+                print(" ==> PARTIAL MATCHES: ONLY SOME MENTIONS MATCH or SOME TOKENS IN MENTION MATCH")
+                new = prettify_chains(partial[i], sentence_based_deDoc[i])
                 for each in new:
                     for n in new[each]:
                         print(" ==>", n)
