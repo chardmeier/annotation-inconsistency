@@ -160,25 +160,39 @@ def read_rawfile(f):
 
 def get_sent_position(chains_in_doc, sents_in_doc):
     """
-    :param chains_in_doc: dict of list of positions
-    :param sents_in_doc: dic of tuples indicating start end spans
+    :param chains_in_doc: dict of list of positions {set_279: [[185, 186], [160, 161], [146, 147]],...}
+    :param sents_in_doc: dic of tuples indicating start end spans {0: (1, 16), 1: (17, 32), 2: (33, 62),...}
     :return: {chain_34: {sent2:[[position4, position3], [position23]], ...}...}
     """
 
+    #TODO: MENTIONS SPANNING MULTIPLE SENTENCES!!!!!!!!!!
+
     new_chains_info = {}
+
     for chain in chains_in_doc:
+
         sentence_info = {}
+
         for mention in chains_in_doc[chain]:
-            temp = []
+
+            sentences = {}
+
             for word in mention:
-                n_sent, word_position = get_sentence_level_info(sents_in_doc, int(word))
-                temp.append(word_position)
-            if n_sent in sentence_info:
-                sentence_info[n_sent].append(temp)
-            else:
-                sentence_info[n_sent] = [temp]
+
+                new_sent, word_position = get_sentence_level_info(sents_in_doc, int(word))
+                if new_sent in sentences:
+                    sentences[new_sent].append(word_position)
+                else:
+                    sentences[new_sent] = [word_position]
+
+            sentence_info.update(sentences)
+
         new_chains_info[chain] = sentence_info
+
     return new_chains_info
+
+
+
 
 
 def organize_align(alignments):
@@ -267,6 +281,7 @@ def match_all_mentions(tgt_links, src_aligns):
     'set_153': [[35, 36], [40]], 'set_217': [[3], [16], [5]]}
     :return: (dic, dic, dic)
     """
+
     all_matches = {}
     all_partial = {}
     all_missing = {}
@@ -295,7 +310,7 @@ def match_all_mentions(tgt_links, src_aligns):
                         partial[chain_t] = tgt_links[key][chain_t]
                     # none mention matches
                     else:
-                        if find_partial(tgt_links[key][chain_t],src_aligns[key]):
+                        if find_partial(tgt_links[key][chain_t], src_aligns[key]):
                             partial[chain_t] = tgt_links[key][chain_t]
                         else:
                             missing[chain_t] = tgt_links[key][chain_t]
@@ -338,7 +353,6 @@ def match_all_mentions(tgt_links, src_aligns):
     total_mentions = total_matches + total_missing + total_partial
     print("total target mentions classified in doc==> ", total_mentions)
 
-
     return all_matches, all_partial, all_missing, all_missing_source
 
 
@@ -359,6 +373,36 @@ def prettify_chains(chains, text):
             pretty_chain.append(" ".join(pretty_mention))
         prettified[chain] = pretty_chain
     return prettified
+
+
+def print_out(english_chains, german_chains, aligned_chains, matched_chains):
+
+    ordered_en=sorted(english_chains.keys())
+    ordered_de=sorted(german_chains.keys())
+    ordered_mat=sorted(matched_chains.keys())
+    ordered_alg=sorted(aligned_chains.keys())
+
+    print(" ==> english mentions in sentence:")
+    for j in range(len(ordered_en)):
+        print(ordered_en[j], english_chains[ordered_en[j]])
+
+    print(" ==> alignments points of english:")
+
+    for j in range(len(ordered_alg)):
+        print(ordered_alg[j], aligned_chains[ordered_alg[j]])
+
+    print(" ==> german mentions in sentence:")
+
+    for j in range(len(ordered_de)):
+        print(ordered_de[j], german_chains[ordered_de[j]])
+
+    print(" ==> considered german mention in classification:")
+
+    for j in range(len(ordered_mat)):
+        print(ordered_mat[j], matched_chains[ordered_mat[j]])
+
+
+
 
 
 def main():
@@ -432,53 +476,97 @@ def main():
 
         matches, partial, missing_tgt, missing_src = match_all_mentions(de_sents_wrt_de_chains, align_of_en_chains)
 
+        print("\n")
+        print("!!!!!!!!!!!!!!! sanity check !!!!!!!!!!!!!!!")
+        sanity_check = 0
+        sanity_check2 = 0
 
+        print("length de chains wrt to sentences:", len(de_chains_wrt_sent.keys()))
+        for each in de_chains_wrt_sent:
+            for sentence in de_chains_wrt_sent[each]:
+                sanity_check2 += len(de_chains_wrt_sent[each][sentence])
+
+                #print("=====de_chains_wrt_sent[each][sentence]=====>", de_chains_wrt_sent[each][sentence])
+
+        print("num of mentions in de_chains_wrt_sent:", sanity_check2)
+
+        print("************************************")
+
+        counter_original = 0
+        counter_trasnfored = 0
+        for key in de_coref_chains.keys():
+            print("KEY", key)
+            counter_original += len(de_coref_chains[key])
+            #print("===>", de_coref_chains[key], "===>", de_chains_wrt_sent[key])
+            for sentence in de_chains_wrt_sent[key]:
+                counter_trasnfored += len(de_chains_wrt_sent[key][sentence])
+            if counter_original != counter_trasnfored:
+                print("here!!!!", key)
+                print("===>", de_coref_chains[key], "===>", de_chains_wrt_sent[key])
+        print("!!!!!!!!!!!!!!! sanity check !!!!!!!!!!!!!!!")
         print("\n")
 
-        for i in range(len(sentence_based_enDoc)):
-            print(sentence_based_enDoc[i])
-            print(sentence_based_deDoc[i])
-            if i in matches:
-                print(" ==> ALL MENTIONS MATCH ")
-                new = prettify_chains(matches[i], sentence_based_deDoc[i])
-                for each in new:
-                    for n in new[each]:
-                        print(" ==>", n)
-                print("\n")
-            elif i in missing_tgt:
-                print(" ==> GERMAN MENTIONS NOT IN ENGLISH")
-                new = prettify_chains(missing_tgt[i], sentence_based_deDoc[i])
-                for each in new:
-                    for n in new[each]:
-                        print(" ==>", n)
-                print("\n")
-            elif i in missing_src:
-                print(" ==> ENGLISH MENTIONS NOT IN GERMAN")
-                new = prettify_chains(missing_src[i], sentence_based_enDoc[i])
-                for each in new:
-                    for n in new[each]:
-                        print(" ==>", n)
-                print("\n")
-            elif i in partial:
-                print(" ==> PARTIAL MATCHES: ONLY SOME MENTIONS MATCH or SOME TOKENS IN MENTION MATCH")
-                new = prettify_chains(partial[i], sentence_based_deDoc[i])
-                new2 = prettify_chains(align_of_en_chains[i], sentence_based_deDoc[i])
 
-                relevant = list(new.keys())
-                aligned = list(new2.keys())
 
-                n2 = "not aligned"
 
-                for j in range(len(relevant)):
-                    for n in new[relevant[j]]:
-                        if j < len(aligned):
-                            n2 = new2[aligned[j]]
-                        print(" ==>", n," alignments ==>", n2)
-                    print("\n")
-
-            else:
-                print(" ==> NOT ANNOTATED SENTENCE PAIR")
-                print("\n")
+        # for i in range(len(sentence_based_enDoc)):
+        #     print("\n")
+        #     print(sentence_based_enDoc[i])
+        #     print(sentence_based_deDoc[i])
+        #     print("\n")
+        #     if i in matches:
+        #         print(" ==> ALL MENTIONS MATCH ")
+        #         relevant = prettify_chains(matches[i], sentence_based_deDoc[i])
+        #         english = prettify_chains(en_sents_wrt_en_chains[i], sentence_based_enDoc[i])
+        #         german = prettify_chains(de_sents_wrt_de_chains[i], sentence_based_deDoc[i])
+        #         aligned = prettify_chains(align_of_en_chains[i], sentence_based_deDoc[i])
+        #
+        #         print_out(english, german, aligned, relevant)
+        #
+        #         print("\n")
+        #
+        #     elif i in missing_tgt:
+        #         print(" ==> GERMAN MENTIONS NOT IN ENGLISH")
+        #         relevant = prettify_chains(missing_tgt[i], sentence_based_deDoc[i])
+        #         german = prettify_chains(de_sents_wrt_de_chains[i], sentence_based_deDoc[i])
+        #         if i in en_sents_wrt_en_chains:
+        #             english = prettify_chains(en_sents_wrt_en_chains[i], sentence_based_enDoc[i])
+        #             aligned = prettify_chains(align_of_en_chains[i], sentence_based_deDoc[i])
+        #         else:
+        #             english = {}
+        #             aligned = {}
+        #         print_out(english, german, aligned, relevant)
+        #
+        #         print("\n")
+        #
+        #     elif i in missing_src:
+        #         print(" ==> ENGLISH MENTIONS NOT IN GERMAN")
+        #         relevant = prettify_chains(missing_src[i], sentence_based_enDoc[i])
+        #         english = prettify_chains(en_sents_wrt_en_chains[i], sentence_based_enDoc[i])
+        #         aligned = prettify_chains(align_of_en_chains[i], sentence_based_deDoc[i])
+        #         if i in de_sents_wrt_de_chains:
+        #             german = prettify_chains(de_sents_wrt_de_chains[i], sentence_based_deDoc[i])
+        #         else:
+        #             german = {}
+        #
+        #         print_out(english, german, aligned, relevant)
+        #
+        #         print("\n")
+        #
+        #     elif i in partial:
+        #         print(" ==> PARTIAL MATCHES: ONLY SOME MENTIONS MATCH or SOME TOKENS IN MENTION MATCH")
+        #         relevant = prettify_chains(partial[i], sentence_based_deDoc[i])
+        #         english = prettify_chains(en_sents_wrt_en_chains[i], sentence_based_enDoc[i])
+        #         german = prettify_chains(de_sents_wrt_de_chains[i], sentence_based_deDoc[i])
+        #         aligned = prettify_chains(align_of_en_chains[i], sentence_based_deDoc[i])
+        #
+        #         print_out(english, german, aligned, relevant)
+        #
+        #         print("\n")
+        #
+        #     else:
+        #         print(" ==> NOT ANNOTATED SENTENCE PAIR")
+        #         print("\n")
         break
 
 
