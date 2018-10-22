@@ -577,6 +577,6 @@ if __name__ == "__main__":
 
 
 
-
+# ./src_links.py ../../testsuitewmt18/parcor-full/corpus ../../testsuitewmt18/more-align/mgiza_more_align_src_ref > temp
 
 
