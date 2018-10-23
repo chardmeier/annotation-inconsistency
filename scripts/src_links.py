@@ -8,6 +8,7 @@ Extracts links from parcor-full
 """
 
 import sys, re
+import collections
 from bs4 import BeautifulSoup
 
 
@@ -158,36 +159,53 @@ def read_rawfile(f):
     return all
 
 
-def get_sent_position(chains_in_doc, sents_in_doc):
+def transform_chains_into_sentences2(chains_in_doc, sentences_in_doc):
     """
     :param chains_in_doc: dict of list of positions {set_279: [[185, 186], [160, 161], [146, 147]],...}
-    :param sents_in_doc: dic of tuples indicating start end spans {0: (1, 16), 1: (17, 32), 2: (33, 62),...}
-    :return: {chain_34: {sent2:[[position4, position3], [position23]], ...}...}
+    :param sentences_in_doc: dic of tuples indicating start end spans {0: (1, 16), 1: (17, 32), 2: (33, 62),...}
+    :return: {sent154: {set_268: [[2, 3, 4], [7]]}, sent155: {set_268: [[2]]}}
     """
+    out_sentences = collections.defaultdict(lambda: collections.defaultdict(lambda: collections.defaultdict(list)))
+    # {sent_154: {set_268: {ment_2: [2, 3, 4]}}}
 
-    new = {}
     for chain in chains_in_doc:
-        sentences = {}
 
-        for mention in chains_in_doc[chain]:
-            temp = {}
+        for mention_id, mention in enumerate(chains_in_doc[chain]):
+            # mention can span multiple sentences
             for word in mention:
+                sentenceID, position = get_sentence_level_info(sentences_in_doc, word)
+                out_sentences["sent_" + str(sentenceID)][chain]["ment_" + str(mention_id)].append(position)
 
-                sent_position, word_position = get_sentence_level_info(sents_in_doc, int(word))
-                if sent_position in temp:
-                    temp[sent_position].append(word_position)
-                else:
-                    temp[sent_position] = [word_position]
+    return out_sentences
 
-            for sentence in temp:
-                new_mention = temp[sentence]
-                if sentence in sentences:
-                    sentences[sentence].append(new_mention)
-                else:
-                    sentences[sentence] = [new_mention]
 
-        new[chain] = sentences
-    return new
+def transform_chains_into_sentences(chains_in_doc, sentences_in_doc):
+    """
+    :param chains_in_doc: dict of list of positions {set_279: [[185, 186], [160, 161], [146, 147]],...}
+    :param sentences_in_doc: dic of tuples indicating start end spans {0: (1, 16), 1: (17, 32), 2: (33, 62),...}
+    :return: {sent154: {set_268: [[2, 3, 4], [7]]}, sent155: {set_268: [[2]]}}
+    """
+    out_sentences = {}
+    # {sent_154: {set_268: {ment_2: [2, 3, 4]}}}
+
+    for chain in chains_in_doc:
+
+        for mention_id, mention in enumerate(chains_in_doc[chain]):
+            # mention can span multiple sentences
+            for word in mention:
+                sentenceID, position = get_sentence_level_info(sentences_in_doc, word)
+                #sentstr = "sent_" + str(sentenceID)
+                #mentstr = "ment_" + str(mention_id)
+                if sentenceID not in out_sentences:
+                    out_sentences[sentenceID] = {}
+                if chain not in out_sentences[sentenceID]:
+                    out_sentences[sentenceID][chain] = {}
+                if mention_id not in out_sentences[sentenceID][chain]:
+                    out_sentences[sentenceID][chain][mention_id] = []
+                out_sentences[sentenceID][chain][mention_id].append(position)
+
+    return out_sentences
+
 
 
 
@@ -207,29 +225,6 @@ def organize_align(alignments):
         else:
             new[s] = [t]
     return new
-
-
-def get_chains_position(en_coref_chains):
-    """
-    :param {set_268 {154: [[2, 3, 4], [7]], 155: [[2]]}, ...}
-    :return {sent154: {set_268: [[2, 3, 4], [7]]}, sent155: {set_268: [[2]]}}
-
-    """
-    sentences = {}
-    chains = {}
-
-    for chain_key in en_coref_chains:
-        for sentence in en_coref_chains[chain_key]:
-            if sentence in sentences:
-                if chain_key in chains:
-                    chains[chain_key] += en_coref_chains[chain_key][sentence]
-                else:
-                    chains[chain_key] = en_coref_chains[chain_key][sentence]
-            else:
-                sentences[sentence] = chains
-                sentences[sentence][chain_key] = en_coref_chains[chain_key][sentence]
-                chains = {}
-    return sentences
 
 
 def match_mentions_to_tgt(sentences, giza):
@@ -484,17 +479,20 @@ def main():
         en_coref_chains = get_chain_info(docid, en_annotation_dir)
         de_coref_chains = get_chain_info(docid, de_annotation_dir)
 
+        #print(en_coref_chains)
+
         #print_stats(en_path_all, doc, en_coref_chains, de_coref_chains)
 
-        en_chains_wrt_sent = get_sent_position(en_coref_chains, en_sentences_ids) # 0 based both sentences and indexes
-        de_chains_wrt_sent = get_sent_position(de_coref_chains, de_sentences_ids)
+        en_chains_in_sentence = transform_chains_into_sentences(en_coref_chains, en_sentences_ids)
+        de_chains_in_sentence = transform_chains_into_sentences(de_coref_chains, de_sentences_ids)
 
-        en_sents_wrt_en_chains = get_chains_position(en_chains_wrt_sent)
-        de_sents_wrt_de_chains = get_chains_position(de_chains_wrt_sent)
+        for chain in en_chains_in_sentence:
+            print(chain, en_chains_in_sentence[chain])
 
-        align_of_en_chains = match_mentions_to_tgt(en_sents_wrt_en_chains, giza_alignments)
 
-        matches, partial, missing_tgt, missing_src = match_all_mentions(de_sents_wrt_de_chains, align_of_en_chains)
+        #align_of_en_chains = match_mentions_to_tgt(en_sents_wrt_en_chains, giza_alignments)
+
+        #matches, partial, missing_tgt, missing_src = match_all_mentions(de_sents_wrt_de_chains, align_of_en_chains)
 
 
 
