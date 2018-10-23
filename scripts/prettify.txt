@@ -1,3 +1,161 @@
+
+def match_all_mentions(en, src_aligns, tgt_links):
+    """
+    :param src_aligns: {111 {'set_257': {1: [16]}, 'set_258': {0: [9], 1: [10, 11], 2: []}} --> here there can be [] if word is not aligned
+    :param tgt_links: {1134 {'set_288': {1: [19], 2: [29], 8: [13]}, 'set_289': {2: [2]}}
+    :return: (dic, dic, dic, dic)
+    """
+
+    all_matches = {}
+    all_partial = {}
+    all_missing = {}
+    all_missing_source = {}
+
+    # source chains not annotated in target
+    for sentence in src_aligns:
+        if key not in tgt_links:
+            all_missing_source[sentence] = en[sentence]
+
+    #easy case
+    for sentence in tgt_links:
+        matches = {}
+        partial = {}
+        missing = {}
+        if sentence in src_aligns:
+            for chain_t in tgt_links[sentence]:
+                # loop through all chains in src_aligned
+                for chain_a in src_aligns[sentence]:
+                    x = [x in src_aligns[sentence][chain_a] for x in tgt_links[sentence][chain_t]]
+                    # easy case: all mentions in the chain match
+                    if False not in set(x):
+                        matches[chain_t] = tgt_links[sentence][chain_t]
+                    # some mention matches
+                    elif (True in set(x)) and (False in set(x)):
+                        partial[chain_t] = tgt_links[sentence][chain_t]
+                    # none mention matches
+                    else:
+                        if find_partial(tgt_links[sentence][chain_t], src_aligns[key]):
+                            partial[chain_t] = tgt_links[sentence][chain_t]
+                        else:
+                            missing[chain_t] = tgt_links[sentence][chain_t]
+            if matches != {}:
+                all_matches[key] = matches
+            if partial != {}:
+                all_partial[key] = partial
+            if missing != {}:
+                all_missing[key] = missing
+        else:
+            all_missing[key] = tgt_links[key]
+
+    #(PRINT sanity check
+    #
+    # print("\n")
+    # total_matches = 0
+    # for key in all_matches:
+    #     for chain in all_matches[key]:
+    #         for mention in all_matches[key][chain]:
+    #             total_matches += len(mention)
+    #     #print (key, all_matches[key])
+    # print("complete match ===>", total_matches)
+    #
+    # total_partial = 0
+    # for key in all_partial:
+    #     for chain in all_partial[key]:
+    #         for mention in all_partial[key][chain]:
+    #             total_partial += len(mention)
+    #     #print(key, all_partial[key])
+    # print("partial match ===>", total_partial)
+    #
+    # total_missing = 0
+    # for key in all_missing:
+    #     for chain in all_missing[key]:
+    #         for mention in all_missing[key][chain]:
+    #             total_missing += len(mention)
+    #     #print(key, all_missing[key])
+    # print("target words missing in source ===>", total_missing)
+    #
+    # source_not_in_target = 0
+    # for key in all_missing_source:
+    #     for chain in all_missing_source[key]:
+    #         for mention in all_missing_source[key][chain]:
+    #             source_not_in_target += len(mention)
+    # print("source words missing in target ===>", source_not_in_target)
+    #
+    # total_mentions = total_matches + total_missing + total_partial
+    # print("total words classified in doc==> ", total_mentions)
+    #)
+
+    return all_matches, all_partial, all_missing, all_missing_source
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+def prettify_chains(chains, text):
+
+    sentence = text.split()
+    prettified = {}
+
+    for chain in chains:
+        pretty_chain = []
+        for mention in chains[chain]:
+            pretty_mention = []
+            for word in mention:
+                if word < len(sentence):
+                    pretty_mention.append(sentence[word])
+                #else:
+                #    print("indexing error") #"weird case", word, sentence, len(sentence))
+            pretty_chain.append(" ".join(pretty_mention))
+        prettified[chain] = pretty_chain
+
+    return prettified
+
+
+def print_out(english_chains, german_chains, aligned_chains, matched_chains):
+
+    ordered_en=sorted(english_chains.keys())
+    ordered_de=sorted(german_chains.keys())
+    ordered_mat=sorted(matched_chains.keys())
+    ordered_alg=sorted(aligned_chains.keys())
+
+    print(" ==> english mentions in sentence:")
+    for j in range(len(ordered_en)):
+        print(ordered_en[j], english_chains[ordered_en[j]])
+
+    print(" ==> alignments points of english:")
+
+    for j in range(len(ordered_alg)):
+        print(ordered_alg[j], aligned_chains[ordered_alg[j]])
+
+    print(" ==> german mentions in sentence:")
+
+    for j in range(len(ordered_de)):
+        print(ordered_de[j], german_chains[ordered_de[j]])
+
+    print(" ==> considered german mention in classification:")
+
+    for j in range(len(ordered_mat)):
+        print(ordered_mat[j], matched_chains[ordered_mat[j]])
+
+
+
+
+
+
         # for i in range(len(sentence_based_enDoc)):
         #     print("\n")
         #     print(sentence_based_enDoc[i])
