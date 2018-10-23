@@ -228,26 +228,27 @@ def organize_align(alignments):
 
 
 def match_mentions_to_tgt(sentences, giza):
-    """                          src positions
-    # in -> {sent154: {set_268: [[2, 3, 4], [7]]}, sent155: {set_268: [[2]]}}
-                                   tgt positions
-    # out -> {sent154: {set_268: [[2, 3, 4], [7]], sent155: {set_268: [[2]]}, ...}
+
+    """                         src positions
+    # in -> {1134 {'set_288': {1: [19], 2: [29], 8: [13]}, 'set_289': {2: [2]}}
+                                tgt positions
+    # out -> {154 {'set_268': {0: [2, 3, 4], 2: [7]}}...}
     """
     out = {}
 
-    for sent in sentences:
+    for s in sentences:
         targets = {}
-        align_info = organize_align(giza[sent])
-        for chain in sentences[sent]:
-            tgt_words = []
-            for mention in sentences[sent][chain]:
+        align_info = organize_align(giza[s])#{0: [0], 1: [1], 2: [2], 3: [3], ...}
+        for chain in sentences[s]:
+            tgt_words = {}
+            for mention in sentences[s][chain]:
                 positions = []
-                for word in mention:
+                for word in sentences[s][chain][mention]:
                     if word in align_info:# word may not be aligned
                         positions += align_info[word]
-                tgt_words.append(positions)
+                tgt_words[mention] = list(set(positions))
             targets[chain] = tgt_words
-        out[sent] = targets
+        out[s] = targets
     return out
 
 
@@ -263,14 +264,55 @@ def find_partial(mentions, chains):
                         return True
     return False
 
+####################################################################################################################################################################
 
 
-def match_all_mentions(tgt_links, src_aligns):
+def match_all_mentions2(enChains, deChains, alignedChains):
     """
-    :param src_aligns: 158 {'set_271': [[3], [16, 17], [4, 5]]} -->here there can be [] if word is not aligned
-    :param tgt_links: 158 {'set_282': [[0, 1], [0, 1], [11]], 'set_84': [[10], [7, 8]],
-    'set_153': [[35, 36], [40]], 'set_217': [[3], [16], [5]]}
-    :return: (dic, dic, dic)
+    :param src_aligns: {111 {'set_257': {1: [16]}, 'set_258': {0: [9], 1: [10, 11], 2: []}} --> here there can be [] if word is not aligned
+    :param tgt_links: {1134 {'set_288': {1: [19], 2: [29], 8: [13]}, 'set_289': {2: [2]}}
+    :return: (dic, dic, dic, dic)
+    """
+
+    all_matches = {}
+    all_partial = {}
+    de_not_in_en = {}
+    en_not_in_de = {}
+
+    for sent in enChains: # enChains and alignedChains have the same keys
+        if sent not in deChains:
+            en_not_in_de[sent] = enChains[sent]
+        else:
+            matches = {}
+            partial = {}
+            missing = {}
+
+            for chain in alignedChains[sent]:
+                mentions_in_enlish = alignedChains[sent][chain].values()
+                print("========english====>", mentions_in_enlish)
+
+            for chain in deChains[sent]:
+                mentions_in_german = deChains[sent][chain].values()
+                print("======german======>", mentions_in_german)
+
+            print("\n")
+
+
+
+
+    for sent in deChains:
+        if sent not in enChains:
+            de_not_in_en[sent] = deChains[sent]
+
+    return all_matches, all_partial, de_not_in_en, en_not_in_de
+
+
+
+def match_all_mentions(en, src_aligns, tgt_links):
+    """
+    :param src_aligns: {111 {'set_257': {1: [16]}, 'set_258': {0: [9], 1: [10, 11], 2: []}} --> here there can be [] if word is not aligned
+    :param tgt_links: {1134 {'set_288': {1: [19], 2: [29], 8: [13]}, 'set_289': {2: [2]}}
+    :return: (dic, dic, dic, dic)
     """
 
     all_matches = {}
@@ -279,32 +321,32 @@ def match_all_mentions(tgt_links, src_aligns):
     all_missing_source = {}
 
     # source chains not annotated in target
-    for key in src_aligns:
+    for sentence in src_aligns:
         if key not in tgt_links:
-            all_missing_source[key] = src_aligns[key]
+            all_missing_source[sentence] = en[sentence]
 
     #easy case
-    for key in tgt_links:
+    for sentence in tgt_links:
         matches = {}
         partial = {}
         missing = {}
-        if key in src_aligns:
-            for chain_t in tgt_links[key]:
+        if sentence in src_aligns:
+            for chain_t in tgt_links[sentence]:
                 # loop through all chains in src_aligned
-                for chain_a in src_aligns[key]:
-                    x = [x in src_aligns[key][chain_a] for x in tgt_links[key][chain_t]]
+                for chain_a in src_aligns[sentence]:
+                    x = [x in src_aligns[sentence][chain_a] for x in tgt_links[sentence][chain_t]]
                     # easy case: all mentions in the chain match
                     if False not in set(x):
-                        matches[chain_t] = tgt_links[key][chain_t]
+                        matches[chain_t] = tgt_links[sentence][chain_t]
                     # some mention matches
                     elif (True in set(x)) and (False in set(x)):
-                        partial[chain_t] = tgt_links[key][chain_t]
+                        partial[chain_t] = tgt_links[sentence][chain_t]
                     # none mention matches
                     else:
-                        if find_partial(tgt_links[key][chain_t], src_aligns[key]):
-                            partial[chain_t] = tgt_links[key][chain_t]
+                        if find_partial(tgt_links[sentence][chain_t], src_aligns[key]):
+                            partial[chain_t] = tgt_links[sentence][chain_t]
                         else:
-                            missing[chain_t] = tgt_links[key][chain_t]
+                            missing[chain_t] = tgt_links[sentence][chain_t]
             if matches != {}:
                 all_matches[key] = matches
             if partial != {}:
@@ -486,15 +528,13 @@ def main():
         en_chains_in_sentence = transform_chains_into_sentences(en_coref_chains, en_sentences_ids)
         de_chains_in_sentence = transform_chains_into_sentences(de_coref_chains, de_sentences_ids)
 
-        for chain in en_chains_in_sentence:
-            print(chain, en_chains_in_sentence[chain])
+        align_of_en_chains = match_mentions_to_tgt(en_chains_in_sentence, giza_alignments)
 
+        matches, partial, missing_tgt, missing_src = match_all_mentions2(en_chains_in_sentence, de_chains_in_sentence, align_of_en_chains)
 
-        #align_of_en_chains = match_mentions_to_tgt(en_sents_wrt_en_chains, giza_alignments)
-
-        #matches, partial, missing_tgt, missing_src = match_all_mentions(de_sents_wrt_de_chains, align_of_en_chains)
-
-
+        for sent in en_chains_in_sentence:
+            print(sent, en_chains_in_sentence[sent])
+            print(sent, align_of_en_chains[sent])
 
 
         break
