@@ -176,16 +176,21 @@ def get_sent_position(chains_in_doc, sents_in_doc):
         for mention in chains_in_doc[chain]:
 
             sentences = {}
-
+            
             for word in mention:
-
+            
                 new_sent, word_position = get_sentence_level_info(sents_in_doc, int(word))
                 if new_sent in sentences:
                     sentences[new_sent].append(word_position)
                 else:
                     sentences[new_sent] = [word_position]
-
-            sentence_info.update(sentences)
+                    
+            # put them in sentence_into  => {43: [19, 20, 21]} 
+        for sent in sentences:
+            if sent in sentence_info:
+                sentence_info[sent].append(sentences[sent])
+            else:
+                sentence_info[sent] = [sentences[sent]] 
 
         new_chains_info[chain] = sentence_info
 
