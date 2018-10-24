@@ -50,10 +50,11 @@ def make_sentences_spans(doc_id, markables):
         soup = BeautifulSoup(key, "xml")
         for m in soup.find_all("markable"):
             span = re.match(r'[a-z]+_([0-9]+)\.\.[a-z]+_([0-9]+)', m['span'])
-            sent_id = int(m['orderid'])
-            start = int(span.group(1))
-            end = int(span.group(2))
-            sentences_spans[sent_id] = (start, end)
+            if span:
+                sent_id = int(m['orderid'])
+                start = int(span.group(1))
+                end = int(span.group(2))
+                sentences_spans[sent_id] = (start, end)
     return sentences_spans
 
 
@@ -283,7 +284,11 @@ def match_all_mentions2(enChains, deChains, alignedChains, entext, detext):
 
     for i in range(len(entext)):
         print(entext[i])
-        print(detext[i])
+        if i >= len(detext):
+            print("problem with sentence splitting annotation in this document")
+            print(detext[i-1])
+        else:
+            print(detext[i])
 
         if i in enChains:# enChains and alignedChains have the same keys
 
@@ -383,7 +388,7 @@ def print_stats(en_path_all, doc, en_coref_chains, de_coref_chains):
 
     en_word_count = 0
     de_word_count = 0
-
+    print("****************************************")
     print("STATISTICS PER DOC")
     print("Document ==> ", en_path_all + doc)
     for key in en_coref_chains:
@@ -401,6 +406,8 @@ def print_stats(en_path_all, doc, en_coref_chains, de_coref_chains):
     print("TARGET chains: ", len(de_coref_chains))
     print("TARGET mentions: ", de_mention_count)
     print("TARGET annotated words: ", de_word_count)
+    print("****************************************")
+    print("\n")
     # )
 
 def put_into_words(relevant, sentence):
@@ -411,7 +418,8 @@ def put_into_words(relevant, sentence):
     for mention in relevant:
         temp = []
         for word in mention:
-            temp.append(s[word])
+            if word < len(s):
+                temp.append(s[word])
         new_mention = " ".join(temp)
         final.append(new_mention)
     return final
@@ -459,47 +467,24 @@ def main():
 
         #print(en_coref_chains)
 
-        #print_stats(en_path_all, doc, en_coref_chains, de_coref_chains)
+        print_stats(en_path_all, doc, en_coref_chains, de_coref_chains)
 
         en_chains_in_sentence = transform_chains_into_sentences(en_coref_chains, en_sentences_ids)
         de_chains_in_sentence = transform_chains_into_sentences(de_coref_chains, de_sentences_ids)
 
         align_of_en_chains = match_mentions_to_tgt(en_chains_in_sentence, giza_alignments)
 
+
+        print("!!!!!!!!!!!!!!!!!!!!!!!!", len(sentence_based_enDoc))
+        print("!!!!!!!!!!!!!!!!!!!!!!!!", len(sentence_based_deDoc))
+
         matching, partially, mismatched, only_de, only_en,  = match_all_mentions2(en_chains_in_sentence,
                                                                                 de_chains_in_sentence,
                                                                                 align_of_en_chains,
                                                                                 sentence_based_enDoc,
                                                                                 sentence_based_deDoc)
-        #
-        # for i in range(len(sentence_based_enDoc)):
-        #     print("\n")
-        #     print(sentence_based_enDoc[i])
-        #     print(sentence_based_deDoc[i])
-        #     print("\n")
-        #     if i in matching:
-        #         print(" ==> Matching mentions:")
-        #         mentions = put_into_words(matching[i], sentence_based_deDoc[i])
-        #         print(mentions)
-        #     elif i in mismatched:
-        #         print(" ==> Not found matching mentions:")
-        #         mentions = put_into_words(mismatched[i], sentence_based_deDoc[i])
-        #         print(mentions)
-        #     elif i in only_en:
-        #         print(" ==> Mentions only found in English:")
-        #         mentions = put_into_words(only_en[i], sentence_based_enDoc[i])
-        #         print(mentions)
-        #     elif i in only_de:
-        #         print(" ==> Mentions only found in German:")
-        #         mentions = put_into_words(only_de[i], sentence_based_deDoc[i])
-        #         print(mentions)
-        #     elif i in partially:
-        #         print(" ==> Some matching mentions:")
-        #         mentions = put_into_words(partially[i], sentence_based_deDoc[i])
-        #         print(mentions)
-        #     else:
-        #         print(" ==> Unannotated sentence pair")
-        break
+
+
 
 if __name__ == "__main__":
     main()
