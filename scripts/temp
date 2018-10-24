@@ -1,1287 +1,1357 @@
-========english====> [[2, 3, 4], [7]]
-========aligned====> [[2, 3, 4], [8, 6, 7]]
-======german======> [[8], [2, 3, 4]]
-========english====> [[2]]
-========aligned====> [[1]]
-======german======> [[1]]
-========english====> [[3], [18], [4]]
-========aligned====> [[3], [16, 17], [4, 5]]
-======german======> [[3], [16], [5]]
-========english====> [[18], [26], [23], [7], [15], [23, 24], [31], [0]]
-========aligned====> [[23], [32], [24], [6], [18, 19], [24, 25], [37], [0]]
-======german======> [[0], [18], [28], [24], [6], [32], [24, 25], [37]]
-========english====> [[7]]
-========aligned====> [[]]
-======german======> [[5], [1, 2, 3], [7]]
-========english====> [[10, 11, 12, 13, 14], [13, 14], [22, 23, 24], [2, 3, 4, 5, 6, 7, 8]]
-========aligned====> [[13, 14, 15, 16, 17], [16, 17], [22, 23], [1, 2, 5, 6, 7, 8, 9, 10]]
-======german======> [[1, 2, 3, 4, 5, 6, 7, 8, 9, 10], [16, 17], [4], [1, 2], [13, 14], [22, 23]]
-========english====> [[12, 13], [19], [43, 44, 45, 46, 47], [49]]
-========aligned====> [[9, 10], [20], [47, 48, 49, 50, 51], [54]]
-======german======> [[39], [37], [47, 48, 49, 50, 51], [54], [20], [9, 10]]
-========english====> [[3], [8], [17], [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29]]
-========aligned====> [[2, 3], [], [15], [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 13, 14, 15, 16, 19, 20, 21, 22, 23, 27, 28, 29, 30, 31]]
-======german======> [[3], [23], [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31]]
-========english====> [[7], [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]]
-========aligned====> [[8], [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 13]]
-======german======> [[7, 8], [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]]
-========english====> [[0], [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]]
-========aligned====> [[0], [0, 1, 2, 6, 7, 9, 10, 11, 12, 13, 15, 16, 19]]
-======german======> [[0], [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]]
-========english====> [[2, 3, 4, 5, 6, 7, 8], [20], [2], [3], [10], [0]]
-========aligned====> [[2, 3, 4, 5, 6, 7, 8], [13], [2], [3], [10], [0]]
-======german======> [[0], [4], [2], [10], [5]]
-========english====> [[1]]
-========aligned====> [[1]]
-======german======> [[1, 2]]
-========english====> [[9, 10], [11], [1, 2, 3, 4, 5, 6, 7]]
-========aligned====> [[8, 6, 7], [7], [3, 4, 5, 7]]
-======german======> [[2, 3, 4, 5], [6, 7, 8]]
-========english====> [[10, 11], [0]]
-========aligned====> [[9, 10], [0]]
-======german======> [[0], [9, 10]]
-========english====> [[7, 8, 9, 10, 11], [16], [39], [25], [20], [34], [8], [7]]
-========aligned====> [[6, 7, 8, 9, 16], [13], [36], [21], [19], [34], [6, 7], [7]]
-======german======> [[13], [6, 7], [36], [19], [34], [21]]
-========english====> [[4, 5], [0], [7]]
-========aligned====> [[4, 5], [0], [5]]
-======german======> [[0], [4, 5]]
-========english====> [[14], [1]]
-========aligned====> [[16], [1]]
-======german======> [[1], [10, 11], [15], [16]]
-========english====> [[10], [3]]
-========aligned====> [[7], [4]]
-======german======> [[4]]
-========english====> [[6], [22], [34], [31, 32], [36, 37], [43]]
-========aligned====> [[6], [], [40], [35, 36], [41, 42], [54]]
-======german======> [[6], [15], [12, 13], [35, 36], [40], [34], [26, 27], [50], [41, 42]]
-========english====> [[9, 10, 11, 12], [25]]
-========aligned====> [[9, 10, 13, 15], [26]]
-======german======> [[26], [12], [9, 10]]
-========english====> [[20], [4], [11, 12, 13, 14, 15], [25, 26], [29]]
-========aligned====> [[26], [7], [16, 17, 18, 15], [32, 31], [37]]
-======german======> [[15], [37], [6], [2, 3], [14], [7], [26], [25], [22, 23]]
-========english====> [[17, 18, 19, 20, 21, 22, 23, 24, 25], [28], [37], [41], [13], [32], [39], [59], [48, 49]]
-========aligned====> [[13, 14, 16, 17, 19, 21, 23], [25], [35], [41], [11], [28], [36], [53], [50, 51]]
-======german======> [[28], [36], [20], [11], [35], [41], [18], [25], [13, 14], [50, 51], [53]]
-========english====> [[30], [13, 14], [3, 4, 5, 6, 7, 8, 9]]
-========aligned====> [[35], [16, 17], [3, 4, 7, 8, 9, 10]]
-======german======> [[35], [6], [3, 4]]
-========english====> [[7], [2], [10], [12], [13]]
-========aligned====> [[8], [4], [9], [12], [14, 15]]
-======german======> [[8], [4], [15], [12]]
-========english====> [[1]]
-========aligned====> [[1]]
-======german======> [[1]]
-========english====> [[2]]
-========aligned====> [[2]]
-======german======> [[2], [13], [27], [9]]
-========english====> [[5, 6, 7], [11, 12]]
-========aligned====> [[8, 9, 10, 7], [11, 12]]
-======german======> [[11, 12], [7, 8, 9, 10]]
-========english====> [[8], [0, 1, 2]]
-========aligned====> [[7], [8, 1]]
-======german======> [[7], [1]]
-========english====> [[0, 1, 2]]
-========aligned====> [[0, 1, 2]]
-======german======> [[11], [0, 1, 2]]
-========english====> [[5], [19, 20, 21], [0, 1, 2], [10]]
-========aligned====> [[], [18, 19, 20], [0, 1], [12]]
-======german======> [[18, 19, 20], [27], [0, 1], [12], [6]]
-========english====> [[0, 1, 2], [6, 7]]
-========aligned====> [[0, 1, 2, 3], [5, 6]]
-======german======> [[1, 2, 3], [5, 6]]
-========english====> [[24], [10, 11, 12, 13, 14, 15]]
-========aligned====> [[20], [8, 9, 11, 12, 13]]
-======german======> [[10, 11, 12, 13], [9], [20]]
-========english====> [[14], [27], [11, 12], [0, 1, 2], [29]]
-========aligned====> [[16], [29], [14], [0, 1, 2, 3], [32]]
-======german======> [[29], [16], [14], [32], [2, 3], [5]]
-========english====> [[0, 1], [2], [9]]
-========aligned====> [[0, 1], [2, 3], [9, 10, 12, 13]]
-======german======> [[10], [3], [0, 1], [13], [15, 16, 17, 18, 19, 20]]
-========english====> [[2], [10], [18, 19, 20], [23]]
-========aligned====> [[2], [], [10, 11, 12, 13], []]
-======german======> [[2], [14, 15]]
-========english====> [[11], [23], [18], [8]]
-========aligned====> [[12], [20], [19], [7]]
-======german======> [[20], [19], [12], [7]]
-========english====> [[19], [4, 5], [12], [14]]
-========aligned====> [[19], [3, 4, 5], [14], [16]]
-======german======> [[19], [9], [3, 4], [16], [14]]
-========english====> [[6], [23]]
-========aligned====> [[6], [18]]
-======german======> [[18], [6]]
-========english====> [[19], [29], [13], [2]]
-========aligned====> [[17], [33], [10], [1, 2]]
-======german======> [[2], [17], [10], [33]]
-========english====> [[11], [9], [5]]
-========aligned====> [[14], [8], [2]]
-======german======> [[8], [2]]
-========english====> [[15, 16], [10], [11], [18]]
-========aligned====> [[16, 13], [9], [10, 11], []]
-======german======> [[11], [9], [12, 13]]
-========english====> [[18], [12, 13, 14, 15]]
-========aligned====> [[18], [12, 14, 15]]
-======german======> [[18], [14, 15]]
-========english====> [[2, 3], [4], [7], [8], [25], [39], [33, 34]]
-========aligned====> [[2], [11], [7], [3], [36], [], [40, 39]]
-======german======> [[4], [30], [11], [2]]
-========english====> [[31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51], [56], [26], [12]]
-========aligned====> [[28, 29, 30, 32, 33, 36, 37, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52], [59], [], [11]]
-======german======> [[35], [32, 33], [59], [29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50], [64], [11]]
-========english====> [[0], [12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36]]
-========aligned====> [[0], [10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 28, 32, 33, 36, 37, 38, 39]]
-======german======> [[5], [11], [27, 28], [30]]
-========english====> [[2], [7]]
-========aligned====> [[2], [8]]
-======german======> [[26, 27], [8], [29], [2]]
-========english====> [[15, 16, 17, 18, 19, 20, 21, 22, 23]]
-========aligned====> [[16, 17, 18, 19, 20, 24, 25, 27, 28]]
-======german======> [[6, 7, 8], [16, 17, 18, 19], [11], [21]]
-========english====> [[10], [0], [21], [24], [16]]
-========aligned====> [[8], [0], [22], [27], [15]]
-======german======> [[0], [8], [2, 3, 4, 5], [21], [17, 18], [15], [27], [22]]
-========english====> [[21, 22, 23]]
-========aligned====> [[20, 21, 22]]
-======german======> [[15, 16], [20, 21, 22]]
-========english====> [[29], [5], [21]]
-========aligned====> [[32], [9], [25]]
-======german======> [[9], [25], [17], [19], [32]]
-========english====> [[21], [22], [2], [6, 7, 8, 9], [34], [23]]
-========aligned====> [[18], [19, 20], [29], [8, 6, 7], [35], [22]]
-======german======> [[7, 8], [35], [22], [29], [21], [18]]
-========english====> [[62, 63], [20, 32, 41], [0], [72, 73, 74, 75, 76, 77, 78, 79], [90]]
-========aligned====> [[46, 47], [33, 36], [0], [64, 66, 67, 68, 69, 63], [85]]
-======german======> [[0], [66, 67, 68, 69, 70, 71], [85], [28], [25, 26], [46, 47], [19, 28, 31], [16, 17], [24]]
-========english====> [[4], [0], [4, 5], [3, 4, 5]]
-========aligned====> [[2], [0], [2, 3], [2, 3]]
-======german======> [[2], [0], [2, 3, 4, 5, 6], [2, 3]]
-========english====> [[6], [0]]
-========aligned====> [[8], [0]]
-======german======> [[0], [8], [3]]
-========english====> [[3, 4], [17], [8, 9]]
-========aligned====> [[4, 5], [19], [10, 11]]
-======german======> [[10, 11], [19], [4, 5]]
-========english====> [[1], [9]]
-========aligned====> [[1], [11]]
-======german======> [[11], [1], [15, 16]]
-========english====> [[4], [9], [7], [16], [11, 12]]
-========aligned====> [[1], [7], [2], [13], [8, 9, 6]]
-======german======> [[4], [8], [13], [7], [1], [2], [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10], [20], [16, 17]]
-========english====> [[38], [18]]
-========aligned====> [[30], [16]]
-======german======> [[18], [16], [21, 22, 23, 24], [30]]
-========english====> [[6, 7], [8], [16]]
-========aligned====> [[5, 6], [8, 9], [16]]
-======german======> [[5, 6], [9], [16], [0, 1]]
-========english====> [[5], [8], [0]]
-========aligned====> [[], [8], [0]]
-======german======> [[0], [2, 3], [8], [7]]
-========english====> [[1], [9], [15], [7], [5], [8, 9, 10, 11, 12]]
-========aligned====> [[0], [8], [11], [4], [2], [8, 6, 7]]
-======german======> [[11], [4, 5], [2], [4], [4, 5, 6, 7, 8]]
-========english====> [[5], [9, 10], [11], [13], [18, 19], [20]]
-========aligned====> [[5], [8, 9], [10, 11], [13, 14], [18, 19], [20]]
-======german======> [[8, 9], [12], [11], [21], [18, 19]]
-========english====> [[1]]
-========aligned====> [[1]]
-======german======> [[6, 7, 8, 9], [12], [1]]
-========english====> [[8], [20], [17]]
-========aligned====> [[4], [], [11, 12, 13]]
-======german======> [[11], [13], [4]]
-========english====> [[7], [2]]
-========aligned====> [[2], []]
-======german======> [[2], [12], [10], [3, 4]]
-========english====> [[6], [14, 15, 16, 17, 18, 19], [25]]
-========aligned====> [[8], [16, 17, 18, 19, 20, 23], [31]]
-======german======> [[8], [31], [16, 17, 18, 19, 20, 21], [7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21], [3]]
-========english====> [[3]]
-========aligned====> [[4]]
-======german======> [[19], [9], [13, 14, 15, 16], [24]]
-========english====> [[3], [4]]
-========aligned====> [[3], [4, 5]]
-======german======> [[5], [3]]
-========english====> [[22], [55], [53], [15], [6, 7, 8, 9, 10]]
-========aligned====> [[25], [], [60], [18, 19], [8, 11, 12, 7]]
-======german======> [[7, 8], [18], [10], [60], [25]]
-========english====> [[21, 22, 23, 24], [26]]
-========aligned====> [[21, 22, 23], [27]]
-======german======> [[27], [20, 21, 22, 23]]
-========english====> [[3, 4, 5, 6], [14]]
-========aligned====> [[4, 5, 6, 7], [12]]
-======german======> [[4, 5], [9], [12]]
-========english====> [[13, 14, 15, 16], [20], [0], [12, 13, 14, 15, 16, 17]]
-========aligned====> [[16, 17, 18, 19], [25], [0], [14, 15, 16, 17, 18, 19, 20]]
-======german======> [[25], [0], [29, 30, 31]]
-========english====> [[33], [28], [41], [18], [23], [5], [1], [47], [18, 19]]
-========aligned====> [[], [], [38], [21], [24], [9], [1], [], [21, 22]]
-======german======> [[21], [9], [24], [1], [21, 22], [38]]
-========english====> [[1], [4], [1, 2], [10]]
-========aligned====> [[1], [6], [1, 2], [7]]
-======german======> [[1], [6], [1, 2], [7]]
-========english====> [[5], [8]]
-========aligned====> [[2], [5]]
-======german======> [[5], [2], [2, 3], [7, 8, 9, 10]]
-========english====> [[14], [12], [2], [6]]
-========aligned====> [[12], [10], [1], [6]]
-======german======> [[10], [1], [12]]
-========english====> [[18], [1]]
-========aligned====> [[13], [4]]
-======german======> [[13], [4], [10], [7, 8]]
-========english====> [[6], [29], [0], [18]]
-========aligned====> [[6], [31], [0], [16]]
-======german======> [[16], [25], [2], [6], [31], [9], [3, 4, 5, 6, 7], [22, 23, 24, 25, 26, 27], [30]]
-========english====> [[12, 13]]
-========aligned====> [[10, 11]]
-======german======> [[1, 2, 3], [5], [10, 11]]
-========english====> [[32], [3], [30], [15], [35], [17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27]]
-========aligned====> [[], [2], [], [14], [29], [15, 16, 17, 18, 19, 20, 22, 23, 24, 25]]
-======german======> [[29], [15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25], [31], [2], [14]]
-========english====> [[1], [11], [22]]
-========aligned====> [[1], [11], [19]]
-======german======> [[1], [19], [11], [12], [3, 4, 5], [13, 14], [18]]
-========english====> [[1], [14], [61], [1, 2], [21], [45], [55]]
-========aligned====> [[0], [14], [53], [0, 1], [20], [], [48]]
-======german======> [[0], [14], [26], [53], [0, 1], [8], [20], [26, 27], [29]]
-========english====> [[28], [14], [24], [0]]
-========aligned====> [[29], [15], [25], [0]]
-======german======> [[15], [25], [29], [0]]
-========english====> [[33], [16], [53], [26], [0], [42]]
-========aligned====> [[31], [14], [50], [28], [0], [39]]
-======german======> [[14], [31], [28], [50], [0], [39]]
-========english====> [[1]]
-========aligned====> [[1]]
-======german======> [[1]]
-========english====> [[8], [3]]
-========aligned====> [[9], [3]]
-======german======> [[9]]
-========english====> [[12], [1]]
-========aligned====> [[12], [1]]
-======german======> [[12], [1], [18], [10, 11, 12, 13, 14, 15, 16]]
-========english====> [[17, 18, 19], [0, 1]]
-========aligned====> [[18, 19, 20], [0, 1]]
-======german======> [[0], [18, 19, 20]]
-========english====> [[62], [32], [16]]
-========aligned====> [[56], [34], [15]]
-======german======> [[15], [56], [34]]
-========english====> [[8]]
-========aligned====> [[7]]
-======german======> [[3]]
-========english====> [[8, 9]]
-========aligned====> [[8, 9, 7]]
-======german======> [[7, 8, 9]]
-========english====> [[23], [17], [2], [10], [21], [40]]
-========aligned====> [[19], [15], [3], [8], [], [35]]
-======german======> [[32], [19], [8], [15]]
-========english====> [[6], [1], [12]]
-========aligned====> [[5], [1], [11]]
-======german======> [[1], [11]]
-========english====> [[5], [2, 3]]
-========aligned====> [[5], [2, 3]]
-======german======> [[10], [8], [2, 3]]
-========english====> [[0], [9], [11, 12], [2, 3, 4], [6, 7]]
-========aligned====> [[0], [10], [12, 13], [2, 3, 4, 5], [8, 7]]
-======german======> [[2]]
-========english====> [[0], [9]]
-========aligned====> [[0], [10]]
-======german======> [[0], [10]]
-========english====> [[1], [3]]
-========aligned====> [[0], [2]]
-======german======> [[2, 3], [2], [0]]
-========english====> [[1, 2], [4, 5, 6]]
-========aligned====> [[1, 2], [4, 5, 6]]
-======german======> [[1, 2], [4, 5, 6]]
-========english====> [[4, 5], [3]]
-========aligned====> [[4, 5], [1]]
-======german======> [[0], [4, 5]]
-========english====> [[23], [15, 16], [12], [13]]
-========aligned====> [[24], [16, 17], [13], [13, 14, 15]]
-======german======> [[16, 17], [24], [15], [13], [11], [6, 7]]
-========english====> [[5], [2, 3, 4]]
-========aligned====> [[7], [3, 4, 5]]
-======german======> [[7], [3, 4, 5], [3, 4, 5]]
-========english====> [[9, 10, 11], [12]]
-========aligned====> [[5, 6, 7], [9]]
-======german======> [[16], [10], [5, 6, 7]]
-========english====> [[8], [9], [19], [20]]
-========aligned====> [[18], [9], [6], []]
-======german======> [[6], [30], [18, 19, 20, 21], [10]]
-========english====> [[0]]
-========aligned====> [[0]]
-======german======> [[0], [2]]
-========english====> [[15], [4]]
-========aligned====> [[15], [3]]
-======german======> [[2, 3], [15]]
-========english====> [[2], [3], [16], [17]]
-========aligned====> [[1], [2], [18], [19, 20]]
-======german======> [[0, 1], [9], [3], [20], [18]]
-========english====> [[7, 8, 9, 10], [24], [24, 25, 26]]
-========aligned====> [[8, 9, 10, 11, 13], [25], [25, 26, 27]]
-======german======> [[8, 9], [10, 11], [25], [13, 14, 15, 16, 17, 18], [4], [1, 2], [25, 26, 27]]
-========english====> [[16], [0], [28], [18], [6], [21, 22, 23], [10], [2, 3, 4]]
-========aligned====> [[19], [0], [33], [21], [8], [24, 25, 23], [14], [5, 6]]
-======german======> [[0], [33], [21], [8], [23, 24, 25], [32], [29, 30], [14], [5, 6]]
-========english====> [[5, 6]]
-========aligned====> [[6, 7]]
-======german======> [[6, 7]]
-========english====> [[4], [0, 1, 2]]
-========aligned====> [[4], [0, 1, 2]]
-======german======> [[4], [0, 1, 2]]
-========english====> [[0], [10]]
-========aligned====> [[0], [8]]
-======german======> [[8], [0]]
-========english====> [[17], [3, 4, 5], [7], [12], [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26]]
-========aligned====> [[13], [2, 4], [1], [], [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 13, 14, 15, 16, 17, 18, 19, 20, 21]]
-======german======> [[15], [13], [2, 3, 4]]
-========english====> [[8]]
-========aligned====> [[5]]
-======german======> [[3], [4, 5]]
-========english====> [[3, 4, 5, 6, 7, 8, 9], [11]]
-========aligned====> [[2, 3, 4, 5, 6, 7, 8], [11]]
-======german======> [[11], [4, 5, 6, 7, 8], [7]]
-========english====> [[5, 6], [14]]
-========aligned====> [[4, 5], [14]]
-======german======> [[4, 5], [14]]
-========english====> [[7, 8]]
-========aligned====> [[8, 6, 7]]
-======german======> [[6, 7]]
-========english====> [[8], [1]]
-========aligned====> [[7], [1]]
-======german======> [[1]]
-========english====> [[12, 13, 14, 15, 16, 17, 18], [22, 23], [12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26], [5, 6]]
-========aligned====> [[11, 12, 15, 16, 17, 18], [], [11, 12, 14, 15, 16, 17, 18, 21, 22], [6, 7]]
-======german======> [[6, 7], [11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23]]
-========english====> [[5, 6], [7, 8, 9]]
-========aligned====> [[5], [8, 9]]
-======german======> [[6, 7, 8, 9], [5]]
-========english====> [[6]]
-========aligned====> [[4]]
-======german======> [[4]]
-========english====> [[32], [30, 31], [17], [0], [23], [36], [38]]
-========aligned====> [[32, 31], [29, 30], [], [0], [22], [33], [37]]
-======german======> [[29, 30], [32], [13], [3, 4]]
-========english====> [[42, 43]]
-========aligned====> [[41, 42]]
-======german======> [[25, 26], [16, 17], [28], [22, 23, 24, 25, 26], [48], [45]]
-========english====> [[0]]
-========aligned====> [[0]]
-======german======> [[0]]
-========english====> [[10, 11, 12]]
-========aligned====> [[9, 10]]
-======german======> [[9, 10], [3, 4], [9, 10]]
-========english====> [[7, 8, 9]]
-========aligned====> [[9, 10]]
-======german======> [[3], [9, 10]]
-========english====> [[10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22]]
-========aligned====> [[6, 7, 9, 10, 11, 12, 13, 14, 15]]
-======german======> [[5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]]
-========english====> [[7]]
-========aligned====> [[8]]
-======german======> [[8]]
-========english====> [[6], [4], [2]]
-========aligned====> [[1], [7], [6]]
-======german======> [[6], [7]]
-========english====> [[16], [14], [10]]
-========aligned====> [[16], [11], [8]]
-======german======> [[8], [16], [11]]
-========english====> [[4, 5, 6], [8]]
-========aligned====> [[4, 5, 6], [8]]
-======german======> [[11, 12], [15]]
-========english====> [[2]]
-========aligned====> [[2]]
-======german======> [[2]]
-========english====> [[1]]
-========aligned====> [[1]]
-======german======> [[1]]
-========english====> [[4], [0, 1]]
-========aligned====> [[5], [0, 1]]
-======german======> [[0, 1]]
-========english====> [[17, 18], [26]]
-========aligned====> [[16, 17], [24]]
-======german======> [[24], [16, 17], [2, 3], [5]]
-========english====> [[1]]
-========aligned====> [[1]]
-======german======> [[1]]
-========english====> [[0]]
-========aligned====> [[0]]
-======german======> [[0]]
-
-
 `` Even in purely non-religious terms , homosexuality represents a misuse of the sexual faculty .
 " Selbst aus ganz unreligiöser Sicht stellt die Homosexualität eine sexuelle Verfehlung dar .
-
-
-Not found matching mentions:
-['die Homosexualität', '" Selbst aus ganz unreligiöser Sicht stellt die Homosexualität eine sexuelle Verfehlung dar .']
+==None EN mentions in DE:
+==english=====> ['homosexuality', '`` Even in purely non-religious terms , homosexuality represents a misuse of the sexual faculty .']
+==aligned_to==> ['Homosexualität', '" Selbst aus ganz unreligiöser Sicht stellt die Homosexualität eine sexuelle Verfehlung .']
+==german======> ['die Homosexualität', '" Selbst aus ganz unreligiöser Sicht stellt die Homosexualität eine sexuelle Verfehlung dar .']
 
 
 It is a pathetic little second-rate substitute for reality -- a pitiable flight from life .
 Sie ist ein armseliger , minderwertiger Ersatz für die Realität – ein kläglicher Versuch , dem Leben zu entfliehen .
-
-
-Unannotated sentence pair
+==Some EN mentions in DE:
+==english=====> ['It', 'It is a pathetic little second-rate substitute for reality -- a pitiable flight from life .']
+==aligned_to==> ['Sie', 'Sie ist ein Ersatz für Realität – ein kläglicher Versuch dem Leben .']
+==german======> ['Sie', 'Sie ist ein armseliger , minderwertiger Ersatz für die Realität – ein kläglicher Versuch , dem Leben zu entfliehen .']
 
 
 As such , it deserves no compassion , it deserves no treatment as minority martyrdom , and it deserves not to be deemed anything but a pernicious sickness . ''
 Als solches verdient sie kein Mitleid , keine Sonderbehandlung als Märtyrium einer Minderheit , und sollte nur als das betrachtet werden , was sie wirklich ist : eine schädliche Krankheit . "
-
-
-Unannotated sentence pair
+==Some EN mentions in DE:
+==english=====> ['it', 'it', 'it', "As such , it deserves no compassion , it deserves no treatment as minority martyrdom , and it deserves not to be deemed anything but a pernicious sickness . ''"]
+==aligned_to==> ['verdient sie', '', 'sollte', 'Als solches verdient sie kein Mitleid , keine Sonderbehandlung als Märtyrium Minderheit , und sollte nur betrachtet werden , was sie eine schädliche Krankheit . "']
+==german======> ['sie', 'sie', 'Als solches verdient sie kein Mitleid , keine Sonderbehandlung als Märtyrium einer Minderheit , und sollte nur als das betrachtet werden , was sie wirklich ist : eine schädliche Krankheit . "']
 
 
 That 's from Time magazine in 1966 , when I was three years old .
 Das schrieb Time Magazine 1966 , als ich drei Jahre alt war .
-
-
-Matching mentions:
-['Das']
+==All EN mentions in DE:
+==english=====> ['That']
+==aligned_to==> ['Das']
+==german======> ['Das']
 
 
 And last year , the president of the United States came out in favor of gay marriage .
 Und letztes Jahr sprach sich der amerikanische Präsident für die geichgeschlechtliche Ehe aus .
-
-
-Unannotated sentence pair
+==> Unannotated sentence pair
 
 
 And my question is , how did we get from there to here ?
 Und meine Frage ist , wie haben wir es so weit gebracht ?
-
-
-Unannotated sentence pair
+==> Unannotated sentence pair
 
 
 How did an illness become an identity ?
 Wie wurde aus einer Krankheit eine Identität ?
-
-
-Unannotated sentence pair
+==> Unannotated sentence pair
 
 
 When I was perhaps six years old , I went to a shoe store with my mother and my brother .
 Als ich etwa sechs Jahre alt war , ging ich mit meiner Mutter und meinem Bruder Schuhe kaufen .
-
-
-Unannotated sentence pair
+==> Unannotated sentence pair
 
 
 And at the end of buying our shoes , the salesman said to us that we could each have a balloon to take home .
 Zum Ende unseres Einkaufs sagte der Schuhverkäufer , dass wir uns jeweils einen Luftballon aussuchen dürften .
-
-
-Mentions only found in English:
-['to us', 'to us']
+==> Mentions not annotated in German
+['einen Luftballon', 'einen Luftballon']
 
 
 My brother wanted a red balloon , and I wanted a pink balloon .
 Mein Bruder wollte einen roten , und ich wollte einen rosafarbenen .
-
-
-Not found matching mentions:
-['einen rosafarbenen', 'einen roten', 'einen rosafarbenen']
+==None EN mentions in DE:
+==english=====> ['a pink balloon']
+==aligned_to==> ['einen rosafarbenen']
+==german======> ['einen rosafarbenen', 'einen roten', 'einen rosafarbenen']
 
 
 My mother said that she thought I 'd really rather have a blue balloon .
 Meine Mutter meinte , ich solte doch lieber einen blauen Luftballon haben .
-
-
-Matching mentions:
-['Meine Mutter']
+==All EN mentions in DE:
+==english=====> ['she', 'My mother']
+==aligned_to==> ['solte', 'Meine Mutter']
+==german======> ['Meine Mutter']
 
 
 But I said that I definitely wanted the pink one .
 Aber ich sagte ihr , dass ich ganz bestimmt den rosafarbenen wollte .
-
-
-Not found matching mentions:
-['ihr', 'den rosafarbenen']
+==None EN mentions in DE:
+==english=====> ['the pink one']
+==aligned_to==> ['den rosafarbenen']
+==german======> ['ihr', 'den rosafarbenen']
 
 
 And she reminded me that my favorite color was blue .
 Und sie erinnerte mich daran , dass meine Lieblingsfarbe blau sei .
-
-
-Matching mentions:
-['sie']
+==All EN mentions in DE:
+==english=====> ['she']
+==aligned_to==> ['sie']
+==german======> ['sie']
 
 
 The fact that my favorite color now is blue , but I 'm still gay -- -- is evidence of both my mother 's influence and its limits .
 Die Tatsache , dass meine jetzige Lieblingsfarbe blau ist , aber ich immer noch schwul bin – – zeigt sowohl den Einfluss meiner Mutter , als auch dessen Grenzen .
-
-
-Not found matching mentions:
-['dessen', 'den Einfluss meiner Mutter']
+==None EN mentions in DE:
+==english=====> ["my mother 's influence", 'its']
+==aligned_to==> ['Einfluss meiner Mutter', 'dessen']
+==german======> ['dessen', 'den Einfluss meiner Mutter']
 
 
 When I was little , my mother used to say , `` The love you have for your children is like no other feeling in the world .
 Als ich klein war , sagte meine Mutter immer : " Die Liebe , die du für deine Kinder empfindest , ist einzigartig .
-
-
-Not found matching mentions:
-['meine Mutter', 'Die Liebe , die du für deine Kinder empfindest , ist einzigartig .']
+==None EN mentions in DE:
+==english=====> ['The love you have for your children', 'other feeling', 'The love you have for your children is like no other feeling in the world', 'my mother']
+==aligned_to==> ['Die Liebe du für deine Kinder', '', 'Die Liebe die du für deine Kinder ist einzigartig', 'meine Mutter']
+==german======> ['meine Mutter', 'Die Liebe , die du für deine Kinder empfindest , ist einzigartig .']
 
 
 And until you have children , you do n't know what it 's like . ''
 Und bevor du nicht selbst Kinder hast , wirst du nicht verstehen , was ich meine . "
-
-
-Mentions only found in German:
-['verstehen']
+==> Mentions not annotated in German
+['it']
 
 
 And when I was little , I took it as the greatest compliment in the world that she would say that about parenting my brother and me .
 Als Kind nahm ich das als das größte Kompliment , dass sie so ihre Mutterrolle für mich und meinen Bruder beschreiben würde .
-
-
-Not found matching mentions:
-['sie', 'ihre', 'das']
+==None EN mentions in DE:
+==english=====> ['it', 'that', 'she']
+==aligned_to==> ['das', '', 'sie so ihre']
+==german======> ['sie', 'ihre', 'das']
 
 
 And when I was an adolescent , I thought that I 'm gay , and so I probably ca n't have a family .
 Als Teenager dachte ich , dass ich schwul sei und somit wahrscheinlich keine Familie haben würde .
-
-
-Not found matching mentions:
-['dass ich schwul sei und somit wahrscheinlich keine Familie haben würde']
+==None EN mentions in DE:
+==english=====> ["I 'm gay , and so I probably ca n't have a family"]
+==aligned_to==> ['ich schwul und somit wahrscheinlich keine Familie haben würde']
+==german======> ['dass ich schwul sei und somit wahrscheinlich keine Familie haben würde']
 
 
 And when she said it , it made me anxious .
 Und es verunsicherte mich , wenn sie es sagte .
-
-
-Unannotated sentence pair
+==Some EN mentions in DE:
+==english=====> ['it', 'it', 'she']
+==aligned_to==> ['es', 'es', 'sie']
+==german======> ['sie', 'es']
 
 
 And after I came out of the closet , when she continued to say it , it made me furious .
 Und nachdem ich mein Coming-out hatte , und sie fortfuhr , es zu sagen , machte es mich wütend .
-
-
-Unannotated sentence pair
+==Some EN mentions in DE:
+==english=====> ['it', 'it', 'she']
+==aligned_to==> ['es', 'es', 'sie']
+==german======> ['sie', 'es', 'es']
 
 
 I said , `` I 'm gay . That 's not the direction that I 'm headed in .
 Ich sagte : " Ich bin schwul . Das ist nicht der Weg , auf dem ich mich befinde .
-
-
-Not found matching mentions:
-['der Weg', 'dem']
+==None EN mentions in DE:
+==english=====> ["I 'm gay", 'That']
+==aligned_to==> ['Ich bin schwul', 'Das']
+==german======> ['der Weg', 'dem']
 
 
 And I want you to stop saying that . ''
 Und ich möchte , dass du aufhörst , das zu sagen . "
-
-
-Not found matching mentions:
-['das']
+==None EN mentions in DE:
+==english=====> ['that']
+==aligned_to==> ['das']
+==german======> ['das']
 
 
 About 20 years ago , I was asked by my editors at The New York Times Magazine to write a piece about deaf culture .
 Vor etwa 20 Jahren bat mich meine Redaktion bei der New York Times , einen Artikel über die Gehörlosenkultur zu schreiben .
-
-
-Unannotated sentence pair
+==> Unannotated sentence pair
 
 
 And I was rather taken aback .
 Und ich war ziemlich verblüfft .
-
-
-Unannotated sentence pair
+==> Unannotated sentence pair
 
 
 I had thought of deafness entirely as an illness .
 Ich hatte Taubheit immer als eine Krankheit betrachtet .
-
-
-Unannotated sentence pair
+==> Unannotated sentence pair
 
 
 Those poor people , they could n't hear .
 Diese armen Menschen . Sie können nicht hören .
-
-
-Matching mentions:
-['Sie', 'Diese armen Menschen']
+==All EN mentions in DE:
+==english=====> ['they', 'Those poor people']
+==aligned_to==> ['Sie', 'Diese armen Menschen']
+==german======> ['Sie', 'Diese armen Menschen']
 
 
 They lacked hearing , and what could we do for them ?
 Sie sind gehörlos . Was können wir für sie tun ?
-
-
-Unannotated sentence pair
+==Some EN mentions in DE:
+==english=====> ['They', 'them']
+==aligned_to==> ['Sie', 'sie']
+==german======> ['sie', 'Sie']
 
 
 And then I went out into the deaf world .
 Und dann begab ich mich in die Gehörlosenwelt .
-
-
-Unannotated sentence pair
+==> Unannotated sentence pair
 
 
 I went to deaf clubs .
 Ich besuchte Gehörlosenvereine .
-
-
-Unannotated sentence pair
+==> Unannotated sentence pair
 
 
 I saw performances of deaf theater and of deaf poetry .
 Ich ging zu Theateraufführungen und Gedichtvorträgen von Gehörlosen .
-
-
-Unannotated sentence pair
+==> Unannotated sentence pair
 
 
 I even went to the Miss Deaf America contest in Nashville , Tennessee where people complained about that slurry Southern signing .
 Und für die Wahl zur " Miss Deaf America " fuhr ich sogar bis nach Nashville , Tennessee , wo sich die Menschen über die undeutliche Zeichensprache der Südstaatler beschwerten .
-
-
-Unannotated sentence pair
+==> Unannotated sentence pair
 
 
 And as I plunged deeper and deeper into the deaf world , I become convinced that deafness was a culture and that the people in the deaf world who said , `` We do n't lack hearing , we have membership in a culture , '' were saying something that was viable .
 Und als ich immer mehr in die Gehörlosenwelt eintauchte , wurde mir bewusst , dass Gehörlosigkeit eine Kultur war , und dass die Menschen aus dieser Kultur , die sagten : " Wir sind nicht ' gehör-los ' , sondern Mitglieder einer Kultur " , etwas sagten , das mir etwas gab .
-
-
-Not found matching mentions:
-['dieser Kultur', 'eine Kultur', 'die', 'die Menschen aus dieser Kultur', 'das', 'etwas']
+==None EN mentions in DE:
+==english=====> ['a culture']
+==aligned_to==> ['einer Kultur']
+==german======> ['dieser Kultur', 'eine Kultur', 'die', 'die Menschen aus dieser Kultur', 'das', 'etwas']
 
 
 It was n't my culture , and I did n't particularly want to rush off and join it , but I appreciated that it was a culture and that for the people who were members of it , it felt as valuable as Latino culture or gay culture or Jewish culture .
 Es war nicht meine Kultur , und ich hatte auch nicht vor , ihr spontan beizutreten , aber ich schätzte , dass es eine Kultur war und es für die Menschen , die ihr angehörten , von so großer Bedeutung war wie die Latino- , Schwulen- oder jüdische Kultur .
-
-
-Unannotated sentence pair
+==Some EN mentions in DE:
+==english=====> ['who', 'the people', 'it', 'It', 'it', 'it', 'it']
+==aligned_to==> ['die ,', 'die Menschen', '', 'Es', 'es', 'ihr', 'so']
+==german======> ['die Menschen', 'die', 'ihr', 'meine Kultur']
 
 
 It felt as valid perhaps even as American culture .
 Es schien fast genauso wichtig wie die Amerikanische Kultur .
-
-
-Mentions only found in German:
-['Es']
+==> Mentions not annotated in German
+['It']
 
 
 Then a friend of a friend of mine had a daughter who was a dwarf .
 Dann bekam die Freundin einer Freundin eine kleinwüchsige Tochter .
-
-
-Not found matching mentions:
-['die Freundin einer Freundin', 'eine kleinwüchsige Tochter']
+==None EN mentions in DE:
+==english=====> ['a daughter', 'who', 'a friend of a friend of mine']
+==aligned_to==> ['Tochter eine kleinwüchsige', 'kleinwüchsige', 'Freundin einer Freundin kleinwüchsige']
+==german======> ['die Freundin einer Freundin', 'eine kleinwüchsige Tochter']
 
 
 And when her daughter was born , she suddenly found herself confronting questions that now began to seem quite resonant to me .
 Und mit der Geburt ihrer Tochter , musste sie sich plötzlich mit Fragen auseinandersetzen , die nun auch für mich anfingen von großer Bedeutung zu sein .
-
-
-Unannotated sentence pair
+==Some EN mentions in DE:
+==english=====> ['she', 'her', 'herself', 'questions', 'that']
+==aligned_to==> ['sie', 'ihrer', 'sich', 'Fragen', ', die']
+==german======> ['sie', 'ihrer', 'die', 'Fragen']
 
 
 She was facing the question of what to do with this child .
 Sie stand vor der Entscheidung , was sie mit diesem Kind tun sollte .
-
-
-Unannotated sentence pair
+==Some EN mentions in DE:
+==english=====> ['this child', 'She']
+==aligned_to==> ['diesem Kind', 'Sie']
+==german======> ['Sie', 'diesem Kind']
 
 
 Should she say , `` You 're just like everyone else but a little bit shorter ? ''
 Sollte sie sagen : " Du bist genauso wie alle anderen , nur ein bisschen kleiner ? "
-
-
-Matching mentions:
-['sie']
+==All EN mentions in DE:
+==english=====> ['she']
+==aligned_to==> ['sie']
+==german======> ['sie']
 
 
 Or should she try to construct some kind of dwarf identity , get involved in the Little People of America , become aware of what was happening for dwarfs ?
 Oder sollte sie versuchen , eine Art Kleinwüchsigenidentität für sie zu schaffen , sich in der Organisation " Little People of America " zu engagieren , und sich zu informieren , was es Neues in der Welt der Kleinwüchsigen gab ?
-
-
-Unannotated sentence pair
+==Some EN mentions in DE:
+==english=====> ['she']
+==aligned_to==> ['sie']
+==german======> ['sie', 'sich', 'sich', 'sie']
 
 
 And I suddenly thought , most deaf children are born to hearing parents .
 Und da dachte ich plötzlich , dass die meisten tauben Kinder hörende Eltern haben ,
-
-
-Unannotated sentence pair
+==Some EN mentions in DE:
+==english=====> ['most deaf children', 'hearing parents']
+==aligned_to==> ['meisten tauben Kinder die', 'hörende Eltern']
+==german======> ['hörende Eltern', 'die meisten tauben Kinder']
 
 
 Those hearing parents tend to try to cure them .
 und diese in der Regel versuchen , ihre Kinder zu heilen .
-
-
-Not found matching mentions:
-['ihre', 'diese']
+==None EN mentions in DE:
+==english=====> ['them', 'Those hearing parents']
+==aligned_to==> ['ihre', 'Kinder diese']
+==german======> ['ihre', 'diese']
 
 
 Those deaf people discover community somehow in adolescence .
 Diese tauben Menschen entdecken irgendwann im Erwachsenenalter " Gemeinschaft " für sich .
-
-
-Unannotated sentence pair
+==Some EN mentions in DE:
+==english=====> ['Those deaf people']
+==aligned_to==> ['Diese tauben Menschen']
+==german======> ['sich', 'Diese tauben Menschen']
 
 
 Most gay people are born to straight parents .
 Die meisten homosexuellen Menschen haben heterosexuelle Eltern .
-
-
-Not found matching mentions:
-['meisten homosexuellen Menschen', 'heterosexuelle Eltern']
+==None EN mentions in DE:
+==english=====> ['Most gay people', 'straight parents']
+==aligned_to==> ['Die meisten homosexuellen Menschen', 'heterosexuelle Eltern']
+==german======> ['meisten homosexuellen Menschen', 'heterosexuelle Eltern']
 
 
 Those straight parents often want them to function in what they think of as the mainstream world , and those gay people have to discover identity later on .
 Diese Eltern wollen oft , dass ihre Kinder funktonieren in der in ihrer Sicht normalen Welt , und diese homosexuellen Menschen müssen dann später eine Identität für sich finden .
-
-
-Not found matching mentions:
-['diese homosexuellen Menschen', 'sich', 'Diese Eltern', 'ihrer', 'ihre']
+==None EN mentions in DE:
+==english=====> ['them', 'those gay people', 'Those straight parents', 'they']
+==aligned_to==> ['', 'diese homosexuellen Menschen', 'Diese Eltern', 'ihrer']
+==german======> ['diese homosexuellen Menschen', 'sich', 'Diese Eltern', 'ihrer', 'ihre']
 
 
 And here was this friend of mine looking at these questions of identity with her dwarf daughter .
 Und nun war da diese Freundin von mir , die sich mit ihrer kleinwüchsigen Tochter mit der Frage nach Identität auseinandersetzte .
-
-
-Not found matching mentions:
-['diese Freundin', 'die', 'ihrer']
+==None EN mentions in DE:
+==english=====> ['this friend of mine', 'her']
+==aligned_to==> ['diese Freundin von mir', 'ihrer']
+==german======> ['diese Freundin', 'die', 'ihrer']
 
 
 And I thought , there it is again : A family that perceives itself to be normal with a child who seems to be extraordinary .
 Ich dachte , da ist es wieder : Eine Familie , die sich selbst als normal wahrnimmt mit einem Kind , das außergewöhnlich erscheint .
-
-
-Unannotated sentence pair
+==Some EN mentions in DE:
+==english=====> ['it', 'A family', 'that', 'itself', 'a child', 'who']
+==aligned_to==> ['es', 'Eine Familie', ', die', 'selbst als', 'einem Kind', ',']
+==german======> ['Eine Familie', 'sich', 'die', 'das', 'einem Kind']
 
 
 And I hatched the idea that there are really two kinds of identity .
 Ich entwickelte also diesen Gedanken , dass es in Wirklichkeit zwei Arten von Identität gibt .
-
-
-Mentions only found in German:
-['Wirklichkeit zwei Arten von']
+==> Mentions not annotated in German
+['two kinds of identity']
 
 
 There are vertical identities , which are passed down generationally from parent to child .
 Es gibt vertikale Identitäten , die generationsbedingt von Eltern an ihre Kinder weitergegeben werden .
-
-
-Unannotated sentence pair
+==Some EN mentions in DE:
+==english=====> ['which', 'vertical identities']
+==aligned_to==> ['die', 'vertikale Identitäten']
+==german======> ['ihre', 'Eltern', 'vertikale Identitäten']
 
 
 Those are things like ethnicity , frequently nationality , language , often religion .
 Das sind Dinge wie ethnische Zugehörigkeit , häufig Nationalität , Sprache und oftmals Religion .
-
-
-Not found matching mentions:
-['Dinge']
+==None EN mentions in DE:
+==english=====> ['Those', 'language', 'often religion', 'things like ethnicity', 'frequently nationality']
+==aligned_to==> ['Das', 'Sprache', 'oftmals Religion', 'Dinge wie ethnische Zugehörigkeit', 'Nationalität häufig']
+==german======> ['Dinge']
 
 
 Those are things you have in common with your parents and with your children .
 Dinge , die Sie mit Ihren Eltern und Kindern gemein haben .
-
-
-Unannotated sentence pair
+==Some EN mentions in DE:
+==english=====> ['Those']
+==aligned_to==> ['Dinge']
+==german======> ['Dinge', 'die']
 
 
 And while some of them can be difficult , there 's no attempt to cure them .
 Und obwohl einige davon problematisch sein können , versucht man in der Regel nicht , sie zu heilen .
-
-
-Unannotated sentence pair
+==Some EN mentions in DE:
+==english=====> ['them', 'them']
+==aligned_to==> ['sie', 'davon']
+==german======> ['einige davon', 'sie']
 
 
 You can argue that it 's harder in the United States -- our current presidency notwithstanding -- to be a person of color .
 Man kann argumentieren , dass es in den Vereinigten Staaten schwieriger ist – und das ungeachtet unseres aktuellen Präsidenten – farbig zu sein .
-
-
-Mentions only found in German:
-['dass']
+==> Mentions not annotated in German
+['it']
 
 
 And yet , we have nobody who is trying to ensure that the next generation of children born to African-Americans and Asians come out with creamy skin and yellow hair .
 Und trotzdem versucht niemand alles daran zu setzen , dass die nächste Generation von Kindern afro-amerikanischer oder asiatischer Eltern mit cremefarbener Haut und blondem Haar auf die Welt kommt .
-
-
-Mentions only found in English:
-['to ensure that the next generation of children born to African-Americans and Asians come out with creamy skin and yellow', 'nobody']
+==> Mentions not annotated in German
+['dass die nächste Generation von Kindern afro-amerikanischer oder asiatischer Eltern mit cremefarbener Haut und blondem Haar auf die Welt kommt', 'daran']
 
 
 There are these other identities which you have to learn from a peer group .
 Dann gibt es die anderen Identitäten , die man im Umgang mit Gleichgesinnten erlernt .
-
-
-Not found matching mentions:
-['die', 'die anderen Identitäten', 'die anderen Identitäten']
+==None EN mentions in DE:
+==english=====> ['which', 'these other identities']
+==aligned_to==> ['die', 'die anderen Identitäten']
+==german======> ['die', 'die anderen Identitäten', 'die anderen Identitäten']
 
 
 And I call them horizontal identities , because the peer group is the horizontal experience .
 Diese bezeichne ich als horizontale Identitäten , denn der Kontakt zu Gleichgesinnten stellt eine horizontale Erfahrung dar .
-
-
-Unannotated sentence pair
+==Some EN mentions in DE:
+==english=====> ['horizontal identities', 'them']
+==aligned_to==> ['horizontale Identitäten', 'bezeichne']
+==german======> ['Diese', 'horizontale Identitäten']
 
 
 These are identities that are alien to your parents and that you have to discover when you get to see them in peers .
 Das sind Identitäten , die Ihren Eltern fremd sind und die man dann selbst im Umgang mit Gleichgesinnten entdecken muss .
-
-
-Unannotated sentence pair
+==Some EN mentions in DE:
+==english=====> ['identities that are alien to your parents', 'them', 'identities', 'that', 'that', 'These']
+==aligned_to==> ['Identitäten , die Ihren Eltern fremd sind', 'selbst', 'Identitäten', ',', 'die', 'Das']
+==german======> ['Das', 'die', 'Identitäten', 'die', 'Ihren']
 
 
 And those identities , those horizontal identities , people have almost always tried to cure .
 Und diese Identitäten , diese horizontalen Identitäten , haben Menschen seit jeher zu heilen versucht .
-
-
-Matching mentions:
-['diese Identitäten', 'diese horizontalen Identitäten']
+==All EN mentions in DE:
+==english=====> ['those identities', 'those horizontal identities']
+==aligned_to==> ['diese Identitäten', 'diese horizontalen Identitäten']
+==german======> ['diese Identitäten', 'diese horizontalen Identitäten']
 
 
 And I wanted to look at what the process is through which people who have those identities come to a good relationship with them .
 Ich wollte also sehen , wie der Prozess aussieht , mit dem es Leuten , die solche Identitäten besitzen , gelingt , sich mit ihnen zu arrangieren .
-
-
-Unannotated sentence pair
+==Some EN mentions in DE:
+==english=====> ['them', 'those identities', 'people', 'who']
+==aligned_to==> ['ihnen', 'solche Identitäten', 'Leuten', 'Leuten , die']
+==german======> ['solche Identitäten', 'ihnen', 'die', 'Leuten', 'dem', 'der Prozess']
 
 
 And it seemed to me that there were three levels of acceptance that needed to take place .
 Und es schien , dass es drei Stufen der Akzeptanz gibt , die alle zum Tragen kommen mussten .
-
-
-Unannotated sentence pair
+==Some EN mentions in DE:
+==english=====> ['it']
+==aligned_to==> ['es']
+==german======> ['drei Stufen der Akzeptanz', 'die', 'es']
 
 
 There 's self-acceptance , there 's family acceptance , and there 's social acceptance .
 Da war die Eigenakzeptanz , die Akzeptanz der Familie und die gesellschaftliche Akzeptanz .
-
-
-Mentions only found in German:
-['war Akzeptanz der Akzeptanz .']
+==> Mentions not annotated in German
+["'s family acceptance social acceptance"]
 
 
 And they do n't always coincide .
 Und die drei überschneiden sich nicht immer .
-
-
-Not found matching mentions:
-['die drei']
+==None EN mentions in DE:
+==english=====> ['they']
+==aligned_to==> ['die']
+==german======> ['die drei']
 
 
 And a lot of the time , people who have these conditions are very angry because they feel as though their parents do n't love them , when what actually has happened is that their parents do n't accept them .
 Oft ist es so , dass die Betroffenen voller Wut sind , weil sie das Gefühl haben , dass ihre Eltern sie nicht lieben , dabei ist es in Wahrheit nur so , dass ihre Eltern sie nicht akzeptieren .
-
-
-Unannotated sentence pair
+==Some EN mentions in DE:
+==english=====> ['people who have these conditions', 'they', 'them', 'them', 'their', 'their', 'who', 'people']
+==aligned_to==> ['die Betroffenen voller Wut haben', 'sie', 'sie', 'sie', 'ihre', 'ihre', 'die Betroffenen', 'Betroffenen']
+==german======> ['sie', 'die Betroffenen', 'sie', 'ihre', 'ihre', 'sie']
 
 
 Love is something that ideally is there unconditionally throughout the relationship between a parent and a child .
 Liebe ist etwas , das im Idealfall bedingungslos in der Beziehung zwischen Eltern und Kind existiert .
-
-
-Unannotated sentence pair
+==> Unannotated sentence pair
 
 
 But acceptance is something that takes time .
 Aber Akzeptanz ist etwas , das seine Zeit braucht .
-
-
-Matching mentions:
-['Akzeptanz']
+==All EN mentions in DE:
+==english=====> ['acceptance']
+==aligned_to==> ['Akzeptanz']
+==german======> ['Akzeptanz']
 
 
 It always takes time .
 Es braucht immer Zeit .
-
-
-Matching mentions:
-['Es']
+==All EN mentions in DE:
+==english=====> ['It']
+==aligned_to==> ['Es']
+==german======> ['Es']
 
 
 One of the dwarfs I got to know was a guy named Clinton Brown .
 Einer der kleinwüchsigen Männer , die ich kennenlernte , war Clinton Brown .
-
-
-Not found matching mentions:
-['der kleinwüchsigen Männer', 'die', 'Clinton Brown']
+==None EN mentions in DE:
+==english=====> ['Clinton Brown']
+==aligned_to==> ['Clinton Brown']
+==german======> ['der kleinwüchsigen Männer', 'die', 'Clinton Brown']
 
 
 When he was born , he was diagnosed with diastrophic dwarfism , a very disabling condition , and his parents were told that he would never walk , he would never talk , he would have no intellectual capacity , and he would probably not even recognize them .
 Als er geboren wurde , wurde diastrophischer Zwergwuchs bei ihm diagnostiziert , ein sehr behindernder Zustand , und die Ärzte sagten seinen Eltern , er würde niemals gehen oder sprechen lernen , keine intellektuellen Fähigkeiten entwickeln , und sie wahrscheinlich nicht einmal erkennen .
-
-
-Unannotated sentence pair
+==Some EN mentions in DE:
+==english=====> ['he', 'he', 'he', 'his', 'he', 'he', 'he', 'them', 'his parents']
+==aligned_to==> ['', '', 'sie', 'seinen', 'er', 'ihm', 'er', '', 'seinen Eltern']
+==german======> ['seinen', 'ihm', 'er', 'er', 'seinen Eltern', 'sie']
 
 
 And it was suggested to them that they leave him at the hospital so that he could die there quietly .
 Man empfahl ihnen , ihren Sohn im Krankenhaus zurückzulassen , sodass er dort in Ruhe sterben konnte .
-
-
-Not found matching mentions:
-['er', 'ihren Sohn', 'ihnen', 'ihren', 'ihren Sohn im Krankenhaus zurückzulassen']
+==None EN mentions in DE:
+==english=====> ['it', 'him', 'he', 'they', 'them', 'leave him at the hospital']
+==aligned_to==> ['Man', 'zurückzulassen', 'er', 'ihren', 'ihnen', 'zurückzulassen im Krankenhaus']
+==german======> ['er', 'ihren Sohn', 'ihnen', 'ihren', 'ihren Sohn im Krankenhaus zurückzulassen']
 
 
 And his mother said she was n't going to do it .
 Und seine Mutter sagte , dass sie das nicht tun würde .
-
-
-Unannotated sentence pair
+==Some EN mentions in DE:
+==english=====> ['his', 'she', 'his mother', 'it']
+==aligned_to==> ['seine', 'sie', 'seine Mutter', 'das']
+==german======> ['seine', 'sie', 'seine Mutter', 'das']
 
 
 And she took her son home .
 Sie nahm ihren Sohn mit nach Hause .
-
-
-Not found matching mentions:
-['ihren Sohn', 'ihren', 'Sie']
+==None EN mentions in DE:
+==english=====> ['she', 'her']
+==aligned_to==> ['Sie', 'ihren']
+==german======> ['ihren Sohn', 'ihren', 'Sie']
 
 
 And even though she did n't have a lot of educational or financial advantages , she found the best doctor in the country for dealing with diastrophic dwarfism , and she got Clinton enrolled with him .
 Und obwohl sie aus erzieherischer oder finanzieller Sicht nicht sehr begünstigt war , fand sie den besten Arzt im Land für die Behandlung von diastrophischem Zwergwuchs , und übergab ihn in seine medizinische Obhut .
-
-
-Not found matching mentions:
-['ihn', 'den besten Arzt im Land für die Behandlung von diastrophischem Zwergwuchs', 'seine', 'sie', 'sie']
+==None EN mentions in DE:
+==english=====> ['Clinton', 'she', 'she', 'she', 'him', 'the best doctor in the country for dealing with diastrophic dwarfism']
+==aligned_to==> ['', 'sie', '', 'sie', 'ihn', 'den besten Arzt im Land für Behandlung von diastrophischem Zwergwuchs']
+==german======> ['ihn', 'den besten Arzt im Land für die Behandlung von diastrophischem Zwergwuchs', 'seine', 'sie', 'sie']
 
 
 And in the course of his childhood , he had 30 major surgical procedures .
 Im Laufe seiner Kindheit musste er sich 30 größeren chirurgischen Eingriffen unterziehen .
-
-
-Unannotated sentence pair
+==Some EN mentions in DE:
+==english=====> ['his', 'he']
+==aligned_to==> ['seiner', 'er']
+==german======> ['er', 'seiner', 'seiner Kindheit', '30 größeren chirurgischen Eingriffen']
 
 
 And he spent all this time stuck in the hospital while he was having those procedures , as a result of which he now can walk .
 Und er verbrachte diese ganze Zeit ausschließlich im Krankenhaus , während er sich diesen Behandlungen unterzog , aufgrund derer er heute gehen kann .
-
-
-Unannotated sentence pair
+==Some EN mentions in DE:
+==english=====> ['he', 'he', 'he']
+==aligned_to==> ['er', 'er', 'er']
+==german======> ['er', 'er', 'er', 'sich', 'diese ganze Zeit', 'diesen Behandlungen', 'derer']
 
 
 And while he was there , they sent tutors around to help him with his school work .
 Während er dort war , schickten sie Nachhilfelehrer , um ihm bei seinen Hausaufgaben zu helfen .
-
-
-Unannotated sentence pair
+==Some EN mentions in DE:
+==english=====> ['his', 'him', 'he', 'they']
+==aligned_to==> ['seinen', 'ihm', 'er', 'sie']
+==german======> ['ihm', 'er', 'seinen']
 
 
 And he worked very hard because there was nothing else to do .
 Und er arbeitete sehr hart , weil es sonst nicht viel zu tun gab .
-
-
-Matching mentions:
-['er']
+==All EN mentions in DE:
+==english=====> ['he']
+==aligned_to==> ['er']
+==german======> ['er']
 
 
 And he ended up achieving at a level that had never before been contemplated by any member of his family .
 Und am Ende schaffte er es auf ein Bildungsniveau , das niemand in seiner Familie je zuvor in Erwägung gezogen hatte .
-
-
-Not found matching mentions:
-['seiner', 'er', 'das', 'ein Bildungsniveau']
+==None EN mentions in DE:
+==english=====> ['his', 'he']
+==aligned_to==> ['seiner', 'er']
+==german======> ['seiner', 'er', 'das', 'ein Bildungsniveau']
 
 
 He was the first one in his family , in fact , to go to college , where he lived on campus and drove a specially-fitted car that accommodated his unusual body .
 Tatsächlich war er der Erste in seiner Familie , der an einer Universität studierte , wo er auf dem Campus lebte und ein speziell für ihn ausgestattetes Auto fuhr , das seinem ungewöhnlichen Körper angepasst war .
-
-
-Unannotated sentence pair
+==Some EN mentions in DE:
+==english=====> ['his', 'his', 'He', 'he']
+==aligned_to==> ['seiner', 'seinem', 'Tatsächlich', 'er']
+==german======> ['er', 'ihn', 'er', 'seiner', 'seinem', 'der', 'der Erste in seiner Familie', 'ein speziell für ihn ausgestattetes Auto', 'das']
 
 
 And his mother told me this story of coming home one day -- and he went to college nearby -- and she said , `` I saw that car , which you can always recognize , in the parking lot of a bar , '' she said . `` And I thought to myself , they 're six feet tall , he 's three feet tall .
 Seine Mutter erzählte mir die Geschichte , als sie nach Hause kam – und er besuchte die örtliche Universität – Sie sagte : " Ich sah sein Auto , das man immer erkannte , auf dem Parkplatz vor einer Bar . " " Und ich dachte : Die sind 1,80 Meter groß und er misst nicht einmal einen Meter .
-
-
-Unannotated sentence pair
+==Some EN mentions in DE:
+==english=====> ['his', 'he', 'he', 'his mother', 'she', 'she', 'they']
+==aligned_to==> ['Seine', 'er', 'er', 'Seine Mutter', 'Sie', '', 'sind']
+==german======> ['Seine', 'er', 'sein', 'er', 'Seine Mutter', 'sie', 'Sie', 'sein Auto', 'das']
 
 
 Two beers for them is four beers for him . ''
 Zwei Bier für sie , sind vier Bier für ihn . "
-
-
-Not found matching mentions:
-['ihn']
+==None EN mentions in DE:
+==english=====> ['him', 'them']
+==aligned_to==> ['ihn', 'sie']
+==german======> ['ihn']
 
 
 She said , `` I knew I could n't go in there and interrupt him , but I went home , and I left him eight messages on his cell phone . ''
 Sie sagte : " Ich wusste , dass ich dort nicht reingehen konnte , um ihn zu stoppen , aber ich fuhr heim und hinterließ ihm acht Nachrichten auf seinem Handy . "
-
-
-Unannotated sentence pair
+==Some EN mentions in DE:
+==english=====> ['his', 'him', 'him', 'She']
+==aligned_to==> ['seinem', 'ihn', 'ihm', 'Sie']
+==german======> ['ihn', 'ihm', 'seinem', 'Sie']
 
 
 She said , `` And then I thought , if someone had said to me when he was born that my future worry would be that he 'd go drinking and driving with his college buddies -- `` And I said to her , `` What do you think you did that helped him to emerge as this charming , accomplished , wonderful person ? ''
 Sie sagte : " Und dann dachte ich , wenn mir jemand , als er geboren wurde , gesagt hätte , dass meine zukünftige Sorge wäre , dass er angeheitert mit seinen College-Freunden rumfährt – " Und ich fragte sie : " Was denkst du hast du gemacht , das ihn zu dieser charmanten , versierten und wunderbaren Person heranwachsen ließ ? "
-
-
-Unannotated sentence pair
+==Some EN mentions in DE:
+==english=====> ['his', 'he', 'him', 'he', 'She', 'her']
+==aligned_to==> ['seinen', 'er', 'ihn', 'er', 'Sie', 'sie']
+==german======> ['er', 'seinen', 'er', 'ihn', 'Sie', 'sie']
 
 
 And she said , `` What did I do ? I loved him , that 's all .
 Und sie sagte : " Was ich gemacht habe ? Ich habe ihm all meine Liebe geschenkt , das ist alles .
-
-
-Unannotated sentence pair
+==Some EN mentions in DE:
+==english=====> ['him', 'she']
+==aligned_to==> ['ihm', 'sie']
+==german======> ['ihm', 'sie', 'das', 'Ich habe ihm all meine Liebe geschenkt']
 
 
 Clinton just always had that light in him .
 Clinton hatte einfach immer dieses Leuchten an sich .
-
-
-Matching mentions:
-['Clinton', 'dieses Leuchten']
+==All EN mentions in DE:
+==english=====> ['that light', 'Clinton', 'him']
+==aligned_to==> ['dieses Leuchten', 'Clinton', 'Leuchten']
+==german======> ['Clinton', 'dieses Leuchten']
 
 
 And his father and I were lucky enough to be the first to see it there . ''
 Und sein Vater und ich hatten das große Glück , die ersten zu sein , die es zu sehen bekamen . "
-
-
-Unannotated sentence pair
+==Some EN mentions in DE:
+==english=====> ['it', 'his']
+==aligned_to==> ['es', 'sein']
+==german======> ['sein', 'die ersten', 'die', 'es']
 
 
 I 'm going to quote from another magazine of the '60s .
 Ich möchte nun etwas aus einem weiteren Magazin aus den 60ern zitieren .
-
-
-Mentions only found in German:
-['weiteren Magazin aus den 60ern']
+==> Mentions not annotated in German
+["another magazine of the '60s"]
 
 
 This one is from 1968 -- The Atlantic Monthly , voice of liberal America -- written by an important bioethicist .
 Dieses stammt von 1968 – aus dem Atlantic Monthly , der Stimme des Liberalen Amerikas – geschrieben von einem bedeutenden Bioethiker .
-
-
-Not found matching mentions:
-['Dieses', 'einem bedeutenden Bioethiker']
+==None EN mentions in DE:
+==english=====> ['an important bioethicist', 'This one']
+==aligned_to==> ['einem bedeutenden Bioethiker', 'Dieses stammt']
+==german======> ['Dieses', 'einem bedeutenden Bioethiker']
 
 
 He said , `` There is no reason to feel guilty about putting a Down syndrome child away , whether it is put away in the sense of hidden in a sanitarium or in a more responsible , lethal sense .
 Er sagte : " Es gibt keinen Grund , sich schuldig zu fühlen , wenn man ein Kind mit Down-Syndrom weggibt , egal , ob es sich dabei um ein " Weggeben " im Sinne von " in einem Heim verstecken " handelt , oder ein " Weggeben " in einem noch verantwortungsbewussteren , todbringenden Sinne .
-
-
-Unannotated sentence pair
+==Some EN mentions in DE:
+==english=====> ['a Down syndrome child', 'it', 'He', 'putting a Down syndrome child away']
+==aligned_to==> ['ein Kind mit Down-Syndrom', 'es', 'Er', 'wenn man ein Kind mit Down-Syndrom weggibt']
+==german======> ['es', 'Er', 'ein " Weggeben']
 
 
 It is sad , yes -- dreadful . But it carries no guilt .
 Es ist traurig , ja – und schrecklich . Aber es entbehrt jeder Schuld .
-
-
-Unannotated sentence pair
+==Some EN mentions in DE:
+==english=====> ['It', 'it']
+==aligned_to==> ['Es', 'es']
+==german======> ['Es', 'es']
 
 
 True guilt arises only from an offense against a person , and a Down 's is not a person . ''
 Wahre Schuld ergibt sich nur aus einer Straftat gegen eine Person , und jemand mit Down-Syndrom ist keine Person . "
-
-
-Unannotated sentence pair
+==> Unannotated sentence pair
 
 
 There 's been a lot of ink given to the enormous progress that we 've made in the treatment of gay people .
 Es wurde schon viel über den enormen Fortschritt geschrieben , den wir gemacht haben , wenn es um die Behandlung von homosexuellen Menschen geht .
-
-
-Not found matching mentions:
-['es', 'den', 'den enormen Fortschritt']
+==None EN mentions in DE:
+==english=====> ['the enormous progress', 'that']
+==aligned_to==> ['den enormen Fortschritt', ',']
+==german======> ['es', 'den', 'den enormen Fortschritt']
 
 
 The fact that our attitude has changed is in the headlines every day .
 Den Beweis , dass sich unsere Einstellung geändert hat , sehen wir täglich in den Schlagzeilen .
-
-
-Unannotated sentence pair
+==> Unannotated sentence pair
 
 
 But we forget how we used to see people who had other differences , how we used to see people who were disabled , how inhuman we held people to be .
 Aber wir vergessen , wie wir Menschen betrachtet haben , die " anders " waren , wie wir Menschen mit einer Behinderung angesehen haben , und für wie unmenschlich wir sie gehalten haben .
-
-
-Not found matching mentions:
-['Menschen', 'sie', 'Menschen mit einer Behinderung', 'die']
+==None EN mentions in DE:
+==english=====> ['people', 'who', 'people', 'who']
+==aligned_to==> ['Menschen', ',', 'Menschen', '']
+==german======> ['Menschen', 'sie', 'Menschen mit einer Behinderung', 'die']
 
 
 And the change that 's been accomplished there , which is almost equally radical , is one that we pay not very much attention to .
 Der Wandel , den wir hier herbeigeführt haben , der in sich fast genauso radikal ist , ist einer , dem wir nicht sehr viel Aufmerksamkeit schenken .
-
-
-Unannotated sentence pair
+==Some EN mentions in DE:
+==english=====> ['change', 'that', 'one', 'that']
+==aligned_to==> ['Wandel', ',', 'einer', ', dem']
+==german======> ['Der Wandel', 'der', 'den', 'dem', 'einer']
 
 
 One of the families I interviewed , Tom and Karen Robards , were taken aback when , as young and successful New Yorkers , their first child was diagnosed with Down syndrome .
 Eine der Familien , die ich interviewte , Tom und Karen Robards , zwei junge und erfolgreiche New Yorker , waren zutiefst erstaunt , als ihr erstes Kind mit Down-Syndrom diagnostiziert wurde .
-
-
-Not found matching mentions:
-['Tom und', 'Karen Robards', 'ihr', 'zwei junge und erfolgreiche New Yorker', 'die', 'der Familien', 'ihr erstes Kind']
+==None EN mentions in DE:
+==english=====> ['Tom and Karen Robards', 'their', 'their first child']
+==aligned_to==> ['Tom und Karen Robards zwei', 'ihr', 'ihr erstes Kind']
+==german======> ['Tom und', 'Karen Robards', 'ihr', 'zwei junge und erfolgreiche New Yorker', 'die', 'der Familien', 'ihr erstes Kind']
 
 
 They thought the educational opportunities for him were not what they should be , and so they decided they would build a little center -- two classrooms that they started with a few other parents -- to educate kids with D.S .
 Sie waren der Meinung , die Bildungschancen für ihn waren nicht so , wie sie sein sollten , und so beschlossen sie , ein kleines Zentrum zu bauen – zwei Klassenzimmer , die sie zusammen mit ein paar Eltern gründeten , um Kinder mit Down Syndrom zu unterrichten .
-
-
-Unannotated sentence pair
+==Some EN mentions in DE:
+==english=====> ['they', 'They', 'they', 'they', 'him', 'a little center', 'they', 'the educational opportunities']
+==aligned_to==> ['so', 'Sie', 'sie', 'sie', 'ihn', 'kleines Zentrum ein', 'sie', 'die Bildungschancen']
+==german======> ['Sie', 'sie', 'sie', 'ihn', 'ein kleines Zentrum', 'die', 'zwei Klassenzimmer', 'sie', 'die Bildungschancen']
 
 
 And over the years , that center grew into something called the Cooke Center , where there are now thousands upon thousands of children with intellectual disabilities who are being taught .
 Und über die Jahre entwickelte sich dieses Zentrum zum sogenannten Cooke-Center , wo heute Tausende und Abertausende von Kindern mit geistiger Behinderung unterrichtet werden .
-
-
-Not found matching mentions:
-['dieses Zentrum']
+==None EN mentions in DE:
+==english=====> ['that center']
+==aligned_to==> ['dieses Zentrum']
+==german======> ['dieses Zentrum']
 
 
 In the time since that Atlantic Monthly story ran , the life expectancy for people with Down syndrome has tripled .
 In der Zeit , die seit jenem Atlantic Monthly Artikel vergangen ist , hat sich die Lebenserwartung für Menschen mit Down-Syndrom verdreifacht .
-
-
-Mentions only found in English:
-['the time', 'that']
+==> Mentions not annotated in German
+['der Zeit', 'die']
 
 
 The experience of Down syndrome people includes those who are actors , those who are writers , some who are able to live fully independently in adulthood .
 Unter den Menschen mit Down-Syndrom finden sich heute Schauspieler , Schriftsteller , und einige , die im Erwachsenenalter ganz selbständig leben können .
-
-
-Not found matching mentions:
-['die', 'einige', 'Menschen mit Down-Syndrom']
+==None EN mentions in DE:
+==english=====> ['some', 'Down syndrome people', 'those', 'those', 'The experience of Down syndrome people includes those who are actors , those who are writers , some who are able to live fully independently in adulthood']
+==aligned_to==> ['einige', 'Menschen Down-Syndrom', 'den', '', 'Unter den Menschen mit Down-Syndrom finden sich heute Schauspieler , Schriftsteller , einige , die im Erwachsenenalter ganz selbständig leben können']
+==german======> ['die', 'einige', 'Menschen mit Down-Syndrom']
 
 
 The Robards had a lot to do with that .
 Vieles davon verdanken sie den Robards .
-
-
-Not found matching mentions:
-['sie', 'den Robards']
+==None EN mentions in DE:
+==english=====> ['that']
+==aligned_to==> ['Robards']
+==german======> ['sie', 'den Robards']
 
 
 And I said , `` Do you regret it ?
 Und ich fragte sie : " Bedauert ihr etwas ?
-
-
-Not found matching mentions:
-['sie']
+==None EN mentions in DE:
+==english=====> ['it']
+==aligned_to==> ['ihr']
+==german======> ['sie']
 
 
 Do you wish your child did n't have Down syndrome ?
 Wünschtet ihr , euer Sohn würde nicht an Down-Syndrom leiden ?
-
-
-Not found matching mentions:
-['an Down-Syndrom leiden']
+==None EN mentions in DE:
+==english=====> ['Down syndrome']
+==aligned_to==> ['Down-Syndrom leiden an']
+==german======> ['an Down-Syndrom leiden']
 
 
 Do you wish you 'd never heard of it ? ''
 Wünschtet ihr , ihr hättet nie davon gehört ? "
-
-
-Mentions only found in German:
-['?']
+==> Mentions not annotated in German
+['it']
 
 
 And interestingly his father said , `` Well , for David , our son , I regret it , because for David , it 's a difficult way to be in the world , and I 'd like to give David an easier life .
 Und interessanterweise sagte sein Vater : " Für David , unseren Sohn , bedauere ich es , denn für ihn ist es kein leichtes Dasein in dieser Welt , und ich würde ihm gerne ein leichteres Leben schenken .
-
-
-Not found matching mentions:
-['ihm', 'ihn', 'David', 'es']
+==None EN mentions in DE:
+==english=====> ['it', 'it', 'his', 'David', 'David', 'David']
+==aligned_to==> ['ihn', 'es', 'sein', 'David', '', 'leichteres']
+==german======> ['ihm', 'ihn', 'David', 'es']
 
 
 But I think if we lost everyone with Down syndrome , it would be a catastrophic loss . ''
 Aber , wenn wir alle Menschen mit Down-Syndrom verlören , wäre das ein katastrophaler Verlust . "
-
-
-Unannotated sentence pair
+==Some EN mentions in DE:
+==english=====> ['if we lost everyone with Down syndrome', 'it']
+==aligned_to==> ['wenn wir alle Menschen mit Down-Syndrom verlören', 'das']
+==german======> ['das', 'alle Menschen mit Down-Syndrom verlören', 'Down-Syndrom']
 
 
 And Karen Robards said to me , `` I 'm with Tom .
 Und Karen Robards sagte zu mir : " Ich stimme Tom zu .
-
-
-Unannotated sentence pair
+==> Unannotated sentence pair
 
 
 For David , I would cure it in an instant to give him an easier life .
 Für David , würde ich diese Krankheit sofort heilen , um ihm ein leichteres Leben zu ermöglichen .
-
-
-Unannotated sentence pair
+==Some EN mentions in DE:
+==english=====> ['it', 'David', 'him']
+==aligned_to==> ['diese', 'David', 'ihm']
+==german======> ['David', 'ihm']
 
 
 But speaking for myself -- well , I would never have believed 23 years ago when he was born that I could come to such a point -- speaking for myself , it 's made me so much better and so much kinder and so much more purposeful in my whole life , that speaking for myself , I would n't give it up for anything in the world . ''
 Aber wenn ich für mich spreche , dann hätte ich vor 23 Jahren , als er geboren wurde , nicht geglaubt , dass ich je an so weit kommen könnte – Mich persönlich hat es zu einer soviel besseren und liebenswürdigeren Person gemacht und meinem Leben so viel mehr Sinn gegeben , dass ich persönlich , es um nichts in der Welt aufgeben würde . "
-
-
-Not found matching mentions:
-['er', 'es', 'es']
+==None EN mentions in DE:
+==english=====> ['it', 'it', 'he']
+==aligned_to==> ['es', 'es', 'er']
+==german======> ['er', 'es', 'es']
 
 
 We live at a point when social acceptance for these and many other conditions is on the up and up .
 Wir leben in einer Zeit , in der die gesellschaftliche Akzeptanz für diese und viele andere Konditionen immer größer wird .
-
-
-Mentions only found in English:
-['acceptance', 'a point', 'other']
+==> Mentions not annotated in German
+['der', 'einer Zeit', 'diese']
 
 
 And yet we also live at the moment when our ability to eliminate those conditions has reached a height we never imagined before .
 Aber gleichzeitig sind wir an einem Punkt angelangt , an dem unsere Fähigkeit , diese Konditionen zu beseitigen ein Ausmaß erreicht hat , das einst unvorstellbar war .
-
-
-Mentions only found in English:
-['.', 'height we', 'at the', 'ability']
+==> Mentions not annotated in German
+['das', 'ein Ausmaß', 'einem Punkt', 'dem']
 
 
 Most deaf infants born in the United States now will receive Cochlear implants , which are put into the brain and connected to a receiver , and which allow them to acquire a facsimile of hearing and to use oral speech .
 Die meisten gehörlosen Kinder , die heute in den USA geboren werden , erhalten Cochlear-Implantate , die in das Gehirn eingesetzt und an einen Receiver angeschlossen werden , und deren mit Hilfe ihnen eine Form des Hörens und des Sprechens ermöglicht wird .
-
-
-Unannotated sentence pair
+==Some EN mentions in DE:
+==english=====> ['which', 'which', 'Cochlear implants', 'Most deaf infants', 'them']
+==aligned_to==> ['die', 'deren', 'Cochlear-Implantate', 'Die meisten gehörlosen Kinder', 'ihnen']
+==german======> ['deren', 'die', 'Cochlear-Implantate', 'ihnen', 'gehörlosen Kinder', 'die']
 
 
 A compound that has been tested in mice , BMN-111 , is useful in preventing the action of the achondroplasia gene .
 Ein Präparat , das an Mäusen getestet wurde , genannt BMN-111 , hilft dabei , die Wirkung des Achondroplasie-Gens zu hemmen .
-
-
-Unannotated sentence pair
+==Some EN mentions in DE:
+==english=====> ['A compound', 'that', 'BMN-111']
+==aligned_to==> ['Ein Präparat', ', das', 'genannt BMN-111 hilft dabei']
+==german======> ['BMN-111', 'das', 'Ein Präparat', 'dabei', 'die Wirkung des Achondroplasie-Gens zu hemmen']
 
 
 Achondroplasia is the most common form of dwarfism , and mice who have been given that substance and who have the achondroplasia gene , grow to full size .
 Achondroplasie ist die häufigste Form des Zwergwuchses , und Mäuse , die diesen Wirkstoff erhalten haben , und das Achondroplasie-Gen aufweisen , wachsen zu voller Größe heran .
-
-
-Unannotated sentence pair
+==Some EN mentions in DE:
+==english=====> ['that substance', 'mice', 'who', 'who']
+==aligned_to==> [', Wirkstoff', 'Mäuse', ', die', '']
+==german======> ['die', 'Mäuse', 'diesen Wirkstoff']
 
 
 Testing in humans is around the corner .
 Zu Testreihen am Menschen ist es nicht mehr weit .
-
-
-Mentions only found in English:
-['the']
+==> Mentions not annotated in German
+['es']
 
 
 There are blood tests which are making progress that would pick up Down syndrome more clearly and earlier in pregnancies than ever before , making it easier and easier for people to eliminate those pregnancies , or to terminate them .
 Es gibt Blut-Tests , die in der Entwicklung sind , mit denen das Down-Syndrom noch zuverlässiger und früher in der Schwangerschaft entdeckt werden kann , als je zuvor , und die es für die Menschen immer leichter machen , diese Schwangerschaften zu eliminieren , oder abzubrechen .
-
-
-Unannotated sentence pair
+==Some EN mentions in DE:
+==english=====> ['blood tests', 'which', 'progress', 'that', 'it', 'them', 'those pregnancies']
+==aligned_to==> ['Blut-Tests', 'denen', 'Entwicklung', ',', 'leichter', '', 'Schwangerschaften diese']
+==german======> ['die', 'die', 'denen', 'Blut-Tests']
 
 
 And so we have both social progress and medical progress .
 Und somit haben wir sowohl sozialen als auch medizinischen Fortschritt .
-
-
-Not found matching mentions:
-['als auch medizinischen Fortschritt', 'sozialen']
+==None EN mentions in DE:
+==english=====> ['social progress', 'and medical progress']
+==aligned_to==> ['sozialen', 'medizinischen Fortschritt']
+==german======> ['als auch medizinischen Fortschritt', 'sozialen']
 
 
 And I believe in both of them .
 Und ich glaube an beide .
-
-
-Not found matching mentions:
-['beide']
+==None EN mentions in DE:
+==english=====> ['them']
+==aligned_to==> ['beide']
+==german======> ['beide']
 
 
 I believe the social progress is fantastic and meaningful and wonderful , and I think the same thing about the medical progress .
 Ich empfinde den sozialen Fortschritt als fantastisch , bedeutungsvoll und wunderbar , und denke ebenso über den medizinischen Fortschritt .
+==> Mentions not annotated in German
+['the social progress the medical progress']
 
 
-Mentions only found in German:
+But I think it 's a tragedy when one of them does n't see the other .
+Aber ich denke , es ist von tragischem Ausmaß , wenn der eine den anderen ignoriert .
+==None EN mentions in DE:
+==english=====> ['them', 'it']
+==aligned_to==> ['tragischem', 'es']
+==german======> ['es']
+
+
+And when I see the way they 're intersecting in conditions like the three I 've just described , I sometimes think it 's like those moments in grand opera when the hero realizes he loves the heroine at the exact moment that she lies expiring on a divan .
+Und wenn ich sehe , wie sie sich überschneiden unter Umständen wie den dreien , die ich gerade beschrieben habe , dann fühle ich mich an jene Momente in der Oper erinnert , In denen der Held erkennt , dass er die Heldin liebt exakt an dem Punkt , als sie sterbend auf dem Diwan liegt .
+==Some EN mentions in DE:
+==english=====> ['they', 'it', 'he', 'the hero', 'the heroine', 'she']
+==aligned_to==> ['sie', '', 'er', 'der Held', 'die Heldin', 'Diwan']
+==german======> ['sie', 'die', 'den dreien', 'der Held', 'er', 'denen', 'jene Momente', 'sie', 'die Heldin']
+
+
+We have to think about how we feel about cures altogether .
+Wir müssen uns darüber klar werden , was wir über Heilungsversuche generell denken .
+==> Unannotated sentence pair
+
+
+And a lot of the time the question of parenthood is , what do we validate in our children , and what do we cure in them ?
+Oft ist die Frage , die wir uns als Eltern stellen müssen , was wir an unseren Kindern anerkennen , und was wir an ihnen heilen .
+==None EN mentions in DE:
+==english=====> ['our children', 'them']
+==aligned_to==> ['unseren Kindern', 'ihnen']
+==german======> ['ihnen', 'unseren Kindern', 'die Frage', 'die']
+
+
+Jim Sinclair , a prominent autism activist , said , `` When parents say ' I wish my child did not have autism , ' what they 're really saying is ' I wish the child I have did not exist and I had a different , non-autistic child instead . ' Read that again . This is what we hear when you mourn over our existence .
+Jim Sinclair , ein berühmter Autismus-Aktivist sagte einmal : " Wenn Eltern sagen ' Ich wünschte , mein Kind würde nicht an Autismus leiden ' sagen eigentlich , ' Ich wünschte , das Kind , das ich habe , würde nicht existieren und ich hätte ein anderes , nicht-autistisches Kind dafür . ' Lesen Sie es noch einmal . Das hören wir , wenn Sie unsere Existenz beklagen .
+==None EN mentions in DE:
+==english=====> ["' I wish the child I have did not exist and I had a different , non-autistic child instead . '", 'This', 'they', 'parents']
+==aligned_to==> ["' Ich wünschte das Kind ich habe nicht existieren und ich hätte ein anderes , nicht-autistisches Kind dafür . '", 'Das', '', 'Eltern']
+==german======> ['das', 'das Kind', 'Das', 'Ich wünschte , das Kind , das ich habe , würde nicht existieren und ich hätte ein anderes , nicht-autistisches Kind dafür', 'Sie', 'Eltern']
+
+
+This is what we hear when you pray for a cure -- that your fondest wish for us is that someday we will cease to be and strangers you can love will move in behind our faces . ''
+Das hören wir , wenn Sie um Heilung flehen – dass Ihr sehnlichster Wunsch für uns ist , dass wir eines Tages aufhören zu sein , und ein Fremder , den ihr lieben könnt , den Platz hinter unserem Gesicht einnimmt . "
+==None EN mentions in DE:
+==english=====> ['This', 'that your fondest wish for us is that someday we will cease to be and strangers you can love will move in behind our faces']
+==aligned_to==> ['Das', 'dass Ihr sehnlichster Wunsch für uns ist , dass wir eines Tages aufhören zu sein , und Fremder lieben könnt Platz hinter unserem Gesicht']
+==german======> ['Sie', 'Ihr', 'ein Fremder', 'den']
+
+
+It 's a very extreme point of view , but it points to the reality that people engage with the life they have and they do n't want to be cured or changed or eliminated .
+Es ist eine sehr extreme Sicht , aber sie verweist auf die Wirklichkeit , dass Menschen sich dem Leben verpflichten , das sie haben , und dass sie nicht geheilt , verändert oder ausgelöscht werden wollen .
+==Some EN mentions in DE:
+==english=====> ['it', 'It', 'they', 'they', 'people']
+==aligned_to==> ['sie', 'Es', 'sie', 'sie', 'Menschen']
+==german======> ['Es', 'sie', 'eine sehr extreme Sicht', 'das', 'dem Leben', 'Menschen', 'sie', 'sie']
+
+
+They want to be whoever it is that they 've come to be .
+Sie wollen die Person sein , zu der sie geworden sind .
+==Some EN mentions in DE:
+==english=====> ['it', 'they', 'They']
+==aligned_to==> ['', 'sie', 'Sie']
+==german======> ['Sie', 'die Person', 'sie', 'der']
+
+
+One of the families I interviewed for this project was the family of Dylan Klebold who was one of the perpetrators of the Columbine massacre .
+Eine der Familien , die ich für dieses Projekt interviewt habe , war die Familie von Dylan Klebold , einem der Täter des Columbine-Massakers .
+==Some EN mentions in DE:
+==english=====> ['the family of Dylan Klebold', 'Dylan Klebold', 'the Columbine massacre', 'the families I interviewed for this project']
+==aligned_to==> ['die Familie von Dylan Klebold', 'Dylan Klebold', 'des Columbine-Massakers', 'der Familien ich für dieses Projekt interviewt habe']
+==german======> ['der Familien , die ich für dieses Projekt interviewt habe', 'Dylan Klebold', 'die', 'der Familien', 'die Familie', 'des Columbine-Massakers']
+
+
+It took a long time to persuade them to talk to me , and once they agreed , they were so full of their story that they could n't stop telling it .
+Es dauerte lange , bis ich sie davon überzeugen konnte , mit mir zu sprechen , und als sie es taten , hatte sich ihre Geschichte so in ihnen angestaut , dass sie nicht aufhören konnten , sie zu erzählen .
+==Some EN mentions in DE:
+==english=====> ['they', 'they', 'their', 'them', 'they', 'their story', 'it', 'It']
+==aligned_to==> ['sich', 'sie', 'ihre', 'sie', 'sie es', 'ihre Geschichte', 'sie', 'Es']
+==german======> ['Es', 'sie', 'ihnen', 'ihre', 'sie', 'sie', 'ihre Geschichte', 'sie']
+
+
+And the first weekend I spent with them -- the first of many -- I recorded more than 20 hours of conversation .
+Am ersten gemeinsamen Wochenende – einem von vielen – zeichnete ich mehr als 20 Stunden an Gesprächsstoff auf .
+==Some EN mentions in DE:
+==english=====> ['them']
+==aligned_to==> ['']
+==german======> ['einem', 'ersten gemeinsamen Wochenende', 'vielen']
+
+
+And on Sunday night , we were all exhausted .
+Und am Sonntagabend waren wir alle erschöpft .
+==> Unannotated sentence pair
+
+
+We were sitting in the kitchen . Sue Klebold was fixing dinner .
+Wir saßen in der Küche . Sue Klebold machte Abendessen ,
+==None EN mentions in DE:
+==english=====> ['Sue Klebold']
+==aligned_to==> ['machte Sue Klebold']
+==german======> ['Sue Klebold']
+
+
+And I said , `` If Dylan were here now , do you have a sense of what you 'd want to ask him ? ''
+und ich sagte : " Wenn Dylan jetzt hier wäre , haben Sie eine Ahnung , was Sie ihn dann fragen würden ? "
+==Some EN mentions in DE:
+==english=====> ['Dylan', 'him']
+==aligned_to==> ['Dylan', 'ihn']
+==german======> ['ihn', 'Dylan']
+
+
+And his father said , `` I sure do .
+Und sein Vater sagte : " Oh ja !
+==> Unannotated sentence pair
+
+
+I 'd want to ask him what the hell he thought he was doing . ''
+Ich würde ihn fragen , was zum Teufel er sich dabei gedacht hat , so etwas zu tun . "
+==None EN mentions in DE:
+==english=====> ['he', 'he', 'him']
+==aligned_to==> ['so', 'er', 'ihn']
+==german======> ['er', 'ihn']
+
+
+And Sue looked at the floor , and she thought for a minute .
+Und Sue schaute auf den Boden und dachte eine Minute nach .
+==All EN mentions in DE:
+==english=====> ['she', 'Sue']
+==aligned_to==> ['dachte', 'Sue']
+==german======> ['Sue']
+
+
+And then she looked back up and said , `` I would ask him to forgive me for being his mother and never knowing what was going on inside his head . ''
+Dann schaute sie auf und sagte : " Ich würde ihn bitten , mir zu verzeihen , seine Mutter gewesen zu sein , und keine Ahnung davon gehabt zu haben , was in seinem Kopf vor sich ging . "
+==Some EN mentions in DE:
+==english=====> ['his', 'his', 'him', 'she']
+==aligned_to==> ['seine', 'seinem', 'ihn', 'schaute sie']
+==german======> ['sie', 'seine', 'ihn', 'seinem']
+
+
+When I had dinner with her a couple of years later -- one of many dinners that we had together -- she said , `` You know , when it first happened , I used to wish that I had never married , that I had never had children .
+Als ich mich ein paar Jahre später erneut mit ihr zum Abendessen traf – eines von vielen Abendessen , die wir gemeinsam verbrachten – sagte sie : " Weißt du , als es zuerst passiert ist , wünschte ich , dass ich nie geheiratet und nie Kinder gehabt hätte .
+==None EN mentions in DE:
+==english=====> ['it', 'her', 'she']
+==aligned_to==> ['es', 'ihr', 'sie']
+==german======> ['ihr', 'sie', 'Abendessen', 'die', 'es']
+
+
+If I had n't gone to Ohio State and crossed paths with Tom , this child would n't have existed and this terrible thing would n't have happened .
+Wenn ich nie die Ohio State Universität besucht und dort Tom kennengelernt hätte , hätte dieses Kind nicht existiert und diese schreckliche Sache wäre nie passiert .
+==None EN mentions in DE:
+==english=====> ['this terrible thing']
+==aligned_to==> ['diese schreckliche Sache']
+==german======> ['dieses Kind', 'diese schreckliche Sache']
+
+
+But I 've come to feel that I love the children I had so much that I do n't want to imagine a life without them .
+Aber ich habe für mich herausgefunden , dass ich die Kinder , die ich geboren habe , so liebe , dass ich mir ein Leben ohne sie nicht vorstellen möchte .
+==None EN mentions in DE:
+==english=====> ['the children I had', 'them']
+==aligned_to==> ['die Kinder ich habe', 'sie']
+==german======> ['sie', 'die', 'die Kinder']
+
+
+I recognize the pain they caused to others , for which there can be no forgiveness , but the pain they caused to me , there is , '' she said .
+Ich erkenne den Schmerz an , den sie anderen zugefügt haben , und für den es keine Vergebung gibt , aber für den Schmerz , den sie mir verursacht haben , gibt es Vergebung " , sagte sie .
+==None EN mentions in DE:
+==english=====> ['they', 'they', 'there can be no forgiveness', 'there is', 'she']
+==aligned_to==> ['sie', 'sie', 'keine Vergebung gibt es', 'es gibt', 'sie']
+==german======> ['es', 'sie', 'den', 'den Schmerz', 'den', 'sie', 'sie', 'den', 'den Schmerz']
+
+
+`` So while I recognize that it would have been better for the world if Dylan had never been born , I 've decided that it would not have been better for me . ''
+" Während ich es also anerkenne , dass es für die Welt besser gewesen wäre , wenn Dylan nie geboren worden wäre , bin ich zu dem Schluss gekommen , dass es für mich nicht besser gewesen wäre . "
+==None EN mentions in DE:
+==english=====> ['it', 'if Dylan had never been born', 'it']
+==aligned_to==> ['es', 'wenn Dylan nie geboren worden bin', 'es']
+==german======> ['es', 'es', 'wenn Dylan nie geboren worden wäre', 'dass es für die Welt besser gewesen wäre , wenn Dylan nie geboren worden wäre', 'es']
+
+
+I thought it was surprising how all of these families had all of these children with all of these problems , problems that they mostly would have done anything to avoid , and that they had all found so much meaning in that experience of parenting .
+Ich war erstaunt darüber , wie all diese Familien all diese Kinder mit all diesen Problemen hatten , Probleme , für die sie meist alles getan hätten , um sie zu vermeiden , und wie sie dennoch so viel Sinn aus dieser Erfahrung als Eltern gezogen hatten .
+==Some EN mentions in DE:
+==english=====> ['problems', 'that', 'it', 'all of these families', 'they', 'they']
+==aligned_to==> ['Probleme', ', für', 'sie', 'Familien all diese', 'sie', 'sie']
+==german======> ['diese Familien', 'sie', 'sie', 'sie', 'die', 'Probleme']
+
+
+And then I thought , all of us who have children love the children we have , with their flaws .
+Und dann dachte ich , dass wir alle , die wir Kinder haben , unsere Kinder mit all ihren Schwächen lieben .
+==Some EN mentions in DE:
+==english=====> ['their', 'the children we have']
+==aligned_to==> ['ihren', 'haben unsere Kinder']
+==german======> ['ihren', 'unsere Kinder']
+
+
+If some glorious angel suddenly descended through my living room ceiling and offered to take away the children I have and give me other , better children -- more polite , funnier , nicer , smarter -- I would cling to the children I have and pray away that atrocious spectacle .
+Wenn ein leuchtender Engel plötzlich durch die Wohnzimmerdecke geschwebt käme , und mir anböte , meine Kinder mitzunehmen , um sie gegen andere , bessere Kinder einzutauschen – höflicher , lustiger , schöner und intelligenter – ich würde mich an meine Kinder klammern und das grausame Spektakel wegzubeten versuchen .
+==> Mentions not annotated in German
+['sie', 'meine Kinder']
+
+
+And ultimately I feel that in the same way that we test flame-retardant pajamas in an inferno to ensure they wo n't catch fire when our child reaches across the stove , so these stories of families negotiating these extreme differences reflect on the universal experience of parenting , which is always that sometimes you look at your child and you think , where did you come from ?
+Und letztendlich denke ich , dass genauso wie wir flammfeste Schlafanzüge in einem Inferno testen , um sicherzustellen , dass sie nicht Feuer fangen , wenn unser Kind über den Herd langt , auch diese Geschichten von Familien , die diese extremen Unterschiede zu überwinden haben , die universelle Erfahrung des Elternseins widerspiegeln , welche immer darauf hinausläuft , dass man manchmal dein Kind ansiehst und sich fragt : " Von welchem Planeten kommst du ? "
+==None EN mentions in DE:
+==english=====> ['flame-retardant pajamas', 'they', 'the universal experience of parenting', 'which']
+==aligned_to==> ['flammfeste Schlafanzüge', 'sie', 'die universelle Erfahrung des Elternseins', 'welche']
+==german======> ['die', 'Familien', 'die universelle Erfahrung des Elternseins', 'welche', 'sie', 'flammfeste Schlafanzüge']
+
+
+It turns out that while each of these individual differences is siloed -- there are only so many families dealing with schizophrenia , there are only so many families of children who are transgender , there are only so many families of prodigies -- who also face similar challenges in many ways -- there are only so many families in each of those categories -- but if you start to think that the experience of negotiating difference within your family is what people are addressing , then you discover that it 's a nearly universal phenomenon .
+Es stellt sich heraus , dass obwohl jeder dieser Unterschiede in sich isoliert ist – nicht jede Familie hat ein schizophrenes Familienmitglied , nicht jede ein Kind , das transgender , oder hochbegabt ist , was an die Eltern oft ähnliche Herausforderungen stellt – in jeder dieser Kategorien gibt es nur eine handvoll Familien – aber wenn Sie anfangen zu denken , dass die Erfahrung , Unterschiede in der Familie zu überwinden , das ist , was Menschen ansprechen , dann entdecken Sie , dass es ein nahezu universelles Phänomen ist .
+==Some EN mentions in DE:
+==english=====> ['those categories', 'with are of', 'It', 'the experience of negotiating difference within your family', 'it']
+==aligned_to==> ['dieser Kategorien', 'ist an', 'Es', 'Erfahrung Unterschiede in der Familie die', 'es']
+==german======> ['Es', 'Unterschiede in der Familie zu überwinden', 'es', 'das', 'ein Kind', 'dieser Kategorien', 'ein das oder', 'jede Familie', 'jede']
+
+
+Ironically , it turns out , that it 's our differences , and our negotiation of difference , that unite us .
+Ironischerweise sind es unsere Unterschiede , und unser Umgang mit ihnen , die uns zusammenbringen .
+==Some EN mentions in DE:
+==english=====> ['it', 'it']
+==aligned_to==> ['es', '']
+==german======> ['es', 'die', 'ihnen', 'unsere Unterschiede']
+
+
+I decided to have children while I was working on this project .
+Ich entschied mich selbst Vater zu werden , noch während ich an diesem Projekt arbeitete .
+==> Unannotated sentence pair
+
+
+And many people were astonished and said , `` But how can you decide to have children in the midst of studying everything that can go wrong ? ''
+Und viele Leute waren erstaunt und sagten : " Wie kannst du dich dazu entscheiden , Kinder zu haben , inmitten all deiner Studien über alles , was schiefgehen kann ? "
+==> Unannotated sentence pair
+
+
+And I said , `` I 'm not studying everything that can go wrong .
+Und ich sagte : " Ich untersuche nicht alles , was schiefgehen kann .
+==> Unannotated sentence pair
+
+
+What I 'm studying is how much love there can be , even when everything appears to be going wrong . ''
+Was ich herausfinden möchte ist , wieviel Liebe möglich ist , auch wenn alles schiefzugehen scheint . "
+==> Unannotated sentence pair
+
+
+I thought a lot about the mother of one disabled child I had seen , a severely disabled child who died through caregiver neglect .
+Ich dachte viel über die Mutter eines behinderten Kindes nach , das ich gesehen hatte , ein schwerst behindertes Kind , das infolge von Vernachlässigung durch die Betreuungsperson starb .
+==None EN mentions in DE:
+==english=====> ['a severely disabled child who died through caregiver neglect']
+==aligned_to==> ['ein schwerst behindertes Kind , Vernachlässigung durch Betreuungsperson starb']
+==german======> ['eines behinderten Kindes', 'ein schwerst behindertes Kind', 'das', 'das']
+
+
+And when his ashes were interred , his mother said , `` I pray here for forgiveness for having been twice robbed , once of the child I wanted and once of the son I loved . ''
+Und als seine Asche beigesetzt wurde , sagte seine Mutter : " Ich bitte hier um Vergebung darum , dass ich zweimal beraubt wurde , einmal des Kindes , das ich wollte , und einmal des geliebten Sohnes . "
+==Some EN mentions in DE:
+==english=====> ['his', 'his']
+==aligned_to==> ['seine', 'seine']
+==german======> ['des Kindes', 'seine', 'das', 'seine']
+
+
+And I figured it was possible then for anyone to love any child if they had the effective will to do so .
+Und da wurde mir klar , dass es für jeden möglich ist , jedes Kind zu lieben , solange er nur den festen Willen dazu hat .
+==None EN mentions in DE:
+==english=====> ['it']
+==aligned_to==> ['klar']
+==german======> ['er', 'jeden', 'jedes Kind zu lieben', 'dazu']
+
+
+So my husband is the biological father of two children with some lesbian friends in Minneapolis .
+Mein Mann ist der biologische Vater von zwei Kindern , die er mit lesbischen Freunden in Minneapolis hat .
+==> Mentions not annotated in German
+['die', 'zwei Kindern', 'Mein Mann', 'er']
+
+
+I had a close friend from college who 'd gone through a divorce and wanted to have children .
+Ich hatte eine enge Freundin aus Uni-Tagen , die eine Scheidung hinter sich hatte und Kinder wollte .
+==Some EN mentions in DE:
+==english=====> ['a close friend', 'who']
+==aligned_to==> ['eine enge Freundin', 'die Uni-Tagen ,']
+==german======> ['die', 'eine enge Freundin']
+
+
+And so she and I have a daughter , and mother and daughter live in Texas .
+Mit ihr habe ich also eine Tochter , und Mutter und Tochter leben in Texas .
+==None EN mentions in DE:
+==english=====> ['she']
+==aligned_to==> ['ihr']
+==german======> ['ihr']
+
+
+And my husband and I have a son who lives with us all the time of whom I am the biological father , and our surrogate for the pregnancy was Laura , the lesbian mother of Oliver and Lucy in Minneapolis .
+Mein Mann und ich haben einen Sohn zusammen , der durchgehend bei uns lebt , von dem ich der biologische Vater bin , und unsere Leihmutter für die Schwangerschaft Laura war , die lesbische Mutter von Oliver und Lucy in Minneapolis .
+==Some EN mentions in DE:
+==english=====> ['a son', 'who', 'whom']
+==aligned_to==> ['einen Sohn', ', der', 'dem']
+==german======> ['einen Sohn', 'der', 'dem', 'Mein Mann']
+
+
+So the shorthand is five parents of four children in three states .
+In Kurzform sind das fünf Eltern von vier Kindern in drei Staaten .
+==> Unannotated sentence pair
+
+
+And there are people who think that the existence of my family somehow undermines or weakens or damages their family .
+Und es gibt Menschen , die glauben , dass die Existenz meiner Familie in irgendeiner Weise ihre eigene Familie untergräbt , schwächt oder schädigt .
+==Some EN mentions in DE:
+==english=====> ['people', 'their', 'who']
+==aligned_to==> ['Menschen', 'ihre eigene', ', die']
+==german======> ['Menschen', 'ihre', 'die']
+
+
+And there are people who think that families like mine should n't be allowed to exist .
+Und es gibt Leute , die der Meinung sind , dass Familien wie die meine kein Recht haben sollten zu existieren .
+==Some EN mentions in DE:
+==english=====> ['people', 'who']
+==aligned_to==> ['Leute', ', die']
+==german======> ['die', 'Leute']
+
+
+And I do n't accept subtractive models of love , only additive ones .
+Und ich akzeptiere keine subtraktiven Modelle der Liebe , nur solche , die hinzufügend sind .
+==> Mentions not annotated in German
+['solche', 'subtraktiven Modelle der Liebe', 'die']
+
+
+And I believe that in the same way that we need species diversity to ensure that the planet can go on , so we need this diversity of affection and diversity of family in order to strengthen the ecosphere of kindness .
+Und ich glaube , dass genauso wie wir Artenvielfalt brauchen , um sicherzustellen , dass unser Planet weiter existieren kann , brauchen wir diese verschiedenen Formen von Zuneigung und Familie , um diese Ökosphäre von Güte zu stärken .
+==> Unannotated sentence pair
+
+
+The day after our son was born , the pediatrician came into the hospital room and said she was concerned .
+Ein Tag , nachdem unser Sohn geboren wurde , kam die Kinderärztin zu uns ins Krankenzimmer und sagte , sie wäre besorgt .
+==None EN mentions in DE:
+==english=====> ['our son', 'she', 'the pediatrician']
+==aligned_to==> ['unser Sohn', 'sie', 'die Kinderärztin']
+==german======> ['die Kinderärztin', 'sie', 'unser Sohn']
+
+
+He was n't extending his legs appropriately .
+Er würde seine Beine nicht richtig ausstrecken .
+==Some EN mentions in DE:
+==english=====> ['his', 'He', 'his legs', 'extending his legs']
+==aligned_to==> ['seine', 'Er', 'seine Beine', 'seine Beine']
+==german======> ['seine', 'Er', 'seine Beine nicht richtig ausstrecken', 'seine Beine']
+
+
+She said that might mean that he had brain damage .
+Sie sagte , das könne bedeuten , dass er Hirnschäden davongetragen hatte .
+==Some EN mentions in DE:
+==english=====> ['he', 'She']
+==aligned_to==> ['er', 'Sie']
+==german======> ['Sie', 'er', 'das']
+
+
+In so far as he was extending them , he was doing so asymmetrically , which she thought could mean that there was a tumor of some kind in action .
+Soweit er sie überhaupt ausstreckte , tat er das so ungleichmäßig , dass sie dachte , ein Tumor könnte möglicherweise dafür verantwortlich sein .
+==Some EN mentions in DE:
+==english=====> ['he', 'he', 'them', 'she', 'doing so']
+==aligned_to==> ['er', 'er', 'sie', 'sie', 'das so tat']
+==german======> ['ausstreckte', 'das', 'sie', 'er', 'er', 'sie', 'Soweit er sie überhaupt ausstreckte , tat er das so ungleichmäßig', 'dafür', 'ein Tumor']
+
+
+And he had a very large head , which she thought might indicate hydrocephalus .
+Und er hatte einen sehr großen Kopf , was , wie sie meinte , auf einen Wasserkopf hinweisen könnte .
+==Some EN mentions in DE:
+==english=====> ['he', 'she']
+==aligned_to==> ['er', 'sie']
+==german======> ['sie', 'er', 'einen Wasserkopf']
+
+
+And as she told me all of these things , I felt the very center of my being pouring out onto the floor .
+Und als sie mir all diese Dinge erzählte , fühlte ich für einen Moment , wie alles Leben aus mir wich .
+==All EN mentions in DE:
+==english=====> ['she']
+==aligned_to==> ['sie']
+==german======> ['sie']
+
+
+And I thought , here I had been working for years on a book about how much meaning people had found in the experience of parenting children who are disabled , and I did n't want to join their number .
+Ich dachte , da arbeitete ich nun seit Jahren an einem Buch darüber , wieviel Sinn Menschen aus ihrer Erfahrung als Eltern eines behinderten Kindes schöpften , und ich wollte ihrem Kreis nicht beitreten .
+==Some EN mentions in DE:
+==english=====> ['their', 'people']
+==aligned_to==> ['ihrem', 'Menschen']
+==german======> ['ihrer', 'Menschen', 'Eltern eines behinderten Kindes', 'ihrem']
+
+
+Because what I was encountering was an idea of illness .
+Denn , was mir entgegensprang war der Gedanke an Krankheit .
+==> Unannotated sentence pair
+
+
+And like all parents since the dawn of time , I wanted to protect my child from illness .
+Und wie alle Eltern seit Anbeginn der Zeit , wollte auch ich mein Kind vor Krankheit schützen .
+==> Mentions not annotated in German
+['my child']
+
+
+And I wanted also to protect myself from illness .
+Und ich wollte auch mich vor Krankheit schützen .
+==> Unannotated sentence pair
+
+
+And yet , I knew from the work I had done that if he had any of the things we were about to start testing for , that those would ultimately be his identity , and if they were his identity they would become my identity , that that illness was going to take a very different shape as it unfolded .
+Und doch wusste ich von meiner Arbeit her , dass wenn er eines dieser Dinge hätte , auf die wir ihn testen lassen wollten , diese letztendlich zu seiner Identität werden würden , und wenn sie seine Identität wären , würden sie auch zu meiner Identität werden , und dass die Krankheit während ihres Verlaufs unterschiedliche Formen annehmen würde .
+==Some EN mentions in DE:
+==english=====> ['the things we were about to start testing for', 'those', 'they', 'they', 'he', 'his', 'his', 'it', 'that illness']
+==aligned_to==> ['dieser Dinge , auf wir testen wollten', 'diese', 'sie', 'sie', 'er', 'seiner', 'seine', 'ihres', 'die Krankheit']
+==german======> ['seiner', 'seine', 'ihn', 'er', 'sie', 'sie', 'die', 'diese', 'dieser Dinge', 'die Krankheit', 'ihres']
+
+
+We took him to the MRI machine , we took him to the CAT scanner , we took this day-old child and gave him over for an arterial blood draw .
+Wir brachten ihn zur Kernspintomographie , zur Computertomographie , wir übergaben dieses 1-Tage-alte Kind den Ärzten für eine arterielle Blutentnahme .
+==Some EN mentions in DE:
+==english=====> ['him', 'him', 'this day-old child', 'him']
+==aligned_to==> ['ihn', '', 'übergaben dieses 1-Tage-alte Kind', '']
+==german======> ['ihn', 'den Ärzten']
+
+
+We felt helpless .
+Wir fühlten uns hilflos .
+==> Unannotated sentence pair
+
+
+And at the end of five hours , they said that his brain was completely clear and that he was by then extending his legs correctly .
+Und nach fünf langen Stunden , teilten sie uns mit , dass sein Gehirn völlig unauffällig sei , und er seine Beine mittlerweile richtig ausstrecken würde .
+==None EN mentions in DE:
+==english=====> ['his', 'his', 'he', 'they']
+==aligned_to==> ['sein', 'seine', 'er', 'sie']
+==german======> ['seine', 'er', 'sein', 'sie']
+
+
+And when I asked the pediatrician what had been going on , she said she thought in the morning he had probably had a cramp .
+Und als ich die Kinderärztin fragte , was mit ihm los war , sagte sie , sie glaube , er hätte am Morgen wahrscheinlich einen Krampf gehabt .
+==Some EN mentions in DE:
+==english=====> ['he', 'the pediatrician', 'she', 'she']
+==aligned_to==> ['er', 'die Kinderärztin fragte', 'sie', 'sie']
+==german======> ['er', 'ihm', 'die Kinderärztin', 'sie', 'sie']
+
+
+But I thought how my mother was right .
+Aber ich dachte , wie recht meine Mutter doch hatte .
+==> Unannotated sentence pair
+
+
+I thought , the love you have for your children is unlike any other feeling in the world , and until you have children , you do n't know what it feels like .
+Ich dachte , die Liebe , die man für seine Kinder empfindet , lässt sich mit keinem Gefühl der Welt vergleichen , und bevor du nicht selbst Kinder hast , weißt du nicht , wie es sich anfühlt .
+==None EN mentions in DE:
+==english=====> ['it', 'other feeling', 'the love you have for your children']
+==aligned_to==> ['es', 'keinem Gefühl', 'die Liebe man für seine Kinder']
+==german======> ['es', 'die', 'die Liebe']
+
+
+I think children had ensnared me the moment I connected fatherhood with loss .
+Ich glaube , Kinder hatten mich um den Finger gewickelt , sobald ich Vaterschaft mit Verlust in Verbindung brachte .
+==> Unannotated sentence pair
+
+
+But I 'm not sure I would have noticed that if I had n't been so in the thick of this research project of mine .
+Aber ich bin mir nicht sicher , ob ich es bemerkt hätte , wäre ich nicht so tief in mein Forschungsprojekt verwickelt gewesen .
+==> Unannotated sentence pair
+
+
+I 'd encountered so much strange love , and I fell very naturally into its bewitching patterns .
+Ich war auf soviel seltsame Liebe getroffen , und ich fiel fast selbstverständlich in ihr verzauberndes Raster .
+==Some EN mentions in DE:
+==english=====> ['strange love', 'its']
+==aligned_to==> ['seltsame Liebe', 'ihr']
+==german======> ['seltsame Liebe', 'ihr']
+
+
+And I saw how splendor can illuminate even the most abject vulnerabilities .
+Ich sah , wie ihre Pracht selbst größte Verletzbarkeit erleuchten kann .
+==> Mentions not annotated in German
+['ihre']
+
+
+During these 10 years , I had witnessed and learned the terrifying joy of unbearable responsibility , and I had come to see how it conquers everything else .
+In diesen 10 Jahren hatte ich Gelegenheit , die Freuden und Schrecken unerträglicher Verantwortung kennenzulernen , und mitzuerleben , wie sie alles andere überwinden .
+==None EN mentions in DE:
+==english=====> ['it', 'the terrifying joy of unbearable responsibility']
+==aligned_to==> ['sie', 'die Freuden Schrecken unerträglicher Verantwortung']
+==german======> ['und Schrecken unerträglicher Verantwortung', 'Freuden', 'sie']
+
+
+And while I had sometimes thought the parents I was interviewing were fools , enslaving themselves to a lifetime 's journey with their thankless children and trying to breed identity out of misery , I realized that day that my research had built me a plank and that I was ready to join them on their ship .
+Und obwohl ich manchmal dachte , dass die Eltern , die ich interviewte , Narren wären , weil sie sich zu einer lebenslangen Reise mit ihren undankbaren Kindern versklavten , und versuchten aus Elend eine Identität zu machen , erkannte ich an jenem Tag , dass mir meine Forschung einen Steg gebaut hatte , und ich bereit war , zu ihnen an Board zu gehen .
+==None EN mentions in DE:
+==english=====> ['their', 'their', 'them', 'themselves', 'the parents I was interviewing']
+==aligned_to==> ['ihren', '', 'ihnen', 'sie sich', 'Eltern ich interviewte die']
+==german======> ['die Eltern', 'sie', 'die', 'ihnen', 'ihren']
+
+
+Thank you .
+Vielen Dank .
+==> Unannotated sentence pair
+
+

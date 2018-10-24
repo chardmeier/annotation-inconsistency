@@ -266,7 +266,9 @@ def find_partial(mentions, chains):
 ####################################################################################################################################################################
 
 
-def match_all_mentions2(enChains, deChains, alignedChains):
+
+
+def match_all_mentions2(enChains, deChains, alignedChains, entext, detext):
     """
     :param src_aligns: {111 {'set_257': {1: [16]}, 'set_258': {0: [9], 1: [10, 11], 2: []}} --> here there can be [] if word is not aligned
     :param tgt_links: {1134 {'set_288': {1: [19], 2: [29], 8: [13]}, 'set_289': {2: [2]}}
@@ -279,49 +281,97 @@ def match_all_mentions2(enChains, deChains, alignedChains):
     de_not_in_en = {}
     en_not_in_de = {}
 
-    for sent in enChains: # enChains and alignedChains have the same keys
-        only_in_en = []
-        if sent not in deChains:
-            for chain in enChains[sent]:
-                only_in_en += enChains[sent][chain].values()
-            en_not_in_de[sent] = only_in_en
+    for i in range(len(entext)):
+        print(entext[i])
+        print(detext[i])
 
-        else:
+        if i in enChains:# enChains and alignedChains have the same keys
 
-            mentions_in_enlish = []
-            mentions_in_german = []
-            alignments_of_english = []
+            only_in_en = []
+            if i not in deChains:
+                for chain in enChains[i]:
+                    only_in_en += enChains[i][chain].values()
+                en_not_in_de[i] = only_in_en
 
-            for chain in enChains[sent]:
-                mentions_in_enlish += enChains[sent][chain].values()
+                onlyEN = put_into_words(only_in_en, entext[i])
+                print("==> Mentions not annotated in German")
+                print(onlyEN)
+                print("\n")
 
-            for chain in alignedChains[sent]:
-                alignments_of_english += alignedChains[sent][chain].values()
-
-            for chain in deChains[sent]:
-                mentions_in_german += deChains[sent][chain].values()
-
-            x = [x in mentions_in_enlish for x in mentions_in_german]
-            # easy case: all mentions in the chain match
-            if False not in set(x):
-                matches[sent] = mentions_in_german
-            # some mention matches
-            elif (True in set(x)) and (False in set(x)):
-                partial[sent] = mentions_in_german
-            # none mention matches
             else:
-                missing[sent] = mentions_in_german
+                mentions_in_enlish = []
+                mentions_in_german = []
+                alignments_of_english = []
 
-            print("========english====>", mentions_in_enlish)
-            print("========aligned====>", alignments_of_english)
-            print("======german======>", mentions_in_german)
+                for chain in enChains[i]:
+                    mentions_in_enlish += enChains[i][chain].values()
 
-    for sent in deChains:
-        only_in_de = []
-        if sent not in enChains:
-            for chain in deChains[sent]:
-                only_in_de += deChains[sent][chain].values()
-            de_not_in_en[sent] = only_in_de
+                for chain in alignedChains[i]:
+                    alignments_of_english += alignedChains[i][chain].values()
+
+                for chain in deChains[i]:
+                    mentions_in_german += deChains[i][chain].values()
+
+                # translated positions into words
+                en_chains = put_into_words(mentions_in_enlish, entext[i])
+                al_chains = put_into_words(alignments_of_english, detext[i])
+                de_chains = put_into_words(mentions_in_german, detext[i])
+
+                x = [x in mentions_in_enlish for x in mentions_in_german]
+                # easy case: all mentions in the chain match
+                if False not in set(x):
+                    matches[i] = mentions_in_german
+                    print("==All EN mentions in DE:")
+                    print("==english=====>", en_chains)
+                    print("==aligned_to==>", al_chains)
+                    print("==german======>", de_chains)
+                    print("\n")
+
+                # some mention matches
+                elif (True in set(x)) and (False in set(x)):
+                    partial[i] = mentions_in_german
+
+                    print("==Some EN mentions in DE:")
+                    print("==english=====>", en_chains)
+                    print("==aligned_to==>", al_chains)
+                    print("==german======>", de_chains)
+                    print("\n")
+
+                # none mention matches
+                else:
+                    missing[i] = mentions_in_german
+
+                    print("==None EN mentions in DE:")
+                    print("==english=====>", en_chains)
+                    print("==aligned_to==>", al_chains)
+                    print("==german======>", de_chains)
+                    print("\n")
+
+        elif i in deChains:
+            only_in_de = []
+            if i not in enChains:
+                for chain in deChains[i]:
+                    only_in_de += deChains[i][chain].values()
+                de_not_in_en[i] = only_in_de
+            onlyDE = put_into_words(only_in_de, detext[i])
+            print("==> Mentions not annotated in German")
+            print(onlyDE)
+            print("\n")
+        else:
+            print("==> Unannotated sentence pair")
+            print("\n")
+
+
+    # for sent in deChains:
+    #     only_in_de = []
+    #     if sent not in enChains:
+    #         for chain in deChains[sent]:
+    #             only_in_de += deChains[sent][chain].values()
+    #         de_not_in_en[sent] = only_in_de
+    #     onlyDE = put_into_words(only_in_de, detext[sent])
+    #     print("==> Mentions not annotated in English")
+    #     print(onlyDE)
+    #     print("\n")
 
     return matches, partial, missing, de_not_in_en, en_not_in_de
 
@@ -371,11 +421,6 @@ def main():
     if len(sys.argv) != 3:
         sys.stderr.write('Usage: {} {} {} \n'.format(sys.argv[0], "path_to_parcor-full", "alignment_file"))
 
-        '''
-        sys.stderr.write('Usage: {} {} {} {} {} \n'.format(sys.argv[0], "path_to_parcor-full", "alignment_file",
-                                                           "target_txt_file",
-                                                           "output_file"))
-                                                           '''
         sys.exit(1)
 
     endeDocs = ["000_1756_words.xml", "001_1819_words.xml", "002_1825_words.xml", "003_1894_words.xml",
@@ -393,8 +438,6 @@ def main():
 
     giza_alignments = read_alignments(sys.argv[2])
 
-    #target_text = read_rawfile(sys.argv[3])
-    #out = open(sys.argv[4], "w", encoding = "utf-8")
 
     for doc in endeDocs: #loop and keep order of protest
         docid = re.findall(r'[0-9]+_[0-9]+', doc)[0]  # returns list therefore the index
@@ -423,40 +466,40 @@ def main():
 
         align_of_en_chains = match_mentions_to_tgt(en_chains_in_sentence, giza_alignments)
 
-        matching, partially, mismatched, only_en, only_de = match_all_mentions2(en_chains_in_sentence,
+        matching, partially, mismatched, only_de, only_en,  = match_all_mentions2(en_chains_in_sentence,
                                                                                 de_chains_in_sentence,
-                                                                                align_of_en_chains)
-
-        for i in range(len(sentence_based_enDoc)):
-            print("\n")
-            print(sentence_based_enDoc[i])
-            print(sentence_based_deDoc[i])
-            print("\n")
-            if i in matching:
-                print("Matching mentions:")
-                mentions = put_into_words(matching[i], sentence_based_deDoc[i])
-                print(mentions)
-            elif i in mismatched:
-                print("Not found matching mentions:")
-                mentions = put_into_words(mismatched[i], sentence_based_deDoc[i])
-                print(mentions)
-            elif i in only_en:
-                print("Mentions only found in English:")
-                mentions = put_into_words(only_en[i], sentence_based_enDoc[i])
-                print(mentions)
-            elif i in only_de:
-                print("Mentions only found in German:")
-                mentions = put_into_words(only_de[i], sentence_based_deDoc[i])
-                print(mentions)
-            # elif i in partially:
-            #     print("Some matching mentions:")
-            #     mentions = put_into_words(partially[i], sentence_based_deDoc[i])
-            #     print(mentions)
-            else:
-                print("Unannotated sentence pair")
-
+                                                                                align_of_en_chains,
+                                                                                sentence_based_enDoc,
+                                                                                sentence_based_deDoc)
+        #
+        # for i in range(len(sentence_based_enDoc)):
+        #     print("\n")
+        #     print(sentence_based_enDoc[i])
+        #     print(sentence_based_deDoc[i])
+        #     print("\n")
+        #     if i in matching:
+        #         print(" ==> Matching mentions:")
+        #         mentions = put_into_words(matching[i], sentence_based_deDoc[i])
+        #         print(mentions)
+        #     elif i in mismatched:
+        #         print(" ==> Not found matching mentions:")
+        #         mentions = put_into_words(mismatched[i], sentence_based_deDoc[i])
+        #         print(mentions)
+        #     elif i in only_en:
+        #         print(" ==> Mentions only found in English:")
+        #         mentions = put_into_words(only_en[i], sentence_based_enDoc[i])
+        #         print(mentions)
+        #     elif i in only_de:
+        #         print(" ==> Mentions only found in German:")
+        #         mentions = put_into_words(only_de[i], sentence_based_deDoc[i])
+        #         print(mentions)
+        #     elif i in partially:
+        #         print(" ==> Some matching mentions:")
+        #         mentions = put_into_words(partially[i], sentence_based_deDoc[i])
+        #         print(mentions)
+        #     else:
+        #         print(" ==> Unannotated sentence pair")
         break
-
 
 if __name__ == "__main__":
     main()
