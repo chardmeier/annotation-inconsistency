@@ -475,8 +475,8 @@ def main():
         align_of_en_chains = match_mentions_to_tgt(en_chains_in_sentence, giza_alignments)
 
 
-        print("!!!!!!!!!!!!!!!!!!!!!!!!", len(sentence_based_enDoc))
-        print("!!!!!!!!!!!!!!!!!!!!!!!!", len(sentence_based_deDoc))
+        #print("!!!!!!!!!!!!!!!!!!!!!!!!", len(sentence_based_enDoc))
+        #print("!!!!!!!!!!!!!!!!!!!!!!!!", len(sentence_based_deDoc))
 
         matching, partially, mismatched, only_de, only_en,  = match_all_mentions2(en_chains_in_sentence,
                                                                                 de_chains_in_sentence,
