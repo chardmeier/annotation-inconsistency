@@ -264,121 +264,8 @@ def find_partial(mentions, chains):
                         return True
     return False
 
-####################################################################################################################################################################
 
 
-
-
-def match_all_mentions2(enChains, deChains, alignedChains, entext, detext):
-    """
-    :param src_aligns: {111 {'set_257': {1: [16]}, 'set_258': {0: [9], 1: [10, 11], 2: []}} --> here there can be [] if word is not aligned
-    :param tgt_links: {1134 {'set_288': {1: [19], 2: [29], 8: [13]}, 'set_289': {2: [2]}}
-    :return: (dic, dic, dic, dic)
-    """
-
-    matches = {}
-    partial = {}
-    missing = {}
-    de_not_in_en = {}
-    en_not_in_de = {}
-
-    for i in range(len(entext)):
-        print(entext[i])
-        if i >= len(detext):
-            print("problem with sentence splitting annotation in this document")
-            print(detext[i-1])
-        else:
-            print(detext[i])
-
-        if i in enChains:# enChains and alignedChains have the same keys
-
-            only_in_en = []
-            if i not in deChains:
-                for chain in enChains[i]:
-                    only_in_en += enChains[i][chain].values()
-                en_not_in_de[i] = only_in_en
-
-                onlyEN = put_into_words(only_in_en, entext[i])
-                print("==> Mentions not annotated in German")
-                print(onlyEN)
-                print("\n")
-
-            else:
-                mentions_in_enlish = []
-                mentions_in_german = []
-                alignments_of_english = []
-
-                for chain in enChains[i]:
-                    mentions_in_enlish += enChains[i][chain].values()
-
-                for chain in alignedChains[i]:
-                    alignments_of_english += alignedChains[i][chain].values()
-
-                for chain in deChains[i]:
-                    mentions_in_german += deChains[i][chain].values()
-
-                # translated positions into words
-                en_chains = put_into_words(mentions_in_enlish, entext[i])
-                al_chains = put_into_words(alignments_of_english, detext[i])
-                de_chains = put_into_words(mentions_in_german, detext[i])
-
-                x = [x in mentions_in_enlish for x in mentions_in_german]
-                # easy case: all mentions in the chain match
-                if False not in set(x):
-                    matches[i] = mentions_in_german
-                    print("==All EN mentions in DE:")
-                    print("==english=====>", en_chains)
-                    print("==aligned_to==>", al_chains)
-                    print("==german======>", de_chains)
-                    print("\n")
-
-                # some mention matches
-                elif (True in set(x)) and (False in set(x)):
-                    partial[i] = mentions_in_german
-
-                    print("==Some EN mentions in DE:")
-                    print("==english=====>", en_chains)
-                    print("==aligned_to==>", al_chains)
-                    print("==german======>", de_chains)
-                    print("\n")
-
-                # none mention matches
-                else:
-                    missing[i] = mentions_in_german
-
-                    print("==None EN mentions in DE:")
-                    print("==english=====>", en_chains)
-                    print("==aligned_to==>", al_chains)
-                    print("==german======>", de_chains)
-                    print("\n")
-
-        elif i in deChains:
-            only_in_de = []
-            if i not in enChains:
-                for chain in deChains[i]:
-                    only_in_de += deChains[i][chain].values()
-                de_not_in_en[i] = only_in_de
-            onlyDE = put_into_words(only_in_de, detext[i])
-            print("==> Mentions not annotated in German")
-            print(onlyDE)
-            print("\n")
-        else:
-            print("==> Unannotated sentence pair")
-            print("\n")
-
-
-    # for sent in deChains:
-    #     only_in_de = []
-    #     if sent not in enChains:
-    #         for chain in deChains[sent]:
-    #             only_in_de += deChains[sent][chain].values()
-    #         de_not_in_en[sent] = only_in_de
-    #     onlyDE = put_into_words(only_in_de, detext[sent])
-    #     print("==> Mentions not annotated in English")
-    #     print(onlyDE)
-    #     print("\n")
-
-    return matches, partial, missing, de_not_in_en, en_not_in_de
 
 
 def print_stats(en_path_all, doc, en_coref_chains, de_coref_chains):
@@ -423,6 +310,84 @@ def put_into_words(relevant, sentence):
         new_mention = " ".join(temp)
         final.append(new_mention)
     return final
+
+
+    ####################################################################################################################################################################
+
+
+def ChainStatus(enChains, deChains):
+
+    if len(enChains) == len(deChains):
+        print('=> Same number of chains in english and german')
+        return "equal"
+
+    elif len(enChains) > len(deChains):
+        print('=> More chains in english than german')
+        return "enlonger"
+    else:
+        print('=> More chains in german than english')
+        return "gelonger"
+
+
+def scoreChains(enSentenceChains, deSentenceChains, sentenceAlignment):
+
+    '''idea of computing SE*SD scores, scoring SE, SD then take the average and then compare and take max
+
+    chains english: {'set_102': {0: [25], 1: [41], 2: [37], 5: [43], 6: [47]}, 'empty': {4: [32]}, 'set_134': {0: [4]}}
+
+    chains german: {'set_128': {0: [20], 2: [29], 3: [38], 4: [36], 5: [43]}, 'set_124': {0: [2]}}
+
+    chains alined: {'set_102': {0: [24], 1: [40], 2: [36], 5: [40], 6: []}, 'empty': {4: [31]}, 'set_134': {0: [4]}}
+
+     '''
+    enWords = []
+
+    for enChain in enSentenceChains:
+
+
+
+
+
+
+
+
+
+
+
+# #def matchChainsInSentence(enChains, deChains, align):
+#
+#     """
+#     chains english sent 23: {11: [6], 13: [29], 26: [0], 28: [18]}}
+#     chains german sent 23:  {12: [16], 13: [25], 14: [2], 16: [6], 19: [31]}, 'set_87': {0: [9], 1: [3, 4, 5, 6, 7]},...}
+#     chains alined sent 23:  {11: [6], 13: [31], 26: [0], 28: [16]}}
+#     enChains[chain]-------> {0: [8, 9], 1: [10, 11], 2: [25], 3: [13, 14, 15, 16, 17, 18]}
+#     deChains[chain]-------> {0: [4], 1: [1, 2]}
+#     alChains[chain]-------> {0: [25, 26, 27]}
+#
+#     """
+#
+#     #status = ChainStatus(enChains, deChains)
+#
+#     # if status == "equal":
+#     #
+#     # for chain in deChains:
+#     #     for mention in deChains[chain]:
+#     #         # loop through all alignments
+#     #         for alChain in align:
+#     #             for alMention in align[alChain]:
+#     #                 if mention == alMention:
+#     #                     return chain
+#     #
+#     # return deChain, alignChain
+#
+#
+#     # elif status == "enlonger":
+#     #
+#     #
+#     # else:
+#     #
+
+
 
 
 def main():
@@ -474,15 +439,42 @@ def main():
 
         align_of_en_chains = match_mentions_to_tgt(en_chains_in_sentence, giza_alignments)
 
+        for i in range(len(sentence_based_enDoc)):
+            enSentence = sentence_based_enDoc[i]
+            if i >= len(sentence_based_deDoc):
+                print("problem with sentence splitting annotation in this document")
+                deSentence = sentence_based_deDoc[i-1]
+            else:
+                deSentence = sentence_based_deDoc[i]
 
-        #print("!!!!!!!!!!!!!!!!!!!!!!!!", len(sentence_based_enDoc))
-        #print("!!!!!!!!!!!!!!!!!!!!!!!!", len(sentence_based_deDoc))
+            print(enSentence)
+            print(deSentence)
 
-        matching, partially, mismatched, only_de, only_en,  = match_all_mentions2(en_chains_in_sentence,
-                                                                                de_chains_in_sentence,
-                                                                                align_of_en_chains,
-                                                                                sentence_based_enDoc,
-                                                                                sentence_based_deDoc)
+            if i in en_chains_in_sentence:
+
+                if i in de_chains_in_sentence:
+                    print("==>TODO:matching")
+                    #matchChainsInSentence(en_chains_in_sentence[i], de_chains_in_sentence[i], align_of_en_chains[i])
+
+                    correspondances = scoreChains(en_chains_in_sentence[i], de_chains_in_sentence[i], giza_alignments[i])
+                    print("chains english:", en_chains_in_sentence[i])
+                    print("chains german:", de_chains_in_sentence[i])
+                    print("chains alined:", align_of_en_chains[i])
+                    print("\n")
+
+                else:
+                    print("==>EnglishChainsNotInGerman")
+                    print(en_chains_in_sentence[i])
+
+            else:
+                if i in de_chains_in_sentence:
+                    print("==>GermanChainsNotInEnglish")
+                    print("chains german:", de_chains_in_sentence[i])
+                    print("\n")
+                else:
+                    print("==>Unannotated sentence pair")
+                    print("\n")
+
 
 
 

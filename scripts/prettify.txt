@@ -13,6 +13,119 @@ def match_all_mentions2(enChains, deChains, alignedChains, entext, detext):
 
     for i in range(len(entext)):
         print(entext[i])
+        if i >= len(detext):
+            print("problem with sentence splitting annotation in this document")
+            print(detext[i-1])
+        else:
+            print(detext[i])
+
+        if i in enChains:# enChains and alignedChains have the same keys
+
+            only_in_en = []
+            if i not in deChains:
+                for chain in enChains[i]:
+                    only_in_en += enChains[i][chain].values()
+                en_not_in_de[i] = only_in_en
+
+                onlyEN = put_into_words(only_in_en, entext[i])
+                print("==> Mentions not annotated in German")
+                print(onlyEN)
+                print("\n")
+
+            else:
+                mentions_in_enlish = []
+                mentions_in_german = []
+                alignments_of_english = []
+
+                for chain in enChains[i]:
+                    mentions_in_enlish += enChains[i][chain].values()
+
+                for chain in alignedChains[i]:
+                    alignments_of_english += alignedChains[i][chain].values()
+
+                for chain in deChains[i]:
+                    mentions_in_german += deChains[i][chain].values()
+
+                # translated positions into words
+                en_chains = put_into_words(mentions_in_enlish, entext[i])
+                al_chains = put_into_words(alignments_of_english, detext[i])
+                de_chains = put_into_words(mentions_in_german, detext[i])
+
+                x = [x in mentions_in_enlish for x in mentions_in_german]
+                # easy case: all mentions in the chain match
+                if False not in set(x):
+                    matches[i] = mentions_in_german
+                    print("==All EN mentions in DE:")
+                    print("==english=====>", en_chains)
+                    print("==aligned_to==>", al_chains)
+                    print("==german======>", de_chains)
+                    print("\n")
+
+                # some mention matches
+                elif (True in set(x)) and (False in set(x)):
+                    partial[i] = mentions_in_german
+
+                    print("==Some EN mentions in DE:")
+                    print("==english=====>", en_chains)
+                    print("==aligned_to==>", al_chains)
+                    print("==german======>", de_chains)
+                    print("\n")
+
+                # none mention matches
+                else:
+                    missing[i] = mentions_in_german
+
+                    print("==None EN mentions in DE:")
+                    print("==english=====>", en_chains)
+                    print("==aligned_to==>", al_chains)
+                    print("==german======>", de_chains)
+                    print("\n")
+
+        elif i in deChains:
+            only_in_de = []
+            if i not in enChains:
+                for chain in deChains[i]:
+                    only_in_de += deChains[i][chain].values()
+                de_not_in_en[i] = only_in_de
+            onlyDE = put_into_words(only_in_de, detext[i])
+            print("==> Mentions not annotated in German")
+            print(onlyDE)
+            print("\n")
+        else:
+            print("==> Unannotated sentence pair")
+            print("\n")
+
+
+    # for sent in deChains:
+    #     only_in_de = []
+    #     if sent not in enChains:
+    #         for chain in deChains[sent]:
+    #             only_in_de += deChains[sent][chain].values()
+    #         de_not_in_en[sent] = only_in_de
+    #     onlyDE = put_into_words(only_in_de, detext[sent])
+    #     print("==> Mentions not annotated in English")
+    #     print(onlyDE)
+    #     print("\n")
+
+    return matches, partial, missing, de_not_in_en, en_not_in_de
+
+
+
+def match_all_mentions2(enChains, deChains, alignedChains, entext, detext):
+    """
+    :param src_aligns: {111 {'set_257': {1: [16]}, 'set_258': {0: [9], 1: [10, 11], 2: []}} --> here there can be [] if word is not aligned
+    :param tgt_links: {1134 {'set_288': {1: [19], 2: [29], 8: [13]}, 'set_289': {2: [2]}}
+    :return: (dic, dic, dic, dic)
+    """
+
+    matches = {}
+    partial = {}
+    missing = {}
+    de_not_in_en = {}
+    en_not_in_de = {}
+
+    for i in range(len(entext)):
+        print(entext[i])
         print(detext[i])
 
         if i in enChains:
