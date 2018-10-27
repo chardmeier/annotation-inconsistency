@@ -209,7 +209,7 @@ def transform_chains_into_sentences(chains_in_doc, sentences_in_doc):
 
 
 
-def organize_align(alignments):
+def organize_align_SRCTGT(alignments):
     """
     alignments -> ['0-0', '1-1', '2-2', '3-3', '4-4', '5-5', '6-5', '8-6', '12-7', '7-8', '9-9', '13-10', '14-11', '15-13']
     out -> {source: [tgt, tgt2, tgt3, ...]...}
@@ -227,6 +227,26 @@ def organize_align(alignments):
     return new
 
 
+def organize_align_TGTSRC(alignments):
+    """
+    alignments -> ['0-0', '1-1', '2-2', '3-3', '4-4', '5-5', '6-5', '8-6', '12-7', '7-8', '9-9', '13-10', '14-11', '15-13']
+    out -> {target: [src, src2, scr3, ...]...}
+    """
+
+    new = {}
+    for pair in alignments:
+        st = pair.split('-')
+        s = int(st[0])
+        t = int(st[1])
+        if t in new:
+            new[t].append(s)
+        else:
+            new[t] = [s]
+    return new
+
+
+
+
 def match_mentions_to_tgt(sentences, giza):
 
     """                         src positions
@@ -238,7 +258,7 @@ def match_mentions_to_tgt(sentences, giza):
 
     for s in sentences:
         targets = {}
-        align_info = organize_align(giza[s])#{0: [0], 1: [1], 2: [2], 3: [3], ...}
+        align_info = organize_align_SRCTGT(giza[s])#{0: [0], 1: [1], 2: [2], 3: [3], ...}
         for chain in sentences[s]:
             tgt_words = {}
             for mention in sentences[s][chain]:
@@ -312,8 +332,6 @@ def put_into_words(relevant, sentence):
     return final
 
 
-    ####################################################################################################################################################################
-
 
 def ChainStatus(enChains, deChains):
 
@@ -328,7 +346,7 @@ def ChainStatus(enChains, deChains):
         print('=> More chains in german than english')
         return "gelonger"
 
-
+#------------------------------------------------------------------------------------------------------------------------
 def scoreChains(enSentenceChains, deSentenceChains, sentenceAlignment):
 
     '''idea of computing SE*SD scores, scoring SE, SD then take the average and then compare and take max
@@ -337,56 +355,129 @@ def scoreChains(enSentenceChains, deSentenceChains, sentenceAlignment):
 
     chains german: {'set_128': {0: [20], 2: [29], 3: [38], 4: [36], 5: [43]}, 'set_124': {0: [2]}}
 
-    chains alined: {'set_102': {0: [24], 1: [40], 2: [36], 5: [40], 6: []}, 'empty': {4: [31]}, 'set_134': {0: [4]}}
+    sentenceAlig: ['0-0', '0-1', '1-2', '2-3', '8-6', '4-7', '5-8', '6-9', '7-9', '3-10', '9-11', '10-13', ...]
 
      '''
-    enWords = []
+
+
+    alignmentsENDE = organize_align_SRCTGT(sentenceAlignment)
+    alignmentsDEEN = organize_align_TGTSRC(sentenceAlignment)
+
+    ALLcombined = {}
 
     for enChain in enSentenceChains:
 
+        combinations = {}
+
+        for deChain in deSentenceChains:
+
+            de_candidates = []
+            en_candidates = []
+            scoreEnglish = 0
+            scoreGerman = 0
+            for de_mention in deSentenceChains[deChain]:
+
+                de_candidates += deSentenceChains[deChain][de_mention]
+
+            for en_mention in enSentenceChains[enChain]:
+
+                en_candidates += enSentenceChains[enChain][en_mention]
+
+            for enWord in en_candidates:
+                if enWord in alignmentsENDE: # alignments might be empty
+                    for alignPoint in alignmentsENDE[enWord]:
+                        if alignPoint in de_candidates:
+                            scoreEnglish += 1/len(alignmentsENDE[enWord])
+
+            for deWord in de_candidates:
+                if deWord in alignmentsDEEN: # alignments might be empty
+                    for alignPoint in alignmentsDEEN[deWord]:
+                        if alignPoint in en_candidates:
+                            scoreGerman += 1/len(alignmentsDEEN[deWord])
+
+            scoreAVG = (scoreEnglish + scoreGerman) / 2
+
+            combinations[deChain] = scoreAVG
+
+        ALLcombined[enChain] = combinations
+
+    return ALLcombined
+
+
+def hasDuplicates(scores):
+
+    for each in scores:
+        count = scores.count(each)
+        if count > 1:
+            return True
+    return False
+
+
+def tryFindMax(scores):
+
+    testSet = set(scores)
+    i = 9999
+    if len(testSet) == 1:
+        #"all have the same score"
+        i = 9999
+    else:
+        #TODO: if there are four chains where two have the same socore and two other have the same score too, this is
+        # going to be an error
+        highestScore = max(scores)
+        i = scores.index(highestScore)
+
+    return i
+
+
+def getHighest(scored):
+    """
+    :param scored: {'set_3': {'set_2': 1.0, 'set_3': 1.0}, 'set_219': {'set_2': 1.0, 'set_3': 13.0}}
+    :return: highgest = {'set_3': "duplicate", 'set_219': 'set_3': 13.0 }
+    """
+    highest = {}
+
+    for enChain in scored:
+        scores = []
+        deKeys = []
+        for deChain in scored[enChain]:
+            deKeys.append(deChain)
+            scores.append(scored[enChain][deChain])
+
+        if hasDuplicates(scores):
+            i = tryFindMax(scores)
+            if i == 9999:
+                highest[enChain] = deKeys
+            else:
+                highest[enChain] = deKeys[i]
+        else:
+            highestScore = max(scores)
+            i = scores.index(highestScore)
+            highest[enChain] = deKeys[i]
+    return highest
 
 
 
+def prettify_chains(mentions, text):
+
+    """
+    :param mentions: {1: [9, 10], 2: [3, 4]}
+    :param text: string
+    :return: mentions: {1: [the arm], 2: [the leg]}
+    """
+
+    sentence = text.split()
+    prettified = {}
 
 
-
-
-
-
-
-# #def matchChainsInSentence(enChains, deChains, align):
-#
-#     """
-#     chains english sent 23: {11: [6], 13: [29], 26: [0], 28: [18]}}
-#     chains german sent 23:  {12: [16], 13: [25], 14: [2], 16: [6], 19: [31]}, 'set_87': {0: [9], 1: [3, 4, 5, 6, 7]},...}
-#     chains alined sent 23:  {11: [6], 13: [31], 26: [0], 28: [16]}}
-#     enChains[chain]-------> {0: [8, 9], 1: [10, 11], 2: [25], 3: [13, 14, 15, 16, 17, 18]}
-#     deChains[chain]-------> {0: [4], 1: [1, 2]}
-#     alChains[chain]-------> {0: [25, 26, 27]}
-#
-#     """
-#
-#     #status = ChainStatus(enChains, deChains)
-#
-#     # if status == "equal":
-#     #
-#     # for chain in deChains:
-#     #     for mention in deChains[chain]:
-#     #         # loop through all alignments
-#     #         for alChain in align:
-#     #             for alMention in align[alChain]:
-#     #                 if mention == alMention:
-#     #                     return chain
-#     #
-#     # return deChain, alignChain
-#
-#
-#     # elif status == "enlonger":
-#     #
-#     #
-#     # else:
-#     #
-
+    for mention in mentions:
+        pretty_mention = []
+        for word in mentions[mention]:
+            if word < len(sentence):
+                pretty_mention.append(sentence[word])
+            else:
+                print("indexing error") #"weird case", word, sentence, len(sentence))
+        prettified[mention] = " ".join(pretty_mention)
+    return prettified
 
 
 
@@ -442,35 +533,76 @@ def main():
         for i in range(len(sentence_based_enDoc)):
             enSentence = sentence_based_enDoc[i]
             if i >= len(sentence_based_deDoc):
-                print("problem with sentence splitting annotation in this document")
+                print("==>problem with sentence splitting annotation in this document")
                 deSentence = sentence_based_deDoc[i-1]
             else:
                 deSentence = sentence_based_deDoc[i]
 
             print(enSentence)
             print(deSentence)
+            print("\n")
 
             if i in en_chains_in_sentence:
-
                 if i in de_chains_in_sentence:
-                    print("==>TODO:matching")
-                    #matchChainsInSentence(en_chains_in_sentence[i], de_chains_in_sentence[i], align_of_en_chains[i])
+                    #print("==>MATCHING CHAINS")
+                    #print("\n")
 
-                    correspondances = scoreChains(en_chains_in_sentence[i], de_chains_in_sentence[i], giza_alignments[i])
-                    print("chains english:", en_chains_in_sentence[i])
-                    print("chains german:", de_chains_in_sentence[i])
-                    print("chains alined:", align_of_en_chains[i])
-                    print("\n")
+                    #print("chains english:", en_chains_in_sentence[i])
+                    #print("chains german:", de_chains_in_sentence[i])
+                    #print("chains alined:", align_of_en_chains[i])
+
+                    correspondancesScores = scoreChains(en_chains_in_sentence[i], de_chains_in_sentence[i], giza_alignments[i])
+                    ChainPairs = getHighest(correspondancesScores)
+
+                    for enChain in ChainPairs:
+                        deChain = ChainPairs[enChain]
+
+                        if type(deChain) is str:
+                            print("CHAIN MATCH")
+                            print("ENchain:", enChain, "corresponds to DEchain", deChain)
+                            new = prettify_chains(en_chains_in_sentence[i][enChain], sentence_based_enDoc[i])
+                            print("ENchain", enChain, "with mentions:", new)
+                            print("DEmentions")
+                            new = prettify_chains(de_chains_in_sentence[i][deChain], sentence_based_deDoc[i])
+                            print("DEchain", deChain, "with mentions:", new)
+                            print("\n")
+
+                        else:
+                            print("OVERLAP")
+                            print("Mentions in ENchain:", enChain, "found in these DEchains", deChain)
+                            print("ENmentions")
+                            new = prettify_chains(en_chains_in_sentence[i][enChain], sentence_based_enDoc[i])
+                            print("ENchain", enChain, "with mentions:", new)
+                            for mention in de_chains_in_sentence[i]:
+                                new = prettify_chains(de_chains_in_sentence[i][mention], sentence_based_deDoc[i])
+                                print("DEchain:", mention, "with mentions:", new)
+                            print("\n")
+
+
+                    # # TODO: german chains not in english in sentence that is annotated in both
+                    # # ex: And a lot of the time the question
+                    # TODO: not sure is relevant because Im printing everything already
+                    # for key in de_chains_in_sentence[i]:
+                    #     if key not in ChainPairs.values():
+                    #         print("==>GermanChainsNotInEnglish!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!")
+                    #         print("chains german:", key, "with mentions", de_chains_in_sentence[i][key])
+                    #         print("\n")
 
                 else:
                     print("==>EnglishChainsNotInGerman")
-                    print(en_chains_in_sentence[i])
 
+                    for chain in en_chains_in_sentence[i]:
+                        new = prettify_chains(en_chains_in_sentence[i][chain], sentence_based_enDoc[i])
+                        print("ENchain:", mention, "with mentions:", new)
+                    print("\n")
             else:
+
                 if i in de_chains_in_sentence:
                     print("==>GermanChainsNotInEnglish")
-                    print("chains german:", de_chains_in_sentence[i])
-                    print("\n")
+                    for mention in de_chains_in_sentence[i]:
+                        new = prettify_chains(de_chains_in_sentence[i][mention], sentence_based_deDoc[i])
+                        print("DEchain:", mention, "with mentions:", new)
+
                 else:
                     print("==>Unannotated sentence pair")
                     print("\n")
