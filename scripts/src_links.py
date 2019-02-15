@@ -602,6 +602,7 @@ def main():
                     for mention in de_chains_in_sentence[i]:
                         new = prettify_chains(de_chains_in_sentence[i][mention], sentence_based_deDoc[i])
                         print("DEchain:", mention, "with mentions:", new)
+                        print("\n")
 
                 else:
                     print("==>Unannotated sentence pair")
