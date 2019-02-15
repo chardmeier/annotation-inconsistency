@@ -1,0 +1,94 @@
+
+- sentence alignment --> word alignment
+- word alignments + bunch of position (mentions) in EN and DE
+- problematic: chain memebrship is known, but parallelity (chain alignment) is not known -- DIFFICULT!
+EX:
+[xcv] sdf daf aga [agag [agag]]
+[adc] d d d [add] dade adfe  [fdagfff aga] 
+
+- use a scoring function: for each English chain computes a score of alignment to each German chain
+- pair of EnChain-DeChain with the highest score gets selected as good correspondence or match
+- BUT, it can happen that two possible pairs have the same score.
+
+If the score is the highest: we know which EN chain corresponds to which DE chain ('CHAIN MATCH').
+If there is a tie in scores (mentions in one chain have the same points of alignment as the mentions in another chain = mention is repeated in two chains) --> 'OVERLAP'.
+
+To summarize: 'CHAIN MATCH' -  confident alignment of chains at the sentence level
+              'OVERLAP' - same mention with the same points of alignment in at least two chains in the same sentence.
+
+
+So because word alignment works in a sentence basis, I have a bunch of word-level alignments for the sentence and a bunch of positions (mentions) I'm looking for. I just have a bunch of positions in the source and the target (the mentions).
+
+
+
+I know what chains they belong to (they have an ID) but I don't know what chain ID in English corresponds to what chain ID in German, precisely because they have been annotated independently, they don't have the same ID number.
+
+
+
+In a way, the problem looks like this:
+
+
+
+[xcv] sdf daf aga [agag [agag]]
+
+[adc] d d d [add] dade adfe  [fdagfff aga] 
+
+
+
+This is very very crucial, as it's why the whole thing is so difficult and it's the whole idea of proposing this 'method'.  In a way, we have to 'discover' what chain in English corresponds to what chain in German. To do this, I have a scoring function that for each English chain computes a score of alignment to each German chain. The pair of EnChain-DeChain with the highest score gets selected as good correspondence or match. BUT, it can happen that two possible pairs have the same score.
+
+
+
+So, at this point:
+
+
+
+If I have a highest score: I know which chains in English correspond to what chains in German (this has to be already good to report, no?) This is the scenario I've put under 'CHAIN MATCH'.
+
+
+
+Then I print the mentions in the chains that 'match'. I did not try to match the mentions further.
+
+
+
+If I have a tie in scores: This happens because the mentions in one chain have the same points of alignment as the mentions in another chain. That is, a mention is repeated in two chains. So, I don't which of the chains with the same score is the best fit. This is the scenario I've put under 'OVERLAP'.
+
+
+
+Then I print the mentions in the chains that 'overlap'. I did not try to match the mentions further.
+
+
+
+To summarize, 'Chain match' is when I find a confident alignment of chains at the sentence level. 'Overlap' is when there is a same mention with the same points of alignment in at least two chains in the same sentence.
+
+
+
+So to summarize further, you're interpreting almost correctly.
+
+
+
+OVERLAP
+Mentions in ENchain: set_222 found in these DEchains ['set_11', 'set_261']
+ENmentions
+ENchain set_222 with mentions: {1: 'that'}
+DEchain: set_11 with mentions: {0: 'sie', 3: 'ihre'}
+DEchain: set_261 with mentions: {1: 'das'}
+
+This means that the points of alignment of some mentions in ENchain with ID set_222 have been found simultaneously inside the Dechains with ID 'set_11' and 'set_261'. That is to say that the scores of the pair set_222--set_11 and the pair set_222--set_261 are identical.
+
+
+When you say that "the marking 'CHAIN MATCH' means that we have the same chain IDs 
+in both languages" this is not accurate because we never have the same chain ID in both languages hence the problem and our paper.
+
+Also when you say that "'OVERLAP' means that we have one chain ID one ht 
+one side, and more chain IDs on the other", it does not mean that. It means that mentions from a chain in English appear aligned (have the same alignment points) as mentions in more than one German chain. In other words, there were equal scores according to my function.
+
+Chains that appear only in either German or English are marked as:
+
+==>EnglishChainsNotInGerman 
+
+or
+
+==>GermanChainsNotInEnglish (***I've just remarked that I forgot to print a blank line after these cases***)
+
+
