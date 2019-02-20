@@ -161,7 +161,6 @@ def organize_align_tgt2srcs(alignments):
                 new[t] = [s]
     return new
 
-#########################################################################################################################
 
 def match_mentions_to_tgt(en_chains, doc_alignments):
     """
@@ -202,10 +201,6 @@ def find_partial(mentions, chains):
                     if word in mention_b:
                         return True
     return False
-
-
-
-
 
 def print_stats(en_path_all, doc, en_coref_chains, de_coref_chains):
     # (PRINT some statistics
@@ -265,59 +260,50 @@ def ChainStatus(enChains, deChains):
         print('=> More chains in german than english')
         return "gelonger"
 
-#------------------------------------------------------------------------------------------------------------------------
-def scoreChains(enSentenceChains, deSentenceChains, sentenceAlignment):
+#-----------------------------------------------------------------------------------------------------------------------
+#-----------------------------------------------------------------------------------------------------------------------
+
+def scoreChains(enChains, deChains, alignments):
 
     '''idea of computing SE*SD scores, scoring SE, SD then take the average and then compare and take max
 
     chains english: {'set_102': {0: [25], 1: [41], 2: [37], 5: [43], 6: [47]}, 'empty': {4: [32]}, 'set_134': {0: [4]}}
-
     chains german: {'set_128': {0: [20], 2: [29], 3: [38], 4: [36], 5: [43]}, 'set_124': {0: [2]}}
-
-    sentenceAlig: ['0-0', '0-1', '1-2', '2-3', '8-6', '4-7', '5-8', '6-9', '7-9', '3-10', '9-11', '10-13', ...]
-
+    Alig: ['0-0', '0-1', '1-2', '2-3', '8-6', '4-7', '5-8', '6-9', '7-9', '3-10', '9-11', '10-13', ...]
      '''
 
-
-    alignmentsENDE = organize_align_SRCTGT(sentenceAlignment)
-    alignmentsDEEN = organize_align_TGTSRC(sentenceAlignment)
+    alignmentsENDE = organize_align_src2tgts(alignments)
+    alignmentsDEEN = organize_align_tgt2srcs(alignments)
 
     ALLcombined = {}
 
-    for enChain in enSentenceChains:
-
+    for enChain in enChains:
         combinations = {}
-
-        for deChain in deSentenceChains:
-
+        for deChain in deChains:
             de_candidates = []
             en_candidates = []
             scoreEnglish = 0
             scoreGerman = 0
-            for de_mention in deSentenceChains[deChain]:
-
-                de_candidates += deSentenceChains[deChain][de_mention]
-
-            for en_mention in enSentenceChains[enChain]:
-
-                en_candidates += enSentenceChains[enChain][en_mention]
-
+            #group all mentions of a chain
+            for de_mention in deChains[deChain]:
+                de_candidates += de_mention
+            for en_mention in enChains[enChain]:
+                en_candidates += en_mention
+            #look for alignment points
             for enWord in en_candidates:
                 if enWord in alignmentsENDE: # alignments might be empty
                     for alignPoint in alignmentsENDE[enWord]:
                         if alignPoint in de_candidates:
-                            scoreEnglish += 1/len(alignmentsENDE[enWord])
+                            scoreEnglish += 1
 
             for deWord in de_candidates:
                 if deWord in alignmentsDEEN: # alignments might be empty
                     for alignPoint in alignmentsDEEN[deWord]:
                         if alignPoint in en_candidates:
-                            scoreGerman += 1/len(alignmentsDEEN[deWord])
+                            scoreGerman += 1
 
             scoreAVG = (scoreEnglish + scoreGerman) / 2
-
             combinations[deChain] = scoreAVG
-
         ALLcombined[enChain] = combinations
 
     return ALLcombined
@@ -435,6 +421,7 @@ def transform_aligns(en_sents, de_sents, document_aligns):
             transformed[key] = new_aligns
     return transformed
 
+
 #############################################          MAIN            ##############################################
 def main():
     if len(sys.argv) != 3:
@@ -467,9 +454,8 @@ def main():
         en_sentences_ids = make_sentences_spans(docid, en_annotation_dir)
         de_sentences_ids = make_sentences_spans(docid, de_annotation_dir)
 
-        len_en = len(en_sentences_ids.keys())
-
         #make alignments document level
+        len_en = len(en_sentences_ids.keys())
         doc_aligns = make_doc_level_align(len_en, giza_alignments)
         reindexed_doc_aligns = transform_aligns(en_sentences_ids, de_sentences_ids, doc_aligns)
 
@@ -480,23 +466,16 @@ def main():
         #print some stats
         print_stats(en_path_all, doc, en_coref_chains, de_coref_chains)
 
+        # chains' alignment points
         align_of_en_chains = match_mentions_to_tgt(en_coref_chains, reindexed_doc_aligns)
+
+        scores = scoreChains(en_coref_chains, de_coref_chains, reindexed_doc_aligns)
 
         #print("reindexed_doc_aligns", reindexed_doc_aligns)
         #print("\n")
         #print("words in en_document", len(en_document))
         #print("\n")
         #print("en_coref_chains", en_coref_chains)
-
-
-        """
-        for chain in en_coref_chains:
-            for mention in en_coref_chains[chain]:
-                temp = []
-                for word in mention:
-                    temp.append(en_document[word-1])
-                print(temp)
-        """
 
 
         ##### sanity check
