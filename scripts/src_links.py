@@ -8,7 +8,6 @@ Extracts links from parcor-full
 """
 
 import sys, re
-import collections
 from bs4 import BeautifulSoup
 
 
@@ -93,19 +92,6 @@ def treat_span(span_value):
     return final
 
 
-def get_sent_position(sents_spans, list_of_positions):
-
-    temp = []
-    for key in sents_spans:
-        span = sents_spans[key]
-        indexes = set(list(range(span[0], span[1]+1)))
-        for position in list_of_positions:
-            if position in indexes:
-                temp.append(key)
-    return list(set(temp))
-
-
-
 def get_chain_info(doc_id, markables):
     """
     gets all coref chains in the document.
@@ -126,17 +112,6 @@ def get_chain_info(doc_id, markables):
                     info[coref_class] = [treat_span(m["span"])]
     return info
 
-
-def get_sentence_level_info(sentences_ids, doc_position):
-
-    for key in sentences_ids:
-        span = sentences_ids[key]
-        indexes = list(range(span[0], span[1]+1))
-        # {0: (1, 16), 1: (17, 32), 2: (33, 62), 3: (63, 77), ...}
-        if doc_position in indexes:
-            sentence_position = indexes.index(doc_position)
-            sentence_id = int(key)
-            return (sentence_id, sentence_position)
 
 
 def read_rawfile(f):
@@ -412,7 +387,6 @@ def prettify_chains(mentions, text):
     sentence = text.split()
     prettified = {}
 
-
     for mention in mentions:
         pretty_mention = []
         for word in mentions[mention]:
@@ -439,7 +413,7 @@ def make_doc_level_align(i, alignments):
     return align_this_doc
 
 
-def transform_aligns(document_aligns):
+def transform_aligns(en_sents, de_sents, document_aligns):
 
     transformed = {}
     ordered_keys = sorted(document_aligns.keys())
@@ -452,15 +426,16 @@ def transform_aligns(document_aligns):
                 each = s_t.split("-")
                 en = int(each[0])
                 de = int(each[1])
-                last_one = transformed[key-1][-1].split("-")
-                new_en = int(last_one[0]) + 1 + en
-                new_de = int(last_one[1]) + 1 + de
+                en_last_one = en_sents[key-1][-1]
+                de_last_one = de_sents[key-1][-1]
+                new_en = en_last_one + en
+                new_de = de_last_one + de
                 new_pair = str(new_en) + "-" + str(new_de)
                 new_aligns.append(new_pair)
             transformed[key] = new_aligns
     return transformed
 
-
+#############################################          MAIN            ##############################################
 def main():
     if len(sys.argv) != 3:
         sys.stderr.write('Usage: {} {} {} \n'.format(sys.argv[0], "path_to_parcor-full", "alignment_file"))
@@ -496,7 +471,7 @@ def main():
 
         #make alignments document level
         doc_aligns = make_doc_level_align(len_en, giza_alignments)
-        reindexed_doc_aligns = transform_aligns(doc_aligns)
+        reindexed_doc_aligns = transform_aligns(en_sentences_ids, de_sentences_ids, doc_aligns)
 
         #coref chains
         en_coref_chains = get_chain_info(docid, en_annotation_dir)
@@ -522,25 +497,28 @@ def main():
                     temp.append(en_document[word-1])
                 print(temp)
         """
-        print(" aligment of english annotation ==============> ")
 
-        for chain in align_of_en_chains:
-            for mention in align_of_en_chains[chain]:
-                temp = []
-                for word in mention:
-                    temp.append(de_document[word-1])
-                print(temp)
 
-        print(" original german annotation ==============> ")
-
-        for chain in de_coref_chains:
-            for mention in de_coref_chains[chain]:
-                temp = []
-                for word in mention:
-                    temp.append(de_document[word-1])
-                print(temp)
-
+        ##### sanity check
+        # print(" aligment of english annotation ==============> ")
+        #
+        # for chain in align_of_en_chains:
+        #     for mention in align_of_en_chains[chain]:
+        #         temp = []
+        #         for word in mention:
+        #             temp.append(de_document[word-1])
+        #         print(temp)
+        #
+        # print(" original german annotation ==============> ")
+        #
+        # for chain in de_coref_chains:
+        #     for mention in de_coref_chains[chain]:
+        #         temp = []
+        #         for word in mention:
+        #             temp.append(de_document[word-1])
+        #         print(temp)
         break
+
 
 if __name__ == "__main__":
     main()
