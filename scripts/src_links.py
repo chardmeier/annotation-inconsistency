@@ -24,7 +24,10 @@ def create_document(dir, doc):
 
 
 def read_alignments(f):
-
+    """
+    :param f: file from argv
+    :return: dict {0: ['0-0', '1-1', ...], 1: ['0-0', "1-1"]...}
+    """
     giza_alignments = open(f, "r", encoding="utf=8")
     all_aligns = {}
     # 0-0 1-1 2-2 3-3 4-4 5-5 6-5 8-6 12-7 7-8 9-9 13-10 14-11 15-13
@@ -56,19 +59,6 @@ def make_sentences_spans(doc_id, markables):
                 end = int(span.group(2))
                 sentences_spans[sent_id] = (start, end)
     return sentences_spans
-
-
-
-def make_sentence_based_doc(document, sentences_ids):
-    # {0: (1, 16), 1: (17, 32), 2: (33, 62),...}
-    new = []
-    for key in sorted(sentences_ids):
-        temp = []
-        span = sentences_ids[key]
-        for i in range(span[0]-1, span[1]):
-            temp.append(document[i])
-        new.append(" ".join(temp))
-    return new
 
 
 
@@ -211,7 +201,7 @@ def transform_chains_into_sentences(chains_in_doc, sentences_in_doc):
 
 def organize_align_SRCTGT(alignments):
     """
-    alignments -> ['0-0', '1-1', '2-2', '3-3', '4-4', '5-5', '6-5', '8-6', '12-7', '7-8', '9-9', '13-10', '14-11', '15-13']
+    alignments -> ['0-0', '1-1', '2-2', '3-3', '4-4', '5-5', '6-5', '8-6', '12-7', '7-8', '9-9', ...]
     out -> {source: [tgt, tgt2, tgt3, ...]...}
     """
 
@@ -480,6 +470,45 @@ def prettify_chains(mentions, text):
     return prettified
 
 
+##################################################################################################################
+
+
+def make_doc_level_align(i, alignments):
+
+    align_this_doc = {}
+
+    ordered_aligns = sorted(alignments.keys())
+    this_doc = ordered_aligns[:i]
+
+    counter = 0
+    for sent in this_doc:
+        align_this_doc[counter] = alignments[sent]
+        del alignments[sent]
+        counter += 1
+    return align_this_doc
+
+
+def transform_aligns(document_aligns):
+
+    transformed = {}
+
+    ordered_keys = sorted(document_aligns.keys())
+
+    for key in ordered_keys:
+        for s_t in document_aligns[key]:
+            each = s_t.split("-")
+            en = int(each[0])
+            de = int(each[1])
+
+            if key == 0:
+                transformed[key] = document_aligns[key]
+            else:
+                last_one = transformed[key-1][-1].split("-")
+                new_en = str(last_one[0] + 1 + en)
+                new_de = str(last_one[1] + 1 + de)
+                new_pair = new_en + "-" + new_de
+
+
 
 def main():
     if len(sys.argv) != 3:
@@ -502,7 +531,6 @@ def main():
 
     giza_alignments = read_alignments(sys.argv[2])
 
-
     for doc in endeDocs: #loop and keep order of protest
         docid = re.findall(r'[0-9]+_[0-9]+', doc)[0]  # returns list therefore the index
 
@@ -513,8 +541,11 @@ def main():
         en_sentences_ids = make_sentences_spans(docid, en_annotation_dir)
         de_sentences_ids = make_sentences_spans(docid, de_annotation_dir)
 
-        sentence_based_enDoc = make_sentence_based_doc(en_document, en_sentences_ids)
-        sentence_based_deDoc = make_sentence_based_doc(de_document, de_sentences_ids)
+        len_en = len(en_sentences_ids.keys())
+
+        #make alignments document level
+        doc_aligns = make_doc_level_align(len_en, giza_alignments)
+        transform_aligns(doc_aligns)
 
         #coref chains
 
@@ -525,88 +556,97 @@ def main():
 
         print_stats(en_path_all, doc, en_coref_chains, de_coref_chains)
 
-        en_chains_in_sentence = transform_chains_into_sentences(en_coref_chains, en_sentences_ids)
-        de_chains_in_sentence = transform_chains_into_sentences(de_coref_chains, de_sentences_ids)
+        #en_chains_in_sentence = transform_chains_into_sentences(en_coref_chains, en_sentences_ids)
+        #de_chains_in_sentence = transform_chains_into_sentences(de_coref_chains, de_sentences_ids)
 
-        align_of_en_chains = match_mentions_to_tgt(en_chains_in_sentence, giza_alignments)
+        #align_of_en_chains = match_mentions_to_tgt(en_chains_in_sentence, giza_alignments)
 
-        for i in range(len(sentence_based_enDoc)):
-            enSentence = sentence_based_enDoc[i]
-            if i >= len(sentence_based_deDoc):
-                print("==>problem with sentence splitting annotation in this document")
-                deSentence = sentence_based_deDoc[i-1]
-            else:
-                deSentence = sentence_based_deDoc[i]
+        #print("giza_alignments", giza_alignments)
+        print("doc_aligns", doc_aligns)
+        print("\n")
+        print("words in en_document", len(en_document))
+        print("\n")
+        print("en_sentences_ids", en_sentences_ids)
+        print("\n")
+        print("en_coref_chains", en_coref_chains)
 
-            print(enSentence)
-            print(deSentence)
-            print("\n")
-
-            if i in en_chains_in_sentence:
-                if i in de_chains_in_sentence:
-                    #print("==>MATCHING CHAINS")
-                    #print("\n")
-
-                    #print("chains english:", en_chains_in_sentence[i])
-                    #print("chains german:", de_chains_in_sentence[i])
-                    #print("chains alined:", align_of_en_chains[i])
-
-                    correspondancesScores = scoreChains(en_chains_in_sentence[i], de_chains_in_sentence[i], giza_alignments[i])
-                    ChainPairs = getHighest(correspondancesScores)
-
-                    for enChain in ChainPairs:
-                        deChain = ChainPairs[enChain]
-
-                        if type(deChain) is str:
-                            print("CHAIN MATCH")
-                            print("ENchain:", enChain, "corresponds to DEchain", deChain)
-                            new = prettify_chains(en_chains_in_sentence[i][enChain], sentence_based_enDoc[i])
-                            print("ENchain", enChain, "with mentions:", new)
-                            print("DEmentions")
-                            new = prettify_chains(de_chains_in_sentence[i][deChain], sentence_based_deDoc[i])
-                            print("DEchain", deChain, "with mentions:", new)
-                            print("\n")
-
-                        else:
-                            print("OVERLAP")
-                            print("Mentions in ENchain:", enChain, "found in these DEchains", deChain)
-                            print("ENmentions")
-                            new = prettify_chains(en_chains_in_sentence[i][enChain], sentence_based_enDoc[i])
-                            print("ENchain", enChain, "with mentions:", new)
-                            for mention in de_chains_in_sentence[i]:
-                                new = prettify_chains(de_chains_in_sentence[i][mention], sentence_based_deDoc[i])
-                                print("DEchain:", mention, "with mentions:", new)
-                            print("\n")
-
-
-                    # # TODO: german chains not in english in sentence that is annotated in both
-                    # # ex: And a lot of the time the question
-                    # TODO: not sure is relevant because Im printing everything already
-                    # for key in de_chains_in_sentence[i]:
-                    #     if key not in ChainPairs.values():
-                    #         print("==>GermanChainsNotInEnglish!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!")
-                    #         print("chains german:", key, "with mentions", de_chains_in_sentence[i][key])
-                    #         print("\n")
-
-                else:
-                    print("==>EnglishChainsNotInGerman")
-
-                    for chain in en_chains_in_sentence[i]:
-                        new = prettify_chains(en_chains_in_sentence[i][chain], sentence_based_enDoc[i])
-                        print("ENchain:", mention, "with mentions:", new)
-                    print("\n")
-            else:
-
-                if i in de_chains_in_sentence:
-                    print("==>GermanChainsNotInEnglish")
-                    for mention in de_chains_in_sentence[i]:
-                        new = prettify_chains(de_chains_in_sentence[i][mention], sentence_based_deDoc[i])
-                        print("DEchain:", mention, "with mentions:", new)
-                        print("\n")
-
-                else:
-                    print("==>Unannotated sentence pair")
-                    print("\n")
+        # for i in range(len(sentence_based_enDoc)):
+        #     enSentence = sentence_based_enDoc[i]
+        #     if i >= len(sentence_based_deDoc):
+        #         print("==>problem with sentence splitting annotation in this document")
+        #         deSentence = sentence_based_deDoc[i-1]
+        #     else:
+        #         deSentence = sentence_based_deDoc[i]
+        #
+        #     print(enSentence)
+        #     print(deSentence)
+        #     print("\n")
+        #
+        #     if i in en_chains_in_sentence:
+        #         if i in de_chains_in_sentence:
+        #             #print("==>MATCHING CHAINS")
+        #             #print("\n")
+        #
+        #             #print("chains english:", en_chains_in_sentence[i])
+        #             #print("chains german:", de_chains_in_sentence[i])
+        #             #print("chains alined:", align_of_en_chains[i])
+        #
+        #             correspondancesScores = scoreChains(en_chains_in_sentence[i], de_chains_in_sentence[i], giza_alignments[i])
+        #             ChainPairs = getHighest(correspondancesScores)
+        #
+        #             for enChain in ChainPairs:
+        #                 deChain = ChainPairs[enChain]
+        #
+        #                 if type(deChain) is str:
+        #                     print("CHAIN MATCH")
+        #                     print("ENchain:", enChain, "corresponds to DEchain", deChain)
+        #                     new = prettify_chains(en_chains_in_sentence[i][enChain], sentence_based_enDoc[i])
+        #                     print("ENchain", enChain, "with mentions:", new)
+        #                     print("DEmentions")
+        #                     new = prettify_chains(de_chains_in_sentence[i][deChain], sentence_based_deDoc[i])
+        #                     print("DEchain", deChain, "with mentions:", new)
+        #                     print("\n")
+        #
+        #                 else:
+        #                     print("OVERLAP")
+        #                     print("Mentions in ENchain:", enChain, "found in these DEchains", deChain)
+        #                     print("ENmentions")
+        #                     new = prettify_chains(en_chains_in_sentence[i][enChain], sentence_based_enDoc[i])
+        #                     print("ENchain", enChain, "with mentions:", new)
+        #                     for mention in de_chains_in_sentence[i]:
+        #                         new = prettify_chains(de_chains_in_sentence[i][mention], sentence_based_deDoc[i])
+        #                         print("DEchain:", mention, "with mentions:", new)
+        #                     print("\n")
+        #
+        #
+        #             # # TODO: german chains not in english in sentence that is annotated in both
+        #             # # ex: And a lot of the time the question
+        #             # TODO: not sure is relevant because Im printing everything already
+        #             # for key in de_chains_in_sentence[i]:
+        #             #     if key not in ChainPairs.values():
+        #             #         print("==>GermanChainsNotInEnglish!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!")
+        #             #         print("chains german:", key, "with mentions", de_chains_in_sentence[i][key])
+        #             #         print("\n")
+        #
+        #         else:
+        #             print("==>EnglishChainsNotInGerman")
+        #
+        #             for chain in en_chains_in_sentence[i]:
+        #                 new = prettify_chains(en_chains_in_sentence[i][chain], sentence_based_enDoc[i])
+        #                 print("ENchain:", mention, "with mentions:", new)
+        #             print("\n")
+        #     else:
+        #
+        #         if i in de_chains_in_sentence:
+        #             print("==>GermanChainsNotInEnglish")
+        #             for mention in de_chains_in_sentence[i]:
+        #                 new = prettify_chains(de_chains_in_sentence[i][mention], sentence_based_deDoc[i])
+        #                 print("DEchain:", mention, "with mentions:", new)
+        #                 print("\n")
+        #
+        #         else:
+        #             print("==>Unannotated sentence pair")
+        #             print("\n")
 
 
 
