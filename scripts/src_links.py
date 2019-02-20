@@ -491,23 +491,23 @@ def make_doc_level_align(i, alignments):
 def transform_aligns(document_aligns):
 
     transformed = {}
-
     ordered_keys = sorted(document_aligns.keys())
-
     for key in ordered_keys:
-        for s_t in document_aligns[key]:
-            each = s_t.split("-")
-            en = int(each[0])
-            de = int(each[1])
-
-            if key == 0:
-                transformed[key] = document_aligns[key]
-            else:
+        new_aligns = []
+        if key == 0:
+            transformed[key] = document_aligns[key]
+        else:
+            for s_t in document_aligns[key]:
+                each = s_t.split("-")
+                en = int(each[0])
+                de = int(each[1])
                 last_one = transformed[key-1][-1].split("-")
-                new_en = str(last_one[0] + 1 + en)
-                new_de = str(last_one[1] + 1 + de)
-                new_pair = new_en + "-" + new_de
-
+                new_en = int(last_one[0]) + 1 + en
+                new_de = int(last_one[1]) + 1 + de
+                new_pair = str(new_en) + "-" + str(new_de)
+                new_aligns.append(new_pair)
+            transformed[key] = new_aligns
+    return transformed
 
 
 def main():
@@ -545,7 +545,7 @@ def main():
 
         #make alignments document level
         doc_aligns = make_doc_level_align(len_en, giza_alignments)
-        transform_aligns(doc_aligns)
+        reindexed_doc_alings = transform_aligns(doc_aligns)
 
         #coref chains
 
@@ -564,11 +564,13 @@ def main():
         #print("giza_alignments", giza_alignments)
         print("doc_aligns", doc_aligns)
         print("\n")
+        print("reindexed_doc_alings", reindexed_doc_alings)
+        print("\n")
         print("words in en_document", len(en_document))
         print("\n")
         print("en_sentences_ids", en_sentences_ids)
-        print("\n")
-        print("en_coref_chains", en_coref_chains)
+        #print("\n")
+        #print("en_coref_chains", en_coref_chains)
 
         # for i in range(len(sentence_based_enDoc)):
         #     enSentence = sentence_based_enDoc[i]
