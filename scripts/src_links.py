@@ -117,11 +117,13 @@ def get_chain_info(doc_id, markables):
         soup = BeautifulSoup(key, "xml")
         for m in soup.find_all("markable"):
             coref_class = m["coref_class"]
+            markable_type = m["mention"]
             #doc_position.sort(key=lambda x: x[0])
-            if coref_class in info:
-                info[coref_class].append(treat_span(m["span"]))
-            else:
-                info[coref_class] = [treat_span(m["span"])]
+            if markable_type in ["np", "pronouns"]:
+                if coref_class in info:
+                    info[coref_class].append(treat_span(m["span"]))
+                else:
+                    info[coref_class] = [treat_span(m["span"])]
     return info
 
 
@@ -148,117 +150,69 @@ def read_rawfile(f):
     translations.close()
     return all
 
-
-def transform_chains_into_sentences2(chains_in_doc, sentences_in_doc):
+def organize_align_src2tgts(alignments):
     """
-    :param chains_in_doc: dict of list of positions {set_279: [[185, 186], [160, 161], [146, 147]],...}
-    :param sentences_in_doc: dic of tuples indicating start end spans {0: (1, 16), 1: (17, 32), 2: (33, 62),...}
-    :return: {sent154: {set_268: [[2, 3, 4], [7]]}, sent155: {set_268: [[2]]}}
-    """
-    out_sentences = collections.defaultdict(lambda: collections.defaultdict(lambda: collections.defaultdict(list)))
-    # {sent_154: {set_268: {ment_2: [2, 3, 4]}}}
-
-    for chain in chains_in_doc:
-
-        for mention_id, mention in enumerate(chains_in_doc[chain]):
-            # mention can span multiple sentences
-            for word in mention:
-                sentenceID, position = get_sentence_level_info(sentences_in_doc, word)
-                out_sentences["sent_" + str(sentenceID)][chain]["ment_" + str(mention_id)].append(position)
-
-    return out_sentences
-
-
-def transform_chains_into_sentences(chains_in_doc, sentences_in_doc):
-    """
-    :param chains_in_doc: dict of list of positions {set_279: [[185, 186], [160, 161], [146, 147]],...}
-    :param sentences_in_doc: dic of tuples indicating start end spans {0: (1, 16), 1: (17, 32), 2: (33, 62),...}
-    :return: {sent154: {set_268: [[2, 3, 4], [7]]}, sent155: {set_268: [[2]]}}
-    """
-    out_sentences = {}
-    # {sent_154: {set_268: {ment_2: [2, 3, 4]}}}
-
-    for chain in chains_in_doc:
-
-        for mention_id, mention in enumerate(chains_in_doc[chain]):
-            # mention can span multiple sentences
-            for word in mention:
-                sentenceID, position = get_sentence_level_info(sentences_in_doc, word)
-                #sentstr = "sent_" + str(sentenceID)
-                #mentstr = "ment_" + str(mention_id)
-                if sentenceID not in out_sentences:
-                    out_sentences[sentenceID] = {}
-                if chain not in out_sentences[sentenceID]:
-                    out_sentences[sentenceID][chain] = {}
-                if mention_id not in out_sentences[sentenceID][chain]:
-                    out_sentences[sentenceID][chain][mention_id] = []
-                out_sentences[sentenceID][chain][mention_id].append(position)
-
-    return out_sentences
-
-
-
-
-def organize_align_SRCTGT(alignments):
-    """
-    alignments -> ['0-0', '1-1', '2-2', '3-3', '4-4', '5-5', '6-5', '8-6', '12-7', '7-8', '9-9', ...]
-    out -> {source: [tgt, tgt2, tgt3, ...]...}
-    """
-
-    new = {}
-    for pair in alignments:
-        st = pair.split('-')
-        s = int(st[0])
-        t = int(st[1])
-        if s in new:
-            new[s].append(t)
-        else:
-            new[s] = [t]
-    return new
-
-
-def organize_align_TGTSRC(alignments):
-    """
-    alignments -> ['0-0', '1-1', '2-2', '3-3', '4-4', '5-5', '6-5', '8-6', '12-7', '7-8', '9-9', '13-10', '14-11', '15-13']
+    alignments -> reindexed_doc_aligns {0: ['0-0', '1-1', ...], 1: ['35-32', '36-33', ...] ...}
     out -> {target: [src, src2, scr3, ...]...}
     """
 
     new = {}
-    for pair in alignments:
-        st = pair.split('-')
-        s = int(st[0])
-        t = int(st[1])
-        if t in new:
-            new[t].append(s)
-        else:
-            new[t] = [s]
+    for sentence in alignments:
+        for pair in alignments[sentence]:
+            st = pair.split('-')
+            s = int(st[0])
+            t = int(st[1])
+            if s in new:
+                new[s].append(t)
+            else:
+                new[s] = [t]
     return new
 
+def organize_align_tgt2srcs(alignments):
+    """
+    alignments -> reindexed_doc_aligns {0: ['0-0', '1-1', ...], 1: ['35-32', '36-33', ...] ...}
+    out -> {target: [src, src2, scr3, ...]...}
+    """
 
+    new = {}
+    for sentence in alignments:
+        for pair in alignments[sentence]:
+            st = pair.split('-')
+            s = int(st[0])
+            t = int(st[1])
+            if t in new:
+                new[t].append(s)
+            else:
+                new[t] = [s]
+    return new
 
+#########################################################################################################################
 
-def match_mentions_to_tgt(sentences, giza):
+def match_mentions_to_tgt(en_chains, doc_alignments):
+    """
+    in ->
+    en_chains {'set_291': [[2151], [2083], [2094], [2113]], 'set_255': [[2294, 2295]], 'set_208': [[3911]], 'set_5': [[178, 179]], ...}
+    reindexed_doc_aligns {0: ['0-0', '1-1', '2-2', ...], 2: ['32-34', '33-35', ...], ...}
 
-    """                         src positions
-    # in -> {1134 {'set_288': {1: [19], 2: [29], 8: [13]}, 'set_289': {2: [2]}}
-                                tgt positions
-    # out -> {154 {'set_268': {0: [2, 3, 4], 2: [7]}}...}
+    # out ->
     """
     out = {}
 
-    for s in sentences:
-        targets = {}
-        align_info = organize_align_SRCTGT(giza[s])#{0: [0], 1: [1], 2: [2], 3: [3], ...}
-        for chain in sentences[s]:
-            tgt_words = {}
-            for mention in sentences[s][chain]:
-                positions = []
-                for word in sentences[s][chain][mention]:
-                    if word in align_info:# word may not be aligned
-                        positions += align_info[word]
-                tgt_words[mention] = list(set(positions))
-            targets[chain] = tgt_words
-        out[s] = targets
+    #targets2sources = organize_align_tgt2srcs(doc_alignments)
+    source2targets = organize_align_src2tgts(doc_alignments)
+
+    for chain in en_chains:
+        aligned_mentions = []
+        for mention in en_chains[chain]:
+            aligned_words = []
+            for word_i in mention:
+                if word_i in source2targets:
+                    aligned_words += list(set(source2targets[word_i]))
+            aligned_mentions.append(aligned_words)
+        if chain in out:
+            out[chain].append(aligned_mentions)
+        else:
+            out[chain] = aligned_mentions
     return out
 
 
@@ -470,9 +424,6 @@ def prettify_chains(mentions, text):
     return prettified
 
 
-##################################################################################################################
-
-
 def make_doc_level_align(i, alignments):
 
     align_this_doc = {}
@@ -545,113 +496,51 @@ def main():
 
         #make alignments document level
         doc_aligns = make_doc_level_align(len_en, giza_alignments)
-        reindexed_doc_alings = transform_aligns(doc_aligns)
+        reindexed_doc_aligns = transform_aligns(doc_aligns)
 
         #coref chains
-
         en_coref_chains = get_chain_info(docid, en_annotation_dir)
         de_coref_chains = get_chain_info(docid, de_annotation_dir)
 
-        #print(en_coref_chains)
-
+        #print some stats
         print_stats(en_path_all, doc, en_coref_chains, de_coref_chains)
 
-        #en_chains_in_sentence = transform_chains_into_sentences(en_coref_chains, en_sentences_ids)
-        #de_chains_in_sentence = transform_chains_into_sentences(de_coref_chains, de_sentences_ids)
+        align_of_en_chains = match_mentions_to_tgt(en_coref_chains, reindexed_doc_aligns)
 
-        #align_of_en_chains = match_mentions_to_tgt(en_chains_in_sentence, giza_alignments)
-
-        #print("giza_alignments", giza_alignments)
-        print("doc_aligns", doc_aligns)
-        print("\n")
-        print("reindexed_doc_alings", reindexed_doc_alings)
-        print("\n")
-        print("words in en_document", len(en_document))
-        print("\n")
-        print("en_sentences_ids", en_sentences_ids)
+        #print("reindexed_doc_aligns", reindexed_doc_aligns)
+        #print("\n")
+        #print("words in en_document", len(en_document))
         #print("\n")
         #print("en_coref_chains", en_coref_chains)
 
-        # for i in range(len(sentence_based_enDoc)):
-        #     enSentence = sentence_based_enDoc[i]
-        #     if i >= len(sentence_based_deDoc):
-        #         print("==>problem with sentence splitting annotation in this document")
-        #         deSentence = sentence_based_deDoc[i-1]
-        #     else:
-        #         deSentence = sentence_based_deDoc[i]
-        #
-        #     print(enSentence)
-        #     print(deSentence)
-        #     print("\n")
-        #
-        #     if i in en_chains_in_sentence:
-        #         if i in de_chains_in_sentence:
-        #             #print("==>MATCHING CHAINS")
-        #             #print("\n")
-        #
-        #             #print("chains english:", en_chains_in_sentence[i])
-        #             #print("chains german:", de_chains_in_sentence[i])
-        #             #print("chains alined:", align_of_en_chains[i])
-        #
-        #             correspondancesScores = scoreChains(en_chains_in_sentence[i], de_chains_in_sentence[i], giza_alignments[i])
-        #             ChainPairs = getHighest(correspondancesScores)
-        #
-        #             for enChain in ChainPairs:
-        #                 deChain = ChainPairs[enChain]
-        #
-        #                 if type(deChain) is str:
-        #                     print("CHAIN MATCH")
-        #                     print("ENchain:", enChain, "corresponds to DEchain", deChain)
-        #                     new = prettify_chains(en_chains_in_sentence[i][enChain], sentence_based_enDoc[i])
-        #                     print("ENchain", enChain, "with mentions:", new)
-        #                     print("DEmentions")
-        #                     new = prettify_chains(de_chains_in_sentence[i][deChain], sentence_based_deDoc[i])
-        #                     print("DEchain", deChain, "with mentions:", new)
-        #                     print("\n")
-        #
-        #                 else:
-        #                     print("OVERLAP")
-        #                     print("Mentions in ENchain:", enChain, "found in these DEchains", deChain)
-        #                     print("ENmentions")
-        #                     new = prettify_chains(en_chains_in_sentence[i][enChain], sentence_based_enDoc[i])
-        #                     print("ENchain", enChain, "with mentions:", new)
-        #                     for mention in de_chains_in_sentence[i]:
-        #                         new = prettify_chains(de_chains_in_sentence[i][mention], sentence_based_deDoc[i])
-        #                         print("DEchain:", mention, "with mentions:", new)
-        #                     print("\n")
-        #
-        #
-        #             # # TODO: german chains not in english in sentence that is annotated in both
-        #             # # ex: And a lot of the time the question
-        #             # TODO: not sure is relevant because Im printing everything already
-        #             # for key in de_chains_in_sentence[i]:
-        #             #     if key not in ChainPairs.values():
-        #             #         print("==>GermanChainsNotInEnglish!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!")
-        #             #         print("chains german:", key, "with mentions", de_chains_in_sentence[i][key])
-        #             #         print("\n")
-        #
-        #         else:
-        #             print("==>EnglishChainsNotInGerman")
-        #
-        #             for chain in en_chains_in_sentence[i]:
-        #                 new = prettify_chains(en_chains_in_sentence[i][chain], sentence_based_enDoc[i])
-        #                 print("ENchain:", mention, "with mentions:", new)
-        #             print("\n")
-        #     else:
-        #
-        #         if i in de_chains_in_sentence:
-        #             print("==>GermanChainsNotInEnglish")
-        #             for mention in de_chains_in_sentence[i]:
-        #                 new = prettify_chains(de_chains_in_sentence[i][mention], sentence_based_deDoc[i])
-        #                 print("DEchain:", mention, "with mentions:", new)
-        #                 print("\n")
-        #
-        #         else:
-        #             print("==>Unannotated sentence pair")
-        #             print("\n")
 
+        """
+        for chain in en_coref_chains:
+            for mention in en_coref_chains[chain]:
+                temp = []
+                for word in mention:
+                    temp.append(en_document[word-1])
+                print(temp)
+        """
+        print(" aligment of english annotation ==============> ")
 
+        for chain in align_of_en_chains:
+            for mention in align_of_en_chains[chain]:
+                temp = []
+                for word in mention:
+                    temp.append(de_document[word-1])
+                print(temp)
 
+        print(" original german annotation ==============> ")
+
+        for chain in de_coref_chains:
+            for mention in de_coref_chains[chain]:
+                temp = []
+                for word in mention:
+                    temp.append(de_document[word-1])
+                print(temp)
+
+        break
 
 if __name__ == "__main__":
     main()
