@@ -111,6 +111,7 @@ def get_chain_info(doc_id, markables):
             coref_class = m["coref_class"]
             markable_type = m["mention"]
             #doc_position.sort(key=lambda x: x[0])
+            #TODO: consider non nominal markables
             if markable_type in ["np", "pronouns"]:
                 if coref_class in info:
                     info[coref_class].append(treat_span(m["span"]))
@@ -353,22 +354,18 @@ def getHighest(scored):
 def prettify_chains(mentions, text):
 
     """
-    :param mentions: {1: [9, 10], 2: [3, 4]}
-    :param text: string
-    :return: mentions: {1: [the arm], 2: [the leg]}
+    :param mentions: list of int [[1489, 1490, 1491, 1492]]
+    :param text: list of str
+    :return: mentions: list of string
     """
 
-    sentence = text.split()
-    prettified = {}
+    prettified = []
 
     for mention in mentions:
         pretty_mention = []
-        for word in mentions[mention]:
-            if word < len(sentence):
-                pretty_mention.append(sentence[word])
-            else:
-                print("indexing error") #"weird case", word, sentence, len(sentence))
-        prettified[mention] = " ".join(pretty_mention)
+        for word in mention:
+            pretty_mention.append(text[word-1])
+        prettified.append(" ".join(pretty_mention))
     return prettified
 
 
@@ -408,6 +405,10 @@ def transform_aligns(en_sents, de_sents, document_aligns):
                 new_aligns.append(new_pair)
             transformed[key] = new_aligns
     return transformed
+
+
+
+
 
 
 #############################################          MAIN            ##############################################
@@ -460,10 +461,31 @@ def main():
 
         # find out chains correspondences between src & tgt
         scores = scoreChains(en_coref_chains, de_coref_chains, reindexed_doc_aligns)
-        highest = getHighest(scores)
+        matching_chains = getHighest(scores)
 
-        for pair in highest:
-            print(pair, highest[pair])
+        matched_germanchains = matching_chains.values()
+
+        for chainEn in en_coref_chains:
+
+            if chainEn in matching_chains:
+                chainDe = matching_chains[chainEn]
+                print("matching chains")
+                english_mentions = en_coref_chains[chainEn]
+                german_mentions = de_coref_chains[chainDe]
+                print("english mentions", prettify_chains(english_mentions, en_document))
+                print("german mentions", prettify_chains(german_mentions, de_document))
+                print("\n")
+            else:
+                print("english chain not in german")
+                print(chainEn, prettify_chains(en_coref_chains[chainEn], en_document))
+                print("\n")
+
+        for chainDE in de_coref_chains:
+            if chainDE not in matched_germanchains:
+                print("german chain not in english")
+                print(chainDE, prettify_chains(de_coref_chains[chainDE], de_document))
+                print("\n")
+
 
 
 
