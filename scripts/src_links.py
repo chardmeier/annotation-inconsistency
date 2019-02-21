@@ -57,6 +57,12 @@ def make_sentences_spans(doc_id, markables):
                 start = int(span.group(1))
                 end = int(span.group(2))
                 sentences_spans[sent_id] = (start, end)
+            else:
+                word = re.match(r'[a-z]+_([0-9]+)', m['span'])
+                sent_id = int(m['orderid'])
+                start = int(word.group(1))
+                end = start
+                sentences_spans[sent_id] = (start, end)
     return sentences_spans
 
 
@@ -172,7 +178,6 @@ def match_mentions_to_tgt(en_chains, doc_alignments):
     """
     out = {}
 
-    #targets2sources = organize_align_tgt2srcs(doc_alignments)
     source2targets = organize_align_src2tgts(doc_alignments)
 
     for chain in en_chains:
@@ -247,19 +252,6 @@ def put_into_words(relevant, sentence):
 
 
 
-def ChainStatus(enChains, deChains):
-
-    if len(enChains) == len(deChains):
-        print('=> Same number of chains in english and german')
-        return "equal"
-
-    elif len(enChains) > len(deChains):
-        print('=> More chains in english than german')
-        return "enlonger"
-    else:
-        print('=> More chains in german than english')
-        return "gelonger"
-
 #-----------------------------------------------------------------------------------------------------------------------
 #-----------------------------------------------------------------------------------------------------------------------
 
@@ -311,53 +303,49 @@ def scoreChains(enChains, deChains, alignments):
 
 def hasDuplicates(scores):
 
-    for each in scores:
-        count = scores.count(each)
+    temp = list(set(scores))
+    for each in temp:
+        count = temp.count(each)
         if count > 1:
             return True
     return False
 
 
-def tryFindMax(scores):
+def findDuplicates(scores):
 
-    testSet = set(scores)
-    i = 9999
-    if len(testSet) == 1:
-        #"all have the same score"
-        i = 9999
-    else:
-        #TODO: if there are four chains where two have the same socore and two other have the same score too, this is
-        # going to be an error
-        highestScore = max(scores)
-        i = scores.index(highestScore)
+    all = {}
+    for each in scores:
+        all[each] = scores.count(each)
+    return all
 
+
+def findMax(scores):
+
+    highestScore = max(scores)
+    i = scores.index(highestScore)
     return i
 
 
 def getHighest(scored):
     """
     :param scored: {'set_3': {'set_2': 1.0, 'set_3': 1.0}, 'set_219': {'set_2': 1.0, 'set_3': 13.0}}
-    :return: highgest = {'set_3': "duplicate", 'set_219': 'set_3': 13.0 }
+    :return: highest = {'set_3': "duplicate", 'set_219': 'set_3': 13.0 }
     """
     highest = {}
 
     for enChain in scored:
-        scores = []
         deKeys = []
-        for deChain in scored[enChain]:
-            deKeys.append(deChain)
-            scores.append(scored[enChain][deChain])
+        scores = []
+        deKeys += scored[enChain].keys()
+        scores += scored[enChain].values()
 
-        if hasDuplicates(scores):
-            i = tryFindMax(scores)
-            if i == 9999:
-                highest[enChain] = deKeys
-            else:
-                highest[enChain] = deKeys[i]
-        else:
-            highestScore = max(scores)
-            i = scores.index(highestScore)
+        if not hasDuplicates(scores):
+            i = findMax(scores)
             highest[enChain] = deKeys[i]
+        else:
+            # two chains with the same score
+            duplex = findDuplicates(scores)
+            # TODO : it seems there are no ties in scores in the DiscoMT data...not sure in other parts of parcorfull
     return highest
 
 
@@ -457,6 +445,7 @@ def main():
         #make alignments document level
         len_en = len(en_sentences_ids.keys())
         doc_aligns = make_doc_level_align(len_en, giza_alignments)
+
         reindexed_doc_aligns = transform_aligns(en_sentences_ids, de_sentences_ids, doc_aligns)
 
         #coref chains
@@ -467,16 +456,23 @@ def main():
         print_stats(en_path_all, doc, en_coref_chains, de_coref_chains)
 
         # chains' alignment points
-        align_of_en_chains = match_mentions_to_tgt(en_coref_chains, reindexed_doc_aligns)
+        #align_of_en_chains = match_mentions_to_tgt(en_coref_chains, reindexed_doc_aligns)
 
+        # find out chains correspondences between src & tgt
         scores = scoreChains(en_coref_chains, de_coref_chains, reindexed_doc_aligns)
+        highest = getHighest(scores)
+
+        for pair in highest:
+            print(pair, highest[pair])
+
+
 
         #print("reindexed_doc_aligns", reindexed_doc_aligns)
         #print("\n")
         #print("words in en_document", len(en_document))
         #print("\n")
         #print("en_coref_chains", en_coref_chains)
-
+        #print (scores)
 
         ##### sanity check
         # print(" aligment of english annotation ==============> ")
@@ -496,7 +492,7 @@ def main():
         #         for word in mention:
         #             temp.append(de_document[word-1])
         #         print(temp)
-        break
+
 
 
 if __name__ == "__main__":
