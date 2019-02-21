@@ -61,7 +61,7 @@ def make_sentences_spans(doc_id, markables):
                 word = re.match(r'[a-z]+_([0-9]+)', m['span'])
                 sent_id = int(m['orderid'])
                 start = int(word.group(1))
-                end = start
+                end = start + 1
                 sentences_spans[sent_id] = (start, end)
     return sentences_spans
 
@@ -112,7 +112,7 @@ def get_chain_info(doc_id, markables):
             markable_type = m["mention"]
             #doc_position.sort(key=lambda x: x[0])
             #TODO: consider non nominal markables
-            if markable_type in ["np", "pronouns"]:
+            if markable_type in ["np", "pronoun"]:
                 if coref_class in info:
                     info[coref_class].append(treat_span(m["span"]))
                 else:
@@ -407,8 +407,33 @@ def transform_aligns(en_sents, de_sents, document_aligns):
     return transformed
 
 
+def classifyMatches(en_coref_chains, de_coref_chains, matching_chains):
 
+    complete_matches = {}
+    partial_matches ={}
+    en_not_de = {}
+    de_not_en = {}
 
+    matched_germanchains = matching_chains.values()
+
+    for chainEn in en_coref_chains:
+        if chainEn in matching_chains:
+            chainDe = matching_chains[chainEn]
+
+            num_en_mentions = len(en_coref_chains[chainEn])
+            num_de_mentions = len(de_coref_chains[chainDe])
+            if num_en_mentions == num_de_mentions:
+                complete_matches[chainEn] = chainDe
+            else:
+                partial_matches[chainEn] = chainDe
+        else:
+            en_not_de[chainEn] = en_coref_chains[chainEn]
+
+    for chainDE in de_coref_chains:
+        if chainDE not in matched_germanchains:
+            de_not_en[chainDE] = de_coref_chains[chainDE]
+
+    return(complete_matches, partial_matches, en_not_de, de_not_en)
 
 
 #############################################          MAIN            ##############################################
@@ -462,34 +487,39 @@ def main():
         # find out chains correspondences between src & tgt
         scores = scoreChains(en_coref_chains, de_coref_chains, reindexed_doc_aligns)
         matching_chains = getHighest(scores)
+        allMatch, someMatch, enNoMatch, deNoMatch = classifyMatches(en_coref_chains, de_coref_chains, matching_chains)
 
-        matched_germanchains = matching_chains.values()
+        # print out
+        print("Matching chains ======>")
+        for englishkey in allMatch:
+            germankey = allMatch[englishkey]
+            print("English Chain:", englishkey, "Mentions:", prettify_chains(en_coref_chains[englishkey], en_document))
+            print("German Chain:", germankey, "Mentions", prettify_chains(de_coref_chains[germankey], de_document))
+            print("\n")
 
-        for chainEn in en_coref_chains:
+        print("\n")
+        print("Matching chains, different number of mentions ======>")
+        for englishkey in someMatch:
+            germankey = someMatch[englishkey]
+            print("English Chain:", englishkey, "Mentions:", prettify_chains(en_coref_chains[englishkey], en_document))
+            print("German Chain:", germankey, "Mentions", prettify_chains(de_coref_chains[germankey], de_document))
+            print("\n")
 
-            if chainEn in matching_chains:
-                chainDe = matching_chains[chainEn]
-                print("matching chains")
-                english_mentions = en_coref_chains[chainEn]
-                german_mentions = de_coref_chains[chainDe]
-                print("english mentions", prettify_chains(english_mentions, en_document))
-                print("german mentions", prettify_chains(german_mentions, de_document))
-                print("\n")
-            else:
-                print("english chain not in german")
-                print(chainEn, prettify_chains(en_coref_chains[chainEn], en_document))
-                print("\n")
+        print("\n")
+        print("English chain not in German ======>")
+        for englishkey in enNoMatch:
+            print("English Chain:", englishkey, "Mentions:", prettify_chains(en_coref_chains[englishkey], en_document))
+            print("\n")
 
-        for chainDE in de_coref_chains:
-            if chainDE not in matched_germanchains:
-                print("german chain not in english")
-                print(chainDE, prettify_chains(de_coref_chains[chainDE], de_document))
-                print("\n")
-
+        print("\n")
+        print("German chain not in English ======>")
+        for germankey in deNoMatch:
+            print("German Chain:", germankey, "Mentions", prettify_chains(de_coref_chains[germankey], de_document))
+            print("\n")
 
 
 
-        #print("reindexed_doc_aligns", reindexed_doc_aligns)
+    #print("reindexed_doc_aligns", reindexed_doc_aligns)
         #print("\n")
         #print("words in en_document", len(en_document))
         #print("\n")
