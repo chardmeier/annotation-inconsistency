@@ -9,7 +9,7 @@ Extracts links from parcor-full
 
 import sys, re
 from bs4 import BeautifulSoup
-
+import copy
 
 def create_document(dir, doc):
 
@@ -96,7 +96,8 @@ def treat_span(span_value):
                 for i in list(range(start, end+1)):
                     final.append(i)
     return final
-
+#-----------------------------------------------------------------------------------------------------------------------
+#-----------------------------------------------------------------------------------------------------------------------
 
 def get_chain_info(doc_id, markables):
     """
@@ -105,20 +106,52 @@ def get_chain_info(doc_id, markables):
     """
 
     info = {}
+    chains = {}
     with open(markables + "/" + doc_id + "_" + "coref_level.xml", "r", encoding="utf-8") as key:
         soup = BeautifulSoup(key, "xml")
         for m in soup.find_all("markable"):
-            coref_class = m["coref_class"]
-            markable_type = m["mention"]
-            #doc_position.sort(key=lambda x: x[0])
-            #TODO: consider non nominal markables
-            if markable_type in ["np", "pronoun"]:
-                if coref_class in info:
-                    info[coref_class].append(treat_span(m["span"]))
-                else:
-                    info[coref_class] = [treat_span(m["span"])]
-    return info
+            coref_class = m["coref_class"] # 'empty, or a chain number
+            markable_type = m["mention"] # pronoun, np, clause, vp
 
+            pron_type, np_type = None, None
+            if markable_type == "pronoun":
+                if m.has_attr('type_of_pronoun'): # weird inconsistency in annotation tags
+                    pron_type = m["type_of_pronoun"]
+            if markable_type == "np":
+                np_type = m["nptype"]
+            # add chain span to chains dict
+            if coref_class in chains:
+                chains[coref_class].append(treat_span(m["span"]))
+                # add annotation info to info dict
+                if pron_type:
+                    info[coref_class].append((markable_type, pron_type))
+                elif np_type:
+                    info[coref_class].append((markable_type, np_type))
+                else:
+                    info[coref_class].append((markable_type, markable_type))
+            else:
+                chains[coref_class] = [treat_span(m["span"])]
+                # add annotation info to info dict
+                if pron_type:
+                    info[coref_class] = [(markable_type, pron_type)]
+                elif np_type:
+                    info[coref_class] = [(markable_type, np_type)]
+                else:
+                    info[coref_class] = [(markable_type, markable_type)]
+    return chains, info
+
+
+def filter_chains(dict_chains, dict_info):
+
+    filtered = copy.deepcopy(dict_chains)
+
+    for chain in dict_info:
+        for mention in dict_info[chain]:
+            m_type = mention[0]
+            if m_type in ["vp", "clause", None]:
+                if chain in filtered:
+                    del filtered[chain]
+    return filtered
 
 
 def read_rawfile(f):
@@ -208,16 +241,16 @@ def find_partial(mentions, chains):
                         return True
     return False
 
-def print_stats(en_path_all, doc, en_coref_chains, de_coref_chains):
-    # (PRINT some statistics
-    en_mention_count = 0
-    de_mention_count = 0
+def print_stats(en_path_all, doc, en_coref_chains, de_coref_chains, en_filtered, de_filtered):
+    # PRINT some basic statistics
+    en_mention_count, de_mention_count = 0, 0
+    en_word_count, de_word_count = 0, 0
+    en_filter_mention, de_filter_mention = 0, 0
+    en_filter_words, de_filter_words = 0, 0
 
-    en_word_count = 0
-    de_word_count = 0
     print("****************************************")
     print("STATISTICS PER DOC")
-    print("Document ==> ", en_path_all + doc)
+    print(en_path_all + doc)
     for key in en_coref_chains:
         en_mention_count += len(en_coref_chains[key])
         for mention in en_coref_chains[key]:
@@ -227,12 +260,23 @@ def print_stats(en_path_all, doc, en_coref_chains, de_coref_chains):
         for mention in de_coref_chains[key]:
             de_word_count += len(mention)
 
-    print("SOURCE chains: ", len(en_coref_chains))
-    print("SOURCE mentions: ", en_mention_count)
-    print("SOURCE annotated words: ", en_word_count)
-    print("TARGET chains: ", len(de_coref_chains))
-    print("TARGET mentions: ", de_mention_count)
-    print("TARGET annotated words: ", de_word_count)
+
+    for key in en_filtered:
+        en_filter_mention += len(en_coref_chains[key])
+        for mention in en_filtered[key]:
+            en_filter_words += len(mention)
+    for key in de_filtered:
+        de_filter_mention += len(de_filtered[key])
+        for mention in de_filtered[key]:
+            de_filter_words += len(mention)
+
+    print("src chains:", len(en_coref_chains), "nominal:", len(en_filtered))
+    print("src mentions:", en_mention_count, "nominal:", en_filter_mention)
+    print("src annotated words:", en_word_count, "nominal:", en_filter_words)
+    print("tgt chains:", len(de_coref_chains), "nominal:", len(de_filtered))
+    print("tgt mentions:", de_mention_count, "nominal:", de_filter_mention)
+    print("tgt annotated words:", de_word_count, "nominal:", de_filter_words)
+
     print("****************************************")
     print("\n")
     # )
@@ -250,11 +294,6 @@ def put_into_words(relevant, sentence):
         new_mention = " ".join(temp)
         final.append(new_mention)
     return final
-
-
-
-#-----------------------------------------------------------------------------------------------------------------------
-#-----------------------------------------------------------------------------------------------------------------------
 
 def scoreChains(enChains, deChains, alignments):
 
@@ -351,22 +390,37 @@ def getHighest(scored):
 
 
 
-def prettify_chains(mentions, text):
+def prettify_chains(mentions, text, info):
 
     """
-    :param mentions: list of int [[1489, 1490, 1491, 1492]]
+    :param mentions: list of int [[3600, 3601, 3602], [3619], [3605]]
     :param text: list of str
+    :param info: [('np', 'antecedent'), ('pronoun', 'personal'), ('pronoun', 'relative')]
     :return: mentions: list of string
     """
 
-    prettified = []
+    # sort everybody
+    ordered_mentions = sorted(mentions)
+    ordered_info = []
+    for mention in ordered_mentions:
+        i = mentions.index(mention)
+        ordered_info.append(info[i])
 
-    for mention in mentions:
+    # prettify
+    prettified = []
+    formatted_info = []
+    for j in range(len(ordered_mentions)):
         pretty_mention = []
-        for word in mention:
+        ordered_interior = sorted(ordered_mentions[j])
+        for word in ordered_interior:
             pretty_mention.append(text[word-1])
+        formatted_info.append("-".join(list(ordered_info[j])))
         prettified.append(" ".join(pretty_mention))
-    return prettified
+
+    return (prettified, formatted_info)
+
+
+    # [('np', 'antecedent'), ('pronoun', 'personal'), ('pronoun', 'relative')]
 
 
 def make_doc_level_align(i, alignments):
@@ -475,75 +529,80 @@ def main():
         reindexed_doc_aligns = transform_aligns(en_sentences_ids, de_sentences_ids, doc_aligns)
 
         #coref chains
-        en_coref_chains = get_chain_info(docid, en_annotation_dir)
-        de_coref_chains = get_chain_info(docid, de_annotation_dir)
+        en_coref_chains, en_chains_info = get_chain_info(docid, en_annotation_dir)
+        de_coref_chains, de_chains_info = get_chain_info(docid, de_annotation_dir)
+
+        #filter chains
+        en_filtered_chains = filter_chains(en_coref_chains, en_chains_info)
+        de_filtered_chains = filter_chains(de_coref_chains, de_chains_info)
 
         #print some stats
-        print_stats(en_path_all, doc, en_coref_chains, de_coref_chains)
+        print_stats(en_path_all, doc, en_coref_chains, de_coref_chains, en_filtered_chains, de_filtered_chains)
 
         # chains' alignment points
         #align_of_en_chains = match_mentions_to_tgt(en_coref_chains, reindexed_doc_aligns)
 
         # find out chains correspondences between src & tgt
-        scores = scoreChains(en_coref_chains, de_coref_chains, reindexed_doc_aligns)
+        scores = scoreChains(en_filtered_chains, de_filtered_chains, reindexed_doc_aligns)
         matching_chains = getHighest(scores)
-        allMatch, someMatch, enNoMatch, deNoMatch = classifyMatches(en_coref_chains, de_coref_chains, matching_chains)
+        allMatch, someMatch, enNoMatch, deNoMatch = classifyMatches(en_filtered_chains, de_filtered_chains, matching_chains)
 
         # print out
         print("Matching chains ======>")
+        print("\n")
         for englishkey in allMatch:
             germankey = allMatch[englishkey]
-            print("English Chain:", englishkey, "Mentions:", prettify_chains(en_coref_chains[englishkey], en_document))
-            print("German Chain:", germankey, "Mentions", prettify_chains(de_coref_chains[germankey], de_document))
+            print("English Chain:", englishkey, "German Chain:", germankey)
+            en_tokens, en_types = prettify_chains(en_filtered_chains[englishkey], en_document, en_chains_info[englishkey])
+            de_tokens, de_types = prettify_chains(de_filtered_chains[germankey], de_document, de_chains_info[germankey])
+            print("Mentions tokens:")
+            print(en_tokens)
+            print(de_tokens)
+            print("Mentions types")
+            print(en_types)
+            print(de_types)
             print("\n")
 
-        print("\n")
         print("Matching chains, different number of mentions ======>")
+        print("\n")
         for englishkey in someMatch:
             germankey = someMatch[englishkey]
-            print("English Chain:", englishkey, "Mentions:", prettify_chains(en_coref_chains[englishkey], en_document))
-            print("German Chain:", germankey, "Mentions", prettify_chains(de_coref_chains[germankey], de_document))
+            print("English Chain:", englishkey, "German Chain:", germankey)
+            en_tokens, en_types = prettify_chains(en_filtered_chains[englishkey], en_document, en_chains_info[englishkey])
+            de_tokens, de_types = prettify_chains(de_filtered_chains[germankey], de_document, de_chains_info[germankey])
+            print("Mentions tokens:")
+            print(en_tokens)
+            print(de_tokens)
+            print("Mentions types")
+            print(en_types)
+            print(de_types)
             print("\n")
 
-        print("\n")
         print("English chain not in German ======>")
-        for englishkey in enNoMatch:
-            print("English Chain:", englishkey, "Mentions:", prettify_chains(en_coref_chains[englishkey], en_document))
-            print("\n")
-
         print("\n")
+        for englishkey in enNoMatch:
+            print("English Chain:", englishkey)
+            en_tokens, en_types = prettify_chains(en_filtered_chains[englishkey], en_document, en_chains_info[englishkey])
+            print("Mentions tokens:")
+            print(en_tokens)
+            print("Mentions types")
+            print(en_types)
+            print("\n")
+
         print("German chain not in English ======>")
+        print("\n")
         for germankey in deNoMatch:
-            print("German Chain:", germankey, "Mentions", prettify_chains(de_coref_chains[germankey], de_document))
+            print("German Chain:", germankey)
+            de_tokens, de_types = prettify_chains(de_filtered_chains[germankey], de_document, de_chains_info[germankey])
+            print("Mentions tokens:")
+            print(de_tokens)
+            print("Mentions types")
+            print(de_types)
             print("\n")
 
 
 
-    #print("reindexed_doc_aligns", reindexed_doc_aligns)
-        #print("\n")
-        #print("words in en_document", len(en_document))
-        #print("\n")
-        #print("en_coref_chains", en_coref_chains)
-        #print (scores)
 
-        ##### sanity check
-        # print(" aligment of english annotation ==============> ")
-        #
-        # for chain in align_of_en_chains:
-        #     for mention in align_of_en_chains[chain]:
-        #         temp = []
-        #         for word in mention:
-        #             temp.append(de_document[word-1])
-        #         print(temp)
-        #
-        # print(" original german annotation ==============> ")
-        #
-        # for chain in de_coref_chains:
-        #     for mention in de_coref_chains[chain]:
-        #         temp = []
-        #         for word in mention:
-        #             temp.append(de_document[word-1])
-        #         print(temp)
 
 
 
