@@ -96,8 +96,7 @@ def treat_span(span_value):
                 for i in list(range(start, end+1)):
                     final.append(i)
     return final
-#-----------------------------------------------------------------------------------------------------------------------
-#-----------------------------------------------------------------------------------------------------------------------
+
 
 def get_chain_info(doc_id, markables):
     """
@@ -353,6 +352,15 @@ def getHighest(scored):
     return highest
 
 
+def order_mention_types(mentions, info):
+
+    ordered_mentions = sorted(mentions)
+    ordered_info = []
+    for mention in ordered_mentions:
+        i = mentions.index(mention)
+        ordered_info.append(info[i])
+    return ordered_mentions, ordered_info
+
 
 def prettify_chains(mentions, text, info):
 
@@ -364,11 +372,7 @@ def prettify_chains(mentions, text, info):
     """
 
     # sort everybody
-    ordered_mentions = sorted(mentions)
-    ordered_info = []
-    for mention in ordered_mentions:
-        i = mentions.index(mention)
-        ordered_info.append(info[i])
+    ordered_mentions, ordered_info = order_mention_types(mentions, info)
 
     # prettify
     prettified = []
@@ -451,7 +455,68 @@ def classifyMatches(en_coref_chains, de_coref_chains, matching_chains):
         if chainDE not in matched_germanchains:
             de_not_en[chainDE] = de_coref_chains[chainDE]
 
-    return(complete_matches, partial_matches, en_not_de, de_not_en)
+    return complete_matches, partial_matches, en_not_de, de_not_en
+
+#-----------------------------------------------------------------------------------------------------------------------
+#-----------------------------------------------------------------------------------------------------------------------
+
+def count_typology(dict_matches, en, de, enInfo, deInfo):
+    """
+    :param dict_matches: {'set_40': 'set_40', 'set_14': 'set_103',...}
+    :param en:
+    :param de:
+    :return:
+    """
+
+    counts = {}
+    for key in dict_matches:
+        # order everything
+        en_sort_men, en_sort_info = order_mention_types(en[key], enInfo[key])
+        de_sort_men, de_sort_info = order_mention_types(de[dict_matches[key]], deInfo[dict_matches[key]])
+
+        #equal legth case, for different lengths we don't know the correspondences
+        for men in en_sort_info:
+            pretty_men = "-".join(list(men))
+            for mde in de_sort_info:
+                pretty_mde = "-".join(list(mde))
+                pair = pretty_men + " to " + pretty_mde
+                if pair in counts:
+                    counts[pair] += 1
+                else:
+                    counts[pair] = 1
+    return counts
+
+
+
+def count_uneven_length(dict_matches, en, de, enInfo, deInfo):
+
+    en_longer_pairs = {}
+    de_longer_pairs = {}
+    en_longer_c, de_longer_c = 0, 0
+
+    for key in dict_matches:
+        # order everything
+        en_sort_men, en_sort_info = order_mention_types(en[key], enInfo[key])
+        de_sort_men, de_sort_info = order_mention_types(de[dict_matches[key]], deInfo[dict_matches[key]])
+        # english longer than german
+        if len(en_sort_men) > len(de_sort_men):
+            en_longer_pairs[key] = dict_matches[key]
+            en_longer_c += 1
+        else:
+            de_longer_pairs[key] = dict_matches[key]
+            de_longer_c += 1
+
+    return en_longer_pairs, de_longer_pairs, en_longer_c, de_longer_c
+
+
+def aggregate(d_doc, d_global):
+
+    for key in d_doc:
+        if key in d_global:
+            d_global[key] += d_doc[key]
+        else:
+            d_global[key] = d_doc[key]
+
 
 
 #############################################          MAIN            ##############################################
@@ -475,6 +540,10 @@ def main():
     de_annotation_dir = de_path_all + "/" + "Markables"
 
     giza_alignments = read_alignments(sys.argv[2])
+    mention_types_corpus = {}
+    en_long_corpus, de_long_corpus = 0, 0
+    en_only_corpus = 0
+    de_only_corpus = 0
 
     for doc in endeDocs: #loop and keep order of protest
         docid = re.findall(r'[0-9]+_[0-9]+', doc)[0]  # returns list therefore the index
@@ -508,7 +577,22 @@ def main():
         # find out chains correspondences between src & tgt
         scores = scoreChains(en_filtered_chains, de_filtered_chains, reindexed_doc_aligns)
         matching_chains = getHighest(scores)
-        allMatch, someMatch, enNoMatch, deNoMatch = classifyMatches(en_filtered_chains, de_filtered_chains, matching_chains)
+        allMatch, someMatch, enNoMatch, deNoMatch = classifyMatches(en_filtered_chains, de_filtered_chains,
+                                                                    matching_chains)
+
+        # count mention correspondences in matches
+        mention_types_doc = count_typology(allMatch, en_filtered_chains, de_filtered_chains, en_chains_info,
+                                           de_chains_info)
+        # count the uneven chains
+        en_long, de_long, en_c, de_c = count_uneven_length(someMatch, en_filtered_chains, de_filtered_chains,
+                                                           en_chains_info, de_chains_info)
+
+        #count over corpus
+        aggregate(mention_types_doc, mention_types_corpus)
+        en_long_corpus += en_c
+        de_long_corpus += de_c
+        de_only_corpus += len(deNoMatch)
+        en_only_corpus += len(enNoMatch)
 
         # print out
         print("Matching chains ======>")
@@ -528,8 +612,11 @@ def main():
 
         print("Matching chains, different number of mentions ======>")
         print("\n")
-        for englishkey in someMatch:
-            germankey = someMatch[englishkey]
+
+        print("English longer chains ======>")
+        print("\n")
+        for englishkey in en_long:
+            germankey = en_long[englishkey]
             print("English Chain:", englishkey, "German Chain:", germankey)
             en_tokens, en_types = prettify_chains(en_filtered_chains[englishkey], en_document, en_chains_info[englishkey])
             de_tokens, de_types = prettify_chains(de_filtered_chains[germankey], de_document, de_chains_info[germankey])
@@ -540,6 +627,35 @@ def main():
             print(en_types)
             print(de_types)
             print("\n")
+
+        print("German longer chains ======>")
+        print("\n")
+        for englishkey in de_long:
+            germankey = de_long[englishkey]
+            print("English Chain:", englishkey, "German Chain:", germankey)
+            en_tokens, en_types = prettify_chains(en_filtered_chains[englishkey], en_document, en_chains_info[englishkey])
+            de_tokens, de_types = prettify_chains(de_filtered_chains[germankey], de_document, de_chains_info[germankey])
+            print("Mentions tokens:")
+            print(en_tokens)
+            print(de_tokens)
+            print("Mentions types")
+            print(en_types)
+            print(de_types)
+            print("\n")
+
+        # for englishkey in someMatch:
+        #     germankey = someMatch[englishkey]
+        #     print("English Chain:", englishkey, "German Chain:", germankey)
+        #     en_tokens, en_types = prettify_chains(en_filtered_chains[englishkey], en_document, en_chains_info[englishkey])
+        #     de_tokens, de_types = prettify_chains(de_filtered_chains[germankey], de_document, de_chains_info[germankey])
+        #     print("Mentions tokens:")
+        #     print(en_tokens)
+        #     print(de_tokens)
+        #     print("Mentions types")
+        #     print(en_types)
+        #     print(de_types)
+        #     print("\n")
+        #
 
         print("English chain not in German ======>")
         print("\n")
@@ -563,10 +679,19 @@ def main():
             print(de_types)
             print("\n")
 
-
-
-
-
+    print("\n")
+    print("**************End of corpus*****************")
+    print("**************Stats in corpus*****************")
+    print("\n")
+    print("mention correspondences in corpus (for matching chains with the same number of mentions)")
+    print("\n")
+    for w in sorted(mention_types_corpus, key=mention_types_corpus.get, reverse=True):
+        print(w, mention_types_corpus[w])
+    print("\n")
+    print("number of english chains longer than german:", en_long_corpus)
+    print("number of german chains longer than german:", de_long_corpus)
+    print("number of english chains not in german:", en_only_corpus)
+    print("number of german chains not in english:", de_only_corpus)
 
 
 if __name__ == "__main__":
