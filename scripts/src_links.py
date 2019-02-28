@@ -154,17 +154,6 @@ def filter_chains(dict_chains, dict_info):
     return filtered
 
 
-def read_rawfile(f):
-    translations = open(f, "r", encoding="utf=8")
-    all = {}
-    sent = 0
-    for line in translations:
-        trans = line.strip('\n').split(" ")
-        all[sent] = trans
-        sent += 1
-    translations.close()
-    return all
-
 def organize_align_src2tgts(alignments):
     """
     alignments -> reindexed_doc_aligns {0: ['0-0', '1-1', ...], 1: ['35-32', '36-33', ...] ...}
@@ -229,18 +218,6 @@ def match_mentions_to_tgt(en_chains, doc_alignments):
     return out
 
 
-def find_partial(mentions, chains):
-    # [[0, 1], [0, 1], [11]]
-    # {'set_271': [[3], [16, 17], [4, 5]]}
-
-    for mention in mentions:
-        for word in mention:
-            for chain in chains:
-                for mention_b in chains[chain]:
-                    if word in mention_b:
-                        return True
-    return False
-
 def print_stats(en_path_all, doc, en_coref_chains, de_coref_chains, en_filtered, de_filtered):
     # PRINT some basic statistics
     en_mention_count, de_mention_count = 0, 0
@@ -281,19 +258,6 @@ def print_stats(en_path_all, doc, en_coref_chains, de_coref_chains, en_filtered,
     print("\n")
     # )
 
-def put_into_words(relevant, sentence):
-    # [[0], [4, 5]]
-
-    s = sentence.split()
-    final = []
-    for mention in relevant:
-        temp = []
-        for word in mention:
-            if word < len(s):
-                temp.append(s[word])
-        new_mention = " ".join(temp)
-        final.append(new_mention)
-    return final
 
 def scoreChains(enChains, deChains, alignments):
 
@@ -525,7 +489,6 @@ def main():
         #make alignments document level
         len_en = len(en_sentences_ids.keys())
         doc_aligns = make_doc_level_align(len_en, giza_alignments)
-
         reindexed_doc_aligns = transform_aligns(en_sentences_ids, de_sentences_ids, doc_aligns)
 
         #coref chains
