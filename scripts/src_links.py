@@ -542,6 +542,7 @@ def main():
     giza_alignments = read_alignments(sys.argv[2])
     mention_types_corpus = {}
     en_long_corpus, de_long_corpus = 0, 0
+    equal_length_corpus = 0
     en_only_corpus = 0
     de_only_corpus = 0
 
@@ -593,6 +594,7 @@ def main():
         de_long_corpus += de_c
         de_only_corpus += len(deNoMatch)
         en_only_corpus += len(enNoMatch)
+        equal_length_corpus += len(allMatch)
 
         # print out
         print("Matching chains ======>")
@@ -688,6 +690,7 @@ def main():
     for w in sorted(mention_types_corpus, key=mention_types_corpus.get, reverse=True):
         print(w, mention_types_corpus[w])
     print("\n")
+    print("number of matching chains:", equal_length_corpus)
     print("number of english chains longer than german:", en_long_corpus)
     print("number of german chains longer than german:", de_long_corpus)
     print("number of english chains not in german:", en_only_corpus)
