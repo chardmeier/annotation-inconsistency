@@ -1,0 +1,78 @@
+German Chain: set_171 Mentions ['sie', 'die Familie', 'ihnen', 'ihre', 'sie', 'sie']
+shortertarget: the first weekend I spent with [them] - am ersten gemeinsamen wochenende (genre-related)
+German Chain: set_51 Mentions ['die', 'Identitäten', 'die', 'Ihren']
+annoerror: ['identities', 'that', 'that', 'them']-['Identitäten', 'die', 'die']
+German Chain: set_55 Mentions ['drei Stufen der Akzeptanz', 'die drei', 'die']
+annointerp: split antecedent vs other antecedent
+German Chain: set_25 Mentions ['diesem Kind', 'sich', 'sich', 'sie', 'eine kleinwüchsige Tochter']
+annoerror: sich, sich
+German Chain: set_189 Mentions ['sie', 'sie', 'die', 'die Kinder', 'sie']
+annointerp: relative clause inside vs outside
+German Chain: set_245 Mentions ['sie', 'sie', 'die', 'diese', 'dieser Dinge', 'ein Tumor einen Wasserkopf']
+annointerp: different antecedent - interesting, as the German part more explicit and this had the influence on the decision
+German Chain: set_36 Mentions ['sie', 'ihrer', 'die Freundin einer Freundin', 'sie', 'sie', 'Sie', 'diese Freundin', 'die', 'ihrer']
+longertarget: reflexives
+German Chain: set_31 Mentions ['Diese Eltern', 'heterosexuelle Eltern', 'ihrer', 'ihre']
+longertarget: full NP instead of pronoun: them - ihre Kinder --> different chains
+German Chain: set_145 Mentions ['diesen Wirkstoff', 'BMN-111', 'das', 'Ein Präparat']
+annoerror: two chains in En and corresponding one chain in German
+German Chain: set_255 Mentions ['unser Sohn', 'seine', 'Er', 'er', 'er', 'er', 'er', 'seiner', 'seine', 'ihn', 'er', 'seine', 'er', 'sein', 'ihn', 'er', 'ihm']
+annoerror: two chains in EN, one chain in De
+German Chain: set_145 Mentions ['diesen Wirkstoff', 'BMN-111', 'das', 'Ein Präparat']
+annoerror: two chains in En and corresponding one chain in German
+German Chain: set_209 Mentions ['eines behinderten Kindes', 'des Kindes', 'seine', 'das', 'ein schwerst behindertes Kind', 'das', 'seine', 'das']
+annointerp: more members in DE
+German Chain: set_192 Mentions ['sie', 'die', 'Probleme']
+shortertarget: construction in En
+German Chain: set_255 Mentions ['unser Sohn', 'seine', 'Er', 'er', 'er', 'er', 'er', 'seiner', 'seine', 'ihn', 'er', 'seine', 'er', 'sein', 'ihn', 'er', 'ihm']
+annoerror: two chains in EN, one chain in De
+German Chain: set_36 Mentions ['sie', 'ihrer', 'die Freundin einer Freundin', 'sie', 'sie', 'Sie', 'diese Freundin', 'die', 'ihrer']
+annoerror: 2 chains in En, some parts of German chain are in wrong chain
+German Chain: set_111 Mentions ['er', 'seiner', 'er', 'ihn', 'ihren Sohn', 'ihm', 'er', 'er', 'seinen', 'er', 'er', 'sich', 'er', 'ihn', 'er', 'seiner', 'seiner', 'er', 'Seine', 'seinem', 'er', 'ihn', 'ihn', 'ihm', 'sein', 'er', 'er', 'seinem', 'seinen', 'er', 'ihm', 'ihn', 'seine', 'er', 'ihren Sohn']
+annoerror: one chain in En, two chains in De
+German Chain: set_26 Mentions ['hörende Eltern', 'ihre', 'diese']
+longertarget: full NP instead of pronoun: them - ihre Kinder --> different chains
+German Chain: set_117 Mentions ['Es', 'ein " Weggeben', 'es']
+annointerp: putting away vs. Weggeben (put away)
+German Chain: set_51 Mentions ['die', 'Identitäten', 'die', 'Ihren']
+annoerror: ['identities', 'that', 'that', 'them']-['Identitäten', 'die', 'die']
+German Chain: set_141 Mentions ['deren', 'die', 'Cochlear-Implantate']
+shortertarget: non-cohesive ellipsis in German, different formulation
+German Chain: set_48 Mentions ['Das', 'horizontale Identitäten', 'diese Identitäten', 'diese horizontalen Identitäten']
+annoerror
+German Chain: set_48 Mentions ['Das', 'horizontale Identitäten', 'diese Identitäten', 'diese horizontalen Identitäten']
+annoerror: one chain in En, two chains in De
+German Chain: set_59 Mentions ['sie', 'die Betroffenen', 'sie', 'ihre', 'ihre', 'sie']
+annoerror: ['einem weiteren Magazin aus den 60ern', 'Dieses']
+German Chain: set_122 Mentions ['Der Wandel', 'der', 'den', 'dem', 'einer']
+annoerror: which should be annotated
+German Chain: set_280 Mentions ['Tom und', 'Karen Robards', 'ihr', 'zwei junge und erfolgreiche New Yorker', 'Sie', 'sie', 'sie']
+annoerror: no split antecedent in Engish, no apposition
+German Chain: set_258 Mentions ['ihre', 'seltsame Liebe', 'ihr']
+longertarget: translation interpretation
+German Chain: set_270 Mentions ['sie', 'beide', 'als auch medizinischen Fortschritt', 'sozialen']
+annoerror: two chain in En
+German Chain: set_279 Mentions ['den rosafarbenen', 'einen rosafarbenen', 'einen Luftballon']
+annoerror: one member to much
+German Chain: set_11 Mentions ['sie', 'meine Mutter', 'sie', 'ihre', 'sie']
+longertarget: parenting - ihre Mutterrolle
+German Chain: set_160 Mentions ['Sie', 'Sie', 'Eltern', 'Ihr']
+annointerp
+German Chain: set_263 Mentions ['es', 'es', 'es', 'das']
+annoerror: not annotated chain in English: 30 major surgical procedures - those procedures - which
+German Chain: set_113 Mentions ['die ersten', 'die']
+longertarget: relative
+German Chain: set_112 Mentions ['das']
+annoerror: not annotated in EN
+German Chain: set_119 Mentions ['Menschen', 'sie', 'Menschen mit einer Behinderung', 'die']
+annointerp: one chain in German, two chains in English
+German Chain: set_264 Mentions ['das', 'etwas']
+annoerror: not annotated in en
+German Chain: set_262 Mentions ['der Weg', 'dem']
+longertarget: relative
+German Chain: set_261 Mentions ['das']
+longertarget: relative
+German Chain: set_268 Mentions ['es', 'es', 'es']
+annointerp: Down syndrom vs. an Down-Syndrom leiden
+German Chain: set_265 Mentions ['der Zeit', 'die']
+longertarget: relative
