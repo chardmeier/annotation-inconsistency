@@ -1,0 +1,5923 @@
+****************************************
+STATISTICS PER DOC
+Document ==>  /Users/xloish/PycharmProjects/testsuitewmt18/parcor-full/corpus//DiscoMT/EN000_1756_words.xml
+SOURCE chains:  95
+SOURCE mentions:  121
+SOURCE annotated words:  336
+TARGET chains:  128
+TARGET mentions:  165
+TARGET annotated words:  382
+****************************************
+
+
+matching chains
+english mentions ['a close friend']
+german mentions ['eine enge Freundin']
+
+
+matching chains
+english mentions ['people']
+german mentions ['Menschen']
+
+
+matching chains
+english mentions ['flame-retardant pajamas']
+german mentions ['flammfeste Schlafanzüge']
+
+
+matching chains
+english mentions ['their story']
+german mentions ['ihre Geschichte']
+
+
+matching chains
+english mentions ['identities that are alien to your parents']
+german mentions ['Identitäten']
+
+
+matching chains
+english mentions ["'s family acceptance social acceptance"]
+german mentions ['solche Identitäten']
+
+
+matching chains
+english mentions ['a daughter', 'this child']
+german mentions ['diesem Kind', 'eine kleinwüchsige Tochter']
+
+
+matching chains
+english mentions ['people who have these conditions']
+german mentions ['die Betroffenen']
+
+
+matching chains
+english mentions ['that light']
+german mentions ['dieses Leuchten']
+
+
+matching chains
+english mentions ['the family of Dylan Klebold']
+german mentions ['Dylan Klebold', 'Dylan', 'dieses Kind']
+
+
+matching chains
+english mentions ['the children I had']
+german mentions ['die Kinder']
+
+
+matching chains
+english mentions ['the things we were about to start testing for']
+german mentions ['dieser Dinge', 'ein Tumor einen Wasserkopf']
+
+
+matching chains
+english mentions ['most deaf children', 'Those deaf people']
+german mentions ['Diese tauben Menschen', 'die meisten tauben Kinder']
+
+
+matching chains
+english mentions ['homosexuality']
+german mentions ['solche Identitäten']
+
+
+matching chains
+english mentions ['Those straight parents', 'straight parents']
+german mentions ['Diese Eltern', 'heterosexuelle Eltern']
+
+
+matching chains
+english mentions ['Most gay people', 'those gay people']
+german mentions ['diese homosexuellen Menschen', 'meisten homosexuellen Menschen']
+
+
+matching chains
+english mentions ['A compound']
+german mentions ['diesen Wirkstoff', 'BMN-111', 'Ein Präparat']
+
+
+matching chains
+english mentions ['Dylan', 'Dylan Klebold']
+german mentions ['Dylan Klebold', 'Dylan', 'dieses Kind']
+
+
+matching chains
+english mentions ['BMN-111', 'that substance']
+german mentions ['diesen Wirkstoff', 'BMN-111', 'Ein Präparat']
+
+
+matching chains
+english mentions ['mice']
+german mentions ['Mäuse']
+
+
+matching chains
+english mentions ['blood tests']
+german mentions ['solche Identitäten']
+
+
+matching chains
+english mentions ['progress']
+german mentions ['solche Identitäten']
+
+
+matching chains
+english mentions ['this terrible thing', 'the Columbine massacre']
+german mentions ['des Columbine-Massakers', 'diese schreckliche Sache']
+
+
+matching chains
+english mentions ['problems']
+german mentions ['Probleme']
+
+
+matching chains
+english mentions ['this day-old child', 'my child']
+german mentions ['solche Identitäten']
+
+
+matching chains
+english mentions ['the universal experience of parenting']
+german mentions ['die universelle Erfahrung des Elternseins']
+
+
+matching chains
+english mentions ['with are of']
+german mentions ['dieser Kategorien', 'ein das oder']
+
+
+matching chains
+english mentions ['a son']
+german mentions ['einen Sohn']
+
+
+matching chains
+english mentions ['people']
+german mentions ['Leute']
+
+
+matching chains
+english mentions ['the pediatrician']
+german mentions ['die Kinderärztin']
+
+
+matching chains
+english mentions ["my mother 's influence"]
+german mentions ['den Einfluss meiner Mutter']
+
+
+matching chains
+english mentions ['a friend of a friend of mine']
+german mentions ['die Freundin einer Freundin', 'diese Freundin']
+
+
+matching chains
+english mentions ['this friend of mine']
+german mentions ['die Freundin einer Freundin', 'diese Freundin']
+
+
+matching chains
+english mentions ['a Down syndrome child']
+german mentions ['solche Identitäten']
+
+
+matching chains
+english mentions ['A family']
+german mentions ['Eine Familie']
+
+
+matching chains
+english mentions ['an important bioethicist']
+german mentions ['einem bedeutenden Bioethiker']
+
+
+matching chains
+english mentions ['a child']
+german mentions ['einem Kind']
+
+
+matching chains
+english mentions ['hearing parents', 'Those hearing parents']
+german mentions ['hörende Eltern']
+
+
+matching chains
+english mentions ['people']
+german mentions ['Menschen']
+
+
+matching chains
+english mentions ['identities']
+german mentions ['Identitäten']
+
+
+matching chains
+english mentions ['Most deaf infants']
+german mentions ['gehörlosen Kinder']
+
+
+matching chains
+english mentions ['those identities', 'two kinds of identity']
+german mentions ['horizontale Identitäten', 'diese Identitäten', 'diese horizontalen Identitäten']
+
+
+matching chains
+english mentions ['those horizontal identities', 'horizontal identities', 'those identities']
+german mentions ['horizontale Identitäten', 'diese Identitäten', 'diese horizontalen Identitäten']
+
+
+matching chains
+english mentions ['people']
+german mentions ['Leuten']
+
+
+matching chains
+english mentions ['people']
+german mentions ['die Betroffenen']
+
+
+matching chains
+english mentions ['his mother', 'his mother']
+german mentions ['Seine Mutter', 'seine Mutter']
+
+
+matching chains
+english mentions ["another magazine of the '60s"]
+german mentions ['solche Identitäten']
+
+
+matching chains
+english mentions ['the enormous progress']
+german mentions ['den enormen Fortschritt']
+
+
+matching chains
+english mentions ['Clinton Brown', 'Clinton', 'Clinton']
+german mentions ['Clinton Brown']
+
+
+matching chains
+english mentions ['people']
+german mentions ['solche Identitäten']
+
+
+matching chains
+english mentions ['people']
+german mentions ['solche Identitäten']
+
+
+matching chains
+english mentions ['change']
+german mentions ['Der Wandel']
+
+
+matching chains
+english mentions ['Tom and Karen Robards']
+german mentions ['Tom und', 'Karen Robards', 'zwei junge und erfolgreiche New Yorker']
+
+
+matching chains
+english mentions ['vertical identities']
+german mentions ['die anderen Identitäten', 'vertikale Identitäten']
+
+
+matching chains
+english mentions ['a little center', 'that center']
+german mentions ['dieses Zentrum', 'ein kleines Zentrum']
+
+
+matching chains
+english mentions ['David', 'David', 'David', 'David']
+german mentions ['David', 'David']
+
+
+matching chains
+english mentions ['Cochlear implants']
+german mentions ['Cochlear-Implantate']
+
+
+matching chains
+english mentions ['Those poor people']
+german mentions ['Diese armen Menschen']
+
+
+matching chains
+english mentions ['their first child']
+german mentions ['ihr erstes Kind']
+
+
+matching chains
+english mentions ['language', 'often religion', 'things like ethnicity', 'frequently nationality']
+german mentions ['Dinge', 'Dinge']
+
+
+matching chains
+english mentions ['the educational opportunities']
+german mentions ['die Bildungschancen']
+
+
+matching chains
+english mentions ['strange love']
+german mentions ['seltsame Liebe']
+
+
+matching chains
+english mentions ['these other identities']
+german mentions ['die anderen Identitäten', 'vertikale Identitäten']
+
+
+matching chains
+english mentions ['the families I interviewed for this project', 'all of these families']
+german mentions ['der Familien , die ich für dieses Projekt interviewt habe', 'diese Familien']
+
+
+matching chains
+english mentions ['that illness']
+german mentions ['die Krankheit']
+
+
+matching chains
+english mentions ['the terrifying joy of unbearable responsibility']
+german mentions ['und Schrecken unerträglicher Verantwortung', 'Freuden']
+
+
+matching chains
+english mentions ['Sue Klebold', 'Sue']
+german mentions ['Sue Klebold', 'Sue']
+
+
+matching chains
+english mentions ['The love you have for your children']
+german mentions ['solche Identitäten']
+
+
+matching chains
+english mentions ['the best doctor in the country for dealing with diastrophic dwarfism']
+german mentions ['den besten Arzt im Land für die Behandlung von diastrophischem Zwergwuchs']
+
+
+matching chains
+english mentions ['social progress', 'and medical progress']
+german mentions ['als auch medizinischen Fortschritt', 'sozialen']
+
+
+matching chains
+english mentions ['the experience of negotiating difference within your family']
+german mentions ['solche Identitäten']
+
+
+matching chains
+english mentions ['a culture']
+german mentions ['solche Identitäten']
+
+
+matching chains
+english mentions ['a pink balloon', 'the pink one']
+german mentions ['den rosafarbenen', 'einen rosafarbenen']
+
+
+matching chains
+english mentions ['the children we have']
+german mentions ['solche Identitäten']
+
+
+matching chains
+english mentions ['a severely disabled child who died through caregiver neglect']
+german mentions ['eines behinderten Kindes', 'des Kindes', 'ein schwerst behindertes Kind']
+
+
+matching chains
+english mentions ['the parents I was interviewing']
+german mentions ['die Eltern']
+
+
+matching chains
+english mentions ['the people']
+german mentions ['die Menschen']
+
+
+matching chains
+english mentions ['questions']
+german mentions ['solche Identitäten']
+
+
+matching chains
+english mentions ['his legs']
+german mentions ['seine Beine']
+
+
+matching chains
+english mentions ['the pediatrician']
+german mentions ['die Kinderärztin']
+
+
+matching chains
+english mentions ['our son']
+german mentions ['unser Sohn']
+
+
+matching chains
+english mentions ['my mother']
+german mentions ['meine Mutter']
+
+
+matching chains
+english mentions ['those pregnancies']
+german mentions ['solche Identitäten']
+
+
+matching chains
+english mentions ['the social progress the medical progress']
+german mentions ['solche Identitäten']
+
+
+matching chains
+english mentions ['Down syndrome people']
+german mentions ['Menschen mit Down-Syndrom']
+
+
+matching chains
+english mentions ['the hero']
+german mentions ['der Held']
+
+
+matching chains
+english mentions ['the love you have for your children']
+german mentions ['die Liebe']
+
+
+matching chains
+english mentions ['people']
+german mentions ['solche Identitäten']
+
+
+matching chains
+english mentions ['My mother']
+german mentions ['Meine Mutter']
+
+
+matching chains
+english mentions ['Down syndrome']
+german mentions ['solche Identitäten']
+
+
+matching chains
+english mentions ['the heroine']
+german mentions ['die Heldin']
+
+
+matching chains
+english mentions ['parents']
+german mentions ['Eltern']
+
+
+matching chains
+english mentions ['our children']
+german mentions ['unseren Kindern']
+
+
+matching chains
+english mentions ['acceptance']
+german mentions ['Akzeptanz']
+
+
+matching chains
+english mentions ['his parents']
+german mentions ['seinen Eltern']
+
+
+german chain not in english
+set_55 ['drei Stufen der Akzeptanz', 'die drei']
+
+
+german chain not in english
+set_62 ['der kleinwüchsigen Männer']
+
+
+german chain not in english
+set_2 ['die Homosexualität']
+
+
+german chain not in english
+set_4 ['einen Luftballon']
+
+
+german chain not in english
+set_275 ['subtraktiven Modelle der Liebe']
+
+
+german chain not in english
+set_77 ['seiner Kindheit', 'diese ganze Zeit']
+
+
+german chain not in english
+set_111 ['ihren Sohn', 'ihren Sohn']
+
+
+german chain not in english
+set_16 ['dieser Kultur', 'eine Kultur']
+
+
+german chain not in english
+set_151 ['den dreien']
+
+
+german chain not in english
+set_80 ['diesen Behandlungen', '30 größeren chirurgischen Eingriffen']
+
+
+german chain not in english
+set_211 ['zwei Kindern']
+
+
+german chain not in english
+set_282 ['Mein Mann', 'Mein Mann']
+
+
+german chain not in english
+set_148 ['Blut-Tests']
+
+
+german chain not in english
+set_101 ['ein speziell für ihn ausgestattetes Auto', 'sein Auto']
+
+
+german chain not in english
+set_22 ['Fragen']
+
+
+german chain not in english
+set_156 ['das Kind']
+
+
+german chain not in english
+set_154 ['die Frage']
+
+
+german chain not in english
+set_87 ['der Erste in seiner Familie']
+
+
+german chain not in english
+set_84 ['ein Bildungsniveau']
+
+
+german chain not in english
+set_17 ['die Menschen aus dieser Kultur']
+
+
+german chain not in english
+set_152 ['jene Momente']
+
+
+german chain not in english
+set_18 ['meine Kultur']
+
+
+german chain not in english
+set_161 ['eine sehr extreme Sicht']
+
+
+german chain not in english
+set_100 ['Clinton']
+
+
+german chain not in english
+set_162 ['dem Leben']
+
+
+german chain not in english
+set_113 ['die ersten']
+
+
+german chain not in english
+set_167 ['der Familien']
+
+
+german chain not in english
+set_166 ['die Person']
+
+
+german chain not in english
+set_171 ['die Familie']
+
+
+german chain not in english
+set_40 ['Eltern']
+
+
+german chain not in english
+set_173 ['ersten gemeinsamen Wochenende']
+
+
+german chain not in english
+set_119 ['Menschen', 'Menschen mit einer Behinderung']
+
+
+german chain not in english
+set_117 ['ein " Weggeben']
+
+
+german chain not in english
+set_47 ['die anderen Identitäten']
+
+
+german chain not in english
+set_52 ['der Prozess']
+
+
+german chain not in english
+set_123 ['der Familien']
+
+
+german chain not in english
+set_235 ['Eltern eines behinderten Kindes']
+
+
+german chain not in english
+set_234 ['Menschen']
+
+
+german chain not in english
+set_179 ['Abendessen']
+
+
+german chain not in english
+set_249 ['den Ärzten']
+
+
+german chain not in english
+set_187 ['den Schmerz']
+
+
+german chain not in english
+set_262 ['der Weg']
+
+
+german chain not in english
+set_129 ['zwei Klassenzimmer']
+
+
+german chain not in english
+set_188 ['den Schmerz']
+
+
+german chain not in english
+set_198 ['Familien']
+
+
+german chain not in english
+set_132 ['den Robards']
+
+
+german chain not in english
+set_265 ['der Zeit']
+
+
+german chain not in english
+set_195 ['unsere Kinder']
+
+
+german chain not in english
+set_196 ['meine Kinder']
+
+
+german chain not in english
+set_271 ['ein Fremder']
+
+
+german chain not in english
+set_204 ['unsere Unterschiede']
+
+
+german chain not in english
+set_138 ['einem Punkt']
+
+
+german chain not in english
+set_201 ['ein Kind']
+
+
+german chain not in english
+set_139 ['ein Ausmaß']
+
+
+german chain not in english
+set_200 ['jede Familie', 'jede']
+
+
+german chain not in english
+set_136 ['einer Zeit']
+
+
+german chain not in english
+set_137 ['Down-Syndrom']
+
+
+****************************************
+STATISTICS PER DOC
+Document ==>  /Users/xloish/PycharmProjects/testsuitewmt18/parcor-full/corpus//DiscoMT/EN001_1819_words.xml
+SOURCE chains:  57
+SOURCE mentions:  134
+SOURCE annotated words:  343
+TARGET chains:  69
+TARGET mentions:  135
+TARGET annotated words:  275
+****************************************
+
+
+matching chains
+english mentions ['these nets', 'This thing', 'this thing', 'the net', 'those nets', 'the bed net', 'the bed net']
+german mentions ['das Moskitonetz', 'diesem Netz', 'das Netz', 'das Netz']
+
+
+matching chains
+english mentions ['a cultural challenge']
+german mentions ['ein Lebensstadium des Parasiten', 'den anderen Stadien']
+
+
+matching chains
+english mentions ['a disease']
+german mentions ['eine Krankheit']
+
+
+matching chains
+english mentions ['people']
+german mentions ['das Moskitonetz', 'diesem Netz', 'das Netz', 'das Netz']
+
+
+matching chains
+english mentions ['these things', 'your great drug or your great vaccine']
+german mentions ['Ihre tolle Arznei', 'diese Dinge']
+
+
+matching chains
+english mentions ['malaria', 'malaria', 'Malaria', 'malaria', 'malaria', 'malaria', 'malaria', 'malaria', 'malaria', 'malaria', 'malaria', 'Everything else', 'malaria', 'everything else', 'malaria', 'this one disease', 'malaria', 'this disease', 'malaria', 'malaria', 'the disease', 'malaria', 'this disease', 'malaria', 'malaria', 'malaria', 'malaria', 'malaria', 'malaria', 'malaria', 'malaria', 'malaria', 'Malaria', 'malaria', 'malaria', 'malaria', 'the infectious disease', 'malaria', 'malaria', 'malaria', 'malaria', 'malaria', 'malaria', 'malaria', 'malaria', 'malaria', 'malaria', 'malaria']
+german mentions ['Malaria', 'Malaria', 'Malaria', 'Malaria', 'Malaria', 'Malaria', 'Malaria', 'Malaria', 'Malaria', 'Malaria', 'Malaria', 'Malaria', 'Malaria', 'Malaria', 'der Krankheit', 'Malaria', 'der Krankheit', 'Malaria', 'dieser einen Krankheit', 'Malaria', 'jene Krankheit', 'jede andere', 'Malaria', 'Malaria', 'Malaria', 'Malaria', 'diese Krankheit', 'Malaria', 'Malaria', 'Malaria', 'Malaria', 'Malaria', 'Malaria', 'Malaria', 'Malaria', 'Malaria', 'Malaria', 'Malaria', 'Malaria', 'Malaria', 'Malaria', 'Malaria', 'Malaria', 'Malaria']
+
+
+matching chains
+english mentions ['these insects', 'malarial mosquito']
+german mentions ['Malariamoskitos', 'diesen Insekten']
+
+
+matching chains
+english mentions ['medical anthropologists']
+german mentions ['medizinische Anthropologen']
+
+
+matching chains
+english mentions ['my relatives']
+german mentions ['meinen Verwandten']
+
+
+matching chains
+english mentions ['the perfect malarial mosquito habitat']
+german mentions ['Malariamoskitos', 'diesen Insekten']
+
+
+matching chains
+english mentions ['some footprints', 'that footprint']
+german mentions ['ein Lebensstadium des Parasiten', 'den anderen Stadien']
+
+
+matching chains
+english mentions ['places']
+german mentions ['Orte']
+
+
+matching chains
+english mentions ['this effort', 'The first concerted attack against malaria']
+german mentions ['diese Bemühungen', 'Der erste gezielte Angriff gegen Malaria']
+
+
+matching chains
+english mentions ['the parasite', 'This little creature', 'the malaria parasite', 'the parasite', 'the parasite', 'the parasite']
+german mentions ['den Parasiten', 'dieser Parasit', 'des Parasiten']
+
+
+matching chains
+english mentions ['These two environments', 'the warm-blooded human', 'the cold-blooded mosquito']
+german mentions ['Diese zwei Umgebungen', 'kaltblütigen Moskito warmblütigen Menschen']
+
+
+matching chains
+english mentions ['the indoor activities']
+german mentions ['ein Lebensstadium des Parasiten', 'den anderen Stadien']
+
+
+matching chains
+english mentions ['farmers']
+german mentions ['ein Lebensstadium des Parasiten', 'den anderen Stadien']
+
+
+matching chains
+english mentions ['malaria is something that comes and goes']
+german mentions ['Malaria', 'Malaria', 'Malaria', 'Malaria', 'Malaria', 'Malaria', 'Malaria', 'Malaria', 'Malaria', 'Malaria', 'Malaria', 'Malaria', 'Malaria', 'Malaria', 'der Krankheit', 'Malaria', 'der Krankheit', 'Malaria', 'dieser einen Krankheit', 'Malaria', 'jene Krankheit', 'jede andere', 'Malaria', 'Malaria', 'Malaria', 'Malaria', 'diese Krankheit', 'Malaria', 'Malaria', 'Malaria', 'Malaria', 'Malaria', 'Malaria', 'Malaria', 'Malaria', 'Malaria', 'Malaria', 'Malaria', 'Malaria', 'Malaria', 'Malaria', 'Malaria', 'Malaria', 'Malaria']
+
+
+matching chains
+english mentions ['this tiny fraction of cases']
+german mentions ['dieser kleine Anteil der Fälle']
+
+
+matching chains
+english mentions ['the people']
+german mentions ['die Leute']
+
+
+matching chains
+english mentions ['those tools', 'those tools', 'their tools']
+german mentions ['diese Instrumente', 'ihre Instrumente', 'diese Instrumente']
+
+
+matching chains
+english mentions ['people']
+german mentions ['Leuten']
+
+
+matching chains
+english mentions ['the nets', 'the nets', 'the bed nets']
+german mentions ['der Moskitonetze']
+
+
+matching chains
+english mentions ['This little parasite that causes malaria', 'mosquitos', 'the insect', 'this little insect']
+german mentions ['dieses kleinen Insekts', 'Moskitos']
+
+
+matching chains
+english mentions ['these people', 'the same people']
+german mentions ['die selben Leute']
+
+
+matching chains
+english mentions ["some great drug that worked against one stage of the parasite 's life cycle"]
+german mentions ['ein Lebensstadium des Parasiten', 'den anderen Stadien']
+
+
+matching chains
+english mentions ['each of those life stages']
+german mentions ['ein Lebensstadium des Parasiten', 'den anderen Stadien']
+
+
+matching chains
+english mentions ['a face mask']
+german mentions ['ein Lebensstadium des Parasiten', 'den anderen Stadien']
+
+
+matching chains
+english mentions ['people in malarious parts of the world']
+german mentions ['Leute']
+
+
+matching chains
+english mentions ['tools']
+german mentions ['ein Lebensstadium des Parasiten', 'den anderen Stadien']
+
+
+matching chains
+english mentions ["Most of the world 's malaria"]
+german mentions ['Malaria', 'Malaria', 'Malaria', 'Malaria', 'Malaria', 'Malaria', 'Malaria', 'Malaria', 'Malaria', 'Malaria', 'Malaria', 'Malaria', 'Malaria', 'Malaria', 'der Krankheit', 'Malaria', 'der Krankheit', 'Malaria', 'dieser einen Krankheit', 'Malaria', 'jene Krankheit', 'jede andere', 'Malaria', 'Malaria', 'Malaria', 'Malaria', 'diese Krankheit', 'Malaria', 'Malaria', 'Malaria', 'Malaria', 'Malaria', 'Malaria', 'Malaria', 'Malaria', 'Malaria', 'Malaria', 'Malaria', 'Malaria', 'Malaria', 'Malaria', 'Malaria', 'Malaria', 'Malaria']
+
+
+matching chains
+english mentions ['the people']
+german mentions ['ein Lebensstadium des Parasiten', 'den anderen Stadien']
+
+
+matching chains
+english mentions ['A child in Malawi']
+german mentions ['Ein Kind']
+
+
+matching chains
+english mentions ["the part about malaria that people do n't like to talk about"]
+german mentions ['Malaria', 'Malaria', 'Malaria', 'Malaria', 'Malaria', 'Malaria', 'Malaria', 'Malaria', 'Malaria', 'Malaria', 'Malaria', 'Malaria', 'Malaria', 'Malaria', 'der Krankheit', 'Malaria', 'der Krankheit', 'Malaria', 'dieser einen Krankheit', 'Malaria', 'jene Krankheit', 'jede andere', 'Malaria', 'Malaria', 'Malaria', 'Malaria', 'diese Krankheit', 'Malaria', 'Malaria', 'Malaria', 'Malaria', 'Malaria', 'Malaria', 'Malaria', 'Malaria', 'Malaria', 'Malaria', 'Malaria', 'Malaria', 'Malaria', 'Malaria', 'Malaria', 'Malaria', 'Malaria']
+
+
+matching chains
+english mentions ["12 species of mosquitos carry most of the world 's malaria", 'the killer mosquitos']
+german mentions ['12 Moskitoarten', 'diese Killermoskitos']
+
+
+matching chains
+english mentions ['the things']
+german mentions ['Dinge']
+
+
+matching chains
+english mentions ['this great , easy-to-use , cheap tool']
+german mentions ['dieses tolle , leicht handhabbare , billige Ding']
+
+
+matching chains
+english mentions ["rudimentary housing on marginal land that 's poorly drained"]
+german mentions ['ein Lebensstadium des Parasiten', 'den anderen Stadien']
+
+
+matching chains
+english mentions ['malarious societies']
+german mentions ['der Malariagesellschaften', 'dieser Gesellschaften']
+
+
+matching chains
+english mentions ['my cousins']
+german mentions ['meine Cousins']
+
+
+matching chains
+english mentions ['20 percent']
+german mentions ['20 %', 'die Zahl']
+
+
+matching chains
+english mentions ['people in the malarious world']
+german mentions ['die Leute in den Malariagebieten']
+
+
+matching chains
+english mentions ['people with malaria']
+german mentions ['Leute']
+
+
+matching chains
+english mentions ['The latest effort to tame malaria', 'this effort']
+german mentions ['Dieser Versuch', 'Der letzte Versuch , Malaria zu bändigen']
+
+
+matching chains
+english mentions ['those countries', 'England and the United States']
+german mentions ['ein Lebensstadium des Parasiten', 'den anderen Stadien']
+
+
+matching chains
+english mentions ['people at risk of malaria']
+german mentions ['die Leute']
+
+
+matching chains
+english mentions ['the 1600s']
+german mentions ['ein Lebensstadium des Parasiten', 'den anderen Stadien']
+
+
+matching chains
+english mentions ['that bark', 'the bark of the cinchona tree']
+german mentions ['dieser Rinde', 'die Chinarinde']
+
+
+matching chains
+english mentions ['a religion']
+german mentions ['eine Religion']
+
+
+matching chains
+english mentions ['a question']
+german mentions ['eine Frage']
+
+
+matching chains
+english mentions ['1897']
+german mentions ['ein Lebensstadium des Parasiten', 'den anderen Stadien']
+
+
+matching chains
+english mentions ['three main reasons', 'Those three reasons']
+german mentions ['3 Hauptgründe', 'Diese 3 Gründe']
+
+
+matching chains
+english mentions ['Cold and flu']
+german mentions ['Erkältung und Grippe']
+
+
+matching chains
+english mentions ['the fourth reason']
+german mentions ['einem vierten Grund']
+
+
+matching chains
+english mentions ['the fearsome power of this little insect']
+german mentions ['dieses kleinen Insekts', 'Moskitos']
+
+
+matching chains
+english mentions ['people']
+german mentions ['Leute']
+
+
+matching chains
+english mentions ['their prescription']
+german mentions ['ein Lebensstadium des Parasiten', 'den anderen Stadien']
+
+
+german chain not in english
+set_26 ['ein tolles Medikament']
+
+
+german chain not in english
+set_92 ['Diese Leute']
+
+
+german chain not in english
+set_33 ['die Orte']
+
+
+german chain not in english
+set_90 ['diese Kampagne', 'Die Kampagne']
+
+
+german chain not in english
+set_31 ['die Wasserlebensräume']
+
+
+german chain not in english
+set_29 ['der Moskito']
+
+
+german chain not in english
+set_100 ['die Leute']
+
+
+german chain not in english
+set_36 ['die Orte']
+
+
+german chain not in english
+set_35 ['die Orte']
+
+
+german chain not in english
+set_93 ['das Moskitonetz']
+
+
+german chain not in english
+set_42 ['Eine riesige wissenschaftliche Herausforderung', 'eine riesige wirtschaftliche']
+
+
+german chain not in english
+set_45 ['die Orte']
+
+
+german chain not in english
+set_107 ['diese Netze']
+
+
+german chain not in english
+set_46 ['Strom']
+
+
+german chain not in english
+set_44 ['einem Randgebiet , mit einem schlechten Abwassersystem']
+
+
+german chain not in english
+set_49 ['Bauern']
+
+
+german chain not in english
+set_50 ['alles , was Leute krank macht']
+
+
+german chain not in english
+set_112 ['Leute']
+
+
+german chain not in english
+set_114 ['diese Dinge', 'Workshops , Seminare , Trainings , Musicals , Theaterstücke und Infoabende']
+
+
+german chain not in english
+set_54 ['Krankenhausärzte']
+
+
+german chain not in english
+set_115 ['die Netze']
+
+
+german chain not in english
+set_116 ['Leute']
+
+
+german chain not in english
+set_5 ['Chinin']
+
+
+german chain not in english
+set_17 ['Dieser kleine Parasit']
+
+
+german chain not in english
+set_16 ['Erreger']
+
+
+german chain not in english
+set_23 ['den Parasiten', 'Dieses kleine Wesen']
+
+
+german chain not in english
+set_22 ['eine Belagerung']
+
+
+german chain not in english
+set_24 ['der Malariaparasit']
+
+
+german chain not in english
+set_122 ['Mittel']
+
+
+german chain not in english
+set_75 ['größten Problem']
+
+
+german chain not in english
+set_82 ['des U.S.-Außenministeriums .']
+
+
+****************************************
+STATISTICS PER DOC
+Document ==>  /Users/xloish/PycharmProjects/testsuitewmt18/parcor-full/corpus//DiscoMT/EN002_1825_words.xml
+SOURCE chains:  68
+SOURCE mentions:  77
+SOURCE annotated words:  230
+TARGET chains:  64
+TARGET mentions:  81
+TARGET annotated words:  191
+****************************************
+
+
+matching chains
+english mentions ['184 nations']
+german mentions ['184 Nationen']
+
+
+matching chains
+english mentions ['Kollek']
+german mentions ['Tahrir-Platz', 'oder , genau , Tian’anmen-Platz in Peking', 'Taksim-Platz -- in den heutigen Schlagzeilen -- in Istanbul', 'Zuccotti-Park', 'Place de la Bastille']
+
+
+matching chains
+english mentions ['Boris Johnson']
+german mentions ['Boris Johnson']
+
+
+matching chains
+english mentions ['200 mayors']
+german mentions ['200 Bürgermeister']
+
+
+matching chains
+english mentions ['Bloomberg']
+german mentions ['Bloomberg']
+
+
+matching chains
+english mentions ['Luzhkov']
+german mentions ['Luschkov']
+
+
+matching chains
+english mentions ['mayors']
+german mentions ['Tahrir-Platz', 'oder , genau , Tian’anmen-Platz in Peking', 'Taksim-Platz -- in den heutigen Schlagzeilen -- in Istanbul', 'Zuccotti-Park', 'Place de la Bastille']
+
+
+matching chains
+english mentions ['mayors']
+german mentions ['Bürgermeister']
+
+
+matching chains
+english mentions ['mayors']
+german mentions ['Bürgermeister']
+
+
+matching chains
+english mentions ['cities']
+german mentions ['Tahrir-Platz', 'oder , genau , Tian’anmen-Platz in Peking', 'Taksim-Platz -- in den heutigen Schlagzeilen -- in Istanbul', 'Zuccotti-Park', 'Place de la Bastille']
+
+
+matching chains
+english mentions ['the carbon problem']
+german mentions ['das Emissionsproblem']
+
+
+matching chains
+english mentions ['Democracy']
+german mentions ['Die Demokratie']
+
+
+matching chains
+english mentions ['New Yorkers']
+german mentions ['die New Yorker']
+
+
+matching chains
+english mentions ['Mayors']
+german mentions ['Bürgermeister']
+
+
+matching chains
+english mentions ['Mayors']
+german mentions ['Tahrir-Platz', 'oder , genau , Tian’anmen-Platz in Peking', 'Taksim-Platz -- in den heutigen Schlagzeilen -- in Istanbul', 'Zuccotti-Park', 'Place de la Bastille']
+
+
+matching chains
+english mentions ['Putin', 'Putin']
+german mentions ['Putin', 'Putin']
+
+
+matching chains
+english mentions ['citizens without borders', 'those citizens without borders']
+german mentions ['Tahrir-Platz', 'oder , genau , Tian’anmen-Platz in Peking', 'Taksim-Platz -- in den heutigen Schlagzeilen -- in Istanbul', 'Zuccotti-Park', 'Place de la Bastille']
+
+
+matching chains
+english mentions ['its old buildings']
+german mentions ['Altbauten']
+
+
+matching chains
+english mentions ['autonomous , sovereign nation-states']
+german mentions ['Autonome , souveräne Nationalstaaten']
+
+
+matching chains
+english mentions ['real city mayors']
+german mentions ['Bürgermeister']
+
+
+matching chains
+english mentions ['a mayor']
+german mentions ['Tahrir-Platz', 'oder , genau , Tian’anmen-Platz in Peking', 'Taksim-Platz -- in den heutigen Schlagzeilen -- in Istanbul', 'Zuccotti-Park', 'Place de la Bastille']
+
+
+matching chains
+english mentions ['Cities']
+german mentions ['Tahrir-Platz', 'oder , genau , Tian’anmen-Platz in Peking', 'Taksim-Platz -- in den heutigen Schlagzeilen -- in Istanbul', 'Zuccotti-Park', 'Place de la Bastille']
+
+
+matching chains
+english mentions ['Supreme Court']
+german mentions ['Tahrir-Platz', 'oder , genau , Tian’anmen-Platz in Peking', 'Taksim-Platz -- in den heutigen Schlagzeilen -- in Istanbul', 'Zuccotti-Park', 'Place de la Bastille']
+
+
+matching chains
+english mentions ['mayors']
+german mentions ['Bürgermeister']
+
+
+matching chains
+english mentions ['a mugging']
+german mentions ['Tahrir-Platz', 'oder , genau , Tian’anmen-Platz in Peking', 'Taksim-Platz -- in den heutigen Schlagzeilen -- in Istanbul', 'Zuccotti-Park', 'Place de la Bastille']
+
+
+matching chains
+english mentions ['religious leaders from all of the backgrounds']
+german mentions ['Tahrir-Platz', 'oder , genau , Tian’anmen-Platz in Peking', 'Taksim-Platz -- in den heutigen Schlagzeilen -- in Istanbul', 'Zuccotti-Park', 'Place de la Bastille']
+
+
+matching chains
+english mentions ['head of state']
+german mentions ['Staatschef']
+
+
+matching chains
+english mentions ['your mayor', 'your city councillor']
+german mentions ['Ihrem Bürgermeister']
+
+
+matching chains
+english mentions ['Ed Koch']
+german mentions ['Tahrir-Platz', 'oder , genau , Tian’anmen-Platz in Peking', 'Taksim-Platz -- in den heutigen Schlagzeilen -- in Istanbul', 'Zuccotti-Park', 'Place de la Bastille']
+
+
+matching chains
+english mentions ['public spaces']
+german mentions ['Tahrir-Platz', 'oder , genau , Tian’anmen-Platz in Peking', 'Taksim-Platz -- in den heutigen Schlagzeilen -- in Istanbul', 'Zuccotti-Park', 'Place de la Bastille']
+
+
+matching chains
+english mentions ['David Cameron']
+german mentions ['David Cameron']
+
+
+matching chains
+english mentions ["Teddy Kollek , the great mayor of Jerusalem in the '80s and the '90s"]
+german mentions ['Teddy Kollek']
+
+
+matching chains
+english mentions ['Congress']
+german mentions ['Tahrir-Platz', 'oder , genau , Tian’anmen-Platz in Peking', 'Taksim-Platz -- in den heutigen Schlagzeilen -- in Istanbul', 'Zuccotti-Park', 'Place de la Bastille']
+
+
+matching chains
+english mentions ['mayors']
+german mentions ['Tahrir-Platz', 'oder , genau , Tian’anmen-Platz in Peking', 'Taksim-Platz -- in den heutigen Schlagzeilen -- in Istanbul', 'Zuccotti-Park', 'Place de la Bastille']
+
+
+matching chains
+english mentions ['this asymmetry', 'that dilemma']
+german mentions ['Eine Welt des 21 . Jahrhunderts , mit transnationalen Problemen und Herausforderungen , und politische Institutionen des 17 . Jahrhunderts', 'Dieses Dilemma']
+
+
+matching chains
+english mentions ['decisions we face']
+german mentions ['Tahrir-Platz', 'oder , genau , Tian’anmen-Platz in Peking', 'Taksim-Platz -- in den heutigen Schlagzeilen -- in Istanbul', 'Zuccotti-Park', 'Place de la Bastille']
+
+
+matching chains
+english mentions ['a global parliament of mayors']
+german mentions ['ein globales Bürgermeisterparlament']
+
+
+matching chains
+english mentions ['The road to global democracy']
+german mentions ['Der Weg zur globalen Demokratie']
+
+
+matching chains
+english mentions ['international , inter-city , cross-border institutions']
+german mentions ['interstädtische grenzüberschreitende Institutionen', 'Diese Institutionen']
+
+
+matching chains
+english mentions ['mayors']
+german mentions ['Tahrir-Platz', 'oder , genau , Tian’anmen-Platz in Peking', 'Taksim-Platz -- in den heutigen Schlagzeilen -- in Istanbul', 'Zuccotti-Park', 'Place de la Bastille']
+
+
+matching chains
+english mentions ['the global challenges']
+german mentions ['Tahrir-Platz', 'oder , genau , Tian’anmen-Platz in Peking', 'Taksim-Platz -- in den heutigen Schlagzeilen -- in Istanbul', 'Zuccotti-Park', 'Place de la Bastille']
+
+
+matching chains
+english mentions ['that phrase']
+german mentions ['dieser Satz']
+
+
+matching chains
+english mentions ['the dilemma', 'the dilemma']
+german mentions ['Tahrir-Platz', 'oder , genau , Tian’anmen-Platz in Peking', 'Taksim-Platz -- in den heutigen Schlagzeilen -- in Istanbul', 'Zuccotti-Park', 'Place de la Bastille']
+
+
+matching chains
+english mentions ['Singapore']
+german mentions ['Tahrir-Platz', 'oder , genau , Tian’anmen-Platz in Peking', 'Taksim-Platz -- in den heutigen Schlagzeilen -- in Istanbul', 'Zuccotti-Park', 'Place de la Bastille']
+
+
+matching chains
+english mentions ['Mayor Mockus']
+german mentions ['Tahrir-Platz', 'oder , genau , Tian’anmen-Platz in Peking', 'Taksim-Platz -- in den heutigen Schlagzeilen -- in Istanbul', 'Zuccotti-Park', 'Place de la Bastille']
+
+
+matching chains
+english mentions ['Los Angeles']
+german mentions ['seinen Hafen']
+
+
+matching chains
+english mentions ['the venues']
+german mentions ['die Orte']
+
+
+matching chains
+english mentions ['nation-states']
+german mentions ['Tahrir-Platz', 'oder , genau , Tian’anmen-Platz in Peking', 'Taksim-Platz -- in den heutigen Schlagzeilen -- in Istanbul', 'Zuccotti-Park', 'Place de la Bastille']
+
+
+matching chains
+english mentions ['New York']
+german mentions ['Tahrir-Platz', 'oder , genau , Tian’anmen-Platz in Peking', 'Taksim-Platz -- in den heutigen Schlagzeilen -- in Istanbul', 'Zuccotti-Park', 'Place de la Bastille']
+
+
+matching chains
+english mentions ['those tough , interdependent problems', 'immigration', 'security', 'climate change']
+german mentions ['Klimawandel', 'Immigration', 'Sicherheit', 'diese schwierigen und voneinander abhängigen Probleme']
+
+
+matching chains
+english mentions ['Democracy']
+german mentions ['Die Demokratie']
+
+
+matching chains
+english mentions ['new organization out of Barcelona']
+german mentions ['eine neue Organisation aus Barcelona']
+
+
+matching chains
+english mentions ['networks of cities']
+german mentions ['Tahrir-Platz', 'oder , genau , Tian’anmen-Platz in Peking', 'Taksim-Platz -- in den heutigen Schlagzeilen -- in Istanbul', 'Zuccotti-Park', 'Place de la Bastille']
+
+
+matching chains
+english mentions ['the squabble']
+german mentions ['Tahrir-Platz', 'oder , genau , Tian’anmen-Platz in Peking', 'Taksim-Platz -- in den heutigen Schlagzeilen -- in Istanbul', 'Zuccotti-Park', 'Place de la Bastille']
+
+
+matching chains
+english mentions ['a world']
+german mentions ['eine Welt']
+
+
+matching chains
+english mentions ['the states']
+german mentions ['die Staaten']
+
+
+matching chains
+english mentions ['Cities']
+german mentions ['Tahrir-Platz', 'oder , genau , Tian’anmen-Platz in Peking', 'Taksim-Platz -- in den heutigen Schlagzeilen -- in Istanbul', 'Zuccotti-Park', 'Place de la Bastille']
+
+
+matching chains
+english mentions ['a transportation system']
+german mentions ['ein Transportsystem']
+
+
+matching chains
+english mentions ['that idea of how you can actually constitute a global parliament of mayors', 'that idea']
+german mentions ['ein solches globales Bürgermeisterparlament', 'diese Idee']
+
+
+matching chains
+english mentions ['cities']
+german mentions ['Tahrir-Platz', 'oder , genau , Tian’anmen-Platz in Peking', 'Taksim-Platz -- in den heutigen Schlagzeilen -- in Istanbul', 'Zuccotti-Park', 'Place de la Bastille']
+
+
+matching chains
+english mentions ['Place de la Bastille Zuccotti Park Tahrir Square Taksim Square Tiananmen Square']
+german mentions ['Tahrir-Platz', 'oder , genau , Tian’anmen-Platz in Peking', 'Taksim-Platz -- in den heutigen Schlagzeilen -- in Istanbul', 'Zuccotti-Park', 'Place de la Bastille']
+
+
+matching chains
+english mentions ['a world of diseases without borders and doctors without borders , maladies sans frontières , Médecins Sans Frontières , of economics and technology without borders , of education without borders , of terrorism and war without borders .']
+german mentions ['Tahrir-Platz', 'oder , genau , Tian’anmen-Platz in Peking', 'Taksim-Platz -- in den heutigen Schlagzeilen -- in Istanbul', 'Zuccotti-Park', 'Place de la Bastille']
+
+
+matching chains
+english mentions ['Bike shares']
+german mentions ['Tahrir-Platz', 'oder , genau , Tian’anmen-Platz in Peking', 'Taksim-Platz -- in den heutigen Schlagzeilen -- in Istanbul', 'Zuccotti-Park', 'Place de la Bastille']
+
+
+matching chains
+english mentions ['a program']
+german mentions ['ein Sanierungsprogramm']
+
+
+matching chains
+english mentions ['cities']
+german mentions ['Städte']
+
+
+matching chains
+english mentions ['Cities']
+german mentions ['Städte']
+
+
+matching chains
+english mentions ['Cities']
+german mentions ['Städte']
+
+
+matching chains
+english mentions ['states']
+german mentions ['Tahrir-Platz', 'oder , genau , Tian’anmen-Platz in Peking', 'Taksim-Platz -- in den heutigen Schlagzeilen -- in Istanbul', 'Zuccotti-Park', 'Place de la Bastille']
+
+
+german chain not in english
+set_95 ['und Staatsgebieten', 'Rechtssprechung']
+
+
+german chain not in english
+set_106 ['Bürgermeister']
+
+
+german chain not in english
+set_94 ['Wirtschaft', 'und Immigration']
+
+
+german chain not in english
+set_97 ['und den Städten', 'unseren Ortschaften']
+
+
+german chain not in english
+empty ['Bürgermeister', 'diesem Grund']
+
+
+german chain not in english
+set_108 ['Bürgermeister']
+
+
+german chain not in english
+set_53 ['der Gegend']
+
+
+german chain not in english
+set_52 ['Koch']
+
+
+german chain not in english
+set_57 ['Aspekt']
+
+
+german chain not in english
+set_58 ['die Frage']
+
+
+german chain not in english
+set_5 ['politischen Institutionen']
+
+
+german chain not in english
+set_9 ['die politischen Institutionen']
+
+
+german chain not in english
+set_65 ['China und die USA']
+
+
+german chain not in english
+set_68 ['Städte']
+
+
+german chain not in english
+set_14 ['die ältesten Institutionen', 'die beständigsten']
+
+
+german chain not in english
+set_12 ['die öffentlichen Orte']
+
+
+german chain not in english
+set_16 ['die Orte']
+
+
+german chain not in english
+set_98 ['die Bürger', 'die Bürger']
+
+
+german chain not in english
+set_73 ['Städte']
+
+
+german chain not in english
+set_102 ['Bürgermeister']
+
+
+german chain not in english
+set_83 ['Städte']
+
+
+german chain not in english
+set_85 ['Fahrradverleihsysteme']
+
+
+german chain not in english
+set_30 ['den Pragmatismus']
+
+
+german chain not in english
+set_35 ['Christliche Prälaten , Rabbis und Imame']
+
+
+german chain not in english
+set_93 ['Bürger von TED']
+
+
+****************************************
+STATISTICS PER DOC
+Document ==>  /Users/xloish/PycharmProjects/testsuitewmt18/parcor-full/corpus//DiscoMT/EN003_1894_words.xml
+SOURCE chains:  114
+SOURCE mentions:  135
+SOURCE annotated words:  370
+TARGET chains:  132
+TARGET mentions:  155
+TARGET annotated words:  346
+****************************************
+
+
+matching chains
+english mentions ['these experiences']
+german mentions ['diese Erfahrungen']
+
+
+matching chains
+english mentions ['depression', 'such iconic states']
+german mentions ['ein chemisches oder ein psychologisches Problem']
+
+
+matching chains
+english mentions ['depression']
+german mentions ['Depressionen']
+
+
+matching chains
+english mentions ['the Lord']
+german mentions ['ein chemisches oder ein psychologisches Problem']
+
+
+matching chains
+english mentions ['a woman']
+german mentions ['einer Frau']
+
+
+matching chains
+english mentions ['depression']
+german mentions ['ein chemisches oder ein psychologisches Problem']
+
+
+matching chains
+english mentions ['the people']
+german mentions ['die Menschen']
+
+
+matching chains
+english mentions ['the girls']
+german mentions ['eines der Mädchen']
+
+
+matching chains
+english mentions ['Mourners']
+german mentions ['ein chemisches oder ein psychologisches Problem']
+
+
+matching chains
+english mentions ['the boys', 'the girls']
+german mentions ['die Mädchen', 'die Jungs']
+
+
+matching chains
+english mentions ['my editor']
+german mentions ['meine Redakteurin']
+
+
+matching chains
+english mentions ['depression']
+german mentions ['ein chemisches oder ein psychologisches Problem']
+
+
+matching chains
+english mentions ["that feeling you have if you 're walking and you slip or trip and the ground is rushing up at you"]
+german mentions ['dieses Gefühl']
+
+
+matching chains
+english mentions ['that medication', 'medication']
+german mentions ['die Medikamente', 'Medikamente']
+
+
+matching chains
+english mentions ['my story']
+german mentions ['meine Geschichte']
+
+
+matching chains
+english mentions ['my husband']
+german mentions ['mein Mann']
+
+
+matching chains
+english mentions ['depression']
+german mentions ['ein chemisches oder ein psychologisches Problem']
+
+
+matching chains
+english mentions ['relatively mild depression']
+german mentions ['relativ leichte Depressionen']
+
+
+matching chains
+english mentions ['most people']
+german mentions ['ein chemisches oder ein psychologisches Problem']
+
+
+matching chains
+english mentions ['depression']
+german mentions ['ein chemisches oder ein psychologisches Problem']
+
+
+matching chains
+english mentions ['other people', 'people']
+german mentions ['andere Menschen']
+
+
+matching chains
+english mentions ['the depression', 'this condition']
+german mentions ['dieses Problem', 'Depressionen']
+
+
+matching chains
+english mentions ['acute anxiety']
+german mentions ['akute Angstzustände']
+
+
+matching chains
+english mentions ['the people']
+german mentions ['die Menschen']
+
+
+matching chains
+english mentions ['the people']
+german mentions ['die Menschen']
+
+
+matching chains
+english mentions ['the things']
+german mentions ['beschädigte Beziehungen', 'berufliche Enttäuschungen', 'diese Dinge', 'Klimaerwärmung']
+
+
+matching chains
+english mentions ['professional disappointments , about damaged relationships , about global warming']
+german mentions ['beschädigte Beziehungen', 'berufliche Enttäuschungen', 'diese Dinge', 'Klimaerwärmung']
+
+
+matching chains
+english mentions ['a solution']
+german mentions ['ein chemisches oder ein psychologisches Problem']
+
+
+matching chains
+english mentions ['those people']
+german mentions ['die Menschen']
+
+
+matching chains
+english mentions ['Frank Russakoff', 'Frank Russakoff', 'someone who clearly had so many bad experiences with so many different treatments']
+german mentions ['Frank Russakoff']
+
+
+matching chains
+english mentions ['Maggie Robbins', 'Maggie Robbins', 'a beloved friend']
+german mentions ['eine geliebte Freundin']
+
+
+matching chains
+english mentions ['someone']
+german mentions ['ein chemisches oder ein psychologisches Problem']
+
+
+matching chains
+english mentions ['a job']
+german mentions ['einen Job']
+
+
+matching chains
+english mentions ['a woman']
+german mentions ['ein chemisches oder ein psychologisches Problem']
+
+
+matching chains
+english mentions ['two human beings']
+german mentions ['ein chemisches oder ein psychologisches Problem']
+
+
+matching chains
+english mentions ['Western mental health workers']
+german mentions ['ein chemisches oder ein psychologisches Problem']
+
+
+matching chains
+english mentions ['those existential questions']
+german mentions ['diese existenziellen Fragen']
+
+
+matching chains
+english mentions ['women']
+german mentions ['ein chemisches oder ein psychologisches Problem']
+
+
+matching chains
+english mentions ['people']
+german mentions ['ein chemisches oder ein psychologisches Problem']
+
+
+matching chains
+english mentions ['this false moral imperative']
+german mentions ['ein chemisches oder ein psychologisches Problem']
+
+
+matching chains
+english mentions ["three o'clock"]
+german mentions ['3 Uhr']
+
+
+matching chains
+english mentions ['These people']
+german mentions ['Diese Menschen']
+
+
+matching chains
+english mentions ['the non-depressed people', 'a group of non-depressed people']
+german mentions ['eine Gruppe nicht-depressiver Menschen', 'eine Gruppe depressiver']
+
+
+matching chains
+english mentions ['this distaste']
+german mentions ['ein chemisches oder ein psychologisches Problem']
+
+
+matching chains
+english mentions ['people']
+german mentions ['Menschen']
+
+
+matching chains
+english mentions ['a little rust spot']
+german mentions ['ein chemisches oder ein psychologisches Problem']
+
+
+matching chains
+english mentions ['that orange dust problem']
+german mentions ['dieses orangefarbene Staubproblem']
+
+
+matching chains
+english mentions ['an artifice']
+german mentions ['ein chemisches oder ein psychologisches Problem']
+
+
+matching chains
+english mentions ['the other moods']
+german mentions ['die anderen Stimmungen']
+
+
+matching chains
+english mentions ['love']
+german mentions ['ein chemisches oder ein psychologisches Problem']
+
+
+matching chains
+english mentions ['depression']
+german mentions ['Depressionen zu haben']
+
+
+matching chains
+english mentions ['major depression']
+german mentions ['ein chemisches oder ein psychologisches Problem']
+
+
+matching chains
+english mentions ['People']
+german mentions ['ein chemisches oder ein psychologisches Problem']
+
+
+matching chains
+english mentions ['the phone', 'the phone']
+german mentions ['das Telefon', 'das Telefon']
+
+
+matching chains
+english mentions ['The question']
+german mentions ['ein chemisches oder ein psychologisches Problem']
+
+
+matching chains
+english mentions ['your depression']
+german mentions ['Ihre Depressionen']
+
+
+matching chains
+english mentions ['a news magazine']
+german mentions ['ein chemisches oder ein psychologisches Problem']
+
+
+matching chains
+english mentions ['an emotion']
+german mentions ['eine Emotion']
+
+
+matching chains
+english mentions ['two presents', 'First', 'the other present']
+german mentions ['ein chemisches oder ein psychologisches Problem']
+
+
+matching chains
+english mentions ['a photo of my grandmother']
+german mentions ['ein Foto']
+
+
+matching chains
+english mentions ['an epidemic in this country of depression among impoverished people']
+german mentions ['ein chemisches oder ein psychologisches Problem']
+
+
+matching chains
+english mentions ['an academic']
+german mentions ['ein Wissenschaftlerin']
+
+
+matching chains
+english mentions ['depression']
+german mentions ['ein chemisches oder ein psychologisches Problem']
+
+
+matching chains
+english mentions ['a kid']
+german mentions ['Kinder']
+
+
+matching chains
+english mentions ['people']
+german mentions ['ein chemisches oder ein psychologisches Problem']
+
+
+matching chains
+english mentions ['somebody']
+german mentions ['jemand']
+
+
+matching chains
+english mentions ['an iron fence']
+german mentions ['einem Eisenzaun']
+
+
+matching chains
+english mentions ['schizophrenics']
+german mentions ['ein chemisches oder ein psychologisches Problem']
+
+
+matching chains
+english mentions ['my children']
+german mentions ['meinen Kindern']
+
+
+matching chains
+english mentions ['depressive people']
+german mentions ['depressiven Menschen']
+
+
+matching chains
+english mentions ['a depression']
+german mentions ['Depressionen']
+
+
+matching chains
+english mentions ['the mechanisms']
+german mentions ['die Mechanismen']
+
+
+matching chains
+english mentions ['the veil', 'a gray veil']
+german mentions ['diesen Schleier', 'einen grauen Schleier', 'der Schleier']
+
+
+matching chains
+english mentions ['something foreign']
+german mentions ['etwas Fremdes']
+
+
+matching chains
+english mentions ['that one']
+german mentions ['ein chemisches oder ein psychologisches Problem']
+
+
+matching chains
+english mentions ['my depression']
+german mentions ['meine Depressionen']
+
+
+matching chains
+english mentions ['a group of depressed', 'The depressive group']
+german mentions ['eine Gruppe nicht-depressiver Menschen', 'eine Gruppe depressiver']
+
+
+matching chains
+english mentions ['either area']
+german mentions ['ein chemisches oder ein psychologisches Problem']
+
+
+matching chains
+english mentions ['the family secret']
+german mentions ['ein chemisches oder ein psychologisches Problem']
+
+
+matching chains
+english mentions ['depression']
+german mentions ['ein chemisches oder ein psychologisches Problem']
+
+
+matching chains
+english mentions ['a conference', 'the three-day conference', 'the same conference']
+german mentions ['einer Konferenz', 'dieser 3-tägigen Konferenz']
+
+
+matching chains
+english mentions ['the letters']
+german mentions ['Mein Favorit unter den erhaltenen Briefen']
+
+
+matching chains
+english mentions ['little things']
+german mentions ['ein paar davon', 'kleine Dinge aus Garn']
+
+
+matching chains
+english mentions ['rituals']
+german mentions ['einige Rituale']
+
+
+matching chains
+english mentions ['things']
+german mentions ['ein chemisches oder ein psychologisches Problem']
+
+
+matching chains
+english mentions ['one more', 'so many different treatments']
+german mentions ['ein chemisches oder ein psychologisches Problem']
+
+
+matching chains
+english mentions ['a cingulotomy']
+german mentions ['ein Verfahren namens Zingulotomie']
+
+
+matching chains
+english mentions ['silence']
+german mentions ['ein chemisches oder ein psychologisches Problem']
+
+
+matching chains
+english mentions ['a few kinds of therapy that worked']
+german mentions ['ein paar Therapie-Arten']
+
+
+matching chains
+english mentions ['people who are depressed']
+german mentions ['depressive Menschen']
+
+
+matching chains
+english mentions ['a group of depressed and a group of non-depressed people']
+german mentions ['eine Gruppe nicht-depressiver Menschen', 'eine Gruppe depressiver']
+
+
+matching chains
+english mentions ['A lot of people']
+german mentions ['viele Menschen']
+
+
+matching chains
+english mentions ['one of the participants']
+german mentions ['eine der Teilnehmerinnen']
+
+
+matching chains
+english mentions ['the cingulotomy']
+german mentions ['ein chemisches oder ein psychologisches Problem']
+
+
+matching chains
+english mentions ['Lolly']
+german mentions ['Lolly']
+
+
+matching chains
+english mentions ['people in indigent communities']
+german mentions ['Menschen in notleidenden Gemeinden']
+
+
+matching chains
+english mentions ['My wife']
+german mentions ['Meine Frau']
+
+
+matching chains
+english mentions ["a motorized CD rack from The Sharper Image that I did n't really need"]
+german mentions ['einen motorisierten CD-Ständer']
+
+
+matching chains
+english mentions ['the way you feel']
+german mentions ['ein chemisches oder ein psychologisches Problem']
+
+
+matching chains
+english mentions ['her husband']
+german mentions ['eine der Teilnehmerinnen', 'ihr Ehemann']
+
+
+matching chains
+english mentions ['those experiences']
+german mentions ['diese Erfahrungen']
+
+
+matching chains
+english mentions ['in 1994', 'that moment']
+german mentions ['diesem Moment', '1994']
+
+
+matching chains
+english mentions ['the things']
+german mentions ['ein chemisches oder ein psychologisches Problem']
+
+
+matching chains
+english mentions ['the people I was dealing with']
+german mentions ['die Menschen']
+
+
+matching chains
+english mentions ['two advantages', 'The first', 'the other']
+german mentions ['ein chemisches oder ein psychologisches Problem']
+
+
+matching chains
+english mentions ['Depression']
+german mentions ['Depressionen']
+
+
+matching chains
+english mentions ['My father']
+german mentions ['Mein Vater']
+
+
+matching chains
+english mentions ['my grandmother']
+german mentions ['meiner Großmutter']
+
+
+matching chains
+english mentions ['bipolar illness']
+german mentions ['ein chemisches oder ein psychologisches Problem']
+
+
+matching chains
+english mentions ['the food']
+german mentions ['das Essen']
+
+
+matching chains
+english mentions ['her lithium']
+german mentions ['das Lithium', 'Lithium']
+
+
+matching chains
+english mentions ['a chemical problem or a psychological problem']
+german mentions ['ein chemisches oder ein psychologisches Problem']
+
+
+matching chains
+english mentions ['brain cancer']
+german mentions ['einen Hirntumor']
+
+
+matching chains
+english mentions ['the treatments we have for depression']
+german mentions ['Unsere derzeitigen Behandlungsmethoden für Depressionen']
+
+
+german chain not in english
+set_26 ['Depressionen']
+
+
+german chain not in english
+set_28 ['meine Frau', 'eine andere']
+
+
+german chain not in english
+set_29 ['die Liebe']
+
+
+german chain not in english
+set_215 ['dasselbe Wort', 'Depressionen']
+
+
+german chain not in english
+set_43 ['der ersten Menschen']
+
+
+german chain not in english
+set_158 ['einem Buch']
+
+
+german chain not in english
+set_98 ['zwanzig Minuten Kopfstand']
+
+
+german chain not in english
+set_41 ['manche Menschen']
+
+
+german chain not in english
+set_99 ['Menschen']
+
+
+german chain not in english
+set_216 ['ihre Depressionen']
+
+
+german chain not in english
+set_107 ['einem Stammes-Exorzismus']
+
+
+german chain not in english
+set_46 ['Depressionen']
+
+
+german chain not in english
+set_47 ['Einer der Menschen']
+
+
+german chain not in english
+set_45 ['eine andere Art Tod', 'diese Art Tod']
+
+
+german chain not in english
+set_167 ['die Behandlung von Depressionen']
+
+
+german chain not in english
+set_55 ['die schwerste Depression', 'diese Erfahrung']
+
+
+german chain not in english
+set_213 ['manische Depression']
+
+
+german chain not in english
+set_117 ['Psychotherapeuten']
+
+
+german chain not in english
+set_118 ['jemandem']
+
+
+german chain not in english
+set_58 ['die Dinge']
+
+
+german chain not in english
+set_116 ['schlimme Dinge']
+
+
+german chain not in english
+set_172 ['ein Jahr']
+
+
+german chain not in english
+set_4 ['einen der Menschen']
+
+
+german chain not in english
+set_2 ['Depressionen']
+
+
+german chain not in english
+set_171 ['dieses System']
+
+
+german chain not in english
+set_1 ['eine Andacht']
+
+
+german chain not in english
+empty ['die schlimmsten Depressionen']
+
+
+german chain not in english
+set_61 ['Schizophrenen']
+
+
+german chain not in english
+set_8 ['viele Leute']
+
+
+german chain not in english
+set_6 ['den Dingen']
+
+
+german chain not in english
+set_63 ['diesem Satz']
+
+
+german chain not in english
+set_70 ['eine Studie']
+
+
+german chain not in english
+set_124 ['Die Zingulotomie']
+
+
+german chain not in english
+set_14 ['Depressionen']
+
+
+german chain not in english
+set_74 ['Depressionen']
+
+
+german chain not in english
+set_73 ['die nicht-depressiven Menschen']
+
+
+german chain not in english
+set_16 ['depressiv sein']
+
+
+german chain not in english
+set_79 ['ein Familiengeheimnis']
+
+
+german chain not in english
+set_22 ['die starke Person']
+
+
+german chain not in english
+set_173 ['ein ganzes Jahr']
+
+
+german chain not in english
+set_174 ['Das Leben ist kurz und das ist ein ganzes Jahr , das Sie aufgeben wollen']
+
+
+german chain not in english
+set_175 ['anderer Sprachen', 'der englischen Sprache']
+
+
+german chain not in english
+set_183 ['das Haus', 'des Hauses']
+
+
+german chain not in english
+set_180 ['ein paar Rostflecken']
+
+
+german chain not in english
+set_130 ['Verwandten']
+
+
+german chain not in english
+set_127 ['eine Arbeit']
+
+
+german chain not in english
+set_135 ['Auslösern']
+
+
+german chain not in english
+set_136 ['Depressionen']
+
+
+german chain not in english
+set_134 ['einer genetischen Anfälligkeit']
+
+
+german chain not in english
+set_133 ['eine Sache']
+
+
+german chain not in english
+set_85 ['ein Typ']
+
+
+german chain not in english
+set_198 ['meine Beziehung zu meinen Eltern und meinen Ärzten']
+
+
+german chain not in english
+set_83 ['diese Medikamente']
+
+
+german chain not in english
+set_144 ['Frauen']
+
+
+german chain not in english
+set_207 ['den Tagen']
+
+
+german chain not in english
+set_96 ['Elektroschockbehandlung', 'Psychotherapien', 'Medikamente']
+
+
+german chain not in english
+set_209 ['Freude']
+
+
+german chain not in english
+set_38 ['Menschen']
+
+
+german chain not in english
+set_206 ['diese Erfahrung']
+
+
+german chain not in english
+set_33 ['Depressionen']
+
+
+german chain not in english
+set_34 ['Menschen']
+
+
+german chain not in english
+set_35 ['Depressionen']
+
+
+****************************************
+STATISTICS PER DOC
+Document ==>  /Users/xloish/PycharmProjects/testsuitewmt18/parcor-full/corpus//DiscoMT/EN005_1938_words.xml
+SOURCE chains:  61
+SOURCE mentions:  77
+SOURCE annotated words:  276
+TARGET chains:  59
+TARGET mentions:  78
+TARGET annotated words:  198
+****************************************
+
+
+matching chains
+english mentions ['an encyclopedia']
+german mentions ['eine Enzyklopädie']
+
+
+matching chains
+english mentions ['the Internet']
+german mentions ['Wikipedia']
+
+
+matching chains
+english mentions ['cooperative institutions']
+german mentions ['unternehmerischen Institutionen']
+
+
+matching chains
+english mentions ['the natural scaling']
+german mentions ['Wikipedia']
+
+
+matching chains
+english mentions ['the cost']
+german mentions ['die Kosten']
+
+
+matching chains
+english mentions ['The first human genome']
+german mentions ['Das erste menschliche Genom']
+
+
+matching chains
+english mentions ['the Human Genome Project']
+german mentions ['des menschlichen Genom-Projekts']
+
+
+matching chains
+english mentions ['that data', 'data']
+german mentions ['Wikipedia']
+
+
+matching chains
+english mentions ['the world']
+german mentions ['der Wirtschaftswelt']
+
+
+matching chains
+english mentions ['transaction costs']
+german mentions ['der Leim']
+
+
+matching chains
+english mentions ['the business models of institutions and organizations and corporations']
+german mentions ['Organisationen und Korporationen']
+
+
+matching chains
+english mentions ['your business', 'that company or is that society']
+german mentions ['diese Firma', 'Ihr Geschäft']
+
+
+matching chains
+english mentions ['the kind of ambient data']
+german mentions ['der Art von Daten', 'all diese Daten']
+
+
+matching chains
+english mentions ['one thing']
+german mentions ['eine Sache']
+
+
+matching chains
+english mentions ['value']
+german mentions ['Wikipedia']
+
+
+matching chains
+english mentions ['Scientists']
+german mentions ['diesen speziell ausgewählten Einzelpersonen', 'repräsentativen Probanden']
+
+
+matching chains
+english mentions ['industry structures']
+german mentions ['Industriestrukturen']
+
+
+matching chains
+english mentions ['this horizontalization of the structure of industries']
+german mentions ['Wikipedia']
+
+
+matching chains
+english mentions ['value chains']
+german mentions ['Wikipedia']
+
+
+matching chains
+english mentions ['new kinds of institutions']
+german mentions ['neuen Institutionen']
+
+
+matching chains
+english mentions ['the glue']
+german mentions ['die Wertketten']
+
+
+matching chains
+english mentions ['Michael Porter', 'Porter']
+german mentions ['Bruce Henderson , der Gründer von BCG , und Michael Porter , Professor an der Harvard Business School', 'zwei Geistesgrößen']
+
+
+matching chains
+english mentions ['Henderson', 'Henderson', 'Bruce Henderson', 'Henderson']
+german mentions ['Bruce Henderson , der Gründer von BCG , und Michael Porter , Professor an der Harvard Business School', 'zwei Geistesgrößen']
+
+
+matching chains
+english mentions ['the Wikipedia', 'The Wikipedia', 'the Wikipedia', 'the Wikipedia']
+german mentions ['Wikipedia']
+
+
+matching chains
+english mentions ['companies']
+german mentions ['Wikipedia']
+
+
+matching chains
+english mentions ['cooperative institutions built by companies that are otherwise competing']
+german mentions ['den Firmen']
+
+
+matching chains
+english mentions ["the world 's stock of data"]
+german mentions ['Wikipedia']
+
+
+matching chains
+english mentions ['a competitor in one business']
+german mentions ['diese Weise']
+
+
+matching chains
+english mentions ['the story of the first generation of the Internet economy']
+german mentions ['Wikipedia']
+
+
+matching chains
+english mentions ['that premise']
+german mentions ['dieser Prämisse']
+
+
+matching chains
+english mentions ['The idea of strategy in business']
+german mentions ['Strategie im Unternehmen']
+
+
+matching chains
+english mentions ['the economics of processing and communicating']
+german mentions ['Ökonomie der Verarbeitung und Kommunikation']
+
+
+matching chains
+english mentions ['These kinds of transformations']
+german mentions ['solche Transformationen']
+
+
+matching chains
+english mentions ['strategy']
+german mentions ['Wikipedia']
+
+
+matching chains
+english mentions ['a revolution in medicine']
+german mentions ['Wikipedia']
+
+
+matching chains
+english mentions ['all of that data']
+german mentions ['der Art von Daten', 'all diese Daten']
+
+
+matching chains
+english mentions ['some abstract knowledge of genomic medicine']
+german mentions ['Wikipedia']
+
+
+matching chains
+english mentions ['the costs of mapping the genome']
+german mentions ['die Kosten der Kartierung des Genoms']
+
+
+matching chains
+english mentions ['about a half of that digital data']
+german mentions ['Informationen', 'anderen Daten']
+
+
+matching chains
+english mentions ['businesses']
+german mentions ['Wikipedia']
+
+
+matching chains
+english mentions ['different components', 'those components']
+german mentions ['dieser Komponenten', 'unterschiedliche Komponenten', 'dieser Komponenten']
+
+
+matching chains
+english mentions ['some activities']
+german mentions ['Wikipedia']
+
+
+matching chains
+english mentions ['Porter and Henderson']
+german mentions ['und Henderson', 'Porter']
+
+
+matching chains
+english mentions ['a logic for investing in such kinds of overwhelming mass in order to achieve competitive advantage']
+german mentions ['Wikipedia']
+
+
+matching chains
+english mentions ['value chains']
+german mentions ['Wikipedia']
+
+
+matching chains
+english mentions ['those assumptions', 'assumptions about technology']
+german mentions ['Annahmen über Technologie', 'diese Annahmen']
+
+
+matching chains
+english mentions ['two components to transaction costs']
+german mentions ['Wikipedia']
+
+
+matching chains
+english mentions ['the glue']
+german mentions ['der Leim']
+
+
+matching chains
+english mentions ['those two ideas', 'those premises', "Henderson 's idea of increasing returns to scale and experience and Porter 's idea of the value chain"]
+german mentions ['diesen beiden Ideen', 'diese Prämissen', 'Hendersons Idee der zunehmenden Rendite bei Wachstum und Erfahrung und Porters Idee der Wertschöpfungskette']
+
+
+matching chains
+english mentions ['this idea of the value chain', 'the concept of the value chain']
+german mentions ['das Konzept der Wertschöpfungskette', 'diese Idee']
+
+
+matching chains
+english mentions ['One of the questions I was occasionally asked', 'another question']
+german mentions ['eine andere Frage']
+
+
+matching chains
+english mentions ['the doctor']
+german mentions ['Arzt']
+
+
+matching chains
+english mentions ['one step of the value chain']
+german mentions ['Wikipedia']
+
+
+matching chains
+english mentions ['the third', 'two decades']
+german mentions ['zwei Jahrzehnte', 'das Dritte', 'das Dritte']
+
+
+matching chains
+english mentions ['information']
+german mentions ['Wikipedia']
+
+
+matching chains
+english mentions ['any other data']
+german mentions ['Informationen', 'anderen Daten']
+
+
+matching chains
+english mentions ['the kind of Porter-Henderson logic']
+german mentions ['die Art der Porter-Henderson-Logik']
+
+
+matching chains
+english mentions ['information']
+german mentions ['Wikipedia']
+
+
+matching chains
+english mentions ['the number of connections']
+german mentions ['Wikipedia']
+
+
+matching chains
+english mentions ['patterns']
+german mentions ['Muster']
+
+
+matching chains
+english mentions ['the whole']
+german mentions ['Wikipedia']
+
+
+german chain not in english
+set_27 ['Wikipedia']
+
+
+german chain not in english
+set_91 ['Porter', 'Porter']
+
+
+german chain not in english
+set_31 ['das Internet']
+
+
+german chain not in english
+set_32 ['Zehntausende von autonomen Einzelpersonen']
+
+
+german chain not in english
+set_30 ['das Jahrzehnt']
+
+
+german chain not in english
+set_53 ['Muster']
+
+
+german chain not in english
+set_52 ['Wissenschaftler']
+
+
+german chain not in english
+set_38 ['2000', 'diesem Zeitpunkt']
+
+
+german chain not in english
+set_0 ['ein zeitloses', 'ein ziemlich abstraktes Gebilde wirtschaftlichen Denkens']
+
+
+german chain not in english
+set_55 ['das Genom']
+
+
+german chain not in english
+set_60 ['Muster']
+
+
+german chain not in english
+set_44 ['des Informationsbestandes']
+
+
+german chain not in english
+set_4 ['viele Phänomene']
+
+
+german chain not in english
+set_68 ['Folgendes']
+
+
+german chain not in english
+set_12 ['Transaktionskosten']
+
+
+german chain not in english
+set_69 ['der Tätigkeit']
+
+
+german chain not in english
+set_66 ['den Wert']
+
+
+german chain not in english
+set_71 ['den Kleber']
+
+
+german chain not in english
+set_74 ['Wachstum in die entgegengesetzte Richtung', 'dieses Wachstum']
+
+
+german chain not in english
+set_16 ['Transaktionskosten', 'Diese Transaktionskosten']
+
+
+german chain not in english
+set_89 ['heterogener Elemente']
+
+
+german chain not in english
+set_18 ['Transaktionskosten']
+
+
+german chain not in english
+set_20 ['Wertschöpfungsketten']
+
+
+german chain not in english
+set_80 ['Beweggründe']
+
+
+****************************************
+STATISTICS PER DOC
+Document ==>  /Users/xloish/PycharmProjects/testsuitewmt18/parcor-full/corpus//DiscoMT/EN006_1950_words.xml
+SOURCE chains:  130
+SOURCE mentions:  199
+SOURCE annotated words:  559
+TARGET chains:  148
+TARGET mentions:  195
+TARGET annotated words:  493
+****************************************
+
+
+matching chains
+english mentions ['the Internet']
+german mentions ['das Internet']
+
+
+matching chains
+english mentions ['that question']
+german mentions ['diese Frage']
+
+
+matching chains
+english mentions ['traitor , hero']
+german mentions ['Verräter oder Held']
+
+
+matching chains
+english mentions ['a Magna Carta for the Internet']
+german mentions ['eine Magna Charta für das Internet']
+
+
+matching chains
+english mentions ['the discussions']
+german mentions ['den Diskussionen']
+
+
+matching chains
+english mentions ['a question']
+german mentions ['der US-Regierung']
+
+
+matching chains
+english mentions ['a stake through the heart of that rather optimistic view']
+german mentions ['der US-Regierung']
+
+
+matching chains
+english mentions ['a future']
+german mentions ['eine Zukunft']
+
+
+matching chains
+english mentions ['that rather optimistic']
+german mentions ['der US-Regierung']
+
+
+matching chains
+english mentions ['people']
+german mentions ['Vollmachten und Programmen']
+
+
+matching chains
+english mentions ['these authorities', 'The Bullrun and Edgehill-type programs', 'these programs']
+german mentions ['Programme']
+
+
+matching chains
+english mentions ['offensive operations']
+german mentions ['offensive Operationen']
+
+
+matching chains
+english mentions ['a Chinese business']
+german mentions ['der US-Regierung']
+
+
+matching chains
+english mentions ['the debate']
+german mentions ['der US-Regierung']
+
+
+matching chains
+english mentions ['direct access']
+german mentions ['der US-Regierung']
+
+
+matching chains
+english mentions ['Chinese cyber-hackers']
+german mentions ['der US-Regierung']
+
+
+matching chains
+english mentions ['Ed', 'Edward Snowden']
+german mentions ['Ed', 'Ed', 'Edward Snowden']
+
+
+matching chains
+english mentions ['the Internet']
+german mentions ['der US-Regierung']
+
+
+matching chains
+english mentions ['your hand']
+german mentions ['seine Hand']
+
+
+matching chains
+english mentions ['the companies that are named on the PRISM slides']
+german mentions ['Unternehmen in den Prism-Präsentationen']
+
+
+matching chains
+english mentions ['the services of Andorra', 'the Chinese service', 'the Russian intelligence service', 'the German service', 'the French service']
+german mentions ['Der chinesische Geheimdienst , der französische , der deutsche und der Geheimdienst von Andorra']
+
+
+matching chains
+english mentions ['this project']
+german mentions ['der US-Regierung']
+
+
+matching chains
+english mentions ['Your rights']
+german mentions ['Eure Rechte']
+
+
+matching chains
+english mentions ['Amazon.com', 'Amazon']
+german mentions ['der US-Regierung']
+
+
+matching chains
+english mentions ["all users who have n't taken any action or picked any special methods"]
+german mentions ['alle Nutzer']
+
+
+matching chains
+english mentions ['People']
+german mentions ['Leute']
+
+
+matching chains
+english mentions ['Dianne Feinstein']
+german mentions ['die Vorsitzende des Ausschusses für Nachrichtendienste , Dianne Feinstein']
+
+
+matching chains
+english mentions ['the people']
+german mentions ['die Nutzer , die Leute in aller Welt']
+
+
+matching chains
+english mentions ['1.7 million documents']
+german mentions ['1,7 Millionen Dokumente']
+
+
+matching chains
+english mentions ['the Internet']
+german mentions ['das Internet']
+
+
+matching chains
+english mentions ['the final argument']
+german mentions ['der US-Regierung']
+
+
+matching chains
+english mentions ['the capability']
+german mentions ['die Fähigkeit']
+
+
+matching chains
+english mentions ['Dick Cheney', 'Dick Cheney', 'Dick Cheney', 'Dick Cheney']
+german mentions ['Dick Cheney', 'Dick Cheney', 'Dick Cheney', 'Dick Cheney']
+
+
+matching chains
+english mentions ['the government']
+german mentions ['die Regierung']
+
+
+matching chains
+english mentions ['Julian Assange']
+german mentions ['Julian Assange', 'Julian Assange']
+
+
+matching chains
+english mentions ['PRISM', 'PRISM', 'the PRISM', 'the PRISM program', 'PRISM', 'the PRISM program', 'PRISM']
+german mentions ['das Programm PRISM']
+
+
+matching chains
+english mentions ['these events']
+german mentions ['diese Handlungen']
+
+
+matching chains
+english mentions ['people']
+german mentions ['Leute']
+
+
+matching chains
+english mentions ['our companies']
+german mentions ['Unternehmen']
+
+
+matching chains
+english mentions ['Bullrun', 'Bullrun', 'the Bullrun program']
+german mentions ['Bullrun', 'Dieses Programm']
+
+
+matching chains
+english mentions ['1984']
+german mentions ['der US-Regierung']
+
+
+matching chains
+english mentions ['these companies', 'corporate America']
+german mentions ['einige Unternehmen']
+
+
+matching chains
+english mentions ['the most responsible way']
+german mentions ['der US-Regierung']
+
+
+matching chains
+english mentions ['people']
+german mentions ['der US-Regierung']
+
+
+matching chains
+english mentions ['a reason']
+german mentions ['der US-Regierung']
+
+
+matching chains
+english mentions ['pro-government , libertarian']
+german mentions ['der US-Regierung']
+
+
+matching chains
+english mentions ['a robust debate with a deep investment by the government']
+german mentions ['eine handfeste Debatte']
+
+
+matching chains
+english mentions ['things']
+german mentions ['die Dinge']
+
+
+matching chains
+english mentions ['the risks']
+german mentions ['Die Risiken']
+
+
+matching chains
+english mentions ['the NSA', 'the NSA', 'the NSA', 'the NSA', 'the NSA', 'NSA', 'NSA', 'NSA', 'the NSA', 'the NSA', 'The NSA', 'The NSA', 'the NSA', 'the NSA', 'the NSA', 'the NSA', 'the NSA', 'the NSA', 'the NSA', 'the NSA', 'the NSA', 'the NSA', 'the NSA', 'the NSA', 'the NSA']
+german mentions ['die NSA', 'die NSA', 'der NSA', 'der NSA', 'die NSA', 'die NSA', 'der NSA', 'der NSA', 'die NSA', 'der NSA', 'die NSA', 'der NSA', 'der NSA', 'die NSA', 'Die NSA', 'die NSA', 'der NSA', 'der NSA', 'die NSA', 'Die NSA', 'die NSA', 'die NSA']
+
+
+matching chains
+english mentions ['people']
+german mentions ['der US-Regierung']
+
+
+matching chains
+english mentions ['the risks']
+german mentions ['die Risiken']
+
+
+matching chains
+english mentions ['that liberty']
+german mentions ['ein freies und offenes Internet', 'diese Freiheit']
+
+
+matching chains
+english mentions ['decisions']
+german mentions ['Entscheidungen']
+
+
+matching chains
+english mentions ['a heroic act']
+german mentions ['Heldentat']
+
+
+matching chains
+english mentions ['the actual internal documents']
+german mentions ['die internen Unterlagen']
+
+
+matching chains
+english mentions ['the decisions']
+german mentions ['der US-Regierung']
+
+
+matching chains
+english mentions ['these programs']
+german mentions ['der US-Regierung']
+
+
+matching chains
+english mentions ['a specific legal authority called Section 215 of the Patriot Act']
+german mentions ['den Abschnitt 215 des Patriot Act']
+
+
+matching chains
+english mentions ['the U.S. government']
+german mentions ['der US-Regierung']
+
+
+matching chains
+english mentions ['15 federal judges']
+german mentions ['15 Bundesrichter']
+
+
+matching chains
+english mentions ['law']
+german mentions ['der US-Regierung']
+
+
+matching chains
+english mentions ['Canada']
+german mentions ['Kanada']
+
+
+matching chains
+english mentions ['the people']
+german mentions ['die Leute']
+
+
+matching chains
+english mentions ['that data', 'that data', 'this stuff', "these users ' data", 'this information']
+german mentions ['die Daten', 'diese Daten', 'diese Informationen', 'dieses Zeug', 'die Daten']
+
+
+matching chains
+english mentions ['stories']
+german mentions ['der US-Regierung']
+
+
+matching chains
+english mentions ["a warrantless wiretapping , mass surveillance of the entire country 's phone records"]
+german mentions ['der US-Regierung']
+
+
+matching chains
+english mentions ['Internet companies']
+german mentions ['der US-Regierung']
+
+
+matching chains
+english mentions ['the web']
+german mentions ['das Netz']
+
+
+matching chains
+english mentions ['a group of company representatives']
+german mentions ['eine Gruppe von Mitarbeitern des Unternehmens mit der NSA']
+
+
+matching chains
+english mentions ['ties of fraternity', 'these bonds']
+german mentions ['Bande der Bruderschaft']
+
+
+matching chains
+english mentions ['the proposal that Sir Tim has talked about about a new Magna Carta to take back the Internet']
+german mentions ['eine neue Magna Charta']
+
+
+matching chains
+english mentions ['one of the sons of the Internet']
+german mentions ['der US-Regierung']
+
+
+matching chains
+english mentions ['people', 'these people']
+german mentions ['solchen Amtsträgern', 'diese Leute']
+
+
+matching chains
+english mentions ['Ed']
+german mentions ['Ed', 'Ed', 'Edward Snowden']
+
+
+matching chains
+english mentions ['the dangerous legacies']
+german mentions ['der US-Regierung']
+
+
+matching chains
+english mentions ['Bullrun', 'Edgehill']
+german mentions ['Bullrun', 'Dieses Programm']
+
+
+matching chains
+english mentions ["part of America 's defense against terrorism"]
+german mentions ['der US-Regierung']
+
+
+matching chains
+english mentions ['the first federal court']
+german mentions ['Der erste Bundesgerichtshof']
+
+
+matching chains
+english mentions ['corporate partners', 'these companies']
+german mentions ['schlechte Ratschläge']
+
+
+matching chains
+english mentions ['this debate']
+german mentions ['der US-Regierung']
+
+
+matching chains
+english mentions ['these programs', 'these programs', 'these things', 'these programs', 'these programs']
+german mentions ['diese Programme', 'diese Programme', 'dieser Programme']
+
+
+matching chains
+english mentions ['the question']
+german mentions ['die Frage']
+
+
+matching chains
+english mentions ['a single terrorist attack']
+german mentions ['der US-Regierung']
+
+
+matching chains
+english mentions ['things']
+german mentions ['der US-Regierung']
+
+
+matching chains
+english mentions ['things']
+german mentions ['der US-Regierung']
+
+
+matching chains
+english mentions ['governments']
+german mentions ['der US-Regierung']
+
+
+matching chains
+english mentions ['things']
+german mentions ['Dinge']
+
+
+matching chains
+english mentions ['my government']
+german mentions ['meiner Regierung']
+
+
+matching chains
+english mentions ["the fact that they are willing to completely ignore due process , they 're willing to declare guilt without ever seeing a trial"]
+german mentions ['der US-Regierung']
+
+
+matching chains
+english mentions ['things']
+german mentions ['Dinge']
+
+
+matching chains
+english mentions ['a reckless act']
+german mentions ['rücksichtslose Tat']
+
+
+matching chains
+english mentions ['things']
+german mentions ['viele Dinge']
+
+
+matching chains
+english mentions ['the treatment']
+german mentions ['der US-Regierung']
+
+
+matching chains
+english mentions ['the principles']
+german mentions ['Die Prinzipien']
+
+
+matching chains
+english mentions ['the Bankston-Soltani Principle']
+german mentions ['das sogenannte Bankston-Soltani-Prinzip']
+
+
+matching chains
+english mentions ['the PRISM story']
+german mentions ['der Bericht über Prism']
+
+
+matching chains
+english mentions ['Google', 'Yahoo', 'these companies']
+german mentions ['Unternehmen']
+
+
+matching chains
+english mentions ['the problem']
+german mentions ['der US-Regierung']
+
+
+matching chains
+english mentions ['those same closed doors', 'closed doors']
+german mentions ['der US-Regierung']
+
+
+matching chains
+english mentions ['metadata']
+german mentions ['der US-Regierung']
+
+
+matching chains
+english mentions ["who you 're talking to", "when you 're talking to them", 'where you traveled']
+german mentions ['der US-Regierung']
+
+
+matching chains
+english mentions ['its own internal data format']
+german mentions ['ein eigenes internes Datenformat']
+
+
+matching chains
+english mentions ['the principles']
+german mentions ['die Prinzipen']
+
+
+matching chains
+english mentions ['the privacy and the rights']
+german mentions ['die Rechte']
+
+
+matching chains
+english mentions ['a program']
+german mentions ['ein Programm']
+
+
+matching chains
+english mentions ['a copy']
+german mentions ['eine Kopie']
+
+
+matching chains
+english mentions ['your idea worth spreading right now at this moment']
+german mentions ['deine Idee']
+
+
+matching chains
+english mentions ['American communications']
+german mentions ['den Umfang an amerikanischer Kommunikation']
+
+
+matching chains
+english mentions ['those communications']
+german mentions ['der US-Regierung']
+
+
+matching chains
+english mentions ['Our basic freedoms']
+german mentions ['Unsere grundlegenden Freiheiten']
+
+
+matching chains
+english mentions ['the fact that the NSA has violated their own rules']
+german mentions ['die NSA', 'die NSA', 'der NSA', 'der NSA', 'die NSA', 'die NSA', 'der NSA', 'der NSA', 'die NSA', 'der NSA', 'die NSA', 'der NSA', 'der NSA', 'die NSA', 'Die NSA', 'die NSA', 'der NSA', 'der NSA', 'die NSA', 'Die NSA', 'die NSA', 'die NSA']
+
+
+matching chains
+english mentions ['one event']
+german mentions ['ein Vorfall']
+
+
+matching chains
+english mentions ['a lot of the techies in this room']
+german mentions ['die Tech-Freunde']
+
+
+matching chains
+english mentions ['Boundless Informant']
+german mentions ['Boundless Informant']
+
+
+matching chains
+english mentions ['this report', 'this report', 'the report']
+german mentions ['diesem Bericht', 'den Bericht', 'den Bericht']
+
+
+matching chains
+english mentions ['a program']
+german mentions ['der US-Regierung']
+
+
+matching chains
+english mentions ['a communication', 'this communication']
+german mentions ['solcher Kommunikation', 'einer Kommunikation']
+
+
+matching chains
+english mentions ['a story', 'this story']
+german mentions ['dieser Artikel', 'einen Artikel']
+
+
+matching chains
+english mentions ['your government']
+german mentions ['der US-Regierung']
+
+
+matching chains
+english mentions ['Chinese businesses', 'American businesses', 'any other company', 'The Internet', 'Our economy']
+german mentions ['Amerikanische Unternehmen , chinesische Unternehmen und jedes andere Unternehmen']
+
+
+matching chains
+english mentions ['that point of view']
+german mentions ['dieser Einstellung']
+
+
+matching chains
+english mentions ['Congress and the American people']
+german mentions ['der Kongress und das amerikanische Volk']
+
+
+matching chains
+english mentions ['that kind of government behind closed doors']
+german mentions ['diese Art von Regierung']
+
+
+matching chains
+english mentions ['people']
+german mentions ['Leute']
+
+
+matching chains
+english mentions ['your rights']
+german mentions ['deine Rechte']
+
+
+matching chains
+english mentions ['the lion']
+german mentions ['der Löwe']
+
+
+matching chains
+english mentions ['backdoors']
+german mentions ['der US-Regierung']
+
+
+matching chains
+english mentions ['people monitoring those communications']
+german mentions ['der US-Regierung']
+
+
+matching chains
+english mentions ['a government office in Berlin']
+german mentions ['der US-Regierung']
+
+
+german chain not in english
+set_234 ['[ " Informant ohne Grenzen " ]', 'Boundless Informant']
+
+
+german chain not in english
+set_23 ['PRISM', 'PRISM']
+
+
+german chain not in english
+set_27 ['ein Programm']
+
+
+german chain not in english
+set_29 ['die Regierung']
+
+
+german chain not in english
+set_168 ['Terrorismus']
+
+
+german chain not in english
+set_40 ['einen tatsächlichen NSA-Analysten']
+
+
+german chain not in english
+set_170 ['eine emotionale Reaktion']
+
+
+german chain not in english
+set_37 ['diverse Technologie- und Internetunternehmen']
+
+
+german chain not in english
+set_167 ['einen Terroristenangriff']
+
+
+german chain not in english
+set_227 ['die Journalisten']
+
+
+german chain not in english
+set_172 ['Leuten']
+
+
+german chain not in english
+set_111 ['Leuten']
+
+
+german chain not in english
+set_115 ['einige seiner wichtigsten Aktionen']
+
+
+german chain not in english
+set_181 ['Regierungen']
+
+
+german chain not in english
+set_244 ['Chelsea Manning', 'Bradley Manning']
+
+
+german chain not in english
+set_179 ['Leute in der Geheimdienstgemeinde']
+
+
+german chain not in english
+set_49 ['Berichte']
+
+
+german chain not in english
+set_118 ['Leute']
+
+
+german chain not in english
+set_58 ['das Ermöglichen von SSL-Netzverschlüsselung']
+
+
+german chain not in english
+set_119 ['Orten']
+
+
+german chain not in english
+set_184 ['Dinge']
+
+
+german chain not in english
+set_56 ['ein Internetunternehmen']
+
+
+german chain not in english
+set_57 ['jeder Seite']
+
+
+german chain not in english
+set_125 ['die Verhaltensregeln']
+
+
+german chain not in english
+set_3 ['Ich kann alle sehen']
+
+
+german chain not in english
+set_2 ['der Bot', 'diesen Roboter']
+
+
+german chain not in english
+set_235 ['die schockierendste Sache']
+
+
+german chain not in english
+set_65 ['die Seite', 'Amazon.com']
+
+
+german chain not in english
+set_128 ['ein Programm namens " Bullrun']
+
+
+german chain not in english
+set_5 ['die Art von Regierung']
+
+
+german chain not in english
+set_8 ['die Richtung']
+
+
+german chain not in english
+set_6 ['die Art von Internet']
+
+
+german chain not in english
+set_132 ['Edgehill', 'Bullrun']
+
+
+german chain not in english
+set_7 ['die Art von Regierung , die wir wollen , die Art von Internet , die wir wollen , die Art von Beziehung zwischen Menschen und Gesellschaften']
+
+
+german chain not in english
+set_77 ['eine Haltung']
+
+
+german chain not in english
+set_16 ['der Information']
+
+
+german chain not in english
+set_18 ['eine Presse']
+
+
+german chain not in english
+set_191 ['einer Generation']
+
+
+german chain not in english
+set_189 ['beiden Optionen']
+
+
+german chain not in english
+set_133 ['Programme']
+
+
+german chain not in english
+set_139 ['diesen Unternehmen', 'Partnerunternehmen']
+
+
+german chain not in english
+set_199 ['Gründer des World-Wide-Web']
+
+
+german chain not in english
+set_197 ['das Internet']
+
+
+german chain not in english
+set_143 ['SSL']
+
+
+german chain not in english
+set_144 ['einer Welt']
+
+
+german chain not in english
+set_205 ['das Internet']
+
+
+german chain not in english
+set_141 ['Hintertüren']
+
+
+german chain not in english
+set_202 ['den Vorschlag']
+
+
+german chain not in english
+set_87 ['der Tatsache']
+
+
+german chain not in english
+set_145 ['Leute']
+
+
+german chain not in english
+set_31 ['die Fälle']
+
+
+german chain not in english
+set_156 ['ein Preis']
+
+
+german chain not in english
+set_32 ['Gespräche']
+
+
+german chain not in english
+set_217 ['der Große Bruder']
+
+
+german chain not in english
+set_215 ['das Internet']
+
+
+german chain not in english
+set_155 ['diese Maßnahme']
+
+
+german chain not in english
+set_153 ['geistiges Eigentum']
+
+
+german chain not in english
+set_89 ['ein Vorfall']
+
+
+german chain not in english
+set_218 ['einen juristischen Aufsatz']
+
+
+german chain not in english
+set_165 ['Zwei unabhängige Ausschüsse des Weißen Hauses']
+
+
+german chain not in english
+set_221 ['unserem Recht auf Datenschutz']
+
+
+german chain not in english
+set_36 ['Die Grafik']
+
+
+german chain not in english
+set_164 ['Der Kongress']
+
+
+german chain not in english
+set_34 ['einem geheimen Gericht']
+
+
+****************************************
+STATISTICS PER DOC
+Document ==>  /Users/xloish/PycharmProjects/testsuitewmt18/parcor-full/corpus//DiscoMT/EN007_1953_words.xml
+SOURCE chains:  103
+SOURCE mentions:  122
+SOURCE annotated words:  303
+TARGET chains:  96
+TARGET mentions:  116
+TARGET annotated words:  251
+****************************************
+
+
+matching chains
+english mentions ['Android', 'Android']
+german mentions ['diese Projekte']
+
+
+matching chains
+english mentions ['electric power']
+german mentions ['die Elektrizität']
+
+
+matching chains
+english mentions ['the bikes', 'bikes']
+german mentions ['Die Räder']
+
+
+matching chains
+english mentions ['things']
+german mentions ['diese Projekte']
+
+
+matching chains
+english mentions ['the video', 'a video']
+german mentions ['ein Video']
+
+
+matching chains
+english mentions ['people']
+german mentions ['diese Projekte']
+
+
+matching chains
+english mentions ['the Loon Project']
+german mentions ['das Loon-Projekt']
+
+
+matching chains
+english mentions ['corporations']
+german mentions ['diese Projekte']
+
+
+matching chains
+english mentions ['people']
+german mentions ['diese Projekte']
+
+
+matching chains
+english mentions ['people']
+german mentions ['diese Projekte']
+
+
+matching chains
+english mentions ['parking lots and roads']
+german mentions ['Parkplätzen und Straßen']
+
+
+matching chains
+english mentions ['some small , measurable arena of progress']
+german mentions ['diese Projekte']
+
+
+matching chains
+english mentions ['the books']
+german mentions ['diese Projekte']
+
+
+matching chains
+english mentions ['companies']
+german mentions ['Unternehmen', 'diese Unternehmen']
+
+
+matching chains
+english mentions ['those companies', 'lots of companies']
+german mentions ['Unternehmen', 'diese Unternehmen']
+
+
+matching chains
+english mentions ['The computer']
+german mentions ['Der Computer']
+
+
+matching chains
+english mentions ['the future', 'that future']
+german mentions ['die Zukunft']
+
+
+matching chains
+english mentions ['this problem']
+german mentions ['ein Stimmproblem']
+
+
+matching chains
+english mentions ["the world 's information"]
+german mentions ['die Information der Welt']
+
+
+matching chains
+english mentions ['the world']
+german mentions ['die Welt']
+
+
+matching chains
+english mentions ['this idea that we should just provide free bikes to everyone']
+german mentions ['gratis Fahrräder zur Verfügung stellen']
+
+
+matching chains
+english mentions ['your computer']
+german mentions ['Dein Computer']
+
+
+matching chains
+english mentions ['Deep Mind', 'Deep Mind', 'Deep Mind', 'Deep Mind']
+german mentions ['DeepMind', 'DeepMind', 'DeepMind', 'DeepMind']
+
+
+matching chains
+english mentions ['the state of the art on speech recognition']
+german mentions ['Spracherkennung']
+
+
+matching chains
+english mentions ['things']
+german mentions ['Dinge']
+
+
+matching chains
+english mentions ['machine learning']
+german mentions ['diese Projekte']
+
+
+matching chains
+english mentions ['the thing']
+german mentions ['die Sache']
+
+
+matching chains
+english mentions ['Tesla', 'Tesla']
+german mentions ['Tesla', 'Tesla']
+
+
+matching chains
+english mentions ['a company']
+german mentions ['diese Projekte']
+
+
+matching chains
+english mentions ['Elon Musk']
+german mentions ['Elon Musk']
+
+
+matching chains
+english mentions ['a way']
+german mentions ['eine Weise']
+
+
+matching chains
+english mentions ['companies']
+german mentions ['diese Projekte']
+
+
+matching chains
+english mentions ['Internet']
+german mentions ['diese Projekte']
+
+
+matching chains
+english mentions ['that image']
+german mentions ['diese Projekte']
+
+
+matching chains
+english mentions ['the same incremental thing']
+german mentions ['diese Projekte']
+
+
+matching chains
+english mentions ['a crop of potatoes']
+german mentions ['diese Projekte']
+
+
+matching chains
+english mentions ['a worthy goal']
+german mentions ['diese Projekte']
+
+
+matching chains
+english mentions ['that video', 'a video']
+german mentions ['ein Video', 'diesem Video']
+
+
+matching chains
+english mentions ['a lot of employees at Google']
+german mentions ['viele Mitarbeiter bei Google']
+
+
+matching chains
+english mentions ['this Loon Project']
+german mentions ['diese Projekte']
+
+
+matching chains
+english mentions ['the picture of Sergey with Edward Snowden']
+german mentions ['das Foto von Sergey und Edward Snowden']
+
+
+matching chains
+english mentions ['your medical record']
+german mentions ['diese Projekte']
+
+
+matching chains
+english mentions ['this idea']
+german mentions ['diese Projekte']
+
+
+matching chains
+english mentions ['this friend']
+german mentions ['einen Freund']
+
+
+matching chains
+english mentions ['learn what cats are']
+german mentions ['diese Projekte']
+
+
+matching chains
+english mentions ['playing video games']
+german mentions ['diese Projekte']
+
+
+matching chains
+english mentions ['the video games', 'these games', 'these games']
+german mentions ['diese Spiele', 'alte Computerspiele', 'diesen Spielen']
+
+
+matching chains
+english mentions ['this journey']
+german mentions ['diese Reise']
+
+
+matching chains
+english mentions ['balloons']
+german mentions ['diese Projekte']
+
+
+matching chains
+english mentions ['this kind of intelligence']
+german mentions ['diese Projekte']
+
+
+matching chains
+english mentions ['Demis']
+german mentions ['Der Gründer der Firma , Demis']
+
+
+matching chains
+english mentions ["all that 's taken place with Deep Mind and the boxing"]
+german mentions ['DeepMind', 'DeepMind', 'DeepMind', 'DeepMind']
+
+
+matching chains
+english mentions ['exciting work']
+german mentions ['sehr viel aufregende Arbeit']
+
+
+matching chains
+english mentions ['the search part']
+german mentions ['diese Projekte']
+
+
+matching chains
+english mentions ['satellites']
+german mentions ['Satelliten']
+
+
+matching chains
+english mentions ['a balloon']
+german mentions ['diese Projekte']
+
+
+matching chains
+english mentions ['a balloon', 'this balloon']
+german mentions ['dieser Ballon', 'ein Ballon']
+
+
+matching chains
+english mentions ['these balloons', 'the balloons']
+german mentions ['die Ballons', 'diesen Ballons']
+
+
+matching chains
+english mentions ['Larry', 'Larry']
+german mentions ['Larry', 'Larry']
+
+
+matching chains
+english mentions ['my phone']
+german mentions ['mein Telefon']
+
+
+matching chains
+english mentions ['kind of surveillance']
+german mentions ['diese Projekte']
+
+
+matching chains
+english mentions ['the particular terrorist attack']
+german mentions ['diese Projekte']
+
+
+matching chains
+english mentions ['Google', 'Google', 'Google', 'Google', 'Google']
+german mentions ['deine Philosophie', 'Privatsphäre', 'Google', 'diese Punkte', 'Google', 'das Suchen']
+
+
+matching chains
+english mentions ['secret thing']
+german mentions ['heimlich Dinge']
+
+
+matching chains
+english mentions ['a functioning democracy']
+german mentions ['diese Projekte']
+
+
+matching chains
+english mentions ['a balloon']
+german mentions ['einen Ballon']
+
+
+matching chains
+english mentions ['main thing']
+german mentions ['diese Projekte']
+
+
+matching chains
+english mentions ['speech recognition']
+german mentions ['Spracherkennung']
+
+
+matching chains
+english mentions ['this example']
+german mentions ['dieses Beispiel']
+
+
+matching chains
+english mentions ['people']
+german mentions ['diese Projekte']
+
+
+matching chains
+english mentions ['things']
+german mentions ['das Arbeiten an Dingen , an denen kein anderer arbeitet']
+
+
+matching chains
+english mentions ['Information']
+german mentions ['Information']
+
+
+matching chains
+english mentions ['the things we just talked about']
+german mentions ['diese Projekte']
+
+
+matching chains
+english mentions ["something that would n't happen"]
+german mentions ['diese Projekte']
+
+
+matching chains
+english mentions ['lots of people who are thinking about the future']
+german mentions ['viele Leute']
+
+
+matching chains
+english mentions ['machines']
+german mentions ['diese Projekte']
+
+
+matching chains
+english mentions ['the same incremental thing that they did 50 years ago or 20 years ago']
+german mentions ['diese Projekte']
+
+
+matching chains
+english mentions ['curiosity']
+german mentions ['diese Projekte']
+
+
+matching chains
+english mentions ['people']
+german mentions ['Leuten']
+
+
+matching chains
+english mentions ['the system']
+german mentions ['das System']
+
+
+matching chains
+english mentions ['One of the websites']
+german mentions ['diese Projekte']
+
+
+matching chains
+english mentions ['The privacy side']
+german mentions ['diese Projekte']
+
+
+matching chains
+english mentions ['Companies']
+german mentions ['diese Projekte']
+
+
+matching chains
+english mentions ['my voice stuff']
+german mentions ['ein Stimmproblem']
+
+
+matching chains
+english mentions ['companies']
+german mentions ['Unternehmen']
+
+
+matching chains
+english mentions ['a phone']
+german mentions ['ein Telefon']
+
+
+matching chains
+english mentions ['the bus']
+german mentions ['dem Bus']
+
+
+matching chains
+english mentions ['your money']
+german mentions ['diese Projekte']
+
+
+matching chains
+english mentions ['search']
+german mentions ['diese Projekte']
+
+
+matching chains
+english mentions ['transportation systems']
+german mentions ['diese Projekte']
+
+
+matching chains
+english mentions ['the subject']
+german mentions ['diese Projekte']
+
+
+matching chains
+english mentions ['the company']
+german mentions ['das Unternehmen']
+
+
+matching chains
+english mentions ['quality of mind']
+german mentions ['diese Projekte']
+
+
+matching chains
+english mentions ['people']
+german mentions ['diese Projekte']
+
+
+matching chains
+english mentions ['people']
+german mentions ['diese Projekte']
+
+
+matching chains
+english mentions ['security and privacy']
+german mentions ['Sicherheit und Datenschutz']
+
+
+matching chains
+english mentions ['automated cars']
+german mentions ['automatisierten Fahren']
+
+
+matching chains
+english mentions ['the balloons']
+german mentions ['diese Projekte']
+
+
+matching chains
+english mentions ['my voice']
+german mentions ['meine Stimme']
+
+
+matching chains
+english mentions ['privacy and security']
+german mentions ['Privatsphäre und Sicherheit']
+
+
+matching chains
+english mentions ['computing']
+german mentions ['Computer , die funktionieren und dich verstehen , die Informationen begreifen']
+
+
+matching chains
+english mentions ['the government']
+german mentions ['der Regierung']
+
+
+matching chains
+english mentions ['your devices']
+german mentions ['diese Projekte']
+
+
+german chain not in english
+set_44 ['etwas Wichtiges']
+
+
+german chain not in english
+set_42 ['das Resultat']
+
+
+german chain not in english
+set_40 ['ein Programm']
+
+
+german chain not in english
+set_41 ['das Katzenbild']
+
+
+german chain not in english
+set_47 ['Ameisen', 'die Ameisen']
+
+
+german chain not in english
+set_46 ['die Pflanzen', 'Kartoffeln']
+
+
+german chain not in english
+set_50 ['ein Internet']
+
+
+german chain not in english
+set_106 ['die Wirkung']
+
+
+german chain not in english
+set_110 ['Ballons']
+
+
+german chain not in english
+set_54 ['Informationen']
+
+
+german chain not in english
+set_51 ['Informationen', 'diese Informationen']
+
+
+german chain not in english
+set_55 ['Leute']
+
+
+german chain not in english
+set_120 ['den Leuten']
+
+
+german chain not in english
+set_61 ['Menschen']
+
+
+german chain not in english
+set_119 ['die zwei Drittel der Welt']
+
+
+german chain not in english
+set_64 ['den Zugang']
+
+
+german chain not in english
+set_121 ['Unternehmen']
+
+
+german chain not in english
+set_11 ['das Suchen']
+
+
+german chain not in english
+set_13 ['der Prozess']
+
+
+german chain not in english
+set_18 ['Computer']
+
+
+german chain not in english
+set_17 ['Geräte']
+
+
+german chain not in english
+set_71 ['Wettersimulationen']
+
+
+german chain not in english
+set_73 ['ein weltweites Netz']
+
+
+german chain not in english
+set_22 ['Computer']
+
+
+german chain not in english
+set_21 ['ein Unternehmen']
+
+
+german chain not in english
+set_77 ['Dingen']
+
+
+german chain not in english
+set_24 ['Wir haben maschinelles Lernen erforscht']
+
+
+german chain not in english
+set_25 ['Katzen']
+
+
+german chain not in english
+set_130 ['ein Unternehmen']
+
+
+german chain not in english
+set_148 ['den Fortbestand der Menschheit zu sichern']
+
+
+german chain not in english
+set_137 ['viele Unternehmen']
+
+
+german chain not in english
+set_79 ['die Regierung']
+
+
+german chain not in english
+set_136 ['Menschen']
+
+
+german chain not in english
+set_134 ['Das ist nicht die Art , wie wir Unternehmen sehen']
+
+
+german chain not in english
+set_135 ['Unternehmen']
+
+
+german chain not in english
+set_152 ['Android', 'Android']
+
+
+german chain not in english
+set_142 ['Dingen']
+
+
+german chain not in english
+set_33 ['künstliche Intelligenz']
+
+
+german chain not in english
+set_88 ['Leuten']
+
+
+german chain not in english
+set_85 ['Leuten']
+
+
+german chain not in english
+set_93 ['ähnlichen Beschwerden']
+
+
+german chain not in english
+set_34 ['eine der aufregendsten Sachen']
+
+
+german chain not in english
+set_90 ['Leute']
+
+
+****************************************
+STATISTICS PER DOC
+Document ==>  /Users/xloish/PycharmProjects/testsuitewmt18/parcor-full/corpus//DiscoMT/EN009_2043_words.xml
+SOURCE chains:  66
+SOURCE mentions:  81
+SOURCE annotated words:  217
+TARGET chains:  60
+TARGET mentions:  67
+TARGET annotated words:  176
+****************************************
+
+
+matching chains
+english mentions ['a computer program']
+german mentions ['One Laptop per Child', 'One Laptop per Child']
+
+
+matching chains
+english mentions ['an algorithm']
+german mentions ['One Laptop per Child', 'One Laptop per Child']
+
+
+matching chains
+english mentions ['the intelligence']
+german mentions ['die Intelligenz']
+
+
+matching chains
+english mentions ['my partners']
+german mentions ['One Laptop per Child', 'One Laptop per Child']
+
+
+matching chains
+english mentions ['people']
+german mentions ['die Leute']
+
+
+matching chains
+english mentions ['the Negroponte switch']
+german mentions ['One Laptop per Child', 'One Laptop per Child']
+
+
+matching chains
+english mentions ['a chicken', 'the chicken']
+german mentions ['ein Hühnchen']
+
+
+matching chains
+english mentions ['the original slide']
+german mentions ['One Laptop per Child', 'One Laptop per Child']
+
+
+matching chains
+english mentions ['the next right', 'the one after']
+german mentions ['One Laptop per Child', 'One Laptop per Child']
+
+
+matching chains
+english mentions ['the student', 'a student of mine']
+german mentions ['einer meiner Studenten', 'Dieser Student']
+
+
+matching chains
+english mentions ['Marvin Minsky']
+german mentions ['One Laptop per Child', 'One Laptop per Child']
+
+
+matching chains
+english mentions ['fingers']
+german mentions ['One Laptop per Child', 'One Laptop per Child']
+
+
+matching chains
+english mentions ['some parent']
+german mentions ['einige Eltern']
+
+
+matching chains
+english mentions ['sensory computing']
+german mentions ['One Laptop per Child', 'One Laptop per Child']
+
+
+matching chains
+english mentions ['your life']
+german mentions ['One Laptop per Child', 'One Laptop per Child']
+
+
+matching chains
+english mentions ['sort of a simulation']
+german mentions ['One Laptop per Child', 'One Laptop per Child']
+
+
+matching chains
+english mentions ['young Yo-Yo Ma']
+german mentions ['One Laptop per Child', 'One Laptop per Child']
+
+
+matching chains
+english mentions ['Later work']
+german mentions ['One Laptop per Child', 'One Laptop per Child']
+
+
+matching chains
+english mentions ['TED Talks']
+german mentions ['alle 14 TED-Talks']
+
+
+matching chains
+english mentions ['Jerry Wiesner', 'Jerry Wiesner']
+german mentions ['One Laptop per Child', 'One Laptop per Child']
+
+
+matching chains
+english mentions ['a slide where TED 1 happened in my life']
+german mentions ['One Laptop per Child', 'One Laptop per Child']
+
+
+matching chains
+english mentions ['touch-sensitive displays']
+german mentions ['berührungsempfindliche Monitore']
+
+
+matching chains
+english mentions ['the Internet of Things']
+german mentions ['One Laptop per Child', 'One Laptop per Child']
+
+
+matching chains
+english mentions ['stationary satellites']
+german mentions ['One Laptop per Child', 'One Laptop per Child']
+
+
+matching chains
+english mentions ['Seymour Papert', 'Seymour', 'Seymour']
+german mentions ['Seymour Papert', 'Seymour', 'Seymour']
+
+
+matching chains
+english mentions ['that little piece of lenticular sheet with his photograph']
+german mentions ['One Laptop per Child', 'One Laptop per Child']
+
+
+matching chains
+english mentions ['Muriel Cooper']
+german mentions ['Muriel Cooper']
+
+
+matching chains
+english mentions ['an extraordinary rescue']
+german mentions ['ein außerordenticher Rettungseinsatz']
+
+
+matching chains
+english mentions ['the Israelis']
+german mentions ['Den Israelis']
+
+
+matching chains
+english mentions ['One Laptop per Child', 'One Laptop per Child']
+german mentions ['One Laptop per Child', 'One Laptop per Child']
+
+
+matching chains
+english mentions ['the people in that community']
+german mentions ['die Menschen in dieser Gemeinde']
+
+
+matching chains
+english mentions ['Being Digital']
+german mentions ['One Laptop per Child', 'One Laptop per Child']
+
+
+matching chains
+english mentions ['George Gilder', 'George']
+german mentions ['George Gilder']
+
+
+matching chains
+english mentions ['this diagram']
+german mentions ['One Laptop per Child', 'One Laptop per Child']
+
+
+matching chains
+english mentions ['Nicholas']
+german mentions ['Nicholas']
+
+
+matching chains
+english mentions ['back page of Newsweek magazine']
+german mentions ['der Rückseite des Magazins Newsweek']
+
+
+matching chains
+english mentions ['a couple of things about that period and about what happened']
+german mentions ['One Laptop per Child', 'One Laptop per Child']
+
+
+matching chains
+english mentions ['robotic things']
+german mentions ['One Laptop per Child', 'One Laptop per Child']
+
+
+matching chains
+english mentions ['the video disc']
+german mentions ['Bildplatte']
+
+
+matching chains
+english mentions ['Ricky Wurman']
+german mentions ['Ricky Wurman']
+
+
+matching chains
+english mentions ['the countries']
+german mentions ['die Staaten']
+
+
+matching chains
+english mentions ['the only thing']
+german mentions ['One Laptop per Child', 'One Laptop per Child']
+
+
+matching chains
+english mentions ['a device']
+german mentions ['One Laptop per Child', 'One Laptop per Child']
+
+
+matching chains
+english mentions ['the TV screens']
+german mentions ['One Laptop per Child', 'One Laptop per Child']
+
+
+matching chains
+english mentions ['Three reasons']
+german mentions ['One Laptop per Child', 'One Laptop per Child']
+
+
+matching chains
+english mentions ['those instructions', 'audio instructions']
+german mentions ['eine Menge Dinge']
+
+
+matching chains
+english mentions ['some slides']
+german mentions ['ein paar Folien aus TED 2']
+
+
+matching chains
+english mentions ['Entebbe', 'Entebbe', 'Entebbe']
+german mentions ['One Laptop per Child', 'One Laptop per Child']
+
+
+matching chains
+english mentions ['that time', "a period when computers were n't yet for people"]
+german mentions ['eine Zeit']
+
+
+matching chains
+english mentions ['tablets']
+german mentions ['One Laptop per Child', 'One Laptop per Child']
+
+
+matching chains
+english mentions ['one of the things']
+german mentions ['One Laptop per Child', 'One Laptop per Child']
+
+
+matching chains
+english mentions ['the children']
+german mentions ['die Kinder']
+
+
+matching chains
+english mentions ['that iteration']
+german mentions ['diese Wiederholungen']
+
+
+matching chains
+english mentions ['an experiment', 'the experiment']
+german mentions ['der Versuch', 'einen Versuch']
+
+
+matching chains
+english mentions ['information', 'your bloodstream']
+german mentions ['One Laptop per Child', 'One Laptop per Child']
+
+
+matching chains
+english mentions ['The experiment']
+german mentions ['One Laptop per Child', 'One Laptop per Child']
+
+
+matching chains
+english mentions ['The kid on your right']
+german mentions ['One Laptop per Child', 'One Laptop per Child']
+
+
+matching chains
+english mentions ['the oven panel door key']
+german mentions ['den Herdschalter oder den Schlüssel']
+
+
+matching chains
+english mentions ['two billion dollars']
+german mentions ['One Laptop per Child', 'One Laptop per Child']
+
+
+matching chains
+english mentions ['the new Media Lab']
+german mentions ['das neue Media Lab']
+
+
+matching chains
+english mentions ['Poverty']
+german mentions ['One Laptop per Child', 'One Laptop per Child']
+
+
+matching chains
+english mentions ['the oven', 'the oven']
+german mentions ['der Ofen']
+
+
+matching chains
+english mentions ['a chicken']
+german mentions ['ein Hühnchen']
+
+
+matching chains
+english mentions ['the car']
+german mentions ['Das Auto']
+
+
+matching chains
+english mentions ['the challenge']
+german mentions ['One Laptop per Child', 'One Laptop per Child']
+
+
+matching chains
+english mentions ['Backseat Driver']
+german mentions ['One Laptop per Child', 'One Laptop per Child']
+
+
+german chain not in english
+set_77 ['einen Fehler']
+
+
+german chain not in english
+set_27 ['die Art von Geschichte']
+
+
+german chain not in english
+set_26 ['diese Idee']
+
+
+german chain not in english
+set_81 ['ein 1-Milliarden-Dollar-Projekt']
+
+
+german chain not in english
+set_80 ['den sieben Jahren']
+
+
+german chain not in english
+set_90 ['Tablets']
+
+
+german chain not in english
+set_32 ['eine Straße']
+
+
+german chain not in english
+set_87 ['Orten']
+
+
+german chain not in english
+set_85 ['die verschiedenen Orte']
+
+
+german chain not in english
+set_37 ['drei Helden']
+
+
+german chain not in english
+set_92 ['beste Bild']
+
+
+german chain not in english
+set_43 ['Man kann nicht über das Nachdenken nachdenken , es sei denn , man denkt über das Nachdenken über irgendetwas nach']
+
+
+german chain not in english
+set_98 ['zwei Millarden Dollar', 'solche Beträge']
+
+
+german chain not in english
+set_99 ['die Summe']
+
+
+german chain not in english
+set_101 ['unsere Augen']
+
+
+german chain not in english
+set_48 ['die Leute']
+
+
+german chain not in english
+set_107 ['Information']
+
+
+german chain not in english
+set_108 ['einem der Redner']
+
+
+german chain not in english
+set_54 ['Hühnchen']
+
+
+german chain not in english
+set_5 ['30 Jahre', 'dieser 30 Jahre']
+
+
+german chain not in english
+set_59 ['dieser Name']
+
+
+german chain not in english
+set_7 ['Dinge']
+
+
+german chain not in english
+set_9 ['Was ich Ihnen zeigen werde']
+
+
+german chain not in english
+set_11 ['roboterartige die wohnraumähnliche Strukturen bauen konnten']
+
+
+german chain not in english
+set_12 ['Finger']
+
+
+german chain not in english
+set_14 ['Dieses Gerät']
+
+
+german chain not in english
+set_13 ['Finger']
+
+
+german chain not in english
+set_18 ['Entebbe']
+
+
+german chain not in english
+set_75 ['Lernen']
+
+
+german chain not in english
+set_73 ['die Feier']
+
+
+****************************************
+STATISTICS PER DOC
+Document ==>  /Users/xloish/PycharmProjects/testsuitewmt18/parcor-full/corpus//DiscoMT/EN010_205_words.xml
+SOURCE chains:  83
+SOURCE mentions:  108
+SOURCE annotated words:  326
+TARGET chains:  76
+TARGET mentions:  110
+TARGET annotated words:  260
+****************************************
+
+
+matching chains
+english mentions ['the mysterious woman']
+german mentions ['die mysteriöse Frau']
+
+
+matching chains
+english mentions ['contractions']
+german mentions ['meine Wehen']
+
+
+matching chains
+english mentions ['my grandmother']
+german mentions ['meine Großmutter']
+
+
+matching chains
+english mentions ["Spielberg 's mechanical shark , Bruce"]
+german mentions ["Spielberg 's mechanischer Hai , Bruce"]
+
+
+matching chains
+english mentions ["a guy who 's on the verge of divorce"]
+german mentions ['einem Typen']
+
+
+matching chains
+english mentions ["a scene that you would n't necessarily think of when you think of `` Jaws"]
+german mentions ['eine Szene']
+
+
+matching chains
+english mentions ['the stuff that really is inside the box']
+german mentions ['das Zeug']
+
+
+matching chains
+english mentions ['The romance of the script']
+german mentions ['Die Romantik dieses Drehbuches']
+
+
+matching chains
+english mentions ['the droids']
+german mentions ['die Androiden']
+
+
+matching chains
+english mentions ['Lost']
+german mentions ['diese Sendung']
+
+
+matching chains
+english mentions ['the stuff that I do']
+german mentions ['diese Sendung']
+
+
+matching chains
+english mentions ['Obi Wan Kenobi', 'Obi Wan Kenobi']
+german mentions ['Obi Wan Kenobi', 'Obi Wan Kenobi']
+
+
+matching chains
+english mentions ['guys who had some visual effects experience']
+german mentions ['eine Internetsache']
+
+
+matching chains
+english mentions ['Eddie', 'Eddie Marsan', 'Eddie', 'Eddie', 'Eddie']
+german mentions ['Eddie Marsan', 'Eddie', 'Eddie', 'Eddies', 'Eddie Marsans']
+
+
+matching chains
+english mentions ['a guy doing stuff on a Quadra 950 computer']
+german mentions ['ein Typ']
+
+
+matching chains
+english mentions ['this thing']
+german mentions ['der geheimnisvollen Zauberkiste', 'die Kiste', 'diese Kiste', 'diesem Ding', 'dieser Kiste']
+
+
+matching chains
+english mentions ['the holographic image']
+german mentions ['das holographische Bild']
+
+
+matching chains
+english mentions ['my favorite visual effect in the movie']
+german mentions ['Mein Lieblingsspezialeffekt']
+
+
+matching chains
+english mentions ["Tom 's character"]
+german mentions ['Toms Charakter']
+
+
+matching chains
+english mentions ['Tom', 'Tom', 'Tom', 'Tom', 'Tom', 'Tom', 'Tom', 'Tom', 'Tom', 'Tom']
+german mentions ['Tom', 'Tom', 'Toms', 'Toms', 'Toms', 'Toms', 'Toms', 'Toms', 'Toms', 'Toms', 'Toms']
+
+
+matching chains
+english mentions ['that scene']
+german mentions ['diese Sendung']
+
+
+matching chains
+english mentions ['that hand']
+german mentions ['diese Sendung']
+
+
+matching chains
+english mentions ['a synthesizer']
+german mentions ['diese Sendung']
+
+
+matching chains
+english mentions ['that island', 'that island']
+german mentions ['diese Sendung']
+
+
+matching chains
+english mentions ['this great magic store']
+german mentions ['diese Sendung']
+
+
+matching chains
+english mentions ['so much stuff']
+german mentions ['so viel Zeug']
+
+
+matching chains
+english mentions ['media']
+german mentions ['diese Sendung']
+
+
+matching chains
+english mentions ['Steve Jobs']
+german mentions ['Steve Jobs']
+
+
+matching chains
+english mentions ['the Kleenex box', 'the box']
+german mentions ['die Kleenex Kiste', 'die Kiste']
+
+
+matching chains
+english mentions ['blank page']
+german mentions ['eine Zauberkiste']
+
+
+matching chains
+english mentions ['the magic store']
+german mentions ["einem Zauberartikelladen namens Lou Tannen 's Magic", 'dieser kleine Zauberartikelladen']
+
+
+matching chains
+english mentions ['the filmmakers']
+german mentions ['all die Filmproduzenten']
+
+
+matching chains
+english mentions ['my grandfather', 'my grandfather', 'My grandfather', 'my grandfather', 'my grandfather']
+german mentions ['meinen Großvater', 'mein Großvater', 'Mein Großvater', 'meines Großvaters']
+
+
+matching chains
+english mentions ['Rives']
+german mentions ['Rives']
+
+
+matching chains
+english mentions ['paper']
+german mentions ['diese Sendung']
+
+
+matching chains
+english mentions ['11 and a half weeks']
+german mentions ['diese Sendung']
+
+
+matching chains
+english mentions ['the effects']
+german mentions ['diese Sendung']
+
+
+matching chains
+english mentions ["Lou Tannen 's Magic"]
+german mentions ["einem Zauberartikelladen namens Lou Tannen 's Magic", 'dieser kleine Zauberartikelladen']
+
+
+matching chains
+english mentions ['Jaws', 'Jaws', 'Jaws', 'Jaws', 'Jaws']
+german mentions ['diese Sendung']
+
+
+matching chains
+english mentions ['a guy']
+german mentions ['einem Typen']
+
+
+matching chains
+english mentions ['this series']
+german mentions ['diese Sendung']
+
+
+matching chains
+english mentions ['the question of what comes next']
+german mentions ['diese Sendung']
+
+
+matching chains
+english mentions ['the filmmakers who exist out there now who would have been silenced , you know -- who have been silenced in the past']
+german mentions ['all die Filmproduzenten']
+
+
+matching chains
+english mentions ['a kiss']
+german mentions ['einen Kuss']
+
+
+matching chains
+english mentions ['the guy']
+german mentions ['der Typ']
+
+
+matching chains
+english mentions ['Harry Kelvin']
+german mentions ['diese Sendung']
+
+
+matching chains
+english mentions ['the Super 8 camera that']
+german mentions ['diese Sendung']
+
+
+matching chains
+english mentions ['the kind rep from TED']
+german mentions ['dem netten Repräsentanten von TED']
+
+
+matching chains
+english mentions ['radios and telephones and all sorts of things']
+german mentions ['Radios', 'und vielen anderem Zeug', 'und Telefonen']
+
+
+matching chains
+english mentions ['guys']
+german mentions ['eine Internetsache']
+
+
+matching chains
+english mentions ['Luke Skywalker']
+german mentions ['Luke Skywalker']
+
+
+matching chains
+english mentions ['the most romantic date']
+german mentions ['das romantischste Date überhaupt']
+
+
+matching chains
+english mentions ['the gun']
+german mentions ['die Waffe']
+
+
+matching chains
+english mentions ['people']
+german mentions ['diese Sendung']
+
+
+matching chains
+english mentions ['this camera']
+german mentions ['diese Sendung']
+
+
+matching chains
+english mentions ['the mystery magic box']
+german mentions ['der geheimnisvollen Zauberkiste', 'die Kiste', 'diese Kiste', 'diesem Ding', 'dieser Kiste']
+
+
+matching chains
+english mentions ['Damon Lindelof']
+german mentions ['Damon Lindelof']
+
+
+matching chains
+english mentions ["those people who tell you what you ca n't do and what you should change"]
+german mentions ['diese Leute']
+
+
+matching chains
+english mentions ['some stuff']
+german mentions ['diese Sendung']
+
+
+matching chains
+english mentions ['this computer']
+german mentions ['das PowerBook', 'dieser Computer']
+
+
+matching chains
+english mentions ['the same kind of spirit and thought and emotion']
+german mentions ['diese Sendung']
+
+
+matching chains
+english mentions ['another question']
+german mentions ['diese Sendung']
+
+
+matching chains
+english mentions ["`` Star Wars . ''"]
+german mentions ['diese Sendung']
+
+
+matching chains
+english mentions ['the withholding of information']
+german mentions ['das Zurückhalten von Informationen']
+
+
+matching chains
+english mentions ['that date']
+german mentions ['diese Sendung']
+
+
+matching chains
+english mentions ['unbelievable movie']
+german mentions ['diese Sendung']
+
+
+matching chains
+english mentions ['the stuff']
+german mentions ['diese Sendung']
+
+
+matching chains
+english mentions ['one other thing']
+german mentions ['einen Clip']
+
+
+matching chains
+english mentions ['something online']
+german mentions ['diese Sendung']
+
+
+matching chains
+english mentions ['things']
+german mentions ['diese Sendung']
+
+
+matching chains
+english mentions ['these mystery boxes']
+german mentions ['diese Sendung']
+
+
+matching chains
+english mentions ['this kid']
+german mentions ['diese Sendung']
+
+
+matching chains
+english mentions ['the first act']
+german mentions ['diese Sendung']
+
+
+matching chains
+english mentions ['his hand']
+german mentions ['seine Hand']
+
+
+matching chains
+english mentions ['Die Hard']
+german mentions ['Die Hard']
+
+
+matching chains
+english mentions ['this thing']
+german mentions ['diese Sendung']
+
+
+matching chains
+english mentions ['this show']
+german mentions ['diese Sendung']
+
+
+matching chains
+english mentions ['stuff']
+german mentions ['diese Sendung']
+
+
+matching chains
+english mentions ['the stuff']
+german mentions ['diese Sendung']
+
+
+matching chains
+english mentions ['things']
+german mentions ['diese Sendung']
+
+
+matching chains
+english mentions ['another question', 'the big question']
+german mentions ['diese Sendung']
+
+
+matching chains
+english mentions ['a great movie']
+german mentions ['einer toller Film']
+
+
+matching chains
+english mentions ['the movie']
+german mentions ['diese Sendung']
+
+
+german chain not in english
+set_117 ['ein Paar Typen mit Spezialeffekt-Erfahrung']
+
+
+german chain not in english
+set_60 ['diese Sendung', 'die Sendung']
+
+
+german chain not in english
+set_123 ['Dinge']
+
+
+german chain not in english
+set_14 ['das Innenleben']
+
+
+german chain not in english
+set_121 ['Infinity-Software']
+
+
+german chain not in english
+set_128 ['die Technologie']
+
+
+german chain not in english
+set_73 ['das Drehbuch zu " Ordinary People "', 'dieses Drehbuch', 'dieses Drehbuches']
+
+
+german chain not in english
+set_16 ['ein Mensch']
+
+
+german chain not in english
+set_71 ['die Technologie']
+
+
+german chain not in english
+set_127 ['Leuten']
+
+
+german chain not in english
+set_124 ['Das Zeug']
+
+
+german chain not in english
+set_129 ['dem Film', 'diesem Film']
+
+
+german chain not in english
+set_23 ['dieser Patron']
+
+
+german chain not in english
+set_21 ['ein Mensch']
+
+
+german chain not in english
+set_24 ['ein Zehnjähriger']
+
+
+german chain not in english
+set_135 ['diese kleine Kapsel']
+
+
+german chain not in english
+set_136 ['der Schauspieler']
+
+
+german chain not in english
+set_140 ['drei Dinge']
+
+
+german chain not in english
+set_34 ['Dinge']
+
+
+german chain not in english
+set_33 ['Mein Großvater meine Großmutter']
+
+
+german chain not in english
+set_36 ['Er lenkte meine Faszination auch auf andere Bereiche , wie Zauberei']
+
+
+german chain not in english
+set_90 ['einem Alien , das ein Kind trifft']
+
+
+german chain not in english
+set_89 ['die Idee der geheimnisvollen Mysterykiste']
+
+
+german chain not in english
+set_40 ['alle möglichen Zaubertricks', 'des Tricks']
+
+
+german chain not in english
+set_41 ['der Dinge']
+
+
+german chain not in english
+set_93 ['einer Scheidung']
+
+
+german chain not in english
+set_92 ['diesem Kind', 'ein Kind']
+
+
+german chain not in english
+set_50 ['ein Thema']
+
+
+german chain not in english
+set_151 ['die Hand']
+
+
+german chain not in english
+set_98 ['eine der Szenen', 'die Art von Szenen']
+
+
+german chain not in english
+set_58 ['Anderes']
+
+
+german chain not in english
+set_57 ['Mysterien']
+
+
+german chain not in english
+set_113 ['die Inspiration']
+
+
+****************************************
+STATISTICS PER DOC
+Document ==>  /Users/xloish/PycharmProjects/testsuitewmt18/parcor-full/corpus//DiscoMT/EN011_2053_words.xml
+SOURCE chains:  70
+SOURCE mentions:  101
+SOURCE annotated words:  266
+TARGET chains:  58
+TARGET mentions:  97
+TARGET annotated words:  241
+****************************************
+
+
+matching chains
+english mentions ['one agent']
+german mentions ['ein Agent']
+
+
+matching chains
+english mentions ['people']
+german mentions ['Die Menschen']
+
+
+matching chains
+english mentions ['these officers']
+german mentions ['diese Offiziere']
+
+
+matching chains
+english mentions ['Ibrahim Böhme']
+german mentions ['Ibrahim Böhme']
+
+
+matching chains
+english mentions ['the Stasi', 'the Stasi', 'the Stasi', 'the Stasi', 'the Stasi', 'the Stasi', 'the Stasi', 'The Stasi', 'the Stasi', 'the Stasi', 'the Stasi', 'the Stasi', 'the Stasi', 'the Stasi', 'the Stasi', 'the Stasi', 'the Stasi', 'the Stasi', 'Stasi', 'the Stasi', 'the', 'the Stasi', 'the Stasi', 'the Stasi', 'the Stasi', 'the Stasi']
+german mentions ['der Stasi', 'die Stasi', 'die Stasi', 'die Stasi', 'die Stasi', 'Die Stasi', 'Die Stasi', 'die Stasi', 'der Stasi', 'die Stasi', 'der Stasi', 'die Stasi', 'der Stasi', 'die Stasi', 'Die Stasi', 'der Stasi', 'der Stasi', 'die Stasi', 'die Stasi', 'die Stasi', 'der Stasi', 'Die Stasi', 'die Stasi', 'die Stasi', 'der Stasi', 'der Stasi', 'die Stasi', 'die Stasi', 'die Stasi', 'die Stasi', 'die Stasi', 'die Stasi', 'die Stasi']
+
+
+matching chains
+english mentions ['A famous writer']
+german mentions ['Ein berühmter Schriftsteller']
+
+
+matching chains
+english mentions ['Vera Lengsfeld']
+german mentions ['Vera Lengsfeld , eine weitere führende Dissidentin']
+
+
+matching chains
+english mentions ['the Stasi minister']
+german mentions ['der Stasi-Minister']
+
+
+matching chains
+english mentions ['The agent']
+german mentions ['Der Agent']
+
+
+matching chains
+english mentions ['illegal actions']
+german mentions ['illegale Aktivitäten']
+
+
+matching chains
+english mentions ['The East Germans']
+german mentions ['Die Ostdeutschen']
+
+
+matching chains
+english mentions ['A personal question']
+german mentions ['Eine persönliche Frage', 'die letzte']
+
+
+matching chains
+english mentions ['two policemen']
+german mentions ['dem sogenannten " Wachregiment "']
+
+
+matching chains
+english mentions ['these two stories']
+german mentions ['dem sogenannten " Wachregiment "']
+
+
+matching chains
+english mentions ['The system']
+german mentions ['dem sogenannten " Wachregiment "']
+
+
+matching chains
+english mentions ['The word']
+german mentions ['Das Wort', 'Zersetzung']
+
+
+matching chains
+english mentions ['people']
+german mentions ['Menschen']
+
+
+matching chains
+english mentions ['human beings']
+german mentions ['dem sogenannten " Wachregiment "']
+
+
+matching chains
+english mentions ['people']
+german mentions ['dem sogenannten " Wachregiment "']
+
+
+matching chains
+english mentions ['informants']
+german mentions ['dem sogenannten " Wachregiment "']
+
+
+matching chains
+english mentions ['every dissident']
+german mentions ['dem sogenannten " Wachregiment "']
+
+
+matching chains
+english mentions ['informants']
+german mentions ['Informanten']
+
+
+matching chains
+english mentions ['so-called Guards Regiment', 'this concentration of power']
+german mentions ['dem sogenannten " Wachregiment "']
+
+
+matching chains
+english mentions ['the Stasi']
+german mentions ['der Stasi', 'die Stasi', 'die Stasi', 'die Stasi', 'die Stasi', 'Die Stasi', 'Die Stasi', 'die Stasi', 'der Stasi', 'die Stasi', 'der Stasi', 'die Stasi', 'der Stasi', 'die Stasi', 'Die Stasi', 'der Stasi', 'der Stasi', 'die Stasi', 'die Stasi', 'die Stasi', 'der Stasi', 'Die Stasi', 'die Stasi', 'die Stasi', 'der Stasi', 'der Stasi', 'die Stasi', 'die Stasi', 'die Stasi', 'die Stasi', 'die Stasi', 'die Stasi', 'die Stasi']
+
+
+matching chains
+english mentions ['the smell of people']
+german mentions ['den Geruch von Menschen']
+
+
+matching chains
+english mentions ['The Stasi']
+german mentions ['der Stasi', 'die Stasi', 'die Stasi', 'die Stasi', 'die Stasi', 'Die Stasi', 'Die Stasi', 'die Stasi', 'der Stasi', 'die Stasi', 'der Stasi', 'die Stasi', 'der Stasi', 'die Stasi', 'Die Stasi', 'der Stasi', 'der Stasi', 'die Stasi', 'die Stasi', 'die Stasi', 'der Stasi', 'Die Stasi', 'die Stasi', 'die Stasi', 'der Stasi', 'der Stasi', 'die Stasi', 'die Stasi', 'die Stasi', 'die Stasi', 'die Stasi', 'die Stasi', 'die Stasi']
+
+
+matching chains
+english mentions ['the leadership in East Germany']
+german mentions ['die Führung in Ostdeutschland']
+
+
+matching chains
+english mentions ['The Stasi']
+german mentions ['der Stasi', 'die Stasi', 'die Stasi', 'die Stasi', 'die Stasi', 'Die Stasi', 'Die Stasi', 'die Stasi', 'der Stasi', 'die Stasi', 'der Stasi', 'die Stasi', 'der Stasi', 'die Stasi', 'Die Stasi', 'der Stasi', 'der Stasi', 'die Stasi', 'die Stasi', 'die Stasi', 'der Stasi', 'Die Stasi', 'die Stasi', 'die Stasi', 'der Stasi', 'der Stasi', 'die Stasi', 'die Stasi', 'die Stasi', 'die Stasi', 'die Stasi', 'die Stasi', 'die Stasi']
+
+
+matching chains
+english mentions ['the belief that socialism is a perfect system']
+german mentions ['dem sogenannten " Wachregiment "']
+
+
+matching chains
+english mentions ['the Stasi']
+german mentions ['der Stasi', 'die Stasi', 'die Stasi', 'die Stasi', 'die Stasi', 'Die Stasi', 'Die Stasi', 'die Stasi', 'der Stasi', 'die Stasi', 'der Stasi', 'die Stasi', 'der Stasi', 'die Stasi', 'Die Stasi', 'der Stasi', 'der Stasi', 'die Stasi', 'die Stasi', 'die Stasi', 'der Stasi', 'Die Stasi', 'die Stasi', 'die Stasi', 'der Stasi', 'der Stasi', 'die Stasi', 'die Stasi', 'die Stasi', 'die Stasi', 'die Stasi', 'die Stasi', 'die Stasi']
+
+
+matching chains
+english mentions ['biodegradation']
+german mentions ['dem sogenannten " Wachregiment "']
+
+
+matching chains
+english mentions ['a method which was really diabolic']
+german mentions ['eine teuflische Methode']
+
+
+matching chains
+english mentions ['the interrogation officer']
+german mentions ['der Vernehmungsoffizier']
+
+
+matching chains
+english mentions ['This movie', "the movie `` The Lives of Others . ''"]
+german mentions ['den Film " Das Leben der Anderen "', 'Dieser Film']
+
+
+matching chains
+english mentions ['the public prosecutor of Germany']
+german mentions ['der deutsche Generalstaatsanwalt']
+
+
+matching chains
+english mentions ['these tasks']
+german mentions ['dem sogenannten " Wachregiment "']
+
+
+matching chains
+english mentions ['highly specialized departments']
+german mentions ['dem sogenannten " Wachregiment "']
+
+
+matching chains
+english mentions ['spies']
+german mentions ['dem sogenannten " Wachregiment "']
+
+
+matching chains
+english mentions ['all the imaginable instruments for getting information secretly , such as informers , or tapping phones']
+german mentions ['dem sogenannten " Wachregiment "']
+
+
+matching chains
+english mentions ['East Germany']
+german mentions ['dem sogenannten " Wachregiment "']
+
+
+matching chains
+english mentions ['a leading Stasi officer']
+german mentions ['einem führenden Stasi-Offizier']
+
+
+matching chains
+english mentions ['an informant']
+german mentions ['einen Informanten']
+
+
+matching chains
+english mentions ['these so-called unofficial employees', 'people who reported secretly to the Stasi']
+german mentions ['der Stasi', 'die Stasi', 'die Stasi', 'die Stasi', 'die Stasi', 'Die Stasi', 'Die Stasi', 'die Stasi', 'der Stasi', 'die Stasi', 'der Stasi', 'die Stasi', 'der Stasi', 'die Stasi', 'Die Stasi', 'der Stasi', 'der Stasi', 'die Stasi', 'die Stasi', 'die Stasi', 'der Stasi', 'Die Stasi', 'die Stasi', 'die Stasi', 'der Stasi', 'der Stasi', 'die Stasi', 'die Stasi', 'die Stasi', 'die Stasi', 'die Stasi', 'die Stasi', 'die Stasi']
+
+
+matching chains
+english mentions ['Edward Snowden']
+german mentions ['Edward Snowden']
+
+
+matching chains
+english mentions ['the structures']
+german mentions ['der Strukturen']
+
+
+matching chains
+english mentions ['The Stasi']
+german mentions ['der Stasi', 'die Stasi', 'die Stasi', 'die Stasi', 'die Stasi', 'Die Stasi', 'Die Stasi', 'die Stasi', 'der Stasi', 'die Stasi', 'der Stasi', 'die Stasi', 'der Stasi', 'die Stasi', 'Die Stasi', 'der Stasi', 'der Stasi', 'die Stasi', 'die Stasi', 'die Stasi', 'der Stasi', 'Die Stasi', 'die Stasi', 'die Stasi', 'der Stasi', 'der Stasi', 'die Stasi', 'die Stasi', 'die Stasi', 'die Stasi', 'die Stasi', 'die Stasi', 'die Stasi']
+
+
+matching chains
+english mentions ['the regime', 'the Communist regime']
+german mentions ['dem sogenannten " Wachregiment "']
+
+
+matching chains
+english mentions ['so many people']
+german mentions ['dem sogenannten " Wachregiment "']
+
+
+matching chains
+english mentions ['asylum']
+german mentions ['dem sogenannten " Wachregiment "']
+
+
+matching chains
+english mentions ['a sophisticated system of psychological pressure']
+german mentions ['ein ausgefeiltes System von psychischem Druck']
+
+
+matching chains
+english mentions ['People']
+german mentions ['Die Menschen']
+
+
+matching chains
+english mentions ['an investigation']
+german mentions ['dem sogenannten " Wachregiment "']
+
+
+matching chains
+english mentions ['the Communists']
+german mentions ['der Kommunisten']
+
+
+matching chains
+english mentions ['Cheka', 'The Cheka', 'The Cheka']
+german mentions ['Die Tscheka', 'die Außerordentliche Kommission zur Bekämpfung von Konterrevolution und Sabotage , kurz Tscheka', 'Die Tscheka']
+
+
+matching chains
+english mentions ['the German Communists']
+german mentions ['die deutschen Kommunisten']
+
+
+matching chains
+english mentions ['the Stasi']
+german mentions ['der Stasi', 'die Stasi', 'die Stasi', 'die Stasi', 'die Stasi', 'Die Stasi', 'Die Stasi', 'die Stasi', 'der Stasi', 'die Stasi', 'der Stasi', 'die Stasi', 'der Stasi', 'die Stasi', 'Die Stasi', 'der Stasi', 'der Stasi', 'die Stasi', 'die Stasi', 'die Stasi', 'der Stasi', 'Die Stasi', 'die Stasi', 'die Stasi', 'der Stasi', 'der Stasi', 'die Stasi', 'die Stasi', 'die Stasi', 'die Stasi', 'die Stasi', 'die Stasi', 'die Stasi']
+
+
+matching chains
+english mentions ['the Red Army']
+german mentions ['dem sogenannten " Wachregiment "']
+
+
+matching chains
+english mentions ['the rules']
+german mentions ['dem sogenannten " Wachregiment "']
+
+
+matching chains
+english mentions ['the Stasi']
+german mentions ['der Stasi', 'die Stasi', 'die Stasi', 'die Stasi', 'die Stasi', 'Die Stasi', 'Die Stasi', 'die Stasi', 'der Stasi', 'die Stasi', 'der Stasi', 'die Stasi', 'der Stasi', 'die Stasi', 'Die Stasi', 'der Stasi', 'der Stasi', 'die Stasi', 'die Stasi', 'die Stasi', 'der Stasi', 'Die Stasi', 'die Stasi', 'die Stasi', 'der Stasi', 'der Stasi', 'die Stasi', 'die Stasi', 'die Stasi', 'die Stasi', 'die Stasi', 'die Stasi', 'die Stasi']
+
+
+matching chains
+english mentions ['Erich Mielke']
+german mentions ['ein Mann namens Erich Mielke']
+
+
+matching chains
+english mentions ['the Stasi']
+german mentions ['der Stasi', 'die Stasi', 'die Stasi', 'die Stasi', 'die Stasi', 'Die Stasi', 'Die Stasi', 'die Stasi', 'der Stasi', 'die Stasi', 'der Stasi', 'die Stasi', 'der Stasi', 'die Stasi', 'Die Stasi', 'der Stasi', 'der Stasi', 'die Stasi', 'die Stasi', 'die Stasi', 'der Stasi', 'Die Stasi', 'die Stasi', 'die Stasi', 'der Stasi', 'der Stasi', 'die Stasi', 'die Stasi', 'die Stasi', 'die Stasi', 'die Stasi', 'die Stasi', 'die Stasi']
+
+
+matching chains
+english mentions ['the Stasi']
+german mentions ['der Stasi', 'die Stasi', 'die Stasi', 'die Stasi', 'die Stasi', 'Die Stasi', 'Die Stasi', 'die Stasi', 'der Stasi', 'die Stasi', 'der Stasi', 'die Stasi', 'der Stasi', 'die Stasi', 'Die Stasi', 'der Stasi', 'der Stasi', 'die Stasi', 'die Stasi', 'die Stasi', 'der Stasi', 'Die Stasi', 'die Stasi', 'die Stasi', 'der Stasi', 'der Stasi', 'die Stasi', 'die Stasi', 'die Stasi', 'die Stasi', 'die Stasi', 'die Stasi', 'die Stasi']
+
+
+matching chains
+english mentions ['the history of the Stasi']
+german mentions ['der Stasi', 'die Stasi', 'die Stasi', 'die Stasi', 'die Stasi', 'Die Stasi', 'Die Stasi', 'die Stasi', 'der Stasi', 'die Stasi', 'der Stasi', 'die Stasi', 'der Stasi', 'die Stasi', 'Die Stasi', 'der Stasi', 'der Stasi', 'die Stasi', 'die Stasi', 'die Stasi', 'der Stasi', 'Die Stasi', 'die Stasi', 'die Stasi', 'der Stasi', 'der Stasi', 'die Stasi', 'die Stasi', 'die Stasi', 'die Stasi', 'die Stasi', 'die Stasi', 'die Stasi']
+
+
+matching chains
+english mentions ['the Stasi']
+german mentions ['der Stasi', 'die Stasi', 'die Stasi', 'die Stasi', 'die Stasi', 'Die Stasi', 'Die Stasi', 'die Stasi', 'der Stasi', 'die Stasi', 'der Stasi', 'die Stasi', 'der Stasi', 'die Stasi', 'Die Stasi', 'der Stasi', 'der Stasi', 'die Stasi', 'die Stasi', 'die Stasi', 'der Stasi', 'Die Stasi', 'die Stasi', 'die Stasi', 'der Stasi', 'der Stasi', 'die Stasi', 'die Stasi', 'die Stasi', 'die Stasi', 'die Stasi', 'die Stasi', 'die Stasi']
+
+
+matching chains
+english mentions ['people on the street']
+german mentions ['Menschen']
+
+
+matching chains
+english mentions ['the regime']
+german mentions ['dem sogenannten " Wachregiment "']
+
+
+matching chains
+english mentions ['the Stasi']
+german mentions ['der Stasi', 'die Stasi', 'die Stasi', 'die Stasi', 'die Stasi', 'Die Stasi', 'Die Stasi', 'die Stasi', 'der Stasi', 'die Stasi', 'der Stasi', 'die Stasi', 'der Stasi', 'die Stasi', 'Die Stasi', 'der Stasi', 'der Stasi', 'die Stasi', 'die Stasi', 'die Stasi', 'der Stasi', 'Die Stasi', 'die Stasi', 'die Stasi', 'der Stasi', 'der Stasi', 'die Stasi', 'die Stasi', 'die Stasi', 'die Stasi', 'die Stasi', 'die Stasi', 'die Stasi']
+
+
+matching chains
+english mentions ['the Stasi']
+german mentions ['der Stasi', 'die Stasi', 'die Stasi', 'die Stasi', 'die Stasi', 'Die Stasi', 'Die Stasi', 'die Stasi', 'der Stasi', 'die Stasi', 'der Stasi', 'die Stasi', 'der Stasi', 'die Stasi', 'Die Stasi', 'der Stasi', 'der Stasi', 'die Stasi', 'die Stasi', 'die Stasi', 'der Stasi', 'Die Stasi', 'die Stasi', 'die Stasi', 'der Stasi', 'der Stasi', 'die Stasi', 'die Stasi', 'die Stasi', 'die Stasi', 'die Stasi', 'die Stasi', 'die Stasi']
+
+
+matching chains
+english mentions ['its real problems']
+german mentions ['die wahren Probleme']
+
+
+matching chains
+english mentions ['the central jail for political prisoners']
+german mentions ['das Zentralgefängnis für politische Gefangene']
+
+
+german chain not in english
+set_104 ['die Dokumente']
+
+
+german chain not in english
+set_37 ['Zehntausende von Menschen']
+
+
+german chain not in english
+set_35 ['des westdeutschen Kanzlers']
+
+
+german chain not in english
+set_112 ['des zweiten Punkts']
+
+
+german chain not in english
+set_116 ['der Geschichte']
+
+
+german chain not in english
+set_41 ['derjenigen', 'Die Abteilung']
+
+
+german chain not in english
+set_40 ['verschlossenen Gefäßen']
+
+
+german chain not in english
+set_46 ['Menschen']
+
+
+german chain not in english
+set_58 ['Die Offiziere']
+
+
+german chain not in english
+set_55 ['jeden Schrittes']
+
+
+german chain not in english
+set_56 ['Menschen']
+
+
+german chain not in english
+set_129 ['Asyl']
+
+
+german chain not in english
+set_1 ['diese Dokumente', 'die Dokumente']
+
+
+german chain not in english
+set_0 ['der Ostdeutschen Geheimpolizei , bekannt als die Stasi']
+
+
+german chain not in english
+set_3 ['einem Zeitalter']
+
+
+german chain not in english
+set_130 ['die russische Geheimpolizei']
+
+
+german chain not in english
+set_80 ['Biologischer Abbau']
+
+
+german chain not in english
+set_83 ['Menschen']
+
+
+german chain not in english
+set_13 ['der Halle']
+
+
+german chain not in english
+set_86 ['Dissidenten']
+
+
+german chain not in english
+set_16 ['die Deutschen']
+
+
+german chain not in english
+set_90 ['17 Untersuchungsgefängnisse']
+
+
+german chain not in english
+set_93 ['einem ehemaligen politischen Häftling']
+
+

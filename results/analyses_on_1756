@@ -1,0 +1,514 @@
+Matching chains, different number of mentions ======>
+English Chain: set_199 Mentions: ['they', 'them', 'they', 'the family of Dylan Klebold', 'their', 'them', 'they']
+German Chain: set_171 Mentions ['sie', 'die Familie', 'ihnen', 'ihre', 'sie', 'sie']
+Denotinen
+shortertarget: the first weekend I spent with [them] - am ersten gemeinsamen wochenende (genre-related)
+
+English Chain: set_3 Mentions: ['it', 'it', 'it', 'homosexuality', 'It']
+German Chain: set_2 Mentions ['Sie', 'sie', 'die Homosexualität', 'sie']
+Denotinen
+shortertarget: non-cohesive ellipsis in German: Als solches verdient [sie] kein Mitleid , [] keine Sonderbehandlung als Märtyrium einer M
+
+English Chain: set_119 Mentions: ['their story', 'it']
+German Chain: set_171 Mentions ['sie', 'die Familie', 'ihnen', 'ihre', 'sie', 'sie']
+Ennotinde
+scripterror: German set_172
+
+English Chain: set_38 Mentions: ['identities that are alien to your parents', 'them']
+German Chain: set_51 Mentions ['die', 'Identitäten', 'die', 'Ihren']
+Ennotinde
+annoerror: ['identities', 'that', 'that', 'them']-['Identitäten', 'die', 'die']
+
+English Chain: set_40 Mentions: ["'s family acceptance social acceptance", 'they']
+German Chain: set_55 Mentions ['drei Stufen der Akzeptanz', 'die drei', 'die']
+Ennotinde
+annointerp: split antecedent vs other antecedent
+
+English Chain: set_218 Mentions: ['a daughter', 'who', 'this child']
+German Chain: set_25 Mentions ['diesem Kind', 'sich', 'sich', 'sie', 'eine kleinwüchsige Tochter']
+Ennotinde
+explicit: to construct some kind of dwarf identity vs eine Art Kleinwüchsigenidentität für [sie] zu schaffen
+annoerror: sich, sich
+
+English Chain: set_106 Mentions: ['them', 'the social progress the medical progress', 'they']
+German Chain: set_54 Mentions ['solche Identitäten', 'ihnen']
+Ennotinde
+scripterror: German set_270
+
+English Chain: set_135 Mentions: ['the children I had', 'them', 'they', 'they']
+German Chain: set_189 Mentions ['sie', 'sie', 'die', 'die Kinder', 'sie']
+Ennotinde
+annointerp: relative clause inside vs outside
+
+English Chain: set_156 Mentions: ['the things we were about to start testing for', 'those', 'they', 'they']
+German Chain: set_245 Mentions ['sie', 'sie', 'die', 'diese', 'dieser Dinge', 'ein Tumor einen Wasserkopf']
+Ennotinde
+annointerp: different antecedent - interesting, as the German part more explicit and this had the influence on the decision
+
+English Chain: set_225 Mentions: ['she', 'she', 'She', 'she', 'a friend of a friend of mine', 'her', 'herself']
+German Chain: set_36 Mentions ['sie', 'ihrer', 'die Freundin einer Freundin', 'sie', 'sie', 'Sie', 'diese Freundin', 'die', 'ihrer']
+Ennotinde
+longertarget: reflexives
+annoerror: 2 chains in En, some parts of German chain are in wrong chain
+
+English Chain: set_229 Mentions: ['Those straight parents', 'they', 'straight parents']
+German Chain: set_31 Mentions ['Diese Eltern', 'heterosexuelle Eltern', 'ihrer', 'ihre']
+Ennotinde
+longertarget: full NP instead of pronoun: them - ihre Kinder --> different chains
+
+English Chain: set_166 Mentions: ['it', 'the terrifying joy of unbearable responsibility']
+German Chain: set_277 Mentions ['und Schrecken unerträglicher Verantwortung', 'Freuden', 'sie']
+Ennotinde
+scripterror: this is one mention in German: Freuden+und Schrecken, but interesting example of differences
+
+English Chain: set_256 Mentions: ['A compound', 'that']
+German Chain: set_145 Mentions ['diesen Wirkstoff', 'BMN-111', 'das', 'Ein Präparat']
+Ennotinde
+annoerror: two chains in En and corresponding one chain in German
+
+English Chain: set_212 Mentions: ['he', 'him', 'him', 'this day-old child', 'him', 'his', 'his', 'his', 'he', 'he', 'my child', 'his']
+German Chain: set_255 Mentions ['unser Sohn', 'seine', 'Er', 'er', 'er', 'er', 'er', 'seiner', 'seine', 'ihn', 'er', 'seine', 'er', 'sein', 'ihn', 'er', 'ihm']
+Ennotinde
+annoerror: two chains in EN, one chain in De
+
+English Chain: set_257 Mentions: ['BMN-111', 'that substance']
+German Chain: set_145 Mentions ['diesen Wirkstoff', 'BMN-111', 'das', 'Ein Präparat']
+Ennotinde
+annoerror: two chains in En and corresponding one chain in German
+
+English Chain: set_258 Mentions: ['mice', 'who', 'who']
+German Chain: set_144 Mentions ['die', 'Mäuse']
+Denotinen
+shortertarget: non-cohesive ellipsis in German:  Mäuse, die diesen Wirkstoff erhalten haben , und das Achondroplasie-Gen aufweisen
+
+English Chain: set_205 Mentions: ['his', 'his', 'a severely disabled child who died through caregiver neglect']
+German Chain: set_209 Mentions ['eines behinderten Kindes', 'des Kindes', 'seine', 'das', 'ein schwerst behindertes Kind', 'das', 'seine', 'das']
+Ennotinde
+annointerp: more members in DE
+
+English Chain: set_264 Mentions: ['there is']
+German Chain: set_54 Mentions ['solche Identitäten', 'ihnen']
+Ennotinde
+scripterror: English set_39
+
+English Chain: set_265 Mentions: ['problems', 'that']
+German Chain: set_192 Mentions ['sie', 'die', 'Probleme']
+Ennotinde
+shortertarget: construction in En
+
+English Chain: set_207 Mentions: ['his', 'he', 'He', 'our son', 'he', 'he', 'he']
+German Chain: set_255 Mentions ['unser Sohn', 'seine', 'Er', 'er', 'er', 'er', 'er', 'seiner', 'seine', 'ihn', 'er', 'seine', 'er', 'sein', 'ihn', 'er', 'ihm']
+Ennotinde
+annoerror: two chains in EN, one chain in De
+
+English Chain: empty Mentions: ['they', 'it', 'it', 'It', 'it', 'it', 'it', 'it', 'It', 'it', 'it', 'it', 'it', 'it', 'it', 'it', 'it']
+German Chain: empty Mentions ['es', 'es', 'es', 'Es', 'Dieses', 'es', 'es', 'es', 'es', 'Es', 'es', 'Es']
+Denotinen
+noerror: pleonastic
+
+English Chain: set_30 Mentions: ['this friend of mine', 'her']
+German Chain: set_36 Mentions ['sie', 'ihrer', 'die Freundin einer Freundin', 'sie', 'sie', 'Sie', 'diese Freundin', 'die', 'ihrer']
+Ennotinde
+annoerror: 2 chains in En, some parts of German chain are in wrong chain
+
+English Chain: set_114 Mentions: ['they', 'they', 'they', 'They', 'people']
+German Chain: set_165 Mentions ['Menschen', 'sie', 'sie', 'Sie']
+Denotinen
+annoerror: one 'sie' is a member of another chain
+
+English Chain: set_194 Mentions: ['a Down syndrome child', 'it']
+German Chain: empty Mentions ['es', 'es', 'es', 'Es', 'Dieses', 'es', 'es', 'es', 'es', 'Es', 'es', 'Es']
+Ennotinde
+scripterror: no chain in De, es-pleonastic, wrong alignment
+
+English Chain: set_58 Mentions: ['him', 'he', 'he', 'he', 'he', 'his', 'his', 'his', 'his', 'his', 'he', 'his', 'Clinton Brown', 'his', 'Clinton', 'he', 'his', 'Clinton', 'his', 'his', 'his', 'he', 'him', 'he', 'he', 'he', 'He', 'he', 'he', 'he', 'he', 'him', 'he', 'him', 'him', 'him', 'he', 'he', 'he', 'him', 'he', 'him']
+German Chain: set_111 Mentions ['er', 'seiner', 'er', 'ihn', 'ihren Sohn', 'ihm', 'er', 'er', 'seinen', 'er', 'er', 'sich', 'er', 'ihn', 'er', 'seiner', 'seiner', 'er', 'Seine', 'seinem', 'er', 'ihn', 'ihn', 'ihm', 'sein', 'er', 'er', 'seinem', 'seinen', 'er', 'ihm', 'ihn', 'seine', 'er', 'ihren Sohn']
+Ennotinde
+annoerror: one chain in En, two chains in De
+
+English Chain: set_175 Mentions: ['they', 'them', 'them', 'they', 'his parents']
+German Chain: set_66 Mentions ['seinen Eltern', 'ihnen', 'sie', 'ihren']
+Denotinen
+annoerror: member missing in De
+
+English Chain: set_178 Mentions: ['it', 'it', 'Down syndrome', 'it', 'it', 'it', 'it', 'it']
+German Chain: set_135 Mentions ['David', 'er', 'ihm', 'ihm', 'ihn', 'David']
+Ennotinde
+scripterror: German set_268
+
+English Chain: set_233 Mentions: ['which', 'Those', 'vertical identities']
+German Chain: set_46 Mentions ['die anderen Identitäten', 'vertikale Identitäten']
+Ennotinde
+annorerror: not annotated mentions in German
+annorerror: not annotated chain in English
+
+English Chain: set_227 Mentions: ['hearing parents', 'Those hearing parents']
+German Chain: set_26 Mentions ['hörende Eltern', 'ihre', 'diese']
+Denotinen
+longertarget: full NP instead of pronoun: them - ihre Kinder --> different chains
+
+English Chain: set_244 Mentions: ['It', 'it']
+German Chain: set_117 Mentions ['Es', 'ein " Weggeben', 'es']
+Ennotinde
+annointerp: putting away vs. Weggeben (put away)
+
+English Chain: set_236 Mentions: ['identities', 'that', 'that']
+German Chain: set_51 Mentions ['die', 'Identitäten', 'die', 'Ihren']
+Ennotinde
+annoerror: ['identities', 'that', 'that', 'them']-['Identitäten', 'die', 'die']
+
+English Chain: set_102 Mentions: ['Most deaf infants', 'them']
+German Chain: set_141 Mentions ['deren', 'die', 'Cochlear-Implantate']
+Ennotinde
+scripterror: German set_140
+
+English Chain: set_184 Mentions: ['she', 'she', 'she', 'his mother', 'she', 'her', 'she', 'his mother', 'she', 'she', 'She', 'She', 'she', 'her']
+German Chain: set_99 Mentions ['sie', 'ihren', 'sie', 'Sie', 'Sie', 'sie', 'sie', 'Seine Mutter', 'sie', 'Sie', 'sie', 'Sie', 'seine Mutter']
+Denotinen
+shortertarget: non-cohesive ellipsis in German, different formulation
+longertarget: construction (told me the story of coming home vs erzählte mir Geschichte, als sie nach hause kam)
+
+English Chain: set_237 Mentions: ['those identities', 'two kinds of identity']
+German Chain: set_48 Mentions ['Das', 'horizontale Identitäten', 'diese Identitäten', 'diese horizontalen Identitäten']
+Ennotinde
+annoerror
+
+English Chain: set_39 Mentions: ['those horizontal identities', 'These', 'horizontal identities', 'them', 'those identities']
+German Chain: set_48 Mentions ['Das', 'horizontale Identitäten', 'diese Identitäten', 'diese horizontalen Identitäten']
+Denotinen
+annoerror: one chain in En, two chains in De
+
+English Chain: set_279 Mentions: ['it']
+German Chain: set_54 Mentions ['solche Identitäten', 'ihnen']
+Ennotinde
+scripterror
+
+English Chain: set_239 Mentions: ['who', 'people']
+German Chain: set_59 Mentions ['sie', 'die Betroffenen', 'sie', 'ihre', 'ihre', 'sie']
+Ennotinde
+scripterror: English set_183
+
+English Chain: set_243 Mentions: ["another magazine of the '60s", 'This one']
+German Chain: empty Mentions ['es', 'es', 'es', 'Es', 'Dieses', 'es', 'es', 'es', 'es', 'Es', 'es', 'Es']
+Ennotinde
+scripterror
+annoerror: ['einem weiteren Magazin aus den 60ern', 'Dieses']
+
+English Chain: set_278 Mentions: ['Those', 'them', 'them', 'language', 'often religion', 'things like ethnicity', 'frequently nationality']
+German Chain: set_43 Mentions ['Dinge', 'einige davon', 'die', 'sie', 'Dinge']
+Denotinen
+longertarget: relative
+
+English Chain: set_250 Mentions: ['change', 'that', 'one', 'that']
+German Chain: set_122 Mentions ['Der Wandel', 'der', 'den', 'dem', 'einer']
+Ennotinde
+annoerror: which should be annotated
+
+English Chain: set_195 Mentions: ['Tom and Karen Robards', 'their', 'they', 'They', 'they', 'they']
+German Chain: set_280 Mentions ['Tom und', 'Karen Robards', 'ihr', 'zwei junge und erfolgreiche New Yorker', 'Sie', 'sie', 'sie']
+Ennotinde
+annoerror: no split antecedent in Engish, no apposition
+
+English Chain: set_196 Mentions: ['his', 'their first child', 'him']
+German Chain: set_126 Mentions ['ihr erstes Kind', 'ihn']
+Denotinen
+annoerror: missing member in German ([sein] Vater)
+
+English Chain: set_253 Mentions: ['that']
+German Chain: set_132 Mentions ['den Robards', 'sie']
+Ennotinde
+scripterror: wrong chain match
+annoerror: annotation missing 'that'='davon'
+
+English Chain: set_276 Mentions: ['strange love', 'its']
+German Chain: set_258 Mentions ['ihre', 'seltsame Liebe', 'ihr']
+Ennotinde
+longertarget: translation interpretation
+
+English Chain: set_289 Mentions: ['Sue Klebold', 'she', 'she', 'Sue', 'her', 'she', 'she']
+German Chain: set_281 Mentions ['Sue Klebold', 'ihr', 'sie', 'sie', 'Sue', 'sie']
+Denotinen
+shortertarget: non-cohesive ellipsis in German (compressing)
+
+English Chain: set_173 Mentions: ['The love you have for your children', 'other feeling', 'it']
+German Chain: set_54 Mentions ['solche Identitäten', 'ihnen']
+Denotinen
+scripterror: German set_261
+
+English Chain: set_283 Mentions: ['social progress', 'and medical progress', 'them']
+German Chain: set_270 Mentions ['sie', 'beide', 'als auch medizinischen Fortschritt', 'sozialen']
+Ennotinde
+annoerror: two chain in En
+
+English Chain: set_18 Mentions: ['it', 'a culture', 'It', 'it', 'It', 'it', 'it']
+German Chain: set_54 Mentions ['solche Identitäten', 'ihnen']
+Ennotinde
+scripterror: German set_16
+
+English Chain: set_219 Mentions: ['That']
+German Chain: set_54 Mentions ['solche Identitäten', 'ihnen']
+Ennotinde
+scripterror: English set_39
+
+English Chain: set_220 Mentions: ['a pink balloon', 'the pink one']
+German Chain: set_279 Mentions ['den rosafarbenen', 'einen rosafarbenen', 'einen Luftballon']
+Ennotinde
+annoerror: one member to much
+
+English Chain: set_224 Mentions: ['That']
+German Chain: set_54 Mentions ['solche Identitäten', 'ihnen']
+Ennotinde
+scripterror: English set_39
+
+English Chain: set_223 Mentions: ['that', 'it', 'it', 'it', 'it']
+German Chain: set_54 Mentions ['solche Identitäten', 'ihnen']
+Ennotinde
+scripterror: English set_39
+
+English Chain: set_222 Mentions: ['that']
+German Chain: set_11 Mentions ['sie', 'meine Mutter', 'sie', 'ihre', 'sie']
+Ennotinde
+scripterror: English set_9
+
+English Chain: set_147 Mentions: ['his legs', 'them']
+German Chain: set_255 Mentions ['unser Sohn', 'seine', 'Er', 'er', 'er', 'er', 'er', 'seiner', 'seine', 'ihn', 'er', 'seine', 'er', 'sein', 'ihn', 'er', 'ihm']
+Ennotinde
+scripterror: German set_226
+
+English Chain: set_9 Mentions: ['she', 'my mother', 'she', 'she']
+German Chain: set_11 Mentions ['sie', 'meine Mutter', 'sie', 'ihre', 'sie']
+Ennotinde
+longertarget: parenting - ihre Mutterrolle
+
+English Chain: set_197 Mentions: ['they', 'parents']
+German Chain: set_160 Mentions ['Sie', 'Sie', 'Eltern', 'Ihr']
+Ennotinde
+annointerp
+
+English Chain: set_286 Mentions: ['it']
+German Chain: set_54 Mentions ['solche Identitäten', 'ihnen']
+Ennotinde
+scripterror: English set_39
+
+English Chain: set_282 Mentions: ['it']
+German Chain: set_54 Mentions ['solche Identitäten', 'ihnen']
+Ennotinde
+scripterror: English set_39
+
+English Chain: set_262 Mentions: ['it', 'It']
+German Chain: empty Mentions ['es', 'es', 'es', 'Es', 'Dieses', 'es', 'es', 'es', 'es', 'Es', 'es', 'Es']
+Ennotinde
+scripterror: English chain that your fondest... and no correspondences in German
+
+
+German Chain: set_62 Mentions ['der kleinwüchsigen Männer', 'die']
+longertarget: relative
+
+German Chain: set_65 Mentions ['Clinton Brown', 'seinen', 'ihm', 'er', 'er']
+scripterror
+
+German Chain: set_4 Mentions ['einen Luftballon', 'einen rosafarbenen', 'einen roten']
+relation: no coref - ellipsis
+
+German Chain: set_3 Mentions ['Das']
+scripterror
+
+German Chain: set_275 Mentions ['solche', 'subtraktiven Modelle der Liebe', 'die']
+annoerror: not-annotated chain EN
+
+German Chain: set_77 Mentions ['seiner Kindheit', 'diese ganze Zeit']
+annoerror: not-annotated chain in EN
+
+German Chain: set_143 Mentions ['dabei']
+longertarget: correlative construction instead of gerund
+
+German Chain: set_204 Mentions ['die', 'ihnen', 'unsere Unterschiede']
+relation: generics - coreference
+
+German Chain: set_274 Mentions ['er', 'jeden']
+annoerror: not-annotated chain in EN: And I figured it was possible then for anyone to love any child if they had the effective will to do so . - Und da wurde mir klar , dass es für [jeden] möglich ist , jedes Kind zu lieben, solange [er] nur den festen Willen dazu hat .
+
+German Chain: set_140 Mentions ['ihnen', 'gehörlosen Kinder', 'die']
+scripterror: English set_102
+longertarget: relative
+
+German Chain: set_148 Mentions ['die', 'die', 'denen', 'Blut-Tests']
+scripterror: English set_259
+longertarget: relative
+
+German Chain: set_210 Mentions ['dazu']
+annoerror: not-annotated chain in EN: And I figured it was possible then for anyone to love any child if they had the effective will to do so . - Und da wurde mir klar , dass es für jeden möglich ist , [jedes Kind zu lieben], solange er nur den festen Willen [dazu] hat .
+
+German Chain: set_16 Mentions ['dieser Kultur', 'eine Kultur']
+relation: I become convinced that deafness was a culture and that the people in the deaf world ... - wurde mir bewusst, dass Gehörlosigkeit [eine Kultur] war , und dass die Menschen aus [dieser Kultur]
+
+German Chain: set_151 Mentions ['die', 'den dreien']
+longertarget: relative
+
+German Chain: set_263 Mentions ['es', 'es', 'es', 'das']
+scripterror: English set_223
+
+German Chain: set_80 Mentions ['diesen Behandlungen', '30 größeren chirurgischen Eingriffen', 'derer']
+annoerror: not annotated chain in English: 30 major surgical procedures - those procedures - which
+
+German Chain: set_211 Mentions ['die', 'zwei Kindern']
+longertarget: relative
+
+German Chain: set_282 Mentions ['Mein Mann', 'Mein Mann', 'er']
+longertarget: relative
+
+German Chain: set_84 Mentions ['das', 'ein Bildungsniveau']
+annoerror: not annotated chain in English
+
+German Chain: set_152 Mentions ['denen', 'jene Momente']
+longertarget: temporal clause vs. locative: like those moments in grand opera when the hero realizes he loves the heroine - an [jene Momente] in der Oper erinnert, In [denen] der Held erkennt , dass er die Heldin liebt
+
+German Chain: set_156 Mentions ['das', 'das Kind']
+longertarget: relative
+
+German Chain: set_87 Mentions ['der', 'der Erste in seiner Familie']
+longertarget: relative: the first one in his family to go to college - [der Erste in seiner Familie] , [der] an einer Universität stusierte
+
+German Chain: set_101 Mentions ['ein speziell für ihn ausgestattetes Auto', 'das', 'sein Auto', 'das']
+annoerror: not annotated chain in English
+
+German Chain: set_154 Mentions ['die Frage', 'die']
+longertarget: relative: And a lot of the time the question of parenthood is - Oft ist [die Frage] , [die] wir uns als Eltern stellen müssen
+
+German Chain: set_18 Mentions ['ihr', 'meine Kultur']
+annointerp: different chains
+
+German Chain: set_17 Mentions ['die', 'die Menschen aus dieser Kultur']
+scripterror: English set_217
+
+German Chain: set_157 Mentions ['Das']
+scripterror: English set_261
+
+German Chain: set_223 Mentions ['das']
+annoerror: not-annotated chain in English
+
+German Chain: set_161 Mentions ['sie', 'eine sehr extreme Sicht']
+annointerp:  8It] 's a very extreme point of view , but [it] points - Es ist [eine sehr extreme Sicht] , aber [sie] verweist
+
+German Chain: set_226 Mentions ['seine Beine', 'sie']
+scripterror: English set_147
+
+German Chain: set_162 Mentions ['das', 'dem Leben']
+longertarget: relative
+
+German Chain: set_100 Mentions ['Clinton', 'sein']
+annoerror: one chain in English, several chains in German
+
+German Chain: set_113 Mentions ['die ersten', 'die']
+longertarget: relative
+
+German Chain: set_167 Mentions ['die', 'der Familien']
+longertarget: relative
+
+German Chain: set_166 Mentions ['die Person', 'sie', 'der']
+longertarget: relative
+
+German Chain: set_40 Mentions ['ihre', 'Eltern']
+longertarget: possessive: are passed down generationally from parent to child . - die generationsbedingt von [Eltern] an [ihre] Kinder weitergegeben werden .
+
+German Chain: set_173 Mentions ['einem', 'ersten gemeinsamen Wochenende', 'vielen']
+annoerror: not annotated in English
+
+German Chain: set_172 Mentions ['ihre Geschichte', 'sie']
+scripterror: English set_119
+
+German Chain: set_112 Mentions ['das']
+annoerror: not annotated in EN
+
+German Chain: set_119 Mentions ['Menschen', 'sie', 'Menschen mit einer Behinderung', 'die']
+annointerp: one chain in German, two chains in English
+
+German Chain: set_44 Mentions ['daran']
+longertarget: correlat
+
+German Chain: set_52 Mentions ['dem', 'der Prozess']
+annoerror: not annotated in En
+
+German Chain: set_123 Mentions ['die', 'der Familien']
+longertarget: relative
+
+German Chain: set_276 Mentions ['das']
+annointerp
+
+German Chain: set_234 Mentions ['ihrer', 'Menschen']
+scripterror: English set_208
+
+German Chain: set_230 Mentions ['dafür']
+annoerror: not annotated in en
+
+German Chain: set_179 Mentions ['Abendessen', 'die']
+annoerror: not annotated
+
+German Chain: set_249 Mentions ['den Ärzten', 'sie']
+relation: no explicit antecedent in EN, but there is in DE
+
+German Chain: set_187 Mentions ['den', 'den Schmerz', 'den']
+longertarget: relative
+
+German Chain: set_264 Mentions ['das', 'etwas']
+annoerror: not annotated in en
+
+German Chain: set_262 Mentions ['der Weg', 'dem']
+longertarget: relative
+
+German Chain: set_129 Mentions ['die', 'zwei Klassenzimmer']
+annoerror: not annotated in en
+
+German Chain: set_188 Mentions ['den', 'den Schmerz']
+longertarget: relative
+
+German Chain: set_261 Mentions ['das']
+scripterror: English set_222
+
+German Chain: set_198 Mentions ['die', 'Familien']
+longertarget: relative
+
+German Chain: set_268 Mentions ['es', 'es', 'es']
+annointerp: Down syndrom vs. an Down-Syndrom leiden
+
+German Chain: set_134 Mentions ['das']
+scripterror: English set_282
+
+German Chain: set_265 Mentions ['der Zeit', 'die']
+longertarget: relative
+
+German Chain: set_196 Mentions ['sie', 'meine Kinder']
+shortertarget: possessive: the children I have  - meine Kinder: translator decision to make shorter
+
+German Chain: set_271 Mentions ['ein Fremder', 'den']
+longertarget: relative
+
+German Chain: set_70 Mentions ['das']
+scripterror: English set_279
+
+German Chain: set_273 Mentions ['es']
+scripterror: English set_286
+
+German Chain: set_139 Mentions ['das', 'ein Ausmaß']
+longertarget: relative
+
+German Chain: set_203 Mentions ['es']
+scripterror: English set_285
+
+German Chain: set_138 Mentions ['einem Punkt', 'dem']
+longertarget: temporal clause vs. locative: at the moment when - an einem Punkt, in dem
+
+German Chain: set_201 Mentions ['das', 'ein Kind']
+annoerror: not annotated in English
+
+German Chain: set_272 Mentions ['es']
+annointerp
+
+German Chain: set_136 Mentions ['der', 'einer Zeit']
+longertarget: temporal clause vs. locative: at a point when - in einer zeit, in der
+
+German Chain: set_200 Mentions ['jede Familie', 'jede']
+annointerp
+
+German Chain: set_137 Mentions ['Down-Syndrom', 'diese']
+annoerror

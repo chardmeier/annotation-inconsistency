@@ -1,0 +1,362 @@
+COMMENTS ON
+
+matching chains
+english mentions ['a daughter', 'this child']
+german mentions ['diesem Kind', 'eine kleinwüchsige Tochter']
+
+In the data, the English chain has: 'a daughter', 'who', 'this child'.
+The German chain has: 'eine kleinwüchsige Tochter','diesem Kind', 'sie', 'sich', 'sie'.
+So, there is a mismatch in the number of mentions that is not seen in the output. Does the algorithm take the pronouns at all? I didn't see any pronouns in the output for the first text.
+And would it be also possible to output its chain ID as well?
+
+As for the cases 'german chain not in english' and vice versa - i need to have a look at the examples, if we can use them too.
+
+By the way, the above mentioned example with daughter is a great example of differences in the chain:
+
+'a daughter' + 'who' (is a dwarf) corresponds to 'eine kleinwüchsige Tochter'
+In the source there is a relative sentence, very typical for spoken texts when you describe something. Then, in the translation (especially this kind of translation where the translators have to save space, as these are more subtitles), there is a kind of reduction, packaging that translator can do, as she/he has time: they change a longer segment just into a nominal phrase: 'a daughter who is a dwarf' is translated into 'eine kleinwüchsige Tochter'. One could have annotated them in the same way like 'a daughter who is a dwarf' into one mention. But if you have relatives in your annotation scheme (they do exist in many languages, so why not include them into the 'universal scheme'), t then such cases are annotated in a different way...This is something that we can take as an example for the paper, for motivation :)
+
+
+german chain not in english
+set_55 ['drei Stufen der Akzeptanz', 'die drei']
+
+the German chain is: ['drei Stufen der Akzeptanz', 'die', 'die drei']
+the corresponding English chain is ['self-acceptance'+'family acceptance'+'social acceptance', 'they']
+
+
+Different mentions:
+<each of those life stages> - <they> - <the other stages>
+And <each of those life stages> not only looks totally different from each other, <they> have totally different physiology.
+So say you came up with some great drug that worked against one stage of the parasite's life cycle.
+It might do nothing at all to any of <the other stages>.
+
+<ein Lebensstadium des Parasiten> - <den anderen Stadien>
+Und jedes dieser Lebensstadien sieht nicht nur komplett anders aus, sondern hat auch eine komplett unterschiedliche Physiologie .
+Sagen wir mal, Sie denken sich ein tolles Medikament aus, welches gegen <ein Lebensstadium des Parasiten> funktioniert .
+Möglicherweise würde es aber in keinster Weise in <den anderen Stadien> wirken .
+
+#####################
+
+Hi,
+I had a look at the output and it looks really good.
+Now I will think of how to present 'the whole story'.
+My suggestion:
+We propose a method of chain mapping that delivers also non-overlaps. These non-overlaps are important for anyone working with multilingual data, especially those working with translations. When you annotate in a multilingual dataset, you aim at finding 'universal categories' for both (or even more - Christian, how is the annotation on the French part going, maybe we can do a trilingual extraction in the future?) languages. This works in theory but does not necessarily works in practice as the data shows. 
+There are different reasons for these mismatches, inconsistencies or whatever we call them.
+
+So, in the paper, we would have:
+1. Intro (aims, motivation, problem description)
+2. Related Work
+3. Data used
+4. Extraction Method
+5. Results
+6. Concluding remarks and discussion
+
+I will create an overleaf latex if you agree and we can start writing down the ideas into the paper.
+
+But, I think that for the quantitative analyses of mismatches, it would be great to have the following outputs:
+
+(1) in matching and non-matching chains - is it possible to have the mentions in the order they appear in the text?
+e.g. in the following German chain, the order is ['die meisten tauben Kinder', 'Diese tauben Menschen', 'sich']:
+
+English Chain: set_228 Mentions: ['most deaf children', 'them', 'Those deaf people']
+German Chain: set_28 Mentions ['sich', 'Diese tauben Menschen', 'die meisten tauben Kinder']
+
+(2) is it possible to have another representation, additional to the word level one, i.e. the category of the mention which is stored in the markable (I took just values of some attributes from the xml-tag, just a suggestion, we can use the whole information stored there too): 
+e.g. for the above mentioned ['die meisten tauben Kinder', 'Diese tauben Menschen', 'sich'], we could have a representation like
+['antecedent-np', 'demonstrative-simple_antecedent-np', 'reflexive-simple_antecedent-pronoun']
+
+then
+
+(3) would be possible having (2) create some mention mapping within a chain and count overlaps in categories, e.g.:
+
+Still the same example from above:
+English chain: ['antecedent-np', 'demonstrative-simple_antecedent-np', 'personal-simple_antecedent-pronoun'] 
+German chain: ['antecedent-np', 'demonstrative-simple_antecedent-np', 'reflexive-simple_antecedent-pronoun']
+2 matches, 1 non-match: 'personal-simple_antecedent-pronoun' 'reflexive-simple_antecedent-pronoun'
+
+Best,
+Katja
+
+################
+Hi Sharid,
+there might be another bug in the script. Please check this case in the file 005_1938:
+
+English Chain: set_57 Mentions: ['It', 'It', 'this horizontalization of the structure of industries', 'that']
+German Chain: set_78 Mentions ['Es', 'Das']
+
+The German chain has three members:
+
+'Das bringt grundlegende Änderungen mit sich , in der Art und Weise , wie wir über Strategie denken'- 'Das' - 'Es'.
+
+So, this is not an entity chain as the antecedent (the first mention) is a clause.
+In fact, this is also an interesting case of a mismatch: source chain= entity vs. target chain=event (or rather fact)
+
+ The English part:
+Either way , what we are driven to is [this horizontalization of the structure of industries] , and [that] implies fundamental changes in how we think about strategy .
+ [It] means , for example , that we need to think about strategy as the curation of these kinds of horizontal structure , where things like business definition and even industry definition are actually the outcomes of strategy , not something that the strategy presupposes .
+ [It] means , for example , we need to work out how to accommodate collaboration and competition simultaneously .
+
+the German part:
+Wohin wir auch geführt werden , überall finden wir diese Horizontalisierung von Industriestrukturen] . [Das bringt grundlegende Änderungen mit sich , in der Art und Weise , wie wir über Strategie denken] .
+[Das] heißt zum Beispiel , dass wir uns die Strategie als Gerüst solcher horizontaler Strukturen denken müssen , wo Dinge wie Geschäftsdefinition und sogar Industriedefinition wirklich die Resultate der Strategie sind , nicht etwas , das die Strategie voraussetzt .
+ [Es] bedeutet z. B. , dass wir ausarbeiten müssen , wie man Zusammenarbeit und Konkurrenz gleichzeitig unterbringt .
+
+
+The chain on the German side is completely different, as the annotator (maybe also the translator).
+
+But if we want to be consistent in this particular analysis, then we need to exclude such cases first?
+
+Best
+Katja
+
+###########Hi Sharid,
+
+this looks really good - thank you!
+ 
+> Katja, you suggested to count the matches of 'types' at the mention 
+> level, but this happens all over the two categories of 'matching 
+> chains' and 'matching chains with different number of mentions'. So I 
+> wasn't sure. If you can be very specific about what counts do you 
+> want me to aggregate, I can try to quickly add that to the script.
+
+I suggested this as a simplified version for looking inside those chains that completely match but may still have some internal differences. But no, when we have the whole output, it's possible to look at all of them.
+
+>
+> Also, I've been working with the DiscoMT portion of the corpus only. 
+> This because I had these alignments from the wmt paper. If we want to 
+> extend this, I have to launch more alignments (the question is when!).
+
+Yes, the question is how fast you can do this. If we can have it (maybe for the final version when accepted?), it would be great.
+
+
+> And, there are some few mentions excluded because ironically there 
+> are some inconsistencies with the annotation, and I got tired of 
+> looking at xml to find the problems. For instance, not all pronouns 
+> have 'type_of_pronoun' information, some have 'type'. This happens in 
+> many places but specially with 'empty' pronouns, as here:
+>
+>
+> <markable antetype="entity" coref_class="set_264" id="markable_1387" 
+> mention="pronoun" mmax_level="coref" span="word_3066..word_3067" 
+> split="simple antecedent" type="nom substitution"/>
+
+type_of_pronoun is available for anaphoric pronouns only (type="anaphoric"). Pleonastic pronouns (type="pleonastic") and extratextual reference (type="extratextual reference") can actually be excluded from our analyses as they do not build chains (that is why they have empty chains. And then, we have nominal substitution and comparative reference (type="nom substitution" and type="comparative" ) which do not have the attribute 'type_of_pronoun' but thy do have a type.
+
+>
+> Also, I didn't get why nps entail a 'nptype' attribute, and vps a 
+> 'vptype', and so on, instead of just 'type'. This creates many 
+> exceptions when looping... but well, maybe consider these as 
+> suggestions for improving future editions of the corpus.
+
+This is because of the possibilities of formulation in MMAX scheme. If everything had a type, then we wouldn't be able to keep verbal and nominal categories separately. So, the decision was made for the sake of the annotation process (I attach the scheme which might clarify some categories). 
+
+An update from my side: I started writing (as you can see in the overleaf) and I also analysed the output (the previous one in temp2) 'Matching chains, different number of mentions' for the first text (1756). I tried to classify the reasons for the inconsistencies. I have two major groups for the overlapping (not mapping chains):
+
+(I) english members not in german
+(II) german members not in english
+
+Here, it would be great to collect statistics on all the texts automatically.
+
+Then, I also subdivided the reasons into the following categories:
+
+(1) longer target - this means that there are some additional information in the german text not contained in the source, e.g. an additional relative clause or additional reflexive
+
+(2) shorter target - mostly the german text is compressed in some way, e.g. the subject is not mentioned again and we have coordinated verbal phrases instead. Or the information is packed into a different, more compact construction without a mention. I suppose that these cases are due to the fact that TED talks are subtitled and not translated. So, compressing is one of the aims.
+
+(3) annotation interpretation - the annotator interpreted the German text differently as the English source. Sometimes it is really difficult to understand between which components the relation is built up
+
+(4) annotation error - there were some errors like: a mention was not annotated, or there are two chains which are actually parts of one.
+
+(5) script error - the script matched a wrong chain 
+
+I will include this into the results part in the paper, will go through the cases extracted as 'German chain not in English' and categorise them according to (1)-(5). They are actually like group (II).
+
+Then, I will have a look at the new output with annotations to see, if we can integrate this information. For sure, we can use this information already for all the 'German chain not in English' that have annotation ['np-antecedent', 'pronoun-relative'] --> these are the cases where we have some non-finite construction in english that was trasferred with a relative clause into german.
+
+
+Then, I will have a look at the new output with annotations to see, if we can integrate this information. For sure, we can use this information already for all the 'German chain not in English' that have annotation ['np-antecedent', 'pronoun-relative'] --> these are the cases where we have some non-finite construction in english that was trasferred with a relative clause into german.
+
+But for now, if anyone can automatically count I and II for all the texts, it would be great. I will go on with the manual work.
+by the way, it is interesting how you can get a cue of what is going on in the text when you are just reading coreference chains :)
+
+########################
+Hi,
+@Sharid
+I mean mentions (chain members), in fact, this is something like:
+(I) longer english chains
+(II) longer german chains
+
+@Christian
+I don't think we can do an alignment, as there are not so many cases that I can deliver from the manual analysis. The manual analysis takes a lot of time, as going through the chains in parallel, like searching in two texts (especially the cases that are missing) costs much more time than I expected. But I want to finish this today. I would like to use those in 2 as a kind of explanation.
+
+In general, quite frequent are annotation issues, such as
+
+- missing chain in English - the annotator did not mark the same kind of a chain in English. It might be due to the fact that we used a pre-annotated Engilsh subcorpus, for which German texts were annotated completely (the DiscoMT dataset).
+
+- one chain in English and two chains in German or vice versa
+Sometimes the texts are just interpreted in a different way and that's why the parallel mentions are members of different chains.
+
+These are not actually the cases we would like to report on. But I think they are important in any annotation project, since the method allows to discover these thing, right?
+
+As for the real language issues, there are some interesting translation-related issues. But quite many are represented by relative clauses in German (remember our polar bear swimming).
+
+If you can work on paper tomorrow, this would be great. I think I will finish the manual analysis today and want to see how we can integrate the annotated structures.
+
+I can't work much on it on Monday as it is Carneval monday and everything is closed including the daycare facilities. I will probably be able to do something in pieces but not much.
+
+Katja
+
+#################
+
+Ok, thanks for that. I'll deliver some counts shortly. I'll try to group them in some way that you can exploit them to match the story of section 2, as Christian suggest. I kind of agree that 5.1 is maybe not the best or the most interesting categorization there is. But I also see that it's difficult to completely align them. For example, what exactly indicates that an annotator has reinterpreted the chain? This is hard, but I think it really makes for an interesting contribution.
+
+
+Also, if I have time, I'll launch new alignments.
+
+
+Otherwise, I won't contribute much to the writing until Tuesday, (maybe Sunday, we'll see), sorry about that.
+
+
+Sharid
+
+####################
+
+Hello,
+
+I've just looked through the paper draft - quite a lot of nice work
+there already. :)
+
+I think we could sell this as two parts/contributions: A typology of
+the differences and empirical results on their distribution in
+ParCorFull. For that, it would be nice if the categories in section
+2 and 5.2 were aligned. How difficult would it be to achieve that?
+
+I could spend some time on the paper tomorrow morning and work a bit
+on the introduction and conclusions if that's ok with you.
+
+/Christian
+
+############################
+hey,
+i might think of restructuring those in 2 so that they match those in 5 ;-)
+
+as for the linguistic/translation aspect: most cases we are dealing with (target longer than the source) are represented by added relative clauses. This is definitely an explicitation, which is by the way obligatory from the language typology view:
+
+* it is not possible to omit the relative pronoun in german as you can do in english (the dinner we had vs. das abendessen, das wir hatten)
+* or we have a specific english construction with no equivalents (polar bear swimming vs. Polarbär, der schwimmt) --> obligatory explicitation in translation.
+
+By the way, these are those that you can easily sort out automatically.
+
+CU,
+Katja
+
+###############
+
+Statistics:
+matching chains
+mismatches (diff.number within)
+chains not in the source
+chains not in the target
+
+Analyses on 1756:
+non-matching but overlapping chains: 59
+
+English mentions missing in the target: 46
+German mentions missing in the source: 13
+
+longertarget: 7
+shortertarget: 6
+annointerp: 6
+annoerror: 21
+scripterror: 21
+
+German mentions missing in the source: 70
+
+################
+specific interesting examples
+
+These are [identities] [that] are alien to your parents and [that] you have to discover when you get to see [them] in peers .
+Das sind [Identitäten] , [die] Ihren Eltern fremd sind und [die] man dann selbst im Umgang mit Gleichgesinnten entdecken muss .
+
+Interpretation:
+And it seemed to me that there were three levels of acceptance that needed to take place. There 's [self-acceptance] , there 's [family acceptance] , and there 's [social acceptance] .  And [they] do n't always coincide .
+Und es schien , dass es [drei Stufen der Akzeptanz] gibt , [die] alle zum Tragen kommen mussten .
+ Da war die Eigenakzeptanz , die Akzeptanz der Familie und die gesellschaftliche Akzeptanz .
+ Und [die drei] überschneiden sich nicht immer .
+
+Then a friend of a friend of mine had [a daughter] [who] was a dwarf .
+ And when [her] daughter was born , she suddenly found herself confronting questions that now began to seem quite resonant to me .
+ She was facing the question of what to do with [this child] .
+Should she say , `` You 're just like everyone else but a little bit shorter ? ''
+ Or should she try to construct some kind of dwarf identity , get involved in the Little People of America , become aware of what was happening for dwarfs ?
+
+Dann bekam die Freundin einer Freundin [eine kleinwüchsige Tochter] .
+ Und mit der Geburt ihrer Tochter , musste sie sich plötzlich mit Fragen]auseinandersetzen , die nun auch für mich anfingen von großer Bedeutung zu sein .
+ Sie stand vor der Entscheidung , was sie mit [diesem Kind] tun sollte .
+ Sollte sie sagen : " Du bist genauso wie alle anderen , nur ein bisschen kleiner ? "
+ Oder sollte sie versuchen , eine Art Kleinwüchsigenidentität für [sie] zu schaffen , sich in der Organisation " Little People of America " zu engagieren , und sich zu informieren , was es Neues in der Welt der Kleinwüchsigen gab ?
+
+Most gay people] are born to [straight parents] .
+ [Those straight parents] often want [them] to function in what [they] think of as the mainstream world , and [those gay people] have to discover identity later on .
+Die [meisten homosexuellen Menschen] haben [heterosexuelle Eltern] .
+ [Diese Eltern] wollen oft , dass [ihre] Kinder funktonieren in der in [ihrer] Sicht normalen Welt , und [diese homosexuellen Menschen] müssen dann später eine Identität für [sich] finden .
+
+Translation interpretation:
+During these 10 years , I had witnessed and learned [the terrifying joy of unbearable responsibility] , and I had come to see how [it] conquers everything else .
+In diesen 10 Jahren hatte ich Gelegenheit , die [Freuden] [und Schrecken unerträglicher Verantwortung] kennenzulernen , und mitzuerleben , wie [sie] alles andere überwinden .
+
+non-cohesive ellipsis in German
+Achondroplasia is the most common form of dwarfism , and [mice] [who] have been given that substance and [who] have the achondroplasia gene , grow to full size .
+Achondroplasie ist die häufigste Form des Zwergwuchses , und [Mäuse] , [die] diesen Wirkstoff erhalten haben , und das Achondroplasie-Gen aufweisen , wachsen zu voller Größe heran .
+
+... [problems] [that] they mostly would have done anything to avoid ...
+... [Probleme] , für [die] sie meist alles getan hätten , um [sie] zu vermeiden 
+
+And [his mother] told me this story of coming home one day...
+[Seine Mutter] erzählte mir die Geschichte , als [sie] nach Hause kam...
+
+[she] said . `` And I thought to myself , they 're six feet tall , he 's three feet tall .
+"Und ich dachte : Die sind 1,80 Meter groß und er misst nicht einmal einen Meter .
+
+
+[Those] are things you have in common with your parents and with your children .
+[Dinge] , [die] Sie mit Ihren Eltern und Kindern gemein haben .
+
+And while some of [them] can be difficult , there 's no attempt to cure [them] .
+Und obwohl [einige davon] problematisch sein können , versucht man in der Regel nicht , [sie] zu heilen .
+
+generic in tbhe source --> concrete in the target
+I 'd encountered so much [strange love] , and I fell very naturally into [its] bewitching patterns .
+ And I saw how splendor can illuminate even the most abject vulnerabilities .
+Ich war auf soviel [seltsame Liebe] getroffen , und ich fiel fast selbstverständlich in [ihr] verzauberndes Raster .
+ Ich sah , wie [ihre] Pracht selbst größte Verletzbarkeit erleuchten kann .
+
+[she] would say that about parenting my brother and me .
+dass [sie] so [ihre] Mutterrolle für mich und meinen Bruder beschreiben würde .
+
+is useful in preventing the action of the achondroplasia gene .
+hilft [dabei] , [die Wirkung des Achondroplasie-Gens zu hemmen] .
+
+generics - coreference
+Ironically , it turns out , that it 's our differences , and our negotiation of difference , that unite us.
+Ironischerweise sind es [unsere Unterschiede] , und unser Umgang mit [ihnen] , [die] uns zusammenbringen .
+
+
+And I figured it was possible then for anyone to love any child if they had the effective will to do so .
+Und da wurde mir klar , dass es für [jeden] möglich ist , jedes Kind zu lieben, solange [er] nur den festen Willen dazu hat .
+
+
+I become convinced that deafness was a culture and that the people in the deaf world ...
+wurde mir bewusst, dass Gehörlosigkeit [eine Kultur] war , und dass die Menschen aus [dieser Kultur] ,
+
+
+EXPLICITATION:
+We took him to the MRI machine , we took him to the CAT scanner , we took this day-old child and gave him over for an arterial blood draw .
+ We felt helpless .  And at the end of five hours , [they] said that his brain was completely clear and that he was by then extending his legs correctly .
+Wir brachten ihn zur Kernspintomographie , zur Computertomographie , wir übergaben dieses 1-Tage-alte Kind [den Ärzten] für eine arterielle Blutentnahme .
+ Wir fühlten uns hilflos .  Und nach fünf langen Stunden , teilten [sie] uns mit , dass sein Gehirn völlig unauffällig sei , und er seine Beine mittlerweile richtig ausstrecken würde .
+
+relative vs. pronadv
+In so far as he was extending them , he was doing so asymmetrically , which she thought could mean that there was a tumor of some kind in action .
+[Soweit er sie überhaupt ausstreckte , tat er das so ungleichmäßig] , dass sie dachte , ein Tumor könnte möglicherweise [dafür] verantwortlich sein .
