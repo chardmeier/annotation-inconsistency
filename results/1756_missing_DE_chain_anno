@@ -1,0 +1,118 @@
+German Chain: set_171 Mentions ['sie', 'die Familie', 'ihnen', 'ihre', 'sie', 'sie']
+shortertarget: the first weekend I spent with [them] - am ersten gemeinsamen wochenende (genre-related)
+German Chain: set_171 Mentions ['sie', 'die Familie', 'ihnen', 'ihre', 'sie', 'sie']
+annoerror: ['identities', 'that', 'that', 'them']-['Identitäten', 'die', 'die']
+German Chain: set_189 Mentions ['sie', 'sie', 'die', 'die Kinder', 'sie']
+annointerp: relative clause inside vs outside
+German Chain: set_165 Mentions ['Menschen', 'sie', 'sie', 'Sie']
+annoerror: one 'sie' is a member of another chain
+German Chain: set_46 Mentions ['die anderen Identitäten', 'vertikale Identitäten']
+longertarget: full NP instead of pronoun: them - ihre Kinder --> different chains
+German Chain: set_117 Mentions ['Es', 'ein " Weggeben', 'es']
+annointerp: putting away vs. Weggeben (put away)
+German Chain: set_48 Mentions ['Das', 'horizontale Identitäten', 'diese Identitäten', 'diese horizontalen Identitäten']
+annoerror
+German Chain: set_48 Mentions ['Das', 'horizontale Identitäten', 'diese Identitäten', 'diese horizontalen Identitäten']
+annoerror: one chain in En, two chains in De
+German Chain: set_43 Mentions ['Dinge', 'einige davon', 'die', 'sie', 'Dinge']
+longertarget: relative
+German Chain: set_132 Mentions ['den Robards', 'sie']
+annoerror: annotation missing 'that'='davon'
+German Chain: set_160 Mentions ['Sie', 'Sie', 'Eltern', 'Ihr']
+annointerp
+German Chain: set_62 Mentions ['der kleinwüchsigen Männer', 'die']
+longertarget: relative
+German Chain: set_275 Mentions ['solche', 'subtraktiven Modelle der Liebe', 'die']
+annoerror: not-annotated chain EN
+German Chain: set_77 Mentions ['seiner Kindheit', 'diese ganze Zeit']
+annoerror: not-annotated chain in EN
+German Chain: set_274 Mentions ['er', 'jeden']
+annoerror: not-annotated chain in EN: And I figured it was possible then for anyone to love any child if they had the effective will to do so . - Und da wurde mir klar , dass es für [jeden] möglich ist , jedes Kind zu lieben, solange [er] nur den festen Willen dazu hat .
+German Chain: set_140 Mentions ['ihnen', 'gehörlosen Kinder', 'die']
+longertarget: relative
+German Chain: set_148 Mentions ['die', 'die', 'denen', 'Blut-Tests']
+longertarget: relative
+German Chain: set_151 Mentions ['die', 'den dreien']
+longertarget: relative
+German Chain: set_80 Mentions ['diesen Behandlungen', '30 größeren chirurgischen Eingriffen', 'derer']
+annoerror: not annotated chain in English: 30 major surgical procedures - those procedures - which
+German Chain: set_211 Mentions ['die', 'zwei Kindern']
+longertarget: relative
+German Chain: set_282 Mentions ['Mein Mann', 'Mein Mann', 'er']
+longertarget: relative
+German Chain: set_84 Mentions ['das', 'ein Bildungsniveau']
+annoerror: not annotated chain in English
+German Chain: set_152 Mentions ['denen', 'jene Momente']
+longertarget: temporal clause vs. locative: like those moments in grand opera when the hero realizes he loves the heroine - an [jene Momente] in der Oper erinnert, In [denen] der Held erkennt , dass er die Heldin liebt
+German Chain: set_156 Mentions ['das', 'das Kind']
+longertarget: relative
+German Chain: set_87 Mentions ['der', 'der Erste in seiner Familie']
+longertarget: relative: the first one in his family to go to college - [der Erste in seiner Familie] , [der] an einer Universität stusierte
+German Chain: set_101 Mentions ['ein speziell für ihn ausgestattetes Auto', 'das', 'sein Auto', 'das']
+annoerror: not annotated chain in English
+German Chain: set_154 Mentions ['die Frage', 'die']
+longertarget: relative: And a lot of the time the question of parenthood is - Oft ist [die Frage] , [die] wir uns als Eltern stellen müssen
+German Chain: set_18 Mentions ['ihr', 'meine Kultur']
+annointerp: different chains
+German Chain: set_17 Mentions ['die', 'die Menschen aus dieser Kultur']
+annoerror: not-annotated chain in English
+German Chain: set_161 Mentions ['sie', 'eine sehr extreme Sicht']
+annointerp:  8It] 's a very extreme point of view , but [it] points - Es ist [eine sehr extreme Sicht] , aber [sie] verweist
+German Chain: set_162 Mentions ['das', 'dem Leben']
+longertarget: relative
+German Chain: set_100 Mentions ['Clinton', 'sein']
+annoerror: one chain in English, several chains in German
+German Chain: set_113 Mentions ['die ersten', 'die']
+longertarget: relative
+German Chain: set_167 Mentions ['die', 'der Familien']
+longertarget: relative
+German Chain: set_166 Mentions ['die Person', 'sie', 'der']
+longertarget: relative
+German Chain: set_40 Mentions ['ihre', 'Eltern']
+longertarget: possessive: are passed down generationally from parent to child . - die generationsbedingt von [Eltern] an [ihre] Kinder weitergegeben werden .
+German Chain: set_173 Mentions ['einem', 'ersten gemeinsamen Wochenende', 'vielen']
+annoerror: not annotated in English
+German Chain: set_172 Mentions ['ihre Geschichte', 'sie']
+annoerror: not annotated in EN
+German Chain: set_119 Mentions ['Menschen', 'sie', 'Menschen mit einer Behinderung', 'die']
+annointerp: one chain in German, two chains in English
+German Chain: set_44 Mentions ['daran']
+longertarget: correlat
+German Chain: set_52 Mentions ['dem', 'der Prozess']
+annoerror: not annotated in En
+German Chain: set_123 Mentions ['die', 'der Familien']
+longertarget: relative
+German Chain: set_234 Mentions ['ihrer', 'Menschen']
+annoerror: not annotated in en
+German Chain: set_179 Mentions ['Abendessen', 'die']
+annoerror: not annotated
+German Chain: set_187 Mentions ['den', 'den Schmerz', 'den']
+longertarget: relative
+German Chain: set_264 Mentions ['das', 'etwas']
+annoerror: not annotated in en
+German Chain: set_262 Mentions ['der Weg', 'dem']
+longertarget: relative
+German Chain: set_129 Mentions ['die', 'zwei Klassenzimmer']
+annoerror: not annotated in en
+German Chain: set_188 Mentions ['den', 'den Schmerz']
+longertarget: relative
+German Chain: set_198 Mentions ['die', 'Familien']
+longertarget: relative
+German Chain: set_265 Mentions ['der Zeit', 'die']
+longertarget: relative
+German Chain: set_196 Mentions ['sie', 'meine Kinder']
+shortertarget: possessive: the children I have  - meine Kinder: translator decision to make shorter
+German Chain: set_271 Mentions ['ein Fremder', 'den']
+longertarget: relative
+German Chain: set_139 Mentions ['das', 'ein Ausmaß']
+longertarget: relative
+German Chain: set_138 Mentions ['einem Punkt', 'dem']
+longertarget: temporal clause vs. locative: at the moment when - an einem Punkt, in dem
+German Chain: set_201 Mentions ['das', 'ein Kind']
+annoerror: not annotated in English
+German Chain: set_136 Mentions ['der', 'einer Zeit']
+longertarget: temporal clause vs. locative: at a point when - in einer zeit, in der
+German Chain: set_200 Mentions ['jede Familie', 'jede']
+annointerp
+German Chain: set_137 Mentions ['Down-Syndrom', 'diese']
+annoerror

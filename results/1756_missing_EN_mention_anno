@@ -1,0 +1,34 @@
+English Chain: set_199 Mentions: ['they', 'them', 'they', 'the family of Dylan Klebold', 'their', 'them', 'they']
+shortertarget: the first weekend I spent with [them] - am ersten gemeinsamen wochenende (genre-related)
+English Chain: set_3 Mentions: ['it', 'it', 'it', 'homosexuality', 'It']
+shortertarget: non-cohesive ellipsis in German: Als solches verdient [sie] kein Mitleid , [] keine Sonderbehandlung als Märtyrium einer M
+English Chain: set_38 Mentions: ['identities that are alien to your parents', 'them']
+annoerror: ['identities', 'that', 'that', 'them']-['Identitäten', 'die', 'die']
+English Chain: set_106 Mentions: ['them', 'the social progress the medical progress', 'they']
+annointerp: relative clause inside vs outside
+English Chain: set_258 Mentions: ['mice', 'who', 'who']
+shortertarget: non-cohesive ellipsis in German:  Mäuse, die diesen Wirkstoff erhalten haben , und das Achondroplasie-Gen aufweisen
+English Chain: set_30 Mentions: ['this friend of mine', 'her']
+annoerror: 2 chains in En, some parts of German chain are in wrong chain
+English Chain: set_114 Mentions: ['they', 'they', 'they', 'They', 'people']
+annoerror: one 'sie' is a member of another chain
+English Chain: set_58 Mentions: ['him', 'he', 'he', 'he', 'he', 'his', 'his', 'his', 'his', 'his', 'he', 'his', 'Clinton Brown', 'his', 'Clinton', 'he', 'his', 'Clinton', 'his', 'his', 'his', 'he', 'him', 'he', 'he', 'he', 'He', 'he', 'he', 'he', 'he', 'him', 'he', 'him', 'him', 'him', 'he', 'he', 'he', 'him', 'he', 'him']
+annoerror: one chain in En, two chains in De
+English Chain: set_175 Mentions: ['they', 'them', 'them', 'they', 'his parents']
+annoerror: member missing in De
+English Chain: set_233 Mentions: ['which', 'Those', 'vertical identities']
+longertarget: full NP instead of pronoun: them - ihre Kinder --> different chains
+English Chain: set_184 Mentions: ['she', 'she', 'she', 'his mother', 'she', 'her', 'she', 'his mother', 'she', 'she', 'She', 'She', 'she', 'her']
+shortertarget: non-cohesive ellipsis in German, different formulation
+English Chain: set_39 Mentions: ['those horizontal identities', 'These', 'horizontal identities', 'them', 'those identities']
+annoerror: one chain in En, two chains in De
+English Chain: set_278 Mentions: ['Those', 'them', 'them', 'language', 'often religion', 'things like ethnicity', 'frequently nationality']
+longertarget: relative
+English Chain: set_196 Mentions: ['his', 'their first child', 'him']
+annoerror: missing member in German ([sein] Vater)
+English Chain: set_289 Mentions: ['Sue Klebold', 'she', 'she', 'Sue', 'her', 'she', 'she']
+shortertarget: non-cohesive ellipsis in German (compressing)
+English Chain: set_173 Mentions: ['The love you have for your children', 'other feeling', 'it']
+annoerror: two chain in En
+English Chain: set_18 Mentions: ['it', 'a culture', 'It', 'it', 'It', 'it', 'it']
+annoerror: one member to much
