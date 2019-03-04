@@ -27,7 +27,7 @@ annointerp: split antecedent vs other antecedent
 English Chain: set_218 Mentions: ['a daughter', 'who', 'this child']
 German Chain: set_25 Mentions ['diesem Kind', 'sich', 'sich', 'sie', 'eine kleinwüchsige Tochter']
 Ennotinde
-explicit: to construct some kind of dwarf identity vs eine Art Kleinwüchsigenidentität für [sie] zu schaffen
+longertarget: to construct some kind of dwarf identity vs eine Art Kleinwüchsigenidentität für [sie] zu schaffen
 annoerror: sich, sich
 
 English Chain: set_106 Mentions: ['them', 'the social progress the medical progress', 'they']
@@ -367,7 +367,7 @@ German Chain: set_156 Mentions ['das', 'das Kind']
 longertarget: relative
 
 German Chain: set_87 Mentions ['der', 'der Erste in seiner Familie']
-longertarget: relative: the first one in his family to go to college - [der Erste in seiner Familie] , [der] an einer Universität stusierte
+longertarget: relative: the first one in his family to go to college - [der Erste in seiner Familie] , [der] an einer Universität studierte
 
 German Chain: set_101 Mentions ['ein speziell für ihn ausgestattetes Auto', 'das', 'sein Auto', 'das']
 annoerror: not annotated chain in English
