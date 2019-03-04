@@ -1,0 +1,24 @@
+news_DE_01.txt news_DE_03.txt news_DE_04.txt news_DE_05.txt news_DE_07.txt news_DE_08.txt news_DE_09.txt news_DE_10.txt news_DE_13.txt news_DE_16.txt news_DE_17.txt news_DE_18.txt news_DE_19.txt news_DE_20.txt news_DE_21.txt news_DE_22.txt news_DE_23.txt news_DE_24.txt news_DE_25.txt 
+
+news_EN_01.txt news_EN_03.txt news_EN_04.txt news_EN_05.txt news_EN_07.txt news_EN_08.txt news_EN_09.txt news_EN_10.txt news_EN_13.txt news_EN_16.txt news_EN_17.txt news_EN_18.txt news_EN_19.txt news_EN_20.txt news_EN_21.txt news_EN_22.txt news_EN_23.txt news_EN_24.txt news_EN_25.txt  
+
+TED_DE_000_779.txt TED_DE_001_769.txt TED_DE_002_792.txt TED_DE_003_799.txt TED_DE_004_767.txt TED_DE_005_790.txt TED_DE_006_785.txt TED_DE_007_783.txt TED_DE_008_824.txt TED_DE_010_837.txt
+
+TED_EN_000_779.txt TED_EN_001_769.txt TED_EN_002_792.txt TED_EN_003_799.txt TED_EN_004_767.txt TED_EN_005_790.txt TED_EN_006_785.txt TED_EN_007_783.txt TED_EN_008_824.txt TED_EN_010_837.txt
+
+
+  528  cat news_DE_01.txt news_DE_03.txt news_DE_04.txt news_DE_05.txt news_DE_07.txt news_DE_08.txt news_DE_09.txt news_DE_10.txt news_DE_13.txt news_DE_16.txt news_DE_17.txt news_DE_18.txt news_DE_19.txt news_DE_20.txt news_DE_21.txt news_DE_22.txt news_DE_23.txt news_DE_24.txt news_DE_25.txt > all_news_DE.txt
+  531  cat news_EN_01.txt news_EN_03.txt news_EN_04.txt news_EN_05.txt news_EN_07.txt news_EN_08.txt news_EN_09.txt news_EN_10.txt news_EN_13.txt news_EN_16.txt news_EN_17.txt news_EN_18.txt news_EN_19.txt news_EN_20.txt news_EN_21.txt news_EN_22.txt news_EN_23.txt news_EN_24.txt news_EN_25.txt > all_news.en
+  532  cat TED_DE_000_779.txt TED_DE_001_769.txt TED_DE_002_792.txt TED_DE_003_799.txt TED_DE_004_767.txt TED_DE_005_790.txt TED_DE_006_785.txt TED_DE_007_783.txt TED_DE_008_824.txt TED_DE_010_837.txt > all_TED.de
+  533  cat TED_EN_000_779.txt TED_EN_001_769.txt TED_EN_002_792.txt TED_EN_003_799.txt TED_EN_004_767.txt TED_EN_005_790.txt TED_EN_006_785.txt TED_EN_007_783.txt TED_EN_008_824.txt TED_EN_010_837.txt > all_TED.en
+  
+
+opus_read -p xml -d Europarl -s en -t de -wm moses > temp 
+cut -f 1 temp > europarl.de
+cut -f 2 temp > europarl.en
+
+sloaicig@taito-login4 /wrk/sloaicig/incongruences : cat all_news.de europarl.de > corpus.de
+sloaicig@taito-login4 /wrk/sloaicig/incongruences : cat all_news.en europarl.en > corpus.en
+
+I didn't include TED because the number of lines is different, and I don't have much time to check the details
+
