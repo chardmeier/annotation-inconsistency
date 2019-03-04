@@ -143,13 +143,17 @@ def get_chain_info(doc_id, markables):
 def filter_chains(dict_chains, dict_info):
 
     filtered = copy.deepcopy(dict_chains)
-
     for chain in dict_info:
-        for mention in dict_info[chain]:
-            m_type = mention[0]
-            if m_type in ["vp", "clause", None]:
-                if chain in filtered:
-                    del filtered[chain]
+        #emtpys are chains not types
+        if chain == "empty":
+            if chain in filtered:
+                del filtered[chain]
+        else:
+            for mention in dict_info[chain]:
+                m_type = mention[0]
+                if m_type in ["vp", "clause", None, "empty"]:
+                    if chain in filtered:
+                        del filtered[chain]
     return filtered
 
 
