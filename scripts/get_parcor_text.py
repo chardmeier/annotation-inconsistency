@@ -48,7 +48,7 @@ def make_sentences_spans(doc_id, markables):
 def make_sentences(doc, spans):
 
     text_document = []
-    for span in spans:
+    for span in sorted(spans.keys()):
         start = spans[span][0]-1
         end = spans[span][1]
         sentence = []
@@ -71,20 +71,20 @@ subcorpus = sys.argv[2]
 path_parcorful = "/Users/xloish/PycharmProjects/testsuitewmt18/parcor-full/corpus"
 
 data_dir = path_parcorful + "/" + subcorpus + "/" + lang + "/" + "Basedata"
-markables = path_parcorful + "/" + subcorpus + "/" + lang + "/" + "Markables"
+mark_dir = path_parcorful + "/" + subcorpus + "/" + lang + "/" + "Markables"
 
 out = "/Users/xloish/PycharmProjects/annotation-inconsistency/parcorfull_textdata"
 
 files = os.listdir(data_dir)
 
 for file in files:
+
     if file.endswith("xml"):
         out_file = open(out + "/" + subcorpus + "_" + lang + "_" + file[:-10] + ".txt", "w", encoding="utf-8")
 
         document = create_document(data_dir, file)
-        s_spans = make_sentences_spans(file, markables)
+        s_spans = make_sentences_spans(file, mark_dir)
         text = make_sentences(document, s_spans)
-
         for sentence in text:
             line = " ".join(sentence)
             out_file.write(line)
