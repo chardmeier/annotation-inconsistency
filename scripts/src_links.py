@@ -525,25 +525,33 @@ def aggregate(d_doc, d_global):
 
 #############################################          MAIN            ##############################################
 def main():
-    if len(sys.argv) != 3:
-        sys.stderr.write('Usage: {} {} {} \n'.format(sys.argv[0], "path_to_parcor-full", "alignment_file"))
+    if len(sys.argv) != 4:
+        sys.stderr.write('Usage: {} {} {} {} \n'.format(sys.argv[0], "path_to_parcor-full", "subcorpus(news|DiscoMT|TED)", "alignment_file"))
 
         sys.exit(1)
 
-    endeDocs = ["000_1756_words.xml", "001_1819_words.xml", "002_1825_words.xml", "003_1894_words.xml",
-                "005_1938_words.xml", "006_1950_words.xml", "007_1953_words.xml", "009_2043_words.xml",
-                "010_205_words.xml", "011_2053_words.xml"]
+    subcorpus = sys.argv[2]
+
+    # DiscoMT files (hard coded to make sure they're in the very same order as the alignments file)
+    # endeDocs = ["000_1756_words.xml", "001_1819_words.xml", "002_1825_words.xml", "003_1894_words.xml",
+    #             "005_1938_words.xml", "006_1950_words.xml", "007_1953_words.xml", "009_2043_words.xml",
+    #             "010_205_words.xml", "011_2053_words.xml"]
+    # newes files
+    endeDocs = ["01_words.xml", "03_words.xml", "04_words.xml", "05_words.xml", "07_words.xml", "08_words.xml",
+                "09_words.xml", "10_words.xml", "13_words.xml", "16_words.xml", "17_words.xml", "18_words.xml",
+                "19_words.xml", "20_words.xml", "21_words.xml", "22_words.xml", "23_words.xml", "24_words.xml",
+                "25_words.xml"]
 
     base_path = sys.argv[1]
-    en_path_all = base_path + "/" + "DiscoMT" + "/" + "EN"
+    en_path_all = base_path + "/" + subcorpus + "/" + "EN"
     en_data_dir = en_path_all + "/" + "Basedata"
     en_annotation_dir = en_path_all + "/" + "Markables"
 
-    de_path_all = base_path + "/" + "DiscoMT" + "/" + "DE"
+    de_path_all = base_path + "/" + subcorpus + "/" + "DE"
     de_data_dir = de_path_all + "/" + "Basedata"
     de_annotation_dir = de_path_all + "/" + "Markables"
 
-    giza_alignments = read_alignments(sys.argv[2])
+    giza_alignments = read_alignments(sys.argv[3])
     mention_types_corpus = {}
     en_long_corpus, de_long_corpus = 0, 0
     equal_length_corpus = 0
@@ -551,7 +559,7 @@ def main():
     de_only_corpus = 0
 
     for doc in endeDocs: #loop and keep order of protest
-        docid = re.findall(r'[0-9]+_[0-9]+', doc)[0]  # returns list therefore the index
+        docid = re.findall(r'[0-9]+_?[0-9]+?', doc)[0]  # returns list therefore the index
 
         # document as single list of words
         en_document = create_document(en_data_dir, doc)
