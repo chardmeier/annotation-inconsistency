@@ -264,13 +264,6 @@ def print_stats(en_path_all, doc, en_coref_chains, de_coref_chains, en_filtered,
 
 def scoreChains(enChains, deChains, alignments):
 
-    '''idea of computing SE*SD scores, scoring SE, SD then take the average and then compare and take max
-
-    chains english: {'set_102': {0: [25], 1: [41], 2: [37], 5: [43], 6: [47]}, 'empty': {4: [32]}, 'set_134': {0: [4]}}
-    chains german: {'set_128': {0: [20], 2: [29], 3: [38], 4: [36], 5: [43]}, 'set_124': {0: [2]}}
-    Alig: ['0-0', '0-1', '1-2', '2-3', '8-6', '4-7', '5-8', '6-9', '7-9', '3-10', '9-11', '10-13', ...]
-     '''
-
     alignmentsENDE = organize_align_src2tgts(alignments)
     alignmentsDEEN = organize_align_tgt2srcs(alignments)
 
@@ -290,14 +283,16 @@ def scoreChains(enChains, deChains, alignments):
                 en_candidates += en_mention
             #look for alignment points
             for enWord in en_candidates:
-                if enWord in alignmentsENDE: # alignments might be empty
-                    for alignPoint in alignmentsENDE[enWord]:
+                reset_i = enWord-1
+                if reset_i in alignmentsENDE: # alignments might be empty
+                    for alignPoint in alignmentsENDE[reset_i]:
                         if alignPoint in de_candidates:
                             scoreEnglish += 1
 
             for deWord in de_candidates:
-                if deWord in alignmentsDEEN: # alignments might be empty
-                    for alignPoint in alignmentsDEEN[deWord]:
+                reset_i = deWord-1
+                if reset_i in alignmentsDEEN: # alignments might be empty
+                    for alignPoint in alignmentsDEEN[reset_i]:
                         if alignPoint in en_candidates:
                             scoreGerman += 1
 
@@ -496,7 +491,7 @@ def count_uneven_length(dict_matches, en, de, enInfo, deInfo):
 
     en_longer_pairs = {}
     de_longer_pairs = {}
-    en_longer_c, de_longer_c = 0, 0
+    equal = {}
 
     for key in dict_matches:
         # order everything
@@ -505,12 +500,12 @@ def count_uneven_length(dict_matches, en, de, enInfo, deInfo):
         # english longer than german
         if len(en_sort_men) > len(de_sort_men):
             en_longer_pairs[key] = dict_matches[key]
-            en_longer_c += 1
-        else:
+        elif len(en_sort_men) < len(de_sort_men):
             de_longer_pairs[key] = dict_matches[key]
-            de_longer_c += 1
+        else:
+            equal[key] = dict_matches[key] # should be empty
 
-    return en_longer_pairs, de_longer_pairs, en_longer_c, de_longer_c
+    return en_longer_pairs, de_longer_pairs, equal
 
 
 def aggregate(d_doc, d_global):
@@ -533,14 +528,14 @@ def main():
     subcorpus = sys.argv[2]
 
     # DiscoMT files (hard coded to make sure they're in the very same order as the alignments file)
-    # endeDocs = ["000_1756_words.xml", "001_1819_words.xml", "002_1825_words.xml", "003_1894_words.xml",
-    #             "005_1938_words.xml", "006_1950_words.xml", "007_1953_words.xml", "009_2043_words.xml",
-    #             "010_205_words.xml", "011_2053_words.xml"]
+    endeDocs = ["000_1756_words.xml", "001_1819_words.xml", "002_1825_words.xml", "003_1894_words.xml",
+                 "005_1938_words.xml", "006_1950_words.xml", "007_1953_words.xml", "009_2043_words.xml",
+                 "010_205_words.xml", "011_2053_words.xml"]
     # newes files
-    endeDocs = ["01_words.xml", "03_words.xml", "04_words.xml", "05_words.xml", "07_words.xml", "08_words.xml",
-                "09_words.xml", "10_words.xml", "13_words.xml", "16_words.xml", "17_words.xml", "18_words.xml",
-                "19_words.xml", "20_words.xml", "21_words.xml", "22_words.xml", "23_words.xml", "24_words.xml",
-                "25_words.xml"]
+    # endeDocs = ["01_words.xml", "03_words.xml", "04_words.xml", "05_words.xml", "07_words.xml", "08_words.xml",
+    #             "09_words.xml", "10_words.xml", "13_words.xml", "16_words.xml", "17_words.xml", "18_words.xml",
+    #             "19_words.xml", "20_words.xml", "21_words.xml", "22_words.xml", "23_words.xml", "24_words.xml",
+    #             "25_words.xml"]
 
     base_path = sys.argv[1]
     en_path_all = base_path + "/" + subcorpus + "/" + "EN"
@@ -559,7 +554,10 @@ def main():
     de_only_corpus = 0
 
     for doc in endeDocs: #loop and keep order of protest
-        docid = re.findall(r'[0-9]+_?[0-9]+?', doc)[0]  # returns list therefore the index
+        if subcorpus == "news":
+            docid = re.findall(r'[0-9]+_?[0-9]+?', doc)[0]  # returns list therefore the index
+        else:
+            docid = re.findall(r'[0-9]+_[0-9]+', doc)[0]
 
         # document as single list of words
         en_document = create_document(en_data_dir, doc)
@@ -596,17 +594,31 @@ def main():
         # count mention correspondences in matches
         mention_types_doc = count_typology(allMatch, en_filtered_chains, de_filtered_chains, en_chains_info,
                                            de_chains_info)
-        # count the uneven chains
-        en_long, de_long, en_c, de_c = count_uneven_length(someMatch, en_filtered_chains, de_filtered_chains,
+
+        # count the uneven chains; same_long should be empty (sanity check)
+        en_long, de_long, same_long = count_uneven_length(someMatch, en_filtered_chains, de_filtered_chains,
                                                            en_chains_info, de_chains_info)
 
         #count over corpus
+
         aggregate(mention_types_doc, mention_types_corpus)
-        en_long_corpus += en_c
-        de_long_corpus += de_c
+        en_long_corpus += len(en_long)
+        de_long_corpus += len(de_long)
         de_only_corpus += len(deNoMatch)
         en_only_corpus += len(enNoMatch)
         equal_length_corpus += len(allMatch)
+
+
+        # ####print sanity check
+        # print("sanity check")
+        # for chain in en_filtered_chains:
+        #     print(chain, en_filtered_chains[chain])
+        #     actual_words = []
+        #     for mention in en_filtered_chains[chain]:
+        #         for word in mention:
+        #             actual_words.append(en_document[word-1])
+        #     print(actual_words)
+
 
         # print out
         print("Matching chains ======>")
@@ -692,6 +704,7 @@ def main():
             print("Mentions types")
             print(de_types)
             print("\n")
+
 
     print("\n")
     print("**************End of corpus*****************")
