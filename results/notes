@@ -251,7 +251,78 @@ By the way, these are those that you can easily sort out automatically.
 CU,
 Katja
 
+##############
+
+Hi again,
+
+
+
+So I made some modifications to include counts. I'm counting everything and hopefully we can start putting numbers into the tables and you have better information for the analysis.
+
+
+
+As before, I include some general statistics per document. Then the same 4 categories as before, but this time I'm dividing the chains with different number of mentions.
+
+
+
+1.Matching chains
+
+2. Matching chains, different number of mentions
+    2.a. English longer chains
+    2.b. German longer chains
+3.English chain not in German
+4.German chain not in English
+
+Then at the very end, I aggregated counts for mention correspondences, and I print them (it's always english to german). I'm secretly hoping that you found some confirmation to your ideas here, or some other interesting pattern worth mentioning in the paper. For these correspondences, I'm considering only completely matching chains (case 1), as for chains with different number of mentions, there's no way (yet?) of knowing which mention correspond to which.
+
+
+Other aggregated counts are:
+
+number of matching chains
+number of english chains longer than german
+number of german chains longer than english
+number of english chains not in german
+number of german chains not in english
+
+
+Sharid
+
+
 ###############
+
+Thanks a lot for this Sharid,
+
+I added the overall statistics into the paper and work on the results section now.
+
+One issue about the document you sent. In the statistics of matching categories, we have sometimes antecedents that match a different category, e.g. pronoun-relative (np-antecedent to pronoun-relative 127). This looks strange and I couldn't find any case of it int he data above the statistics. Then, I noticed that pronominal antecedents have a tag 'pronoun-personal' instead of 'pronoun-antecedent', as in this example:
+
+English Chain: set_220 German Chain: set_279
+Mentions tokens:
+['a pink balloon', 'the pink one']
+['einen Luftballon', 'einen rosafarbenen', 'den rosafarbenen']
+Mentions types
+['np-antecedent', 'np-np']
+['pronoun-personal', 'np-nom-ellipsis', 'np-np']
+
+If we consider nominal chains only, then the antecedent can only be either np-antecedent or ''pronoun-antecedent. 
+
+I suppose, if there are other matches, then something is going wrong,maybe a wrong chain match?
+
+We can also sort out cases like this one:
+
+English Chain: empty German Chain: empty
+Mentions tokens:
+['it', 'it', 'it', 'it', 'it', 'it', 'it', 'it', 'it', 'It', 'it', 'it', 'It', 'it', 'it', 'it', 'they']
+['es', 'Dieses', 'es', 'es', 'es', 'es', 'Es', 'Es', 'es', 'es', 'Es', 'es']
+Mentions types
+['pronoun-pronoun', 'pronoun-pronoun', 'pronoun-pronoun', 'pronoun-pronoun', 'pronoun-pronoun', 'pronoun-pronoun', 'pronoun-pronoun', 'pronoun-pronoun', 'pronoun-pronoun', 'pronoun-pronoun', 'pronoun-pronoun', 'pronoun-pronoun', 'pronoun-pronoun', 'pronoun-pronoun', 'pronoun-pronoun', 'pronoun-pronoun', 'pronoun-personal']
+['pronoun-pronoun', 'pronoun-pronoun', 'pronoun-pronoun', 'pronoun-pronoun', 'pronoun-pronoun', 'pronoun-pronoun', 'pronoun-pronoun', 'pronoun-pronoun', 'pronoun-pronoun', 'pronoun-pronoun', 'pronoun-pronoun', 'pronoun-pronoun']
+
+I mentioned in one of the previous messages that if a chain is 'empty', this is more likely a case of pleonastic 'it' or 'es'. And we don't want to analyse them.
+
+Best,
+Katja
+############
 
 Statistics:
 matching chains
@@ -360,3 +431,32 @@ Wir brachten ihn zur Kernspintomographie , zur Computertomographie , wir überga
 relative vs. pronadv
 In so far as he was extending them , he was doing so asymmetrically , which she thought could mean that there was a tumor of some kind in action .
 [Soweit er sie überhaupt ausstreckte , tat er das so ungleichmäßig] , dass sie dachte , ein Tumor könnte möglicherweise [dafür] verantwortlich sein .
+
+German is more explicit (some kind of identity - concrete identity)
+Then a friend of a friend of mine had [a daughter] [who] was a dwarf... She was facing the question of what to do with [this child]... should she try to construct some kind of dwarf identity.
+Dann bekam die Freundin einer Freundin [eine kleinwüchsige Tochter]... Sie stand vor der Entscheidung , was sie mit [diesem Kind] tun sollte... Oder sollte sie versuchen , eine Art Kleinwüchsigenidentität für [sie] zu schaffen...
+
+
+############
+comapring with news
+###############
+DiscoMT
+total 1198
+matching 416 / 34,72%
+overlapping more english 157 / 13,11%
+overlapping more german 286 / 23,87%
+unpaired german chains 339 / 28,30%
+
+WMT news
+total 281
+matching 74 / 26,33%
+overlapping more english 42 / 14,95%
+overlapping more german 54 / 19,22%
+unpaired german chains 111 / 38,50%
+
+##########################
+Explicitation via relative:
+#########################
+DiscoMT:
+180 out of 339 = ca. 53\% 
+

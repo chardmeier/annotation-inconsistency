@@ -22,3 +22,7 @@ sloaicig@taito-login4 /wrk/sloaicig/incongruences : cat all_news.en europarl.en 
 
 I didn't include TED because the number of lines is different, and I don't have much time to check the details
 
+
+
+
+
