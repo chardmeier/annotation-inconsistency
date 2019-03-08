@@ -1,0 +1,2824 @@
+****************************************
+STATISTICS PER DOC
+../../testsuitewmt18/parcor-full/corpus//news/EN01_words.xml
+src chains: 6 nominal: 6
+src mentions: 40 nominal: 40
+src annotated words: 78 nominal: 78
+tgt chains: 6 nominal: 6
+tgt mentions: 39 nominal: 39
+tgt annotated words: 71 nominal: 71
+****************************************
+
+
+Matching chains ======>
+
+
+English Chain: set_23 German Chain: set_20
+Mentions tokens:
+["the victim 's brother", 'he', "The victim 's brother", 'Louis Galicia', 'Louis Galicia', 'Louis Galicia', 'Louis Galicia', 'he', 'his', 'Louis Galicia', 'he']
+['Der Bruder des Opfers', 'er', 'Der Bruder des Opfers', 'Louis Galicia', 'er', 'seinem', 'Louis Galicia', 'der Bruder', 'der', 'er', 'er']
+Mentions types
+['np-antecedent', 'pronoun-personal', 'np-np', 'np-apposition', 'np-np', 'np-np', 'np-np', 'pronoun-personal', 'pronoun-possessive', 'np-np', 'pronoun-personal']
+['np-antecedent', 'pronoun-relative', 'np-np', 'np-np', 'pronoun-personal', 'pronoun-possessive', 'np-np', 'np-np', 'pronoun-relative', 'pronoun-personal', 'pronoun-personal']
+
+
+English Chain: set_19 German Chain: set_6
+Mentions tokens:
+["San Francisco 's Sons & Daughters", 'Sons & Daughters', 'they']
+['Sons & Daughters Restaurant', 'des Sons & Daughters', 'sie']
+Mentions types
+['np-antecedent', 'np-np', 'pronoun-personal']
+['np-antecedent', 'np-np', 'pronoun-personal']
+
+
+English Chain: set_20 German Chain: set_10
+Mentions tokens:
+['A spokesperson for Sons & Daughters', 'the spokesperson']
+['Ein Sprecher des Sons & Daughters', 'der Sprecher']
+Mentions types
+['np-antecedent', 'np-np']
+['np-antecedent', 'np-np']
+
+
+English Chain: set_6 German Chain: set_8
+Mentions tokens:
+['a small team', 'that']
+['ein kleines Team', 'das']
+Mentions types
+['np-antecedent', 'pronoun-relative']
+['np-antecedent', 'pronoun-relative']
+
+
+English Chain: set_16 German Chain: set_21
+Mentions tokens:
+['that diamond in the rough', 'that']
+['dieser ungeschliffene Diamant', 'der']
+Mentions types
+['np-antecedent', 'pronoun-relative']
+['np-antecedent', 'pronoun-relative']
+
+
+Matching chains, different number of mentions ======>
+
+
+English longer chains ======>
+
+
+English Chain: set_15 German Chain: set_23
+Mentions tokens:
+['A 28-year-old chef', 'who', 'him', 'him', '28-year-old San Francisco resident Frank Galicia', 'The victim', 'Frank', 'his', 'his', 'he', 'Frank', 'Frank', 'him', 'He', 'he', 'He', 'His', 'He', 'He', 'he']
+['Ein 28-jähriger Koch', 'der', 'ihm', 'ihm', 'der 28 Jahre alte Frank Galicia', 'Frank', 'der', 'seinen', 'seinen', 'ihn', 'Frank', 'ihn', 'Er', 'er', 'Er', 'Seine', 'seiner', 'Er', 'Er']
+Mentions types
+['np-antecedent', 'pronoun-relative', 'pronoun-personal', 'pronoun-personal', 'np-np', 'np-np', 'np-np', 'pronoun-possessive', 'pronoun-possessive', 'pronoun-personal', 'np-np', 'np-np', 'pronoun-personal', 'pronoun-personal', 'pronoun-personal', 'pronoun-personal', 'pronoun-possessive', 'pronoun-personal', 'pronoun-personal', 'pronoun-personal']
+['np-antecedent', 'pronoun-relative', 'pronoun-personal', 'pronoun-personal', 'np-np', 'np-np', 'pronoun-relative', 'pronoun-possessive', 'pronoun-possessive', 'pronoun-personal', 'np-np', 'pronoun-personal', 'pronoun-personal', 'pronoun-personal', 'pronoun-personal', 'pronoun-possessive', 'pronoun-possessive', 'pronoun-personal', 'pronoun-personal']
+longertarget: relative pronoun
+shortertarget: Der Bruder des Opfers
+annoerror: not-annotated: Franks, in another chain: er
+
+German longer chains ======>
+
+
+English chain not in German ======>
+
+
+German chain not in English ======>
+
+
+****************************************
+STATISTICS PER DOC
+../../testsuitewmt18/parcor-full/corpus//news/EN03_words.xml
+src chains: 6 nominal: 5
+src mentions: 44 nominal: 42
+src annotated words: 122 nominal: 97
+tgt chains: 4 nominal: 4
+tgt mentions: 36 nominal: 36
+tgt annotated words: 88 nominal: 88
+****************************************
+
+
+Matching chains ======>
+
+
+English Chain: set_17 German Chain: set_2
+Mentions tokens:
+['the horse', 'it', 'its']
+['die Pferde', 'ihren', 'sie']
+Mentions types
+['np-antecedent', 'pronoun-personal', 'pronoun-possessive']
+['np-antecedent', 'pronoun-possessive', 'pronoun-personal']
+
+
+English Chain: set_19 German Chain: set_17
+Mentions tokens:
+['track athletes Hartwig Gauder', 'and Harald Schmitt', ', gymnast Eberhard Gienger', ', fencers Cornelia Hanisch', ', Alexander Putsch', 'and Arnd Schmitt', ', rower Peter-Michael Kolbe', 'bob-sleigh rider Meinhard Nehmer', ', judo player Frank Wieneke', ', show-jumper Alwin Schockemöhle', ', and , posthumously , handball player Erhard Wunderlich', 'these sport legends']
+['die Leichtathleten Hartwig Gauder', 'und Harald Schmitt', ', der Turner Eberhard Gienger', ', die Fechter Cornelia Hanisch ,', 'Alexander Pusch', 'und Arnd Schmitt', ', der Ruderer Peter-Michael Kolbe', ', Bob-Fahrer Meinhard Nehmer', ', der Judoka Frank Wieneke', ', der Springreiter Alwin Schockemöhle', 'und posthum der Handballer Erhard Wunderlich', 'dieser Sportlegenden']
+Mentions types
+['np-antecedent', 'np-antecedent', 'np-antecedent', 'np-antecedent', 'np-antecedent', 'np-antecedent', 'np-antecedent', 'np-antecedent', 'np-antecedent', 'np-antecedent', 'np-antecedent', 'np-np']
+['np-antecedent', 'np-antecedent', 'np-antecedent', 'np-antecedent', 'np-antecedent', 'np-antecedent', 'np-antecedent', 'np-antecedent', 'np-antecedent', 'np-antecedent', 'np-antecedent', 'np-np']
+
+
+English Chain: set_11 German Chain: set_8
+Mentions tokens:
+['This award', 'it']
+['Diese Auszeichnung', 'sie']
+Mentions types
+['np-antecedent', 'pronoun-personal']
+['np-antecedent', 'pronoun-personal']
+
+
+Matching chains, different number of mentions ======>
+
+
+English longer chains ======>
+
+
+English Chain: set_14 German Chain: set_18
+Mentions tokens:
+['Golfer Langer', 'His', 'Bernhard Langer', 'the 58-year-old', 'Bernhard Langer', 'Langer', 'his', "Germany 's best golfer of all time", 'his', 'He', 'his', 'he', 'Langer', 'He', 'The friendly sportsman', 'him', 'Langer', 'he', 'Langer', 'Langer', 'he', 'Bernhard Langer', 'his']
+['Golfer Langer', 'Seine', 'Bernhard Langer', 'den 58-Jährigen', 'Bernhard Langer', 'Langer', 'Deutschlands bester Golfer aller Zeiten', 'Er', 'seiner', 'er', 'Langer', 'dem Mann aus Anhausen', 'ihn', 'Langer', 'er', 'Langer', 'Langer', 'er', 'Bernhard Langer']
+Mentions types
+['np-antecedent', 'pronoun-possessive', 'np-np', 'np-np', 'np-np', 'np-np', 'pronoun-possessive', 'np-np', 'pronoun-possessive', 'pronoun-personal', 'pronoun-possessive', 'pronoun-personal', 'np-np', 'pronoun-personal', 'np-np', 'pronoun-personal', 'np-np', 'pronoun-personal', 'np-np', 'np-np', 'pronoun-personal', 'np-np', 'pronoun-possessive']
+['np-antecedent', 'pronoun-possessive', 'np-np', 'np-np', 'np-np', 'np-np', 'np-np', 'pronoun-personal', 'pronoun-possessive', 'pronoun-personal', 'np-np', 'np-np', 'pronoun-personal', 'np-np', 'pronoun-personal', 'np-np', 'np-np', 'pronoun-personal', 'np-np']
+shortertarget: his riding career vs. die Reitkarriere; On Saturday, [Germany 's best golfer of all time] - with 101 tournament wins under [his] belt vs. Am Samstag war [Deutschlands bester Golfer aller Zeiten] - 101 Turniersiege; [He] had been thoroughly convinced . vs. Der Grund war durchaus überzeugend .
+annoerror: not annotated the man from Anhausen
+
+German longer chains ======>
+
+
+English Chain: set_10 German Chain: set_18
+Mentions tokens:
+['the Sport Pyramid', 'it']
+['Golfer Langer', 'Seine', 'Bernhard Langer', 'den 58-Jährigen', 'Bernhard Langer', 'Langer', 'Deutschlands bester Golfer aller Zeiten', 'Er', 'seiner', 'er', 'Langer', 'dem Mann aus Anhausen', 'ihn', 'Langer', 'er', 'Langer', 'Langer', 'er', 'Bernhard Langer']
+Mentions types
+['np-antecedent', 'pronoun-personal']
+['np-antecedent', 'pronoun-possessive', 'np-np', 'np-np', 'np-np', 'np-np', 'np-np', 'pronoun-personal', 'pronoun-possessive', 'pronoun-personal', 'np-np', 'np-np', 'pronoun-personal', 'np-np', 'pronoun-personal', 'np-np', 'np-np', 'pronoun-personal', 'np-np']
+scripterror: shoud be English chain not in German (DE is original in this text)
+
+English chain not in German ======>
+
+
+German chain not in English ======>
+
+
+****************************************
+STATISTICS PER DOC
+../../testsuitewmt18/parcor-full/corpus//news/EN04_words.xml
+src chains: 14 nominal: 11
+src mentions: 67 nominal: 62
+src annotated words: 127 nominal: 108
+tgt chains: 14 nominal: 11
+tgt mentions: 60 nominal: 54
+tgt annotated words: 102 nominal: 80
+****************************************
+
+
+Matching chains ======>
+
+
+English Chain: set_16 German Chain: set_16
+Mentions tokens:
+['American jobs', 'They']
+['amerikanische Jobs', 'Die']
+Mentions types
+['np-antecedent', 'pronoun-personal']
+['np-antecedent', 'pronoun-demonstrative']
+
+
+English Chain: set_36 German Chain: set_15
+Mentions tokens:
+['One country', 'It', 'it']
+['die beiden Konkurrenten', 'beide', 'beide']
+Mentions types
+['np-antecedent', 'pronoun-personal', 'pronoun-personal']
+['np-antecedent', 'pronoun-personal', 'pronoun-personal']
+
+
+English Chain: set_7 German Chain: set_8
+Mentions tokens:
+['the state', 'it']
+['Der Staat', 'er']
+Mentions types
+['np-antecedent', 'pronoun-personal']
+['np-antecedent', 'pronoun-personal']
+
+
+Matching chains, different number of mentions ======>
+
+
+English longer chains ======>
+
+
+English Chain: set_39 German Chain: set_1
+Mentions tokens:
+['Clinton', 'Trump', 'Clinton and Trump', 'the two candidates', 'the two candidates', 'they', 'Neither', 'neither', 'they']
+['Clinton Trump', 'die beiden US-Präsidentschaftsbewerber', 'beide']
+Mentions types
+['np-antecedent', 'np-antecedent', 'np-np', 'np-np', 'np-np', 'pronoun-personal', 'pronoun-personal', 'pronoun-personal', 'pronoun-personal']
+['np-antecedent', 'np-np', 'pronoun-personal']
+annoerror: one chains vs. two chains, different chain start
+
+English Chain: set_27 German Chain: set_32
+Mentions tokens:
+['Clinton', 'Clinton', 'Hillary Clinton', 'Clinton', 'Clinton', 'she', 'they', 'Clinton', 'The Democratic candidate', 'Clinton', 'her', 'Clinton', 'she', 'She', 'Clinton', 'she', 'her']
+['Clinton', 'Hillary Clinton', 'Clinton', 'Clinton', 'sie', 'Clinton', 'Die demokratische Bewerberin', 'Clinton', 'ihrem', 'Clinton', 'Clinton', 'die', 'deren']
+Mentions types
+['np-antecedent', 'np-np', 'np-np', 'np-np', 'np-np', 'pronoun-personal', 'pronoun-personal', 'np-np', 'np-np', 'np-np', 'pronoun-possessive', 'np-np', 'pronoun-personal', 'pronoun-personal', 'np-np', 'pronoun-personal', 'pronoun-personal']
+['np-antecedent', 'np-np', 'np-np', 'np-np', 'pronoun-personal', 'np-np', 'np-np', 'np-np', 'pronoun-possessive', 'np-np', 'np-np', 'pronoun-relative', 'pronoun-demonstrative']
+annoerror: different chain start, wrong member 'they', 
+shortertarget: The current minimum wage of 7.25 US dollars] is a pittance , [she] says . vs. Der derzeitige Mindestlohn von 7,25 US-Dollar] sei ein Hungerlohn .
+
+English Chain: set_3 German Chain: set_15
+Mentions tokens:
+['the economy', 'its', 'it', 'its']
+['die beiden Konkurrenten', 'beide', 'beide']
+Mentions types
+['np-antecedent', 'pronoun-possessive', 'pronoun-personal', 'pronoun-possessive']
+['np-antecedent', 'pronoun-personal', 'pronoun-personal']
+scripterror: should be English chain not in German: Clinton wants to lead [the economy] to [its] death and regulate [it] to [its] death... vs. Clinton wolle die Wirtschaft zu Tode besteuern und zu Tode regulieren...
+
+German longer chains ======>
+
+
+English Chain: set_20 German Chain: set_19
+Mentions tokens:
+['The current minimum wage of 7.25 US dollars', 'it']
+['Der derzeitige Mindestlohn von 7,25 US-Dollar', 'Ihn', 'Der Mindestlohn', 'er']
+Mentions types
+['np-antecedent', 'pronoun-personal']
+['np-antecedent', 'pronoun-personal', 'np-np', 'pronoun-personal']
+annoerror: two chains in EN vs. one chain in DE 
+
+English Chain: set_32 German Chain: set_28
+Mentions tokens:
+['Trump', 'Trump', 'Donald Trump', 'Trump', 'he', 'He', 'Trump', 'He', 'Trump', 'Trump', 'Trump', 'he', 'Trump', 'he', 'he', 'Trump', 'His']
+['Trump', 'Donald Trump', 'Trump', 'er', 'Er', 'Trump', 'Er', 'er', 'Trump', 'Trump', 'Trump', 'er', 'Trump', 'er', 'er', 'Trump', 'der', 'Seine', 'ihm']
+Mentions types
+['np-np', 'pronoun-personal', 'np-np', 'np-antecedent', 'pronoun-personal', 'pronoun-personal', 'np-np', 'pronoun-personal', 'np-np', 'np-np', 'np-np', 'pronoun-personal', 'np-np', 'pronoun-personal', 'pronoun-personal', 'np-np', 'pronoun-possessive']
+['np-antecedent', 'np-np', 'np-np', 'pronoun-personal', 'pronoun-personal', 'np-np', 'pronoun-personal', 'pronoun-personal', 'np-np', 'np-np', 'np-np', 'pronoun-personal', 'np-np', 'pronoun-personal', 'pronoun-personal', 'np-np', 'pronoun-relative', 'pronoun-possessive', 'pronoun-personal']
+annoerror: different chain start, 
+longertarget: non-cohesive ellipsis: coordinated verb phase vs. clauses ; relative pronoun; moer explicit: [His] critics state that this will just increase the budgetary deficit vs. [Seine] Kritiker halten [ihm] vor, damit würde das Haushaltsdefizit nur noch größer.
+
+English Chain: set_9 German Chain: set_15
+Mentions tokens:
+['the tea party wing of the Republican party', 'which']
+['die beiden Konkurrenten', 'beide', 'beide']
+Mentions types
+['np-antecedent', 'pronoun-relative']
+['np-antecedent', 'pronoun-personal', 'pronoun-personal']
+scripterror: should be English chain not in German
+
+English Chain: set_1 German Chain: set_28
+Mentions tokens:
+["a fundamental philosophical reason for the differences between Donald Trump 's and Hillary Clinton 's economic policies", 'This']
+['Trump', 'Donald Trump', 'Trump', 'er', 'Er', 'Trump', 'Er', 'er', 'Trump', 'Trump', 'Trump', 'er', 'Trump', 'er', 'er', 'Trump', 'der', 'Seine', 'ihm']
+Mentions types
+['np-antecedent', 'pronoun-demonstrative']
+['np-antecedent', 'np-np', 'np-np', 'pronoun-personal', 'pronoun-personal', 'np-np', 'pronoun-personal', 'pronoun-personal', 'np-np', 'np-np', 'np-np', 'pronoun-personal', 'np-np', 'pronoun-personal', 'pronoun-personal', 'np-np', 'pronoun-relative', 'pronoun-possessive', 'pronoun-personal']
+scripterror: German set_2
+
+English Chain: set_23 German Chain: set_19
+Mentions tokens:
+['the minimum wage', 'it']
+['Der derzeitige Mindestlohn von 7,25 US-Dollar', 'Ihn', 'Der Mindestlohn', 'er']
+Mentions types
+['np-antecedent', 'pronoun-personal']
+['np-antecedent', 'pronoun-personal', 'np-np', 'pronoun-personal']
+annoerror: two chains in EN, one chain in DE
+
+English chain not in German ======>
+
+
+German chain not in English ======>
+
+
+German Chain: set_11
+Mentions tokens:
+['Infrastruktur', 'die']
+Mentions types
+['np-antecedent', 'pronoun-demonstrative']
+longertarget: generic in EN, speciifc in DE --> more explicit translation: Interestingly , they have similar views on infrastructure. There has to be investment in ifrastructure vs. Interessanterweise sind sich beide sehr nahe beim Thema [Infrastruktur]. In [die] müsse investiert werden...
+
+German Chain: set_2
+Mentions tokens:
+['ein grundsätzlicher , eher philosophischer Unterschied', 'Der']
+Mentions types
+['np-antecedent', 'pronoun-demonstrative']
+scripterror: English set_1
+
+German Chain: set_23
+Mentions tokens:
+['den Reichen', 'sie']
+Mentions types
+['np-antecedent', 'pronoun-personal']
+longertarget: explicitation: she wants the rich to pay more taxes vs. Clinton, die zumindest von [den Reichen] verlangen will, dass [sie] mehr Steuern zahlen...
+
+German Chain: set_3
+Mentions tokens:
+['die Rolle des Staates', 'die']
+Mentions types
+['np-antecedent', 'pronoun-personal']
+annoerror
+
+****************************************
+STATISTICS PER DOC
+../../testsuitewmt18/parcor-full/corpus//news/EN05_words.xml
+src chains: 22 nominal: 20
+src mentions: 86 nominal: 82
+src annotated words: 130 nominal: 106
+tgt chains: 21 nominal: 21
+tgt mentions: 74 nominal: 74
+tgt annotated words: 101 nominal: 101
+****************************************
+
+
+Matching chains ======>
+
+
+English Chain: set_40 German Chain: set_39
+Mentions tokens:
+['the seven district governments', 'they', 'they']
+['die sieben Bezirksregierungen', 'sie', 'ihrem']
+Mentions types
+['np-antecedent', 'pronoun-personal', 'pronoun-personal']
+['np-antecedent', 'pronoun-personal', 'pronoun-possessive']
+
+
+English Chain: set_21 German Chain: set_17
+Mentions tokens:
+['every woman', 'who', 'her']
+['Jede Frau', 'die', 'ihrer']
+Mentions types
+['np-antecedent', 'pronoun-relative', 'pronoun-possessive']
+['np-antecedent', 'pronoun-relative', 'pronoun-possessive']
+
+
+English Chain: set_42 German Chain: set_42
+Mentions tokens:
+['lone women', 'their']
+['Andrang', 'den']
+Mentions types
+['np-antecedent', 'pronoun-possessive']
+['np-antecedent', 'pronoun-relative']
+
+
+English Chain: set_41 German Chain: set_42
+Mentions tokens:
+['women', 'who']
+['Andrang', 'den']
+Mentions types
+['np-antecedent', 'pronoun-relative']
+['np-antecedent', 'pronoun-relative']
+
+
+English Chain: set_43 German Chain: set_40
+Mentions tokens:
+['Lower Bavaria', 'there']
+['Niederbayern', 'dort']
+Mentions types
+['np-antecedent', 'pronoun-demonstrative']
+['np-antecedent', 'pronoun-demonstrative']
+
+
+English Chain: set_2 German Chain: set_2
+Mentions tokens:
+['women', 'their', 'they', 'they']
+['Frauen', 'die', 'sie', 'sie']
+Mentions types
+['np-antecedent', 'pronoun-possessive', 'pronoun-personal', 'pronoun-personal']
+['np-antecedent', 'pronoun-relative', 'pronoun-personal', 'pronoun-personal']
+
+
+English Chain: set_6 German Chain: set_7
+Mentions tokens:
+['One woman', 'her', 'her']
+['ihren kleinen Sohn', 'Er', 'Seine']
+Mentions types
+['np-antecedent', 'pronoun-possessive', 'pronoun-possessive']
+['np-antecedent', 'pronoun-personal', 'pronoun-possessive']
+
+
+English Chain: set_32 German Chain: set_31
+Mentions tokens:
+['lone women', 'they']
+['Deutschland', 'hier']
+Mentions types
+['np-antecedent', 'pronoun-personal']
+['np-antecedent', 'pronoun-demonstrative']
+
+
+English Chain: set_11 German Chain: set_9
+Mentions tokens:
+['His mother', 'she', 'she', 'She']
+['Seine Mutter', 'sie', 'sie', 'Sie']
+Mentions types
+['np-antecedent', 'pronoun-personal', 'pronoun-personal', 'pronoun-personal']
+['np-antecedent', 'pronoun-personal', 'pronoun-personal', 'pronoun-personal']
+
+
+Matching chains, different number of mentions ======>
+
+
+English longer chains ======>
+
+
+English Chain: set_38 German Chain: set_37
+Mentions tokens:
+['Many women', 'they', 'they', 'they', 'they', 'they', 'them']
+['Viele Frauen', 'sie', 'sie', 'sie', 'sie']
+Mentions types
+['np-antecedent', 'pronoun-personal', 'pronoun-personal', 'pronoun-personal', 'pronoun-personal', 'pronoun-personal', 'pronoun-personal']
+['np-antecedent', 'pronoun-personal', 'pronoun-personal', 'pronoun-personal', 'pronoun-personal']
+longertarget: explicitation, more general (DE is orginal here): Or [they] can't bring themselves to talk about what [they] experienced because [they] are too ashamed. vs. Oder [sie] trauen sich nicht, offen über das Erlebte zu sprechen, weil die Scham zu groß ist.
+
+English Chain: set_19 German Chain: set_42
+Mentions tokens:
+['the centre', 'It', 'its', 'there']
+['Andrang', 'den']
+Mentions types
+['np-antecedent', 'pronoun-personal', 'pronoun-possessive', 'pronoun-demonstrative']
+['np-antecedent', 'pronoun-relative']
+scripterror: German set_15
+
+English Chain: set_23 German Chain: set_42
+Mentions tokens:
+['Men', 'they', 'they', 'their', 'their', 'them', 'them']
+['Andrang', 'den']
+Mentions types
+['np-antecedent', 'pronoun-personal', 'pronoun-personal', 'pronoun-possessive', 'pronoun-possessive', 'pronoun-personal', 'pronoun-personal']
+['np-antecedent', 'pronoun-relative']
+scripterror: German set_20
+
+English Chain: set_48 German Chain: set_46
+Mentions tokens:
+['Katrin Bahr', 'She', 'she', 'Bahr', 'she', 'Bahr', 'she', 'she', 'Bahr', 'Bahr']
+['Katrin Bahr', 'Sie', 'Bahr', 'sie', 'Bahr', 'Bahr', 'sie', 'Bahr', 'Bahr']
+Mentions types
+['np-antecedent', 'pronoun-personal', 'pronoun-personal', 'np-np', 'pronoun-personal', 'np-np', 'pronoun-personal', 'pronoun-personal', 'np-np', 'np-np']
+['np-antecedent', 'pronoun-personal', 'np-np', 'pronoun-personal', 'np-np', 'np-np', 'pronoun-personal', 'np-np', 'np-np']
+longertarget: non-cohesive ellipsis in DE, two sentences into one
+
+English Chain: set_16 German Chain: set_13
+Mentions tokens:
+['refugee women', 'their', 'who']
+['alleingeflüchtete Frauen', 'ihre']
+Mentions types
+['np-antecedent', 'pronoun-possessive', 'pronoun-relative']
+['np-antecedent', 'pronoun-possessive']
+longertarget: relative (in EN translation): who have made the journey alone vs. alleingeflüchtete
+
+English Chain: set_29 German Chain: set_29
+Mentions tokens:
+['Many women', 'they', 'their', 'they', 'them', 'they']
+['Erfahrung mit sexueller Gewalt , Zwangsehen , Ehrenmorden , Sklaverei oder Zwangsprostitution', 'Das', 'das', 'das']
+Mentions types
+['np-antecedent', 'pronoun-personal', 'pronoun-possessive', 'pronoun-personal', 'pronoun-personal', 'pronoun-personal']
+['np-antecedent', 'pronoun-demonstrative', 'pronoun-demonstrative', 'pronoun-demonstrative']
+scripterror: German set_37
+
+English Chain: set_46 German Chain: set_29
+Mentions tokens:
+['sexual violence', 'forced marriage', 'honour killings', 'slavery', 'forced prostitution', 'That', 'it', 'this']
+['Erfahrung mit sexueller Gewalt , Zwangsehen , Ehrenmorden , Sklaverei oder Zwangsprostitution', 'Das', 'das', 'das']
+Mentions types
+['np-antecedent', 'np-antecedent', 'np-antecedent', 'np-antecedent', 'np-antecedent', 'pronoun-demonstrative', 'pronoun-personal', 'pronoun-demonstrative']
+['np-antecedent', 'pronoun-demonstrative', 'pronoun-demonstrative', 'pronoun-demonstrative']
+antecedent: split antecedent vs. one antecedent because of the difference in the nominal phrase: In their home countries, they experienced [sexual violence] , [forced marriage] , [honour killings] , [slavery] or [forced prostitution]. In ihrer Heimat haben sie [Erfahrung mit sexueller Gewalt , Zwangsehen , Ehrenmorden , Sklaverei oder Zwangsprostitution] gemacht. I would annotated it as an event: [experienced ...] but then we have event in EN and entity in DE
+
+English Chain: set_8 German Chain: set_7
+Mentions tokens:
+['her little son', 'He', 'his', 'His']
+['ihren kleinen Sohn', 'Er', 'Seine']
+Mentions types
+['np-antecedent', 'pronoun-personal', 'pronoun-possessive', 'pronoun-possessive']
+['np-antecedent', 'pronoun-personal', 'pronoun-possessive']
+longertarget: possessive: mit großen Augen vs. his eyes wide
+
+German longer chains ======>
+
+
+English Chain: set_14 German Chain: set_12
+Mentions tokens:
+['The four women', 'They']
+['vier Frauen', 'Jede', 'Eine', 'Die vier Frauen', 'Sie']
+Mentions types
+['np-antecedent', 'pronoun-personal']
+['np-antecedent', 'pronoun-pronoun', 'pronoun-pronoun', 'np-np', 'pronoun-personal']
+annoerror: two chain in EN, one chain in DE
+
+English Chain: set_4 German Chain: set_12
+Mentions tokens:
+['Four women', 'them', 'them']
+['vier Frauen', 'Jede', 'Eine', 'Die vier Frauen', 'Sie']
+Mentions types
+['np-antecedent', 'pronoun-personal', 'pronoun-personal']
+['np-antecedent', 'pronoun-pronoun', 'pronoun-pronoun', 'np-np', 'pronoun-personal']
+annoerror: two chain in EN, one chain in DE
+
+English Chain: set_31 German Chain: set_30
+Mentions tokens:
+['the woman', 'their', 'they']
+['die Frauen', 'sie', 'ihren', 'sie']
+Mentions types
+['np-antecedent', 'pronoun-possessive', 'pronoun-personal']
+['np-antecedent', 'pronoun-personal', 'pronoun-possessive', 'pronoun-personal']
+shortertarget: participle clause in EN 
+
+English chain not in German ======>
+
+
+German chain not in English ======>
+
+
+German Chain: set_20
+Mentions tokens:
+['Männer', 'sie', 'ihnen', 'ihre', 'sie']
+Mentions types
+['np-antecedent', 'pronoun-personal', 'pronoun-personal', 'pronoun-possessive', 'pronoun-personal']
+scripterror: English set_23
+
+German Chain: set_43
+Mentions tokens:
+['Eine', 'ihren']
+Mentions types
+['pronoun-personal', 'pronoun-possessive']
+scripterror: English set_6
+
+German Chain: set_25
+Mentions tokens:
+['Frauen', 'Viele', 'sie', 'ihrer', 'sie', 'sie']
+Mentions types
+['np-antecedent', 'pronoun-pronoun', 'pronoun-personal', 'pronoun-possessive', 'pronoun-personal', 'pronoun-personal']
+scripterror: English set_29
+
+German Chain: set_15
+Mentions tokens:
+['die Einrichtung', 'sie', 'dort']
+Mentions types
+['np-antecedent', 'pronoun-personal', 'pronoun-demonstrative']
+scripterror: English set_19
+
+German Chain: set_41
+Mentions tokens:
+['einer Studie', 'die']
+Mentions types
+['np-antecedent', 'pronoun-relative']
+shortertarget: relative
+
+German Chain: set_4
+Mentions tokens:
+['ein Baby', 'das']
+Mentions types
+['np-antecedent', 'pronoun-relative']
+shortertarget: relative
+
+German Chain: set_33
+Mentions tokens:
+['Frauen', 'die']
+Mentions types
+['np-antecedent', 'pronoun-relative']
+shortertarget: relative
+
+****************************************
+STATISTICS PER DOC
+../../testsuitewmt18/parcor-full/corpus//news/EN07_words.xml
+src chains: 10 nominal: 9
+src mentions: 58 nominal: 56
+src annotated words: 97 nominal: 92
+tgt chains: 18 nominal: 16
+tgt mentions: 64 nominal: 60
+tgt annotated words: 117 nominal: 85
+****************************************
+
+
+Matching chains ======>
+
+
+English Chain: set_7 German Chain: set_5
+Mentions tokens:
+['relations with Russia', 'their']
+['die Beziehungen zu Russland', 'ihrem']
+Mentions types
+['np-antecedent', 'pronoun-possessive']
+['np-antecedent', 'pronoun-possessive']
+
+
+Matching chains, different number of mentions ======>
+
+
+English longer chains ======>
+
+
+English Chain: set_36 German Chain: set_23
+Mentions tokens:
+['Vladimir Putin', 'his', 'Mr Putin', 'he', 'his', 'Mr Putin', 'Mr Putin', 'he', 'his', 'Mr Putin', 'Mr Putin', 'he', 'Mr Putin', 'who', 'The Russian leader', 'Mr Putin']
+['Vladimir Putin', 'Putins', 'er', 'seine', 'der Staatschef Russlands', 'er', 'seinen', 'Putin', 'Putin', 'er', 'Putin', 'der', 'Der russische Staatschef', 'er', 'Putin']
+Mentions types
+['np-antecedent', 'pronoun-possessive', 'np-np', 'pronoun-personal', 'pronoun-possessive', 'np-np', 'np-np', 'pronoun-personal', 'pronoun-possessive', 'np-np', 'np-np', 'pronoun-personal', 'np-np', 'pronoun-relative', 'np-np', 'np-np']
+['np-antecedent', 'np-np', 'pronoun-personal', 'pronoun-possessive', 'np-np', 'pronoun-personal', 'pronoun-possessive', 'np-np', 'np-np', 'pronoun-personal', 'np-np', 'pronoun-relative', 'np-np', 'pronoun-personal', 'np-np']
+annoerror: both in EN and DE
+
+English Chain: set_33 German Chain: set_21
+Mentions tokens:
+['Ankara', 'Ankara', 'Ankara', 'Ankara', 'Ankara', 'it', 'Ankara']
+['den Westen', 'dessen']
+Mentions types
+['np-antecedent', 'np-np', 'pronoun-personal', 'np-np', 'np-np', 'pronoun-personal', 'np-np']
+['np-antecedent', 'pronoun-demonstrative']
+scripterror: German set_20
+
+English Chain: set_24 German Chain: set_27
+Mentions tokens:
+['the two presidents', 'they', 'their', 'they']
+['beide Präsidenten', 'sie', 'ihre']
+Mentions types
+['np-antecedent', 'pronoun-personal', 'pronoun-possessive', 'pronoun-personal']
+['np-antecedent', 'pronoun-personal', 'pronoun-possessive']
+shortertarget: reformulation: they vs. gemeinsam: There is no clear consensus on where [they] can seek common ground on Syria . vs. Es liegt kein eindeutiger Konsens darüber vor , wo ein gemeinsamer Nenner zu Syrien gefunden werden kann .
+
+German longer chains ======>
+
+
+English Chain: set_21 German Chain: set_10
+Mentions tokens:
+['Moscow', 'Moscow', 'Moscow', 'Moscow', 'which', 'its', 'Moscow', 'itself']
+['Recep Tayyip Erdogan', 'seinem', 'Er', 'Erdogan', 'sein', 'Erdogans', 'Er', 'Präsidenten Erdogan', 'Erdogan', 'er', 'er', 'seines', 'ihn', 'Der Präsident der Türkei']
+Mentions types
+['np-antecedent', 'np-np', 'np-np', 'np-np', 'pronoun-relative', 'pronoun-possessive', 'np-np', 'pronoun-reflexive']
+['np-antecedent', 'pronoun-possessive', 'pronoun-personal', 'np-np', 'pronoun-possessive', 'np-np', 'pronoun-personal', 'np-np', 'np-np', 'pronoun-personal', 'pronoun-personal', 'pronoun-possessive', 'pronoun-personal', 'np-np']
+scripterror: German set_25
+
+English Chain: set_19 German Chain: set_26
+Mentions tokens:
+['two countries', 'that']
+['zwei Länder', 'die', 'den beiden']
+Mentions types
+['np-antecedent', 'pronoun-relative']
+['np-antecedent', 'pronoun-relative', 'np-nom-ellipsis']
+annoerror: 'the two' missing
+
+English Chain: set_20 German Chain: set_10
+Mentions tokens:
+['major differences', 'one']
+['Recep Tayyip Erdogan', 'seinem', 'Er', 'Erdogan', 'sein', 'Erdogans', 'Er', 'Präsidenten Erdogan', 'Erdogan', 'er', 'er', 'seines', 'ihn', 'Der Präsident der Türkei']
+Mentions types
+['np-antecedent', 'pronoun-pronoun']
+['np-antecedent', 'pronoun-possessive', 'pronoun-personal', 'np-np', 'pronoun-possessive', 'np-np', 'pronoun-personal', 'np-np', 'np-np', 'pronoun-personal', 'pronoun-personal', 'pronoun-possessive', 'pronoun-personal', 'np-np']
+scripterror: should be English not in German
+
+English Chain: set_28 German Chain: set_10
+Mentions tokens:
+['Recep Tayyip Erdogan', 'his', 'He', 'Mr Erdogan', 'his', 'Mr Erdogan', 'He', 'President Erdogan', 'Erdogan', 'he', 'he', 'him', "Turkey 's president"]
+['Recep Tayyip Erdogan', 'seinem', 'Er', 'Erdogan', 'sein', 'Erdogans', 'Er', 'Präsidenten Erdogan', 'Erdogan', 'er', 'er', 'seines', 'ihn', 'Der Präsident der Türkei']
+Mentions types
+['np-antecedent', 'pronoun-possessive', 'pronoun-personal', 'np-np', 'pronoun-possessive', 'np-np', 'pronoun-personal', 'np-np', 'np-np', 'pronoun-personal', 'pronoun-personal', 'pronoun-personal', 'np-np']
+['np-antecedent', 'pronoun-possessive', 'pronoun-personal', 'np-np', 'pronoun-possessive', 'np-np', 'pronoun-personal', 'np-np', 'np-np', 'pronoun-personal', 'pronoun-personal', 'pronoun-possessive', 'pronoun-personal', 'np-np']
+longertarget: possessive
+
+English Chain: set_1 German Chain: set_10
+Mentions tokens:
+['a formal end to an eight-month long war of words and economic sanctions', 'this reconciliation']
+['Recep Tayyip Erdogan', 'seinem', 'Er', 'Erdogan', 'sein', 'Erdogans', 'Er', 'Präsidenten Erdogan', 'Erdogan', 'er', 'er', 'seines', 'ihn', 'Der Präsident der Türkei']
+Mentions types
+['np-antecedent', 'np-np']
+['np-antecedent', 'pronoun-possessive', 'pronoun-personal', 'np-np', 'pronoun-possessive', 'np-np', 'pronoun-personal', 'np-np', 'np-np', 'pronoun-personal', 'pronoun-personal', 'pronoun-possessive', 'pronoun-personal', 'np-np']
+scripterror: English chain not in German
+
+English chain not in German ======>
+
+
+German chain not in English ======>
+
+
+German Chain: set_18
+Mentions tokens:
+['Charterflügen', 'die']
+Mentions types
+['np-antecedent', 'pronoun-relative']
+annoerror: which should be annotated
+
+German Chain: set_20
+Mentions tokens:
+['Ankara', 'es']
+Mentions types
+['np-antecedent', 'pronoun-personal']
+scripterror: English set_33
+
+German Chain: set_31
+Mentions tokens:
+['Reiseveranstalter', 'und Chartergesellschaften', 'Sie']
+Mentions types
+['np-antecedent', 'np-antecedent', 'pronoun-personal']
+annoerror: non annotated in EN
+
+German Chain: set_9
+Mentions tokens:
+['Gebieten Syriens', 'die']
+Mentions types
+['np-antecedent', 'pronoun-personal']
+longertarget: relative
+
+German Chain: set_13
+Mentions tokens:
+['die Entschuldigung', 'die']
+Mentions types
+['np-antecedent', 'pronoun-personal']
+longertarget: relative
+
+German Chain: set_14
+Mentions tokens:
+['alle Freunde', 'die']
+Mentions types
+['np-antecedent', 'pronoun-possessive']
+longertarget: relative
+
+German Chain: set_0
+Mentions tokens:
+['eine Geste', 'die']
+Mentions types
+['np-antecedent', 'pronoun-relative']
+annoerror
+
+German Chain: set_25
+Mentions tokens:
+['Moskau', 'das']
+Mentions types
+['np-antecedent', 'pronoun-relative']
+scripterror: English set_21
+
+German Chain: set_28
+Mentions tokens:
+['ihre Differenzen', 'diese']
+Mentions types
+['np-antecedent', 'pronoun-demonstrative']
+annoerror
+
+German Chain: set_8
+Mentions tokens:
+['Das Vergehen', 'es']
+Mentions types
+['np-antecedent', 'pronoun-personal']
+longertarget: nonfinte into finite: The offence was even greater , coming from a supposed friend . vs. [Das Vergehen] war sogar noch größer , da [es] von einem vermeintlichen Freund begangen wurde .
+
+****************************************
+STATISTICS PER DOC
+../../testsuitewmt18/parcor-full/corpus//news/EN08_words.xml
+src chains: 7 nominal: 6
+src mentions: 26 nominal: 25
+src annotated words: 49 nominal: 48
+tgt chains: 8 nominal: 8
+tgt mentions: 28 nominal: 28
+tgt annotated words: 61 nominal: 61
+****************************************
+
+
+Matching chains ======>
+
+
+English Chain: set_3 German Chain: set_2
+Mentions tokens:
+['eight years ago', 'that time']
+['vor acht Jahren', 'dieser Zeit']
+Mentions types
+['np-antecedent', 'np-np']
+['np-antecedent', 'np-np']
+
+
+English Chain: set_6 German Chain: set_5
+Mentions tokens:
+['Mr McEwan', 'He']
+['McEwan', 'Er']
+Mentions types
+['np-antecedent', 'pronoun-personal']
+['np-antecedent', 'pronoun-personal']
+
+
+English Chain: set_5 German Chain: set_4
+Mentions tokens:
+['other , smaller brands for private banking', 'which']
+['andere , kleinere Marken für das Privatkundengeschäft', 'die']
+Mentions types
+['np-antecedent', 'pronoun-relative']
+['np-antecedent', 'pronoun-relative']
+
+
+English Chain: set_7 German Chain: set_7
+Mentions tokens:
+['Each one of those brands', 'their']
+['Jede dieser Marken', 'ihren']
+Mentions types
+['np-antecedent', 'pronoun-possessive']
+['np-antecedent', 'pronoun-possessive']
+
+
+Matching chains, different number of mentions ======>
+
+
+English longer chains ======>
+
+
+English Chain: set_9 German Chain: set_16
+Mentions tokens:
+['The brand RBS', 'the RBS', 'It', 'it', 'RBS', 'It', 'it', 'RBS', 'The RBS brand', 'RBS', 'RBS', 'it', 'its', 'it', 'its']
+['die Marke RBS', 'RBS', 'Die Marke RSB', 'RBS', 'RBS', 'es', 'es', 'seinem']
+Mentions types
+['np-antecedent', 'np-np', 'pronoun-personal', 'pronoun-personal', 'np-np', 'pronoun-personal', 'pronoun-personal', 'np-np', 'np-np', 'np-np', 'np-np', 'pronoun-personal', 'pronoun-possessive', 'pronoun-personal', 'pronoun-possessive']
+['np-antecedent', 'np-np', 'np-np', 'np-np', 'np-np', 'pronoun-personal', 'pronoun-personal', 'pronoun-possessive']
+annoerror: different chains in EN and DE
+
+German longer chains ======>
+
+
+English Chain: set_1 German Chain: set_12
+Mentions tokens:
+["the bank 's global ambitions", 'them']
+['Royal Bank of Scotland', 'Die Royal Bank of Scotland', 'der Bank', 'Die Bank', 'sie', 'Sie', 'sie', 'Die Royal Bank of Scotland']
+Mentions types
+['np-antecedent', 'pronoun-personal']
+['np-antecedent', 'np-np', 'np-np', 'np-np', 'pronoun-personal', 'pronoun-personal', 'pronoun-personal', 'np-np']
+scripterror: should be English chain not in DE
+
+English chain not in German ======>
+
+
+German chain not in English ======>
+
+
+German Chain: set_6
+Mentions tokens:
+['der Marke', 'der']
+Mentions types
+['np-antecedent', 'pronoun-relative']
+annoerror: the one that
+
+German Chain: set_13
+Mentions tokens:
+['der BBC Scotland', 'der BBC Scotland']
+Mentions types
+['np-antecedent', 'np-np']
+annoerror
+
+****************************************
+STATISTICS PER DOC
+../../testsuitewmt18/parcor-full/corpus//news/EN09_words.xml
+src chains: 4 nominal: 3
+src mentions: 47 nominal: 45
+src annotated words: 66 nominal: 60
+tgt chains: 9 nominal: 8
+tgt mentions: 61 nominal: 59
+tgt annotated words: 95 nominal: 84
+****************************************
+
+
+Matching chains ======>
+
+
+English Chain: set_10 German Chain: set_12
+Mentions tokens:
+['retired 20-time champion Sir Anthony McCoy', 'who']
+['Sir Anthony McCoy', 'der']
+Mentions types
+['np-antecedent', 'pronoun-relative']
+['np-antecedent', 'pronoun-relative']
+
+
+Matching chains, different number of mentions ======>
+
+
+English longer chains ======>
+
+
+English Chain: set_8 German Chain: set_8
+Mentions tokens:
+['Newmarket', 'this', 'It', 'it', 'it']
+['einen Meilenstein', 'den Meilenstein', 'diesen Meilenstein', 'den']
+Mentions types
+['np-antecedent', 'pronoun-demonstrative', 'pronoun-personal', 'pronoun-personal', 'pronoun-personal']
+['np-antecedent', 'np-np', 'np-np', 'pronoun-relative']
+scripterror: should English not in German which is not annotated - not annotated, then it-it-it=es-es-es maybe peolnastic?
+
+German longer chains ======>
+
+
+English Chain: set_4 German Chain: set_38
+Mentions tokens:
+['Frankie Dettori', 'Dettori', 'him', 'Jockey Frankie Dettori', 'his', 'He', 'his', 'his', 'The 45-year-old Italian', 'He', 'Three-time champion jockey Dettori', 'who', 'Dettori', 'he', 'Frankie', 'he', 'him', 'He', 'his', 'him', 'He', 'his', 'Frankie', 'he', 'he', 'Frankie', 'He', 'he', 'Frankie Dettori', 'Frankie Dettori', 'his', 'he', 'he', 'he', 'his', 'he', 'Dettori', 'he']
+['Frankie Dettori', 'seinen', 'Dettori', 'ihm', 'Der Jockey Frankie Dettori', 'seinen', 'Er', 'seiner', 'seinem', 'Der 45-jährige Italiener', 'Er', 'Der dreimalige Sieger Dettori', 'der', 'Dettori', 'er', 'Frankie', 'er', 'ihm', 'Er', 'sein', 'ihn', 'Er', 'sein', 'Frankie', 'er', 'er', 'Frankie', 'Er', 'er', 'Frankie Dettori', 'Frankie Dettori', 'seiner', 'er', 'er', 'er', 'seiner', 'er', 'seinen', 'seiner', 'er', 'Dettori', 'er', 'seinem']
+Mentions types
+['np-antecedent', 'np-np', 'pronoun-personal', 'np-np', 'pronoun-possessive', 'pronoun-personal', 'pronoun-possessive', 'pronoun-possessive', 'np-np', 'pronoun-personal', 'np-np', 'pronoun-relative', 'np-np', 'pronoun-personal', 'np-np', 'pronoun-personal', 'pronoun-personal', 'pronoun-personal', 'pronoun-possessive', 'pronoun-personal', 'pronoun-personal', 'pronoun-possessive', 'np-np', 'pronoun-personal', 'pronoun-personal', 'np-np', 'pronoun-personal', 'pronoun-personal', 'np-np', 'np-np', 'pronoun-possessive', 'pronoun-personal', 'pronoun-personal', 'pronoun-personal', 'pronoun-possessive', 'pronoun-personal', 'np-np', 'pronoun-personal']
+['np-antecedent', 'pronoun-possessive', 'np-np', 'pronoun-personal', 'np-np', 'pronoun-possessive', 'pronoun-personal', 'pronoun-possessive', 'pronoun-possessive', 'np-np', 'pronoun-personal', 'np-np', 'pronoun-relative', 'np-np', 'pronoun-personal', 'np-np', 'pronoun-personal', 'pronoun-personal', 'pronoun-personal', 'pronoun-possessive', 'pronoun-personal', 'pronoun-personal', 'pronoun-possessive', 'np-np', 'pronoun-personal', 'pronoun-personal', 'np-np', 'pronoun-personal', 'pronoun-personal', 'np-np', 'np-np', 'pronoun-possessive', 'pronoun-personal', 'pronoun-personal', 'pronoun-personal', 'pronoun-possessive', 'pronoun-personal', 'pronoun-possessive', 'pronoun-possessive', 'pronoun-personal', 'np-np', 'pronoun-personal', 'pronoun-possessive']
+longertarget: possessive
+
+English chain not in German ======>
+
+
+German chain not in English ======>
+
+
+German Chain: set_18
+Mentions tokens:
+['sein taktischer Intellekt', 'der']
+Mentions types
+['np-antecedent', 'pronoun-relative']
+annoerror
+
+German Chain: set_1
+Mentions tokens:
+['einem Double', 'der']
+Mentions types
+['np-antecedent', 'pronoun-relative']
+longertarget: relative
+
+German Chain: set_5
+Mentions tokens:
+['Predilection', 'die']
+Mentions types
+['np-antecedent', 'pronoun-relative']
+longertarget: relative
+
+German Chain: set_7
+Mentions tokens:
+['der sechste Jockey', 'der']
+Mentions types
+['np-antecedent', 'pronoun-relative']
+longertarget: relative
+
+German Chain: set_26
+Mentions tokens:
+['Er hat eine lebendige Persönlichkeit', 'was']
+Mentions types
+['np-antecedent', 'pronoun-relative']
+scripterror: English set_18
+
+****************************************
+STATISTICS PER DOC
+../../testsuitewmt18/parcor-full/corpus//news/EN10_words.xml
+src chains: 5 nominal: 4
+src mentions: 49 nominal: 48
+src annotated words: 87 nominal: 86
+tgt chains: 11 nominal: 10
+tgt mentions: 64 nominal: 62
+tgt annotated words: 102 nominal: 92
+****************************************
+
+
+Matching chains ======>
+
+
+English Chain: set_28 German Chain: set_41
+Mentions tokens:
+["Russia 's Putin", 'Russian President Vladimir Putin', 'his', 'Mr Putin', 'Mr Putin', 'Mr Putin', 'Mr Putin', 'Vladimir Putin', 'him', 'President Putin', 'Mr Putin', 'Mr Putin', 'Mr Putin', 'his', 'Mr Putin', 'he', 'he', 'Mr Putin', 'Mr Putin', 'Putin', 'Mr Putin']
+['Russlands Putin', 'Der russische Präsident Vladimir Putin', 'seinen', 'Putin', 'Putin', 'Putin', 'Vladimir Putins', 'er', 'Präsident Putin', 'Putin', 'Putin', 'Putin', 'seinem', 'Putin', 'er', 'er', 'Putins', 'Putins', 'Putins', 'Putin', 'er']
+Mentions types
+['np-antecedent', 'np-np', 'pronoun-possessive', 'np-np', 'np-np', 'np-np', 'np-np', 'np-np', 'pronoun-personal', 'np-np', 'np-np', 'np-np', 'np-np', 'pronoun-possessive', 'np-np', 'pronoun-personal', 'pronoun-personal', 'np-np', 'np-np', 'np-np', 'np-np']
+['np-antecedent', 'np-np', 'pronoun-possessive', 'np-np', 'np-np', 'np-np', 'np-np', 'pronoun-personal', 'np-np', 'np-np', 'np-np', 'np-np', 'pronoun-possessive', 'np-np', 'pronoun-personal', 'pronoun-personal', 'np-np', 'np-np', 'np-np', 'np-np', 'pronoun-personal']
+
+
+Matching chains, different number of mentions ======>
+
+
+English longer chains ======>
+
+
+English Chain: set_27 German Chain: set_38
+Mentions tokens:
+['chief of staff Sergei Ivanov', 'Sergei Ivanov', 'Mr Ivanov', 'The 63-year-old', 'Ivanov', 'his', 'Ivanov', 'his', 'Mr Ivanov', 'him', 'the chief of staff', 'his', 'Mr Ivanov', 'Mr Ivanov', 'He', 'He', 'Mr Ivanov', 'Mr Ivanov', 'Mr Ivanov']
+['Stabschef Sergei Ivanov', 'Ivanov', 'Der 63-Jährige', 'Ivanovs', 'seinen', 'Ivanovs', 'seinem', 'Ivanov', 'seinen', 'seinen', 'Sergei Ivanov', 'er', 'seinen', 'Ivanov', 'Ivanov', 'er', 'Er', 'Ivanov']
+Mentions types
+['np-antecedent', 'np-np', 'np-np', 'np-np', 'np-np', 'pronoun-possessive', 'np-np', 'pronoun-possessive', 'np-np', 'pronoun-personal', 'np-np', 'pronoun-possessive', 'np-np', 'np-np', 'pronoun-personal', 'pronoun-personal', 'np-np', 'np-np', 'np-np']
+['np-antecedent', 'np-np', 'np-np', 'np-np', 'pronoun-possessive', 'np-np', 'pronoun-possessive', 'np-np', 'pronoun-possessive', 'pronoun-possessive', 'np-np', 'pronoun-personal', 'pronoun-pronoun', 'np-np', 'np-np', 'pronoun-personal', 'pronoun-personal', 'np-np']
+annoerror: both in EN and DE
+
+German longer chains ======>
+
+
+English Chain: set_21 German Chain: set_38
+Mentions tokens:
+['Anton Vaino', 'Mr Vaino', 'he', 'he', 'he', 'Mr Vaino']
+['Stabschef Sergei Ivanov', 'Ivanov', 'Der 63-Jährige', 'Ivanovs', 'seinen', 'Ivanovs', 'seinem', 'Ivanov', 'seinen', 'seinen', 'Sergei Ivanov', 'er', 'seinen', 'Ivanov', 'Ivanov', 'er', 'Er', 'Ivanov']
+Mentions types
+['np-antecedent', 'np-np', 'pronoun-personal', 'pronoun-personal', 'pronoun-personal', 'np-np']
+['np-antecedent', 'np-np', 'np-np', 'np-np', 'pronoun-possessive', 'np-np', 'pronoun-possessive', 'np-np', 'pronoun-possessive', 'pronoun-possessive', 'np-np', 'pronoun-personal', 'pronoun-pronoun', 'np-np', 'np-np', 'pronoun-personal', 'pronoun-personal', 'np-np']
+scripterror: German set_8
+
+English Chain: set_6 German Chain: set_38
+Mentions tokens:
+['Sergei Ivanov', 'he']
+['Stabschef Sergei Ivanov', 'Ivanov', 'Der 63-Jährige', 'Ivanovs', 'seinen', 'Ivanovs', 'seinem', 'Ivanov', 'seinen', 'seinen', 'Sergei Ivanov', 'er', 'seinen', 'Ivanov', 'Ivanov', 'er', 'Er', 'Ivanov']
+Mentions types
+['np-antecedent', 'pronoun-personal']
+['np-antecedent', 'np-np', 'np-np', 'np-np', 'pronoun-possessive', 'np-np', 'pronoun-possessive', 'np-np', 'pronoun-possessive', 'pronoun-possessive', 'np-np', 'pronoun-personal', 'pronoun-pronoun', 'np-np', 'np-np', 'pronoun-personal', 'pronoun-personal', 'np-np']
+annoerror: should be part of the other chain
+
+English chain not in German ======>
+
+
+German chain not in English ======>
+
+
+German Chain: set_18
+Mentions tokens:
+['ein Mann', 'der']
+Mentions types
+['np-antecedent', 'pronoun-relative']
+longertarget: relative
+
+German Chain: set_20
+Mentions tokens:
+['seinen Bemerkungen an Putin', 'die']
+Mentions types
+['np-antecedent', 'pronoun-relative']
+longertarget: relative
+
+German Chain: set_15
+Mentions tokens:
+['einem Treffen mit Präsident Putin', 'das']
+Mentions types
+['np-antecedent', 'pronoun-relative']
+longertarget: relative
+
+German Chain: set_16
+Mentions tokens:
+['Sergei Ivanov Vladimir Putins', 'beide Männer']
+Mentions types
+['np-antecedent', 'np-not sure. help!']
+annoerror: both men should be annotated
+
+German Chain: set_8
+Mentions tokens:
+['Anton Vaino', 'der', 'Vaino', 'er', 'seinen', 'er', 'seine', 'er']
+Mentions types
+['np-antecedent', 'pronoun-relative', 'np-np', 'pronoun-personal', 'pronoun-possessive', 'pronoun-personal', 'pronoun-possessive', 'pronoun-personal']
+scripterror: English set_21
+
+German Chain: set_10
+Mentions tokens:
+['der Regierung', 'Ihre', 'Ihrer']
+Mentions types
+['np-antecedent', 'pronoun-possessive', 'pronoun-possessive']
+annoerror: interpretation of 'ihre'
+
+German Chain: set_23
+Mentions tokens:
+['des Bundessicherheitsdienstes ( FSB )', 'der']
+Mentions types
+['np-antecedent', 'pronoun-relative']
+annoerror: which not annotated
+
+German Chain: set_26
+Mentions tokens:
+['fünf Leuten', 'denen']
+Mentions types
+['np-antecedent', 'pronoun-relative']
+longertarget: relative
+
+****************************************
+STATISTICS PER DOC
+../../testsuitewmt18/parcor-full/corpus//news/EN13_words.xml
+src chains: 8 nominal: 5
+src mentions: 22 nominal: 17
+src annotated words: 71 nominal: 47
+tgt chains: 13 nominal: 9
+tgt mentions: 27 nominal: 19
+tgt annotated words: 91 nominal: 45
+****************************************
+
+
+Matching chains ======>
+
+
+English Chain: set_1 German Chain: set_3
+Mentions tokens:
+['Economy Secretary Keith Brown', 'He']
+['Wirtschaftsminister Keith Brown', 'Er']
+Mentions types
+['np-antecedent', 'pronoun-personal']
+['np-antecedent', 'pronoun-personal']
+
+
+English Chain: set_2 German Chain: set_1
+Mentions tokens:
+['the closure between the viaduct and bridge deck', 'this closure']
+['vier Verschließungen der " Deckgebläse "', 'die']
+Mentions types
+['np-antecedent', 'np-np']
+['np-antecedent', 'pronoun-relative']
+
+
+English Chain: set_9 German Chain: set_9
+Mentions tokens:
+['the last road deck section', 'it']
+['des letzten Straßendeckabschnitts', 'dessen']
+Mentions types
+['np-antecedent', 'pronoun-personal']
+['np-antecedent', 'pronoun-personal']
+
+
+English Chain: set_7 German Chain: set_1
+Mentions tokens:
+['the final section of deck', 'its']
+['vier Verschließungen der " Deckgebläse "', 'die']
+Mentions types
+['np-antecedent', 'pronoun-possessive']
+['np-antecedent', 'pronoun-relative']
+
+
+Matching chains, different number of mentions ======>
+
+
+English longer chains ======>
+
+
+English Chain: set_10 German Chain: set_2
+Mentions tokens:
+['Queensferry Crossing', 'Queensferry Crossing', 'the bridge', 'It', 'The bridge section from Fife', 'It', 'the bridge', 'the Queensferry Crossing', 'the bridge']
+['Der Brückenabschnitt von Fife', 'Er']
+Mentions types
+['np-antecedent', 'np-np', 'np-np', 'pronoun-personal', 'np-np', 'pronoun-personal', 'np-np', 'np-np', 'np-np']
+['np-antecedent', 'pronoun-personal']
+annoerror
+
+German longer chains ======>
+
+
+English chain not in German ======>
+
+
+German chain not in English ======>
+
+
+German Chain: set_4
+Mentions tokens:
+['über 30.000 Tonnen Beton und Stahl', 'die']
+Mentions types
+['np-antecedent', 'pronoun-relative']
+longertarget: relative
+
+German Chain: set_6
+Mentions tokens:
+['79 % der gesamten Brückendecks', 'ihrem']
+Mentions types
+['np-antecedent', 'pronoun-possessive']
+longertarget: possessive
+
+German Chain: set_5
+Mentions tokens:
+['eine heikle Tätigkeit', 'die']
+Mentions types
+['np-antecedent', 'pronoun-relative']
+longertarget: relative
+
+German Chain: set_8
+Mentions tokens:
+['das gesamte Deck', 'seinen']
+Mentions types
+['np-antecedent', 'pronoun-possessive']
+longertarget: possessive 
+
+German Chain: set_12
+Mentions tokens:
+['die Toleranzen', 'die', 'sie']
+Mentions types
+['np-antecedent', 'pronoun-relative', 'pronoun-personal']
+longertarget: relative and personal / optional explicitation
+
+****************************************
+STATISTICS PER DOC
+../../testsuitewmt18/parcor-full/corpus//news/EN16_words.xml
+src chains: 14 nominal: 9
+src mentions: 32 nominal: 21
+src annotated words: 112 nominal: 63
+tgt chains: 11 nominal: 6
+tgt mentions: 23 nominal: 13
+tgt annotated words: 79 nominal: 28
+****************************************
+
+
+Matching chains ======>
+
+
+English Chain: set_0 German Chain: set_10
+Mentions tokens:
+['older homes', 'that']
+['die CDU', 'Die']
+Mentions types
+['np-antecedent', 'pronoun-relative']
+['np-antecedent', 'pronoun-demonstrative']
+
+
+English Chain: set_1 German Chain: set_0
+Mentions tokens:
+['investors', 'who']
+['Investoren', 'die']
+Mentions types
+['np-antecedent', 'pronoun-relative']
+['np-antecedent', 'pronoun-relative']
+
+
+English Chain: set_5 German Chain: set_10
+Mentions tokens:
+['thought must be given to putting homes back into a price maintenance scenario', 'This']
+['die CDU', 'Die']
+Mentions types
+['np-antecedent', 'pronoun-demonstrative']
+['np-antecedent', 'pronoun-demonstrative']
+
+
+English Chain: set_7 German Chain: set_10
+Mentions tokens:
+['1800 homes', 'their']
+['die CDU', 'Die']
+Mentions types
+['np-antecedent', 'pronoun-possessive']
+['np-antecedent', 'pronoun-demonstrative']
+
+
+English Chain: set_3 German Chain: set_6
+Mentions tokens:
+['an additional 1300 low-cost homes', 'which']
+['weiteren rund 1300 günstigen Wohnungen', 'deren']
+Mentions types
+['np-antecedent', 'pronoun-relative']
+['np-antecedent', 'pronoun-personal']
+
+
+English Chain: set_12 German Chain: set_10
+Mentions tokens:
+["an `` action plan for homes ''", 'it']
+['die CDU', 'Die']
+Mentions types
+['np-antecedent', 'pronoun-personal']
+['np-antecedent', 'pronoun-demonstrative']
+
+
+Matching chains, different number of mentions ======>
+
+
+English longer chains ======>
+
+
+English Chain: set_2 German Chain: set_3
+Mentions tokens:
+['A new municipal programme to promote the construction of homes', 'which', 'which']
+['Ein neues städtisches Wohnungsbau-Förderprogramm', 'das']
+Mentions types
+['np-antecedent', 'pronoun-relative', 'pronoun-relative']
+['np-antecedent', 'pronoun-relative']
+longertarget: DE is orig, two relatives, because two clauses instead of one
+
+English Chain: set_4 German Chain: set_6
+Mentions tokens:
+['the loss of an additional 1300 low-cost homes', 'This', 'this']
+['weiteren rund 1300 günstigen Wohnungen', 'deren']
+Mentions types
+['np-antecedent', 'pronoun-demonstrative', 'pronoun-demonstrative']
+['np-antecedent', 'pronoun-personal']
+annoerror
+
+English Chain: set_14 German Chain: set_10
+Mentions tokens:
+['The CDU', 'the CDU', 'they']
+['die CDU', 'Die']
+Mentions types
+['np-antecedent', 'np-np', 'pronoun-personal']
+['np-antecedent', 'pronoun-demonstrative']
+annoerror
+
+German longer chains ======>
+
+
+English chain not in German ======>
+
+
+German chain not in English ======>
+
+
+German Chain: set_12
+Mentions tokens:
+['privaten Flächen', 'solchen Flächen']
+Mentions types
+['np-antecedent', 'np-np']
+annoerror: private ground - those spaces
+
+German Chain: set_13
+Mentions tokens:
+['günstige Wohnungen', 'die günstigen Wohnungen', 'Die günstigen Wohnungen']
+Mentions types
+['np-antecedent', 'np-np', 'np-np']
+annoerror
+
+****************************************
+STATISTICS PER DOC
+../../testsuitewmt18/parcor-full/corpus//news/EN17_words.xml
+src chains: 10 nominal: 9
+src mentions: 33 nominal: 31
+src annotated words: 64 nominal: 62
+tgt chains: 21 nominal: 17
+tgt mentions: 53 nominal: 44
+tgt annotated words: 123 nominal: 76
+****************************************
+
+
+Matching chains ======>
+
+
+English Chain: set_2 German Chain: set_3
+Mentions tokens:
+['the massive response', 'which']
+['die massive Nachfrage', 'die']
+Mentions types
+['np-antecedent', 'pronoun-relative']
+['np-antecedent', 'pronoun-relative']
+
+
+English Chain: set_6 German Chain: set_19
+Mentions tokens:
+['smartphone apps like Fitbit', 'they']
+['Smartphone-Apps wie Fitbit', 'sie']
+Mentions types
+['np-antecedent', 'pronoun-personal']
+['np-antecedent', 'pronoun-personal']
+
+
+English Chain: set_5 German Chain: set_12
+Mentions tokens:
+['The company', 'it']
+['Das Unternehmen', 'es']
+Mentions types
+['np-antecedent', 'pronoun-personal']
+['np-antecedent', 'pronoun-personal']
+
+
+English Chain: set_8 German Chain: set_20
+Mentions tokens:
+['more games', 'that']
+['mehr Spiele', 'die']
+Mentions types
+['np-antecedent', 'pronoun-relative']
+['np-antecedent', 'pronoun-relative']
+
+
+Matching chains, different number of mentions ======>
+
+
+English longer chains ======>
+
+
+English Chain: set_15 German Chain: set_27
+Mentions tokens:
+['Pokémon Go', 'Pokemon Go', 'Pokémon Go', 'it', 'this new game', 'Pokémon Go', 'it', 'the game', 'the game', 'the game', 'Pokémon Go', 'Pokémon Go', 'this game', 'Pokmeon']
+['Pokémon Go', 'Pokemon Go', 'Pokémon Go', 'es', 'das Spiel', 'Pokémon Go', 'Pokémon Go', 'es']
+Mentions types
+['np-antecedent', 'np-np', 'np-np', 'pronoun-personal', 'np-np', 'np-np', 'pronoun-personal', 'np-np', 'np-np', 'np-np', 'np-np', 'np-np', 'np-np', 'np-np']
+['np-antecedent', 'np-np', 'np-np', 'pronoun-personal', 'np-np', 'np-np', 'np-np', 'pronoun-personal']
+
+
+German longer chains ======>
+
+
+English Chain: set_0 German Chain: set_23
+Mentions tokens:
+['teenagers and children', 'their']
+['Teenager', 'und Kind', 'ihre']
+Mentions types
+['np-antecedent', 'pronoun-possessive']
+['np-antecedent', 'np-antecedent', 'pronoun-possessive']
+
+
+English Chain: set_14 German Chain: set_27
+Mentions tokens:
+['people', 'they']
+['Pokémon Go', 'Pokemon Go', 'Pokémon Go', 'es', 'das Spiel', 'Pokémon Go', 'Pokémon Go', 'es']
+Mentions types
+['np-antecedent', 'pronoun-personal']
+['np-antecedent', 'np-np', 'np-np', 'pronoun-personal', 'np-np', 'np-np', 'np-np', 'pronoun-personal']
+
+
+English Chain: set_13 German Chain: set_27
+Mentions tokens:
+['Those who exercise regularly', 'their']
+['Pokémon Go', 'Pokemon Go', 'Pokémon Go', 'es', 'das Spiel', 'Pokémon Go', 'Pokémon Go', 'es']
+Mentions types
+['np-antecedent', 'pronoun-possessive']
+['np-antecedent', 'np-np', 'np-np', 'pronoun-personal', 'np-np', 'np-np', 'np-np', 'pronoun-personal']
+
+
+English Chain: set_4 German Chain: set_27
+Mentions tokens:
+['Cardiogram , an app for the Apple Watch', 'that', 'it']
+['Pokémon Go', 'Pokemon Go', 'Pokémon Go', 'es', 'das Spiel', 'Pokémon Go', 'Pokémon Go', 'es']
+Mentions types
+['np-antecedent', 'pronoun-relative', 'pronoun-personal']
+['np-antecedent', 'np-np', 'np-np', 'pronoun-personal', 'np-np', 'np-np', 'np-np', 'pronoun-personal']
+
+
+English chain not in German ======>
+
+
+German chain not in English ======>
+
+
+German Chain: set_16
+Mentions tokens:
+['einer langen Liste an Vorteilen', 'die', 'sie']
+Mentions types
+['np-antecedent', 'pronoun-relative', 'pronoun-personal']
+
+
+German Chain: set_18
+Mentions tokens:
+['mürrische Spielverderber', 'die']
+Mentions types
+['np-antecedent', 'pronoun-relative']
+
+
+German Chain: set_10
+Mentions tokens:
+['Leute', 'die']
+Mentions types
+['np-antecedent', 'pronoun-relative']
+
+
+German Chain: set_11
+Mentions tokens:
+['Leute , die jeden Tag 30 Minuten trainieren', 'davon']
+Mentions types
+['np-antecedent', 'pronoun-demonstrative']
+
+
+German Chain: set_13
+Mentions tokens:
+['Viele öffentliche Aufklärungskampagnen zur Gesundheit', 'die']
+Mentions types
+['np-antecedent', 'pronoun-relative']
+
+
+German Chain: set_14
+Mentions tokens:
+['Leuten', 'die']
+Mentions types
+['np-antecedent', 'pronoun-relative']
+
+
+German Chain: set_1
+Mentions tokens:
+['den Charakteren', 'die']
+Mentions types
+['np-antecedent', 'pronoun-relative']
+
+
+German Chain: set_2
+Mentions tokens:
+['die Videospiele', 'daraus']
+Mentions types
+['np-antecedent', 'pronoun-demonstrative']
+
+
+German Chain: set_8
+Mentions tokens:
+['Eine Generation', 'die', 'sie']
+Mentions types
+['np-antecedent', 'pronoun-relative', 'pronoun-personal']
+
+
+German Chain: set_6
+Mentions tokens:
+['Pokémons', 'die', 'sie']
+Mentions types
+['np-antecedent', 'pronoun-relative', 'pronoun-personal']
+
+
+German Chain: set_9
+Mentions tokens:
+['Schritten', 'die']
+Mentions types
+['np-antecedent', 'pronoun-relative']
+
+
+****************************************
+STATISTICS PER DOC
+../../testsuitewmt18/parcor-full/corpus//news/EN18_words.xml
+src chains: 10 nominal: 9
+src mentions: 63 nominal: 61
+src annotated words: 169 nominal: 139
+tgt chains: 13 nominal: 12
+tgt mentions: 71 nominal: 69
+tgt annotated words: 129 nominal: 98
+****************************************
+
+
+Matching chains ======>
+
+
+English Chain: set_18 German Chain: set_41
+Mentions tokens:
+['a winning streak', 'it']
+['Aimee Boormans', 'Boorman']
+Mentions types
+['np-antecedent', 'pronoun-personal']
+['np-antecedent', 'np-np']
+
+
+English Chain: set_42 German Chain: set_38
+Mentions tokens:
+['Russian bronze medalist Aliya Mustafina', 'Mustafina', 'Mustafina', "the 22-year-old team captain the Americans call `` grandma ''", 'She', 'her']
+['Aliya Mustafina', 'Mustafina', 'Mustafina', 'die 22-jährige Mannschaftskapitänin', 'die', 'ihrer']
+Mentions types
+['np-antecedent', 'np-np', 'np-np', 'np-antecedent', 'pronoun-personal', 'pronoun-possessive']
+['np-antecedent', 'np-np', 'np-np', 'np-np', 'pronoun-relative', 'pronoun-possessive']
+
+
+English Chain: set_40 German Chain: set_30
+Mentions tokens:
+["silver medalist and `` Final Five '' teammate Aly Raisman", 'Aly Raisman', 'Raisman', 'Raisman', 'she']
+['Aly Raisman', 'Aly Raisman', 'Raisman', 'Raismans', 'sie']
+Mentions types
+['np-antecedent', 'np-np', 'np-np', 'np-np', 'pronoun-personal']
+['np-antecedent', 'np-np', 'np-np', 'np-np', 'pronoun-personal']
+
+
+English Chain: set_0 German Chain: set_0
+Mentions tokens:
+['the pressure the hype', 'it']
+['den Druck den Hype', 'das']
+Mentions types
+['np-antecedent', 'pronoun-personal']
+['np-antecedent', 'pronoun-demonstrative']
+
+
+English Chain: set_29 German Chain: set_10
+Mentions tokens:
+['once-in-a-generation athletes', 'their']
+['einzigartige Athleten', 'die']
+Mentions types
+['np-antecedent', 'pronoun-possessive']
+['np-antecedent', 'pronoun-relative']
+
+
+English Chain: set_25 German Chain: set_41
+Mentions tokens:
+['a comeback', 'that']
+['Aimee Boormans', 'Boorman']
+Mentions types
+['np-antecedent', 'pronoun-relative']
+['np-antecedent', 'np-np']
+
+
+Matching chains, different number of mentions ======>
+
+
+English longer chains ======>
+
+
+German longer chains ======>
+
+
+English Chain: set_37 German Chain: set_42
+Mentions tokens:
+['Simone Biles', 'Simone Biles', 'The 19-year-old American', 'herself', 'Her', 'Simone Biles', 'Biles', 'her', 'her', 'She', 'her', 'her', 'her', 'Biles', 'her', 'her', 'Biles', 'herself', 'her', 'Simone Biles', 'Biles', 'Biles', 'she', 'her', 'her', 'her', 'The girl', 'her', 'She', 'Biles', 'Biles', 'She', 'her', "'", 'she', 'Biles', 'the 19-year-old']
+['Simone Biles', 'Simone Biles', 'Die 19-jährige amerikanische Turnerin', 'sich', 'Ihr', 'Simone Biles', 'Biles', 'sie', 'ihren', 'ihrer', 'Sie', 'ihr', 'ihre', 'sie', 'Biles', 'ihr', 'sie', 'sie', 'Simone Biles', 'sie', 'Biles', 'sie', 'Biles', 'ihres', 'ihrer', 'ihren', 'Dieses Mädchen', 'das', 'ihren', 'Sie', 'Biles', 'Biles', 'Sie', 'sie', 'ihr', 'Biles', 'sie', 'ihrem', 'Biles', 'der 19-Jährigen']
+Mentions types
+['np-antecedent', 'np-np', 'np-np', 'pronoun-reflexive', 'pronoun-possessive', 'np-np', 'np-np', 'pronoun-possessive', 'pronoun-possessive', 'pronoun-personal', 'pronoun-possessive', 'pronoun-possessive', 'pronoun-possessive', 'np-np', 'pronoun-possessive', 'pronoun-personal', 'np-np', 'pronoun-reflexive', 'pronoun-possessive', 'np-np', 'np-not sure. help!', 'np-np', 'pronoun-personal', 'pronoun-possessive', 'pronoun-possessive', 'pronoun-possessive', 'np-np', 'pronoun-possessive', 'pronoun-personal', 'np-np', 'np-not sure. help!', 'pronoun-personal', 'pronoun-personal', 'np-not sure. help!', 'pronoun-personal', 'np-np', 'np-np']
+['np-antecedent', 'np-np', 'np-np', 'pronoun-reflexive', 'pronoun-possessive', 'np-np', 'np-np', 'pronoun-personal', 'pronoun-possessive', 'pronoun-personal', 'pronoun-personal', 'pronoun-possessive', 'pronoun-possessive', 'pronoun-personal', 'np-np', 'pronoun-personal', 'pronoun-personal', 'pronoun-personal', 'np-np', 'pronoun-personal', 'np-np', 'pronoun-personal', 'np-np', 'pronoun-possessive', 'pronoun-possessive', 'pronoun-possessive', 'np-np', 'pronoun-relative', 'pronoun-possessive', 'pronoun-personal', 'np-np', 'np-np', 'pronoun-personal', 'pronoun-personal', 'pronoun-possessive', 'np-np', 'pronoun-personal', 'pronoun-possessive', 'np-np', 'np-np']
+
+
+English Chain: set_16 German Chain: set_42
+Mentions tokens:
+['A portion of her floor exercise routine - the one that includes her signature tumbling pass - is set to Latin music that would fit right at home in the street right outside the Rio Olympic Arena', 'It']
+['Simone Biles', 'Simone Biles', 'Die 19-jährige amerikanische Turnerin', 'sich', 'Ihr', 'Simone Biles', 'Biles', 'sie', 'ihren', 'ihrer', 'Sie', 'ihr', 'ihre', 'sie', 'Biles', 'ihr', 'sie', 'sie', 'Simone Biles', 'sie', 'Biles', 'sie', 'Biles', 'ihres', 'ihrer', 'ihren', 'Dieses Mädchen', 'das', 'ihren', 'Sie', 'Biles', 'Biles', 'Sie', 'sie', 'ihr', 'Biles', 'sie', 'ihrem', 'Biles', 'der 19-Jährigen']
+Mentions types
+['np-antecedent', 'pronoun-personal']
+['np-antecedent', 'np-np', 'np-np', 'pronoun-reflexive', 'pronoun-possessive', 'np-np', 'np-np', 'pronoun-personal', 'pronoun-possessive', 'pronoun-personal', 'pronoun-personal', 'pronoun-possessive', 'pronoun-possessive', 'pronoun-personal', 'np-np', 'pronoun-personal', 'pronoun-personal', 'pronoun-personal', 'np-np', 'pronoun-personal', 'np-np', 'pronoun-personal', 'np-np', 'pronoun-possessive', 'pronoun-possessive', 'pronoun-possessive', 'np-np', 'pronoun-relative', 'pronoun-possessive', 'pronoun-personal', 'np-np', 'np-np', 'pronoun-personal', 'pronoun-personal', 'pronoun-possessive', 'np-np', 'pronoun-personal', 'pronoun-possessive', 'np-np', 'np-np']
+
+
+English Chain: set_27 German Chain: set_42
+Mentions tokens:
+['her floor exercise routine', 'the one', 'that']
+['Simone Biles', 'Simone Biles', 'Die 19-jährige amerikanische Turnerin', 'sich', 'Ihr', 'Simone Biles', 'Biles', 'sie', 'ihren', 'ihrer', 'Sie', 'ihr', 'ihre', 'sie', 'Biles', 'ihr', 'sie', 'sie', 'Simone Biles', 'sie', 'Biles', 'sie', 'Biles', 'ihres', 'ihrer', 'ihren', 'Dieses Mädchen', 'das', 'ihren', 'Sie', 'Biles', 'Biles', 'Sie', 'sie', 'ihr', 'Biles', 'sie', 'ihrem', 'Biles', 'der 19-Jährigen']
+Mentions types
+['np-antecedent', 'pronoun-pronoun', 'pronoun-relative']
+['np-antecedent', 'np-np', 'np-np', 'pronoun-reflexive', 'pronoun-possessive', 'np-np', 'np-np', 'pronoun-personal', 'pronoun-possessive', 'pronoun-personal', 'pronoun-personal', 'pronoun-possessive', 'pronoun-possessive', 'pronoun-personal', 'np-np', 'pronoun-personal', 'pronoun-personal', 'pronoun-personal', 'np-np', 'pronoun-personal', 'np-np', 'pronoun-personal', 'np-np', 'pronoun-possessive', 'pronoun-possessive', 'pronoun-possessive', 'np-np', 'pronoun-relative', 'pronoun-possessive', 'pronoun-personal', 'np-np', 'np-np', 'pronoun-personal', 'pronoun-personal', 'pronoun-possessive', 'np-np', 'pronoun-personal', 'pronoun-possessive', 'np-np', 'np-np']
+
+
+English chain not in German ======>
+
+
+German chain not in English ======>
+
+
+German Chain: set_11
+Mentions tokens:
+['so erstaunlichen Übungen', 'die']
+Mentions types
+['np-antecedent', 'pronoun-relative']
+
+
+German Chain: set_14
+Mentions tokens:
+['die beste Turnerin', 'die']
+Mentions types
+['np-antecedent', 'pronoun-relative']
+
+
+German Chain: set_16
+Mentions tokens:
+['Biles', 'ihr']
+Mentions types
+['np-antecedent', 'pronoun-personal']
+
+
+German Chain: set_3
+Mentions tokens:
+['die vierte heterosexuelle Amerikanerin', 'die']
+Mentions types
+['np-antecedent', 'pronoun-relative']
+
+
+German Chain: set_26
+Mentions tokens:
+['Schwebebalken und Bodenturnen', 'denen']
+Mentions types
+['np-antecedent', 'pronoun-relative']
+
+
+German Chain: set_24
+Mentions tokens:
+['die Turnhalle', 'der']
+Mentions types
+['np-antecedent', 'pronoun-relative']
+
+
+****************************************
+STATISTICS PER DOC
+../../testsuitewmt18/parcor-full/corpus//news/EN19_words.xml
+src chains: 9 nominal: 8
+src mentions: 21 nominal: 20
+src annotated words: 53 nominal: 52
+tgt chains: 10 nominal: 10
+tgt mentions: 25 nominal: 25
+tgt annotated words: 51 nominal: 51
+****************************************
+
+
+Matching chains ======>
+
+
+English Chain: set_9 German Chain: set_12
+Mentions tokens:
+['Stefanie R. Ellis', 'Ellis', 'her']
+['Stefanie R. Ellis', 'Ellis', 'ihrer']
+Mentions types
+['np-antecedent', 'np-np', 'pronoun-possessive']
+['np-antecedent', 'np-np', 'pronoun-possessive']
+
+
+English Chain: set_1 German Chain: set_1
+Mentions tokens:
+['Two women and a 12-year-old girl', 'who', 'they']
+['zwei Frauen und ein 12-Jahre altes Mädchen', 'die', 'sie']
+Mentions types
+['np-antecedent', 'pronoun-relative', 'pronoun-personal']
+['np-antecedent', 'pronoun-relative', 'pronoun-personal']
+
+
+English Chain: set_3 German Chain: set_6
+Mentions tokens:
+['the evidence', 'that']
+['die Beweise', 'die']
+Mentions types
+['np-antecedent', 'pronoun-relative']
+['np-antecedent', 'pronoun-relative']
+
+
+English Chain: set_4 German Chain: set_5
+Mentions tokens:
+['Investigators', 'them']
+['Die Ermittler', 'sie']
+Mentions types
+['np-antecedent', 'pronoun-personal']
+['np-antecedent', 'pronoun-personal']
+
+
+Matching chains, different number of mentions ======>
+
+
+English longer chains ======>
+
+
+English Chain: set_10 German Chain: set_8
+Mentions tokens:
+["Angela Rochelle Liner , Stefanie R. Ellis and Ellis ' daughter Maleah", "Liner , 31 , and Ellis ' daughter Maleah", 'them']
+['. Liner , 31 , und Ellis Tochter Maleah', 'sie']
+Mentions types
+['np-antecedent', 'np-np', 'pronoun-personal']
+['np-antecedent', 'pronoun-personal']
+
+
+English Chain: set_8 German Chain: set_0
+Mentions tokens:
+['a car', 'the car', 'the car']
+['Polizeiberichten', 'die']
+Mentions types
+['np-antecedent', 'np-np', 'np-np']
+['np-antecedent', 'pronoun-relative']
+
+
+German longer chains ======>
+
+
+English Chain: set_2 German Chain: set_4
+Mentions tokens:
+['the shooting', 'it']
+['die Schießerei', 'sie', 'die Schießerei', 'die']
+Mentions types
+['np-antecedent', 'pronoun-personal']
+['np-antecedent', 'pronoun-personal', 'np-np', 'pronoun-relative']
+
+
+English Chain: set_7 German Chain: set_4
+Mentions tokens:
+['a shooting', 'that']
+['die Schießerei', 'sie', 'die Schießerei', 'die']
+Mentions types
+['np-antecedent', 'pronoun-relative']
+['np-antecedent', 'pronoun-personal', 'np-np', 'pronoun-relative']
+
+
+English chain not in German ======>
+
+
+German chain not in English ======>
+
+
+German Chain: set_2
+Mentions tokens:
+['Der Täter', 'er']
+Mentions types
+['np-antecedent', 'pronoun-personal']
+
+
+German Chain: set_11
+Mentions tokens:
+['die Handtaschen', 'oder die $ 2.900', 'die']
+Mentions types
+['np-antecedent', 'np-np', 'pronoun-relative']
+
+
+German Chain: set_10
+Mentions tokens:
+['einen Polizeibericht', 'dem']
+Mentions types
+['np-antecedent', 'pronoun-relative']
+
+
+****************************************
+STATISTICS PER DOC
+../../testsuitewmt18/parcor-full/corpus//news/EN20_words.xml
+src chains: 7 nominal: 6
+src mentions: 51 nominal: 48
+src annotated words: 63 nominal: 60
+tgt chains: 10 nominal: 9
+tgt mentions: 49 nominal: 47
+tgt annotated words: 64 nominal: 60
+****************************************
+
+
+Matching chains ======>
+
+
+English Chain: set_27 German Chain: set_28
+Mentions tokens:
+['his mother', 'his mom Elizabeth Picciuto', 'she', 'She', 'her', 'Picciuto', 'Elizabeth', 'Picciuto', 'she', 'Picciuto', 'she', 'Picciuto']
+['seine Mutter Elizabeth Picciuto', 'ihrer', 'sie', 'Ihrem', 'ihr', 'Picciuto', 'Elizabeth', 'Picciuto', 'sie', 'Picciuto', 'sie', 'Picciuto']
+Mentions types
+['np-antecedent', 'np-np', 'pronoun-personal', 'pronoun-personal', 'pronoun-possessive', 'np-np', 'np-np', 'np-np', 'pronoun-personal', 'np-np', 'pronoun-personal', 'np-np']
+['np-antecedent', 'pronoun-possessive', 'pronoun-personal', 'pronoun-possessive', 'pronoun-personal', 'np-np', 'np-np', 'np-np', 'pronoun-personal', 'np-np', 'pronoun-personal', 'np-np']
+
+
+Matching chains, different number of mentions ======>
+
+
+English longer chains ======>
+
+
+English Chain: set_28 German Chain: set_27
+Mentions tokens:
+['Edmund Picciuto', 'his', 'his', 'Edmund', 'his', 'he', 'Edmund', 'he', 'he', 'Edmund', 'Edmund', 'he', 'he', 'he', 'He', 'He', 'his', 'Edmund', 'him', 'Edmund', 'his', 'Edmund']
+['Edmund Picciuto', 'seine', 'seiner', 'Edmund', 'seine', 'er', 'Edmund', 'er', 'ihn', 'Edmund', 'Edmund', 'seinem', 'er', 'er', 'Er', 'Er', 'seinen', 'Edmund', 'ihm', 'Edmund', 'Edmund']
+Mentions types
+['np-antecedent', 'pronoun-possessive', 'pronoun-possessive', 'np-np', 'pronoun-possessive', 'pronoun-personal', 'np-np', 'pronoun-personal', 'pronoun-personal', 'np-np', 'np-np', 'pronoun-personal', 'pronoun-personal', 'pronoun-personal', 'pronoun-personal', 'pronoun-personal', 'pronoun-possessive', 'np-np', 'pronoun-personal', 'np-np', 'pronoun-possessive', 'np-np']
+['np-antecedent', 'pronoun-possessive', 'pronoun-possessive', 'np-antecedent', 'pronoun-possessive', 'pronoun-personal', 'np-np', 'pronoun-personal', 'pronoun-personal', 'np-np', 'np-np', 'pronoun-possessive', 'pronoun-personal', 'pronoun-personal', 'pronoun-personal', 'pronoun-personal', 'pronoun-possessive', 'np-np', 'pronoun-personal', 'np-np', 'np-np']
+
+
+English Chain: set_26 German Chain: set_7
+Mentions tokens:
+['She', 'and her husband , Vincent', 'them']
+['Ihrem Ehemann Vincent und ihr', 'sie']
+Mentions types
+['np-antecedent', 'np-antecedent', 'pronoun-personal']
+['np-antecedent', 'pronoun-personal']
+
+
+German longer chains ======>
+
+
+English Chain: set_18 German Chain: set_27
+Mentions tokens:
+['microcephaly', 'this', 'this', 'this', 'it', 'Microcephaly', 'it']
+['Edmund Picciuto', 'seine', 'seiner', 'Edmund', 'seine', 'er', 'Edmund', 'er', 'ihn', 'Edmund', 'Edmund', 'seinem', 'er', 'er', 'Er', 'Er', 'seinen', 'Edmund', 'ihm', 'Edmund', 'Edmund']
+Mentions types
+['np-antecedent', 'pronoun-demonstrative', 'pronoun-demonstrative', 'pronoun-demonstrative', 'pronoun-personal', 'np-np', 'pronoun-personal']
+['np-antecedent', 'pronoun-possessive', 'pronoun-possessive', 'np-antecedent', 'pronoun-possessive', 'pronoun-personal', 'np-np', 'pronoun-personal', 'pronoun-personal', 'np-np', 'np-np', 'pronoun-possessive', 'pronoun-personal', 'pronoun-personal', 'pronoun-personal', 'pronoun-personal', 'pronoun-possessive', 'np-np', 'pronoun-personal', 'np-np', 'np-np']
+
+
+English Chain: set_17 German Chain: set_28
+Mentions tokens:
+['different conditions', 'genetic ones']
+['seine Mutter Elizabeth Picciuto', 'ihrer', 'sie', 'Ihrem', 'ihr', 'Picciuto', 'Elizabeth', 'Picciuto', 'sie', 'Picciuto', 'sie', 'Picciuto']
+Mentions types
+['np-antecedent', 'np-nom-ellipsis']
+['np-antecedent', 'pronoun-possessive', 'pronoun-personal', 'pronoun-possessive', 'pronoun-personal', 'np-np', 'np-np', 'np-np', 'pronoun-personal', 'np-np', 'pronoun-personal', 'np-np']
+
+
+English Chain: set_25 German Chain: set_27
+Mentions tokens:
+['sign language', 'it']
+['Edmund Picciuto', 'seine', 'seiner', 'Edmund', 'seine', 'er', 'Edmund', 'er', 'ihn', 'Edmund', 'Edmund', 'seinem', 'er', 'er', 'Er', 'Er', 'seinen', 'Edmund', 'ihm', 'Edmund', 'Edmund']
+Mentions types
+['np-antecedent', 'pronoun-personal']
+['np-antecedent', 'pronoun-possessive', 'pronoun-possessive', 'np-antecedent', 'pronoun-possessive', 'pronoun-personal', 'np-np', 'pronoun-personal', 'pronoun-personal', 'np-np', 'np-np', 'pronoun-possessive', 'pronoun-personal', 'pronoun-personal', 'pronoun-personal', 'pronoun-personal', 'pronoun-possessive', 'np-np', 'pronoun-personal', 'np-np', 'np-np']
+
+
+English chain not in German ======>
+
+
+German chain not in English ======>
+
+
+German Chain: set_17
+Mentions tokens:
+['Ursachen', 'genetische']
+Mentions types
+['np-antecedent', 'np-nom-ellipsis']
+
+
+German Chain: set_20
+Mentions tokens:
+['der Prognose', 'sie']
+Mentions types
+['np-antecedent', 'pronoun-personal']
+
+
+German Chain: set_14
+Mentions tokens:
+['die Zeichensprache', 'die']
+Mentions types
+['np-antecedent', 'pronoun-relative']
+
+
+German Chain: set_2
+Mentions tokens:
+['einer genetischen Störung', 'die']
+Mentions types
+['np-antecedent', 'pronoun-relative']
+
+
+German Chain: set_22
+Mentions tokens:
+['Manche Ärzte', 'sie']
+Mentions types
+['np-antecedent', 'pronoun-personal']
+
+
+German Chain: set_21
+Mentions tokens:
+['Geburtsschäden', 'die']
+Mentions types
+['np-antecedent', 'pronoun-relative']
+
+
+****************************************
+STATISTICS PER DOC
+../../testsuitewmt18/parcor-full/corpus//news/EN21_words.xml
+src chains: 18 nominal: 18
+src mentions: 58 nominal: 58
+src annotated words: 95 nominal: 95
+tgt chains: 23 nominal: 22
+tgt mentions: 67 nominal: 66
+tgt annotated words: 113 nominal: 112
+****************************************
+
+
+Matching chains ======>
+
+
+English Chain: set_19 German Chain: set_16
+Mentions tokens:
+['all three', 'them', 'they']
+['alle drei', 'sie', 'sie']
+Mentions types
+['np-antecedent', 'pronoun-personal', 'pronoun-personal']
+['np-antecedent', 'pronoun-personal', 'pronoun-personal']
+
+
+English Chain: set_21 German Chain: set_17
+Mentions tokens:
+['two churches', 'both']
+['zwei Kirchen', 'die']
+Mentions types
+['np-antecedent', 'pronoun-pronoun']
+['np-antecedent', 'pronoun-relative']
+
+
+English Chain: set_15 German Chain: set_11
+Mentions tokens:
+['His wife', 'she', 'she']
+['Seine Frau', 'sie', 'sie']
+Mentions types
+['np-antecedent', 'pronoun-personal', 'pronoun-personal']
+['np-antecedent', 'pronoun-personal', 'pronoun-personal']
+
+
+English Chain: set_0 German Chain: set_0
+Mentions tokens:
+['Numerous rivers', 'their']
+['Zahlreiche Flüsse', 'ihre']
+Mentions types
+['np-antecedent', 'pronoun-possessive']
+['np-antecedent', 'pronoun-possessive']
+
+
+English Chain: set_33 German Chain: set_36
+Mentions tokens:
+['Forecaster Alek Krautmann', 'He', 'Krautmann', 'Krautmann', 'Krautmann']
+['Der Metereologe Alek Krautmann', 'Er', 'Krautmann', 'Krautmann', 'Krautmann']
+Mentions types
+['np-antecedent', 'pronoun-personal', 'np-np', 'np-np', 'np-np']
+['np-antecedent', 'pronoun-personal', 'np-np', 'np-np', 'np-np']
+
+
+English Chain: set_34 German Chain: set_24
+Mentions tokens:
+['major flood', 'This one']
+['Die letzte große Überschwemmung', 'die']
+Mentions types
+['np-antecedent', 'np-nom-ellipsis']
+['np-antecedent', 'pronoun-relative']
+
+
+English Chain: set_8 German Chain: set_7
+Mentions tokens:
+['another stepson', 'who']
+['ein weiterer Stiefsohn', 'der']
+Mentions types
+['np-antecedent', 'pronoun-relative']
+['np-antecedent', 'pronoun-relative']
+
+
+English Chain: set_23 German Chain: set_21
+Mentions tokens:
+['Parish President Robby Miller', 'he']
+['Robby Miller', 'er']
+Mentions types
+['np-antecedent', 'pronoun-personal']
+['np-antecedent', 'pronoun-personal']
+
+
+English Chain: set_24 German Chain: set_25
+Mentions tokens:
+['Harrison County Emergency Manager Rupert Lacy', 'He']
+['Rupert Lacy', 'seinen']
+Mentions types
+['np-antecedent', 'pronoun-personal']
+['np-antecedent', 'pronoun-possessive']
+
+
+Matching chains, different number of mentions ======>
+
+
+English longer chains ======>
+
+
+English Chain: set_12 German Chain: set_8
+Mentions tokens:
+['the water', 'It', 'it', 'the highest']
+['das Wasser', 'Es']
+Mentions types
+['np-antecedent', 'pronoun-personal', 'pronoun-personal', 'np-nom-ellipsis']
+['np-antecedent', 'pronoun-personal']
+
+
+English Chain: set_16 German Chain: set_5
+Mentions tokens:
+['waters from Beaver Creek', 'which', 'the creek', 'there']
+['Wasser von Beaver Creek', 'das']
+Mentions types
+['np-antecedent', 'pronoun-relative', 'np-np', 'pronoun-demonstrative']
+['np-antecedent', 'pronoun-relative']
+
+
+English Chain: set_4 German Chain: set_1
+Mentions tokens:
+['The Comite River Amite River', 'both rivers', 'those swollen rivers']
+['Der Fluss Comite in der Nähe Baton Rouges und der Fluss Amite in der Nähe Denham Springs', 'die']
+Mentions types
+['np-antecedent', 'np-np', 'np-np']
+['np-antecedent', 'pronoun-relative']
+
+
+German longer chains ======>
+
+
+English Chain: set_30 German Chain: set_37
+Mentions tokens:
+['Leroy Hansford', 'his', 'Hansford', 'his', 'He', 'him', 'Hansford', 'His', 'Hansford', 'Hansford', 'he', 'his', 'he', 'Hansford']
+['Leroy Hansford', 'seine', 'sein', 'Hansford', 'seinem', 'Er', 'ihn', 'Hansford', 'Seine', 'Hansford', 'Hansford', 'er', 'seine', 'er', 'Hansford']
+Mentions types
+['np-antecedent', 'pronoun-possessive', 'np-np', 'pronoun-possessive', 'pronoun-personal', 'pronoun-personal', 'np-antecedent', 'np-np', 'np-np', 'np-np', 'pronoun-personal', 'pronoun-possessive', 'pronoun-personal', 'np-np']
+['np-antecedent', 'pronoun-possessive', 'pronoun-possessive', 'np-np', 'pronoun-possessive', 'pronoun-personal', 'pronoun-personal', 'np-np', 'pronoun-possessive', 'np-np', 'np-np', 'pronoun-personal', 'pronoun-possessive', 'pronoun-personal', 'np-np']
+
+
+English Chain: set_20 German Chain: set_16
+Mentions tokens:
+['residents', 'their']
+['alle drei', 'sie', 'sie']
+Mentions types
+['np-antecedent', 'pronoun-possessive']
+['np-antecedent', 'pronoun-personal', 'pronoun-personal']
+
+
+English Chain: set_1 German Chain: set_16
+Mentions tokens:
+['Louisiana', 'the state']
+['alle drei', 'sie', 'sie']
+Mentions types
+['np-antecedent', 'np-np']
+['np-antecedent', 'pronoun-personal', 'pronoun-personal']
+
+
+English Chain: set_2 German Chain: set_16
+Mentions tokens:
+['south Louisiana', 'the area']
+['alle drei', 'sie', 'sie']
+Mentions types
+['np-antecedent', 'np-np']
+['np-antecedent', 'pronoun-personal', 'pronoun-personal']
+
+
+English Chain: set_22 German Chain: set_20
+Mentions tokens:
+['those who were evacuated', 'They']
+['Evakuierten', 'sie', 'ihre']
+Mentions types
+['np-antecedent', 'pronoun-personal']
+['np-antecedent', 'pronoun-personal', 'pronoun-possessive']
+
+
+English Chain: set_25 German Chain: set_16
+Mentions tokens:
+['water', 'it']
+['alle drei', 'sie', 'sie']
+Mentions types
+['np-antecedent', 'pronoun-personal']
+['np-antecedent', 'pronoun-personal', 'pronoun-personal']
+
+
+English chain not in German ======>
+
+
+German chain not in English ======>
+
+
+German Chain: set_30
+Mentions tokens:
+['72 Leute', 'und sieben Haustiere', 'die']
+Mentions types
+['np-antecedent', 'np-antecedent', 'pronoun-relative']
+
+
+German Chain: set_12
+Mentions tokens:
+['den 48 Jahren', 'denen']
+Mentions types
+['np-antecedent', 'pronoun-relative']
+
+
+German Chain: set_3
+Mentions tokens:
+['eine stromabwärts gerichtete Überschwemmung', 'diese']
+Mentions types
+['np-antecedent', 'pronoun-demonstrative']
+
+
+German Chain: set_4
+Mentions tokens:
+['den höchsten Stand', 'der']
+Mentions types
+['np-antecedent', 'pronoun-relative']
+
+
+German Chain: set_28
+Mentions tokens:
+['Orten', 'denen']
+Mentions types
+['np-antecedent', 'pronoun-relative']
+
+
+German Chain: set_29
+Mentions tokens:
+['Wasser', 'es', 'es']
+Mentions types
+['np-antecedent', 'pronoun-personal', 'pronoun-personal']
+
+
+German Chain: set_26
+Mentions tokens:
+['Häuser', 'keine']
+Mentions types
+['np-antecedent', 'pronoun-pronoun']
+
+
+German Chain: set_23
+Mentions tokens:
+['die Bewohner', 'die', 'ihren']
+Mentions types
+['np-antecedent', 'pronoun-relative', 'pronoun-possessive']
+
+
+****************************************
+STATISTICS PER DOC
+../../testsuitewmt18/parcor-full/corpus//news/EN22_words.xml
+src chains: 11 nominal: 9
+src mentions: 44 nominal: 41
+src annotated words: 86 nominal: 79
+tgt chains: 10 nominal: 9
+tgt mentions: 44 nominal: 39
+tgt annotated words: 82 nominal: 77
+****************************************
+
+
+Matching chains ======>
+
+
+English Chain: set_16 German Chain: set_14
+Mentions tokens:
+['multiple armed combatants', 'they']
+['mehrere bewaffnete Kämpfer', 'die']
+Mentions types
+['np-antecedent', 'pronoun-personal']
+['np-antecedent', 'pronoun-relative']
+
+
+English Chain: set_25 German Chain: set_22
+Mentions tokens:
+['three men', 'the wounded men']
+['drei Männer', 'der verletzten Männer']
+Mentions types
+['np-antecedent', 'np-np']
+['np-antecedent', 'np-np']
+
+
+English Chain: set_23 German Chain: set_21
+Mentions tokens:
+['two 29-year-olds', 'the 29-year-old men']
+['zwei im Alter von 29', 'der 29-jährigen Männer']
+Mentions types
+['np-antecedent', 'np-np']
+['np-antecedent', 'np-np']
+
+
+Matching chains, different number of mentions ======>
+
+
+English longer chains ======>
+
+
+English Chain: set_12 German Chain: set_20
+Mentions tokens:
+['CBS Philadelphia', 'the station', 'the station', 'CBS Philadelphia', 'the station', 'CBS Philadelphia', 'the station']
+['CBS Philadelphia', 'der Sender', 'CBS Philadelphia', 'dem Sender']
+Mentions types
+['np-antecedent', 'np-np', 'np-np', 'np-np', 'np-np', 'np-np', 'np-np']
+['np-antecedent', 'np-np', 'np-np', 'np-np']
+
+
+English Chain: set_21 German Chain: set_15
+Mentions tokens:
+['a girl', 'her', 'her', 'She']
+['ein weiteres 6-jähriges Mädchen', 'sie', 'Sie']
+Mentions types
+['np-antecedent', 'pronoun-possessive', 'pronoun-possessive', 'pronoun-personal']
+['np-antecedent', 'pronoun-personal', 'pronoun-personal']
+
+
+German longer chains ======>
+
+
+English Chain: set_27 German Chain: set_24
+Mentions tokens:
+['Mahaj Brown', 'a 6-year-old boy', 'The child', 'him', 'Mahaj Brown', 'Brown', 'his', 'he', 'He', 'his', 'his', 'The boy', 'he', 'He', 'Brown', 'The child']
+['Mahaj Brown', 'der 6-jährige Junge', 'des Jungen', 'ihn', 'Brown', 'er', 'seinem', 'Er', 'sein', 'seine', 'des Jungen', 'er', 'des Jungen', 'er', 'Er', 'Brown', 'Der Junge']
+Mentions types
+['np-antecedent', 'np-np', 'np-np', 'pronoun-personal', 'np-np', 'np-np', 'pronoun-possessive', 'pronoun-personal', 'pronoun-personal', 'pronoun-possessive', 'pronoun-possessive', 'np-np', 'pronoun-personal', 'pronoun-personal', 'np-np', 'np-np']
+['np-antecedent', 'np-np', 'np-np', 'pronoun-personal', 'np-np', 'pronoun-personal', 'pronoun-possessive', 'pronoun-personal', 'pronoun-possessive', 'pronoun-possessive', 'np-np', 'pronoun-personal', 'np-np', 'pronoun-personal', 'pronoun-personal', 'np-np', 'np-np']
+
+
+English Chain: set_18 German Chain: set_24
+Mentions tokens:
+['6-year-old boy', 'Another 6-year-old']
+['Mahaj Brown', 'der 6-jährige Junge', 'des Jungen', 'ihn', 'Brown', 'er', 'seinem', 'Er', 'sein', 'seine', 'des Jungen', 'er', 'des Jungen', 'er', 'Er', 'Brown', 'Der Junge']
+Mentions types
+['np-antecedent', 'np-comparative']
+['np-antecedent', 'np-np', 'np-np', 'pronoun-personal', 'np-np', 'pronoun-personal', 'pronoun-possessive', 'pronoun-personal', 'pronoun-possessive', 'pronoun-possessive', 'np-np', 'pronoun-personal', 'np-np', 'pronoun-personal', 'pronoun-personal', 'np-np', 'np-np']
+
+
+English Chain: set_11 German Chain: set_19
+Mentions tokens:
+['One of the 29-year-old men', 'the other two victims', 'the 29-year-old', 'The other two victims']
+['Einer der 29-jährigen Männer', 'die anderen zwei Opfer', 'dem 29-Jährigen', 'der', 'Die anderen zwei Opfer']
+Mentions types
+['np-antecedent', 'np-comparative', 'np-np', 'np-comparative']
+['np-antecedent', 'np-comparative', 'np-np', 'pronoun-relative', 'pronoun-pronoun']
+
+
+English Chain: set_14 German Chain: set_24
+Mentions tokens:
+['a car', 'the car']
+['Mahaj Brown', 'der 6-jährige Junge', 'des Jungen', 'ihn', 'Brown', 'er', 'seinem', 'Er', 'sein', 'seine', 'des Jungen', 'er', 'des Jungen', 'er', 'Er', 'Brown', 'Der Junge']
+Mentions types
+['np-antecedent', 'np-np']
+['np-antecedent', 'np-np', 'np-np', 'pronoun-personal', 'np-np', 'pronoun-personal', 'pronoun-possessive', 'pronoun-personal', 'pronoun-possessive', 'pronoun-possessive', 'np-np', 'pronoun-personal', 'np-np', 'pronoun-personal', 'pronoun-personal', 'np-np', 'np-np']
+
+
+English chain not in German ======>
+
+
+German chain not in English ======>
+
+
+German Chain: set_8
+Mentions tokens:
+['vier Personen', 'die']
+Mentions types
+['np-antecedent', 'pronoun-relative']
+
+
+German Chain: set_13
+Mentions tokens:
+['Patronenhülsen für Sturmgewehre', 'die']
+Mentions types
+['np-antecedent', 'pronoun-relative']
+
+
+****************************************
+STATISTICS PER DOC
+../../testsuitewmt18/parcor-full/corpus//news/EN23_words.xml
+src chains: 18 nominal: 15
+src mentions: 55 nominal: 50
+src annotated words: 169 nominal: 137
+tgt chains: 20 nominal: 16
+tgt mentions: 60 nominal: 50
+tgt annotated words: 200 nominal: 152
+****************************************
+
+
+Matching chains ======>
+
+
+English Chain: set_18 German Chain: set_19
+Mentions tokens:
+['countless young girls', 'who']
+['unzähligen , jungen Mädchen', 'die']
+Mentions types
+['np-antecedent', 'pronoun-relative']
+['np-antecedent', 'pronoun-relative']
+
+
+English Chain: set_31 German Chain: set_27
+Mentions tokens:
+['Simone Biles', 'Laurie Hernandez', 'their athletes', 'they']
+['Aimee Boorman , Trainerin von Simone Biles', ', und Maggie Haney , Trainerin von Laurie Hernandez', 'beide', 'ihre']
+Mentions types
+['np-antecedent', 'np-antecedent', 'np-np', 'pronoun-personal']
+['np-antecedent', 'np-antecedent', 'pronoun-pronoun', 'pronoun-possessive']
+
+
+English Chain: set_19 German Chain: set_20
+Mentions tokens:
+['the youth', 'that']
+['der Jugend', 'die']
+Mentions types
+['np-antecedent', 'pronoun-relative']
+['np-antecedent', 'pronoun-relative']
+
+
+English Chain: set_21 German Chain: set_23
+Mentions tokens:
+['so many young girls of all backgrounds', 'their']
+['so viele junge Mädchen mit unterschiedlichem Hintergrund', 'ihren']
+Mentions types
+['np-antecedent', 'pronoun-possessive']
+['np-antecedent', 'pronoun-possessive']
+
+
+English Chain: set_10 German Chain: set_15
+Mentions tokens:
+['the coaches', 'their']
+['die Turner', 'ihr']
+Mentions types
+['np-antecedent', 'pronoun-possessive']
+['np-antecedent', 'pronoun-possessive']
+
+
+English Chain: set_14 German Chain: set_15
+Mentions tokens:
+['the gymnasts', 'their']
+['die Turner', 'ihr']
+Mentions types
+['np-antecedent', 'pronoun-possessive']
+['np-antecedent', 'pronoun-possessive']
+
+
+English Chain: set_22 German Chain: set_21
+Mentions tokens:
+['strength , flexibility and coordination for the body and hard work , discipline and determination for the mind', 'This combination']
+['Stärke , Flexibilität und Koordination für den Körper sowie harte Arbeit , Disziplin und Bestimmtheit für den Geist', 'Diese Kombination']
+Mentions types
+['np-antecedent', 'np-np']
+['np-antecedent', 'np-np']
+
+
+Matching chains, different number of mentions ======>
+
+
+English longer chains ======>
+
+
+English Chain: set_32 German Chain: set_33
+Mentions tokens:
+['Madison Kocian', 'who', 'Madison', 'Madison']
+['Madison Kocian', 'die', 'Madison']
+Mentions types
+['np-antecedent', 'pronoun-relative', 'np-np', 'np-np']
+['np-antecedent', 'pronoun-relative', 'np-np']
+
+
+English Chain: set_33 German Chain: set_32
+Mentions tokens:
+['Aly Raisman', 'who', 'Aly Raisman', 'Aly', 'Aly']
+['Aly Raisman', 'die', 'Aly', 'Aly']
+Mentions types
+['np-antecedent', 'pronoun-relative', 'np-np', 'np-np', 'np-np']
+['np-antecedent', 'pronoun-relative', 'np-np', 'np-np']
+
+
+English Chain: set_6 German Chain: set_1
+Mentions tokens:
+["this year 's Women 's Olympic Gymnastics Team", 'This team', 'this team', 'This team', 'It']
+['der Frauenolympiamannschaft', 'Diese Mannschaft', 'dieser Mannschaft', 'Diese Mannschaft']
+Mentions types
+['np-antecedent', 'np-np', 'np-np', 'np-np', 'pronoun-personal']
+['np-antecedent', 'np-np', 'np-np', 'np-np']
+
+
+German longer chains ======>
+
+
+English Chain: set_13 German Chain: set_14
+Mentions tokens:
+['private gymnastics clubs', 'these gymnastics clubs', 'These clubs']
+['privaten Turnvereinen', 'die', 'dieser Turnvereine', 'diesen Vereinen']
+Mentions types
+['np-antecedent', 'np-np', 'np-np']
+['np-antecedent', 'pronoun-relative', 'np-np', 'np-np']
+
+
+English Chain: set_12 German Chain: set_14
+Mentions tokens:
+['affluent suburban neighborhoods', 'that']
+['privaten Turnvereinen', 'die', 'dieser Turnvereine', 'diesen Vereinen']
+Mentions types
+['np-antecedent', 'pronoun-relative']
+['np-antecedent', 'pronoun-relative', 'np-np', 'np-np']
+
+
+English Chain: set_16 German Chain: set_27
+Mentions tokens:
+['Aimee Boorman , coach of Simone Biles , and Maggie Haney , coach of Laurie Hernandez', 'both', 'their']
+['Aimee Boorman , Trainerin von Simone Biles', ', und Maggie Haney , Trainerin von Laurie Hernandez', 'beide', 'ihre']
+Mentions types
+['np-antecedent', 'pronoun-pronoun', 'pronoun-possessive']
+['np-antecedent', 'np-antecedent', 'pronoun-pronoun', 'pronoun-possessive']
+
+
+English Chain: set_29 German Chain: set_34
+Mentions tokens:
+['Simone', 'Gabby', 'and Laurie', 'That', "Simone Biles Gabby Douglas and Lauren `` Laurie '' Hernandez", 'who', '. Gabby and Laurie', 'They', 'by Gabby and Laurie', 'you Laurie , Gabby']
+['Simone', 'Gabby', 'und Laurie', 'Simone Biles Gabby Douglas und Lauren " Laurie " Hernandez', 'die', 'der dreifachen Weltmeisterin Simone Biles , Douglas und Laurie Hernandez', 'sie', 'Simone , Gabby und Laurie', 'Sie', 'Simone , Gabby und Laurie', 'Simone , Aly , Laurie , Gabby']
+Mentions types
+['np-antecedent', 'np-antecedent', 'np-antecedent', 'pronoun-demonstrative', 'np-np', 'pronoun-relative', 'np-np', 'pronoun-personal', 'np-np', 'np-np']
+['np-antecedent', 'np-antecedent', 'np-antecedent', 'np-np', 'pronoun-relative', 'np-np', 'pronoun-personal', 'np-np', 'pronoun-personal', 'np-np', 'np-np']
+
+
+English Chain: set_9 German Chain: set_14
+Mentions tokens:
+['gymnastics clubs', 'that']
+['privaten Turnvereinen', 'die', 'dieser Turnvereine', 'diesen Vereinen']
+Mentions types
+['np-antecedent', 'pronoun-relative']
+['np-antecedent', 'pronoun-relative', 'np-np', 'np-np']
+
+
+English chain not in German ======>
+
+
+German chain not in English ======>
+
+
+German Chain: set_18
+Mentions tokens:
+['ihre Athleten', 'sie']
+Mentions types
+['np-antecedent', 'pronoun-personal']
+
+
+German Chain: set_12
+Mentions tokens:
+['Eltern', 'die']
+Mentions types
+['np-antecedent', 'pronoun-relative']
+
+
+German Chain: set_13
+Mentions tokens:
+['wohlhabenden Vororten', 'die']
+Mentions types
+['np-antecedent', 'pronoun-relative']
+
+
+German Chain: set_5
+Mentions tokens:
+['Letztes Jahr waren Simone und Gabby # 1 und # 2 .', 'Das']
+Mentions types
+['np-antecedent', 'pronoun-demonstrative']
+
+
+German Chain: set_9
+Mentions tokens:
+['die vierte , heterosexuelle Amerikanerin', 'die']
+Mentions types
+['np-antecedent', 'pronoun-relative']
+
+
+****************************************
+STATISTICS PER DOC
+../../testsuitewmt18/parcor-full/corpus//news/EN24_words.xml
+src chains: 12 nominal: 11
+src mentions: 30 nominal: 28
+src annotated words: 90 nominal: 61
+tgt chains: 12 nominal: 10
+tgt mentions: 29 nominal: 25
+tgt annotated words: 55 nominal: 41
+****************************************
+
+
+Matching chains ======>
+
+
+English Chain: set_0 German Chain: set_10
+Mentions tokens:
+['junior doctors', 'who']
+['der 37.000 Assistenzärzte', 'die']
+Mentions types
+['np-antecedent', 'pronoun-relative']
+['np-antecedent', 'pronoun-relative']
+
+
+English Chain: set_1 German Chain: set_14
+Mentions tokens:
+["Jeremy Hunt 's proposal", 'it']
+['Jeremy Hunts Vorschlag', 'ihn']
+Mentions types
+['np-antecedent', 'pronoun-personal']
+['np-antecedent', 'pronoun-personal']
+
+
+English Chain: set_2 German Chain: set_1
+Mentions tokens:
+['the new contract', 'which']
+['einen neuen Vertrag', 'der']
+Mentions types
+['np-antecedent', 'pronoun-relative']
+['np-antecedent', 'pronoun-relative']
+
+
+English Chain: set_3 German Chain: set_12
+Mentions tokens:
+['the proposed contract', 'it', 'it']
+['dem vorgeschlagenen Vertrag', 'es', 'es']
+Mentions types
+['np-antecedent', 'pronoun-personal', 'pronoun-personal']
+['np-antecedent', 'pronoun-personal', 'pronoun-personal']
+
+
+English Chain: set_12 German Chain: set_13
+Mentions tokens:
+['Jeremy Hunt', 'Mr Hunt', 'Jeremy Hunt', 'his', 'Jeremy Hunt', 'he']
+['Jeremy Hunts', 'Hunt', 'Jeremy Hunt', 'seine', 'Jeremy Hunt', 'er']
+Mentions types
+['np-antecedent', 'np-np', 'np-np', 'pronoun-possessive', 'np-np', 'pronoun-personal']
+['np-antecedent', 'np-np', 'np-np', 'pronoun-possessive', 'np-np', 'pronoun-personal']
+
+
+English Chain: set_8 German Chain: set_8
+Mentions tokens:
+['the 54,000 junior doctors', 'who']
+['die 54.000 Assistenzärzte', 'die']
+Mentions types
+['np-antecedent', 'pronoun-relative']
+['np-antecedent', 'pronoun-relative']
+
+
+English Chain: set_7 German Chain: set_7
+Mentions tokens:
+['junior doctors', 'they']
+['die Assistenzärzte', 'sie']
+Mentions types
+['np-antecedent', 'pronoun-personal']
+['np-antecedent', 'pronoun-personal']
+
+
+English Chain: set_9 German Chain: set_14
+Mentions tokens:
+['carers', 'their']
+['Jeremy Hunts Vorschlag', 'ihn']
+Mentions types
+['np-antecedent', 'pronoun-possessive']
+['np-antecedent', 'pronoun-personal']
+
+
+English Chain: set_11 German Chain: set_14
+Mentions tokens:
+['Dr Ellen McCourt', "the BMA 's junior doctors '' committee chair"]
+['Jeremy Hunts Vorschlag', 'ihn']
+Mentions types
+['np-antecedent', 'np-apposition']
+['np-antecedent', 'pronoun-personal']
+
+
+English Chain: set_10 German Chain: set_14
+Mentions tokens:
+['Junior Doctors Committee', 'their']
+['Jeremy Hunts Vorschlag', 'ihn']
+Mentions types
+['np-antecedent', 'pronoun-possessive']
+['np-antecedent', 'pronoun-personal']
+
+
+Matching chains, different number of mentions ======>
+
+
+English longer chains ======>
+
+
+English Chain: set_13 German Chain: set_14
+Mentions tokens:
+['Daniel Mortimer', 'chief executive of NHS Employers', 'Mr Mortimer']
+['Jeremy Hunts Vorschlag', 'ihn']
+Mentions types
+['np-antecedent', 'np-apposition', 'np-np']
+['np-antecedent', 'pronoun-personal']
+
+
+German longer chains ======>
+
+
+English chain not in German ======>
+
+
+German chain not in English ======>
+
+
+German Chain: set_2
+Mentions tokens:
+['acht Wochen', 'die']
+Mentions types
+['np-antecedent', 'pronoun-relative']
+
+
+German Chain: set_3
+Mentions tokens:
+['eines Versprechens', 'das']
+Mentions types
+['np-antecedent', 'pronoun-relative']
+
+
+German Chain: set_9
+Mentions tokens:
+['Pflegern', 'ihren']
+Mentions types
+['np-antecedent', 'pronoun-possessive']
+
+
+****************************************
+STATISTICS PER DOC
+../../testsuitewmt18/parcor-full/corpus//news/EN25_words.xml
+src chains: 7 nominal: 7
+src mentions: 26 nominal: 26
+src annotated words: 46 nominal: 46
+tgt chains: 16 nominal: 14
+tgt mentions: 41 nominal: 37
+tgt annotated words: 83 nominal: 71
+****************************************
+
+
+Matching chains ======>
+
+
+English Chain: set_0 German Chain: set_0
+Mentions tokens:
+['The £2-a-day drug', 'that']
+['einem £ 2-pro Tag-Medikament', 'dieses']
+Mentions types
+['np-antecedent', 'pronoun-relative']
+['np-antecedent', 'pronoun-demonstrative']
+
+
+English Chain: set_4 German Chain: set_2
+Mentions tokens:
+['Some 140,000 people', 'these']
+['Rund 140.000 Leute', 'davon']
+Mentions types
+['np-antecedent', 'pronoun-demonstrative']
+['np-antecedent', 'pronoun-demonstrative']
+
+
+English Chain: set_9 German Chain: set_8
+Mentions tokens:
+['one attack', 'another']
+['einen Herzinfarkt', 'einen weiteren']
+Mentions types
+['np-antecedent', 'pronoun-pronoun']
+['np-antecedent', 'np-nom-ellipsis']
+
+
+English Chain: set_11 German Chain: set_10
+Mentions tokens:
+['a higher risk of having another', 'this risk']
+['einem höheren Risiko einen weiteren zu haben', 'dieses Risiko']
+Mentions types
+['np-antecedent', 'np-np']
+['np-antecedent', 'np-np']
+
+
+Matching chains, different number of mentions ======>
+
+
+English longer chains ======>
+
+
+English Chain: set_13 German Chain: set_21
+Mentions tokens:
+['£2-a-day drug', 'it', 'Anti-clotting drug ticagrelor', 'The drug', 'it', 'it', 'Ticagrelor', 'which', 'ticagrelor', 'it', 'ticagrelor', 'it']
+['Das gerinnungshemmende Medikament Ticagrelor', 'Das Medikament', 'Ticagrelor', 'das', 'es', 'Ticagrelor', 'Ticagrelor', 'Ticagrelor', 'Ticagrelor']
+Mentions types
+['np-antecedent', 'pronoun-personal', 'np-np', 'np-np', 'pronoun-personal', 'pronoun-personal', 'np-np', 'pronoun-relative', 'np-np', 'pronoun-personal', 'np-np', 'pronoun-personal']
+['np-antecedent', 'np-np', 'np-np', 'pronoun-relative', 'pronoun-personal', 'np-np', 'np-np', 'np-np', 'np-np']
+
+
+English Chain: set_6 German Chain: set_3
+Mentions tokens:
+['a plaque', 'the plaque', 'it']
+['Ansammlungen fetthaltigen Materials', 'die']
+Mentions types
+['np-antecedent', 'np-np', 'pronoun-personal']
+['np-antecedent', 'pronoun-relative']
+
+
+German longer chains ======>
+
+
+English Chain: set_8 German Chain: set_6
+Mentions tokens:
+['a blood clot', 'the clot', 'it']
+['ein Blutgerinnsel', 'das', 'das Blutgerinnsel', 'es']
+Mentions types
+['np-antecedent', 'np-np', 'pronoun-personal']
+['np-antecedent', 'pronoun-relative', 'np-np', 'pronoun-personal']
+
+
+English chain not in German ======>
+
+
+German chain not in English ======>
+
+
+German Chain: set_15
+Mentions tokens:
+['Behandlung', 'die']
+Mentions types
+['np-antecedent', 'pronoun-relative']
+
+
+German Chain: set_14
+Mentions tokens:
+['Menschen', 'die']
+Mentions types
+['np-antecedent', 'pronoun-relative']
+
+
+German Chain: set_16
+Mentions tokens:
+['einen Zeitraum von bis zu drei Jahren beschränkt', 'diesen Zeitraum']
+Mentions types
+['np-antecedent', 'np-np']
+
+
+German Chain: set_7
+Mentions tokens:
+['Personen', 'die']
+Mentions types
+['np-antecedent', 'pronoun-relative']
+
+
+German Chain: set_11
+Mentions tokens:
+['Der Anleitungsentwurf von NICE', 'der']
+Mentions types
+['np-antecedent', 'pronoun-relative']
+
+
+German Chain: set_13
+Mentions tokens:
+['Leuten', 'die']
+Mentions types
+['np-antecedent', 'pronoun-relative']
+
+
+German Chain: set_12
+Mentions tokens:
+['aller Personen', 'die']
+Mentions types
+['np-antecedent', 'pronoun-relative']
+
+
+
+
+**************End of corpus*****************
+**************Stats in corpus*****************
+
+
+mention correspondences in corpus (for matching chains with the same number of mentions)
+
+
+np-np to np-np 302
+np-antecedent to np-antecedent 209
+np-np to pronoun-personal 109
+pronoun-personal to np-np 88
+pronoun-personal to pronoun-personal 85
+np-antecedent to np-np 59
+np-np to np-antecedent 59
+np-np to pronoun-possessive 54
+pronoun-personal to np-antecedent 52
+np-antecedent to pronoun-personal 47
+pronoun-possessive to np-np 44
+np-antecedent to pronoun-relative 29
+pronoun-personal to pronoun-possessive 24
+pronoun-possessive to np-antecedent 24
+pronoun-possessive to pronoun-personal 23
+np-antecedent to pronoun-possessive 22
+pronoun-relative to np-antecedent 21
+pronoun-possessive to pronoun-possessive 20
+pronoun-relative to pronoun-relative 17
+np-np to pronoun-relative 13
+pronoun-personal to pronoun-relative 11
+np-antecedent to pronoun-demonstrative 10
+pronoun-possessive to pronoun-relative 8
+np-apposition to np-np 4
+np-apposition to pronoun-personal 4
+pronoun-personal to pronoun-demonstrative 4
+pronoun-demonstrative to np-antecedent 3
+pronoun-demonstrative to pronoun-demonstrative 3
+np-apposition to np-antecedent 2
+np-apposition to pronoun-relative 2
+pronoun-relative to pronoun-demonstrative 2
+pronoun-relative to pronoun-personal 2
+pronoun-pronoun to np-antecedent 2
+np-antecedent to pronoun-pronoun 2
+np-apposition to pronoun-possessive 1
+pronoun-relative to pronoun-possessive 1
+pronoun-possessive to pronoun-demonstrative 1
+pronoun-relative to np-np 1
+pronoun-pronoun to pronoun-relative 1
+np-nom-ellipsis to np-antecedent 1
+np-nom-ellipsis to pronoun-relative 1
+np-np to pronoun-pronoun 1
+pronoun-personal to pronoun-pronoun 1
+np-antecedent to np-nom-ellipsis 1
+pronoun-pronoun to np-nom-ellipsis 1
+
+
+number of matching chains: 85
+number of english chains longer than german: 39
+number of german chains longer than german: 46
+number of english chains not in german: 0
+number of german chains not in english: 94
