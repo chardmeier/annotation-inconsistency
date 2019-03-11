@@ -322,6 +322,117 @@ I mentioned in one of the previous messages that if a chain is 'empty', this is 
 
 Best,
 Katja
+#################
+>> I am going through the paper now and will submit it as it is. I 
+>> thought of adding the results on news, at least quantitative, but 
+>> then I will have to rewrite the manual analysis part or enhance and 
+>> it will takes much time.
+>>
+>> The numbers on news are not really exciting: we have 32% of 
+>> matching, 32% of overlapping an 36% of German unpaired.
+>> I analysed ca. 90 chains manually, and out of them there are 23 
+>> script errors, 30 annotation errors, 27 explicitation and 8 
+>> implicitation cases. There were 'unpaired English chains' in the 
+>> data, for which we report '0' in both datasets. I marked them as 
+>> scripterror and added the information which could be useful for 
+>> improvement.
+>>
+>>
+>> Will anyone else read the paper today?
+>>
+>> Best,
+>> Katja
+>>
+##########################################
+>>>
+>>> Hey,
+>>> I am sorry, but there are still problems.
+>>>
+>>> Now, we have the following case in 'German longer chains':
+>>>
+>>> English Chain: set_199 German Chain: set_183
+>>> Mentions tokens:
+>>> ['the family of Dylan Klebold', 'them', 'they', 'they', 'their',
+>>> 'they', 'them']
+>>> ['Dylan Klebold', 'Dylan', 'ihn', 'ihn', 'er', 'ihn', 'seine',
+>>> 'seinem', 'dieses Kind']
+>>> Mentions types
+>>> ['np-antecedent', 'pronoun-personal', 'pronoun-personal',
+>>> 'pronoun-personal', 'pronoun-possessive', 'pronoun-personal',
+>>> 'pronoun-personal']
+>>> ['np-antecedent', 'np-np', 'pronoun-personal', 'pronoun-personal',
+>>> 'pronoun-personal', 'pronoun-personal', 'pronoun-possessive',
+>>> 'pronoun-possessive', 'np-np']
+>>>
+>>>
+>>> But the alignment is wrong: the family of Dylan Klebold vs. Dylon
+>>> Klebold. It was correct in the previous version:
+>>>
+>>> English Chain: set_199 Mentions: ['they', 'them', 'they', 'the family
+>>> of Dylan Klebold', 'their', 'them', 'they']
+>>> German Chain: set_171 Mentions ['sie', 'die Familie', 'ihnen', 'ihre',
+>>> 'sie', 'sie']
+>>>
+>>> The next case of wrong alignment:
+>>>
+>>> English Chain: set_114 German Chain: set_162
+>>> Mentions tokens:
+>>> ['people', 'they', 'they', 'They', 'they']
+>>> ['dem Leben', 'das']
+>>> Mentions types
+>>> ['np-antecedent', 'pronoun-personal', 'pronoun-personal',
+>>> 'pronoun-personal', 'pronoun-personal']
+>>> ['np-antecedent', 'pronoun-relative']
+>>>
+>>> In the previous version we had:
+>>>
+>>> English Chain: set_114 Mentions: ['they', 'they', 'they', 'They', 'people']
+>>> German Chain: set_165 Mentions ['Menschen', 'sie', 'sie', 'Sie']
+>>>
+>>> And it was correct.
+>>>
+>>> The next one:
+>>>
+>>> English Chain: set_178 German Chain: set_54
+>>> Mentions tokens:
+>>> ['it', 'Down syndrome', 'it', 'it', 'it', 'it', 'it', 'it']
+>>> ['solche Identitäten', 'ihnen']
+>>> Mentions types
+>>> ['pronoun-pronoun', 'np-antecedent', 'pronoun-personal',
+>>> 'pronoun-personal', 'pronoun-personal', 'pronoun-personal',
+>>> 'pronoun-personal', 'pronoun-personal']
+>>> ['np-antecedent', 'pronoun-personal']
+>>>
+>>> It is also wrong in the previous version. It should be German 
+>>> Chain: set_268
+>>>
+>>>
+>>> I am not sure if I should go further. I don't think so. My suggestion
+>>> is that we leave the paper as it is (or add news if we manage). And
+>>> have the following todos for the final version:
+>>> (1) improve algorithm
+>>> (2) analyse more texts manually
+>>> (3) add other subcorpora
+>>> (4) integrate the annotated categories into the quantitative results
+>>>
+>>>
+#######################################
+>>>
+>>>> Katja you were right. I found the mistake. As far as I can see and
+>>>> according to your notes most of it should be fixed now. The problem,
+>>>> again, was very stupid. The indexes for words in Parcorfull start at
+>>>> 1, and I didn't account for this in some parts of the script.
+>>>> Arrggh, I'm very sorry to break the numbers in the paper.
+>>>>
+>>>>
+>>>> What I don't get is why we have different numbers of total chains,
+>>>> hmmm. In all the cases, your notes on one document are very useful.
+>>>>
+
+
+
+
+
 ############
 
 Statistics:
