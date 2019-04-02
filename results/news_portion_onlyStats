@@ -1,0 +1,290 @@
+****************************************
+STATISTICS PER DOC
+../../testsuitewmt18/parcor-full/corpus//news/EN01_words.xml
+src chains: 6 nominal: 6
+src mentions: 40 nominal: 40
+src annotated words: 78 nominal: 78
+tgt chains: 6 nominal: 6
+tgt mentions: 39 nominal: 39
+tgt annotated words: 71 nominal: 71
+****************************************
+
+
+****************************************
+STATISTICS PER DOC
+../../testsuitewmt18/parcor-full/corpus//news/EN03_words.xml
+src chains: 6 nominal: 5
+src mentions: 44 nominal: 42
+src annotated words: 122 nominal: 97
+tgt chains: 4 nominal: 4
+tgt mentions: 36 nominal: 36
+tgt annotated words: 88 nominal: 88
+****************************************
+
+
+****************************************
+STATISTICS PER DOC
+../../testsuitewmt18/parcor-full/corpus//news/EN04_words.xml
+src chains: 14 nominal: 11
+src mentions: 67 nominal: 62
+src annotated words: 127 nominal: 108
+tgt chains: 14 nominal: 11
+tgt mentions: 60 nominal: 54
+tgt annotated words: 102 nominal: 80
+****************************************
+
+
+****************************************
+STATISTICS PER DOC
+../../testsuitewmt18/parcor-full/corpus//news/EN05_words.xml
+src chains: 22 nominal: 20
+src mentions: 86 nominal: 82
+src annotated words: 130 nominal: 106
+tgt chains: 21 nominal: 21
+tgt mentions: 74 nominal: 74
+tgt annotated words: 101 nominal: 101
+****************************************
+
+
+****************************************
+STATISTICS PER DOC
+../../testsuitewmt18/parcor-full/corpus//news/EN07_words.xml
+src chains: 10 nominal: 9
+src mentions: 58 nominal: 56
+src annotated words: 97 nominal: 92
+tgt chains: 0 nominal: 0
+tgt mentions: 0 nominal: 0
+tgt annotated words: 0 nominal: 0
+****************************************
+
+
+****************************************
+STATISTICS PER DOC
+../../testsuitewmt18/parcor-full/corpus//news/EN08_words.xml
+src chains: 7 nominal: 6
+src mentions: 26 nominal: 25
+src annotated words: 49 nominal: 48
+tgt chains: 8 nominal: 8
+tgt mentions: 28 nominal: 28
+tgt annotated words: 61 nominal: 61
+****************************************
+
+
+****************************************
+STATISTICS PER DOC
+../../testsuitewmt18/parcor-full/corpus//news/EN09_words.xml
+src chains: 4 nominal: 3
+src mentions: 47 nominal: 45
+src annotated words: 66 nominal: 60
+tgt chains: 9 nominal: 8
+tgt mentions: 61 nominal: 59
+tgt annotated words: 95 nominal: 84
+****************************************
+
+
+****************************************
+STATISTICS PER DOC
+../../testsuitewmt18/parcor-full/corpus//news/EN10_words.xml
+src chains: 5 nominal: 4
+src mentions: 49 nominal: 48
+src annotated words: 87 nominal: 86
+tgt chains: 11 nominal: 10
+tgt mentions: 64 nominal: 62
+tgt annotated words: 102 nominal: 92
+****************************************
+
+
+****************************************
+STATISTICS PER DOC
+../../testsuitewmt18/parcor-full/corpus//news/EN13_words.xml
+src chains: 8 nominal: 5
+src mentions: 22 nominal: 17
+src annotated words: 71 nominal: 47
+tgt chains: 13 nominal: 9
+tgt mentions: 27 nominal: 19
+tgt annotated words: 91 nominal: 45
+****************************************
+
+
+****************************************
+STATISTICS PER DOC
+../../testsuitewmt18/parcor-full/corpus//news/EN16_words.xml
+src chains: 14 nominal: 9
+src mentions: 32 nominal: 21
+src annotated words: 112 nominal: 63
+tgt chains: 11 nominal: 6
+tgt mentions: 23 nominal: 13
+tgt annotated words: 79 nominal: 28
+****************************************
+
+
+****************************************
+STATISTICS PER DOC
+../../testsuitewmt18/parcor-full/corpus//news/EN17_words.xml
+src chains: 10 nominal: 9
+src mentions: 33 nominal: 31
+src annotated words: 64 nominal: 62
+tgt chains: 21 nominal: 17
+tgt mentions: 53 nominal: 44
+tgt annotated words: 123 nominal: 76
+****************************************
+
+
+****************************************
+STATISTICS PER DOC
+../../testsuitewmt18/parcor-full/corpus//news/EN18_words.xml
+src chains: 10 nominal: 9
+src mentions: 63 nominal: 61
+src annotated words: 169 nominal: 139
+tgt chains: 13 nominal: 12
+tgt mentions: 71 nominal: 69
+tgt annotated words: 129 nominal: 98
+****************************************
+
+
+****************************************
+STATISTICS PER DOC
+../../testsuitewmt18/parcor-full/corpus//news/EN19_words.xml
+src chains: 9 nominal: 8
+src mentions: 21 nominal: 20
+src annotated words: 53 nominal: 52
+tgt chains: 10 nominal: 10
+tgt mentions: 25 nominal: 25
+tgt annotated words: 51 nominal: 51
+****************************************
+
+
+****************************************
+STATISTICS PER DOC
+../../testsuitewmt18/parcor-full/corpus//news/EN20_words.xml
+src chains: 7 nominal: 6
+src mentions: 51 nominal: 48
+src annotated words: 63 nominal: 60
+tgt chains: 10 nominal: 9
+tgt mentions: 49 nominal: 47
+tgt annotated words: 64 nominal: 60
+****************************************
+
+
+****************************************
+STATISTICS PER DOC
+../../testsuitewmt18/parcor-full/corpus//news/EN21_words.xml
+src chains: 18 nominal: 18
+src mentions: 58 nominal: 58
+src annotated words: 95 nominal: 95
+tgt chains: 23 nominal: 22
+tgt mentions: 67 nominal: 66
+tgt annotated words: 113 nominal: 112
+****************************************
+
+
+****************************************
+STATISTICS PER DOC
+../../testsuitewmt18/parcor-full/corpus//news/EN22_words.xml
+src chains: 11 nominal: 9
+src mentions: 44 nominal: 41
+src annotated words: 86 nominal: 79
+tgt chains: 10 nominal: 9
+tgt mentions: 44 nominal: 39
+tgt annotated words: 82 nominal: 77
+****************************************
+
+
+****************************************
+STATISTICS PER DOC
+../../testsuitewmt18/parcor-full/corpus//news/EN23_words.xml
+src chains: 18 nominal: 15
+src mentions: 55 nominal: 50
+src annotated words: 169 nominal: 137
+tgt chains: 20 nominal: 16
+tgt mentions: 60 nominal: 50
+tgt annotated words: 200 nominal: 152
+****************************************
+
+
+****************************************
+STATISTICS PER DOC
+../../testsuitewmt18/parcor-full/corpus//news/EN24_words.xml
+src chains: 12 nominal: 11
+src mentions: 30 nominal: 28
+src annotated words: 90 nominal: 61
+tgt chains: 12 nominal: 10
+tgt mentions: 29 nominal: 25
+tgt annotated words: 55 nominal: 41
+****************************************
+
+
+****************************************
+STATISTICS PER DOC
+../../testsuitewmt18/parcor-full/corpus//news/EN25_words.xml
+src chains: 7 nominal: 7
+src mentions: 26 nominal: 26
+src annotated words: 46 nominal: 46
+tgt chains: 16 nominal: 14
+tgt mentions: 41 nominal: 37
+tgt annotated words: 83 nominal: 71
+****************************************
+
+
+
+
+**************End of corpus*****************
+**************Stats in corpus*****************
+
+
+mention correspondences in corpus (for matching chains with the same number of mentions)
+
+
+np-np to np-np 302
+np-antecedent to np-antecedent 208
+np-np to pronoun-personal 109
+pronoun-personal to np-np 88
+pronoun-personal to pronoun-personal 85
+np-antecedent to np-np 59
+np-np to np-antecedent 59
+np-np to pronoun-possessive 54
+pronoun-personal to np-antecedent 52
+np-antecedent to pronoun-personal 47
+pronoun-possessive to np-np 44
+np-antecedent to pronoun-relative 29
+pronoun-personal to pronoun-possessive 24
+pronoun-possessive to np-antecedent 23
+pronoun-possessive to pronoun-personal 23
+np-antecedent to pronoun-possessive 21
+pronoun-relative to np-antecedent 21
+pronoun-possessive to pronoun-possessive 19
+pronoun-relative to pronoun-relative 17
+np-np to pronoun-relative 13
+pronoun-personal to pronoun-relative 11
+np-antecedent to pronoun-demonstrative 10
+pronoun-possessive to pronoun-relative 8
+np-apposition to np-np 4
+np-apposition to pronoun-personal 4
+pronoun-personal to pronoun-demonstrative 4
+pronoun-demonstrative to np-antecedent 3
+pronoun-demonstrative to pronoun-demonstrative 3
+np-apposition to np-antecedent 2
+np-apposition to pronoun-relative 2
+pronoun-relative to pronoun-demonstrative 2
+pronoun-relative to pronoun-personal 2
+pronoun-pronoun to np-antecedent 2
+np-antecedent to pronoun-pronoun 2
+np-apposition to pronoun-possessive 1
+pronoun-relative to pronoun-possessive 1
+pronoun-possessive to pronoun-demonstrative 1
+pronoun-relative to np-np 1
+pronoun-pronoun to pronoun-relative 1
+np-nom-ellipsis to np-antecedent 1
+np-nom-ellipsis to pronoun-relative 1
+np-np to pronoun-pronoun 1
+pronoun-personal to pronoun-pronoun 1
+np-antecedent to np-nom-ellipsis 1
+pronoun-pronoun to np-nom-ellipsis 1
+
+
+number of matching chains: 84
+number of english chains longer than german: 36
+number of german chains longer than german: 41
+number of english chains not in german: 9
+number of german chains not in english: 84
+counts before classification: english 170 german 202

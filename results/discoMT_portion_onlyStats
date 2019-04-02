@@ -1,0 +1,216 @@
+****************************************
+STATISTICS PER DOC
+../../testsuitewmt18/parcor-full/corpus//DiscoMT/EN000_1756_words.xml
+src chains: 110 nominal: 96
+src mentions: 414 nominal: 364
+src annotated words: 820 nominal: 583
+tgt chains: 148 nominal: 130
+tgt mentions: 498 nominal: 447
+tgt annotated words: 908 nominal: 668
+****************************************
+
+
+****************************************
+STATISTICS PER DOC
+../../testsuitewmt18/parcor-full/corpus//DiscoMT/EN001_1819_words.xml
+src chains: 85 nominal: 60
+src mentions: 332 nominal: 260
+src annotated words: 977 nominal: 480
+tgt chains: 92 nominal: 69
+tgt mentions: 302 nominal: 242
+tgt annotated words: 723 nominal: 384
+****************************************
+
+
+****************************************
+STATISTICS PER DOC
+../../testsuitewmt18/parcor-full/corpus//DiscoMT/EN002_1825_words.xml
+src chains: 84 nominal: 67
+src mentions: 233 nominal: 187
+src annotated words: 670 nominal: 340
+tgt chains: 76 nominal: 62
+tgt mentions: 203 nominal: 170
+tgt annotated words: 415 nominal: 278
+****************************************
+
+
+****************************************
+STATISTICS PER DOC
+../../testsuitewmt18/parcor-full/corpus//DiscoMT/EN003_1894_words.xml
+src chains: 140 nominal: 115
+src mentions: 472 nominal: 384
+src annotated words: 1034 nominal: 628
+tgt chains: 154 nominal: 131
+tgt mentions: 447 nominal: 392
+tgt annotated words: 865 nominal: 582
+****************************************
+
+
+****************************************
+STATISTICS PER DOC
+../../testsuitewmt18/parcor-full/corpus//DiscoMT/EN005_1938_words.xml
+src chains: 82 nominal: 60
+src mentions: 215 nominal: 150
+src annotated words: 853 nominal: 351
+tgt chains: 77 nominal: 58
+tgt mentions: 180 nominal: 133
+tgt annotated words: 574 nominal: 252
+****************************************
+
+
+****************************************
+STATISTICS PER DOC
+../../testsuitewmt18/parcor-full/corpus//DiscoMT/EN006_1950_words.xml
+src chains: 177 nominal: 131
+src mentions: 545 nominal: 412
+src annotated words: 1490 nominal: 767
+tgt chains: 181 nominal: 148
+tgt mentions: 484 nominal: 402
+tgt annotated words: 1300 nominal: 703
+****************************************
+
+
+****************************************
+STATISTICS PER DOC
+../../testsuitewmt18/parcor-full/corpus//DiscoMT/EN007_1953_words.xml
+src chains: 141 nominal: 103
+src mentions: 397 nominal: 267
+src annotated words: 1026 nominal: 447
+tgt chains: 125 nominal: 99
+tgt mentions: 311 nominal: 248
+tgt annotated words: 709 nominal: 395
+****************************************
+
+
+****************************************
+STATISTICS PER DOC
+../../testsuitewmt18/parcor-full/corpus//DiscoMT/EN009_2043_words.xml
+src chains: 85 nominal: 71
+src mentions: 276 nominal: 201
+src annotated words: 565 nominal: 345
+tgt chains: 84 nominal: 62
+tgt mentions: 238 nominal: 166
+tgt annotated words: 559 nominal: 275
+****************************************
+
+
+****************************************
+STATISTICS PER DOC
+../../testsuitewmt18/parcor-full/corpus//DiscoMT/EN010_205_words.xml
+src chains: 107 nominal: 87
+src mentions: 376 nominal: 298
+src annotated words: 812 nominal: 521
+tgt chains: 102 nominal: 82
+tgt mentions: 354 nominal: 290
+tgt annotated words: 666 nominal: 449
+****************************************
+
+
+****************************************
+STATISTICS PER DOC
+../../testsuitewmt18/parcor-full/corpus//DiscoMT/EN011_2053_words.xml
+src chains: 91 nominal: 69
+src mentions: 262 nominal: 204
+src annotated words: 762 nominal: 370
+tgt chains: 75 nominal: 58
+tgt mentions: 231 nominal: 195
+tgt annotated words: 626 nominal: 339
+****************************************
+
+
+
+
+**************End of corpus*****************
+**************Stats in corpus*****************
+
+
+mention correspondences in corpus (for matching chains with the same number of mentions)
+
+
+pronoun-personal to pronoun-personal 507
+np-antecedent to np-antecedent 361
+pronoun-personal to np-antecedent 308
+np-antecedent to pronoun-personal 293
+np-antecedent to pronoun-relative 134
+pronoun-relative to np-antecedent 93
+pronoun-relative to pronoun-relative 91
+pronoun-personal to np-np 64
+pronoun-personal to pronoun-possessive 59
+np-np to np-np 58
+pronoun-personal to pronoun-relative 52
+np-np to pronoun-personal 50
+np-antecedent to pronoun-possessive 44
+np-antecedent to np-np 44
+np-np to np-antecedent 44
+pronoun-possessive to pronoun-personal 39
+pronoun-demonstrative to np-antecedent 38
+pronoun-possessive to np-antecedent 36
+np-antecedent to pronoun-demonstrative 35
+pronoun-possessive to pronoun-possessive 34
+pronoun-relative to pronoun-personal 24
+pronoun-personal to pronoun-demonstrative 24
+pronoun-demonstrative to pronoun-personal 23
+pronoun-pronoun to pronoun-personal 22
+pronoun-pronoun to np-antecedent 21
+pronoun-demonstrative to pronoun-demonstrative 20
+pronoun-possessive to pronoun-relative 8
+np-antecedent to pronoun-pronoun 8
+np-np to pronoun-relative 8
+pronoun-demonstrative to pronoun-relative 7
+np-antecedent to np-comparative 6
+pronoun-pronoun to pronoun-demonstrative 6
+np-antecedent to np-nom-ellipsis 4
+none-none to pronoun-personal 4
+pronoun-pronoun to pronoun-possessive 4
+pronoun-personal to pronoun-pronoun 4
+pronoun-relative to pronoun-possessive 3
+pronoun-pronoun to pronoun-relative 3
+np-antecedent to pronoun-reflexive 3
+pronoun-personal to pronoun-reflexive 3
+np-np to pronoun-possessive 3
+pronoun-relative to pronoun-demonstrative 3
+pronoun-personal to np-comparative 3
+pronoun-demonstrative to pronoun-possessive 3
+pronoun-pronoun to np-np 3
+np-np to pronoun-reflexive 2
+pronoun-possessive to np-np 2
+pronoun-demonstrative to np-np 2
+pronoun-reflexive to pronoun-personal 2
+pronoun-demonstrative to pronoun-pronoun 2
+pronoun-pronoun to pronoun-pronoun 2
+pronoun-demonstrative to np-comparative 2
+np-np to pronoun-demonstrative 2
+np-np to np-comparative 2
+pronoun-personal to np-nom-ellipsis 2
+none-none to np-antecedent 2
+none-none to np-np 2
+pronoun-pronoun to np-nom-ellipsis 2
+np-np to np-nom-ellipsis 2
+pronoun-possessive to pronoun-demonstrative 2
+pronoun-relative to np-np 2
+pronoun-reflexive to np-antecedent 1
+pronoun-reflexive to pronoun-relative 1
+pronoun-reflexive to pronoun-possessive 1
+pronoun-relative to pronoun-reflexive 1
+pronoun-relative to np-comparative 1
+pronoun-none to np-antecedent 1
+pronoun-none to pronoun-possessive 1
+np-antecedent to np-apposition 1
+np-apposition to np-antecedent 1
+np-apposition to np-apposition 1
+np-apposition to np-np 1
+np-np to np-apposition 1
+np-comparative to np-antecedent 1
+np-comparative to pronoun-relative 1
+pronoun-relative to pronoun-pronoun 1
+np-nom-ellipsis to np-antecedent 1
+np-nom-ellipsis to pronoun-pronoun 1
+pronoun-demonstrative to np-nom-ellipsis 1
+
+
+number of matching chains: 392
+number of english chains longer than german: 174
+number of german chains longer than german: 293
+number of english chains not in german: 0
+number of german chains not in english: 376
+counts before classification: english 859 german 899
