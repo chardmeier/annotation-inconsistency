@@ -1,0 +1,23 @@
+4a5
+> English Chain: set_119 German Chain: set_172
+6a8
+> English Chain: set_147 German Chain: set_226
+12,13c14,16
+< English Chain: set_202 German Chain: set_195
+< English Chain: set_208 German Chain: set_235
+---
+> English Chain: set_197 German Chain: set_54
+> English Chain: set_202 German Chain: set_54
+> English Chain: set_208 German Chain: set_54
+21a25
+> English Chain: set_243 German Chain: set_54
+23,24d26
+< English Chain: set_246 German Chain: set_54
+< English Chain: set_247 German Chain: set_54
+27d28
+< English Chain: set_259 German Chain: set_54
+43,44c44
+< English Chain: set_291 German Chain: set_135
+< English Chain: set_44 German Chain: set_60
+---
+> English Chain: set_44 German Chain: set_54
