@@ -1,0 +1,48 @@
+(E-mail from Katja, 2019-12-05)
+
+In meinen Notizen vom 5.04.2019 steht:
+
+NEWS
+
+23 script errors
+
+112 chains:
+47 matching chains
+
+analysed 65 chains:
+30 annotation errors
+27 longer target (expl)
+8 shorter target (impl)
+
+--> 65 chains: 46% anno error, 42% explicitation, 12% implicitation
+
+
+TED
+156 chains:
+49 matching chains
+
+analysed 107 chains:
+44 annotation errors
+16 annotation interpretation
+40 longer target (expl)
+7 shorter target (impl)
+
+
+analysed total chains: 172
+total expl: 67 (39.0)
+total impl: 15 (8.7)
+total annointerp: 16 (9.3)
+total anno error: 74 (43)
+
+subset:
+
+39,764 English TED
+37,452 German TED
+10,644 English news
+10,593 German news
+
+total TED: 77,216
+total news: 21,237
+
+Es war also im CRAC-Paper...
+
