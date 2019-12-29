@@ -1,0 +1,1489 @@
+****************************************
+STATISTICS PER DOC
+/Users/xloish/data/parcor-full/corpus//DiscoMT/EN000_1756_words.xml
+src chains: 110 nominal: 96
+src mentions: 414 nominal: 364
+src annotated words: 820 nominal: 583
+tgt chains: 148 nominal: 130
+tgt mentions: 498 nominal: 447
+tgt annotated words: 908 nominal: 668
+****************************************
+
+
+set_268 set_213 2.0
+set_271 set_217 1.0
+set_199 set_183 2.0
+set_199 set_171 2.0
+set_199 set_172 0.5
+set_139 set_197 1.0
+set_3 set_2 0.5
+set_119 set_171 0.5
+set_119 set_172 1.0
+set_38 set_51 2.5
+set_40 set_55 0.5
+set_218 set_36 0.5
+set_218 set_25 4.0
+set_183 set_59 2.0
+set_87 set_113 0.5
+set_87 set_114 1.5
+set_106 set_270 0.5
+set_135 set_187 0.5
+set_135 set_189 1.5
+set_135 set_188 0.5
+set_156 set_245 2.0
+set_275 set_256 1.5
+set_225 set_36 3.5
+set_225 set_25 1.5
+set_228 set_28 4.5
+set_230 set_33 4.0
+set_229 set_31 2.0
+set_166 set_277 3.0
+set_255 set_141 0.5
+set_256 set_145 2.0
+set_212 set_255 0.5
+set_212 set_245 0.5
+set_288 set_183 2.0
+set_257 set_145 1.0
+set_258 set_144 1.0
+set_259 set_148 1.0
+set_205 set_209 3.5
+set_158 set_248 1.5
+set_263 set_181 4.0
+set_265 set_278 0.5
+set_265 set_192 0.5
+set_266 set_199 4.0
+set_267 set_202 1.0
+set_207 set_255 1.0
+set_207 set_226 0.5
+set_270 set_215 2.0
+set_272 set_218 1.0
+set_277 set_260 2.0
+set_164 set_253 1.5
+set_6 set_8 2.5
+set_30 set_36 1.5
+set_114 set_162 0.5
+set_114 set_166 0.5
+set_194 set_117 0.5
+set_58 set_65 1.0
+set_58 set_111 0.5
+set_58 set_77 0.5
+set_58 set_75 0.5
+set_58 set_99 1.0
+set_58 set_80 0.5
+set_58 set_87 1.0
+set_58 set_101 0.5
+set_58 set_114 0.5
+set_58 set_66 0.5
+set_175 set_65 0.5
+set_175 set_66 1.0
+set_231 set_38 3.0
+set_88 set_115 2.0
+set_232 set_39 2.5
+set_233 set_46 1.0
+set_227 set_26 2.0
+set_227 set_28 0.5
+set_236 set_51 0.5
+set_102 set_140 1.5
+set_184 set_111 2.0
+set_184 set_99 3.5
+set_237 set_48 1.0
+set_39 set_54 1.5
+set_39 set_53 0.5
+set_39 set_48 3.0
+set_238 set_53 1.5
+set_239 set_59 2.0
+set_234 set_47 3.0
+set_234 set_46 2.0
+set_234 set_48 0.5
+set_245 set_118 2.0
+set_246 set_119 0.5
+set_278 set_43 1.5
+set_247 set_119 0.5
+set_250 set_122 2.0
+set_195 set_280 3.5
+set_195 set_126 0.5
+set_195 set_129 0.5
+set_174 set_75 10.0
+set_174 set_99 0.5
+set_196 set_280 0.5
+set_196 set_126 2.0
+set_281 set_130 3.0
+set_12 set_15 2.0
+set_252 set_266 3.5
+set_91 set_127 2.0
+set_276 set_258 1.0
+set_287 set_278 7.5
+set_287 set_167 1.5
+set_287 set_192 0.5
+set_289 set_281 2.0
+set_283 set_270 2.0
+set_217 set_19 2.0
+set_220 set_4 2.0
+set_220 set_279 4.0
+set_226 set_22 0.5
+set_147 set_255 0.5
+set_147 set_226 1.0
+set_152 set_232 1.5
+set_9 set_11 1.0
+set_5 set_7 1.0
+set_107 set_153 1.0
+set_107 set_152 0.5
+set_108 set_153 0.5
+set_108 set_269 1.0
+set_109 set_155 1.0
+------------------------->
+set_119 [[2780, 2781], [2788]]
+['their', 'story', 'it']
+set_135 [[3023, 3024, 3025, 3026], [3039], [3061], [3045]]
+['the', 'children', 'I', 'had', 'them', 'they', 'they']
+set_225 [[651], [681], [667], [700], [629, 630, 631, 632, 633, 634, 635], [646], [654]]
+['she', 'she', 'She', 'she', 'a', 'friend', 'of', 'a', 'friend', 'of', 'mine', 'her', 'herself']
+set_36 [[617], [613], [601, 602, 603, 604], [670], [651], [636], [791, 792], [796], [799]]
+['sie', 'ihrer', 'die', 'Freundin', 'einer', 'Freundin', 'sie', 'sie', 'Sie', 'diese', 'Freundin', 'die', 'ihrer']
+set_25 [[645, 646], [681], [695], [677], [605, 606, 607]]
+['diesem', 'Kind', 'sich', 'sich', 'sie', 'eine', 'kleinwüchsige', 'Tochter']
+set_171 [[2786], [2756, 2757], [2796], [2792], [2774], [2800]]
+['sie', 'die', 'Familie', 'ihnen', 'ihre', 'sie', 'sie']
+set_172 [[2792, 2793], [2805]]
+['ihre', 'Geschichte', 'sie']
+set_187 [[3066], [3062, 3063], [3074]]
+['den', 'den', 'Schmerz', 'den']
+set_189 [[3067], [3055], [3041], [3038, 3039], [3086]]
+['sie', 'sie', 'die', 'die', 'Kinder', 'sie']
+set_188 [[3085], [3082, 3083]]
+['den', 'den', 'Schmerz']
+Matching chains ======>
+
+
+English Chain: set_268 German Chain: set_213
+Mentions tokens:
+['a close friend', 'who', 'she']
+['eine enge Freundin', 'die', 'ihr']
+Mentions types
+['np-antecedent', 'pronoun-relative', 'pronoun-personal']
+['np-antecedent', 'pronoun-relative', 'pronoun-personal']
+
+
+English Chain: set_271 German Chain: set_217
+Mentions tokens:
+['people', 'who', 'their']
+['Menschen', 'die', 'ihre']
+Mentions types
+['np-antecedent', 'pronoun-relative', 'pronoun-possessive']
+['np-antecedent', 'pronoun-relative', 'pronoun-possessive']
+
+
+English Chain: set_139 German Chain: set_197
+Mentions tokens:
+['flame-retardant pajamas', 'they']
+['flammfeste Schlafanzüge', 'sie']
+Mentions types
+['np-antecedent', 'pronoun-personal']
+['np-antecedent', 'pronoun-personal']
+
+
+English Chain: set_119 German Chain: set_172
+Mentions tokens:
+['their story', 'it']
+['ihre Geschichte', 'sie']
+Mentions types
+['np-antecedent', 'pronoun-personal']
+['np-antecedent', 'pronoun-personal']
+
+
+English Chain: set_183 German Chain: set_59
+Mentions tokens:
+['people who have these conditions', 'they', 'their', 'them', 'their', 'them']
+['die Betroffenen', 'sie', 'ihre', 'sie', 'ihre', 'sie']
+Mentions types
+['np-antecedent', 'pronoun-personal', 'pronoun-personal', 'pronoun-personal', 'pronoun-possessive', 'pronoun-personal']
+['np-antecedent', 'pronoun-personal', 'pronoun-possessive', 'pronoun-personal', 'pronoun-possessive', 'pronoun-personal']
+
+
+English Chain: set_87 German Chain: set_114
+Mentions tokens:
+['that light', 'it']
+['dieses Leuchten', 'es']
+Mentions types
+['np-antecedent', 'pronoun-personal']
+['np-antecedent', 'pronoun-personal']
+
+
+English Chain: set_275 German Chain: set_256
+Mentions tokens:
+['the love you have for your children', 'other feeling', 'it']
+['die Liebe', 'die', 'es']
+Mentions types
+['np-antecedent', 'pronoun-pronoun', 'pronoun-personal']
+['np-antecedent', 'pronoun-relative', 'pronoun-personal']
+
+
+English Chain: set_228 German Chain: set_28
+Mentions tokens:
+['most deaf children', 'them', 'Those deaf people']
+['die meisten tauben Kinder', 'Diese tauben Menschen', 'sich']
+Mentions types
+['np-antecedent', 'pronoun-personal', 'np-np']
+['np-antecedent', 'np-np', 'pronoun-reflexive']
+
+
+English Chain: set_230 German Chain: set_33
+Mentions tokens:
+['Most gay people', 'them', 'those gay people']
+['meisten homosexuellen Menschen', 'diese homosexuellen Menschen', 'sich']
+Mentions types
+['np-antecedent', 'pronoun-personal', 'np-np']
+['np-antecedent', 'np-np', 'pronoun-reflexive']
+
+
+English Chain: set_255 German Chain: set_141
+Mentions tokens:
+['Cochlear implants', 'which', 'which']
+['Cochlear-Implantate', 'die', 'deren']
+Mentions types
+['np-antecedent', 'pronoun-relative', 'pronoun-relative']
+['np-antecedent', 'pronoun-relative', 'pronoun-personal']
+
+
+English Chain: set_288 German Chain: set_183
+Mentions tokens:
+['Dylan Klebold', 'Dylan', 'him', 'him', 'he', 'he', 'him', 'his', 'his']
+['Dylan Klebold', 'Dylan', 'ihn', 'ihn', 'er', 'ihn', 'seine', 'seinem', 'dieses Kind']
+Mentions types
+['np-antecedent', 'np-np', 'pronoun-personal', 'pronoun-personal', 'pronoun-personal', 'pronoun-personal', 'pronoun-personal', 'pronoun-personal', 'pronoun-possessive']
+['np-antecedent', 'np-np', 'pronoun-personal', 'pronoun-personal', 'pronoun-personal', 'pronoun-personal', 'pronoun-possessive', 'pronoun-possessive', 'np-np']
+
+
+English Chain: set_202 German Chain: set_54
+Mentions tokens:
+['the children we have', 'their']
+['solche Identitäten', 'ihnen']
+Mentions types
+['np-antecedent', 'pronoun-possessive']
+['np-antecedent', 'pronoun-personal']
+
+
+English Chain: set_260 German Chain: set_54
+Mentions tokens:
+['progress', 'that']
+['solche Identitäten', 'ihnen']
+Mentions types
+['np-antecedent', 'pronoun-relative']
+['np-antecedent', 'pronoun-personal']
+
+
+English Chain: set_158 German Chain: set_248
+Mentions tokens:
+['that illness', 'it']
+['die Krankheit', 'ihres']
+Mentions types
+['np-antecedent', 'pronoun-personal']
+['np-antecedent', 'pronoun-possessive']
+
+
+English Chain: set_263 German Chain: set_181
+Mentions tokens:
+['the Columbine massacre', 'it', 'this terrible thing']
+['des Columbine-Massakers', 'es', 'diese schreckliche Sache']
+Mentions types
+['np-antecedent', 'pronoun-personal', 'np-np']
+['np-antecedent', 'pronoun-personal', 'np-np']
+
+
+English Chain: set_266 German Chain: set_199
+Mentions tokens:
+['the universal experience of parenting', 'which']
+['die universelle Erfahrung des Elternseins', 'welche']
+Mentions types
+['np-antecedent', 'pronoun-relative']
+['np-antecedent', 'pronoun-relative']
+
+
+English Chain: set_267 German Chain: set_202
+Mentions tokens:
+['with are of', 'those categories']
+['ein das oder', 'dieser Kategorien']
+Mentions types
+['np-antecedent', 'pronoun-demonstrative']
+['np-antecedent', 'np-np']
+
+
+English Chain: set_208 German Chain: set_54
+Mentions tokens:
+['people', 'their']
+['solche Identitäten', 'ihnen']
+Mentions types
+['np-antecedent', 'pronoun-personal']
+['np-antecedent', 'pronoun-personal']
+
+
+English Chain: set_270 German Chain: set_215
+Mentions tokens:
+['a son', 'who', 'whom']
+['einen Sohn', 'der', 'dem']
+Mentions types
+['np-antecedent', 'pronoun-personal', 'pronoun-relative']
+['np-antecedent', 'pronoun-relative', 'pronoun-relative']
+
+
+English Chain: set_272 German Chain: set_218
+Mentions tokens:
+['people', 'who']
+['Leute', 'die']
+Mentions types
+['np-antecedent', 'pronoun-relative']
+['np-antecedent', 'pronoun-relative']
+
+
+English Chain: set_277 German Chain: set_260
+Mentions tokens:
+['the parents I was interviewing', 'themselves', 'their', 'them', 'their']
+['die Eltern', 'die', 'sie', 'ihren', 'ihnen']
+Mentions types
+['np-antecedent', 'pronoun-reflexive', 'pronoun-possessive', 'pronoun-personal', 'pronoun-possessive']
+['np-antecedent', 'pronoun-relative', 'pronoun-personal', 'pronoun-possessive', 'pronoun-personal']
+
+
+English Chain: set_164 German Chain: set_253
+Mentions tokens:
+['the pediatrician', 'she', 'she']
+['die Kinderärztin', 'sie', 'sie']
+Mentions types
+['np-antecedent', 'pronoun-personal', 'pronoun-personal']
+['np-antecedent', 'pronoun-personal', 'pronoun-personal']
+
+
+English Chain: set_6 German Chain: set_8
+Mentions tokens:
+["my mother 's influence", 'its']
+['den Einfluss meiner Mutter', 'dessen']
+Mentions types
+['np-antecedent', 'pronoun-possessive']
+['np-antecedent', 'pronoun-possessive']
+
+
+English Chain: set_231 German Chain: set_38
+Mentions tokens:
+['A family', 'that', 'itself']
+['Eine Familie', 'die', 'sich']
+Mentions types
+['np-antecedent', 'pronoun-relative', 'pronoun-personal']
+['np-antecedent', 'pronoun-relative', 'pronoun-reflexive']
+
+
+English Chain: set_88 German Chain: set_115
+Mentions tokens:
+['an important bioethicist', 'He']
+['einem bedeutenden Bioethiker', 'Er']
+Mentions types
+['np-antecedent', 'pronoun-personal']
+['np-antecedent', 'pronoun-personal']
+
+
+English Chain: set_232 German Chain: set_39
+Mentions tokens:
+['a child', 'who']
+['einem Kind', 'das']
+Mentions types
+['np-antecedent', 'pronoun-relative']
+['np-antecedent', 'pronoun-relative']
+
+
+English Chain: set_238 German Chain: set_53
+Mentions tokens:
+['people', 'who']
+['Leuten', 'die']
+Mentions types
+['np-antecedent', 'pronoun-relative']
+['np-antecedent', 'pronoun-relative']
+
+
+English Chain: set_234 German Chain: set_47
+Mentions tokens:
+['these other identities', 'which', 'them']
+['die anderen Identitäten', 'die', 'Diese']
+Mentions types
+['np-antecedent', 'pronoun-relative', 'pronoun-personal']
+['np-antecedent', 'pronoun-relative', 'pronoun-demonstrative']
+
+
+English Chain: set_243 German Chain: set_54
+Mentions tokens:
+["another magazine of the '60s", 'This one']
+['solche Identitäten', 'ihnen']
+Mentions types
+['np-antecedent', 'pronoun-pronoun']
+['np-antecedent', 'pronoun-personal']
+
+
+English Chain: set_245 German Chain: set_118
+Mentions tokens:
+['the enormous progress', 'that']
+['den enormen Fortschritt', 'den']
+Mentions types
+['np-antecedent', 'pronoun-relative']
+['np-antecedent', 'pronoun-relative']
+
+
+English Chain: set_174 German Chain: set_75
+Mentions tokens:
+['the best doctor in the country for dealing with diastrophic dwarfism', 'him']
+['den besten Arzt im Land für die Behandlung von diastrophischem Zwergwuchs', 'seine']
+Mentions types
+['np-antecedent', 'pronoun-personal']
+['np-antecedent', 'pronoun-possessive']
+
+
+English Chain: set_281 German Chain: set_130
+Mentions tokens:
+['a little center', 'that center']
+['ein kleines Zentrum', 'dieses Zentrum']
+Mentions types
+['np-antecedent', 'np-np']
+['np-antecedent', 'np-np']
+
+
+English Chain: set_12 German Chain: set_15
+Mentions tokens:
+['Those poor people', 'they', 'They', 'them']
+['Diese armen Menschen', 'Sie', 'Sie', 'sie']
+Mentions types
+['np-antecedent', 'pronoun-personal', 'pronoun-personal', 'pronoun-personal']
+['np-antecedent', 'pronoun-personal', 'pronoun-personal', 'pronoun-personal']
+
+
+English Chain: set_252 German Chain: set_266
+Mentions tokens:
+['Down syndrome people', 'those', 'those', 'some']
+['Menschen mit Down-Syndrom', 'einige', 'die', 'sie']
+Mentions types
+['np-antecedent', 'pronoun-demonstrative', 'pronoun-demonstrative', 'pronoun-pronoun']
+['np-antecedent', 'pronoun-pronoun', 'pronoun-relative', 'pronoun-personal']
+
+
+English Chain: set_91 German Chain: set_127
+Mentions tokens:
+['the educational opportunities', 'they']
+['die Bildungschancen', 'sie']
+Mentions types
+['np-antecedent', 'pronoun-personal']
+['np-antecedent', 'pronoun-personal']
+
+
+English Chain: set_287 German Chain: set_278
+Mentions tokens:
+['the families I interviewed for this project', 'all of these families', 'they', 'they']
+['der Familien , die ich für dieses Projekt interviewt habe', 'diese Familien', 'sie', 'sie']
+Mentions types
+['np-antecedent', 'np-np', 'pronoun-personal', 'pronoun-personal']
+['np-antecedent', 'np-np', 'pronoun-personal', 'pronoun-personal']
+
+
+English Chain: set_285 German Chain: set_54
+Mentions tokens:
+['the experience of negotiating difference within your family', 'it']
+['solche Identitäten', 'ihnen']
+Mentions types
+['np-antecedent', 'pronoun-personal']
+['np-antecedent', 'pronoun-personal']
+
+
+English Chain: set_217 German Chain: set_19
+Mentions tokens:
+['the people', 'who']
+['die Menschen', 'die']
+Mentions types
+['np-antecedent', 'pronoun-relative']
+['np-antecedent', 'pronoun-relative']
+
+
+English Chain: set_280 German Chain: set_54
+Mentions tokens:
+['they', 'them']
+['solche Identitäten', 'ihnen']
+Mentions types
+['pronoun-pronoun', 'pronoun-pronoun']
+['np-antecedent', 'pronoun-personal']
+
+
+English Chain: set_226 German Chain: set_22
+Mentions tokens:
+['questions', 'that']
+['Fragen', 'die']
+Mentions types
+['np-antecedent', 'pronoun-relative']
+['np-antecedent', 'pronoun-relative']
+
+
+English Chain: set_147 German Chain: set_226
+Mentions tokens:
+['his legs', 'them']
+['seine Beine', 'sie']
+Mentions types
+['np-antecedent', 'pronoun-personal']
+['np-antecedent', 'pronoun-personal']
+
+
+English Chain: set_152 German Chain: set_232
+Mentions tokens:
+['the pediatrician', 'she', 'She', 'she', 'she', 'she']
+['die Kinderärztin', 'sie', 'Sie', 'sie', 'sie', 'sie']
+Mentions types
+['np-antecedent', 'pronoun-personal', 'pronoun-personal', 'pronoun-personal', 'pronoun-personal', 'pronoun-personal']
+['np-antecedent', 'pronoun-personal', 'pronoun-personal', 'pronoun-personal', 'pronoun-personal', 'pronoun-personal']
+
+
+English Chain: set_103 German Chain: set_54
+Mentions tokens:
+['those pregnancies', 'them']
+['solche Identitäten', 'ihnen']
+Mentions types
+['np-antecedent', 'pronoun-personal']
+['np-antecedent', 'pronoun-personal']
+
+
+English Chain: set_5 German Chain: set_7
+Mentions tokens:
+['My mother', 'she', 'she']
+['Meine Mutter', 'ihr', 'sie']
+Mentions types
+['np-antecedent', 'pronoun-personal', 'pronoun-personal']
+['np-antecedent', 'pronoun-personal', 'pronoun-personal']
+
+
+English Chain: set_107 German Chain: set_153
+Mentions tokens:
+['the hero', 'he']
+['der Held', 'er']
+Mentions types
+['np-antecedent', 'pronoun-personal']
+['np-antecedent', 'pronoun-personal']
+
+
+English Chain: set_108 German Chain: set_269
+Mentions tokens:
+['the heroine', 'she']
+['die Heldin', 'sie']
+Mentions types
+['np-antecedent', 'pronoun-personal']
+['np-antecedent', 'pronoun-personal']
+
+
+English Chain: set_197 German Chain: set_54
+Mentions tokens:
+['parents', 'they']
+['solche Identitäten', 'ihnen']
+Mentions types
+['np-antecedent', 'pronoun-personal']
+['np-antecedent', 'pronoun-personal']
+
+
+English Chain: set_109 German Chain: set_155
+Mentions tokens:
+['our children', 'them']
+['unseren Kindern', 'ihnen']
+Mentions types
+['np-antecedent', 'pronoun-personal']
+['np-antecedent', 'pronoun-personal']
+
+
+English Chain: set_44 German Chain: set_54
+Mentions tokens:
+['acceptance', 'It']
+['solche Identitäten', 'ihnen']
+Mentions types
+['np-antecedent', 'pronoun-personal']
+['np-antecedent', 'pronoun-personal']
+
+
+Matching chains, different number of mentions ======>
+
+
+English longer chains ======>
+
+
+English Chain: set_3 German Chain: set_2
+Mentions tokens:
+['homosexuality', 'It', 'it', 'it', 'it']
+['die Homosexualität', 'Sie', 'sie', 'sie']
+Mentions types
+['np-antecedent', 'pronoun-personal', 'pronoun-personal', 'pronoun-personal', 'pronoun-personal']
+['np-antecedent', 'pronoun-personal', 'pronoun-personal', 'pronoun-personal']
+
+
+English Chain: set_258 German Chain: set_144
+Mentions tokens:
+['mice', 'who', 'who']
+['Mäuse', 'die']
+Mentions types
+['np-antecedent', 'pronoun-relative', 'pronoun-relative']
+['np-antecedent', 'pronoun-relative']
+
+
+English Chain: set_114 German Chain: set_162
+Mentions tokens:
+['people', 'they', 'they', 'They', 'they']
+['dem Leben', 'das']
+Mentions types
+['np-antecedent', 'pronoun-personal', 'pronoun-personal', 'pronoun-personal', 'pronoun-personal']
+['np-antecedent', 'pronoun-relative']
+
+
+English Chain: set_58 German Chain: set_65
+Mentions tokens:
+['Clinton Brown', 'he', 'he', 'his', 'he', 'he', 'he', 'he', 'him', 'he', 'his', 'Clinton', 'his', 'he', 'he', 'he', 'he', 'he', 'him', 'his', 'he', 'he', 'his', 'He', 'his', 'he', 'his', 'his', 'he', 'he', 'him', 'him', 'him', 'his', 'he', 'he', 'his', 'him', 'him', 'Clinton', 'him', 'his']
+['Clinton Brown', 'er', 'ihm', 'seinen', 'er']
+Mentions types
+['np-antecedent', 'pronoun-personal', 'pronoun-personal', 'pronoun-possessive', 'pronoun-personal', 'pronoun-personal', 'pronoun-personal', 'pronoun-personal', 'pronoun-personal', 'pronoun-personal', 'pronoun-possessive', 'np-np', 'pronoun-possessive', 'pronoun-personal', 'pronoun-personal', 'pronoun-personal', 'pronoun-personal', 'pronoun-personal', 'pronoun-personal', 'pronoun-possessive', 'pronoun-personal', 'pronoun-personal', 'pronoun-possessive', 'pronoun-personal', 'pronoun-possessive', 'pronoun-personal', 'pronoun-possessive', 'pronoun-possessive', 'pronoun-personal', 'pronoun-personal', 'pronoun-personal', 'pronoun-personal', 'pronoun-personal', 'pronoun-possessive', 'pronoun-personal', 'pronoun-possessive', 'pronoun-pronoun', 'pronoun-personal', 'pronoun-personal', 'np-np', 'pronoun-personal', 'pronoun-possessive']
+['np-antecedent', 'pronoun-personal', 'pronoun-personal', 'pronoun-possessive', 'pronoun-personal']
+
+
+English Chain: set_175 German Chain: set_66
+Mentions tokens:
+['his parents', 'them', 'them', 'they', 'they']
+['seinen Eltern', 'sie', 'ihnen', 'ihren']
+Mentions types
+['np-antecedent', 'pronoun-personal', 'pronoun-personal', 'pronoun-personal', 'pronoun-personal']
+['np-antecedent', 'pronoun-personal', 'pronoun-personal', 'pronoun-possessive']
+
+
+English Chain: set_178 German Chain: set_54
+Mentions tokens:
+['it', 'Down syndrome', 'it', 'it', 'it', 'it', 'it', 'it']
+['solche Identitäten', 'ihnen']
+Mentions types
+['pronoun-pronoun', 'np-antecedent', 'pronoun-personal', 'pronoun-personal', 'pronoun-personal', 'pronoun-personal', 'pronoun-personal', 'pronoun-personal']
+['np-antecedent', 'pronoun-personal']
+
+
+English Chain: set_233 German Chain: set_46
+Mentions tokens:
+['vertical identities', 'which', 'Those']
+['vertikale Identitäten', 'die anderen Identitäten']
+Mentions types
+['np-antecedent', 'pronoun-relative', 'pronoun-demonstrative']
+['np-antecedent', 'np-comparative']
+
+
+English Chain: set_184 German Chain: set_99
+Mentions tokens:
+['his mother', 'she', 'she', 'her', 'she', 'she', 'she', 'his mother', 'she', 'she', 'She', 'She', 'her', 'she']
+['seine Mutter', 'sie', 'Sie', 'ihren', 'sie', 'sie', 'Seine Mutter', 'sie', 'Sie', 'Sie', 'Sie', 'sie', 'sie']
+Mentions types
+['np-antecedent', 'pronoun-personal', 'pronoun-personal', 'pronoun-personal', 'pronoun-personal', 'pronoun-personal', 'pronoun-personal', 'np-np', 'pronoun-personal', 'pronoun-personal', 'pronoun-personal', 'pronoun-personal', 'pronoun-personal', 'pronoun-personal']
+['np-antecedent', 'pronoun-personal', 'pronoun-personal', 'pronoun-possessive', 'pronoun-personal', 'pronoun-personal', 'np-np', 'pronoun-personal', 'pronoun-personal', 'pronoun-personal', 'pronoun-personal', 'pronoun-personal', 'pronoun-personal']
+
+
+English Chain: set_39 German Chain: set_48
+Mentions tokens:
+['horizontal identities', 'These', 'those horizontal identities', 'those identities', 'them']
+['horizontale Identitäten', 'Das', 'diese Identitäten', 'diese horizontalen Identitäten']
+Mentions types
+['np-antecedent', 'pronoun-demonstrative', 'np-np', 'np-np', 'pronoun-personal']
+['np-antecedent', 'pronoun-demonstrative', 'np-np', 'np-np']
+
+
+English Chain: set_278 German Chain: set_43
+Mentions tokens:
+['things like ethnicity', 'frequently nationality', 'language', 'often religion', 'Those', 'them', 'them']
+['Dinge', 'Dinge', 'die', 'einige davon', 'sie']
+Mentions types
+['np-antecedent', 'np-antecedent', 'np-antecedent', 'np-antecedent', 'pronoun-demonstrative', 'pronoun-personal', 'pronoun-personal']
+['np-antecedent', 'np-np', 'pronoun-relative', 'pronoun-pronoun', 'pronoun-personal']
+
+
+English Chain: set_196 German Chain: set_126
+Mentions tokens:
+['their first child', 'him', 'his']
+['ihr erstes Kind', 'ihn']
+Mentions types
+['np-antecedent', 'pronoun-personal', 'pronoun-possessive']
+['np-antecedent', 'pronoun-personal']
+
+
+English Chain: set_291 German Chain: set_54
+Mentions tokens:
+['David', 'David', 'David', 'David', 'him', 'he']
+['solche Identitäten', 'ihnen']
+Mentions types
+['np-antecedent', 'np-np', 'np-np', 'np-np', 'pronoun-personal', 'pronoun-personal']
+['np-antecedent', 'pronoun-personal']
+
+
+English Chain: set_289 German Chain: set_281
+Mentions tokens:
+['Sue Klebold', 'Sue', 'she', 'she', 'her', 'she', 'she']
+['Sue Klebold', 'Sue', 'sie', 'ihr', 'sie', 'sie']
+Mentions types
+['np-antecedent', 'np-np', 'pronoun-personal', 'pronoun-personal', 'pronoun-personal', 'pronoun-personal', 'pronoun-personal']
+['np-antecedent', 'np-np', 'pronoun-personal', 'pronoun-personal', 'pronoun-personal', 'pronoun-personal']
+
+
+English Chain: set_173 German Chain: set_54
+Mentions tokens:
+['The love you have for your children', 'other feeling', 'it']
+['solche Identitäten', 'ihnen']
+Mentions types
+['np-antecedent', 'pronoun-pronoun', 'pronoun-personal']
+['np-antecedent', 'pronoun-personal']
+
+
+English Chain: set_18 German Chain: set_54
+Mentions tokens:
+['a culture', 'It', 'it', 'it', 'it', 'it', 'It']
+['solche Identitäten', 'ihnen']
+Mentions types
+['np-antecedent', 'pronoun-personal', 'pronoun-personal', 'pronoun-personal', 'pronoun-personal', 'pronoun-personal', 'pronoun-personal']
+['np-antecedent', 'pronoun-personal']
+
+
+German longer chains ======>
+
+
+English Chain: set_199 German Chain: set_183
+Mentions tokens:
+['the family of Dylan Klebold', 'them', 'they', 'they', 'their', 'they', 'them']
+['Dylan Klebold', 'Dylan', 'ihn', 'ihn', 'er', 'ihn', 'seine', 'seinem', 'dieses Kind']
+Mentions types
+['np-antecedent', 'pronoun-personal', 'pronoun-personal', 'pronoun-personal', 'pronoun-possessive', 'pronoun-personal', 'pronoun-personal']
+['np-antecedent', 'np-np', 'pronoun-personal', 'pronoun-personal', 'pronoun-personal', 'pronoun-personal', 'pronoun-possessive', 'pronoun-possessive', 'np-np']
+
+
+English Chain: set_38 German Chain: set_51
+Mentions tokens:
+['identities that are alien to your parents', 'them']
+['Identitäten', 'die', 'Ihren', 'die']
+Mentions types
+['np-np', 'pronoun-personal']
+['np-antecedent', 'pronoun-relative', 'pronoun-possessive', 'pronoun-relative']
+
+
+English Chain: set_40 German Chain: set_55
+Mentions tokens:
+["'s family acceptance social acceptance", 'they']
+['drei Stufen der Akzeptanz', 'die', 'die drei']
+Mentions types
+['np-antecedent', 'pronoun-personal']
+['np-antecedent', 'pronoun-relative', 'np-nom-ellipsis']
+
+
+English Chain: set_218 German Chain: set_25
+Mentions tokens:
+['a daughter', 'who', 'this child']
+['eine kleinwüchsige Tochter', 'diesem Kind', 'sie', 'sich', 'sich']
+Mentions types
+['np-antecedent', 'pronoun-relative', 'np-np']
+['np-antecedent', 'np-np', 'pronoun-personal', 'pronoun-reflexive', 'pronoun-personal']
+
+
+English Chain: set_106 German Chain: set_270
+Mentions tokens:
+['the social progress the medical progress', 'them', 'they']
+['sozialen', 'als auch medizinischen Fortschritt', 'beide', 'sie']
+Mentions types
+['np-antecedent', 'pronoun-personal', 'pronoun-personal']
+['np-antecedent', 'np-antecedent', 'pronoun-pronoun', 'pronoun-personal']
+
+
+English Chain: set_135 German Chain: set_189
+Mentions tokens:
+['the children I had', 'them', 'they', 'they']
+['die Kinder', 'die', 'sie', 'sie', 'sie']
+Mentions types
+['np-antecedent', 'pronoun-personal', 'pronoun-personal', 'pronoun-personal']
+['np-antecedent', 'pronoun-relative', 'pronoun-personal', 'pronoun-personal', 'pronoun-personal']
+
+
+English Chain: set_156 German Chain: set_245
+Mentions tokens:
+['the things we were about to start testing for', 'those', 'they', 'they']
+['ein Tumor einen Wasserkopf', 'dieser Dinge', 'die', 'diese', 'sie', 'sie']
+Mentions types
+['np-antecedent', 'pronoun-demonstrative', 'pronoun-personal', 'pronoun-personal']
+['np-antecedent', 'np-np', 'pronoun-relative', 'pronoun-demonstrative', 'pronoun-personal', 'pronoun-personal']
+
+
+English Chain: set_225 German Chain: set_36
+Mentions tokens:
+['a friend of a friend of mine', 'her', 'she', 'herself', 'She', 'she', 'she']
+['die Freundin einer Freundin', 'ihrer', 'sie', 'Sie', 'sie', 'sie', 'diese Freundin', 'die', 'ihrer']
+Mentions types
+['np-antecedent', 'pronoun-possessive', 'pronoun-personal', 'pronoun-reflexive', 'pronoun-personal', 'pronoun-personal', 'pronoun-personal']
+['np-antecedent', 'pronoun-possessive', 'pronoun-personal', 'pronoun-personal', 'pronoun-personal', 'pronoun-personal', 'np-np', 'pronoun-relative', 'pronoun-possessive']
+
+
+English Chain: set_229 German Chain: set_31
+Mentions tokens:
+['straight parents', 'Those straight parents', 'they']
+['heterosexuelle Eltern', 'Diese Eltern', 'ihre', 'ihrer']
+Mentions types
+['np-antecedent', 'np-np', 'pronoun-personal']
+['np-antecedent', 'np-np', 'pronoun-possessive', 'pronoun-possessive']
+
+
+English Chain: set_166 German Chain: set_277
+Mentions tokens:
+['the terrifying joy of unbearable responsibility', 'it']
+['Freuden', 'und Schrecken unerträglicher Verantwortung', 'sie']
+Mentions types
+['np-antecedent', 'pronoun-personal']
+['np-antecedent', 'np-antecedent', 'pronoun-personal']
+
+
+English Chain: set_256 German Chain: set_145
+Mentions tokens:
+['A compound', 'that']
+['Ein Präparat', 'das', 'BMN-111', 'diesen Wirkstoff']
+Mentions types
+['np-antecedent', 'pronoun-relative']
+['np-antecedent', 'pronoun-relative', 'np-np', 'np-np']
+
+
+English Chain: set_212 German Chain: set_255
+Mentions tokens:
+['my child', 'he', 'his', 'his', 'him', 'him', 'this day-old child', 'him', 'his', 'he', 'his', 'he']
+['unser Sohn', 'Er', 'seine', 'er', 'er', 'er', 'er', 'er', 'ihn', 'seiner', 'seine', 'ihn', 'sein', 'er', 'seine', 'ihm', 'er']
+Mentions types
+['np-antecedent', 'pronoun-personal', 'pronoun-possessive', 'pronoun-possessive', 'pronoun-personal', 'pronoun-personal', 'np-np', 'pronoun-personal', 'pronoun-possessive', 'pronoun-personal', 'pronoun-possessive', 'pronoun-personal']
+['np-antecedent', 'pronoun-personal', 'pronoun-possessive', 'pronoun-personal', 'pronoun-personal', 'pronoun-personal', 'pronoun-personal', 'pronoun-personal', 'pronoun-personal', 'pronoun-possessive', 'pronoun-possessive', 'pronoun-personal', 'pronoun-possessive', 'pronoun-personal', 'pronoun-possessive', 'pronoun-personal', 'pronoun-personal']
+
+
+English Chain: set_257 German Chain: set_145
+Mentions tokens:
+['BMN-111', 'that substance']
+['Ein Präparat', 'das', 'BMN-111', 'diesen Wirkstoff']
+Mentions types
+['np-antecedent', 'np-np']
+['np-antecedent', 'pronoun-relative', 'np-np', 'np-np']
+
+
+English Chain: set_259 German Chain: set_148
+Mentions tokens:
+['blood tests', 'which']
+['Blut-Tests', 'die', 'denen', 'die']
+Mentions types
+['np-antecedent', 'pronoun-relative']
+['np-antecedent', 'pronoun-relative', 'pronoun-relative', 'pronoun-relative']
+
+
+English Chain: set_205 German Chain: set_209
+Mentions tokens:
+['a severely disabled child who died through caregiver neglect', 'his', 'his']
+['eines behinderten Kindes', 'das', 'ein schwerst behindertes Kind', 'das', 'seine', 'seine', 'des Kindes', 'das']
+Mentions types
+['np-antecedent', 'pronoun-possessive', 'pronoun-possessive']
+['np-antecedent', 'pronoun-relative', 'np-np', 'pronoun-relative', 'pronoun-possessive', 'pronoun-possessive', 'np-np', 'pronoun-relative']
+
+
+English Chain: set_265 German Chain: set_278
+Mentions tokens:
+['problems', 'that']
+['der Familien , die ich für dieses Projekt interviewt habe', 'diese Familien', 'sie', 'sie']
+Mentions types
+['np-antecedent', 'pronoun-relative']
+['np-antecedent', 'np-np', 'pronoun-personal', 'pronoun-personal']
+
+
+English Chain: set_207 German Chain: set_255
+Mentions tokens:
+['our son', 'He', 'his', 'he', 'he', 'he', 'he']
+['unser Sohn', 'Er', 'seine', 'er', 'er', 'er', 'er', 'er', 'ihn', 'seiner', 'seine', 'ihn', 'sein', 'er', 'seine', 'ihm', 'er']
+Mentions types
+['np-antecedent', 'pronoun-personal', 'pronoun-possessive', 'pronoun-personal', 'pronoun-personal', 'pronoun-personal', 'pronoun-personal']
+['np-antecedent', 'pronoun-personal', 'pronoun-possessive', 'pronoun-personal', 'pronoun-personal', 'pronoun-personal', 'pronoun-personal', 'pronoun-personal', 'pronoun-personal', 'pronoun-possessive', 'pronoun-possessive', 'pronoun-personal', 'pronoun-possessive', 'pronoun-personal', 'pronoun-possessive', 'pronoun-personal', 'pronoun-personal']
+
+
+English Chain: set_30 German Chain: set_36
+Mentions tokens:
+['this friend of mine', 'her']
+['die Freundin einer Freundin', 'ihrer', 'sie', 'Sie', 'sie', 'sie', 'diese Freundin', 'die', 'ihrer']
+Mentions types
+['np-antecedent', 'pronoun-possessive']
+['np-antecedent', 'pronoun-possessive', 'pronoun-personal', 'pronoun-personal', 'pronoun-personal', 'pronoun-personal', 'np-np', 'pronoun-relative', 'pronoun-possessive']
+
+
+English Chain: set_194 German Chain: set_117
+Mentions tokens:
+['a Down syndrome child', 'it']
+['ein " Weggeben', 'Es', 'es']
+Mentions types
+['np-antecedent', 'pronoun-personal']
+['np-antecedent', 'pronoun-personal', 'pronoun-personal']
+
+
+English Chain: set_227 German Chain: set_26
+Mentions tokens:
+['hearing parents', 'Those hearing parents']
+['hörende Eltern', 'diese', 'ihre']
+Mentions types
+['np-antecedent', 'np-np']
+['np-antecedent', 'pronoun-demonstrative', 'pronoun-possessive']
+
+
+English Chain: set_236 German Chain: set_51
+Mentions tokens:
+['identities', 'that', 'that']
+['Identitäten', 'die', 'Ihren', 'die']
+Mentions types
+['np-antecedent', 'pronoun-relative', 'pronoun-relative']
+['np-antecedent', 'pronoun-relative', 'pronoun-possessive', 'pronoun-relative']
+
+
+English Chain: set_102 German Chain: set_140
+Mentions tokens:
+['Most deaf infants', 'them']
+['gehörlosen Kinder', 'die', 'ihnen']
+Mentions types
+['np-antecedent', 'pronoun-personal']
+['np-antecedent', 'pronoun-relative', 'pronoun-personal']
+
+
+English Chain: set_237 German Chain: set_48
+Mentions tokens:
+['two kinds of identity', 'those identities']
+['horizontale Identitäten', 'Das', 'diese Identitäten', 'diese horizontalen Identitäten']
+Mentions types
+['np-antecedent', 'np-np']
+['np-antecedent', 'pronoun-demonstrative', 'np-np', 'np-np']
+
+
+English Chain: set_239 German Chain: set_59
+Mentions tokens:
+['people', 'who']
+['die Betroffenen', 'sie', 'ihre', 'sie', 'ihre', 'sie']
+Mentions types
+['np-antecedent', 'pronoun-relative']
+['np-antecedent', 'pronoun-personal', 'pronoun-possessive', 'pronoun-personal', 'pronoun-possessive', 'pronoun-personal']
+
+
+English Chain: set_246 German Chain: set_119
+Mentions tokens:
+['people', 'who']
+['Menschen', 'die', 'Menschen mit einer Behinderung', 'sie']
+Mentions types
+['np-antecedent', 'pronoun-relative']
+['np-antecedent', 'pronoun-relative', 'np-np', 'pronoun-personal']
+
+
+English Chain: set_247 German Chain: set_119
+Mentions tokens:
+['people', 'who']
+['Menschen', 'die', 'Menschen mit einer Behinderung', 'sie']
+Mentions types
+['np-antecedent', 'pronoun-relative']
+['np-antecedent', 'pronoun-relative', 'np-np', 'pronoun-personal']
+
+
+English Chain: set_250 German Chain: set_122
+Mentions tokens:
+['change', 'that', 'one', 'that']
+['Der Wandel', 'den', 'der', 'einer', 'dem']
+Mentions types
+['np-antecedent', 'pronoun-relative', 'pronoun-pronoun', 'pronoun-relative']
+['np-antecedent', 'pronoun-relative', 'pronoun-relative', 'pronoun-pronoun', 'pronoun-relative']
+
+
+English Chain: set_195 German Chain: set_280
+Mentions tokens:
+['Tom and Karen Robards', 'their', 'They', 'they', 'they', 'they']
+['Tom und', 'Karen Robards', 'zwei junge und erfolgreiche New Yorker', 'ihr', 'Sie', 'sie', 'sie']
+Mentions types
+['np-antecedent', 'pronoun-possessive', 'pronoun-personal', 'pronoun-personal', 'pronoun-personal', 'pronoun-personal']
+['np-antecedent', 'np-antecedent', 'np-apposition', 'pronoun-possessive', 'pronoun-personal', 'pronoun-personal', 'pronoun-personal']
+
+
+English Chain: set_276 German Chain: set_258
+Mentions tokens:
+['strange love', 'its']
+['seltsame Liebe', 'ihr', 'ihre']
+Mentions types
+['np-antecedent', 'pronoun-possessive']
+['np-antecedent', 'pronoun-possessive', 'pronoun-possessive']
+
+
+English Chain: set_283 German Chain: set_270
+Mentions tokens:
+['social progress', 'and medical progress', 'them']
+['sozialen', 'als auch medizinischen Fortschritt', 'beide', 'sie']
+Mentions types
+['np-antecedent', 'np-antecedent', 'pronoun-personal']
+['np-antecedent', 'np-antecedent', 'pronoun-pronoun', 'pronoun-personal']
+
+
+English Chain: set_220 German Chain: set_279
+Mentions tokens:
+['a pink balloon', 'the pink one']
+['einen Luftballon', 'einen rosafarbenen', 'den rosafarbenen']
+Mentions types
+['np-antecedent', 'np-np']
+['pronoun-personal', 'np-nom-ellipsis', 'np-np']
+
+
+English Chain: set_9 German Chain: set_11
+Mentions tokens:
+['my mother', 'she', 'she', 'she']
+['meine Mutter', 'sie', 'ihre', 'sie', 'sie']
+Mentions types
+['np-antecedent', 'pronoun-personal', 'pronoun-personal', 'pronoun-personal']
+['np-antecedent', 'pronoun-personal', 'pronoun-possessive', 'pronoun-personal', 'pronoun-personal']
+
+
+English chain not in German ======>
+
+
+German chain not in English ======>
+
+
+German Chain: set_60
+Mentions tokens:
+['Akzeptanz', 'Es']
+Mentions types
+['np-antecedent', 'pronoun-personal']
+
+
+German Chain: set_62
+Mentions tokens:
+['der kleinwüchsigen Männer', 'die']
+Mentions types
+['np-antecedent', 'pronoun-relative']
+
+
+German Chain: set_4
+Mentions tokens:
+['einen Luftballon', 'einen roten', 'einen rosafarbenen']
+Mentions types
+['np-antecedent', 'pronoun-pronoun', 'pronoun-pronoun']
+
+
+German Chain: set_275
+Mentions tokens:
+['subtraktiven Modelle der Liebe', 'solche', 'die']
+Mentions types
+['np-antecedent', 'pronoun-pronoun', 'pronoun-relative']
+
+
+German Chain: set_111
+Mentions tokens:
+['ihren Sohn', 'er', 'seine', 'ihren Sohn', 'ihn', 'seiner', 'er', 'er', 'er', 'sich', 'er', 'er', 'ihm', 'seinen', 'er', 'er', 'seiner', 'er', 'seiner', 'er', 'ihn', 'seinem', 'Seine', 'er', 'sein', 'er', 'ihn', 'ihn', 'ihm', 'seinem', 'er', 'er', 'seinen', 'ihn', 'ihm']
+Mentions types
+['np-antecedent', 'pronoun-personal', 'pronoun-possessive', 'np-np', 'pronoun-personal', 'pronoun-possessive', 'pronoun-personal', 'pronoun-personal', 'pronoun-personal', 'pronoun-reflexive', 'pronoun-personal', 'pronoun-personal', 'pronoun-personal', 'pronoun-possessive', 'pronoun-personal', 'pronoun-personal', 'pronoun-possessive', 'pronoun-personal', 'pronoun-possessive', 'pronoun-personal', 'pronoun-personal', 'pronoun-possessive', 'pronoun-possessive', 'pronoun-personal', 'pronoun-possessive', 'pronoun-personal', 'pronoun-personal', 'pronoun-personal', 'pronoun-personal', 'pronoun-personal', 'pronoun-personal', 'pronoun-personal', 'pronoun-possessive', 'pronoun-personal', 'pronoun-personal']
+
+
+German Chain: set_77
+Mentions tokens:
+['seiner Kindheit', 'diese ganze Zeit']
+Mentions types
+['np-antecedent', 'np-np']
+
+
+German Chain: set_204
+Mentions tokens:
+['unsere Unterschiede', 'ihnen', 'die']
+Mentions types
+['np-antecedent', 'pronoun-personal', 'pronoun-relative']
+
+
+German Chain: set_274
+Mentions tokens:
+['jeden', 'er']
+Mentions types
+['pronoun-personal', 'pronoun-personal']
+
+
+German Chain: set_16
+Mentions tokens:
+['eine Kultur', 'dieser Kultur']
+Mentions types
+['np-antecedent', 'np-np']
+
+
+German Chain: set_151
+Mentions tokens:
+['den dreien', 'die']
+Mentions types
+['np-antecedent', 'pronoun-relative']
+
+
+German Chain: set_80
+Mentions tokens:
+['30 größeren chirurgischen Eingriffen', 'diesen Behandlungen', 'derer']
+Mentions types
+['np-antecedent', 'np-np', 'pronoun-personal']
+
+
+German Chain: set_211
+Mentions tokens:
+['zwei Kindern', 'die']
+Mentions types
+['np-antecedent', 'pronoun-relative']
+
+
+German Chain: set_282
+Mentions tokens:
+['Mein Mann', 'er', 'Mein Mann']
+Mentions types
+['np-antecedent', 'pronoun-personal', 'np-np']
+
+
+German Chain: set_84
+Mentions tokens:
+['ein Bildungsniveau', 'das']
+Mentions types
+['np-antecedent', 'pronoun-relative']
+
+
+German Chain: set_152
+Mentions tokens:
+['jene Momente', 'denen']
+Mentions types
+['np-antecedent', 'pronoun-personal']
+
+
+German Chain: set_156
+Mentions tokens:
+['das Kind', 'das']
+Mentions types
+['np-antecedent', 'pronoun-relative']
+
+
+German Chain: set_87
+Mentions tokens:
+['der Erste in seiner Familie', 'der']
+Mentions types
+['np-antecedent', 'pronoun-relative']
+
+
+German Chain: set_101
+Mentions tokens:
+['ein speziell für ihn ausgestattetes Auto', 'das', 'sein Auto', 'das']
+Mentions types
+['np-antecedent', 'pronoun-relative', 'np-np', 'pronoun-relative']
+
+
+German Chain: set_154
+Mentions tokens:
+['die Frage', 'die']
+Mentions types
+['np-antecedent', 'pronoun-relative']
+
+
+German Chain: set_18
+Mentions tokens:
+['meine Kultur', 'ihr']
+Mentions types
+['np-antecedent', 'pronoun-personal']
+
+
+German Chain: set_17
+Mentions tokens:
+['die Menschen aus dieser Kultur', 'die']
+Mentions types
+['np-antecedent', 'pronoun-relative']
+
+
+German Chain: set_160
+Mentions tokens:
+['Eltern', 'Sie', 'Sie', 'Ihr']
+Mentions types
+['np-antecedent', 'pronoun-personal', 'pronoun-personal', 'pronoun-personal']
+
+
+German Chain: set_161
+Mentions tokens:
+['eine sehr extreme Sicht', 'sie']
+Mentions types
+['np-antecedent', 'pronoun-personal']
+
+
+German Chain: set_100
+Mentions tokens:
+['Clinton', 'sein']
+Mentions types
+['np-antecedent', 'pronoun-possessive']
+
+
+German Chain: set_165
+Mentions tokens:
+['Menschen', 'sie', 'sie', 'Sie']
+Mentions types
+['np-antecedent', 'pronoun-personal', 'pronoun-personal', 'pronoun-personal']
+
+
+German Chain: set_113
+Mentions tokens:
+['die ersten', 'die']
+Mentions types
+['np-antecedent', 'pronoun-relative']
+
+
+German Chain: set_167
+Mentions tokens:
+['der Familien', 'die']
+Mentions types
+['np-antecedent', 'pronoun-relative']
+
+
+German Chain: set_166
+Mentions tokens:
+['die Person', 'der', 'sie']
+Mentions types
+['np-antecedent', 'pronoun-relative', 'pronoun-personal']
+
+
+German Chain: set_171
+Mentions tokens:
+['die Familie', 'sie', 'sie', 'ihre', 'ihnen', 'sie']
+Mentions types
+['np-antecedent', 'pronoun-personal', 'pronoun-personal', 'pronoun-possessive', 'pronoun-personal', 'pronoun-personal']
+
+
+German Chain: set_40
+Mentions tokens:
+['Eltern', 'ihre']
+Mentions types
+['np-antecedent', 'pronoun-possessive']
+
+
+German Chain: set_173
+Mentions tokens:
+['ersten gemeinsamen Wochenende', 'einem', 'vielen']
+Mentions types
+['np-antecedent', 'pronoun-pronoun', 'pronoun-pronoun']
+
+
+German Chain: set_52
+Mentions tokens:
+['der Prozess', 'dem']
+Mentions types
+['np-antecedent', 'pronoun-personal']
+
+
+German Chain: set_123
+Mentions tokens:
+['der Familien', 'die']
+Mentions types
+['np-antecedent', 'pronoun-relative']
+
+
+German Chain: set_234
+Mentions tokens:
+['Menschen', 'ihrer']
+Mentions types
+['np-antecedent', 'pronoun-possessive']
+
+
+German Chain: set_235
+Mentions tokens:
+['Eltern eines behinderten Kindes', 'ihrem']
+Mentions types
+['np-antecedent', 'pronoun-possessive']
+
+
+German Chain: set_179
+Mentions tokens:
+['Abendessen', 'die']
+Mentions types
+['np-antecedent', 'pronoun-relative']
+
+
+German Chain: set_249
+Mentions tokens:
+['den Ärzten', 'sie']
+Mentions types
+['np-antecedent', 'pronoun-personal']
+
+
+German Chain: set_187
+Mentions tokens:
+['den Schmerz', 'den', 'den']
+Mentions types
+['np-antecedent', 'pronoun-relative', 'pronoun-relative']
+
+
+German Chain: set_264
+Mentions tokens:
+['etwas', 'das']
+Mentions types
+['pronoun-none', 'pronoun-relative']
+
+
+German Chain: set_192
+Mentions tokens:
+['Probleme', 'die', 'sie']
+Mentions types
+['np-antecedent', 'pronoun-relative', 'pronoun-personal']
+
+
+German Chain: set_262
+Mentions tokens:
+['der Weg', 'dem']
+Mentions types
+['np-antecedent', 'pronoun-relative']
+
+
+German Chain: set_129
+Mentions tokens:
+['zwei Klassenzimmer', 'die']
+Mentions types
+['np-antecedent', 'pronoun-relative']
+
+
+German Chain: set_188
+Mentions tokens:
+['den Schmerz', 'den']
+Mentions types
+['np-antecedent', 'pronoun-relative']
+
+
+German Chain: set_135
+Mentions tokens:
+['David', 'ihn', 'ihm', 'David', 'ihm', 'er']
+Mentions types
+['np-antecedent', 'pronoun-personal', 'pronoun-personal', 'np-np', 'pronoun-personal', 'pronoun-personal']
+
+
+German Chain: set_198
+Mentions tokens:
+['Familien', 'die']
+Mentions types
+['np-antecedent', 'pronoun-relative']
+
+
+German Chain: set_132
+Mentions tokens:
+['den Robards', 'sie']
+Mentions types
+['np-antecedent', 'pronoun-personal']
+
+
+German Chain: set_195
+Mentions tokens:
+['unsere Kinder', 'ihren']
+Mentions types
+['np-antecedent', 'pronoun-possessive']
+
+
+German Chain: set_265
+Mentions tokens:
+['der Zeit', 'die']
+Mentions types
+['np-antecedent', 'pronoun-relative']
+
+
+German Chain: set_196
+Mentions tokens:
+['meine Kinder', 'sie']
+Mentions types
+['np-antecedent', 'pronoun-personal']
+
+
+German Chain: set_271
+Mentions tokens:
+['ein Fremder', 'den']
+Mentions types
+['np-antecedent', 'pronoun-reflexive']
+
+
+German Chain: set_139
+Mentions tokens:
+['ein Ausmaß', 'das']
+Mentions types
+['np-antecedent', 'pronoun-relative']
+
+
+German Chain: set_138
+Mentions tokens:
+['einem Punkt', 'dem']
+Mentions types
+['np-antecedent', 'pronoun-demonstrative']
+
+
+German Chain: set_201
+Mentions tokens:
+['ein Kind', 'das']
+Mentions types
+['np-antecedent', 'pronoun-relative']
+
+
+German Chain: set_136
+Mentions tokens:
+['einer Zeit', 'der']
+Mentions types
+['np-antecedent', 'pronoun-relative']
+
+
+German Chain: set_200
+Mentions tokens:
+['jede Familie', 'jede']
+Mentions types
+['np-antecedent', 'np-nom-ellipsis']
+
+
+German Chain: set_137
+Mentions tokens:
+['Down-Syndrom', 'diese']
+Mentions types
+['np-antecedent', 'pronoun-demonstrative']
+
+
+
+
+**************End of corpus*****************
+**************Stats in corpus*****************
+
+
+mention correspondences in corpus (for matching chains with the same number of mentions)
+
+
+pronoun-personal to pronoun-personal 101
+pronoun-personal to np-antecedent 49
+np-antecedent to np-antecedent 48
+np-antecedent to pronoun-personal 45
+pronoun-personal to pronoun-possessive 23
+np-antecedent to pronoun-relative 17
+pronoun-personal to np-np 17
+pronoun-relative to np-antecedent 15
+pronoun-relative to pronoun-relative 15
+pronoun-possessive to pronoun-personal 12
+np-antecedent to pronoun-possessive 9
+pronoun-possessive to pronoun-possessive 8
+np-antecedent to np-np 8
+pronoun-personal to pronoun-relative 7
+pronoun-possessive to np-antecedent 7
+np-np to np-np 7
+np-np to pronoun-personal 7
+np-np to np-antecedent 6
+pronoun-pronoun to np-antecedent 5
+pronoun-pronoun to pronoun-personal 5
+pronoun-relative to pronoun-personal 4
+pronoun-possessive to pronoun-relative 3
+np-antecedent to pronoun-reflexive 3
+pronoun-personal to pronoun-reflexive 3
+pronoun-demonstrative to np-antecedent 3
+pronoun-pronoun to pronoun-relative 2
+np-np to pronoun-reflexive 2
+np-np to pronoun-possessive 2
+pronoun-possessive to np-np 2
+pronoun-reflexive to pronoun-personal 2
+pronoun-demonstrative to pronoun-pronoun 2
+pronoun-demonstrative to pronoun-relative 2
+pronoun-demonstrative to pronoun-personal 2
+pronoun-relative to pronoun-possessive 1
+pronoun-demonstrative to np-np 1
+pronoun-reflexive to np-antecedent 1
+pronoun-reflexive to pronoun-relative 1
+pronoun-reflexive to pronoun-possessive 1
+pronoun-relative to pronoun-reflexive 1
+np-antecedent to pronoun-demonstrative 1
+pronoun-relative to pronoun-demonstrative 1
+pronoun-personal to pronoun-demonstrative 1
+np-antecedent to pronoun-pronoun 1
+pronoun-pronoun to pronoun-pronoun 1
+
+
+number of matching chains: 49
+number of english chains longer than german: 15
+number of german chains longer than german: 32
+number of english chains not in german: 0
+number of german chains not in english: 56
+counts before classification: english 96 german 130

@@ -275,8 +275,10 @@ def scoreChains(enChains, deChains, alignments):
             continue
         else:
             for deChain in deChains:
+
                 de_candidates = []
                 en_candidates = []
+
                 scoreEnglish = 0
                 scoreGerman = 0
                 #group all mentions of a chain
@@ -625,10 +627,17 @@ def main():
 
         scores = scoreChains(en_filtered_chains, de_filtered_chains, reindexed_doc_aligns)
 
+        # printing out examples for the presentation
+        for x in scores:
+            for y in scores[x]:
+                if scores[x][y] != 0:
+                    print(x, y, scores[x][y])
+
+
         matching_chains = getHighest(scores)
 
-        #print("matching dictionary!!!!!")
-        #print(matching_chains)
+        # print("matching dictionary!!!!!")
+        # print(matching_chains)
 
         allMatch, someMatch, enNoMatch, deNoMatch = classifyMatches(en_filtered_chains, de_filtered_chains,
                                                                     matching_chains)
@@ -640,6 +649,9 @@ def main():
         # count the uneven chains; same_long should be empty (sanity check)
         en_long, de_long, same_long = count_uneven_length(someMatch, en_filtered_chains, de_filtered_chains,
                                                            en_chains_info, de_chains_info)
+
+
+
 
         #count over corpus
 
@@ -662,6 +674,7 @@ def main():
 
         # ####print sanity check for indexes matching the words
         # print("sanity check")
+        # print("##############################################")
         # for chain in en_filtered_chains:
         #     print(chain, en_filtered_chains[chain])
         #     actual_words = []
@@ -671,78 +684,102 @@ def main():
         #     print(actual_words)
 
 
+        # printing out examples for presentation
+
+        print("------------------------->")
+        for chain in en_filtered_chains:
+            if chain in ["set_119", "set_135", "set_225"]:
+                print(chain, en_filtered_chains[chain])
+                actual_words = []
+                for mention in en_filtered_chains[chain]:
+                    for word in mention:
+                        actual_words.append(en_document[word-1])
+                print(actual_words)
+
+
+
+        for chain in de_filtered_chains:
+            if chain in ["set_172", "set_171", "set_187", "set_188", "set_189", "set_36", "set_25"]:
+                print(chain, de_filtered_chains[chain])
+                actual_words = []
+                for mention in de_filtered_chains[chain]:
+                    for word in mention:
+                        actual_words.append(de_document[word-1])
+                print(actual_words)
         # # print out
-        # print("Matching chains ======>")
-        # print("\n")
-        # for englishkey in allMatch:
-        #     germankey = allMatch[englishkey]
-        #     print("English Chain:", englishkey, "German Chain:", germankey)
-        #     en_tokens, en_types = prettify_chains(en_filtered_chains[englishkey], en_document, en_chains_info[englishkey])
-        #     de_tokens, de_types = prettify_chains(de_filtered_chains[germankey], de_document, de_chains_info[germankey])
-        #     print("Mentions tokens:")
-        #     print(en_tokens)
-        #     print(de_tokens)
-        #     print("Mentions types")
-        #     print(en_types)
-        #     print(de_types)
-        #     print("\n")
-        #
-        # print("Matching chains, different number of mentions ======>")
-        # print("\n")
-        #
-        # print("English longer chains ======>")
-        # print("\n")
-        # for englishkey in en_long:
-        #     germankey = en_long[englishkey]
-        #     print("English Chain:", englishkey, "German Chain:", germankey)
-        #     en_tokens, en_types = prettify_chains(en_filtered_chains[englishkey], en_document, en_chains_info[englishkey])
-        #     de_tokens, de_types = prettify_chains(de_filtered_chains[germankey], de_document, de_chains_info[germankey])
-        #     print("Mentions tokens:")
-        #     print(en_tokens)
-        #     print(de_tokens)
-        #     print("Mentions types")
-        #     print(en_types)
-        #     print(de_types)
-        #     print("\n")
-        #
-        # print("German longer chains ======>")
-        # print("\n")
-        # for englishkey in de_long:
-        #     germankey = de_long[englishkey]
-        #     print("English Chain:", englishkey, "German Chain:", germankey)
-        #     en_tokens, en_types = prettify_chains(en_filtered_chains[englishkey], en_document, en_chains_info[englishkey])
-        #     de_tokens, de_types = prettify_chains(de_filtered_chains[germankey], de_document, de_chains_info[germankey])
-        #     print("Mentions tokens:")
-        #     print(en_tokens)
-        #     print(de_tokens)
-        #     print("Mentions types")
-        #     print(en_types)
-        #     print(de_types)
-        #     print("\n")
-        #
-        #
-        #
-        # print("English chain not in German ======>")
-        # print("\n")
-        # for englishkey in enNoMatch:
-        #     print("English Chain:", englishkey)
-        #     en_tokens, en_types = prettify_chains(en_filtered_chains[englishkey], en_document, en_chains_info[englishkey])
-        #     print("Mentions tokens:")
-        #     print(en_tokens)
-        #     print("Mentions types")
-        #     print(en_types)
-        #     print("\n")
-        #
-        # print("German chain not in English ======>")
-        # print("\n")
-        # for germankey in deNoMatch:
-        #     print("German Chain:", germankey)
-        #     de_tokens, de_types = prettify_chains(de_filtered_chains[germankey], de_document, de_chains_info[germankey])
-        #     print("Mentions tokens:")
-        #     print(de_tokens)
-        #     print("Mentions types")
-        #     print(de_types)
-        #     print("\n")
+        print("Matching chains ======>")
+        print("\n")
+        for englishkey in allMatch:
+            germankey = allMatch[englishkey]
+            print("English Chain:", englishkey, "German Chain:", germankey)
+            en_tokens, en_types = prettify_chains(en_filtered_chains[englishkey], en_document, en_chains_info[englishkey])
+            de_tokens, de_types = prettify_chains(de_filtered_chains[germankey], de_document, de_chains_info[germankey])
+            print("Mentions tokens:")
+            print(en_tokens)
+            print(de_tokens)
+            print("Mentions types")
+            print(en_types)
+            print(de_types)
+            print("\n")
+
+        print("Matching chains, different number of mentions ======>")
+        print("\n")
+
+        print("English longer chains ======>")
+        print("\n")
+        for englishkey in en_long:
+            germankey = en_long[englishkey]
+            print("English Chain:", englishkey, "German Chain:", germankey)
+            en_tokens, en_types = prettify_chains(en_filtered_chains[englishkey], en_document, en_chains_info[englishkey])
+            de_tokens, de_types = prettify_chains(de_filtered_chains[germankey], de_document, de_chains_info[germankey])
+            print("Mentions tokens:")
+            print(en_tokens)
+            print(de_tokens)
+            print("Mentions types")
+            print(en_types)
+            print(de_types)
+            print("\n")
+
+        print("German longer chains ======>")
+        print("\n")
+        for englishkey in de_long:
+            germankey = de_long[englishkey]
+            print("English Chain:", englishkey, "German Chain:", germankey)
+            en_tokens, en_types = prettify_chains(en_filtered_chains[englishkey], en_document, en_chains_info[englishkey])
+            de_tokens, de_types = prettify_chains(de_filtered_chains[germankey], de_document, de_chains_info[germankey])
+            print("Mentions tokens:")
+            print(en_tokens)
+            print(de_tokens)
+            print("Mentions types")
+            print(en_types)
+            print(de_types)
+            print("\n")
+
+
+
+        print("English chain not in German ======>")
+        print("\n")
+        for englishkey in enNoMatch:
+            print("English Chain:", englishkey)
+            en_tokens, en_types = prettify_chains(en_filtered_chains[englishkey], en_document, en_chains_info[englishkey])
+            print("Mentions tokens:")
+            print(en_tokens)
+            print("Mentions types")
+            print(en_types)
+            print("\n")
+
+        print("German chain not in English ======>")
+        print("\n")
+        for germankey in deNoMatch:
+            print("German Chain:", germankey)
+            de_tokens, de_types = prettify_chains(de_filtered_chains[germankey], de_document, de_chains_info[germankey])
+            print("Mentions tokens:")
+            print(de_tokens)
+            print("Mentions types")
+            print(de_types)
+            print("\n")
+
+        break
 
 
     print("\n")
@@ -763,6 +800,8 @@ def main():
 
 
     print("counts before classification: english", sanity_en, "german", sanity_de)
+
+
 
 if __name__ == "__main__":
     main()
