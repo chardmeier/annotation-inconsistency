@@ -522,7 +522,7 @@ def count_typology(dict_matches, en, de, enInfo, deInfo):
             pretty_men = "-".join(list(men))
             for mde in de_sort_info:
                 pretty_mde = "-".join(list(mde))
-                pair = pretty_men + " to " + pretty_mde
+                pair = (pretty_men, pretty_mde)
                 if pair in counts:
                     counts[pair] += 1
                 else:
@@ -561,6 +561,16 @@ def aggregate(d_doc, d_global):
             d_global[key] = d_doc[key]
 
 
+def print_confusion_matrix(counts, sep='\t'):
+    all_cats = set(c for t in counts.keys() for c in t)
+    all_cats = list(sorted(all_cats))
+    catidx = {c: i for i, c in enumerate(all_cats)}
+    print(sep + sep.join(all_cats))
+    for c in all_cats:
+        print('%20s' % c, end='')
+        for d in all_cats:
+            print(sep + str(counts.get((c, d), 0)), end='')
+        print()
 
 
 #############################################          MAIN            ##############################################
@@ -792,7 +802,7 @@ def main():
             print(de_types)
             print("\n")
 
-        break
+        # break
 
 
     print("\n")
@@ -802,8 +812,9 @@ def main():
     print("\n")
     print("mention correspondences in corpus (for matching chains with the same number of mentions)")
     print("\n")
-    for w in sorted(mention_types_corpus, key=mention_types_corpus.get, reverse=True):
-        print(w, mention_types_corpus[w])
+    print_confusion_matrix(mention_types_corpus)
+    # for w in sorted(mention_types_corpus, key=mention_types_corpus.get, reverse=True):
+    #     print(w, mention_types_corpus[w])
     print("\n")
     print("number of matching chains:", equal_length_corpus)
     print("number of english chains longer than german:", en_long_corpus)
