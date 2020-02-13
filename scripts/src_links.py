@@ -582,18 +582,24 @@ def main():
 
     subcorpus = sys.argv[2]
 
-    #DiscoMT files (hard coded to make sure they're in the very same order as the alignments file)
-    # endeDocs = ["000_1756_words.xml", "001_1819_words.xml", "002_1825_words.xml", "003_1894_words.xml",
-    #              "005_1938_words.xml", "006_1950_words.xml", "007_1953_words.xml", "009_2043_words.xml",
-    #              "010_205_words.xml", "011_2053_words.xml"]
-    # TED files
-    endeDocs = [s + "_words.xml" for s in ["000_779", "001_769", "002_792", "003_799", "004_767",
-                                           "005_790", "006_785", "007_783", "008_824", "010_837"]]
-    # news files
-    # endeDocs = ["01_words.xml", "03_words.xml", "04_words.xml", "05_words.xml", "07_words.xml", "08_words.xml",
-    #             "09_words.xml", "10_words.xml", "13_words.xml", "16_words.xml", "17_words.xml", "18_words.xml",
-    #             "19_words.xml", "20_words.xml", "21_words.xml", "22_words.xml", "23_words.xml", "24_words.xml",
-    #             "25_words.xml"]
+    if subcorpus == "DiscoMT":
+        #DiscoMT files (hard coded to make sure they're in the very same order as the alignments file)
+        endeDocs = ["000_1756_words.xml", "001_1819_words.xml", "002_1825_words.xml", "003_1894_words.xml",
+                     "005_1938_words.xml", "006_1950_words.xml", "007_1953_words.xml", "009_2043_words.xml",
+                     "010_205_words.xml", "011_2053_words.xml"]
+    elif subcorpus == "TED":
+        # TED files
+        endeDocs = [s + "_words.xml" for s in ["000_779", "001_769", "002_792", "003_799", "004_767",
+                                               "005_790", "006_785", "007_783", "008_824", "010_837"]]
+    elif subcorpus == "news":
+        # news files
+        endeDocs = ["01_words.xml", "03_words.xml", "04_words.xml", "05_words.xml", "07_words.xml", "08_words.xml",
+                    "09_words.xml", "10_words.xml", "13_words.xml", "16_words.xml", "17_words.xml", "18_words.xml",
+                    "19_words.xml", "20_words.xml", "21_words.xml", "22_words.xml", "23_words.xml", "24_words.xml",
+                    "25_words.xml"]
+    else:
+        sys.stderr.write('Unknown subcorpus: ' + subcorpus)
+        sys.exit(1)
 
     base_path = sys.argv[1]
     en_path_all = base_path + "/" + subcorpus + "/" + "EN"
@@ -743,6 +749,9 @@ def main():
             print("Mentions types")
             print(en_types)
             print(de_types)
+            for s, t in zip(en_types, de_types):
+                if s == 'np-antecedent' and t != 'np-antecedent':
+                    print('suspect')
             print("\n")
 
         print("Matching chains, different number of mentions ======>")
