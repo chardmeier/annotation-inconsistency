@@ -330,9 +330,19 @@ def findDuplicates(scores):
     return all
 
 
-
-
 def getHighest(scored):
+    best_match = {}
+    for s, cands in scored.items():
+        filtered_cands = {t: score for t, score in cands.items() if score != 0 and t not in best_match.values()}
+        best_score = max(filtered_cands.values(), default=0)
+        winners = [t for t in filtered_cands.keys() if filtered_cands[t] == best_score]
+        if len(winners) > 1:
+            print('Tied score of %g: %s - %s' % (best_score, s, str(winners)))
+        if winners:
+            best_match[s] = winners[0]
+    return best_match
+
+def getHighest_orig(scored):
     """
     :param scored: {'set_3': {'set_2': 1.0, 'set_3': 1.0}, 'set_219': {'set_2': 1.0, 'set_3': 13.0}}
     :return: highest = {'set_3': "duplicate", 'set_219': 'set_3': 13.0 }
@@ -563,9 +573,12 @@ def main():
     subcorpus = sys.argv[2]
 
     #DiscoMT files (hard coded to make sure they're in the very same order as the alignments file)
-    endeDocs = ["000_1756_words.xml", "001_1819_words.xml", "002_1825_words.xml", "003_1894_words.xml",
-                 "005_1938_words.xml", "006_1950_words.xml", "007_1953_words.xml", "009_2043_words.xml",
-                 "010_205_words.xml", "011_2053_words.xml"]
+    # endeDocs = ["000_1756_words.xml", "001_1819_words.xml", "002_1825_words.xml", "003_1894_words.xml",
+    #              "005_1938_words.xml", "006_1950_words.xml", "007_1953_words.xml", "009_2043_words.xml",
+    #              "010_205_words.xml", "011_2053_words.xml"]
+    # TED files
+    endeDocs = [s + "_words.xml" for s in ["000_779", "001_769", "002_792", "003_799", "004_767",
+                                           "005_790", "006_785", "007_783", "008_824", "010_837"]]
     # news files
     # endeDocs = ["01_words.xml", "03_words.xml", "04_words.xml", "05_words.xml", "07_words.xml", "08_words.xml",
     #             "09_words.xml", "10_words.xml", "13_words.xml", "16_words.xml", "17_words.xml", "18_words.xml",
@@ -577,7 +590,7 @@ def main():
     en_data_dir = en_path_all + "/" + "Basedata"
     en_annotation_dir = en_path_all + "/" + "Markables"
 
-    de_path_all = base_path + "/" + subcorpus + "/" + "DE"
+    de_path_all = base_path + "/" + subcorpus + "/" + "FR"
     de_data_dir = de_path_all + "/" + "Basedata"
     de_annotation_dir = de_path_all + "/" + "Markables"
 
@@ -686,27 +699,27 @@ def main():
 
         # printing out examples for presentation
 
-        print("------------------------->")
-        for chain in en_filtered_chains:
-            if chain in ["set_119", "set_135", "set_225"]:
-                print(chain, en_filtered_chains[chain])
-                actual_words = []
-                for mention in en_filtered_chains[chain]:
-                    for word in mention:
-                        actual_words.append(en_document[word-1])
-                print(actual_words)
+        # print("------------------------->")
+        # for chain in en_filtered_chains:
+        #     if chain in ["set_119", "set_135", "set_225"]:
+        #         print(chain, en_filtered_chains[chain])
+        #         actual_words = []
+        #         for mention in en_filtered_chains[chain]:
+        #             for word in mention:
+        #                 actual_words.append(en_document[word-1])
+        #         print(actual_words)
 
 
 
-        for chain in de_filtered_chains:
-            if chain in ["set_172", "set_171", "set_187", "set_188", "set_189", "set_36", "set_25"]:
-                print(chain, de_filtered_chains[chain])
-                actual_words = []
-                for mention in de_filtered_chains[chain]:
-                    for word in mention:
-                        actual_words.append(de_document[word-1])
-                print(actual_words)
-        # # print out
+        # for chain in de_filtered_chains:
+        #     if chain in ["set_172", "set_171", "set_187", "set_188", "set_189", "set_36", "set_25"]:
+        #         print(chain, de_filtered_chains[chain])
+        #         actual_words = []
+        #         for mention in de_filtered_chains[chain]:
+        #             for word in mention:
+        #                 actual_words.append(de_document[word-1])
+        #         print(actual_words)
+        # # # print out
         print("Matching chains ======>")
         print("\n")
         for englishkey in allMatch:
