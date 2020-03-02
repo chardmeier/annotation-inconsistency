@@ -38,16 +38,17 @@ def read_alignments(f):
     return all_aligns
 
 
-def make_sentences_spans(doc_id, markables):
+def make_sentences_spans(doc_id, markables, sentence_level="sentence"):
     """
     :param doc_id: id of current document
     :param markables: corresponding annotation from parcor-full which contains the sentence info
+    :param sentence_level: name of MMAX sentence level (usually 'sentence')
     :return: dictionary of spans (with indexing of sentences starting at 1 as in protest/parcor)
     """
 
     sentences_spans = {}
 
-    with open(markables + "/" + doc_id + "_" + "sentence_level.xml", "r", encoding="utf-8") as key:
+    with open(markables + "/" + doc_id + "_" + sentence_level + "_level.xml", "r", encoding="utf-8") as key:
         soup = BeautifulSoup(key, "xml")
         for m in soup.find_all("markable"):
             span = re.match(r'[a-z]+_([0-9]+)\.\.[a-z]+_([0-9]+)', m['span'])
@@ -108,7 +109,7 @@ def get_chain_info(doc_id, markables):
     with open(markables + "/" + doc_id + "_" + "coref_level.xml", "r", encoding="utf-8") as key:
         soup = BeautifulSoup(key, "xml")
         for m in soup.find_all("markable"):
-            coref_class = m["coref_class"] # 'empty, or a chain number
+            coref_class = m.get("coref_class", "empty") # 'empty, or a chain number
             markable_type = m["mention"] # pronoun, np, clause, vp
 
             pron_type, np_type = None, None
@@ -618,6 +619,8 @@ def main():
     de_only_corpus = 0
     sanity_en, sanity_de, en_count, de_count = 0, 0, 0, 0
 
+    suspect = [0]
+    chain_corresp = []
     for doc in endeDocs: #loop and keep order of protest
         #if doc[:4].isalpha():
         if subcorpus == "news":
@@ -629,7 +632,7 @@ def main():
         en_document = create_document(en_data_dir, doc)
         de_document = create_document(de_data_dir, doc)
 
-        en_sentences_ids = make_sentences_spans(docid, en_annotation_dir)
+        en_sentences_ids = make_sentences_spans(docid, en_annotation_dir, sentence_level='frsentence')
         de_sentences_ids = make_sentences_spans(docid, de_annotation_dir)
 
         #make alignments document level
@@ -743,6 +746,7 @@ def main():
             print("English Chain:", englishkey, "German Chain:", germankey)
             en_tokens, en_types = prettify_chains(en_filtered_chains[englishkey], en_document, en_chains_info[englishkey])
             de_tokens, de_types = prettify_chains(de_filtered_chains[germankey], de_document, de_chains_info[germankey])
+            chain_corresp.append((en_types, de_types))
             print("Mentions tokens:")
             print(en_tokens)
             print(de_tokens)
@@ -752,7 +756,10 @@ def main():
             for s, t in zip(en_types, de_types):
                 if s == 'np-antecedent' and t != 'np-antecedent':
                     print('suspect')
+                    suspect[-1] += 1
             print("\n")
+
+        suspect.append(0)
 
         print("Matching chains, different number of mentions ======>")
         print("\n")
@@ -764,6 +771,7 @@ def main():
             print("English Chain:", englishkey, "German Chain:", germankey)
             en_tokens, en_types = prettify_chains(en_filtered_chains[englishkey], en_document, en_chains_info[englishkey])
             de_tokens, de_types = prettify_chains(de_filtered_chains[germankey], de_document, de_chains_info[germankey])
+            chain_corresp.append((en_types, de_types))
             print("Mentions tokens:")
             print(en_tokens)
             print(de_tokens)
@@ -779,6 +787,7 @@ def main():
             print("English Chain:", englishkey, "German Chain:", germankey)
             en_tokens, en_types = prettify_chains(en_filtered_chains[englishkey], en_document, en_chains_info[englishkey])
             de_tokens, de_types = prettify_chains(de_filtered_chains[germankey], de_document, de_chains_info[germankey])
+            chain_corresp.append((en_types, de_types))
             print("Mentions tokens:")
             print(en_tokens)
             print(de_tokens)
@@ -794,6 +803,7 @@ def main():
         for englishkey in enNoMatch:
             print("English Chain:", englishkey)
             en_tokens, en_types = prettify_chains(en_filtered_chains[englishkey], en_document, en_chains_info[englishkey])
+            chain_corresp.append((en_types, None))
             print("Mentions tokens:")
             print(en_tokens)
             print("Mentions types")
@@ -805,6 +815,7 @@ def main():
         for germankey in deNoMatch:
             print("German Chain:", germankey)
             de_tokens, de_types = prettify_chains(de_filtered_chains[germankey], de_document, de_chains_info[germankey])
+            chain_corresp.append((None, de_types))
             print("Mentions tokens:")
             print(de_tokens)
             print("Mentions types")
